@@ -8,6 +8,9 @@ module.exports = {
       },
       colors: {
         primary: "#1CFF6C",
+        transparent: 'transparent',
+        black: '#000',
+        'brand-950': '#002F10',
       },
     },
   },

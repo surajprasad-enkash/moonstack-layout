@@ -90,7 +90,7 @@ const ContactUs = () => {
                         Send Now
                     </button>
                 </div>
-                <div className="mt-10 rounded-2xl p-10 justify-between grid bg-gradient-to-br from-green-500 via-black to-black-500 w-full md:w-[45%] lg:w-[45%] xl:w-[45%]">
+                <div className="mt-10 rounded-2xl p-10 justify-between grid bg-gradient-to-br from-[#177634] via-black to-black-500 w-full md:w-[45%] lg:w-[45%] xl:w-[45%]">
                     <div className="poppins-semibold font-22">What Our Customers Say</div>
                     <div className="poppins-medium leading-[200%] font-18">Innovation plays a vital role in shaping the future of businesses. Companies that focus on creativity and problem-solving are able to build stronger connections with their customers. By combining technology with user-centered design, organizations can create solutions that not only meet current needs</div>
                     <div className="flex">

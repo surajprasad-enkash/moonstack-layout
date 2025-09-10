@@ -16,7 +16,7 @@ const TechnologyComponent = () => {
                     </div>
                     <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%] poppins-medium leading-[200%] font-16">We focus on scalability, security, and user-centric design, ensuring that every project is future-ready and tailored to client needs.</div>
                 </div>
-                <div className="mt-10 rounded-3xl border-t-1 border-green-500 p-10 justify-between flex flex-col md:flex-row gap-y-6 items-center bg-gradient-to-br from-green-500 via-black to-black-500">
+                <div className="mt-10 rounded-3xl border-t-1 border-green-500 p-10 justify-between flex flex-col md:flex-row gap-y-6 items-center bg-gradient-to-br from-[#177634] via-black to-black-500">
                     <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
                         <div className="poppins-semibold font-36">NovaWorks</div>
                         <div className="poppins-medium leading-[200%] mt-4 font-16">Earney is a financial solution to energize and empower Small and Medium Enterprises (SMEs) and freelancers by providing them with a seamless and efficient financial platform</div>
@@ -25,7 +25,7 @@ const TechnologyComponent = () => {
                         <Image src={img1} alt="" className="w-[100%] h-auto rounded-l" />
                     </div>
                 </div>
-                <div className="mt-10 rounded-3xl border-t-1 border-green-500 p-10 justify-between flex flex-col md:flex-row gap-y-6 items-center bg-gradient-to-br from-green-500 via-black to-black-500">
+                <div className="mt-10 rounded-3xl border-t-1 border-green-500 p-10 justify-between flex flex-col md:flex-row gap-y-6 items-center bg-gradient-to-br from-[#177634] via-black to-black-500">
                     <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
                         <div className="poppins-semibold font-36">PixelEdge</div>
                         <div className="poppins-medium leading-[200%] mt-4 font-16">Earney is a financial solution to energize and empower Small and Medium Enterprises (SMEs) and freelancers by providing them with a seamless and efficient financial platform</div>
@@ -34,7 +34,7 @@ const TechnologyComponent = () => {
                         <Image src={img2} alt="" className="w-[100%] h-auto rounded-l" />
                     </div>
                 </div>
-                <div className="mt-10 rounded-3xl border-t-1 border-green-500 p-10 justify-between flex flex-col md:flex-row gap-y-6 items-center bg-gradient-to-br from-green-500 via-black to-black-500">
+                <div className="mt-10 rounded-3xl border-t-1 border-green-500 p-10 justify-between flex flex-col md:flex-row gap-y-6 items-center bg-gradient-to-br from-[#177634] via-black to-black-500">
                     <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
                         <div className="poppins-semibold font-36">Visionary Labs</div>
                         <div className="poppins-medium leading-[200%] mt-4 font-16">Earney is a financial solution to energize and empower Small and Medium Enterprises (SMEs) and freelancers by providing them with a seamless and efficient financial platform</div>
@@ -44,7 +44,7 @@ const TechnologyComponent = () => {
                     </div>
                 </div>
 
-                <div className="mt-10 rounded-3xl border-t-1 border-green-500 p-10 justify-between flex flex-col md:flex-row gap-y-6 items-center bg-gradient-to-br from-green-500 via-black to-black-500">
+                <div className="mt-10 rounded-3xl border-t-1 border-green-500 p-10 justify-between flex flex-col md:flex-row gap-y-6 items-center bg-gradient-to-br from-[#177634] via-black to-black-500">
                     <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
                         <div className="poppins-semibold font-36">NextPhase</div>
                         <div className="poppins-medium leading-[200%] mt-4 font-16">Earney is a financial solution to energize and empower Small and Medium Enterprises (SMEs) and freelancers by providing them with a seamless and efficient financial platform</div>

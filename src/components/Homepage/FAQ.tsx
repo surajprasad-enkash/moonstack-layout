@@ -77,7 +77,7 @@ const FAQ = () => {
                                         onChange={() => handleAccordionChange(i)}
                                     >
                                         <AccordionSummary
-                                            expandIcon={activeAccordion === i ? <Image src={open} alt="" className="w-10 h-auto" /> : <Image src={close} alt="" className="w-10 h-auto" />}
+                                            expandIcon={activeAccordion === i ? <Image src={open} alt="" className="w-10 h-auto rotate-180" /> : <Image src={close} alt="" className="w-10 h-auto" />}
                                             aria-controls="panel1-content"
                                             id={`panel${i}-header`}
                                             className="poppins-semibold font-16"
