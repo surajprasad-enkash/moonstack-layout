@@ -62,12 +62,12 @@ const FAQ = () => {
     return (
         <>
             <div className="bg-black p-15 text-white">
-                <div className="flex">
-                    <div className="w-1/2">
+                <div className="flex flex-col md:flex-row justify-between">
+                    <div className="w-full md:w-[35%] lg:w-[35%] xl:w-[35%]">
                         <div className="poppins-semibold font-40">Frequently Asked<span style={{ color: Colors.brand200 }}> Questions</span></div>
                         <div className="poppins-medium leading-[200%] mt-4 w-2/3 font-16">We focus on scalability, security, and user-centric design, ensuring that every project is future-ready and tailored to client needs.</div>
                     </div>
-                    <div className="w-1/2">
+                    <div className="w-full md:w-[60%] lg:w-[60%] xl:w-[60%]">
                         <AccordionStyle>
                             <Box className="accordion-block">
                                 {accordionList.map((items, i) => (
@@ -94,12 +94,12 @@ const FAQ = () => {
                         </AccordionStyle>
                     </div>
                 </div>
-                <div className="pt-20 flex justify-between">
-                    <div className="border-1 border-solid border-[#73FF6126] bg-[#73FF611F] p-5 w-[30%] rounded-xl flex">
+                <div className="pt-20 flex flex-col md:flex-row justify-between gap-y-8">
+                    <div className="border-1 border-solid border-[#73FF6126] bg-[#73FF611F] p-5 w-full md:w-[30%] lg:w-[30%] xl:w-[30%] rounded-xl flex">
                         <div>
                             <Image src={info} alt="" className="w-8 h-auto" />
                         </div>
-                        <div className="grid w-[90%] pl-4">
+                        <div className="grid w-full md:w-[90%] lg:w-[90%] xl:w-[90%] pl-4">
                             <div className="poppins-semibold font-16">Contact Us</div>
                             <div className="poppins-medium mt-2 font-14">+91 9988776655</div>
                             <button className="poppins-semibold py-2 mt-8 px-8 rounded-3xl border-1 border-green-500 border-solid justify-self-start font-14" style={{ backgroundColor: Colors.brand950 }}>
@@ -107,11 +107,11 @@ const FAQ = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="border-1 border-solid border-[#73FF6126] bg-[#73FF611F] p-5 w-[30%] rounded-xl flex">
+                    <div className="border-1 border-solid border-[#73FF6126] bg-[#73FF611F] p-5 w-full md:w-[30%] lg:w-[30%] xl:w-[30%] rounded-xl flex">
                         <div>
                             <Image src={info} alt="" className="w-8 h-auto" />
                         </div>
-                        <div className="grid w-[90%] pl-4">
+                        <div className="grid w-full md:w-[90%] lg:w-[90%] xl:w-[90%] pl-4">
                             <div className="poppins-semibold font-16">Email Address</div>
                             <div className="poppins-medium mt-2 font-14">randomname123@gmail.com</div>
                             <button className="poppins-semibold py-2 mt-8 px-8 rounded-3xl border-1 border-green-500 border-solid justify-self-start font-14" style={{ backgroundColor: Colors.brand950 }}>
@@ -119,11 +119,11 @@ const FAQ = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="border-1 border-solid border-[#73FF6126] bg-[#73FF611F] p-5 w-[30%] rounded-xl flex">
+                    <div className="border-1 border-solid border-[#73FF6126] bg-[#73FF611F] p-5 w-full md:w-[30%] lg:w-[30%] xl:w-[30%] rounded-xl flex">
                         <div>
                             <Image src={info} alt="" className="w-8 h-auto" />
                         </div>
-                        <div className="grid w-[90%] pl-4">
+                        <div className="grid w-full md:w-[90%] lg:w-[90%] xl:w-[90%] pl-4">
                             <div className="poppins-semibold font-16">Location</div>
                             <div className="poppins-medium mt-2 font-14">123 Demo Street, Springfield, USA</div>
                             <button className="poppins-semibold py-2 mt-8 px-8 rounded-3xl border-1 border-green-500 border-solid justify-self-start font-14" style={{ backgroundColor: Colors.brand950 }}>

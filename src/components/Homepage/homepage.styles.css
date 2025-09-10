@@ -46,16 +46,8 @@
 }
 
 .bottom-gradient-bdr {
-    border-bottom: 2px solid;
-    border-top: 2px solid;
+    border-bottom: 3px solid;
+    border-top: 3px solid;
     border-image: linear-gradient(to right, rgba(0, 0, 0, 0), green, rgba(0, 0, 0, 0));
-    border-image-slice: 1;
-}
-
-.lrb-gradient-bdr {
-    border-right: 1px solid;
-    /* border-left: 1px solid; */
-    /* border-bottom: 1px solid; */
-    border-image: linear-gradient(rgba(0, 0, 0, 0), green, rgba(0, 0, 0, 0)) 0 100%;
     border-image-slice: 1;
 }

@@ -34,22 +34,22 @@ const ContactUs = () => {
 
     return (
         <>
-            <div className="bg-black p-15 flex justify-between text-white">
-                <div className="w-[45%]">
+            <div className="bg-black p-15 flex flex-col md:flex-row justify-between text-white">
+                <div className="w-full md:w-[45%] lg:w-[45%] xl:w-[45%]">
                     <div className="poppins-medium font-30">Get in touch to discuss your software vision <span style={{ color: Colors.brand200 }}>with industry experts</span></div>
                     <Box component="form">
                         <InputStyle>
                             <div className="flex flex-wrap justify-between gap-y-10">
-                                <div className="w-[46%]">
+                                <div className="w-full md:w-[46%] lg:w-[46%] xl:w-[46%]">
                                     <TextField label="Name" variant="standard" />
                                 </div>
-                                <div className="w-[46%]">
+                                <div className="w-full md:w-[46%] lg:w-[46%] xl:w-[46%]">
                                     <TextField label="Email" variant="standard" />
                                 </div>
-                                <div className="w-[46%]">
+                                <div className="w-full md:w-[46%] lg:w-[46%] xl:w-[46%]">
                                     <TextField label="Number" variant="standard" />
                                 </div>
-                                <div className="w-[46%]">
+                                <div className="w-full md:w-[46%] lg:w-[46%] xl:w-[46%]">
                                     <TextField label="Country" variant="standard" />
                                 </div>
                                 <div className="w-[100%]">
@@ -90,7 +90,7 @@ const ContactUs = () => {
                         Send Now
                     </button>
                 </div>
-                <div className="mt-10 rounded-2xl p-10 justify-between grid bg-gradient-to-br from-green-500 via-black to-black-500 w-[45%]">
+                <div className="mt-10 rounded-2xl p-10 justify-between grid bg-gradient-to-br from-green-500 via-black to-black-500 w-full md:w-[45%] lg:w-[45%] xl:w-[45%]">
                     <div className="poppins-semibold font-22">What Our Customers Say</div>
                     <div className="poppins-medium leading-[200%] font-18">Innovation plays a vital role in shaping the future of businesses. Companies that focus on creativity and problem-solving are able to build stronger connections with their customers. By combining technology with user-centered design, organizations can create solutions that not only meet current needs</div>
                     <div className="flex">
