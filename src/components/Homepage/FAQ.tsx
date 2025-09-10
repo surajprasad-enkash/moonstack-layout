@@ -1,0 +1,139 @@
+import React, { useState } from "react";
+import { Colors } from "@/colors/colors";
+import { Box, Typography, Accordion, AccordionDetails, AccordionSummary, } from "@mui/material";
+import open from '../../../public/assets/acc-open.svg'
+import close from '../../../public/assets/acc-close.svg'
+import Image from "next/image";
+import { styled } from '@mui/material/styles';
+import info from '../../../public/assets/info.svg'
+
+const FAQ = () => {
+    const [activeAccordion, setActiveAccordion] = useState(0);
+
+    const AccordionStyle = styled(Box)(({ theme }) => ({
+        '& .MuiAccordion-root': {
+            backgroundColor: 'transparent',
+            color: '#fff'
+        },
+        '& .MuiAccordion-root.Mui-expanded': {
+            backgroundColor: '#062C06',
+            borderRadius: 20,
+        },
+        '& .MuiAccordionSummary-root': {
+            marginTop: '7%'
+        }
+    }));
+
+    const accordionList = [
+        {
+            title: "Do you provide post-launch support and maintenance?",
+            desc: "Education is the key to success in life. It helps people gain knowledge, develop skills, and build confidence.",
+        },
+        {
+            title: "Do you provide post-launch support and maintenance?",
+            desc: "Education is the key to success in life. It helps people gain knowledge, develop skills, and build confidence.",
+        },
+        {
+            title: "Do you provide post-launch support and maintenance?",
+            desc: "Education is the key to success in life. It helps people gain knowledge, develop skills, and build confidence.",
+        },
+        {
+            title: "Do you provide post-launch support and maintenance?",
+            desc: "Education is the key to success in life. It helps people gain knowledge, develop skills, and build confidence.",
+        },
+        {
+            title: "Do you provide post-launch support and maintenance?",
+            desc: "Education is the key to success in life. It helps people gain knowledge, develop skills, and build confidence.",
+        },
+        {
+            title: "Do you provide post-launch support and maintenance?",
+            desc: "Education is the key to success in life. It helps people gain knowledge, develop skills, and build confidence.",
+        }
+    ];
+
+    const handleAccordionChange = (index: number) => {
+        setActiveAccordion(activeAccordion === index ? -1 : index);
+    };
+
+    function formatNumberWithLeadingZero(number: Number) {
+        return String(number).padStart(2, '0');
+    }
+
+    return (
+        <>
+            <div className="bg-black p-15 text-white">
+                <div className="flex">
+                    <div className="w-1/2">
+                        <div className="poppins-semibold font-40">Frequently Asked<span style={{ color: Colors.brand200 }}> Questions</span></div>
+                        <div className="poppins-medium leading-[200%] mt-4 w-2/3 font-16">We focus on scalability, security, and user-centric design, ensuring that every project is future-ready and tailored to client needs.</div>
+                    </div>
+                    <div className="w-1/2">
+                        <AccordionStyle>
+                            <Box className="accordion-block">
+                                {accordionList.map((items, i) => (
+                                    <Accordion
+                                        key={i}
+                                        expanded={activeAccordion === i}
+                                        onChange={() => handleAccordionChange(i)}
+                                    >
+                                        <AccordionSummary
+                                            expandIcon={activeAccordion === i ? <Image src={open} alt="" className="w-10 h-auto" /> : <Image src={close} alt="" className="w-10 h-auto" />}
+                                            aria-controls="panel1-content"
+                                            id={`panel${i}-header`}
+                                            className="poppins-semibold font-16"
+                                        >
+                                            {/* <div className="poppins-semibold"> */}
+                                            <span className="pr-4 font-28">{formatNumberWithLeadingZero(i + 1)}</span>
+                                            <span className="mt-2">{items.title}</span>
+                                            {/* </div> */}
+                                        </AccordionSummary>
+                                        <AccordionDetails className="poppins-medium leading-[200%] font-14">{items.desc}</AccordionDetails>
+                                    </Accordion>
+                                ))}
+                            </Box>
+                        </AccordionStyle>
+                    </div>
+                </div>
+                <div className="pt-20 flex justify-between">
+                    <div className="border-1 border-solid border-[#73FF6126] bg-[#73FF611F] p-5 w-[30%] rounded-xl flex">
+                        <div>
+                            <Image src={info} alt="" className="w-8 h-auto" />
+                        </div>
+                        <div className="grid w-[90%] pl-4">
+                            <div className="poppins-semibold font-16">Contact Us</div>
+                            <div className="poppins-medium mt-2 font-14">+91 9988776655</div>
+                            <button className="poppins-semibold py-2 mt-8 px-8 rounded-3xl border-1 border-green-500 border-solid justify-self-start font-14" style={{ backgroundColor: Colors.brand950 }}>
+                                Call Now
+                            </button>
+                        </div>
+                    </div>
+                    <div className="border-1 border-solid border-[#73FF6126] bg-[#73FF611F] p-5 w-[30%] rounded-xl flex">
+                        <div>
+                            <Image src={info} alt="" className="w-8 h-auto" />
+                        </div>
+                        <div className="grid w-[90%] pl-4">
+                            <div className="poppins-semibold font-16">Email Address</div>
+                            <div className="poppins-medium mt-2 font-14">randomname123@gmail.com</div>
+                            <button className="poppins-semibold py-2 mt-8 px-8 rounded-3xl border-1 border-green-500 border-solid justify-self-start font-14" style={{ backgroundColor: Colors.brand950 }}>
+                                Call Now
+                            </button>
+                        </div>
+                    </div>
+                    <div className="border-1 border-solid border-[#73FF6126] bg-[#73FF611F] p-5 w-[30%] rounded-xl flex">
+                        <div>
+                            <Image src={info} alt="" className="w-8 h-auto" />
+                        </div>
+                        <div className="grid w-[90%] pl-4">
+                            <div className="poppins-semibold font-16">Location</div>
+                            <div className="poppins-medium mt-2 font-14">123 Demo Street, Springfield, USA</div>
+                            <button className="poppins-semibold py-2 mt-8 px-8 rounded-3xl border-1 border-green-500 border-solid justify-self-start font-14" style={{ backgroundColor: Colors.brand950 }}>
+                                Call Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div >
+        </>
+    )
+}
+export default FAQ

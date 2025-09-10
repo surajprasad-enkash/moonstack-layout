@@ -1,0 +1,61 @@
+.main-bg {
+    background-image: url('../../../public/assets/home-banner-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    padding: 30px;
+    padding-bottom: 0;
+    contain: content;
+}
+
+.bg-checked {
+    background-image: url('../../../public/assets/home-banner-bg-2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50%;
+    display: flex;
+    padding: 30px;
+}
+
+.hand-image {
+    position: absolute;
+    height: 80%;
+    width: auto;
+    bottom: 0 !important;
+    right: 14%;
+}
+
+.solutions-bg {
+    background-image: url('../../../public/assets/wave-bg.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 90%;
+    display: flex;
+    padding: 50px;
+}
+
+.right-gradient-bdr {
+    border-width: 2px;
+    border-style: solid;
+    border-left: 0;
+    border-image: linear-gradient(rgba(0, 0, 0, 0), green, rgba(0, 0, 0, 0)) 0 100%;
+}
+
+.bottom-gradient-bdr {
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), green, rgba(0, 0, 0, 0));
+    border-image-slice: 1;
+}
+
+.lrb-gradient-bdr {
+    border-right: 1px solid;
+    /* border-left: 1px solid; */
+    /* border-bottom: 1px solid; */
+    border-image: linear-gradient(rgba(0, 0, 0, 0), green, rgba(0, 0, 0, 0)) 0 100%;
+    border-image-slice: 1;
+}
