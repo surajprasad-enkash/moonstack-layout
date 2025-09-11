@@ -13,16 +13,21 @@ import upwork from '../../public/assets/upwork.png'
 import google from '../../public/assets/google.png'
 import clutch from '../../public/assets/clutch.png'
 import iso from '../../public/assets/iso.png'
+import moment from 'moment'
 
-import { Colors } from '@/colors/colors';
+interface IFooterLink {
+    id: number;
+    paths: string[];
+    title: string;
+}
 
-const footerLinks = [
+const footerLinks: IFooterLink[] = [
     { id: 1, paths: ["/career"], title: "Career" },
     { id: 2, paths: ["/terms"], title: "Terms & conditions" },
     { id: 3, paths: ["/privacy"], title: "Privacy Policy" },
     { id: 4, paths: ["/blog"], title: "Blog" },
-    { id: 5, paths: ["/contact-us"], title: "Contact Us" },
-]
+    { id: 5, paths: ["/contact-us"], title: "Contact Us" }
+];
 
 const Footer = () => {
     return (
@@ -103,7 +108,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='poppins-medium mt-8 font-14' style={{ color: '#B4B4B4' }}>
-                    Copyright 2025 @ moonstack All rights reserved.
+                    Copyright {moment().year()} @ moonstack All rights reserved.
                 </div>
             </footer>
         </>

@@ -7,6 +7,11 @@ import Image from "next/image";
 import { styled } from '@mui/material/styles';
 import info from '../../../public/assets/info.svg'
 
+interface IAccordionList {
+    title: string;
+    desc: string;
+}
+
 const FAQ = () => {
     const [activeAccordion, setActiveAccordion] = useState(0);
 
@@ -24,7 +29,7 @@ const FAQ = () => {
         }
     }));
 
-    const accordionList = [
+    const accordionList: IAccordionList[] = [
         {
             title: "Do you provide post-launch support and maintenance?",
             desc: "Education is the key to success in life. It helps people gain knowledge, develop skills, and build confidence.",
@@ -63,9 +68,11 @@ const FAQ = () => {
         <>
             <div className="bg-black p-15 text-white">
                 <div className="flex flex-col md:flex-row justify-between">
-                    <div className="w-full md:w-[35%] lg:w-[35%] xl:w-[35%]">
-                        <div className="poppins-semibold font-40">Frequently Asked<span style={{ color: Colors.brand200 }}> Questions</span></div>
-                        <div className="poppins-medium leading-[200%] mt-4 w-2/3 font-16">We focus on scalability, security, and user-centric design, ensuring that every project is future-ready and tailored to client needs.</div>
+                    <div className="w-full md:w-[35%] lg:w-[35%] xl:w-[35%]  sticky top-0">
+                        <div className="sticky top-0 pt-10">
+                            <div className="poppins-semibold font-40">Frequently Asked<span style={{ color: Colors.brand200 }}> Questions</span></div>
+                            <div className="poppins-medium leading-[200%] mt-4 w-2/3 font-16">We focus on scalability, security, and user-centric design, ensuring that every project is future-ready and tailored to client needs.</div>
+                        </div>
                     </div>
                     <div className="w-full md:w-[60%] lg:w-[60%] xl:w-[60%]">
                         <AccordionStyle>

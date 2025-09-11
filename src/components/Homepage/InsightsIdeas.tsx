@@ -9,7 +9,7 @@ import arrow from '../../../public/assets/arrow-green.svg'
 const InsightsIdeas = () => {
     return (
         <>
-            <div className="bg-black p-15 text-white">
+            <div className="bg-black p-15 pt-25 text-white">
                 <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 text-center justify-self-center">
                     <div className="poppins-semibold font-40">Insights <span style={{ color: Colors.brand200 }}>& Ideas</span></div>
                     <div className="poppins-medium leading-[200%] mt-4 font-16">We focus on scalability, security, and user-centric design, ensuring that every project is future-ready and tailored to client needs.</div>

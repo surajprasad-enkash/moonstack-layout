@@ -3,6 +3,12 @@ import logo from '../../public/assets/logo-white.png'
 import Image from 'next/image';
 import { Colors } from '@/colors/colors';
 
+interface IMenuItems {
+    id: number;
+    paths: string[];
+    title: string;
+}
+
 const Header = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -10,7 +16,7 @@ const Header = () => {
         setIsDropdownOpen(!isDropdownOpen);
     };
 
-    const menuItems = [
+    const menuItems: IMenuItems[] = [
         { id: 1, paths: ["/"], title: "Home" },
         { id: 2, paths: ["/services"], title: "Services" },
         { id: 3, paths: ["/about-us"], title: "About Us" },
