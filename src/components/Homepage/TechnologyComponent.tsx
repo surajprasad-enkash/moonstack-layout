@@ -7,7 +7,8 @@ import img3 from '../../../public/assets/tech-3.png'
 import img4 from '../../../public/assets/tech-4.png'
 // import video1 from '../../../public/assets/video1.mp4'
 import Video from 'next-video';
-import video1 from '../../../videos/video1.mp4';
+import video1 from '../../../videos/video1new.mp4';
+import getStarted from '../../../videos/get-started.mp4';
 
 const TechnologyComponent = () => {
     return (
@@ -26,9 +27,10 @@ const TechnologyComponent = () => {
                                 <div className="poppins-semibold font-36">NovaWorks</div>
                                 <div className="poppins-medium leading-[200%] mt-4 font-16">Earney is a financial solution to energize and empower Small and Medium Enterprises (SMEs) and freelancers by providing them with a seamless and efficient financial platform</div>
                             </div>
-                            <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
+                            <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%] rounded-l">
                                 {/* <Image src={img1} alt="" className="w-[100%] h-auto rounded-l" /> */}
-                                <Video src={video1} />
+                                {/* <Video src={video1} /> */}
+                                <Video src={getStarted} autoPlay controls={false} muted />
                             </div>
                         </div>
                     </div>
@@ -40,7 +42,8 @@ const TechnologyComponent = () => {
                                 <div className="poppins-medium leading-[200%] mt-4 font-16">Earney is a financial solution to energize and empower Small and Medium Enterprises (SMEs) and freelancers by providing them with a seamless and efficient financial platform</div>
                             </div>
                             <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
-                                <Image src={img2} alt="" className="w-[100%] h-auto rounded-l" />
+                                {/* <Image src={img2} alt="" className="w-[100%] h-auto rounded-l" /> */}
+                                <Video src={getStarted} autoPlay controls={false} muted />
                             </div>
                         </div>
                     </div>
@@ -52,7 +55,8 @@ const TechnologyComponent = () => {
                                 <div className="poppins-medium leading-[200%] mt-4 font-16">Earney is a financial solution to energize and empower Small and Medium Enterprises (SMEs) and freelancers by providing them with a seamless and efficient financial platform</div>
                             </div>
                             <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
-                                <Image src={img3} alt="" className="w-[100%] h-auto rounded-l" />
+                                {/* <Image src={img3} alt="" className="w-[100%] h-auto rounded-l" /> */}
+                                <Video src={getStarted} autoPlay controls={false} muted />
                             </div>
                         </div>
                     </div>
@@ -64,7 +68,8 @@ const TechnologyComponent = () => {
                                 <div className="poppins-medium leading-[200%] mt-4 font-16">Earney is a financial solution to energize and empower Small and Medium Enterprises (SMEs) and freelancers by providing them with a seamless and efficient financial platform</div>
                             </div>
                             <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
-                                <Image src={img4} alt="" className="w-[100%] h-auto rounded-l" />
+                                {/* <Image src={img4} alt="" className="w-[100%] h-auto rounded-l" /> */}
+                                <Video src={getStarted} autoPlay controls={false} muted />
                             </div>
                         </div>
                     </div>

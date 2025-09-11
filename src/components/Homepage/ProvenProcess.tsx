@@ -48,7 +48,7 @@ const ProvenProcess = () => {
                     <div id="cards">
                         {cardsArr.map((li, i) => (
                             <div className="card" id={`card-${i + 1}`}>
-                                <div className={`mt-${i * 20} -rotate-${li.rotate} bg-black rounded-2xl border-1 border-green-500 p-10 justify-between grid bg-gradient-to-br from-[#177634] via-black to-black-500`}>
+                                <div className={`mt-${i * 20} -rotate-3 bg-black rounded-2xl border-1 border-green-500 p-10 justify-between grid bg-gradient-to-br from-[#177634] via-black to-black-500`}>
                                     <div className="poppins-semibold font-28">{formatNumberWithLeadingZero(i + 1)}</div>
                                     <div className="poppins-semibold font-28">{li.title}</div>
                                     <div className="poppins-regular leading-[200%] mt-4 font-16">{li.desc}</div>
