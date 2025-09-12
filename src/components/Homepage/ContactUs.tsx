@@ -116,7 +116,7 @@ const ContactUs = () => {
         <>
             <div className="bg-black p-15 flex flex-col md:flex-row justify-between text-white">
                 <div className="w-full md:w-[45%] lg:w-[45%] xl:w-[45%]">
-                    <div className="poppins-medium font-30">Get in touch to discuss your software vision <span style={{ color: Colors.brand200 }}>with industry experts</span></div>
+                    <div className="poppins-medium font-30">Get in touch to discuss your software vision <span className="bg-gradient-to-r from-[#25E8B1] via=[#60F90D] to-[#60F90D] text-transparent bg-clip-text">with industry experts</span></div>
                     <Box component="form">
                         <InputStyle>
                             <div className="flex flex-wrap justify-between gap-y-10">

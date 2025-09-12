@@ -8,6 +8,7 @@ import ProvenProcess from "@/components/Homepage/ProvenProcess";
 import SolutionsComponent from "@/components/Homepage/SolutionsComponent";
 import TechnologyComponent from "@/components/Homepage/TechnologyComponent";
 import ContactUs from "@/components/Homepage/ContactUs";
+import CaseStudies from "@/components/Homepage/CaseStudies";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Marquee />
         <SolutionsComponent />
         <OurServices />
+        {/* <CaseStudies /> */}
         <TechnologyComponent />
         <ProvenProcess />
         <InsightsIdeas />

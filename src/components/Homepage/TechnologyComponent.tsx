@@ -16,7 +16,7 @@ const TechnologyComponent = () => {
             <div className="text-white bg-black p-15">
                 <div className="flex flex-col md:flex-row justify-between mb-10">
                     <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%] poppins-semibold font-36">
-                        Our Best Technology we have used in <span style={{ color: Colors.brand200 }}>our projects</span>
+                        Our Best Technology we have used in <span className="bg-gradient-to-r from-[#25E8B1] via=[#60F90D] to-[#60F90D] text-transparent bg-clip-text">our projects</span>
                     </div>
                     <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%] poppins-medium leading-[200%] font-16">We focus on scalability, security, and user-centric design, ensuring that every project is future-ready and tailored to client needs.</div>
                 </div>

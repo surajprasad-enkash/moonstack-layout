@@ -14,36 +14,36 @@ const SolutionsComponent = () => {
         <>
             <div className="bg-black text-white">
                 <div className="flex flex-col md:flex-row items-center justify-between p-10">
-                    <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[40%] poppins-bold text-center md:text-left font-36 mb-6 md:mb-0">
+                    <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[40%] poppins-bold text-center md:text-left font-38 mb-6 md:mb-0">
                         <span className="bg-gradient-to-r from-[#25E8B1] to-[#60F90D] text-transparent bg-clip-text">Moonstack</span> for Future-Ready Solutions
                     </div>
-                    <div className="w-full md:w-1/5 lg:w-1/5 xl:w-[10%] flex items-center justify-center md:justify-end mb-6 md:mb-0">
+                    {/* <div className="w-full md:w-1/5 lg:w-1/5 xl:w-[10%] flex items-center justify-center md:justify-end mb-6 md:mb-0">
                         <Image src={subtract} alt="" className="w-8 h-auto" />
-                    </div>
+                    </div> */}
                     <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[50%] solutions-bg poppins-medium font-16 text-center md:text-left leading-[200%]">
                         Earney is a financial solution to energize and empower Small and Medium Enterprises (SMEs) and freelancers by providing them with a seamless and efficient financial platform
                     </div>
                 </div>
 
-                <div className="flex flex-col md:flex-row p-8">
+                <div className="flex flex-col md:flex-row p-8 pt-0">
                     <div className="w-full md:w-1/4 lg:w-1/4 xl:w-1/2 p-10 pt-4 right-gradient-bdr bg-gradient-to-r from-transparent to-transparent hover:from-transparent hover:to-[#0D320D] transition duration-400 rounded-2xl">
                         <Image src={sol1} alt="" className="w-9" />
-                        <div className="mt-4 poppins-semibold font-18">Client-Centric Approach</div>
+                        <div className="mt-10 poppins-semibold font-18">Client-Centric Approach</div>
                         <div className="mt-4 poppins-medium font-14 leading-[200%]">Earney is a financial solution to energize and empower Small and Medium Enterprises.</div>
                     </div>
                     <div className="w-full md:w-1/4 lg:w-1/4 xl:w-1/2 p-10 pt-4 right-gradient-bdr bg-gradient-to-r from-transparent to-transparent hover:from-transparent hover:to-[#0D320D] transition duration-400 rounded-2xl">
                         <Image src={sol2} alt="" className="w-9" />
-                        <div className="mt-4 poppins-semibold font-18">Transparent Process</div>
+                        <div className="mt-10 poppins-semibold font-18">Transparent Process</div>
                         <div className="mt-4 poppins-medium font-14 leading-[200%]">Earney is a financial solution to energize and empower Small and Medium Enterprises.</div>
                     </div>
                     <div className="w-full md:w-1/4 lg:w-1/4 xl:w-1/2 p-10 pt-4 right-gradient-bdr bg-gradient-to-r from-transparent to-transparent hover:from-transparent hover:to-[#0D320D] transition duration-400 rounded-2xl">
                         <Image src={sol3} alt="" className="w-9" />
-                        <div className="mt-4 poppins-semibold font-18">Client-Centric Approach</div>
+                        <div className="mt-10 poppins-semibold font-18">Client-Centric Approach</div>
                         <div className="mt-4 poppins-medium font-14 leading-[200%]">Earney is a financial solution to energize and empower Small and Medium Enterprises.</div>
                     </div>
                     <div className="w-full md:w-1/4 lg:w-1/4 xl:w-1/2 p-10 pt-4 right-gradient-bdr bg-gradient-to-r from-transparent to-transparent hover:from-transparent hover:to-[#0D320D] transition duration-400 rounded-2xl">
                         <Image src={sol4} alt="" className="w-9" />
-                        <div className="mt-4 poppins-semibold font-18">Save More Money</div>
+                        <div className="mt-10 poppins-semibold font-18">Save More Money</div>
                         <div className="mt-4 poppins-medium font-14 leading-[200%]">Earney is a financial solution to energize and empower Small and Medium Enterprises.</div>
                     </div>
                 </div>
@@ -54,17 +54,23 @@ const SolutionsComponent = () => {
                     <div className="w-full md:w-1/2 lg:w-1/2 x:w-1/2">
                         <div className="poppins-medium leading-[200%] h-1/2 font-16 mt-10 md:mt-0 lg:mt-0 xl:mt-0">Earney is a financial solution to energize and empower Small and Medium Enterprises (SMEs) and freelancers by providing them with a seamless and efficient financial platform</div>
                         <div className="flex gap-8 h-1/2 mt-15 md:mt-0 lg:mt-0 xl:mt-0">
-                            <div className="w-1/3 item-center grid py-5 text-center bottom-gradient-bdr">
-                                <div className="poppins-semibold font-28">90%</div>
-                                <div className="poppins-medium font-16">Customer Satisfaction</div>
+                            <div className="w-1/3 item-center py-5 px-5 text-center bottom-gradient-bdr flex items-center">
+                                <div>
+                                    <div className="poppins-semibold font-38">98%</div>
+                                    <div className="poppins-medium font-16 mt-5">Customer Satisfaction</div>
+                                </div>
                             </div>
-                            <div className="w-1/3 item-center grid py-5 text-center border-y-1 bottom-gradient-bdr">
-                                <div className="poppins-semibold font-28">150</div>
-                                <div className="poppins-medium font-16">Project Completed</div>
+                            <div className="w-1/3 item-center py-5 px-5 text-center bottom-gradient-bdr  flex items-center">
+                                <div>
+                                    <div className="poppins-semibold font-38">98%</div>
+                                    <div className="poppins-medium font-16 mt-5">Customer Satisfaction</div>
+                                </div>
                             </div>
-                            <div className="w-1/3 item-center grid py-5 text-center bottom-gradient-bdr">
-                                <div className="poppins-semibold font-28">10 mins</div>
-                                <div className="poppins-medium font-16">Average Answer Time</div>
+                            <div className="w-1/3 item-center py-5 px-5 text-center bottom-gradient-bdr  flex items-center">
+                                <div>
+                                    <div className="poppins-semibold font-38">98%</div>
+                                    <div className="poppins-medium font-16 mt-5">Average Answer Time</div>
+                                </div>
                             </div>
                         </div>
                         {/* <div className="h-1/3 items-end flex">
