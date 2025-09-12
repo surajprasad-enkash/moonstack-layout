@@ -14,8 +14,8 @@ const SolutionsComponent = () => {
         <>
             <div className="bg-black text-white">
                 <div className="flex flex-col md:flex-row items-center justify-between p-10">
-                    <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[40%] poppins-semibold text-center md:text-left font-36 mb-6 md:mb-0">
-                        Building Future-Ready Solutions <span style={{ color: Colors.brand200 }}>with Moonstack</span>
+                    <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[40%] poppins-bold text-center md:text-left font-36 mb-6 md:mb-0">
+                        <span className="bg-gradient-to-r from-[#25E8B1] to-[#60F90D] text-transparent bg-clip-text">Moonstack</span> for Future-Ready Solutions
                     </div>
                     <div className="w-full md:w-1/5 lg:w-1/5 xl:w-[10%] flex items-center justify-center md:justify-end mb-6 md:mb-0">
                         <Image src={subtract} alt="" className="w-8 h-auto" />

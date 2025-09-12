@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Colors } from "@/colors/colors";
 import Image from "next/image";
 import img1 from '../../../public/assets/insight1.png'
@@ -7,6 +7,22 @@ import img3 from '../../../public/assets/insight3.png'
 import arrow from '../../../public/assets/arrow-green.svg'
 
 const InsightsIdeas = () => {
+    const rotatingRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        let angle = 0;
+        const rotate = () => {
+            angle = (angle + 1) % 360;
+            if (rotatingRef.current) {
+                rotatingRef.current.style.setProperty("--angle", `${angle}deg`);
+            }
+            requestAnimationFrame(rotate);
+        };
+
+        rotate();
+        return () => cancelAnimationFrame(rotate as any);
+    }, [])
+
     return (
         <>
             <div className="bg-black p-15 pt-25 text-white">
@@ -47,9 +63,12 @@ const InsightsIdeas = () => {
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <button className="bg-black text-white poppins-semibold py-3 px-12 rounded-3xl mt-8 border-1 border-green-500 border-solid justify-self-center font-16" style={{ backgroundColor: Colors.brand950 }}>
-                        About Us
-                    </button>
+                    <div className='rotating-btn'>
+                        <button className="bg-black text-white poppins-semibold py-3 px-12 rounded-4xl mt-8 border-1 border-green-500 border-solid justify-self-center font-16"
+                            style={{ backgroundColor: Colors.brand950 }} ref={rotatingRef}>
+                            About Us
+                        </button>
+                    </div>
                 </div>
             </div>
         </>

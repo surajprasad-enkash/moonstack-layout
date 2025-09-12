@@ -70,7 +70,7 @@ const Footer = () => {
                             </div>
                             <div className='flex justify-between gap-1'>
                                 <Image alt='upwork' src={upwork} className='w-16 h-auto object-contain' />
-                                <div className='poppins-regular font-12' style={{ color: '#808080' }}>(95 reviews)</div>
+                                <div className='poppins-regular font-12 text-[#808080]'>(95 reviews)</div>
                             </div>
                         </div>
 
@@ -81,13 +81,13 @@ const Footer = () => {
                             </div>
                             <div className='flex justify-between gap-1 items-center'>
                                 <Image alt='google' src={google} className='w-15 h-auto object-contain' />
-                                <div className='poppins-regular font-12' style={{ color: '#808080' }}>(95 reviews)</div>
+                                <div className='poppins-regular font-12 text-[#808080]'>(95 reviews)</div>
                             </div>
                         </div>
 
                         <div className='review-pill'>
                             <div className='flex justify-between gap-2'>
-                                <div className='poppins-regular font-12' style={{ color: '#808080' }}>REVIEW ON</div>
+                                <div className='poppins-regular font-12 text-[#808080]'>REVIEW ON</div>
                                 <Image alt='rating' src={ratingRed} className='w-20 h-auto object-contain' />
                             </div>
                             <div className='flex justify-between gap-1 items-center'>
@@ -100,14 +100,14 @@ const Footer = () => {
                             <div className='flex justify-between gap-2'>
                                 <Image alt='iso' src={iso} className='w-15 h-auto object-contain' />
                                 <div>
-                                    <div className='poppins-regular font-12' style={{ color: '#0D5BAA' }}>27001 :2018</div>
+                                    <div className='poppins-regular font-12 text-[#0D5BAA]'>27001 :2018</div>
                                     <div className='poppins-medium text-black font-12'>IND.44.121/IS/U</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='poppins-medium mt-8 font-14' style={{ color: '#B4B4B4' }}>
+                <div className='poppins-medium mt-8 font-14 text-[#B4B4B4]'>
                     Copyright {moment().year()} @ moonstack All rights reserved.
                 </div>
             </footer>
