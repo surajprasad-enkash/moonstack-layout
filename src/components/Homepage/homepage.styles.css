@@ -118,6 +118,21 @@ main {
     text-stroke: 2px white;
 }
 
+.arc {
+    width: 500px;
+    height: 500px;
+    border: 6px solid #43D943;
+    border-bottom: 0;
+    border-radius: 100%;
+}
+
+.center-slick .slick-slide {
+    justify-content: center !important;
+    display: grid !important;
+    height: 600px;
+    align-items: flex-end;
+}
+
 .glow-on-hover {
     width: 220px;
     /* height: 50px; */

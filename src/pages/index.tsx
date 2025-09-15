@@ -18,7 +18,7 @@ export default function Home() {
         <Marquee />
         <SolutionsComponent />
         <OurServices />
-        {/* <CaseStudies /> */}
+        <CaseStudies />
         <TechnologyComponent />
         <ProvenProcess />
         <InsightsIdeas />
