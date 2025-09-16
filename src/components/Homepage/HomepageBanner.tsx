@@ -33,7 +33,7 @@ const HomepageBanner = ({ refs }: { refs: IBannerRefs }) => {
                     <div className='bg-gradient-to-r from-transparent via-black to-transparent w-1/2 p-4 py-20'>
                         <div className='flex items-center'>
                             <Image src={rating} alt='rating' className='w-25 object-contain' />
-                            <div className='poppins-medium text-white font-16 hover-white-text'>4.5(200+ customers available)</div>
+                            <div className='poppins-medium text-white font-16'>4.5(200+ customers available)</div>
                         </div>
                         <div className='poppins-semibold text-white font-50'>We Boost the Growth For Startup to <span style={{ color: Colors.brand200 }}>fortune 500</span> companies</div>
                         <div className='poppins-medium text-white mt-4 leading-[200%] font-16'>
