@@ -12,7 +12,13 @@ interface IAccordionList {
     desc: string;
 }
 
-const FAQ = () => {
+interface IBannerRefs {
+    callNowBtnRef1: React.RefObject<HTMLDivElement>;
+    callNowBtnRef2: React.RefObject<HTMLDivElement>;
+    callNowBtnRef3: React.RefObject<HTMLDivElement>;
+}
+
+const FAQ = ({ refs }: { refs: IBannerRefs }) => {
     const [activeAccordion, setActiveAccordion] = useState(0);
 
     const AccordionStyle = styled(Box)(({ theme }) => ({
@@ -67,7 +73,7 @@ const FAQ = () => {
     return (
         <>
             <div className="bg-black p-15 text-white">
-                <div className="flex flex-col md:flex-row justify-between">
+                <div className="flex flex-col md:flex-row justify-between mix-blend-difference">
                     <div className="w-full md:w-[35%] lg:w-[35%] xl:w-[35%]  sticky top-0">
                         <div className="sticky top-0 pt-10">
                             <div className="poppins-semibold font-40">Frequently Asked<span className="bg-gradient-to-r from-[#25E8B1] via=[#60F90D] to-[#60F90D] text-transparent bg-clip-text"> Questions</span></div>
@@ -101,7 +107,7 @@ const FAQ = () => {
                         </AccordionStyle>
                     </div>
                 </div>
-                <div className="pt-20 flex flex-col md:flex-row justify-between gap-y-8">
+                <div className="pt-20 flex flex-col md:flex-row justify-between gap-y-8 mix-blend-difference">
                     <div className="border-1 border-solid border-[#73FF6126] bg-[#73FF611F] p-5 w-full md:w-[30%] lg:w-[30%] xl:w-[30%] rounded-xl flex">
                         <div>
                             <Image src={info} alt="" className="w-8 h-auto" />
@@ -109,7 +115,7 @@ const FAQ = () => {
                         <div className="grid w-full md:w-[90%] lg:w-[90%] xl:w-[90%] pl-4">
                             <div className="poppins-semibold font-16">Contact Us</div>
                             <div className="poppins-medium mt-2 font-14">+91 9988776655</div>
-                            <button className="poppins-semibold py-2 mt-8 px-8 rounded-3xl border-1 border-green-500 border-solid justify-self-start font-14" style={{ backgroundColor: Colors.brand950 }}>
+                            <button className="poppins-semibold py-2 mt-8 px-8 rounded-3xl border-1 border-green-500 border-solid justify-self-start font-14" style={{ backgroundColor: Colors.brand950 }} ref={refs.callNowBtnRef1}>
                                 Call Now
                             </button>
                         </div>
@@ -121,7 +127,7 @@ const FAQ = () => {
                         <div className="grid w-full md:w-[90%] lg:w-[90%] xl:w-[90%] pl-4">
                             <div className="poppins-semibold font-16">Email Address</div>
                             <div className="poppins-medium mt-2 font-14">randomname123@gmail.com</div>
-                            <button className="poppins-semibold py-2 mt-8 px-8 rounded-3xl border-1 border-green-500 border-solid justify-self-start font-14" style={{ backgroundColor: Colors.brand950 }}>
+                            <button className="poppins-semibold py-2 mt-8 px-8 rounded-3xl border-1 border-green-500 border-solid justify-self-start font-14" style={{ backgroundColor: Colors.brand950 }} ref={refs.callNowBtnRef2}>
                                 Call Now
                             </button>
                         </div>
@@ -133,7 +139,7 @@ const FAQ = () => {
                         <div className="grid w-full md:w-[90%] lg:w-[90%] xl:w-[90%] pl-4">
                             <div className="poppins-semibold font-16">Location</div>
                             <div className="poppins-medium mt-2 font-14">123 Demo Street, Springfield, USA</div>
-                            <button className="poppins-semibold py-2 mt-8 px-8 rounded-3xl border-1 border-green-500 border-solid justify-self-start font-14" style={{ backgroundColor: Colors.brand950 }}>
+                            <button className="poppins-semibold py-2 mt-8 px-8 rounded-3xl border-1 border-green-500 border-solid justify-self-start font-14" style={{ backgroundColor: Colors.brand950 }} ref={refs.callNowBtnRef3}>
                                 Call Now
                             </button>
                         </div>

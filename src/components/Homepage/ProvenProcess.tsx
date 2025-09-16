@@ -37,14 +37,13 @@ const ProvenProcess = () => {
     return (
         <>
             <div className="bg-black p-15 pt-0 text-white flex flex-col md:flex-row">
-
-                <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 sticky top-0">
+                <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 sticky top-0 mix-blend-difference">
                     <div className="sticky top-0 pt-10">
                         <div className="poppins-semibold font-40">Our <span className="bg-gradient-to-r from-[#25E8B1] via=[#60F90D] to-[#60F90D] text-transparent bg-clip-text">Proven Process</span></div>
                         <div className="poppins-regular leading-[200%] mt-4 w-full md:w-2/3 lg:w-2/3 xl:w-2/3 font-16">In today’s fast-moving digital world, creativity and innovation play a vital role in building meaningful solutions. A great design is not just about how it looks, but also about how it works and how users feel while interacting with it</div>
                     </div>
                 </div>
-                <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+                <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 mix-blend-difference">
                     <div id="cards">
                         {/* {cardsArr.map((li, i) => (
                             <div className="card" id={`card-${i + 1}`}>

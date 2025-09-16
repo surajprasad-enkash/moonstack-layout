@@ -104,13 +104,13 @@ const CaseStudies = () => {
     return (
         <>
             <div className="bg-black text-white pb-15">
-                <div className="flex flex-col md:flex-row justify-between p-15">
+                <div className="flex flex-col md:flex-row justify-between p-15 mix-blend-difference">
                     <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%] poppins-semibold font-36">
                         Case Studies That Turn Challenges <span className="bg-gradient-to-r from-[#25E8B1] via=[#60F90D] to-[#60F90D] text-transparent bg-clip-text">Into Growth</span>
                     </div>
                     <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%] poppins-medium leading-[200%] font-16">We focus on scalability, security, and user-centric design, ensuring that every project is future-ready and tailored to client needs.</div>
                 </div>
-                <div className="pt-20 justify-center flex">
+                <div className="pt-20 justify-center flex mix-blend-difference">
                     <div className="flex w-[70%] justify-between">
                         <CustomArrow direction="prev" sliderRef={sliderRef} sliderRef2={sliderRef2} />
                         <Slider ref={sliderRef} {...settings} className='w-[80%]'>
@@ -123,7 +123,7 @@ const CaseStudies = () => {
                         <CustomArrow direction="next" sliderRef={sliderRef} sliderRef2={sliderRef2} />
                     </div>
                 </div>
-                <div className="center-slick">
+                <div className="center-slick mix-blend-difference">
                     <Slider ref={sliderRef2} {...settings2} className='w-[100%]'>
                         {dataArr.map((review, i) => (
                             <div>
@@ -149,7 +149,7 @@ const CaseStudies = () => {
                                         {review.users.map((user: string, i: number) => {
                                             const isCenter = getCenterIndex(review.users) == i ? true : false
                                             return (
-                                                <Image src={user} alt="image" className={`w-[${isCenter ? '45' : '35'}] h-auto ml-[-10] rounded-3xl border-black border-2 ${isCenter && 'z-999'}`} />
+                                                <Image src={user} alt="image" className={`w-[35] h-auto ml-[-10] rounded-3xl border-black border-2 ${isCenter && 'z-999'}`} />
                                             )
                                         })}
                                     </div>

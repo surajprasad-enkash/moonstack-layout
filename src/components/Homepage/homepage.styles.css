@@ -8,6 +8,7 @@
     padding: 30px;
     padding-bottom: 0;
     contain: content;
+    mix-blend-mode: difference;
 }
 
 .bg-checked {
@@ -52,45 +53,6 @@
     border-image-slice: 1;
 }
 
-
-/* :root { */
-/* --card-height: 40vw;
-    --card-margin: 4vw; */
-/* --card-top-offset: 1em; */
-/* --numcards: 4; */
-/* --outline-width: 0px; */
-/* } */
-
-/* body {
-    background: #131212;
-    color: beige;
-    text-align: center;
-    padding-bottom: 20vh
-} */
-
-/* header,
-main {
-    width: 80vw;
-    margin: 0 auto;
-} */
-
-/* header {
-    height: 35vh;
-    display: grid;
-    place-items: center;
-    margin-bottom: 80px;
-} */
-
-/* #cards {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(var(--numcards), var(--card-height));
-    gap: var(--card-margin);
-    padding-bottom: calc(var(--numcards) * var(--card-top-offset));
-    margin-bottom: var(--card-margin);
-} */
-
 #card-1 {
     --index: 1;
 }
@@ -133,9 +95,26 @@ main {
     align-items: flex-end;
 }
 
+.sticky-cursor {
+    width: 10px;
+    height: 10px;
+    background-color: #00DD4D;
+    border-radius: 50px;
+    position: fixed;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    color: green !important;
+    /* mix-blend-mode: exclusion; */
+}
+
+.hover-white-text:hover {
+    color: #000 !important;
+    z-index: 999;
+    /* position: relative; */
+}
+
 .glow-on-hover {
     width: 220px;
-    /* height: 50px; */
     border: none;
     outline: none;
     color: #fff;

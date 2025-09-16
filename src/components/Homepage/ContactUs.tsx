@@ -14,7 +14,11 @@ interface IReviews {
     image?: string;
 }
 
-const ContactUs = () => {
+interface IBannerRefs {
+    sendBtnRef: React.RefObject<HTMLDivElement>;
+}
+
+const ContactUs = ({ refs }: { refs: IBannerRefs }) => {
     const sliderRef = useRef(null);
     const [progress, setProgress] = useState(0);
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -166,7 +170,8 @@ const ContactUs = () => {
                         </div>
                     </Box>
                     <div className="mt-5 poppins-medium font-12 text-[#9A9A9A]">We will add your info to our CRM for contacting you regarding your request. For more info please consult our <span className="text-white cursor-pointer" style={{ textDecoration: 'underline' }}>privacy policy</span></div>
-                    <button className="poppins-semibold py-4 mt-8 rounded-xl border-1 border-green-500 border-solid justify-self-start font-16 w-[100%]" style={{ backgroundColor: Colors.brand950 }}>
+                    <button className="poppins-semibold py-4 mt-8 rounded-xl border-1 border-green-500 border-solid justify-self-start font-16 w-[100%]" style={{ backgroundColor: Colors.brand950 }}
+                        ref={refs.sendBtnRef}>
                         Send Now
                     </button>
                 </div>

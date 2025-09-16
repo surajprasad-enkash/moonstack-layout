@@ -6,7 +6,14 @@ import img2 from '../../../public/assets/insight2.png'
 import img3 from '../../../public/assets/insight3.png'
 import arrow from '../../../public/assets/arrow-green.svg'
 
-const InsightsIdeas = () => {
+interface IBannerRefs {
+    exploreNowBtnRef1: React.RefObject<HTMLDivElement>;
+    exploreNowBtnRef2: React.RefObject<HTMLDivElement>;
+    exploreNowBtnRef3: React.RefObject<HTMLDivElement>;
+    aboutUsBtnRef: React.RefObject<HTMLDivElement>;
+}
+
+const InsightsIdeas = ({ refs }: { refs: IBannerRefs }) => {
     const rotatingRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -36,7 +43,7 @@ const InsightsIdeas = () => {
                         <div className="poppins-medium leading-[200%] mt-4 font-14 text-[#FF9E2F]">Development</div>
                         <div className="poppins-semibold mt-4 font-20">How To Build Real Estate App from Scratch: Step-by-Step Guide</div>
                         <div className="poppins-medium leading-[200%] mt-4 font-16">Education is the key to success in life. It helps people gain knowledge, develop skills, and build.</div>
-                        <button className="poppins-medium mt-8 cursor-pointer flex font-16" style={{ color: Colors.brand200 }}>
+                        <button className="poppins-medium mt-8 cursor-pointer flex font-16" style={{ color: Colors.brand200 }} ref={refs.exploreNowBtnRef1}>
                             Explore Now
                             <Image src={arrow} alt="" className="w-4 h-auto ml-2" />
                         </button>
@@ -46,7 +53,7 @@ const InsightsIdeas = () => {
                         <div className="poppins-medium leading-[200%] mt-4 font-14 text-[#FF9E2F]">Development</div>
                         <div className="poppins-semibold mt-4 font-20">How To Build Real Estate App from Scratch: Step-by-Step Guide</div>
                         <div className="poppins-medium leading-[200%] mt-4 font-16">Education is the key to success in life. It helps people gain knowledge, develop skills, and build.</div>
-                        <button className="poppins-medium mt-8 cursor-pointer flex font-16" style={{ color: Colors.brand200 }}>
+                        <button className="poppins-medium mt-8 cursor-pointer flex font-16" style={{ color: Colors.brand200 }} ref={refs.exploreNowBtnRef2}>
                             Explore Now
                             <Image src={arrow} alt="" className="w-4 h-auto ml-2" />
                         </button>
@@ -56,16 +63,15 @@ const InsightsIdeas = () => {
                         <div className="poppins-medium leading-[200%] mt-4 font-14 text-[#FF9E2F]">Development</div>
                         <div className="poppins-semibold mt-4 font-20">How To Build Real Estate App from Scratch: Step-by-Step Guide</div>
                         <div className="poppins-medium leading-[200%] mt-4 font-16">Education is the key to success in life. It helps people gain knowledge, develop skills, and build.</div>
-                        <button className="poppins-medium mt-8 cursor-pointer flex font-16" style={{ color: Colors.brand200 }}>
+                        <button className="poppins-medium mt-8 cursor-pointer flex font-16" style={{ color: Colors.brand200 }} ref={refs.exploreNowBtnRef3}>
                             Explore Now
                             <Image src={arrow} alt="" className="w-4 h-auto ml-2" />
                         </button>
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <div className='rotating-btn'>
-                        <button className="bg-black text-white poppins-semibold py-3 px-12 rounded-4xl mt-8 border-1 border-green-500 border-solid justify-self-center font-16"
-                            style={{ backgroundColor: Colors.brand950 }} ref={rotatingRef}>
+                    <div className='rotating-btn' ref={refs.aboutUsBtnRef}>
+                        <button className="bg-black text-white poppins-semibold py-3 px-12 rounded-4xl mt-8 border-1 border-green-500 border-solid justify-self-center font-16 hover:color-black" ref={rotatingRef}>
                             About Us
                         </button>
                     </div>

@@ -19,17 +19,30 @@ interface IFooterLink {
     id: number;
     paths: string[];
     title: string;
+    ref: React.RefObject<HTMLDivElement>;
 }
 
-const footerLinks: IFooterLink[] = [
-    { id: 1, paths: ["/career"], title: "Career" },
-    { id: 2, paths: ["/terms"], title: "Terms & conditions" },
-    { id: 3, paths: ["/privacy"], title: "Privacy Policy" },
-    { id: 4, paths: ["/blog"], title: "Blog" },
-    { id: 5, paths: ["/contact-us"], title: "Contact Us" }
-];
+interface IFooterRefs {
+    footerCareer: React.RefObject<HTMLDivElement>;
+    terms: React.RefObject<HTMLDivElement>;
+    privacy: React.RefObject<HTMLDivElement>;
+    blog: React.RefObject<HTMLDivElement>;
+    footerContactUs: React.RefObject<HTMLDivElement>;
+    twitter: React.RefObject<HTMLDivElement>;
+    facebook: React.RefObject<HTMLDivElement>;
+    whatsapp: React.RefObject<HTMLDivElement>;
+    linkedin: React.RefObject<HTMLDivElement>;
+}
 
-const Footer = () => {
+
+const Footer = ({ refs }: { refs: IFooterRefs }) => {
+    const footerLinks: IFooterLink[] = [
+        { id: 1, paths: ["/career"], title: "Career", ref: refs.footerCareer },
+        { id: 2, paths: ["/terms"], title: "Terms & conditions", ref: refs.terms },
+        { id: 3, paths: ["/privacy"], title: "Privacy Policy", ref: refs.privacy },
+        { id: 4, paths: ["/blog"], title: "Blog", ref: refs.blog },
+        { id: 5, paths: ["/contact-us"], title: "Contact Us", ref: refs.footerContactUs },
+    ];
     return (
         <>
             <footer className="bg-black text-white p-4">
@@ -40,7 +53,7 @@ const Footer = () => {
                     <div className='flex items-center'>
                         {footerLinks.map((item, index) => (
                             <>
-                                <div className={`block text-white cursor-pointer poppins-medium px-7 font-14`}>
+                                <div className={`block text-white cursor-pointer poppins-medium px-7 font-14`} ref={item.ref}>
                                     {item.title}
                                 </div>
                                 {index < footerLinks.length - 1 &&
@@ -50,10 +63,10 @@ const Footer = () => {
                         ))}
                     </div>
                     <div className='flex gap-3 justify-end'>
-                        <Image src={twitter} alt='img-1' className='w-7 h-auto object-contain cursor-pointer' />
-                        <Image src={linkedin} alt='img-1' className='w-7 h-auto object-contain cursor-pointer' />
-                        <Image src={facebook} alt='img-1' className='w-7 h-auto object-contain cursor-pointer' />
-                        <Image src={whatsapp} alt='img-1' className='w-7 h-auto object-contain cursor-pointer' />
+                        <Image src={twitter} alt='img-1' className='w-7 h-auto object-contain cursor-pointer' ref={refs.twitter} />
+                        <Image src={linkedin} alt='img-1' className='w-7 h-auto object-contain cursor-pointer' ref={refs.linkedin} />
+                        <Image src={facebook} alt='img-1' className='w-7 h-auto object-contain cursor-pointer' ref={refs.facebook} />
+                        <Image src={whatsapp} alt='img-1' className='w-7 h-auto object-contain cursor-pointer' ref={refs.whatsapp} />
 
                     </div>
                 </div>
