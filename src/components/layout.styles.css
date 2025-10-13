@@ -1,0 +1,24 @@
+.talk-btn {
+    width: 152;
+    height: 37;
+    padding: 20px 15px;
+    border-radius: 32px;
+    border-width: 2px;
+    border: 2px solid #008B00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.separator {
+    height: 8px;
+    border-left: solid 1px #8C8C8C;
+}
+
+.review-pill {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
