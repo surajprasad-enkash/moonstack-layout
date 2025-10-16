@@ -1,226 +1,315 @@
 .main-bg {
-    background-image: url('../../../public/assets/home-banner-bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 700px;
-    display: flex;
-    padding: 30px;
-    padding-bottom: 0;
-    contain: content;
-    mix-blend-mode: difference;
+  position: relative;
+  height: 700px;
+  display: flex;
+  padding: 30px;
+  padding-bottom: 0;
+  overflow: hidden;
+  contain: content;
 }
 
+
+.main-bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2; 
+}
+
+
+.main-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #020b05;
+  opacity: 0.8; 
+  z-index: -1;
+}
+
+.seo-bg {
+  background-image: url("../../../public/assets/seo-banner-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  padding-top: 30px;
+  contain: content;
+  mix-blend-mode: difference;
+}
 .bg-checked {
-    background-image: url('../../../public/assets/home-banner-bg-2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50%;
-    display: flex;
-    padding: 30px;
+  background-image: url("../../../public/assets/home-banner-bg-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50%;
+  display: flex;
+  padding: 30px;
+}
+.backend-bg {
+  background-image: url("../../../public/assets/backend-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  padding-top: 80px;
+  contain: content;
+  mix-blend-mode: difference;
+}
+.backend-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #062316;
+  opacity: 0.2; 
+  z-index: -1;
 }
 
 .hand-image {
-    position: absolute;
-    height: 80%;
-    width: auto;
-    bottom: 0 !important;
-    right: 14%;
+  position: absolute;
+  height: 80%;
+  width: auto;
+  bottom: 0 !important;
+  right: 14%;
 }
 
 .solutions-bg {
-    background-image: url('../../../public/assets/wave-bg.png');
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 90%;
-    display: flex;
-    padding: 50px;
+  background-image: url("../../../public/assets/wave-bg.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 90%;
+  display: flex;
+  padding: 50px;
 }
 
 .right-gradient-bdr {
-    border-width: 2px;
-    border-style: solid;
-    border-left: 0;
-    border-image: linear-gradient(rgba(0, 0, 0, 0), green, rgba(0, 0, 0, 0)) 0 100%;
+  border-width: 2px;
+  border-style: solid;
+  border-left: 0;
+  border-image: linear-gradient(rgba(0, 0, 0, 0), green, rgba(0, 0, 0, 0)) 0
+    100%;
 }
 
 .bottom-gradient-bdr {
-    border-bottom: 3px solid;
-    border-top: 3px solid;
-    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), green, rgba(0, 0, 0, 0));
-    border-image-slice: 1;
+  border-bottom: 3px solid;
+  border-top: 3px solid;
+  border-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    green,
+    rgba(0, 0, 0, 0)
+  );
+  border-image-slice: 1;
 }
 
+.feature-card-gradient-bdr {
+  border: 1px #083c1a;
+  border-style: solid;
+}
+
+.seo-banner-gradient {
+  background: radial-gradient(
+    56.63% 56.63% at 50% 43.37%,
+    #00dd4d 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  z-index: 0;
+  bottom: 100px;
+  border-radius: 50%;
+}
+.services-card-gradient {
+  border-bottom: 1px solid #23a923;
+  border-style: solid;
+  background: linear-gradient(180deg, rgba(24, 127, 60, 0) 0%, #03170a 100%);
+}
+
+.utilize-bg {
+  background: radial-gradient(
+      99.15% 99.15% at 50.87% 0.85%,
+      #0f592a 0%,
+      #000000 46.24%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
 #card-1 {
-    --index: 1;
+  --index: 1;
 }
 
 #card-2 {
-    --index: 2;
+  --index: 2;
 }
 
 #card-3 {
-    --index: 3;
+  --index: 3;
 }
 
 #card-4 {
-    --index: 4;
+  --index: 4;
 }
 
 .card {
-    position: sticky;
-    top: 0;
-    padding-top: calc(var(--index) * 1em);
+  position: sticky;
+  top: 20px;
+  padding-top: calc(var(--index) * 1em);
 }
 
 .text-outline-green {
-    -webkit-text-stroke: 2px #2AFF74;
-    text-stroke: 2px white;
+  -webkit-text-stroke: 2px #2aff74;
+  text-stroke: 2px white;
 }
 
 .arc {
-    width: 500px;
-    height: 500px;
-    border: 6px solid #43D943;
-    border-bottom: 0;
-    border-radius: 100%;
+  width: 500px;
+  height: 500px;
+  border: 6px solid #43d943;
+  border-bottom: 0;
+  border-radius: 100%;
 }
 
 .center-slick .slick-slide {
-    justify-content: center !important;
-    display: grid !important;
-    height: 600px;
-    align-items: flex-end;
+  justify-content: center !important;
+  display: grid !important;
+  height: 600px;
+  align-items: flex-end;
 }
 
 .sticky-cursor {
-    width: 10px;
-    height: 10px;
-    background-color: #00DD4D;
-    border-radius: 50px;
-    position: fixed;
-    pointer-events: none;
-    mix-blend-mode: difference;
-    color: green !important;
-    /* mix-blend-mode: exclusion; */
+  width: 10px;
+  height: 10px;
+  background-color: #00dd4d;
+  border-radius: 50px;
+  position: fixed;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  color: green !important;
+  /* mix-blend-mode: exclusion; */
 }
 
 .hover-white-text:hover {
-    color: #000 !important;
-    z-index: 999;
-    /* position: relative; */
+  color: #00ea52;
+  border-bottom: 2px solid;
+  border: 2px solid #00ea52 ;
+  border-top: 0px;
+  border-left: 0;
+  border-right: 0px;
+  border-radius: 20px;
 }
 
 .glow-on-hover {
-    width: 220px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
+  width: 220px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
 }
 
 .glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #000);
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+  content: "";
+  background: linear-gradient(45deg, #ff0000, #000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
 }
 
 .glow-on-hover:active {
-    color: #000
+  color: #000;
 }
 
 .glow-on-hover:active:after {
-    background: transparent;
+  background: transparent;
 }
 
 .glow-on-hover:hover:before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 @keyframes glowing {
-    0% {
-        background-position: 0 0;
-    }
+  0% {
+    background-position: 0 0;
+  }
 
-    50% {
-        background-position: 400% 0;
-    }
+  50% {
+    background-position: 400% 0;
+  }
 
-    100% {
-        background-position: 0 0;
-    }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .rotating-btn button {
-    border: 3px solid transparent;
-    cursor: pointer;
-    background: linear-gradient(black, black) padding-box,
-        conic-gradient(from var(--angle, 0),
-            transparent,
-            green 90%) border-box;
+  border: 3px solid transparent;
+  cursor: pointer;
+  background: linear-gradient(black, black) padding-box,
+    conic-gradient(from var(--angle, 0), transparent, green 90%) border-box;
 }
 
 @supports (animation-timeline: works) {
-    @scroll-timeline cards-element-scrolls-in-body {
-        source: selector(body);
-        scroll-offsets:
-            selector(#cards) start 1,
-            selector(#cards) start 0;
-        start: selector(#cards) start 1;
-        end: selector(#cards) start 0;
-        time-range: 4s;
+  @scroll-timeline cards-element-scrolls-in-body {
+    source: selector(body);
+    scroll-offsets: selector(#cards) start 1, selector(#cards) start 0;
+    start: selector(#cards) start 1;
+    end: selector(#cards) start 0;
+    time-range: 4s;
+  }
+
+  .card {
+    --index0: calc(var(--index) - 1);
+    --reverse-index: calc(4 - var(--index0));
+    --reverse-index0: calc(var(--reverse-index) - 1);
+  }
+
+  .card__content {
+    transform-origin: 50% 0%;
+    will-change: transform;
+
+    --duration: calc(var(--reverse-index0) * 1s);
+    --delay: calc(var(--index0) * 1s);
+
+    animation: var(--duration) linear scale var(--delay) forwards;
+    animation-timeline: cards-element-scrolls-in-body;
+  }
+
+  @keyframes scale {
+    to {
+      transform: scale(calc(1.1 - calc(0.1 * var(--reverse-index))));
     }
-
-    .card {
-        --index0: calc(var(--index) - 1);
-        --reverse-index: calc(4 - var(--index0));
-        --reverse-index0: calc(var(--reverse-index) - 1);
-    }
-
-    .card__content {
-        transform-origin: 50% 0%;
-        will-change: transform;
-
-        --duration: calc(var(--reverse-index0) * 1s);
-        --delay: calc(var(--index0) * 1s);
-
-        animation: var(--duration) linear scale var(--delay) forwards;
-        animation-timeline: cards-element-scrolls-in-body;
-    }
-
-    @keyframes scale {
-        to {
-            transform:
-                scale(calc(1.1 - calc(0.1 * var(--reverse-index))));
-        }
-    }
+  }
 }

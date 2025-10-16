@@ -67,7 +67,7 @@ export default function Home() {
   return (
     <div>
       <StickyCursor stickyElements={stickyRefs} />
-      <Layout refs={headerRefs} footerRefs={footerRefs}>
+      <Layout>
         <HomepageBanner refs={homepageRefs} />
         <Marquee />
         <SolutionsComponent />
