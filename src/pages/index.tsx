@@ -12,48 +12,46 @@ import ContactUs from "@/components/Homepage/ContactUs";
 import CaseStudies from "@/components/Homepage/CaseStudies";
 import StickyCursor from "@/components/StickyCursor/StickyCursor";
 import { useMultipleRefs } from "@/hooks/useMultipleRefs";
+import { accordionData, infoBoxes } from "./data";
 
 export default function Home() {
   const headerRefs = useMultipleRefs([
-    'home',
-    'service',
-    'aboutUs',
-    'contactUs',
-    'career',
-    'talkBtn'
+    "home",
+    "service",
+    "aboutUs",
+    "contactUs",
+    "career",
+    "talkBtn",
   ]);
 
   const footerRefs = useMultipleRefs([
-    'footerCareer',
-    'terms',
-    'privacy',
-    'blog',
-    'footerContactUs',
-    'twitter',
-    'facebook',
-    'whatsapp',
-    'linkedin'
+    "footerCareer",
+    "terms",
+    "privacy",
+    "blog",
+    "footerContactUs",
+    "twitter",
+    "facebook",
+    "whatsapp",
+    "linkedin",
   ]);
 
-  const homepageRefs = useMultipleRefs([
-    'getStartedBtnRef',
-    'learnMoreBtnRef'
-  ]);
+  const homepageRefs = useMultipleRefs(["getStartedBtnRef", "learnMoreBtnRef"]);
 
   const insightsRefs = useMultipleRefs([
-    'exploreNowBtnRef1',
-    'exploreNowBtnRef2',
-    'exploreNowBtnRef3',
-    'aboutUsBtnRef'
+    "exploreNowBtnRef1",
+    "exploreNowBtnRef2",
+    "exploreNowBtnRef3",
+    "aboutUsBtnRef",
   ]);
 
   const faqRefs = useMultipleRefs([
-    'callNowBtnRef1',
-    'callNowBtnRef2',
-    'callNowBtnRef3'
+    "callNowBtnRef1",
+    "callNowBtnRef2",
+    "callNowBtnRef3",
   ]);
 
-  const contactUsRefs = useMultipleRefs(['sendBtnRef']);
+  const contactUsRefs = useMultipleRefs(["sendBtnRef"]);
 
   const stickyRefs = [
     ...Object.values(homepageRefs),
@@ -61,8 +59,8 @@ export default function Home() {
     ...Object.values(faqRefs),
     ...Object.values(contactUsRefs),
     ...Object.values(headerRefs),
-    ...Object.values(footerRefs)
-  ]
+    ...Object.values(footerRefs),
+  ];
 
   return (
     <div>
@@ -76,7 +74,16 @@ export default function Home() {
         <TechnologyComponent />
         <ProvenProcess />
         <InsightsIdeas refs={insightsRefs} />
-        <FAQ refs={faqRefs} />
+        <FAQ
+          accordionData={accordionData}
+          infoBoxes={infoBoxes}
+          tagText="Our FAQs"
+          heading={{
+            text: "Wondering whether Moonstack is the right fit for your business or not? Here are the most important client queries answered from our side.",
+            highlightText: "Questions",
+          }}
+          showInfoBoxes={true}
+        />
         <ContactUs refs={contactUsRefs} />
       </Layout>
     </div>

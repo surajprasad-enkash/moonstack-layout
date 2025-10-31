@@ -20,22 +20,27 @@ interface SolutionsProps {
   featuresData: FeatureItem[];
   topImage?: StaticImageData | string;
   bottomImage?: StaticImageData | string;
+  titleClassName?: string;
+  cardClassName?: string;
 }
 
 const SolutionsComponent: React.FC<SolutionsProps> = ({
-  buttonText = "Why Choose Us",
+  buttonText,
   buttonVariant = "small",
   headingText,
   headingClassName = "",
   subHeadingText = "",
-  subHeadingClassName = "",
+  subHeadingClassName = "md:text-left",
   featuresData,
   topImage,
+  titleClassName = "md:flex-row",
   bottomImage,
+  cardClassName,
 }) => {
   return (
-    <div className="bg-black text-white px-4 sm:px-10 py-12 md:py-20 relative container mx-auto">
-   
+    <div
+      className={`bg-black text-white px-4 sm:px-10 py-12 md:py-20 relative container mx-auto ${titleClassName}`}
+    >
       {topImage && (
         <div className="absolute right-0 top-[10%]">
           <Image src={topImage} alt="top decoration" />
@@ -43,7 +48,7 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
       )}
 
       {/* Heading Section */}
-      <div className="flex flex-col md:flex-row items-center justify-between pb-12 md:pb-20">
+      <div className="flex flex-col  items-center justify-between pb-12 md:pb-10">
         <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[40%] poppins-bold text-center md:text-left font-bold mb-6 md:mb-0">
           {buttonText && (
             <CustomButton text={buttonText} variant={buttonVariant} />
@@ -57,10 +62,10 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
         </div>
 
         {subHeadingText && (
-          <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[50%] text-center md:text-left leading-[200%]">
+          <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[50%] text-center leading-[200%]">
             <Heading
               headingTag="p"
-              className={`py-6 ${subHeadingClassName}`}
+              className={`pt-6 ${subHeadingClassName}`}
               content={[{ text: subHeadingText, color: "text-gray-100" }]}
             />
           </div>
@@ -75,6 +80,7 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
             imgSrc={feature.imgSrc}
             title={feature.title}
             description={feature.description}
+            className={`${cardClassName}`}
           />
         ))}
       </div>

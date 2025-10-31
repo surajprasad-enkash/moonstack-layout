@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { Colors } from "@/colors/colors";
-import {
-  Box,
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-} from "@mui/material";
+import { Box, Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import Image from "next/image";
 import { styled } from "@mui/material/styles";
 
@@ -13,23 +8,35 @@ import open from "../../../public/assets/acc-open.svg";
 import close from "../../../public/assets/acc-close.svg";
 import info from "../../../public/assets/info.svg";
 
-interface IAccordionList {
+export interface IAccordionItem {
   title: string;
   desc: string;
 }
 
-interface IBannerRefs {
-  callNowBtnRef1?: React.RefObject<HTMLDivElement>;
-  callNowBtnRef2?: React.RefObject<HTMLDivElement>;
-  callNowBtnRef3?: React.RefObject<HTMLDivElement>;
+export interface IInfoBox {
+  title: string;
+  content: string;
+  buttonText: string;
+  ref?: React.RefObject<HTMLButtonElement>;
 }
 
 interface FAQProps {
-  refs?: IBannerRefs;
-  showInfoBoxes?: boolean; // Optional prop to show/hide info boxes
+  accordionData: IAccordionItem[];
+  infoBoxes?: IInfoBox[];
+  tagText?: string;
+  heading?: { text: string; highlightText?: string };
+  className?: string;
+  showInfoBoxes?: boolean;
 }
 
-const FAQ: React.FC<FAQProps> = ({ refs, showInfoBoxes = true }) => {
+const FAQ: React.FC<FAQProps> = ({
+  accordionData,
+  infoBoxes = [],
+  tagText = "Frequently Asked",
+  heading,
+  className = "",
+  showInfoBoxes = true,
+}) => {
   const [activeAccordion, setActiveAccordion] = useState(0);
 
   const AccordionStyle = styled(Box)(({ theme }) => ({
@@ -46,33 +53,6 @@ const FAQ: React.FC<FAQProps> = ({ refs, showInfoBoxes = true }) => {
     },
   }));
 
-  const accordionList: IAccordionList[] = [
-    {
-      title: "Do you provide post-launch support and maintenance?",
-      desc: "Education is the key to success in life. It helps people gain knowledge, develop skills, and build confidence.",
-    },
-    {
-      title: "Do you provide post-launch support and maintenance?",
-      desc: "Education is the key to success in life. It helps people gain knowledge, develop skills, and build confidence.",
-    },
-    {
-      title: "Do you provide post-launch support and maintenance?",
-      desc: "Education is the key to success in life. It helps people gain knowledge, develop skills, and build confidence.",
-    },
-    {
-      title: "Do you provide post-launch support and maintenance?",
-      desc: "Education is the key to success in life. It helps people gain knowledge, develop skills, and build confidence.",
-    },
-    {
-      title: "Do you provide post-launch support and maintenance?",
-      desc: "Education is the key to success in life. It helps people gain knowledge, develop skills, and build confidence.",
-    },
-    {
-      title: "Do you provide post-launch support and maintenance?",
-      desc: "Education is the key to success in life. It helps people gain knowledge, develop skills, and build confidence.",
-    },
-  ];
-
   const handleAccordionChange = (index: number) => {
     setActiveAccordion(activeAccordion === index ? -1 : index);
   };
@@ -82,31 +62,32 @@ const FAQ: React.FC<FAQProps> = ({ refs, showInfoBoxes = true }) => {
   }
 
   return (
-    <div className="bg-black p-15 text-white container mx-auto">
+    <div className={`bg-black p-6 md:p-15 text-white container mx-auto ${className}`}>
       {/* Header */}
-      <div className="flex flex-col md:flex-row justify-between mix-blend-difference">
+      <div className="flex flex-col md:flex-row justify-between">
         <div className="w-full md:w-[35%] lg:w-[35%] xl:w-[35%] sticky top-0">
-          <div className="sticky top-0 pt-10">
+          <div className="pt-10">
             <div className="poppins-semibold font-40">
-              Frequently Asked
-              <span className="bg-gradient-to-r from-[#25E8B1] via-[#60F90D] to-[#60F90D] text-transparent bg-clip-text">
-                {" "}
-                Questions
-              </span>
+              {tagText}{" "}
+              {heading?.highlightText ? (
+                <span className="bg-gradient-to-r from-[#25E8B1] via-[#60F90D] to-[#60F90D] text-transparent bg-clip-text">
+                  {heading.highlightText}
+                </span>
+              ) : null}
             </div>
-            <div className="poppins-medium leading-[200%] mt-4 w-2/3 font-16">
-              We focus on scalability, security, and user-centric design,
-              ensuring that every project is future-ready and tailored to
-              client needs.
-            </div>
+            {heading?.text && (
+              <div className="poppins-medium leading-[200%] mt-4 w-2/3 font-16">
+                {heading.text}
+              </div>
+            )}
           </div>
         </div>
 
         {/* Accordion */}
-        <div className="w-full md:w-[60%] lg:w-[60%] xl:w-[60%]">
+        <div className="w-full md:w-[60%] lg:w-[60%] xl:w-[60%] mt-6 md:mt-0">
           <AccordionStyle>
             <Box className="accordion-block">
-              {accordionList.map((items, i) => (
+              {accordionData.map((item, i) => (
                 <Accordion
                   key={i}
                   expanded={activeAccordion === i}
@@ -115,11 +96,7 @@ const FAQ: React.FC<FAQProps> = ({ refs, showInfoBoxes = true }) => {
                   <AccordionSummary
                     expandIcon={
                       activeAccordion === i ? (
-                        <Image
-                          src={open}
-                          alt=""
-                          className="w-10 h-auto rotate-180"
-                        />
+                        <Image src={open} alt="" className="w-10 h-auto rotate-180" />
                       ) : (
                         <Image src={close} alt="" className="w-10 h-auto" />
                       )
@@ -128,13 +105,11 @@ const FAQ: React.FC<FAQProps> = ({ refs, showInfoBoxes = true }) => {
                     id={`panel${i}-header`}
                     className="poppins-semibold font-16"
                   >
-                    <span className="pr-4 font-28">
-                      {formatNumberWithLeadingZero(i + 1)}
-                    </span>
-                    <span className="mt-2">{items.title}</span>
+                    <span className="pr-4 font-28">{formatNumberWithLeadingZero(i + 1)}</span>
+                    <span className="mt-2">{item.title}</span>
                   </AccordionSummary>
                   <AccordionDetails className="poppins-medium leading-[200%] font-14">
-                    {items.desc}
+                    {item.desc}
                   </AccordionDetails>
                 </Accordion>
               ))}
@@ -144,65 +119,29 @@ const FAQ: React.FC<FAQProps> = ({ refs, showInfoBoxes = true }) => {
       </div>
 
       {/* Optional Info Boxes */}
-      {showInfoBoxes && (
-        <div className="pt-20 flex flex-col md:flex-row justify-between gap-y-8 mix-blend-difference">
-          {/* Contact Box */}
-          <div className="border-1 border-solid border-[#73FF6126] bg-[#73FF611F] p-5 w-full md:w-[30%] rounded-xl flex">
-            <div>
-              <Image src={info} alt="" className="w-8 h-auto" />
-            </div>
-            <div className="grid w-full md:w-[90%] pl-4">
-              <div className="poppins-semibold font-16">Contact Us</div>
-              <div className="poppins-medium mt-2 font-14">+91 9988776655</div>
-              <button
-                className="poppins-semibold py-2 mt-8 px-8 rounded-3xl border-1 border-green-500 border-solid font-14"
-                style={{ backgroundColor: Colors.brand950 }}
-                ref={refs?.callNowBtnRef1}
-              >
-                Call Now
-              </button>
-            </div>
-          </div>
-
-          {/* Email Box */}
-          <div className="border-1 border-solid border-[#73FF6126] bg-[#73FF611F] p-5 w-full md:w-[30%] rounded-xl flex">
-            <div>
-              <Image src={info} alt="" className="w-8 h-auto" />
-            </div>
-            <div className="grid w-full md:w-[90%] pl-4">
-              <div className="poppins-semibold font-16">Email Address</div>
-              <div className="poppins-medium mt-2 font-14">
-                randomname123@gmail.com
+      {showInfoBoxes && infoBoxes.length > 0 && (
+        <div className="pt-20 flex flex-col md:flex-row justify-between gap-y-8">
+          {infoBoxes.map((box, index) => (
+            <div
+              key={index}
+              className="border-1 border-solid border-[#73FF6126] bg-[#73FF611F] p-5 w-full md:w-[30%] rounded-xl flex"
+            >
+              <div>
+                <Image src={info} alt="" className="w-8 h-auto" />
               </div>
-              <button
-                className="poppins-semibold py-2 mt-8 px-8 rounded-3xl border-1 border-green-500 border-solid font-14"
-                style={{ backgroundColor: Colors.brand950 }}
-                ref={refs?.callNowBtnRef2}
-              >
-                Call Now
-              </button>
-            </div>
-          </div>
-
-          {/* Location Box */}
-          <div className="border-1 border-solid border-[#73FF6126] bg-[#73FF611F] p-5 w-full md:w-[30%] rounded-xl flex">
-            <div>
-              <Image src={info} alt="" className="w-8 h-auto" />
-            </div>
-            <div className="grid w-full md:w-[90%] pl-4">
-              <div className="poppins-semibold font-16">Location</div>
-              <div className="poppins-medium mt-2 font-14">
-                123 Demo Street, Springfield, USA
+              <div className="grid w-full md:w-[90%] pl-4">
+                <div className="poppins-semibold font-16">{box.title}</div>
+                <div className="poppins-medium mt-2 font-14">{box.content}</div>
+                <button
+                  className="poppins-semibold py-2 mt-8 px-8 rounded-3xl border-1 border-green-500 border-solid font-14"
+                  style={{ backgroundColor: Colors.brand950 }}
+                  ref={box.ref}
+                >
+                  {box.buttonText}
+                </button>
               </div>
-              <button
-                className="poppins-semibold py-2 mt-8 px-8 rounded-3xl border-1 border-green-500 border-solid font-14"
-                style={{ backgroundColor: Colors.brand950 }}
-                ref={refs?.callNowBtnRef3}
-              >
-                Call Now
-              </button>
             </div>
-          </div>
+          ))}
         </div>
       )}
     </div>

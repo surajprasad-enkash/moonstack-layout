@@ -12,6 +12,7 @@ interface BenifitsCardProps {
   bgColor?: string;
   buttonLabel?: string;
   buttonLink?: string;
+  cardTag?: boolean;
 }
 
 const BenifitsCard: React.FC<BenifitsCardProps> = ({
@@ -23,15 +24,25 @@ const BenifitsCard: React.FC<BenifitsCardProps> = ({
   bgColor = "from-transparent to-transparent",
   buttonLabel,
   buttonLink,
+  cardTag,
+  
 }) => {
   return (
     <div
-      className={`w-full p-10 text-white bg-gradient-to-r ${bgColor} hover:from-transparent hover:to-[#0D320D] transition duration-400 rounded-2xl ${className}`}
+      className={`w-full relative  p-10 bg-gradient-to-r ${bgColor} hover:from-transparent hover:to-[#0D320D] transition duration-400 rounded-2xl ${className}`}
     >
-      <Image src={imgSrc} alt={alt} className="w-6" />
+      {cardTag && (
+        <div
+          className="w-[134px] h-[59px] rounded-t-[20px] opacity-100 absolute left-1/2 top-1.5 -translate-x-1/2 -translate-y-1/2"
+          style={{
+            background: "linear-gradient(180deg, #71FFA3 0%, #031C0C 52.85%)",
+          }}
+        ></div>
+      )}
+      <Image src={imgSrc} alt={alt} className="w-10" />
 
-      <div className="mt-8 poppins-semibold font-18">{title}</div>
-      <div className="mt-3 poppins-medium font-14 leading-[200%]">
+      <div className="mt-8 poppins-semibold font-18 text-white ">{title}</div>
+      <div className="mt-3 poppins-medium font-14 leading-[200%] text-white ">
         {description}
       </div>
 
@@ -40,7 +51,7 @@ const BenifitsCard: React.FC<BenifitsCardProps> = ({
           {buttonLink ? (
             <Link
               href={buttonLink}
-              className="group flex items-center gap-2 bg-brand200 text-white font-semibold rounded-lg  hover:bg-brand400 transition"
+              className="group flex items-center gap-2 bg-brand200 text-Color.primary-700 font-semibold rounded-lg  hover:bg-brand400 transition"
             >
               <span className="transition group-hover:underline">
                 {buttonLabel}
@@ -53,7 +64,7 @@ const BenifitsCard: React.FC<BenifitsCardProps> = ({
               />
             </Link>
           ) : (
-            <button className="bg-brand200 text-white font-semibold rounded-lg hover:bg-brand400 transition">
+            <button className="bg-brand200 text-Color.primary-700 font-semibold rounded-lg hover:bg-brand400 transition">
               {buttonLabel} <Image src={arrowUp} alt={arrowUp} width={15} />
             </button>
           )}

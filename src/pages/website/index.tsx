@@ -6,7 +6,13 @@ import SolutionsComponent from "@/components/Seo/SolutionsComponent";
 import { useMultipleRefs } from "@/hooks/useMultipleRefs";
 import google from "../../../public/assets/googleIcon.svg";
 import googleBottom from "../../../public/assets/googleIconBottom.svg";
-import { featuresData, slides, stepperData, utilisArr } from "./data";
+import {
+  accordionData,
+  featuresData,
+  slides,
+  stepperData,
+  utilisArr,
+} from "./data";
 import vector from "../../../public/assets/seo-services-vector.webp";
 import { servicesArr } from "@/pages/seo/data";
 import React from "react";
@@ -79,7 +85,14 @@ const Seo = () => {
           slidesToShow={5}
           autoplaySpeed={2000}
         />
-        <FAQ refs={faqRefs} showInfoBoxes={false} />
+        <FAQ
+          accordionData={accordionData}
+          tagText="Our FAQs"
+          heading={{
+            text: "Everything you need to know",
+            highlightText: "Questions",
+          }}
+        />
       </Layout>
     </>
   );

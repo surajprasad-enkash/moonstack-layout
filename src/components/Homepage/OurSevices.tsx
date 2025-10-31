@@ -15,27 +15,27 @@ const OurServices = () => {
     {
       image: lock,
       title: "Web Designing",
-      desc: "Earney is a financial solution to energize and empower Small and Medium.",
+      desc: "Choose Moonstack for responsive, functional, and clean web design with an intuitive UI/UX.",
     },
     {
       image: lock,
       title: "Mobile Development",
-      desc: "Earney is a financial solution to energize and empower Small and Medium.",
+      desc: "Build Android, web, and iOS apps that help your business scale with Moonstack.",
     },
     {
       image: lock,
       title: "Cloud Service",
-      desc: "Earney is a financial solution to energize and empower Small and Medium.",
+      desc: "Build Android, web, and iOS apps that help your business scale with Moonstack.",
     },
     {
       image: lock,
       title: "Frontend Development",
-      desc: "Earney is a financial solution to energize and empower Small and Medium.",
+      desc: "No matter where you go, take your business with you with Moonstack’s cloud services.",
     },
     {
       image: lock,
       title: "Backend Development",
-      desc: "Earney is a financial solution to energize and empower Small and Medium.",
+      desc: "Get secure and scalable backend development with Moonstack, built using clean code.",
     },
   ];
   return (
@@ -48,9 +48,8 @@ const OurServices = () => {
               Sevices
             </div>
             <div className="mt-6 poppins-medium leading-[200%] font-16">
-              Earney is a financial solution to energize and empower Small and
-              Medium Enterprises (SMEs) and freelancers by providing them with a
-              seamless and efficient financial platform
+              Moonstack offers completely transparent and highly secure web and
+              app development solutions. Here’s a look at all of our services.
             </div>
           </div>
           {servicesArr.map((li) => (

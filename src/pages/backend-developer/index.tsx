@@ -4,12 +4,20 @@ import FAQ from "@/components/Homepage/FAQ";
 import Layout from "@/components/Layout";
 import { useMultipleRefs } from "@/hooks/useMultipleRefs";
 import React from "react";
-import { featuresData, servicesArr, slides, utilisArr } from "./data";
+import {
+  accordionData,
+  featuresData,
+  infoData,
+  processSteps,
+  servicesArr,
+  slides,
+  utilisArr,
+} from "./data";
 import ImportanceComponent from "@/components/BackendDeveloper/ImportanceComponent";
-import OurServices from "@/components/BackendDeveloper/OurSevices";
 import Stepper from "@/components/StepperComponent/StepperComponent";
 import ReusableUtilizeSection from "@/components/Seo/UtilizeComponent";
 import ReusableSliderSection from "@/components/Seo/SliderComponent";
+import OurServices from "@/components/OurSevices";
 
 const BackendDeveloper = () => {
   //
@@ -29,7 +37,9 @@ const BackendDeveloper = () => {
         ]}
         subHeadingText="If you are looking for a perfect laptop picture on Freepik for your design project, the best way is to use specific and descriptive search keywords that match the style and purpose you want. For example, instead of just typing laptop, you can search for “modern laptop mockup,."
         featuresData={featuresData}
+        infoData={infoData}
       />
+
       <ImportanceComponent />
       <OurServices
         buttonText="Our Services"
@@ -40,7 +50,20 @@ const BackendDeveloper = () => {
         ]}
         servicesData={servicesArr}
       />
-      <Stepper />
+      <Stepper
+        steps={processSteps}
+        headingLines={[{ text: "Our Process", color: "block" }]}
+        subHeadingLines={[
+          {
+            text: "At Moonstack, our process is focused on transparency, confidentiality, and a personalised working experience for our clients.",
+            color: "block",
+          },
+          {
+            text: "Here’s a detailed overview of our working process for our mobile app development services in India",
+            color: "block",
+          },
+        ]}
+      />
       <ReusableUtilizeSection
         headingLines={[{ text: "Tools We Utilized For Excellence" }]}
         subHeadingLines={[
@@ -65,7 +88,14 @@ const BackendDeveloper = () => {
         slidesToShow={5}
         autoplaySpeed={2000}
       />
-      <FAQ refs={faqRefs} showInfoBoxes={false} />
+      <FAQ
+        accordionData={accordionData}
+        tagText="Our FAQs"
+        heading={{
+          text: "Everything you need to know",
+          highlightText: "Questions",
+        }}
+      />
     </Layout>
   );
 };

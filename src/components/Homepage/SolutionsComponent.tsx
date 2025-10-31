@@ -26,17 +26,16 @@ const SolutionsComponent = () => {
         <div className="flex flex-col md:flex-row items-center justify-between p-10">
           <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[40%] poppins-bold text-center md:text-left font-38 mb-6 md:mb-0">
             <span className="bg-gradient-to-r from-[#25E8B1] to-[#60F90D] text-transparent bg-clip-text">
-              Moonstack
+              Power Your Business With
             </span>{" "}
-            for Future-Ready Solutions
+            The Moonstack Advantage
           </div>
-          {/* <div className="w-full md:w-1/5 lg:w-1/5 xl:w-[10%] flex items-center justify-center md:justify-end mb-6 md:mb-0">
-                        <Image src={subtract} alt="" className="w-8 h-auto" />
-                    </div> */}
+
           <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[50%] solutions-bg poppins-medium font-16 text-center md:text-left leading-[200%]">
-            Earney is a financial solution to energize and empower Small and
-            Medium Enterprises (SMEs) and freelancers by providing them with a
-            seamless and efficient financial platform
+            We offer tailored end-to-end web and app solutions for businesses in
+            India. Whether you’re a startup interested in developing your first
+            product or an MNC interested in building an enterprise app, we offer
+            completely custom services personalised to your requirements.
           </div>
         </div>
 
@@ -44,11 +43,10 @@ const SolutionsComponent = () => {
           <div className="w-full md:w-1/4 lg:w-1/4 xl:w-1/2 p-10 pt-4 right-gradient-bdr bg-gradient-to-r from-transparent to-transparent hover:from-transparent hover:to-[#0D320D] transition duration-400 rounded-2xl">
             <Image src={sol1} alt="" className="w-9" />
             <div className="mt-10 poppins-semibold font-18">
-              Client-Centric Approach
+              Complete Confidentiality
             </div>
             <div className="mt-4 poppins-medium font-14 leading-[200%]">
-              Earney is a financial solution to energize and empower Small and
-              Medium Enterprises.
+              We sign NDAs to ensure complete confidentiality for our clients.
             </div>
           </div>
           <div className="w-full md:w-1/4 lg:w-1/4 xl:w-1/2 p-10 pt-4 right-gradient-bdr bg-gradient-to-r from-transparent to-transparent hover:from-transparent hover:to-[#0D320D] transition duration-400 rounded-2xl">
@@ -57,8 +55,8 @@ const SolutionsComponent = () => {
               Transparent Process
             </div>
             <div className="mt-4 poppins-medium font-14 leading-[200%]">
-              Earney is a financial solution to energize and empower Small and
-              Medium Enterprises.
+              You’re always a part of the progress when you partner with
+              Moonstack.
             </div>
           </div>
           <div className="w-full md:w-1/4 lg:w-1/4 xl:w-1/2 p-10 pt-4 right-gradient-bdr bg-gradient-to-r from-transparent to-transparent hover:from-transparent hover:to-[#0D320D] transition duration-400 rounded-2xl">
@@ -67,21 +65,21 @@ const SolutionsComponent = () => {
               Client-Centric Approach
             </div>
             <div className="mt-4 poppins-medium font-14 leading-[200%]">
-              Earney is a financial solution to energize and empower Small and
-              Medium Enterprises.
+              We understand your needs and deliver bespoke results every time.
             </div>
           </div>
           <div className="w-full md:w-1/4 lg:w-1/4 xl:w-1/2 p-10 pt-4 right-gradient-bdr bg-gradient-to-r from-transparent to-transparent hover:from-transparent hover:to-[#0D320D] transition duration-400 rounded-2xl">
             <Image src={sol4} alt="" className="w-9" />
             <div className="mt-10 poppins-semibold font-18">
-              Save More Money
+              Save Money With Moonstack
             </div>
             <div className="mt-4 poppins-medium font-14 leading-[200%]">
-              Earney is a financial solution to energize and empower Small and
-              Medium Enterprises.
+              Bundle our web and app development services to save money on your
+              projects.
             </div>
           </div>
         </div>
+
         <div className="flex flex-col md:flex-row gap-y-6 p-15 pt-0 md:pt-20 lg:pt-20 xl:pt-20">
           <div className="w-full md:w-1/2 lg:w-1/2 x:w-1/2">
             <Image
@@ -92,9 +90,10 @@ const SolutionsComponent = () => {
           </div>
           <div className="w-full md:w-1/2 lg:w-1/2 x:w-1/2">
             <div className="poppins-medium leading-[200%] h-1/2 font-16 mt-10 md:mt-0 lg:mt-0 xl:mt-0">
-              Earney is a financial solution to energize and empower Small and
-              Medium Enterprises (SMEs) and freelancers by providing them with a
-              seamless and efficient financial platform
+              As a premier web and app development agency in India, Moonstack
+              has been a leading market force for the last 15+ years. We have
+              completed 450+ projects for businesses of all sizes startups to
+              enterprises, and we’re here to help you too.
             </div>
             <div
               ref={ref}

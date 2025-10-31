@@ -1,103 +1,118 @@
 import React, { useRef, useEffect, useState } from "react";
 import Heading from "../Heading/Heading";
-import CustomButton from "../CommanButton/CommanButton";
+import Tag from "../Tag/Tag";
+import { motion } from "framer-motion";
 
 type Step = {
   title: string;
   description: string;
 };
 
-const steps: Step[] = [
-  {
-    title: "Design system",
-    description:
-      "At Moonstack, we believe in building technology that empowers businesses to grow and adapt in a fast-changing digital world.",
-  },
-  {
-    title: "Development",
-    description:
-      "We create scalable, maintainable, and efficient solutions that drive business growth.",
-  },
-  {
-    title: "Testing",
-    description:
-      "Quality assurance is key — our team ensures that all products meet the highest standards.",
-  },
-  {
-    title: "Launch",
-    description:
-      "We deliver projects on time with ongoing support and continuous improvement.",
-  },
-];
-
-export default function VerticalStepper() {
+interface VerticalStepperProps {
+  steps: Step[];
+  tagText?: string;
+  headingLines: { text: string; color?: string }[];
+  subHeadingLines: { text: string; color?: string }[];
+}
+const VerticalStepper: React.FC<VerticalStepperProps> = ({
+  steps,
+  tagText,
+  headingLines,
+  subHeadingLines,
+}) => {
   const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [scrollProgress, setScrollProgress] = useState(0); // 0–1
   const [activeStep, setActiveStep] = useState(0);
+  const [lineHeight, setLineHeight] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (!containerRef.current) return;
+      if (!containerRef.current || stepRefs.current.length === 0) return;
 
-      const containerTop = containerRef.current.getBoundingClientRect().top;
-      const containerHeight = containerRef.current.offsetHeight;
       const viewportHeight = window.innerHeight;
 
-      // Calculate scroll progress (0 to 1)
-      const progress = Math.min(
-        Math.max((viewportHeight / 2 - containerTop) / containerHeight, 0),
-        1
-      );
-      setScrollProgress(progress);
-
-      // Determine active step
       const offsets = stepRefs.current.map((ref) =>
         ref
-          ? Math.abs(ref.getBoundingClientRect().top - window.innerHeight / 2)
+          ? Math.abs(ref.getBoundingClientRect().top - viewportHeight / 2)
           : Infinity
       );
       const minOffset = Math.min(...offsets);
-      setActiveStep(offsets.indexOf(minOffset));
+      const activeIndex = offsets.indexOf(minOffset);
+      setActiveStep(activeIndex);
+
+      const containerTop = containerRef.current.getBoundingClientRect().top;
+      const activeStepRef = stepRefs.current[activeIndex];
+      if (activeStepRef && containerTop !== null) {
+        const stepRect = activeStepRef.getBoundingClientRect();
+        const circleHeight = 48;
+        const lineHeightPx = stepRect.top + circleHeight / 2 - containerTop;
+        setLineHeight(lineHeightPx);
+      }
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll(); // initial call
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div className="min-h-screen bg-black py-20 justify-center items-start container mx-auto">
-      <div className="rotating-btn text-center">
-        <CustomButton text="Process" variant="rotating" />
-      </div>
+    <div className="min-h-screen bg-black py-12 md:py-20  px-4 md:px-10 justify-center items-start container mx-auto">
+      {/* Tag */}{" "}
+      <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[50%] text-center m-auto">
+        {tagText && (
+          <motion.div
+            className="text-center mb-4"
+            initial={{ opacity: 0, y: 50 }} // start 50px below
+            whileInView={{ opacity: 1, y: 0 }} // slide up
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <Tag text={tagText} className="text-center" />
+          </motion.div>
+        )}
 
-      <Heading
-        headingTag="h2"
-        className="font-bold pt-3 text-white font-36 text-center"
-        content={[
-          { text: "Moonstack ", color: "text-white " },
-          { text: " Process", color: "Colors.brand200" },
-        ]}
-      />
-      <div
-        ref={containerRef}
-        className="relative flex mx-auto pt-12"
-        style={{ width: "900px" }}
-      >
-        {/* Center vertical line */}
+        {/* Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <Heading
+            headingTag="h2"
+            className="font-bold pt-3 text-white font-36 text-center"
+            content={headingLines}
+          />
+        </motion.div>
+
+        {/* Subheading */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <Heading
+            headingTag="p"
+            className="font-bold pt-3 text-white font-14 text-center"
+            content={subHeadingLines}
+          />
+        </motion.div>
+      </div>
+      <div ref={containerRef} className="relative flex mx-auto pt-12">
         <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px z-0">
-          {/* Background line */}
           <div
-            className="absolute h-full w-full border-r-[4px]"
+            className="absolute h-[80%] w-full border-r-[4px]"
             style={{ borderColor: "#003312" }}
           />
-          {/* Fill line with smooth transition */}
+
           <div
-            className="absolute w-full border-r-[4px] transition-all duration-300 ease-out origin-top"
+            className="absolute w-full border-r-[4px] origin-top"
             style={{
               borderColor: "#16a34a",
-              height: `${scrollProgress * 100}%`,
+              height: `${lineHeight}px`,
+              transition: "height 0.8s cubic-bezier(0.77, 0, 0.175, 1)",
+              willChange: "height",
             }}
           />
         </div>
@@ -116,7 +131,7 @@ export default function VerticalStepper() {
                 {/* Left side */}
                 <div
                   className={`w-1/2 flex ${
-                    idx % 2 === 0 ? "justify-start" : "justify-end"
+                    idx % 2 === 0 ? "justify-center" : "justify-center"
                   }`}
                 >
                   {idx % 2 === 0 && (
@@ -170,7 +185,7 @@ export default function VerticalStepper() {
                 {/* Right side */}
                 <div
                   className={`w-1/2 flex ${
-                    idx % 2 === 0 ? "justify-end" : "justify-start"
+                    idx % 2 === 0 ? "justify-end" : "justify-center"
                   }`}
                 >
                   {idx % 2 !== 0 && (
@@ -199,4 +214,5 @@ export default function VerticalStepper() {
       </div>
     </div>
   );
-}
+};
+export default VerticalStepper;

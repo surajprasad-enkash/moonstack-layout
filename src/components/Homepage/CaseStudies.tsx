@@ -111,14 +111,15 @@ const CaseStudies = () => {
       <div className="bg-black text-white pb-15 container mx-auto">
         <div className="flex flex-col md:flex-row justify-between p-15 mix-blend-difference">
           <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%] poppins-semibold font-36">
-            Case Studies That Turn Challenges{" "}
+            Our Services That Power & {""}
             <span className="bg-gradient-to-r from-[#25E8B1] via=[#60F90D] to-[#60F90D] text-transparent bg-clip-text">
-              Into Growth
+              Scale Businesses
             </span>
           </div>
           <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%] poppins-medium leading-[200%] font-16">
-            We focus on scalability, security, and user-centric design, ensuring
-            that every project is future-ready and tailored to client needs.
+            Take a look at some of our highlight projects that have shaped the
+            course of business for our clients and helped them meet their
+            business goals.
           </div>
         </div>
         <div className="pt-20 justify-center flex mix-blend-difference">

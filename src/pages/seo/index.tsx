@@ -5,7 +5,13 @@ import SolutionsComponent from "@/components/Seo/SolutionsComponent";
 import { useMultipleRefs } from "@/hooks/useMultipleRefs";
 import google from "../../../public/assets/googleIcon.svg";
 import googleBottom from "../../../public/assets/googleIconBottom.svg";
-import { featuresData, slides, stepperData, utilisArr } from "./data";
+import {
+  accordionData,
+  featuresData,
+  slides,
+  stepperData,
+  utilisArr,
+} from "./data";
 import vector from "../../../public/assets/seo-services-vector.webp";
 import { servicesArr } from "@/pages/seo/data";
 import React from "react";
@@ -55,19 +61,18 @@ const Seo = () => {
           ]}
           steps={stepperData}
         />
-        <ReusableUtilizeSection
-          headingLines={[{ text: "Tools We Utilized For Excellence" }]}
-          subHeadingLines={[
-            {
-              text: "The fox is a clever and adaptable animal, often recognized for its reddish fur, bushy tail, and sharp features.",
-            },
-            {
-              text: "Found in forests, grasslands, mountains, and even urban areas.",
-            },
-          ]}
-          items={utilisArr}
-          bgColor="bg-black utilize-bg"
-        />
+      <ReusableUtilizeSection
+        headingLines={[
+          { text: "We Use Technology to " },
+          { text: "Build What Matters", color: "#00CF49" },
+        ]}
+        subHeadingLines={[
+          { text: "The fox is a clever and adaptable animal..." },
+        ]}
+        tabs={["Mobile App", "Frontend", "Backend", "Devops", "SEO", "UI/UX"]}
+        items={utilisArr}
+        bgColor="bg-[radial-gradient(99.15%_99.15%_at_50.87%_0.85%,_#0F592A_0%,_#000000_31%)]"
+      />
         <ReusableSliderSection
           buttonText="Process"
           headingLines={[
@@ -79,7 +84,14 @@ const Seo = () => {
           slidesToShow={5}
           autoplaySpeed={2000}
         />
-        <FAQ refs={faqRefs} showInfoBoxes={false} />
+        <FAQ
+          accordionData={accordionData}
+          tagText="Our FAQs"
+          heading={{
+            text: "Everything you need to know",
+            highlightText: "Questions",
+          }}
+        />
       </Layout>
     </>
   );

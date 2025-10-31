@@ -20,13 +20,13 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
     <div
       className={`w-full  p-10  feature-card-gradient-bdr bg-gradient-to-r from-transparent to-transparent hover:from-transparent hover:to-[#0D320D] transition duration-400 rounded-2xl ${className}`}
     >
-      <div className="flex text-center gap-3">
-        <Image src={imgSrc} alt={alt} className="w-8" />
+      <div className="flex  gap-3 items-center">
+        <Image src={imgSrc} alt={alt} className="w-8 h-8" />
 
-        <div className=" poppins-semibold font-18">{title}</div>
+        <div className="text-start poppins-semibold font-18">{title}</div>
       </div>
 
-      <div className="mt-4 poppins-medium font-14 leading-[200%]">
+      <div className="mt-4 poppins-medium text-[#DFDFDF] font-14 leading-[200%] text-left">
         {description}
       </div>
     </div>

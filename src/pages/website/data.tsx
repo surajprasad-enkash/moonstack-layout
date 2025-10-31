@@ -13,6 +13,11 @@ interface IServiceArray {
   desc: string;
 }
 
+export interface IAccordionItem {
+  title: string;
+  desc: string;
+}
+
 export const stepperData = [
   { id: "s1", title: "Fast & Secure", content: "The fox is clever." },
   { id: "s2", title: "Easy Setup", content: "It is agile and quick." },
@@ -138,5 +143,19 @@ export const servicesArr: IServiceArray[] = [
     image: arrowUp,
     title: "Backend Development",
     desc: "Earney is a financial solution to energize and empower Small and Medium.",
+  },
+];
+export const accordionData: IAccordionItem[] = [
+  {
+    title: "Do you provide post-launch support?",
+    desc: "Yes, we offer 24/7 support.",
+  },
+  {
+    title: "Can I request custom features?",
+    desc: "Absolutely, we customize solutions per your needs.",
+  },
+  {
+    title: "What technologies do you use?",
+    desc: "We use React, Next.js, Node.js, and more.",
   },
 ];

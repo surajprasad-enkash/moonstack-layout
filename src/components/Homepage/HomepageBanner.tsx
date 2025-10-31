@@ -40,19 +40,19 @@ const HomepageBanner = ({ refs }: { refs: IBannerRefs }) => {
                 alt="rating"
                 className="w-25 object-contain"
               />
-              <div className="poppins-medium text-white font-16">
+              <div className="poppins-medium text-white font-16 ml-2">
                 4.5(200+ customers available)
               </div>
             </div>
-            <div className="poppins-semibold text-white font-50">
-              We Boost the Growth For Startup to{" "}
-              <span style={{ color: Colors.brand200 }}>fortune 500</span>{" "}
-              companies
-            </div>
-            <div className="poppins-medium text-white mt-4 leading-[200%] font-16">
-              We focus on scalability, security, and user-centric design,
-              ensuring that every project is future-ready and tailored to client
-              needs.
+            <h1 className="poppins-semibold text-white font-50 leading-[125%]">
+              Achieve Otherworldly Growth{" "}
+              <span style={{ color: Colors.brand200 }}> with Moonstack</span>{" "}
+            </h1>
+            <div className="poppins-medium text-white mt-4 leading-[200%] font-14">
+              Work with a team that brings your ideas to life on your terms.
+              Moonstack is one of the most experienced and reliable app and web
+              development agencies in India. Skyrocket your business growth with
+              Moonstack today!
             </div>
             <div className="flex gap-8 mt-6">
               <button

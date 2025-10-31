@@ -143,6 +143,14 @@
     )
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
+
+.bg-application {
+
+
+ 
+  padding-top: 80px;
+
+}
 #card-1 {
   --index: 1;
 }
@@ -313,3 +321,113 @@
     }
   }
 }
+@keyframes orbit {
+  0% {
+    transform: rotate(var(--angle)) translateX(var(--radius)) rotate(calc(-1 * var(--angle)));
+  }
+  100% {
+    transform: rotate(calc(var(--angle) + 360deg)) translateX(var(--radius)) rotate(calc(-1 * var(--angle) - 360deg));
+  }
+}
+
+.animate-orbit {
+  animation: orbit var(--duration) linear infinite;
+  transform-origin: center center;
+}
+
+/* Fade In */
+.fade-in {
+  opacity: 0; /* start transparent */
+  animation: fadeIn 1s ease forwards; /* duration 1s, keep final state */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fade Out */
+.fade-out {
+  opacity: 1; /* start visible */
+  animation: fadeOut 1s ease forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Optional: Fade in + fade out sequentially */
+.fade-in-out {
+  opacity: 0;
+  animation: fadeInOut 3s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Slide in from bottom */
+.animate-bottom {
+  transform: translateY(-300px); /* start position */
+  opacity: 0; /* start transparent */
+  animation: slideBottom 1s ease-out forwards; /* 1s duration */
+}
+
+@keyframes slideBottom {
+  from {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Slide in from top */
+.animate-top {
+  transform: translateY(-300px); /* start above */
+  opacity: 0; /* start transparent */
+  animation: slideTop 1s ease-out forwards; /* 1s duration */
+}
+
+@keyframes slideTop {
+  from {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+ .app-category-speclity-card{
+  border-top: 2px solid var(--Primary-600, #00CF49);
+  background: linear-gradient(180deg, #001A09 27.16%, #001A09 92.88%, #004A1A 96.44%, #02A33B 100%);
+
+ }
+
+  .app-category-speclity-card:hover{
+ background: #001A09;
+background: linear-gradient(90deg,rgba(0, 26, 9, 1) 0%, rgba(0, 26, 9, 1) 0%, rgba(2, 163, 59, 1) 100%);
+ }
+

@@ -46,26 +46,15 @@ const ProvenProcess = () => {
               </span>
             </div>
             <div className="poppins-regular leading-[200%] mt-4 w-full md:w-2/3 lg:w-2/3 xl:w-2/3 font-16">
-              In today’s fast-moving digital world, creativity and innovation
-              play a vital role in building meaningful solutions. A great design
-              is not just about how it looks, but also about how it works and
-              how users feel while interacting with it
+              Here’s how we build lasting web and app solutions for our clients.
+              Our process focuses on continuous development and refinement that
+              leads to products without any glitches, bugs, or functional
+              limitations.
             </div>
           </div>
         </div>
         <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 mix-blend-difference">
           <div id="cards">
-            {/* {cardsArr.map((li, i) => (
-                            <div className="card" id={`card-${i + 1}`}>
-                                <div className={`mt-${i * 20} -rotate-3 bg-black rounded-3xl border-1 border-green-500 p-10 justify-between grid bg-gradient-to-br from-[#177634] via-black to-black-500`}>
-                                    <div className="poppins-extrabold text-outline-green text-transparent font-50">
-                                        {formatNumberWithLeadingZero(i + 1)}
-                                    </div>
-                                    <div className="poppins-semibold font-28">{li.title}</div>
-                                    <div className="poppins-regular leading-[200%] mt-4 font-16">{li.desc}</div>
-                                </div>
-                            </div>
-                        ))} */}
             <div className="card" id={`card-1`}>
               <div
                 className={`mt-10 -rotate-3 bg-black rounded-3xl border-1 border-green-500 p-10 justify-between grid bg-gradient-to-br from-[#177634] via-black to-black-500`}
@@ -74,15 +63,14 @@ const ProvenProcess = () => {
                   {formatNumberWithLeadingZero(1)}
                 </div>
                 <div className="poppins-semibold font-28">
-                  Discover & Define
+                  Design & Development
                 </div>
                 <div className="poppins-regular leading-[200%] mt-4 font-16">
-                  Innovation plays a vital role in shaping the future of
-                  businesses. Companies that focus on creativity and
-                  problem-solving are able to build stronger connections with
-                  their customers. By combining technology with user-centered
-                  design, organizations can create solutions that not only meet
-                  current needs
+                  We understand our client’s requirements thoroughly and create
+                  solutions that are robust, scalable, and secure while meeting
+                  their business goals. Our design and development process is
+                  completely transparent with clients to ensure a collaborative
+                  building experience.
                 </div>
               </div>
             </div>
@@ -94,15 +82,14 @@ const ProvenProcess = () => {
                   {formatNumberWithLeadingZero(2)}
                 </div>
                 <div className="poppins-semibold font-28">
-                  Design & Development
+                  Testing & Refinement
                 </div>
                 <div className="poppins-regular leading-[200%] mt-4 font-16">
-                  Innovation plays a vital role in shaping the future of
-                  businesses. Companies that focus on creativity and
-                  problem-solving are able to build stronger connections with
-                  their customers. By combining technology with user-centered
-                  design, organizations can create solutions that not only meet
-                  current needs
+                  We stand on our promise of continuous refinement and offer
+                  optimisations to our builds that improve functionality,
+                  loading time, accessibility, and user experience, all as a
+                  part of our quality assurance program. This level of
+                  refinement helps us stand out among the competition.
                 </div>
               </div>
             </div>
@@ -113,14 +100,15 @@ const ProvenProcess = () => {
                 <div className="poppins-extrabold text-outline-green text-transparent font-50">
                   {formatNumberWithLeadingZero(3)}
                 </div>
-                <div className="poppins-semibold font-28">Deliver & Grow</div>
+                <div className="poppins-semibold font-28">
+                  Launch & Maintenance
+                </div>
                 <div className="poppins-regular leading-[200%] mt-4 font-16">
-                  Innovation plays a vital role in shaping the future of
-                  businesses. Companies that focus on creativity and
-                  problem-solving are able to build stronger connections with
-                  their customers. By combining technology with user-centered
-                  design, organizations can create solutions that not only meet
-                  current needs
+                  We offer complete support for web and app product launches,
+                  complete with deployment to app stores and listing
+                  optimisation for SEO. We also offer long-term maintenance to
+                  ensure future-proof compatibility and bug-free user
+                  experience.
                 </div>
               </div>
             </div>

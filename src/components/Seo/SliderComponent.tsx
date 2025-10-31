@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import Image, { StaticImageData } from "next/image";
-import CustomButton from "../CommanButton/CommanButton";
 import Heading from "../Heading/Heading";
+import Tag from "../Tag/Tag";
+import { motion } from "framer-motion"; // <-- import Framer Motion
 
 interface ISliderItem {
   image: StaticImageData;
@@ -44,42 +45,59 @@ const ReusableSliderSection: React.FC<ReusableSliderSectionProps> = ({
   };
 
   return (
-    <div className={`${bgColor} text-white `}>
-      {/* Rotating button */}
-      <div className="rotating-btn text-center">
-        <CustomButton text={buttonText} variant="rotating" />
+    <div className={`${bgColor} text-white`}>
+      <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[50%] text-center m-auto">
+        {buttonText && (
+          <motion.div
+            className="text-center"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <Tag text={buttonText} className="text-center" />
+          </motion.div>
+        )}
+
+        <motion.div
+          className="pt-3"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <Heading
+            headingTag="h2"
+            className="font-bold text-white font-36 text-center"
+            content={headingLines}
+          />
+        </motion.div>
       </div>
+      <div className="slider-container mt-20 relative">
+        <Slider ref={sliderRef} {...settings}>
+          {slides.map((service, index) => (
+            <div key={index}>
+              <div className="relative group overflow-hidden cursor-pointer">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-[417px] object-cover transition-transform duration-500 group-hover:scale-105"
+                />
 
-      {/* Heading */}
-      <div className="pt-20">
-        <Heading
-          headingTag="h2"
-          className="font-bold pt-3 text-white font-36 text-center"
-          content={headingLines}
-        />
-
-        {/* Slider Section */}
-        <div className="slider-container mt-10 relative">
-          <Slider ref={sliderRef} {...settings}>
-            {slides.map((service, index) => (
-              <div key={index}>
-                <div className="relative group overflow-hidden cursor-pointer">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-[417px] object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute bottom-0 left-0 w-full h-1/2 pb-20 bg-gradient-to-t from-[#071C0E] via-[#071C0E80] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4 flex flex-col justify-end">
-                    <h3 className="text-white font-bold text-lg">
+                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-[#071C0E] via-[#071C0E80] to-transparent px-5 pb-8 pt-16 flex flex-col justify-end">
+                  <div className="transition-all duration-500 ease-in-out group-hover:-translate-y-2">
+                    <h3 className="text-white font-semibold text-lg leading-[125%]">
                       {service.title}
                     </h3>
-                    <p className="text-white text-sm mt-2">{service.desc}</p>
                   </div>
+                  <p className="text-white text-sm opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
+                    {service.desc}
+                  </p>
                 </div>
               </div>
-            ))}
-          </Slider>
-        </div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );

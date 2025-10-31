@@ -35,14 +35,15 @@ const InsightsIdeas = ({ refs }: { refs: IBannerRefs }) => {
       <div className="bg-black p-15 pt-25 text-white container mx-auto">
         <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 text-center justify-self-center">
           <div className="poppins-semibold font-40">
-            Insights{" "}
+            Blogs{" "}
             <span className="bg-gradient-to-r from-[#25E8B1] via=[#60F90D] to-[#60F90D] text-transparent bg-clip-text">
-              & Ideas
+              & Articles
             </span>
           </div>
           <div className="poppins-medium leading-[200%] mt-4 font-16">
-            We focus on scalability, security, and user-centric design, ensuring
-            that every project is future-ready and tailored to client needs.
+            Whether you’re interested in learning more about web and app
+            development or you want to stay up-to-date with industry trends, our
+            blogs and articles will help you achieve both.
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-y-8 justify-between mt-4">
