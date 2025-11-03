@@ -8,7 +8,7 @@ import Heading from "../Heading/Heading";
 interface TabItem {
   title: string;
   description: string;
-  image: StaticImageData;
+  image: string |StaticImageData;
   imgHeight?: string | "400";
 }
 

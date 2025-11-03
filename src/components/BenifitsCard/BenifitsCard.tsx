@@ -25,7 +25,6 @@ const BenifitsCard: React.FC<BenifitsCardProps> = ({
   buttonLabel,
   buttonLink,
   cardTag,
-  
 }) => {
   return (
     <div

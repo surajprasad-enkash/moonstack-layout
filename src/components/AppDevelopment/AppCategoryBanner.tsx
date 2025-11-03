@@ -11,7 +11,7 @@ interface BannerContent {
 interface AppCategoryBannerProps {
   title: BannerContent[];
   description: BannerContent[];
-  image: StaticImageData;
+  image: string | StaticImageData;
   buttonText?: string;
   bgColor?: string;
   containerWidth?: string;

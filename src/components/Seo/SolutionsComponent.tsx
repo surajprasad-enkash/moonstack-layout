@@ -3,6 +3,7 @@ import CustomButton from "../CommanButton/CommanButton";
 import Heading from "../Heading/Heading";
 import FeatureCard from "../FeaturesCard/FeatureCard";
 import Image, { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 
 interface FeatureItem {
   imgSrc: StaticImageData | string;
@@ -46,45 +47,61 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
           <Image src={topImage} alt="top decoration" />
         </div>
       )}
-
-      {/* Heading Section */}
       <div className="flex flex-col  items-center justify-between pb-12 md:pb-10">
         <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[40%] poppins-bold text-center md:text-left font-bold mb-6 md:mb-0">
           {buttonText && (
             <CustomButton text={buttonText} variant={buttonVariant} />
           )}
-
-          <Heading
-            headingTag="h2"
-            className={`pt-3 font-36  ${headingClassName}`}
-            content={[{ text: headingText, color: "text-white" }]}
-          />
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <Heading
+              headingTag="h2"
+              className={`pt-3 font-36  ${headingClassName}`}
+              content={[{ text: headingText, color: "text-white" }]}
+            />
+          </motion.div>
         </div>
 
         {subHeadingText && (
           <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[50%] text-center leading-[200%]">
-            <Heading
-              headingTag="p"
-              className={`pt-6 ${subHeadingClassName}`}
-              content={[{ text: subHeadingText, color: "text-gray-100" }]}
-            />
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <Heading
+                headingTag="p"
+                className={`pt-6 ${subHeadingClassName}`}
+                content={[{ text: subHeadingText, color: "text-gray-100" }]}
+              />
+            </motion.div>
           </div>
         )}
       </div>
-
-      {/* Feature Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {featuresData.map((feature, index) => (
-          <FeatureCard
-            key={index}
-            imgSrc={feature.imgSrc}
-            title={feature.title}
-            description={feature.description}
-            className={`${cardClassName}`}
-          />
-        ))}
-      </div>
-
+      {/* Feature Cards */}{" "}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {featuresData.map((feature, index) => (
+            <FeatureCard
+              key={index}
+              imgSrc={feature.imgSrc}
+              title={feature.title}
+              description={feature.description}
+              className={`${cardClassName}`}
+            />
+          ))}
+        </div>
+      </motion.div>
       {/* Bottom Image */}
       {bottomImage && (
         <div className="absolute left-0 bottom-0">

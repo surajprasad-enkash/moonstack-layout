@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import Heading from "../Heading/Heading";
 import CategoryCard from "../CategoryCard/CategoryCard";
 import { motion } from "framer-motion";
+import { StaticImageData } from "next/image";
 
 interface ICardItem {
-  image: string;
+  image: string | StaticImageData;
   title: string;
   desc: string;
   category: string; // 👈 Add category to each item

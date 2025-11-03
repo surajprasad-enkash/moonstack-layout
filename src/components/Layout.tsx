@@ -35,7 +35,8 @@ const Layout: React.FC<{
   return (
     <>
       <Header refs={refs} />
-      <main className="hover-white-text">{children}</main>
+
+      <main className="t">{children}</main>
       <Footer refs={footerRefs} />
     </>
   );

@@ -29,7 +29,7 @@ const AppBanner = () => {
               },
               {
                 text: "With Moonstack ",
-                color: "text-brand-950",
+                color: "text-Color.primary-700",
               },
             ]}
           />

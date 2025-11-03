@@ -6,7 +6,7 @@ import Tag from "../Tag/Tag";
 import { motion } from "framer-motion"; // <-- import Framer Motion
 
 interface ISliderItem {
-  image: StaticImageData;
+  image: string | StaticImageData;
   title: string;
   desc: string;
 }
