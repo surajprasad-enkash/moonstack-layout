@@ -84,25 +84,25 @@ const Footer = ({ refs }: { refs: IFooterRefs }) => {
             src={twitter}
             alt="twitter"
             className="w-7 h-auto object-contain cursor-pointer"
-            ref={refs.twitter}
+            // ref={refs.twitter}
           />
           <Image
             src={linkedin}
             alt="linkedin"
             className="w-7 h-auto object-contain cursor-pointer"
-            ref={refs.linkedin}
+            // ref={refs.linkedin}
           />
           <Image
             src={facebook}
             alt="facebook"
             className="w-7 h-auto object-contain cursor-pointer"
-            ref={refs.facebook}
+            // ref={refs.facebook}
           />
           <Image
             src={whatsapp}
             alt="whatsapp"
             className="w-7 h-auto object-contain cursor-pointer"
-            ref={refs.whatsapp}
+            // ref={refs.whatsapp}
           />
         </div>
       </div>

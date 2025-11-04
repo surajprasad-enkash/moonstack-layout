@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import heroImg from "../../../public/assets/backend-hero.webp";
-import { Colors } from "@/colors/colors";
+
 import CustomButton from "../CommanButton/CommanButton";
 import Heading from "../Heading/Heading";
-import { OrbitingCirclesDemo } from "../OrbitingCircle/OrbitingCircle";
+
 
 const BackendBanner = () => {
   return (

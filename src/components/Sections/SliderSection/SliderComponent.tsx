@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import Image, { StaticImageData } from "next/image";
-import Heading from "../Heading/Heading";
-import Tag from "../Tag/Tag";
+import Heading from "../../Heading/Heading";
+import Tag from "../../Tag/Tag";
 import { motion } from "framer-motion"; // <-- import Framer Motion
 
 interface ISliderItem {
@@ -46,7 +46,7 @@ const ReusableSliderSection: React.FC<ReusableSliderSectionProps> = ({
 
   return (
     <div className={`${bgColor} text-white`}>
-      <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[50%] text-center m-auto">
+      <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[50%] text-center m-auto py-5">
         {buttonText && (
           <motion.div
             className="text-center"

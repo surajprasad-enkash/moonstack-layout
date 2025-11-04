@@ -6,14 +6,7 @@ import img2 from "../../../public/assets/insight2.png";
 import img3 from "../../../public/assets/insight3.png";
 import arrow from "../../../public/assets/arrow-green.svg";
 
-interface IBannerRefs {
-  exploreNowBtnRef1: React.RefObject<HTMLDivElement>;
-  exploreNowBtnRef2: React.RefObject<HTMLDivElement>;
-  exploreNowBtnRef3: React.RefObject<HTMLDivElement>;
-  aboutUsBtnRef: React.RefObject<HTMLDivElement>;
-}
-
-const InsightsIdeas = ({ refs }: { refs: IBannerRefs }) => {
+const InsightsIdeas = () => {
   const rotatingRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -31,110 +24,64 @@ const InsightsIdeas = ({ refs }: { refs: IBannerRefs }) => {
   }, []);
 
   return (
-    <>
-      <div className="bg-black p-15 pt-25 text-white container mx-auto">
-        <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 text-center justify-self-center">
-          <div className="poppins-semibold font-40">
-            Blogs{" "}
-            <span className="bg-gradient-to-r from-[#25E8B1] via=[#60F90D] to-[#60F90D] text-transparent bg-clip-text">
-              & Articles
-            </span>
-          </div>
-          <div className="poppins-medium leading-[200%] mt-4 font-16">
-            Whether you’re interested in learning more about web and app
-            development or you want to stay up-to-date with industry trends, our
-            blogs and articles will help you achieve both.
-          </div>
+    <div className="bg-black p-15 pt-25 text-white container mx-auto">
+      {/* Header */}
+      <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 text-center justify-self-center">
+        <div className="poppins-semibold font-40">
+          Blogs{" "}
+          <span className="bg-gradient-to-r from-[#25E8B1] via-[#60F90D] to-[#60F90D] text-transparent bg-clip-text">
+            & Articles
+          </span>
         </div>
-        <div className="flex flex-col md:flex-row gap-y-8 justify-between mt-4">
-          <div className="w-full md:w-[32%] lg:w-[32%] xl:w-[32%] border-solid border-[#296329] border-1 rounded-2xl p-6">
-            <Image
-              src={img1}
-              alt="image-1"
-              className="w-[100%] h-auto object-contain"
-            />
-            <div className="poppins-medium leading-[200%] mt-4 font-14 text-[#FF9E2F]">
-              Development
-            </div>
-            <div className="poppins-semibold mt-4 font-20">
-              How To Build Real Estate App from Scratch: Step-by-Step Guide
-            </div>
-            <div className="poppins-medium leading-[200%] mt-4 font-16">
-              Education is the key to success in life. It helps people gain
-              knowledge, develop skills, and build.
-            </div>
-            <button
-              className="poppins-medium mt-8 cursor-pointer flex font-16"
-              style={{ color: Colors.brand200 }}
-              ref={refs.exploreNowBtnRef1}
-            >
-              Explore Now
-              <Image src={arrow} alt="" className="w-4 h-auto ml-2" />
-            </button>
-          </div>
-          <div className="w-full md:w-[32%] lg:w-[32%] xl:w-[32%] border-solid border-[#296329] border-1 rounded-2xl p-6">
-            <Image
-              src={img2}
-              alt="image-1"
-              className="w-[100%] h-auto object-contain"
-            />
-            <div className="poppins-medium leading-[200%] mt-4 font-14 text-[#FF9E2F]">
-              Development
-            </div>
-            <div className="poppins-semibold mt-4 font-20">
-              How To Build Real Estate App from Scratch: Step-by-Step Guide
-            </div>
-            <div className="poppins-medium leading-[200%] mt-4 font-16">
-              Education is the key to success in life. It helps people gain
-              knowledge, develop skills, and build.
-            </div>
-            <button
-              className="poppins-medium mt-8 cursor-pointer flex font-16"
-              style={{ color: Colors.brand200 }}
-              ref={refs.exploreNowBtnRef2}
-            >
-              Explore Now
-              <Image src={arrow} alt="" className="w-4 h-auto ml-2" />
-            </button>
-          </div>
-          <div className="w-full md:w-[32%] lg:w-[32%] xl:w-[32%] border-solid border-[#296329] border-1 rounded-2xl p-6">
-            <Image
-              src={img3}
-              alt="image-1"
-              className="w-[100%] h-auto object-contain"
-            />
-            <div className="poppins-medium leading-[200%] mt-4 font-14 text-[#FF9E2F]">
-              Development
-            </div>
-            <div className="poppins-semibold mt-4 font-20">
-              How To Build Real Estate App from Scratch: Step-by-Step Guide
-            </div>
-            <div className="poppins-medium leading-[200%] mt-4 font-16">
-              Education is the key to success in life. It helps people gain
-              knowledge, develop skills, and build.
-            </div>
-            <button
-              className="poppins-medium mt-8 cursor-pointer flex font-16"
-              style={{ color: Colors.brand200 }}
-              ref={refs.exploreNowBtnRef3}
-            >
-              Explore Now
-              <Image src={arrow} alt="" className="w-4 h-auto ml-2" />
-            </button>
-          </div>
-        </div>
-        <div className="flex justify-center">
-          <div className="rotating-btn" ref={refs.aboutUsBtnRef}>
-            <button
-              className="bg-black text-white poppins-semibold py-3 px-12 rounded-4xl mt-8 border-1 border-green-500 border-solid justify-self-center font-16 hover:color-black"
-              ref={rotatingRef}
-            >
-              About Us
-            </button>
-          </div>
+        <div className="poppins-medium leading-[200%] mt-4 font-16">
+          Whether you’re interested in learning more about web and app
+          development or you want to stay up-to-date with industry trends, our
+          blogs and articles will help you achieve both.
         </div>
       </div>
-    </>
+
+      {/* Blog Cards */}
+      <div className="flex flex-col md:flex-row gap-y-8 justify-between mt-4">
+        {[img1, img2, img3].map((imgSrc, idx) => (
+          <div
+            key={idx}
+            className="w-full md:w-[32%] lg:w-[32%] xl:w-[32%] border-solid border-[#296329] border-1 rounded-2xl p-6"
+          >
+            <Image
+              src={imgSrc}
+              alt={`blog-image-${idx + 1}`}
+              className="w-[100%] h-auto object-contain"
+            />
+            <div className="poppins-medium leading-[200%] mt-4 font-14 text-[#FF9E2F]">
+              Development
+            </div>
+            <div className="poppins-semibold mt-4 font-20">
+              How To Build Real Estate App from Scratch: Step-by-Step Guide
+            </div>
+            <div className="poppins-medium leading-[200%] mt-4 font-16">
+              Education is the key to success in life. It helps people gain
+              knowledge, develop skills, and build.
+            </div>
+            <button
+              className="poppins-medium mt-8 cursor-pointer flex font-16"
+              style={{ color: Colors.brand200 }}
+            >
+              Explore Now
+              <Image src={arrow} alt="" className="w-4 h-auto ml-2" />
+            </button>
+          </div>
+        ))}
+      </div>
+
+      {/* About Us Button */}
+      <div className="flex justify-center">
+        <div className="rotating-btn" ref={rotatingRef}>
+          <button className="bg-black text-white poppins-semibold py-3 px-12 rounded-4xl mt-8 border-1 border-green-500 border-solid justify-self-center font-16 hover:color-black">
+            About Us
+          </button>
+        </div>
+      </div>
+    </div>
   );
 };
 

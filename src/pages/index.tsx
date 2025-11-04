@@ -36,7 +36,7 @@ export default function Home() {
     "linkedin",
   ]);
 
-  const homepageRefs = useMultipleRefs(["getStartedBtnRef", "learnMoreBtnRef"]);
+  // const homepageRefs = useMultipleRefs(["getStartedBtnRef", "learnMoreBtnRef"]);
 
   const insightsRefs = useMultipleRefs([
     "exploreNowBtnRef1",
@@ -54,7 +54,7 @@ export default function Home() {
   const contactUsRefs = useMultipleRefs(["sendBtnRef"]);
 
   const stickyRefs = [
-    ...Object.values(homepageRefs),
+    // ...Object.values(homepageRefs),
     ...Object.values(insightsRefs),
     ...Object.values(faqRefs),
     ...Object.values(contactUsRefs),
@@ -64,16 +64,16 @@ export default function Home() {
 
   return (
     <div>
-      <StickyCursor stickyElements={stickyRefs} />
+      {/* <StickyCursor stickyElements={stickyRefs} /> */}
       <Layout>
-        <HomepageBanner refs={homepageRefs} />
+        <HomepageBanner  />
         <Marquee />
         <SolutionsComponent />
         <OurServices />
         <CaseStudies />
         <TechnologyComponent />
         <ProvenProcess />
-        <InsightsIdeas refs={insightsRefs} />
+        <InsightsIdeas/>
         <FAQ
           accordionData={accordionData}
           infoBoxes={infoBoxes}
@@ -84,7 +84,7 @@ export default function Home() {
           }}
           showInfoBoxes={true}
         />
-        <ContactUs refs={contactUsRefs} />
+        <ContactUs  />
       </Layout>
     </div>
   );

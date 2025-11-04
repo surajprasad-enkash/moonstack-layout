@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 type Step = {
   title: string;
-  description: string;
+  description?: string;
 };
 
 interface VerticalStepperProps {
@@ -85,19 +85,20 @@ const VerticalStepper: React.FC<VerticalStepperProps> = ({
           />
         </motion.div>
 
-        {/* Subheading */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          viewport={{ once: true, amount: 0.2 }}
-        >
-          <Heading
-            headingTag="p"
-            className="font-bold pt-3 text-white font-14 text-center"
-            content={subHeadingLines}
-          />
-        </motion.div>
+        {subHeadingLines && (
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <Heading
+              headingTag="p"
+              className="font-bold pt-3 text-white font-14 text-center"
+              content={subHeadingLines}
+            />
+          </motion.div>
+        )}
       </div>
       <div ref={containerRef} className="relative flex mx-auto pt-12">
         <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px z-0">
@@ -124,89 +125,13 @@ const VerticalStepper: React.FC<VerticalStepperProps> = ({
             return (
               <div
                 key={idx}
-                ref={(ref) => (stepRefs.current[idx] = ref)}
+                ref={(ref) => {
+                  stepRefs.current[idx] = ref;
+                }}
                 className="flex items-center mb-16 relative"
                 style={{ minHeight: "120px" }}
               >
-                {/* Left side */}
-                <div
-                  className={`w-1/2 flex ${
-                    idx % 2 === 0 ? "justify-center" : "justify-center"
-                  }`}
-                >
-                  {idx % 2 === 0 && (
-                    <div className="bg-transparent max-w-md">
-                      <span
-                        className={`font-bold text-lg ${
-                          isCompleted ? "text-white" : "text-[#999A99]"
-                        }`}
-                      >
-                        {step.title}
-                      </span>
-                      <p
-                        className={`mt-2 text-base font-medium ${
-                          isCompleted ? "text-gray-200" : "text-[#999A99]"
-                        }`}
-                      >
-                        {step.description}
-                      </p>
-                    </div>
-                  )}
-                </div>
-
-                {/* Step circle */}
-                <div
-                  className="relative flex flex-col items-center"
-                  style={{ width: "80px" }}
-                >
-                  <div
-                    className={`rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold transition-all`}
-                    style={{
-                      backgroundColor: activeStep === idx ? "#16a34a" : "#000",
-                      color: activeStep === idx ? "#fff" : "#16a34a",
-                      border: `2px solid ${
-                        isCompleted ? "#16a34a" : "#003312"
-                      }`,
-                    }}
-                  >
-                    {String(idx + 1).padStart(2, "0")}
-                  </div>
-                  {idx < steps.length - 1 && (
-                    <div
-                      className="h-[80px] border-r-2 bg-transparent"
-                      style={{
-                        borderColor: isCompleted ? "transparent" : "#003312",
-                        borderStyle: "inset",
-                      }}
-                    ></div>
-                  )}
-                </div>
-
-                {/* Right side */}
-                <div
-                  className={`w-1/2 flex ${
-                    idx % 2 === 0 ? "justify-end" : "justify-center"
-                  }`}
-                >
-                  {idx % 2 !== 0 && (
-                    <div className="bg-transparent max-w-md text-left">
-                      <span
-                        className={`font-bold text-lg ${
-                          isCompleted ? "text-white" : "text-[#999A99]"
-                        }`}
-                      >
-                        {step.title}
-                      </span>
-                      <p
-                        className={`mt-2 text-base font-medium ${
-                          isCompleted ? "text-gray-200" : "text-[#999A99]"
-                        }`}
-                      >
-                        {step.description}
-                      </p>
-                    </div>
-                  )}
-                </div>
+                {/* rest of your code */}
               </div>
             );
           })}

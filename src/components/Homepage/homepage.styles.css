@@ -42,6 +42,16 @@
   contain: content;
   mix-blend-mode: difference;
 }
+.website-bg {
+  background-image: url("../../../public/assets/website-banner.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding-top: 80px;
+  contain: content;
+  mix-blend-mode: difference;
+}
 .bg-checked {
   background-image: url("../../../public/assets/home-banner-bg-2.png");
   background-size: cover;

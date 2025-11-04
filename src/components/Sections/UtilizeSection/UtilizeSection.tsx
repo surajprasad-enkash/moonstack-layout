@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import Heading from "../Heading/Heading";
-import CategoryCard from "../CategoryCard/CategoryCard";
+import Heading from "../../Heading/Heading";
+import CategoryCard from "../../CategoryCard/CategoryCard";
 import { motion } from "framer-motion";
 import { StaticImageData } from "next/image";
 
@@ -37,7 +37,7 @@ const ReusableUtilizeSection: React.FC<UtilizeSectionProps> = ({
 
   return (
     <div className={`${bgColor} text-white ${containerClass}`}>
-      <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[70%] text-center m-auto">
+      <div className="w-full md:w-full lg:w-2/5 xl:w-[70%] text-center m-auto">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}

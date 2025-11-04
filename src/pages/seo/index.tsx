@@ -16,8 +16,8 @@ import vector from "../../../public/assets/seo-services-vector.webp";
 import { servicesArr } from "@/pages/seo/data";
 import React from "react";
 import StepperComponent from "@/components/Seo/StepperComponent";
-import ReusableUtilizeSection from "@/components/Seo/UtilizeComponent";
-import ReusableSliderSection from "@/components/Seo/SliderComponent";
+import ReusableUtilizeSection from "@/components/Sections/UtilizeSection/UtilizeSection";
+import ReusableSliderSection from "@/components/Sections/SliderSection/SliderComponent";
 import SeoBanner from "@/components/Seo/SeoBanner";
 
 const Seo = () => {

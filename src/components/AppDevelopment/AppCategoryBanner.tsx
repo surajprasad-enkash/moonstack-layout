@@ -43,7 +43,7 @@ const AppCategoryBanner: React.FC<AppCategoryBannerProps> = ({
         {/* 🔥 Gradient Blur Overlay */}
         <div className="absolute bottom-[-70px] left-0 w-full h-40 bg-[radial-gradient(circle_at_center,_rgba(0,207,73,0.45)_0%,_rgba(0,0,0,0.9)_100%)] blur-2xl z-30" />
       </div>
-      <div className=" py-7 text-center relative z-50">
+      <div className=" py-7 text-center relative z-40">
         <CustomButton text={buttonText} variant="primary" />
       </div>
       <div

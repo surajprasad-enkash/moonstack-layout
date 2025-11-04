@@ -64,6 +64,24 @@ import nativeIconThree from "../../../../public/assets/app-development-images/na
 import nativeIconFour from "../../../../public/assets/app-development-images/native-icon-four.svg";
 import nativeIconFive from "../../../../public/assets/app-development-images/native-icon-five.svg";
 import nativeIconSix from "../../../../public/assets/app-development-images/native-icon-six.svg";
+import pwaIconOne from "../../../../public/assets/app-development-images/pwa-icon-one.svg";
+import pwaIconTwo from "../../../../public/assets/app-development-images/pwa-icon-two.svg";
+import pwaIconThree from "../../../../public/assets/app-development-images/pwa-icon-three.svg";
+import pwaIconFour from "../../../../public/assets/app-development-images/pwa-icon-four.svg";
+import pwaIconFive from "../../../../public/assets/app-development-images/pwa-icon-five.svg";
+import pwaIconSix from "../../../../public/assets/app-development-images/pwa-icon-six.svg";
+import managmentIconOne from "../../../../public/assets/app-development-images/managment-icon-one.svg";
+import managmentIconTwo from "../../../../public/assets/app-development-images/managment-icon-two.svg";
+import managmentIconThree from "../../../../public/assets/app-development-images/managment-icon-three.svg";
+import managmentIconFour from "../../../../public/assets/app-development-images/managment-icon-four.svg";
+import managmentIconFive from "../../../../public/assets/app-development-images/managment-icon-five.svg";
+import managmentIconSix from "../../../../public/assets/app-development-images/managment-icon-six.svg";
+import androidTabImgOne from "../../../../public/assets/app-development-images/android-tab-img-one.webp";
+import androidTabImgTwo from "../../../../public/assets/app-development-images/android-tab-img-two.webp";
+import androidTabImgThree from "../../../../public/assets/app-development-images/android-tab-img-three.webp";
+import androidTabImgFour from "../../../../public/assets/app-development-images/android-tab-img-four.webp";
+import androidTabImgFive from "../../../../public/assets/app-development-images/android-tab-img-five.webp";
+import androidTabImgSix from "../../../../public/assets/app-development-images/android-tab-img-six.webp";
 
 import { IAccordionItem } from "@/components/Homepage/FAQ";
 import { StaticImageData } from "next/image";
@@ -93,6 +111,7 @@ export const pagesData: Record<
         title: string;
         description: string;
         image: StaticImageData | string;
+        imgHeight?: string;
       }[];
     };
     utilisArr: {
@@ -189,37 +208,43 @@ export const pagesData: Record<
           title: "Custom Solutions:",
           description:
             "At Moonstack, we ensure every app is built specifically as per our client’s requirements. This means even if you want a specific functionality in your Android app that’s generally not standard in your market, we can make it for you, no questions asked.",
-          image: androidIcon,
+          image: androidTabImgOne,
+          imgHeight: "540px",
         },
         {
           title: "End-to-End Solutions:",
           description:
             "We offer complete Android app development support from frameworking, UI/UX design, backend development, to app testing and launch support.",
-          image: figmaIcon,
+          image: androidTabImgTwo,
+          imgHeight: "502px",
         },
         {
           title: "Highly Qualified Developers: ",
           description:
             " Our development team at Moonstack is led by highly qualified developers and designers with years of real-world professional experience.",
-          image: reactIcon,
+          image: androidTabImgThree,
+          imgHeight: "540px",
         },
         {
           title: "Focus on User Intent:",
           description:
             " There’s an innate focus on user intent in our Android app development services in India. We ensure every app we build is practical in terms of design and engaging for users ",
-          image: reactIcon,
+          image: androidTabImgFour,
+          imgHeight: "540px",
         },
         {
           title: "Production Transparency: ",
           description:
             "Our enterprise Android app solutions in India always come with maintenance and post-launch support to ensure your app is functioning optimally and doesn’t have any compatibility issues moving forward.",
-          image: reactIcon,
+          image: androidTabImgFive,
+          imgHeight: "540px",
         },
         {
           title: "Maintenance & Support:  ",
           description:
             "Our enterprise Android app solutions in India always come with maintenance and post-launch support to ensure your app is functioning optimally and doesn’t have any compatibility issues moving forward.",
-          image: reactIcon,
+          image: androidTabImgSix,
+          imgHeight: "540px",
         },
       ],
     },
@@ -1410,37 +1435,37 @@ export const pagesData: Record<
     },
     featuresData: [
       {
-        imgSrc: revenue,
+        imgSrc: pwaIconOne,
         title: "Custom PWA Development",
         description:
           "Our custom PWA development services are some of the most affordable PWA development services in India. We ensure each aspect of your PWA is optimised for speed and performance across devices with custom code that’s built as per your business requirements and not templates.",
       },
       {
-        imgSrc: revenue,
+        imgSrc: pwaIconTwo,
         title: "PWA Migration",
         description:
           "Our PWA migration services in India are curated to help businesses transform existing applications into full-featured PWAs. We ensure each application has its unique set of features, while being perfectly compliant across devices and platforms. Best of all? Our service retains the existing design and data seamlessly.",
       },
       {
-        imgSrc: revenue,
+        imgSrc: pwaIconThree,
         title: "Secure PWA Development",
         description:
           "Backend security is one of the most crucial aspects of PWA development. That’s why we offer the most trusted secure PWA development service in India at Moonstack. We ensure your code is secure, and specifically, user information and backend data are safe against breaches.",
       },
       {
-        imgSrc: revenue,
+        imgSrc: pwaIconFour,
         title: "Fast Loading PWA Development",
         description:
           "Fine-tuning the performance of a PWA we’re developing is a major part of our backend process. That’s why we’re the premier provider of fast-loading PWA development service in India. We take loading time very seriously while ensuring that our responsive PWA development service in India is able to offer a holistic solution to our clients.",
       },
       {
-        imgSrc: revenue,
+        imgSrc: pwaIconFive,
         title: "UI/UX Design for PWAs",
         description:
           "Creating a web app with an immaculate user experience is at the cornerstone of our PWA design and development services in India at Moonstack. We ensure clean navigation and accessibility in all apps we develop across devices, ensuring perfect harmony with our cross-platform PWA development services in India.",
       },
       {
-        imgSrc: revenue,
+        imgSrc: pwaIconSix,
         title: "QA & Deployment",
         description:
           "Whether it is deployment assistance and rigorous testing, if you’re looking to hire PWA developers in India, Moonstack can be your help. We handle the entire PWA lifecycle to ensure your app is performing optimally at all times.",
@@ -1456,7 +1481,7 @@ export const pagesData: Record<
           title: "Custom Business Solutions",
           description:
             "We provide tailored services that are custom-built for your business, keeping your requirements in mind. Everything is custom-built from scratch, just for you.",
-          image: androidIcon, // replace with a relevant icon if available
+          image: androidIcon,
         },
         {
           title: "Performance Focused Architecture",
@@ -1835,37 +1860,37 @@ export const pagesData: Record<
     },
     featuresData: [
       {
-        imgSrc: revenue,
+        imgSrc: managmentIconOne,
         title: "Performance Optimisation",
         description:
           "As a part of our Android app maintenance service in India and our mobile app troubleshooting service in India, we offer complete performance optimisation for the mobile apps we maintain. This includes removing bottlenecks and optimising backend processes.",
       },
       {
-        imgSrc: revenue,
+        imgSrc: managmentIconTwo,
         title: "Feature Improvements",
         description:
           "Moonstack offers the most thorough app updates and upgrades service in India. Our mobile app enhancement service in India can be used to refine design elements, improve usability, and enhance features based on user feedback.",
       },
       {
-        imgSrc: revenue,
+        imgSrc: managmentIconThree,
         title: "Security Improvements & Compliance",
         description:
           "Afraid of data breaches or corruption of user data? Avail of Moonstack’s app security maintenance services in India. We offer complete assistance in monitoring and fixing code vulnerabilities while ensuring OS and app store compatibility.",
       },
       {
-        imgSrc: revenue,
+        imgSrc: managmentIconFour,
         title: "Bug Fixes",
         description:
           "Bugs can ruin the user experience of your app; that’s why you should try our mobile app bug fixing services in India. We offer quick debugging and issue-based resolution to minimise your app’s downtime during maintenance.",
       },
       {
-        imgSrc: revenue,
+        imgSrc: managmentIconFive,
         title: "OS Update Compatibility",
         description:
           "We offer a proactive mobile app support service in India at Moonstack. This includes UI adjustments and API changes to match the latest OS updates and optimise app compatibility across devices.",
       },
       {
-        imgSrc: revenue,
+        imgSrc: managmentIconSix,
         title: "Analytics & Reporting",
         description:
           "As a leading app maintenance agency, we help businesses with third-party mobile app maintenance services in India that are tailored to their needs. Our analytics and reporting services offer crucial insights on app performance and user behaviour, which can be used to optimise the app further.",

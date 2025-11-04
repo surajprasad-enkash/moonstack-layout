@@ -1,25 +1,32 @@
-import BackendBanner from "@/components/BackendDeveloper/BackendBanner";
-import SolutionsComponent from "@/components/BackendDeveloper/SolutionsComponent";
+
 import FAQ from "@/components/Homepage/FAQ";
 import Layout from "@/components/Layout";
 import { useMultipleRefs } from "@/hooks/useMultipleRefs";
 import React from "react";
+
+//data
 import {
   accordionData,
   featuresData,
   infoData,
+  points,
   processSteps,
   servicesArr,
   slides,
   utilisArr,
 } from "./data";
-import ImportanceComponent from "@/components/BackendDeveloper/ImportanceComponent";
-import Stepper from "@/components/StepperComponent/StepperComponent";
-import ReusableUtilizeSection from "@/components/Seo/UtilizeComponent";
-import ReusableSliderSection from "@/components/Seo/SliderComponent";
-import OurServices from "@/components/OurSevices";
 
-const BackendDeveloper = () => {
+
+//components
+import Stepper from "@/components/StepperComponent/StepperComponent";
+import ReusableUtilizeSection from "@/components/Sections/UtilizeSection/UtilizeSection";
+import ReusableSliderSection from "@/components/Sections/SliderSection/SliderComponent";
+import OurServices from "@/components/OurSevices";
+import ImportanceSection from "@/components/Sections/ImportanceSection/ImportanceSection";
+import importanceImg from "../../../public/assets/backend-importance.webp";
+import BackendBanner from "@/components/BackendDeveloper/BackendBanner";
+import SolutionsComponent from "@/components/BackendDeveloper/SolutionsComponent";
+const BackendDeveloper= (): React.JSX.Element =>  {
   //
 
   const faqRefs = useMultipleRefs([
@@ -40,7 +47,15 @@ const BackendDeveloper = () => {
         infoData={infoData}
       />
 
-      <ImportanceComponent />
+      <ImportanceSection
+        image={importanceImg}
+        title="Why Backend"
+        highlightTitle="Development Matters"
+        description={[
+          "Frontend development refers to the practice of creating the visual and interactive elements. ",
+        ]}
+        points={points}
+      />
       <OurServices
         buttonText="Our Services"
         buttonVariant="rotating"
@@ -75,6 +90,7 @@ const BackendDeveloper = () => {
           },
         ]}
         items={utilisArr}
+        tabs={["Mobile App", "Frontend", "Backend", "Devops", "SEO", "UI/UX"]}
         bgColor="bg-black utilize-bg"
       />
       <ReusableSliderSection

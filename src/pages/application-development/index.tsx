@@ -13,8 +13,8 @@ import {
   utilisArr,
 } from "./data";
 import Stepper from "@/components/StepperComponent/StepperComponent";
-import ReusableUtilizeSection from "@/components/Seo/UtilizeComponent";
-import ReusableSliderSection from "@/components/Seo/SliderComponent";
+import ReusableUtilizeSection from "@/components/Sections/UtilizeSection/UtilizeSection";
+import ReusableSliderSection from "@/components/Sections/SliderSection/SliderComponent";
 import AppBanner from "@/components/AppDevelopment/AppBanner";
 import OurServices from "@/components/OurSevices";
 import importance from "../../../public/assets/backend-importance.webp";

@@ -2,10 +2,10 @@ import { useRouter } from "next/router";
 import Layout from "@/components/Layout";
 import AppCategoryBanner from "@/components/AppDevelopment/AppCategoryBanner";
 import SolutionsComponent from "@/components/Seo/SolutionsComponent";
-import ChooseUsTabSection from "@/components/AppDevelopment/ChooseUsTab";
+import ChooseUsTabSection from "@/components/ChooseUsTab/ChooseUsTab";
 import Stepper from "@/components/StepperComponent/StepperComponent";
-import ReusableUtilizeSection from "@/components/Seo/UtilizeComponent";
-import ReusableSliderSection from "@/components/Seo/SliderComponent";
+import ReusableUtilizeSection from "@/components/Sections/UtilizeSection/UtilizeSection";
+import ReusableSliderSection from "@/components/Sections/SliderSection/SliderComponent";
 import FAQ from "@/components/Homepage/FAQ";
 
 import importance from "../../../../public/assets/backend-importance.webp";
