@@ -6,6 +6,7 @@ import InfoCard from "../InfoCard/InfoCard";
 import { motion } from "framer-motion";
 
 interface FeatureItem {
+  cardClassName?: string;
   imgSrc: StaticImageData | string;
   title: string;
   description: string;
@@ -27,6 +28,10 @@ interface SolutionsProps {
   featuresData: FeatureItem[];
   infoData?: InfoItem[];
   showInfoSection?: boolean;
+  cardClassName?: string;
+  benifitCardClassName?: string;
+  imgClassName?: string;
+  bgColor?: string;
 }
 
 const SolutionsComponent: React.FC<SolutionsProps> = ({
@@ -37,10 +42,14 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
   featuresData,
   infoData = [],
   showInfoSection = true,
-  titleClassName = "flex-col md:flex-row ",
+  imgClassName,
+  bgColor,
+  titleClassName = "flex-col md:flex-row",
+  benifitCardClassName = "lg:grid-cols-4",
 }) => {
   return (
     <div className="bg-black px-4 sm:px-10 py-12 md:py-20 relative container mx-auto">
+      {/* Heading + Subheading */}
       <div className={`flex items-center pb-12 md:pb-20 ${titleClassName}`}>
         <motion.div
           className="w-full md:w-2/5 lg:w-2/5 xl:w-[40%] poppins-bold text-center md:text-left font-bold mb-6 md:mb-0"
@@ -73,27 +82,33 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
         )}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* ✅ Features Section */}
+      <div
+        className={`grid grid-cols-1 sm:grid-cols-2 gap-6 ${benifitCardClassName}`}
+      >
         {featuresData.map((feature, index) => (
           <BenifitsCard
             key={index}
             imgSrc={feature.imgSrc}
             title={feature.title}
             description={feature.description}
+            className={feature.cardClassName}
+            imgClassName={imgClassName}
+            bgColor={bgColor}
           />
         ))}
       </div>
 
-      {/* Info Section (Optional) */}
+      {/* ✅ Info Section (Optional) */}
       {showInfoSection && infoData.length > 0 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-10">
-          {infoData.map((feature, index) => (
+          {infoData.map((info, index) => (
             <InfoCard
               key={index}
-              icon={feature.icon}
-              title={feature.title}
-              description={feature.description}
-              percentage={feature.percentage || ""}
+              icon={info.icon}
+              title={info.title}
+              description={info.description}
+              percentage={info.percentage || ""}
             />
           ))}
         </div>
