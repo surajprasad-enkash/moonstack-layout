@@ -6,10 +6,11 @@ import InfoCard from "../InfoCard/InfoCard";
 import { motion } from "framer-motion";
 
 interface FeatureItem {
-  cardClassName?: string;
   imgSrc: StaticImageData | string;
   title: string;
   description: string;
+  /** ✅ Optional: allows per-card styling */
+  cardClassName?: string;
 }
 
 interface InfoItem {
@@ -32,6 +33,7 @@ interface SolutionsProps {
   benifitCardClassName?: string;
   imgClassName?: string;
   bgColor?: string;
+  ClassName?: string;
 }
 
 const SolutionsComponent: React.FC<SolutionsProps> = ({
@@ -44,11 +46,15 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
   showInfoSection = true,
   imgClassName,
   bgColor,
+  cardClassName = "",
   titleClassName = "flex-col md:flex-row",
   benifitCardClassName = "lg:grid-cols-4",
+  ClassName = "",
 }) => {
   return (
-    <div className="bg-black px-4 sm:px-10 py-12 md:py-20 relative container mx-auto">
+    <div
+      className={`bg-black px-4 sm:px-10 py-12 md:py-20 relative container mx-auto ${ClassName}`}
+    >
       {/* Heading + Subheading */}
       <div className={`flex items-center pb-12 md:pb-20 ${titleClassName}`}>
         <motion.div
@@ -92,7 +98,7 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
             imgSrc={feature.imgSrc}
             title={feature.title}
             description={feature.description}
-            className={feature.cardClassName}
+            className={`${cardClassName} ${feature.cardClassName || ""}`}
             imgClassName={imgClassName}
             bgColor={bgColor}
           />

@@ -21,19 +21,28 @@ const AppBanner = () => {
           <Tag text="App Development" variant="blur" icon={circleIcon} />
           <Heading
             headingTag="h1"
-            className="font-bold pt-3 font-60 text-start leading-[125%]  "
+            className="font-bold pt-3 font-60  text-start leading-[125%]  "
             content={[
               {
-                text: "Get Customised Mobile App Solutions in India ",
+                text: "Mobile Application ",
                 color: "text-white",
               },
               {
-                text: "With Moonstack ",
-                color: "text-Color.primary-700",
+                text: "Development ",
+                color: "text-[#00CF49]",
+              },
+            ]}
+          />{" "}
+          <Heading
+            headingTag="p"
+            className="text-start  "
+            content={[
+              {
+                text: "At Moonstack, we understand the power of mobile applications and deliver complete end-to-end mobile app solutions in India for businesses. When built right, mobile apps can scale businesses and build brands. They are the most direct connection customers have with brands and a gateway to customer retention and business growth.",
+                color: "text-white",
               },
             ]}
           />
-
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mt-12">
             <CustomButton text="Connect with us" variant="primary" />
             <div className="rotating-btn">
@@ -45,7 +54,7 @@ const AppBanner = () => {
           <Image
             src={heroImg}
             alt="hand-image"
-            width={668}
+            width={600}
             className="object-contain z-20 animate-bounce [animation-duration:10s] "
           />
         </div>

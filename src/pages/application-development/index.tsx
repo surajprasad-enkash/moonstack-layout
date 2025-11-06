@@ -34,37 +34,42 @@ const ApplicationDevelopment = (): React.JSX.Element => {
       <AppBanner />
       <ImportanceSection
         image={importance}
+        heading={[
+          {
+            text: "Get Customised Mobile App Solutions in India ",
+            color: "text-[#00CF49]  text-center ",
+          },
+          {
+            text: "With Moonstack  ",
+            color: " text-white text-center ",
+          },
+        ]}
         altText="Backend importance image"
         points={points}
         tickIcon={greenTick}
         reverse={false} // You can toggle this for layout switch
       />
-      <SolutionsComponent
-        headingContent={[
+      <OurServices
+        headingLines={[
           {
-            text: "Our Specialities",
-            color: "text-white text-center ",
+            text: "Our Specialities ",
+            color: "text-[#00CF49]",
           },
         ]}
-        subHeadingClassName="flex-col"
-        subHeadingText="Our experienced mobile app developers in India at Moonstack offer a range of custom app development and app modernisation services in India. Here’s a detailed overview of our selection of speciality services in mobile app development for businesses in India."
-        titleClassName="flex flex-col"
-        headingClassName="text-center md-w-auto"
-        featuresData={featuresData}
-      />
-      <OurServices
-        buttonText="Our Services"
-        buttonVariant="rotating"
-        headingLines={[
-          { text: "Our Backend  ", color: "text-white" },
-          { text: "Expertise", color: "text-brand200" },
+        subHeadingLines={[
+          {
+            text: "Our experienced mobile app developers in India at Moonstack offer a range of custom app development and app modernisation services in India. Here’s a detailed overview of our selection of speciality services in mobile app development for businesses in India.",
+            color: "text-white",
+          },
         ]}
         servicesData={servicesArr}
         marginBottom="mb-22"
         cardTag={true}
       />
+
       <Stepper
         steps={processSteps}
+        stepperClass="pt-0"
         headingLines={[{ text: "Our Process", color: "block" }]}
         subHeadingLines={[
           {
@@ -76,6 +81,21 @@ const ApplicationDevelopment = (): React.JSX.Element => {
             color: "block",
           },
         ]}
+      />
+      <SolutionsComponent
+        headingContent={[
+          {
+            text: "Why Choose Us?",
+            color: "text-white text-center ",
+          },
+        ]}
+        subHeadingClassName="flex-col text-center"
+        subHeadingText="As one of the top local mobile app development firms in India, Moonstack offers solutions that are rooted in practicality, transparency, and efficiency. Here are some of the highlight reasons on why you should work with us."
+        titleClassName="flex flex-col"
+        headingClassName="text-center md-w-auto"
+        featuresData={featuresData}
+        benifitCardClassName="lg:grid-cols-3"
+        cardClassName="border border-[var(--Text-Colour-950,#5B5B5B)]"
       />
       <ReusableUtilizeSection
         headingLines={[

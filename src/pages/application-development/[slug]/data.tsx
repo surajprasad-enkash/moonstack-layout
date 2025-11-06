@@ -1,8 +1,8 @@
 import androidImg from "../../../../public/assets/app-development-images/android-hero-img.webp";
 import iosImg from "../../../../public/assets/app-development-images/ios-hero-img.webp";
-import pwaImg from "../../../../public/assets/app-development-images/android-hero-img.webp";
-import reactNativeImg from "../../../../public/assets/app-development-images/android-hero-img.webp";
-import managementImg from "../../../../public/assets/app-development-images/android-hero-img.webp";
+import pwaImg from "../../../../public/assets/app-development-images/pwa-hero-img.webp";
+import reactNativeImg from "../../../../public/assets/app-development-images/native-hero-img.webp";
+import managementImg from "../../../../public/assets/app-development-images/mantainance-hero-img.webp";
 import html from "../../../../public/assets/htmlWithoutBg.svg";
 import flutterIcon from "../../../../public/assets/flutter-icon.svg";
 import swiftIcon from "../../../../public/assets/swift-icon.svg";
@@ -64,6 +64,7 @@ import nativeIconThree from "../../../../public/assets/app-development-images/na
 import nativeIconFour from "../../../../public/assets/app-development-images/native-icon-four.svg";
 import nativeIconFive from "../../../../public/assets/app-development-images/native-icon-five.svg";
 import nativeIconSix from "../../../../public/assets/app-development-images/native-icon-six.svg";
+import androidBgImg from "../../../../public/assets/android-app-bg.webp";
 
 import { IAccordionItem } from "@/components/Homepage/FAQ";
 import { StaticImageData } from "next/image";
@@ -75,6 +76,7 @@ export const pagesData: Record<
       title: { text: string; color: string }[];
       description: { text: string; color: string }[];
       image: StaticImageData | string;
+      bgImage?: StaticImageData | string;
     };
     solutions: {
       headingText: string;
@@ -104,7 +106,7 @@ export const pagesData: Record<
     processSteps: {
       headingText: string;
       subHeadingText: string;
-      steps: { title: string; description: string }[];
+      steps: { title: string; description: string; id: number }[];
     };
 
     slides: { image: StaticImageData | string; title: string; desc: string }[];
@@ -124,13 +126,9 @@ export const pagesData: Record<
           color: "text-primary",
         },
       ],
-      description: [
-        {
-          text: "",
-          color: "text-white",
-        },
-      ],
+      description: [],
       image: androidImg,
+      bgImage: androidBgImg,
     },
     points: [
       "Android is the most popular mobile phone operating system in the world, with an estimated 4.5 billion users worldwide. Our native Android development service in India can help your business develop applications that allow you to reach that humongous audience. Every day, over 250 million Android apps are downloaded globally. With Moonstack’s custom Android application development in India, we can help you build apps that meet your customer’s needs, while meeting your business goals and technical requirements.",
@@ -459,21 +457,25 @@ export const pagesData: Record<
         "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
       steps: [
         {
+          id: 1,
           title: "Consultation & Discussion",
           description:
             "Our consultation and discussion sessions are highly productive as we help our clients realise their app idea into a working development plan. But first, we also ensure our clients get a signed NDA from our end, ensuring their app ideas are safe with us. We follow a stringent process of understanding our client’s vision to help them turn that into an idea that’s built specifically to their purpose.",
         },
         {
+          id: 2,
           title: "App Framework & UI/UX Design",
           description:
             "Once we have a plan for what the app is going to be, our first job is to create a framework for the app, going into every detail to understand the scope of development. Then we move into the UI/UX development phase as a part of our Android UI/UX designing service in India to create clean and intuitive designs that are in line with the client’s brand image.",
         },
         {
+          id: 3,
           title: "Custom Backend Development & Integrations",
           description:
             "For complex enterprise Android app solutions in India, Moonstack goes into great detail to develop the complete codebase from scratch. This allows us to have complete control over the application, preventing glitches and bugs from hampering functionality. It also helps us keep the application and its data secure, which is crucial for large-scale enterprise Android apps.",
         },
         {
+          id: 4,
           title: "Testing, Launch, & Support",
           description:
             "Lastly, our Android app testing services in India, led by experienced app testers and engineers, allow us to optimise the app’s performance and fix any performance issues or bugs. This completes the development process, post which we offer launch support, including deployment of the Android application to Google’s Play Store, and post-launch support.",
@@ -554,6 +556,7 @@ export const pagesData: Record<
         },
       ],
       image: iosImg,
+      bgImage: androidBgImg,
     },
     points: [
       "With Moonstack, you can build iOS apps that seamlessly function across every Apple device responsively. As the top iOS app development agency in India, we ensure multi-device compatibility for our iOS apps, including Macs, iPhones, iPads, and even Apple Watches. The Apple device ecosystem is vast, with new products added to it every few years. This is why our custom iOS application development service in India allows businesses to stay on top of the newest iOS and Apple trends and scale their businesses exponentially.",
@@ -876,22 +879,22 @@ export const pagesData: Record<
       subHeadingText:
         "At Moonstack, we value transparency and confidentiality for our enterprise iOS app development services in India. Our team manages this dichotomy with a stringent set of guidelines and a working structure. Here’s an overview of our collaborative process for iOS app development at Moonstack.",
       steps: [
-        {
+        {id:1,
           title: "Strategy Discussion & Frameworking",
           description:
             "Our initial discussions with you start productively with a clear understanding of your requirements. We sign an NDA upfront to ensure you have confidence in our professionalism. This also ensures your app idea is safe with Moonstack. Next, we ask you relevant questions to better understand the functionality and purpose of the app. Once that’s done, our team begins work from day one, and we start creating a framework for your app.",
         },
-        {
+        {id:2,
           title: "Design Flow & Prototyping",
           description:
             "After the framework is approved, we create a design flow to logically lay out the navigation of the application. This is also done to optimise the UX of the application, ensuring the application is easy to navigate and accessible to all users. Each design prototype is approved by your team to ensure you’re always up-to-date with the production process. ",
         },
-        {
+        {id:3,
           title: "Customisation, Development, & Testing",
           description:
             "The development process involves completing the design and connecting your applications to relevant external platforms and APIs to complete their functionality. We ensure each app is coded from scratch and there’s clean code in the codebase to ensure it's accessible to the client team on demand.",
         },
-        {
+        {id:4,
           title: "Launch & Future Maintenance",
           description:
             "At Moonstack, our affordable iOS app development services in India include complete launch support and future maintenance of your application. We ensure your app is easy to find on the App Store, along with maintenance support for future iOS upgrades. For any future feature upgrades, clients can always avail our iOS app upgrade services in India as well.",
@@ -1301,22 +1304,22 @@ export const pagesData: Record<
       subHeadingText:
         "Moonstack is the trusted partner for React Native enterprise app development in India across industries. Our success can be attributed to our working process, which is built around transparency and confidentiality. What sets us apart? Find out here.",
       steps: [
-        {
+        {id:1,
           title: "Crucial Pre-Work Formalities",
           description:
             "When you choose Moonstack, we want to build a relationship with our clients that’s built around mutual trust. So, along with our project contract, we also provide a signed NDA from our side to the client, offering complete secrecy for their app idea when and after they’re working with us. This is the most crucial part of our working partnership with every client.",
         },
-        {
+        {id:2,
           title: "Idea Discussion & Scope of Work",
           description:
             "Once the formalities are complete, we extensively discuss the app idea with our clients, trying to understand their requirements, the app’s goal and functionality. We also create a visual framework for the app’s navigation and functioning that will allow the client to clearly see their idea laid out and green signal for final production.",
         },
-        {
+        {id:3,
           title: "App Design & Development",
           description:
             "During production as a part of our service for React Native prototype development in India, we create a proof of concept or Minimum Viable Product for our clients. It helps them stay up-to-date with our production process. This also helps us make changes and add features on a regular basis without disrupting the workflow or causing errors in the code.",
         },
-        {
+        {id:4,
           title: "Launch and Post-launch Support",
           description:
             "After the development and testing, we complete our React Native app performance optimisation in India to the gleaming approval of our clients. Post development, it's just about deploying the application on relevant app stores and optimising the listing for better search engine indexing. We also offer detailed post-launch support and app maintenance services.",
@@ -1725,22 +1728,22 @@ export const pagesData: Record<
       subHeadingText:
         "As the top PWA development agency in India, our working process relies on transparency. We ensure our production process hinges on personalised and tailored solutions rather than cookie-cutter designs and development. Here’s a brief overview of our working process.",
       steps: [
-        {
+        {id:1,
           title: "Confidentiality Agreement",
           description:
             "We provide a promise of confidentiality to all our clients with a signed NDA, ensuring their app idea and development process is safe with our team. We also hit the ground running with a detailed and robust working architecture that involves getting started with our work from the first call itself. This is why we’re the top PWA consulting service in India.",
         },
-        {
+        {id:2,
           title: "Development & Prototyping",
           description:
             "The development process starts with designing the UI and creating the different functions of the app over a scalable architecture and framework. There’s a lot of focus on user experience, which includes ensuring the design is accessible across devices. Ensuring design translation across devices is a big part of our enterprise PWA development service in India at Moonstack.",
         },
-        {
+        {id:3,
           title: "Quality Assurance",
           description:
             "Moonstack puts every app we build through rigorous quality assurance. This helps us ensure the app’s functionality is not compromised in any situation, especially for core services to create a seamless user experience. Our quality assurance makes us the best agency for PWA development for small businesses in India.",
         },
-        {
+        {id:4,
           title: "Deployment & Support",
           description:
             "Once the development process is complete, we offer complete deployment support for PWA for e-commerce services in India. This allows businesses to streamline online operations and increase their reach among customers with our PWA deployment and maintenance services.",
@@ -2150,22 +2153,22 @@ export const pagesData: Record<
       subHeadingText:
         "Moonstack is the leading provider of app optimisation services in India. So, if you want to know what makes us the best, here’s an overview of how we provide tangible results to our clients.",
       steps: [
-        {
+        {id:1,
           title: "App Audit",
           description:
             "As a part of our ongoing app support service in India, we get to work from the first call itself. We gather crucial data regarding the app’s bugs and user reports, and based on that, we start studying the codebase as a part of our audit process.",
         },
-        {
+        {id:2,
           title: "Maintenance Strategy",
           description:
             "Based on user reports, backend performance bottlenecks, and compatibility issues, we create a maintenance plan strategy that helps fix the problems with the least possible downtime. However, we always first recommend our clients to use our app data backup services in India to protect their codebase against any malfunctions.",
         },
-        {
+        {id:3,
           title: "Upgrade Implementation",
           description:
             "Once the strategy is in place, we quickly implement the necessary changes in the code to fix the pertinent issues. We monitor our changes and also keep an eye out for any new bugs at all times. This helps us ensure the changes are functional and align with your user experience requirements.",
         },
-        {
+        {id:4,
           title: "Continuous Improvement",
           description:
             "We work tirelessly to continuously improve our maintenance efforts. We also include our clients in the process of our application troubleshooting support service in India by sending them regular updates and reports of key analytical metrics.",

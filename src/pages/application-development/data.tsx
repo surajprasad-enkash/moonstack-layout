@@ -8,6 +8,49 @@ import SliderThree from "../../../public/assets/SliderThree.webp";
 import SliderFour from "../../../public/assets/sliderFour.webp";
 import SliderFive from "../../../public/assets/SliderFive.webp";
 import html from "../../../public/assets/htmlWithoutBg.svg";
+import flutterIcon from "../../../public/assets/flutter-icon.svg";
+import swiftIcon from "../../../public/assets/swift-icon.svg";
+import angularIcon from "../../../public/assets/angular-icon.svg";
+import nextIcon from "../../../public/assets/next-icon.svg";
+import jsIcon from "../../../public/assets/js-icon.svg";
+import dotNetIcon from "../../../public/assets/dotNet-icon.svg";
+import javaIcon from "../../../public/assets/java-icon.svg";
+import phpIcon from "../../../public/assets/php-icon.svg";
+import pythonIcon from "../../../public/assets/python-icon.svg";
+import cakePhpIcon from "../../../public/assets/cake-php-icon.svg";
+import laravelIcon from "../../../public/assets/laravel-icon.svg";
+import codeIgniteIcon from "../../../public/assets/codeIgnite-icon.svg";
+import cssIcon from "../../../public/assets/css-icon.svg";
+import dockerIcon from "../../../public/assets/docker-icon.svg";
+import kubernetesIcon from "../../../public/assets/kubernetes-icon.svg";
+import azureIcon from "../../../public/assets/azure-kubernetes-service.svg";
+import cloudIcon from "../../../public/assets/cloud-icon.svg";
+import microsoftIcon from "../../../public/assets/microsoft-azure-icon.svg";
+import adobeIcon from "../../../public/assets/adobe-xd.svg";
+import illustatorIcon from "../../../public/assets/iullustrator.svg";
+import framerIcon from "../../../public/assets/framer-icon.svg";
+import sketchIcon from "../../../public/assets/sketch.svg";
+import photoshopIcon from "../../../public/assets/photoshop-icon.svg";
+import googleAnalyticsIcon from "../../../public/assets/google-analytics-icon.svg";
+import ahrefsIcon from "../../../public/assets/ahrefs-icon.svg";
+import mozIcon from "../../../public/assets/moz-icon.svg";
+import ubersuggestIcon from "../../../public/assets/ubersuggest-icon.svg";
+import grammerlyIcon from "../../../public/assets/grammerly-icon.svg";
+import woorankIcon from "../../../public/assets/woorank-icon.svg";
+import androidIcon from "../../../public/assets/android-icon.svg";
+import iosIcon from "../../../public/assets/ios-icon.svg";
+import reactIcon from "../../../public/assets/react-icon.svg";
+import pwaIcon from "../../../public/assets/pwa-icon.svg";
+import nodeIcon from "../../../public/assets/node-icon.svg";
+import awsIcon from "../../../public/assets/aws-icon.svg";
+import figmaIcon from "../../../public/assets/figma-icon.svg";
+import serviceIconOne from "../../../public/assets/ios-green-icon.svg";
+import serviceIconTwo from "../../../public/assets/android-green-icon.svg";
+import serviceIconThree from "../../../public/assets/mobile-green-icon.svg";
+import serviceIconFour from "../../../public/assets/react-green-icon.svg";
+import serviceIconFive from "../../../public/assets/pwa-green-icon.svg";
+import serviceIconSix from "../../../public/assets/maintanance-green-icon.svg";
+
 import tabImg from "../../../public/assets/app-development-images/tab-img.webp";
 import { IAccordionItem } from "@/components/Homepage/FAQ";
 
@@ -19,185 +62,232 @@ interface IServiceArray {
 
 export const utilisArr = [
   {
-    image: html,
+    image: androidIcon,
     category: "Mobile App",
-    title: "Experienced in Multi-Platform App Development",
-    desc: "At Moonstack, we have optimal experience in building native Android and iOS apps, as well as multi-platform React-Native apps and PWAs.",
+    title: "Android Development",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: iosIcon,
     category: "Mobile App",
-    title: "100% Custom Mobile App Solutions",
-    desc: "We don’t believe in templates at Moonstack. Thanks to our experienced team of designers and developers, we build every app from scratch, ensuring unparalleled functionality and security across platforms.",
+    title: "iOS Development",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: reactIcon,
     category: "Mobile App",
-    title: "Real World App Building Experience",
-    desc: " Moonstack has worked with startups, SMEs, and even MNCs. This gives us real-world experience in managing our development to meet your business goals optimally.",
+    title: "React Native App Development",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: flutterIcon,
     category: "Mobile App",
-    title: "Scalable Architecturet",
-    desc: "All our apps are built for scalability without hampering existing functions. This allows our clients to grow and expand their apps as per business requirements without fail.",
+    title: "Flutter",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: pwaIcon,
     category: "Mobile App",
-    title: "Transparent Development",
-    desc: "We ensure our code is clean and accessible to the developers on board the project. Even after the app launch, we ensure the entire codebase is accessible to our client easily.",
+    title: "PWA Development",
+    desc: "At Moonstack, we believe in building technology.",
+  },
+  {
+    image: swiftIcon,
+    category: "Mobile App",
+    title: "Swift",
+    desc: "At Moonstack, we believe in building technology.",
+  },
+  {
+    image: angularIcon,
+    category: "Frontend",
+    title: "AngularJs Development",
+    desc: "At Moonstack, we believe in building technology.",
+  },
+  {
+    image: reactIcon,
+    category: "Frontend",
+    title: "ReactJS Development",
+    desc: "At Moonstack, we believe in building technology.",
+  },
+  {
+    image: nextIcon,
+    category: "Frontend",
+    title: "Next.js",
+    desc: "At Moonstack, we believe in building technology.",
+  },
+  {
+    image: jsIcon,
+    category: "Frontend",
+    title: "JavaScript",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
     image: html,
     category: "Frontend",
-    title: "Intent Focused UI/UX Design",
-    desc: "At Moonstack, we ensure our design principles are focused on practicality and user ease of use. We work tirelessly on our app designs to ensure each interface is clean, professional, and easy to use with optimal functionality.",
+    title: "HTML5 Development",
+    desc: "At Moonstack, we believe in building technology.",
   },
-
   {
-    image: html,
+    image: cssIcon,
     category: "Frontend",
-    title: "Experienced in Multi-Platform App Development",
-    desc: "At Moonstack, we have optimal experience in building native Android and iOS apps, as well as multi-platform React-Native apps and PWAs.",
+    title: "CSS3",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
-    category: "Frontend",
-    title: "100% Custom Mobile App Solutions",
-    desc: "We don’t believe in templates at Moonstack. Thanks to our experienced team of designers and developers, we build every app from scratch, ensuring unparalleled functionality and security across platforms.",
-  },
-  {
-    image: html,
-    category: "Frontend",
-    title: "Real World App Building Experience",
-    desc: " Moonstack has worked with startups, SMEs, and even MNCs. This gives us real-world experience in managing our development to meet your business goals optimally.",
-  },
-  {
-    image: html,
-    category: "Frontend",
-    title: "Scalable Architecturet",
-    desc: "All our apps are built for scalability without hampering existing functions. This allows our clients to grow and expand their apps as per business requirements without fail.",
-  },
-  {
-    image: html,
-    category: "Frontend",
-    title: "Transparent Development",
-    desc: "We ensure our code is clean and accessible to the developers on board the project. Even after the app launch, we ensure the entire codebase is accessible to our client easily.",
-  },
-  {
-    image: html,
-    category: "Frontend",
-    title: "Intent Focused UI/UX Design",
-    desc: "At Moonstack, we ensure our design principles are focused on practicality and user ease of use. We work tirelessly on our app designs to ensure each interface is clean, professional, and easy to use with optimal functionality.",
-  },
-  {
-    image: html,
+    image: nodeIcon,
     category: "Backend",
-    title: "Experienced in Multi-Platform App Development",
-    desc: "At Moonstack, we have optimal experience in building native Android and iOS apps, as well as multi-platform React-Native apps and PWAs.",
+    title: "NodeJS Development",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: dotNetIcon,
     category: "Backend",
-    title: "100% Custom Mobile App Solutions",
-    desc: "We don’t believe in templates at Moonstack. Thanks to our experienced team of designers and developers, we build every app from scratch, ensuring unparalleled functionality and security across platforms.",
+    title: ".NET",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: phpIcon,
     category: "Backend",
-    title: "Real World App Building Experience",
-    desc: " Moonstack has worked with startups, SMEs, and even MNCs. This gives us real-world experience in managing our development to meet your business goals optimally.",
+    title: "PHP",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: javaIcon,
     category: "Backend",
-    title: "Scalable Architecturet",
-    desc: "All our apps are built for scalability without hampering existing functions. This allows our clients to grow and expand their apps as per business requirements without fail.",
+    title: "Java",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: pythonIcon,
     category: "Backend",
-    title: "Transparent Development",
-    desc: "We ensure our code is clean and accessible to the developers on board the project. Even after the app launch, we ensure the entire codebase is accessible to our client easily.",
+    title: "Python",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: laravelIcon,
     category: "Backend",
-    title: "Intent Focused UI/UX Design",
-    desc: "At Moonstack, we ensure our design principles are focused on practicality and user ease of use. We work tirelessly on our app designs to ensure each interface is clean, professional, and easy to use with optimal functionality.",
+    title: "Laravel",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: cakePhpIcon,
+    category: "Backend",
+    title: "CakePHP Development",
+    desc: "At Moonstack, we believe in building technology.",
+  },
+  {
+    image: codeIgniteIcon,
+    category: "Backend",
+    title: "CodeIgniter Development",
+    desc: "At Moonstack, we believe in building technology.",
+  },
+  {
+    image: dockerIcon,
     category: "Devops",
-    title: "Experienced in Multi-Platform App Development",
-    desc: "At Moonstack, we have optimal experience in building native Android and iOS apps, as well as multi-platform React-Native apps and PWAs.",
+    title: "Docker",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: kubernetesIcon,
     category: "Devops",
-    title: "100% Custom Mobile App Solutions",
-    desc: "We don’t believe in templates at Moonstack. Thanks to our experienced team of designers and developers, we build every app from scratch, ensuring unparalleled functionality and security across platforms.",
+    title: "Kubernetes",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: azureIcon,
     category: "Devops",
-    title: "Real World App Building Experience",
-    desc: " Moonstack has worked with startups, SMEs, and even MNCs. This gives us real-world experience in managing our development to meet your business goals optimally.",
+    title: "Azure Service",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: cloudIcon,
     category: "Devops",
-    title: "Scalable Architecturet",
-    desc: "All our apps are built for scalability without hampering existing functions. This allows our clients to grow and expand their apps as per business requirements without fail.",
+    title: "Google Cloud Platform",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: awsIcon,
     category: "Devops",
-    title: "Transparent Development",
-    desc: "We ensure our code is clean and accessible to the developers on board the project. Even after the app launch, we ensure the entire codebase is accessible to our client easily.",
+    title: "Amazon Web Services",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: microsoftIcon,
     category: "Devops",
-    title: "Intent Focused UI/UX Design",
-    desc: "At Moonstack, we ensure our design principles are focused on practicality and user ease of use. We work tirelessly on our app designs to ensure each interface is clean, professional, and easy to use with optimal functionality.",
+    title: "Microsoft Azure",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: googleAnalyticsIcon,
     category: "SEO",
-    title: "Experienced in Multi-Platform App Development",
-    desc: "At Moonstack, we have optimal experience in building native Android and iOS apps, as well as multi-platform React-Native apps and PWAs.",
+    title: "Google Analytics",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: ahrefsIcon,
     category: "SEO",
-    title: "100% Custom Mobile App Solutions",
-    desc: "We don’t believe in templates at Moonstack. Thanks to our experienced team of designers and developers, we build every app from scratch, ensuring unparalleled functionality and security across platforms.",
+    title: "Ahrefs",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: mozIcon,
     category: "SEO",
-    title: "Real World App Building Experience",
-    desc: " Moonstack has worked with startups, SMEs, and even MNCs. This gives us real-world experience in managing our development to meet your business goals optimally.",
+    title: "Moz",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: ubersuggestIcon,
     category: "SEO",
-    title: "Scalable Architecturet",
-    desc: "All our apps are built for scalability without hampering existing functions. This allows our clients to grow and expand their apps as per business requirements without fail.",
+    title: "Ubersuggest",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: grammerlyIcon,
     category: "SEO",
-    title: "Transparent Development",
-    desc: "We ensure our code is clean and accessible to the developers on board the project. Even after the app launch, we ensure the entire codebase is accessible to our client easily.",
+    title: "Grammerly",
+    desc: "At Moonstack, we believe in building technology.",
   },
   {
-    image: html,
+    image: woorankIcon,
     category: "SEO",
-    title: "Intent Focused UI/UX Design",
-    desc: "At Moonstack, we ensure our design principles are focused on practicality and user ease of use. We work tirelessly on our app designs to ensure each interface is clean, professional, and easy to use with optimal functionality.",
+    title: "Woorank",
+    desc: "At Moonstack, we believe in building technology.",
+  },
+  {
+    image: figmaIcon,
+    category: "UI/UX",
+    title: "Figma",
+    desc: "At Moonstack, we believe in building technology.",
+  },
+  {
+    image: adobeIcon,
+    category: "UI/UX",
+    title: "Adobe Xd",
+    desc: "At Moonstack, we believe in building technology.",
+  },
+  {
+    image: photoshopIcon,
+    category: "UI/UX",
+    title: "Photoshop",
+    desc: "At Moonstack, we believe in building technology.",
+  },
+  {
+    image: illustatorIcon,
+    category: "UI/UX",
+    title: "Illustrator",
+    desc: "At Moonstack, we believe in building technology.",
+  },
+  {
+    image: framerIcon,
+    category: "UI/UX",
+    title: "Framer",
+    desc: "At Moonstack, we believe in building technology.",
+  },
+  {
+    image: sketchIcon,
+    category: "UI/UX",
+    title: "Sketch",
+    desc: "At Moonstack, we believe in building technology.",
   },
 ];
 
@@ -236,40 +326,40 @@ export const slides = [
 
 export const featuresData = [
   {
-    imgSrc: revenue,
-    title: "Mobile App Development",
+    imgSrc: serviceIconTwo,
+    title: "Experienced in Multi-Platform App Development",
     description:
-      "Our mobile app consulting services in India can be utilised to develop any mobile application you need. We offer custom mobile app development services in India.",
+      "At Moonstack, we have optimal experience in building native Android and iOS apps, as well as multi-platform React-Native apps and PWAs.",
   },
   {
-    imgSrc: revenue,
-    title: "Android App Development",
+    imgSrc: serviceIconOne,
+    title: "100% Custom Mobile App Solutions",
     description:
-      "Moonstack offers high-performance mobile app development services in India. Our mobile application developers in India work alongside top designers to create a consistent front-end design for your Android applications.",
+      "We don’t believe in templates at Moonstack. Thanks to our experienced team of designers and developers, we build every app from scratch, ensuring unparalleled functionality and security across platforms.",
   },
   {
-    imgSrc: revenue,
-    title: "iOS App Development",
+    imgSrc: serviceIconFour,
+    title: "Real World App Building Experience",
     description:
-      "Moonstack offers the best mobile app development services in India for iOS development. Our team of top mobile app developers in India is experienced in developing iOS applications for all Apple devices.",
+      "Moonstack has worked with startups, SMEs, and even MNCs. This gives us real-world experience in managing our development to meet your business goals optimally.",
   },
   {
-    imgSrc: revenue,
-    title: "React Native App Development",
+    imgSrc: serviceIconFive,
+    title: "Scalable Architecture",
     description:
-      "If you’re looking for affordable mobile app development services in India, our React native app development services are perfect for you. This is one of our most sought-after services for mobile app design and development in India.",
+      "All our apps are built for scalability without hampering existing functions. This allows our clients to grow and expand their apps as per business requirements without fail.",
   },
   {
-    imgSrc: revenue,
-    title: "Progressive Web App (PWA) Development",
+    imgSrc: serviceIconSix,
+    title: "Transparent Development",
     description:
-      "Our on-demand mobile app development service in India for progressive web apps is reliable, secure, and offers unmatched functionality with minimal friction for users.",
+      "We ensure our code is clean and accessible to the developers on board the project. Even after the app launch, we ensure the entire codebase is accessible to our client easily.",
   },
   {
-    imgSrc: revenue,
-    title: "App Maintenance & Post Deployment Support",
+    imgSrc: serviceIconThree,
+    title: "Intent Focused UI/UX Design",
     description:
-      "As a part of our mobile app development for startups in India, at Moonstack, we offer ongoing app maintenance and post-deployment support.",
+      "At Moonstack, we ensure our design principles are focused on practicality and user ease of use. We work tirelessly on our app designs to ensure each interface is clean, professional, and easy to use with optimal functionality.",
   },
 ];
 
@@ -293,49 +383,53 @@ export const infoData = [
 
 export const servicesArr: IServiceArray[] = [
   {
-    image: revenue,
-    title: "Web Designing",
-    desc: "Earney is a financial solution to energize and empower Small and Medium.",
+    image: serviceIconTwo,
+    title: "Android App Development",
+    desc: "Moonstack offers high-performance mobile app development services in India. Our mobile application developers in India work alongside top designers to create a consistent front-end design for your Android applications.",
   },
   {
-    image: revenue,
-    title: "Mobile Development",
-    desc: "Earney is a financial solution to energize and empower Small and Medium.",
+    image: serviceIconOne,
+    title: "iOS App Development",
+    desc: "Moonstack offers the best mobile app development services in India for iOS development. Our team of top mobile app developers in India is experienced in developing iOS applications for all Apple devices.",
   },
   {
-    image: revenue,
-    title: "Cloud Service",
-    desc: "Earney is a financial solution to energize and empower Small and Medium.",
+    image: serviceIconFour,
+    title: "React Native App Development",
+    desc: "If you’re looking for affordable mobile app development services in India, our React native app development services are perfect for you. This is one of our most sought-after services for mobile app design and development in India.",
   },
   {
-    image: revenue,
-    title: "Frontend Development",
-    desc: "Earney is a financial solution to energize and empower Small and Medium.",
+    image: serviceIconFive,
+    title: "Progressive Web App (PWA) Development",
+    desc: "Our on-demand mobile app development service in India for progressive web apps is reliable, secure, and offers unmatched functionality with minimal friction for users.",
   },
   {
-    image: revenue,
-    title: "Backend Development",
-    desc: "Earney is a financial solution to energize and empower Small and Medium.",
+    image: serviceIconThree,
+    title: "App Maintenance & Post Deployment Support",
+    desc: "As a part of our mobile app development for startups in India, at Moonstack, we offer ongoing app maintenance and post-deployment support.",
   },
 ];
 
 export const processSteps = [
   {
+    id: 1,
     title: "Initial Discussion & Understanding Project Scope",
     description:
       "We get to work right from the first discussion to help you get started. Whether you’re trying to hire mobile app developers in India through Moonstack or you’re interested in our full-service app development solutions to outsource mobile app development in India, we can do it all. We also take confidentiality very seriously, which is why we sign a Non-Disclosure Agreement (NDA) with our clients to ensure they can trust us with their app ideas confidently.",
   },
   {
+    id: 2,
     title: "Research & Prototyping",
     description:
       "Our experienced mobile app developers in India create every app from scratch, methodically creating a truly custom application that’s built specifically as per your security, design, and functionality specifications. Whether it is a cross-platform Native-React application or a native Android or iOS app, our QA engineers follow a strict quality standard to ensure there are no bugs or performance issues in your app.",
   },
   {
+    id: 3,
     title: "Development & Testing",
     description:
       "Our experienced mobile app developers in India create every app from scratch, methodically creating a truly custom application that’s built specifically as per your security, design, and functionality specifications. Whether it is a cross-platform Native-React application or a native Android or iOS app, our QA engineers follow a strict quality standard to ensure there are no bugs or performance issues in your app.",
   },
   {
+    id: 4,
     title: "Deployment & Launch Support",
     description:
       "As a part of our enterprise mobile app solutions in India, once the mobile application has passed testing and quality standards, we offer complete launch support to our clients. This includes the deployment of the apps on popular app stores like Google Play Store and Apple App Store. We also help our clients optimise their app listings on app stores to improve visibility and help with a successful app launch. We also offer app maintenance and monitoring support to our clients after the app launch is complete.",
@@ -366,7 +460,6 @@ export const accordionData: IAccordionItem[] = [
 ];
 
 export const points = [
-  "At Moonstack, we understand the power of mobile applications and deliver complete end-to-end mobile app solutions in India for businesses. When built right, mobile apps can scale businesses and build brands. They are the most direct connection customers have with brands and a gateway to customer retention and business growth.",
   "As a premier mobile app development company in India, we excel in building custom Android, iOS, web, and cross-platform apps tailored to your business goals. Our team consists of developers, UI designers, and UX specialists who collaborate to build scalable apps with robust and secure backend systems and intuitive front-end design over a scalable architecture.",
   "From helping startups develop their MVP concepts to working with MNCs seeking enterprise mobile app solutions in India, we’ve worked across industries such as e-commerce, healthcare, finance, and logistics with great success. So, if you’re looking for an experienced mobile app development agency in India that offers an optimal balance of technical expertise and design fluency, choose Moonstack today",
 ];

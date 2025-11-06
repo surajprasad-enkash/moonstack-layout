@@ -15,6 +15,8 @@ interface OurServicesProps {
   buttonText?: string;
   buttonVariant?: "primary" | "rotating" | "small";
   headingLines: { text: string; color?: string }[];
+  subHeadingLines?: { text: string; color?: string }[];
+
   servicesData: ServiceItem[];
   vectorImage?: StaticImageData | string;
   marginBottom?: string;
@@ -23,8 +25,9 @@ interface OurServicesProps {
 }
 
 const OurServices: React.FC<OurServicesProps> = ({
-  buttonText = "Our Services",
+  buttonText,
   headingLines,
+  subHeadingLines,
   servicesData,
   vectorImage,
   marginBottom,
@@ -57,11 +60,18 @@ const OurServices: React.FC<OurServicesProps> = ({
         transition={{ duration: 0.8, delay: 0.2 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        <Heading
-          headingTag="h2"
-          className="font-bold font-36 text-center pt-3"
-          content={headingLines}
-        />
+        <div className="w-2/3 m-auto">
+          <Heading
+            headingTag="h2"
+            className="font-bold font-36 text-center pt-3"
+            content={headingLines}
+          />
+          <Heading
+            headingTag="p"
+            className=" text-center pt-3"
+            content={subHeadingLines}
+          />
+        </div>
       </motion.div>
 
       <motion.div

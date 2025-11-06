@@ -30,6 +30,7 @@ export default function ApplicationPage() {
         image={page.hero.image}
         buttonText="Get Started"
         bgColor="bg-black"
+        bgImage={page.hero.bgImage}
       />
       <ImportanceSection
         image={importance}

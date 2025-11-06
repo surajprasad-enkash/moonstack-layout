@@ -55,7 +55,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
               content={[
                 { text: mainHeading, color: "text-white block" },
                 ...(highlightHeading
-                  ? [{ text: highlightHeading, color: "text-brand200" }]
+                  ? [{ text: highlightHeading, color: "text-[#1CFF6C]" }]
                   : []),
               ]}
             />

@@ -31,14 +31,22 @@ export default function ApplicationPage() {
         description={page.hero.description}
         image={page.hero.image}
         buttonText="Discuss your tech needs now "
-        bgColor="bg-black"
+        bgColor="md:!pt-10"
+        backgroundImage={page.hero.backgroundImage}
       />
       <ImportanceSection
         image={importance}
+        heading={[
+          {
+            text: "Moonstack - Leading Laravel Development Company  ",
+            color: "text-white ",
+          },
+          { text: " for your business ", color: "text-[#0CE859]" },
+        ]}
         altText="Backend importance image"
         points={page.points}
         tickIcon={greenTick}
-        reverse={false} // You can toggle this for layout switch
+        reverse={false}
       />
       <SolutionsComponent
         headingContent={[
@@ -50,7 +58,7 @@ export default function ApplicationPage() {
         cardClassName="flex justify-center"
         benifitCardClassName="lg:grid-cols-3 "
         imgClassName="flex justify-center"
-        bgColor=""
+        bgColor="bg-[linear-gradient(180deg,#000000_0%,#0C401E_100%)] text-center"
       />
 
       <ChooseUsTabSection
@@ -75,6 +83,7 @@ export default function ApplicationPage() {
       />
 
       <Stepper
+    
         steps={page.processSteps.steps}
         headingLines={[{ text: page.processSteps.headingText, color: "block" }]}
         subHeadingLines={[{ text: page.processSteps.subHeadingText }]}

@@ -8,7 +8,7 @@ type ImportanceSectionProps = {
   altText: string;
   points: string[];
   tickIcon: StaticImageData;
-  heading?: string;
+  heading?: { text: string; color?: string; className?: string }[];
   subHeading?: string;
   reverse?: boolean; // Optional → if true, image will appear on right side
 };
@@ -24,19 +24,19 @@ const ImportanceSection: React.FC<ImportanceSectionProps> = ({
 }) => {
   return (
     <div
-      className={`bg-black utilize-bg px-4 sm:px-10 py-12 md:py-20 relative container mx-auto flex flex-col md:flex-row overflow-hidden ${
+      className={`bg-black gap-20 utilize-bg px-4 sm:px-10 py-12 md:py-20 relative container mx-auto flex flex-col md:flex-row overflow-hidden ${
         reverse ? "md:flex-row-reverse" : ""
       }`}
     >
       {/* Left or Right Image */}
-      <div className="md:w-1/2 flex justify-center items-center">
-        <Image
-          src={image}
-          alt={altText}
-          width={522}
-          height={382}
-          className="object-contain"
-        />
+      <div className="md:w-1/2 flex justify-center items-center md:h-auto">
+        <div className="w-full h-full flex justify-center items-center">
+          <Image
+            src={image}
+            alt={altText}
+            className="object-fill w-full h-full max-h-full"
+          />
+        </div>
       </div>
 
       {/* Text & Points Section */}
@@ -44,8 +44,8 @@ const ImportanceSection: React.FC<ImportanceSectionProps> = ({
         {heading && (
           <Heading
             headingTag="h2"
-            className="text-white text-3xl font-semibold pb-4"
-            content={[{ text: heading }]}
+            className="text-white font-36 font-semibold pb-4"
+            content={heading}
           />
         )}
         {subHeading && (

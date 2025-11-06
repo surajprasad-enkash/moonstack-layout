@@ -83,7 +83,7 @@ import androidTabImgFour from "../../../../public/assets/app-development-images/
 import androidTabImgFive from "../../../../public/assets/app-development-images/android-tab-img-five.webp";
 import androidTabImgSix from "../../../../public/assets/app-development-images/android-tab-img-six.webp";
 import laravelImg from "../../../../public/assets/laravel-hero-img.webp";
-
+import laravelBgImg from "../../../../public/assets/laravel-bg.webp";
 import { IAccordionItem } from "@/components/Homepage/FAQ";
 import { StaticImageData } from "next/image";
 
@@ -94,6 +94,7 @@ export const pagesData: Record<
       title: { text: string; color: string }[];
       description: { text: string; color: string }[];
       image: StaticImageData | string;
+      backgroundImage: StaticImageData | string;
     };
     solutions: {
       headingText: string;
@@ -151,11 +152,11 @@ export const pagesData: Record<
         },
       ],
       image: laravelImg,
+      backgroundImage: laravelBgImg,
     },
     points: [
-      "Android is the most popular mobile phone operating system in the world, with an estimated 4.5 billion users worldwide. Our native Android development service in India can help your business develop applications that allow you to reach that humongous audience. Every day, over 250 million Android apps are downloaded globally. With Moonstack’s custom Android application development in India, we can help you build apps that meet your customer’s needs, while meeting your business goals and technical requirements.",
-      "Thanks to our years of experience building industry-defining Android apps with intuitive UI/UX, secure backend support, and detailed functionality, we are proudly among the top Android app development company in India. Our experience encompasses building high-performance Android applications from concepts for startups to building highly complex enterprise Android apps for major MNCs. ",
-      "So, whether you need a simple on-demand Android app or one with full e-commerce functionality, Moonstack can help you build your dream concept into a scalable Android app as the most secure Android app development company in India.",
+      "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses. .",
+      "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs. ",
     ],
     solutions: {
       headingText: "Our Specialities",
@@ -582,9 +583,8 @@ export const pagesData: Record<
       image: iosImg,
     },
     points: [
-      "With Moonstack, you can build iOS apps that seamlessly function across every Apple device responsively. As the top iOS app development agency in India, we ensure multi-device compatibility for our iOS apps, including Macs, iPhones, iPads, and even Apple Watches. The Apple device ecosystem is vast, with new products added to it every few years. This is why our custom iOS application development service in India allows businesses to stay on top of the newest iOS and Apple trends and scale their businesses exponentially.",
-      "The number of Apple users is growing rapidly in India rapidly with most users choosing iPhones over Android devices for a premium mobile experience. Brands that have taken note of this trend and invested in iPhone application development services in India have benefited exponentially. As the premier iOS app development company in India, choosing Moonstack can help you develop a truly custom, secure, responsive, and scalable iOS app that suits your every business goal.",
-      "With over 15 years of experience and 450+ completed projects, we have worked with a range of businesses right from startups to enterprises. Our iOS application consulting services in India are highly specialised and built to suit your needs. Contact us, and we can help you build your dream app starting today",
+      "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses. ",
+      "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs. ",
     ],
     solutions: {
       headingText: "Our Specialities",

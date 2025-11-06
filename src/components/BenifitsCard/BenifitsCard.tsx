@@ -30,11 +30,11 @@ const BenifitsCard: React.FC<BenifitsCardProps> = ({
 }) => {
   return (
     <div
-      className={`w-full relative  p-10 bg-gradient-to-r ${bgColor} hover:from-transparent hover:to-[#0D320D] transition duration-400 rounded-2xl ${className}`}
+      className={`w-full relative h-[-webkit-fill-available] p-10 bg-gradient-to-r ${bgColor} hover:from-transparent hover:to-[#0D320D] transition duration-400 rounded-2xl ${className}`}
     >
       {cardTag && (
         <div
-          className="w-[134px] h-[59px] rounded-t-[20px] opacity-100 absolute left-1/2 top-1.5 -translate-x-1/2 -translate-y-1/2"
+          className="w-[134px] h-[59px] rounded-t-[20px] opacity-100 absolute left-1/2 top-1.5 -translate-x-1/2 -translate-y-1/2 z-[-1]"
           style={{
             background: "linear-gradient(180deg, #71FFA3 0%, #031C0C 52.85%)",
           }}

@@ -1,4 +1,4 @@
-import revenue from "../../../public/assets/revenue.svg";
+import revenue from "../../../public/assets/dummy-icon.svg";
 import arrowUp from "../../../public/assets/arrow-up.svg";
 import SliderOne from "../../../public/assets/sliderOne.webp";
 import SliderTwo from "../../../public/assets/sliderTwo.webp";
@@ -55,24 +55,40 @@ export interface IAccordionItem {
 }
 export const processSteps = [
   {
+    id: 1,
     title: "Requirement Gatherings ",
     description:
-      "We get to work right from the first discussion to help you get started. Whether you’re trying to hire mobile app developers in India through Moonstack or you’re interested in our full-service app development solutions to outsource mobile app development in India, we can do it all. We also take confidentiality very seriously, which is why we sign a Non-Disclosure Agreement (NDA) with our clients to ensure they can trust us with their app ideas confidently.",
+      "We collect all the information and understand what the business is all about and things that it requires. ",
   },
   {
+    id: 2,
     title: "Client Discussion",
+    description:
+      "After our understanding we have proper discussion with clients and have knowledge of what they are actually looking for.  ",
   },
   {
+    id: 3,
     title: "Research and Brainstorming",
+    description:
+      "Our web development team researches what is going on in a market that can align and have internal discussions. ",
   },
   {
+    id: 4,
     title: "Designing and Development ",
+    description:
+      "Designers bring innovative and immersive designs that connect with audiences and with technologies to develop websites. ",
   },
   {
+    id: 5,
     title: "Testing and Deployment  ",
+    description:
+      "Before launching the website in the market we do end to end testing and deployment process that ensure to launch websites error free  ",
   },
   {
+    id: 6,
     title: "Launching ",
+    description:
+      "We launch websites in the market with the right SEO Strategies. Users can browse it from web and mobile easily. ",
   },
 ];
 

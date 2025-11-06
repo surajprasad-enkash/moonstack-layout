@@ -21,11 +21,11 @@ const WebsiteBanner = () => {
               },
               {
                 text: "Service for Businesses",
-                color: "text-Color.primary",
+                color: "text-[#1CFF6C]",
               },
             ]}
           />
-          <h1 className="text-primary">Website Development </h1>
+
           <Heading
             headingTag="p"
             className="font-16 pt-4"
