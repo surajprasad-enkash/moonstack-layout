@@ -70,7 +70,8 @@ const WebsiteCategoryBanner: React.FC<WebsiteCategoryBannerProps> = ({
         <Image
           src={image}
           alt="banner image"
-          className="object-contain w-full h-auto m-auto"
+          height={556}
+          className="object-contain  m-auto"
         />
       </div>
 

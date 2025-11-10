@@ -26,18 +26,11 @@ const VerticalStepper: React.FC<VerticalStepperProps> = ({
   stepperClass,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [scrollProgress, setScrollProgress] = useState(0);
   const [activeStep, setActiveStep] = useState<number | null>(null);
 
-  // 🟢 Detect scroll position & active step
   useEffect(() => {
     const handleScroll = () => {
       if (!containerRef.current) return;
-      const rect = containerRef.current.getBoundingClientRect();
-      const progress = Math.min(Math.max(-rect.top / rect.height, 0), 1);
-      setScrollProgress(progress);
-
-      // Determine which step is near the center
       const viewportMid = window.innerHeight / 2;
       const stepEls = containerRef.current.querySelectorAll("[data-step]");
       let closestIndex = 0;
@@ -57,111 +50,114 @@ const VerticalStepper: React.FC<VerticalStepperProps> = ({
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // 🟢 Dynamic gradient from light to dark green based on scroll
-  const gradient = `linear-gradient(to bottom, #00FF88 ${
-    scrollProgress * 100
-  }%, #004422 100%)`;
-
   return (
-    <section className={`bg-black text-white py-20 relative ${stepperClass}`}>
-      <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[50%] text-center m-auto pb-12">
+    <section
+      className={`relative bg-[#0a0a0a] text-white py-24 overflow-hidden ${stepperClass}`}
+    >
+      {/* Glow gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#001e0f] to-[#0a0a0a] opacity-90 pointer-events-none" />
+
+      {/* Section Header */}
+      <div className="relative text-center max-w-3xl mx-auto mb-16">
         {tagText && (
           <motion.div
-            className="text-center mb-4"
-            initial={{ opacity: 0, y: 50 }} // start 50px below
-            whileInView={{ opacity: 1, y: 0 }} // slide up
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true, amount: 0.2 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
           >
-            <Tag text={tagText} className="text-center" />
+            <Tag text={tagText} />
           </motion.div>
         )}
 
-        {/* Heading */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          viewport={{ once: true }}
         >
           <Heading
-            headingTag="h2"
-            className="font-bold pt-3 text-[#00CF49] font-36 text-center"
+            headingTag="h3"
+            className="font-semibold"
             content={headingLines}
           />
         </motion.div>
 
         {subHeadingLines && (
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            viewport={{ once: true }}
           >
             <Heading
               headingTag="p"
-              className="font-bold pt-3 text-white font-14 text-center"
+              className="text-gray-400 text-lg mt-3"
               content={subHeadingLines}
             />
           </motion.div>
         )}
       </div>
 
-      <div ref={containerRef} className="relative w-full max-w-5xl mx-auto">
-        {/* 🟢 Vertical line */}
-        <div
-          className="absolute left-1/2 top-0 w-[2px] h-full -translate-x-1/2 transition-all duration-300"
-          style={{ background: gradient }}
-        />
-
+      {/* Stepper */}
+      <div
+        ref={containerRef}
+        className="relative max-w-5xl mx-auto flex flex-col gap-24 md:gap-28"
+      >
+        {" "}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[2px] h-full bg-gradient-to-b from-[#00ff99] via-[#00cc66] to-transparent" />
         {steps.map((step, index) => (
           <motion.div
             key={step.id}
             data-step
-            className={`flex items-center justify-between  relative ${
-              index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+            className={`relative flex flex-col md:flex-row items-center gap-10 ${
+              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             }`}
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            {/* Left/Right content */}
-            <div
-              className={`w-5/12 transition-colors duration-300 ${
-                activeStep === index ? "text-white" : "text-[#999A99]"
-              }`}
-            >
-              <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-              <p
-                className={`leading-relaxed transition-colors duration-300 ${
-                  activeStep === index ? "text-[#EDEDED]" : "text-[#999A99]"
-                }`}
-              >
-                {step.description}
-              </p>
-            </div>
-
-            {/* Center circle */}
+            {/* Connector circle */}
             <div className="relative z-10 flex flex-col items-center">
               <motion.div
                 animate={{
                   boxShadow:
                     activeStep === index
-                      ? "0 0 30px #00ff88, 0 0 60px #00ff88"
-                      : "0 0 10px #006633",
-                  borderColor: activeStep === index ? "#00FF88" : "#004422",
-                  color: activeStep === index ? "#00FF88" : "#004422",
+                      ? "0 0 25px #00ff88, 0 0 50px #00ff88"
+                      : "0 0 8px #003311",
+                  scale: activeStep === index ? 1.1 : 1,
                 }}
                 transition={{ duration: 0.3 }}
-                className="w-16 h-16 rounded-full bg-black border-4 flex items-center justify-center font-semibold text-lg"
+                className={`w-16 h-16 rounded-full border-4 flex items-center justify-center font-semibold text-lg ${
+                  activeStep === index
+                    ? "border-[#00ff99] text-[#00ff99] bg-[#001f14]"
+                    : "border-[#004422] text-[#004422] bg-[#0d0d0d]"
+                }`}
               >
                 {String(step.id).padStart(2, "0")}
               </motion.div>
             </div>
 
-            {/* Placeholder for alignment */}
-            <div className="w-5/12" />
+            {/* Step Content */}
+            <motion.div
+              className={`w-full md:w-5/12 p-8 rounded-2xl bg-gradient-to-b from-[#111111] to-[#0b0b0b] backdrop-blur-md border border-[#1f1f1f] transition-all duration-300 ${
+                activeStep === index
+                  ? "shadow-[0_0_30px_#00ff8840]"
+                  : "hover:shadow-[0_0_20px_#00ff8830]"
+              }`}
+            >
+              <h3
+                className={`text-2xl font-bold mb-3 ${
+                  activeStep === index ? "text-[#00ff99]" : "text-white"
+                }`}
+              >
+                {step.title}
+              </h3>
+              <p className="text-gray-400 leading-relaxed text-base">
+                {step.description}
+              </p>
+            </motion.div>
           </motion.div>
         ))}
       </div>

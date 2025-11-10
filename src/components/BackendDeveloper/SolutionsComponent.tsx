@@ -34,6 +34,7 @@ interface SolutionsProps {
   imgClassName?: string;
   bgColor?: string;
   ClassName?: string;
+  cardIconSize?: string;
 }
 
 const SolutionsComponent: React.FC<SolutionsProps> = ({
@@ -50,6 +51,7 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
   titleClassName = "flex-col md:flex-row",
   benifitCardClassName = "lg:grid-cols-4",
   ClassName = "",
+  cardIconSize = "",
 }) => {
   return (
     <div
@@ -66,7 +68,7 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
         >
           <Heading
             headingTag="h2"
-            className={`pt-3 font-36 ${headingClassName}`}
+            className={`pt-3 font-36 ${headingClassName} `}
             content={headingContent}
           />
         </motion.div>
@@ -101,6 +103,7 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
             className={`${cardClassName} ${feature.cardClassName || ""}`}
             imgClassName={imgClassName}
             bgColor={bgColor}
+            cardIconSize={cardIconSize}
           />
         ))}
       </div>

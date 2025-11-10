@@ -14,6 +14,7 @@ interface BenifitsCardProps {
   buttonLink?: string;
   cardTag?: boolean;
   imgClassName?: string;
+  cardIconSize?: string;
 }
 
 const BenifitsCard: React.FC<BenifitsCardProps> = ({
@@ -27,6 +28,7 @@ const BenifitsCard: React.FC<BenifitsCardProps> = ({
   buttonLink,
   cardTag,
   imgClassName = "",
+  cardIconSize = "w-10",
 }) => {
   return (
     <div
@@ -41,7 +43,7 @@ const BenifitsCard: React.FC<BenifitsCardProps> = ({
         ></div>
       )}
       <div className={imgClassName}>
-        <Image src={imgSrc} alt={alt} className="w-10" />
+        <Image src={imgSrc} alt={alt} className={cardIconSize} />
       </div>
       <div className="mt-8 poppins-semibold font-18 text-white ">{title}</div>
       <div className="mt-3 poppins-medium font-14 leading-[200%] text-white ">

@@ -64,7 +64,6 @@ const ApplicationDevelopment = (): React.JSX.Element => {
         ]}
         servicesData={servicesArr}
         marginBottom="mb-22"
-        cardTag={true}
       />
 
       <Stepper

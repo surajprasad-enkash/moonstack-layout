@@ -36,7 +36,6 @@ const Website = (): React.JSX.Element => {
         <ImportanceSection
           image={importanceImg}
           title="Website Development Company  "
-          highlightTitle="expert now "
           description={[
             "MoonStack is known as a leading website development company in India. We have delivered a wide range of powerful, AI driven, and user centric websites to different businesses from start ups to large enterprises. Our top industry web experts in India build high performance and innovative websites that deliver smart automation and personalized user experience that ensures to meet the modern trends. ",
             "We have a team of full stack website developers in India, who have hands-on experience to build websites from scratch and integrate latest trending features that allow businesses to stay ahead in the market competition. Our professional web developers build websites from scratch that can automate workflows, analyse user experiences, and deliver personalized experiences that deliver next generation user experience and reduce internal workflow processes. At Moonstack, we are experienced in developing websites from scratch as well as upgrading existing websites with advanced user centric designs that meet all modern IT trends and innovations. ",

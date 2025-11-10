@@ -55,7 +55,7 @@ const AppBanner = () => {
             src={heroImg}
             alt="hand-image"
             width={600}
-            className="object-contain z-20 animate-bounce [animation-duration:10s] "
+            className="object-contain z-20  "
           />
         </div>
       </div>
