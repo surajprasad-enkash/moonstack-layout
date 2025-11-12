@@ -63,7 +63,7 @@ const OurServices: React.FC<OurServicesProps> = ({
         <div className="w-2/3 m-auto">
           <Heading
             headingTag="h2"
-            className="font-bold font-36 text-center pt-3"
+            className="font-bold font-36 text-center"
             content={headingLines}
           />
           <Heading

@@ -6,9 +6,10 @@ import { motion } from "framer-motion";
 import StepCard from "@/components/StepCard/StepCard";
 
 interface ServiceItem {
-  image: StaticImageData | string;
+  image?: StaticImageData | string;
   title: string;
-  desc: string;
+  description: string;
+  id?: number;
 }
 
 interface ProcessSectionProps {
@@ -31,7 +32,6 @@ const ProcessSection: React.FC<ProcessSectionProps> = ({
   servicesData,
   vectorImage,
   className,
- 
 }) => {
   return (
     <div className="bg-black px-4 sm:px-10 py-12 md:py-20 relative z-10 container mx-auto overflow-hidden">
@@ -94,12 +94,11 @@ const ProcessSection: React.FC<ProcessSectionProps> = ({
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-          
             <StepCard
               key={index}
               index={index}
               title={service.title}
-              description={service.desc}
+              description={service.description}
               accentColor="#0CE859"
             />
           </motion.div>

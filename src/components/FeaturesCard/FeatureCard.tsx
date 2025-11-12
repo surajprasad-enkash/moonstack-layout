@@ -22,7 +22,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
     >
       <Image src={imgSrc} alt={alt} className="w-9" />
 
-      <div className="mt-10 poppins-semibold font-20">{title}</div>
+      <div className="mt-10 poppins-semibold  font-20">{title}</div>
       <div className="mt-4 poppins-medium font-14 leading-[200%]">
         {description}
       </div>

@@ -50,6 +50,11 @@ import serviceIconThree from "../../../public/assets/mobile-green-icon.svg";
 import serviceIconFour from "../../../public/assets/react-green-icon.svg";
 import serviceIconFive from "../../../public/assets/pwa-green-icon.svg";
 import serviceIconSix from "../../../public/assets/maintanance-green-icon.svg";
+import featureIconOne from "../../../public/assets/app-development-images/why-choose-icon-one.svg";
+import featureIconTwo from "../../../public/assets/app-development-images/why-choose-icon-two.svg";
+import featureIconThree from "../../../public/assets/app-development-images/why-choose-icon-three.svg";
+import featureIconFour from "../../../public/assets/app-development-images/why-choose-icon-four.svg";
+import featureIconFive from "../../../public/assets/app-development-images/why-choose-icon-five.svg";
 
 import tabImg from "../../../public/assets/app-development-images/tab-img.webp";
 import { IAccordionItem } from "@/components/Homepage/FAQ";
@@ -326,31 +331,31 @@ export const slides = [
 
 export const featuresData = [
   {
-    imgSrc: serviceIconTwo,
+    imgSrc: featureIconOne,
     title: "Experienced in Multi-Platform App Development",
     description:
       "At Moonstack, we have optimal experience in building native Android and iOS apps, as well as multi-platform React-Native apps and PWAs.",
   },
   {
-    imgSrc: serviceIconOne,
+    imgSrc: featureIconTwo,
     title: "100% Custom Mobile App Solutions",
     description:
       "We don’t believe in templates at Moonstack. Thanks to our experienced team of designers and developers, we build every app from scratch, ensuring unparalleled functionality and security across platforms.",
   },
   {
-    imgSrc: serviceIconFour,
+    imgSrc: featureIconThree,
     title: "Real World App Building Experience",
     description:
       "Moonstack has worked with startups, SMEs, and even MNCs. This gives us real-world experience in managing our development to meet your business goals optimally.",
   },
   {
-    imgSrc: serviceIconFive,
+    imgSrc: featureIconFour,
     title: "Scalable Architecture",
     description:
       "All our apps are built for scalability without hampering existing functions. This allows our clients to grow and expand their apps as per business requirements without fail.",
   },
   {
-    imgSrc: serviceIconSix,
+    imgSrc: featureIconFive,
     title: "Transparent Development",
     description:
       "We ensure our code is clean and accessible to the developers on board the project. Even after the app launch, we ensure the entire codebase is accessible to our client easily.",

@@ -2,15 +2,18 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Heading from "../Heading/Heading";
+import { TbPointFilled } from "react-icons/tb";
 
 type ImportanceSectionProps = {
   image: StaticImageData;
   altText: string;
   points: string[];
+  solutionPoints?: string[];
   tickIcon: StaticImageData;
   heading?: { text: string; color?: string; className?: string }[];
   subHeading?: string;
   reverse?: boolean; // Optional → if true, image will appear on right side
+  solutionHeading?: { text: string; color?: string; className?: string }[];
 };
 
 const ImportanceSection: React.FC<ImportanceSectionProps> = ({
@@ -20,6 +23,8 @@ const ImportanceSection: React.FC<ImportanceSectionProps> = ({
   tickIcon,
   heading,
   subHeading,
+  solutionHeading,
+  solutionPoints,
   reverse = false,
 }) => {
   return (
@@ -43,8 +48,8 @@ const ImportanceSection: React.FC<ImportanceSectionProps> = ({
       <div className="md:w-1/2 flex flex-col justify-center">
         {heading && (
           <Heading
-            headingTag="h2"
-            className="text-white font-36 font-semibold pb-4"
+            headingTag="h3"
+            className="text-white font-semibold pb-4"
             content={heading}
           />
         )}
@@ -81,6 +86,37 @@ const ImportanceSection: React.FC<ImportanceSectionProps> = ({
             </motion.li>
           ))}
         </ul>
+
+        {solutionHeading && (
+          <>
+            <Heading
+              headingTag="h5"
+              className="text-white  font-semibold pt-5"
+              content={solutionHeading}
+            />{" "}
+            {solutionPoints && (
+              <ul className="flex flex-col gap-3 pt-4">
+                {solutionPoints.map((text, index) => (
+                  <motion.li
+                    key={index}
+                    className="flex gap-5 pb-3 items-center"
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.2 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                  >
+                    <TbPointFilled className="text-[#0CE859]" />
+                    <Heading
+                      headingTag="p"
+                      className="font-medium text-sm text-start text-white"
+                      content={[{ text }]}
+                    />
+                  </motion.li>
+                ))}
+              </ul>
+            )}
+          </>
+        )}
       </div>
     </div>
   );

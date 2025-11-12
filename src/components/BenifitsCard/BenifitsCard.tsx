@@ -45,8 +45,10 @@ const BenifitsCard: React.FC<BenifitsCardProps> = ({
       <div className={imgClassName}>
         <Image src={imgSrc} alt={alt} className={cardIconSize} />
       </div>
-      <div className="mt-8 poppins-semibold font-18 text-white ">{title}</div>
-      <div className="mt-3 poppins-medium font-14 leading-[200%] text-white ">
+      <div className="mt-[60px] poppins-semibold font-18 text-white ">
+        {title}
+      </div>
+      <div className="mt-2 poppins-medium font-14 leading-[200%] text-white ">
         {description}
       </div>
 

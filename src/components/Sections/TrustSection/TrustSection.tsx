@@ -14,7 +14,7 @@ interface TrustSectionProps {
   headingLines: { text: string; color?: string }[];
 
   subHeadingLines?: { text: string; color?: string }[];
-  steps: Step[];
+  tabs: Step[];
   accentColor?: string;
   className?: string;
 }
@@ -22,15 +22,15 @@ interface TrustSectionProps {
 const TrustSection: React.FC<TrustSectionProps> = ({
   headingLines,
   subHeadingLines,
-  steps,
+  tabs,
   accentColor = "#00FF88",
   className = "",
 }) => {
   // 👇 First tab open by default
-  const [activeStep, setActiveStep] = useState<number>(steps[0]?.id || 1);
+  const [activeStep, setActiveStep] = useState<number>(tabs[0]?.id || 1);
 
   const handleToggle = (id: number) => {
-    setActiveStep((prev) => (prev === id ? null : id)); // toggle open/close
+    setActiveStep((prev) => (prev === id ? null : id));
   };
 
   const accentBorder = { borderColor: accentColor };
@@ -43,20 +43,20 @@ const TrustSection: React.FC<TrustSectionProps> = ({
         <div>
           <Heading
             headingTag="h2"
-            className="font-bold font-36 text-center pt-3"
+            className="font-bold font-36 text-start pt-3"
             content={headingLines}
           />
 
           <Heading
             headingTag="p"
-            className=" text-center pt-3 text-gray-400  "
+            className=" text-start pt-3 text-gray-400  "
             content={subHeadingLines}
           />
         </div>
 
         {/* RIGHT SIDE */}
         <div className="space-y-4">
-          {steps.map((step, index) => {
+          {tabs.map((step, index) => {
             const isActive = activeStep === step.id;
 
             return (
@@ -99,7 +99,7 @@ const TrustSection: React.FC<TrustSectionProps> = ({
                         src={step.image}
                         alt={step.title}
                         height={200}
-                        className="w-full object-cover"
+                        className="w-auto object-cover"
                       />
                     </div>
                   </div>
