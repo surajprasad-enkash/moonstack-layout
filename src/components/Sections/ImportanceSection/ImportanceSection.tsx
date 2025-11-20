@@ -10,10 +10,12 @@ interface IImportanceSectionProps {
   title: string;
   highlightTitle?: string;
   description: string[];
-  points?: string[]; // optional
+  points?: string[];
   bgColor?: string;
-  reverse?: boolean; // optional: for image on right
-  buttonText?: string; // optional button
+  reverse?: boolean;
+  buttonText?: string;
+  bgImage?: string | StaticImageData;
+  services?: string[];
 }
 
 const ImportanceSection: React.FC<IImportanceSectionProps> = ({
@@ -22,30 +24,32 @@ const ImportanceSection: React.FC<IImportanceSectionProps> = ({
   highlightTitle,
   description,
   points,
+  bgImage,
   bgColor = "bg-black",
   reverse = false,
   buttonText,
+  services,
 }) => {
   return (
     <div
-      className={`${bgColor} utilize-bg px-4 sm:px-10 py-12 md:py-20 relative container mx-auto flex flex-col md:flex-row items-center ${
+      style={
+        bgImage
+          ? {
+              backgroundImage: `url(${
+                typeof bgImage === "string" ? bgImage : bgImage.src
+              })`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }
+          : {}
+      }
+      className={`${bgColor} utilize-bg relative container mx-auto flex flex-col items-center px-4 py-12 sm:px-10 md:flex-row md:py-20 ${
         reverse ? "md:flex-row-reverse" : ""
       }`}
     >
-      {/* Image Section */}
-      <div className="w-full md:w-1/2 flex justify-center md:justify-start">
-        <Image
-          src={image}
-          alt={title}
-          width={522}
-          height={382}
-          className="object-contain"
-        />
-      </div>
-
-      <div className="w-full md:w-1/2 mt-8 md:mt-0 md:px-8">
+      <div className="mt-8 w-full md:mt-0 md:w-1/2">
         {buttonText && (
-          <div className="text-center pt-8 md:pt-0 md:text-start">
+          <div className="pt-8 text-center md:pt-0 md:text-start">
             <Tag text={buttonText} className="text-center" />
           </div>
         )}
@@ -58,7 +62,7 @@ const ImportanceSection: React.FC<IImportanceSectionProps> = ({
         >
           <Heading
             headingTag="h2"
-            className="font-bold pt-3 font-36 text-start"
+            className="font-36 pt-3 text-start font-bold"
             content={[
               { text: `${title} `, color: "text-white" },
               highlightTitle
@@ -77,7 +81,7 @@ const ImportanceSection: React.FC<IImportanceSectionProps> = ({
             <Heading
               key={index}
               headingTag="p"
-              className="font-medium pt-3 font-14 text-start"
+              className="font-14 pt-3 text-start font-medium"
               content={[{ text: desc, color: "text-white" }]}
             />
           ))}
@@ -85,7 +89,7 @@ const ImportanceSection: React.FC<IImportanceSectionProps> = ({
         {points && points.length > 0 && (
           <ul className="flex flex-col gap-3 pt-8">
             {points.map((text, index) => (
-              <li key={index} className="flex gap-4 items-start pb-3">
+              <li key={index} className="flex items-start gap-4 pb-3">
                 <Image
                   src="/assets/green-tick-icon.svg"
                   alt="tick"
@@ -94,13 +98,32 @@ const ImportanceSection: React.FC<IImportanceSectionProps> = ({
                 />
                 <Heading
                   headingTag="p"
-                  className="font-medium font-14 text-start text-white"
+                  className="font-14 text-start font-medium text-white"
                   content={[{ text }]}
                 />
               </li>
             ))}
           </ul>
         )}
+        {services && services.length > 0 && (
+          <ul className="flex flex-wrap gap-4 overflow-x-auto pt-8">
+            {services.map((text, index) => (
+              <li key={index} className="flex items-start gap-4">
+                <CustomButton text={text} variant="services" />
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+      {/* Image Section */}
+      <div className="flex w-full justify-center md:w-1/2 md:justify-start">
+        {/* <Image
+          src={image}
+          alt={title}
+          width={522}
+          height={382}
+          className="object-contain"
+        /> */}
       </div>
     </div>
   );

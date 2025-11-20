@@ -23,26 +23,31 @@ export const utilisArr = [
     image: html,
     title: "Web Designing",
     desc: "Earney is a financial solution to energize and empower Small and Medium.",
+    category: "service",
   },
   {
     image: html,
     title: "Mobile Development",
     desc: "Earney is a financial solution to energize and empower Small and Medium.",
+    category: "service",
   },
   {
     image: html,
     title: "Cloud Service",
     desc: "Earney is a financial solution to energize and empower Small and Medium.",
+    category: "service",
   },
   {
     image: html,
     title: "Frontend Development",
     desc: "Earney is a financial solution to energize and empower Small and Medium.",
+    category: "service",
   },
   {
     image: html,
     title: "Backend Development",
     desc: "Earney is a financial solution to energize and empower Small and Medium.",
+    category: "service",
   },
 ];
 

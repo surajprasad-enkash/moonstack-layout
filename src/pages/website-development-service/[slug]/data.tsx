@@ -86,6 +86,8 @@ import laravelImg from "../../../../public/assets/laravel-hero-img.webp";
 import laravelBgImg from "../../../../public/assets/laravel-bg.webp";
 import ecommerceImg from "../../../../public/assets/e-commerce-hero.webp";
 import ecommerceBgImg from "../../../../public/assets/e-commerce-bg.webp";
+import eCommServIconOne from "../../../../public/assets/e-com-ser-icon-one.svg";
+import aiImg from "../../../../public/assets/ai-Image.webp";
 import { IAccordionItem } from "@/components/Homepage/FAQ";
 import { StaticImageData } from "next/image";
 
@@ -137,6 +139,15 @@ export const pagesData: Record<
 
     slides: { image: StaticImageData | string; title: string; desc: string }[];
     accordionData: IAccordionItem[];
+    featureDataContent?: {
+      headingContent: { text: string; color: string }[];
+      subHeadingText: string;
+      featuresData: {
+        imgSrc: StaticImageData | string;
+        title: string;
+        description: string;
+      }[];
+    };
   }
 > = {
   // LARAVEL DEVELOPMENT
@@ -637,6 +648,56 @@ export const pagesData: Record<
       "Mobile Commerce (M-Commerce) Development",
       "Headless E-Commerce Solutions ",
     ],
+
+    featureDataContent: {
+      headingContent: [
+        {
+          text: "Why choose us for ecommerce portal development in India?",
+          color: "",
+        },
+      ],
+      subHeadingText:
+        "We are the leading e-commerce development company in India. Our team has delivered a wide range of online portals in the market from that blend of creativity, tech stack, and powerful strategy that deliver next generation customer experiences. ",
+
+      featuresData: [
+        {
+          imgSrc: appleIcon,
+          title: "Experts E-commerce Developers",
+          description:
+            "Being the leading e-commerce development company in India, we have skilled e-commerce coders who build customised, high-performance solutions. With our highly skilled team, we guarantee to meet the latest development standards and deliver seamless shopping experiences.",
+        },
+        {
+          imgSrc: mobileIconcon,
+          title: "Customised E-commerce Business Solutions",
+          description:
+            "We develop customised e-commerce business solutions that perfectly match your business needs. Our secure e-commerce website developers in India create personalised strategies that align with your brand identity and exceed customer expectations.",
+        },
+        {
+          imgSrc: developmentIcon,
+          title: "User Centric Designs",
+          description:
+            "Our e-commerce development team focuses on conversion-driven designs that not only look appealing but are also highly user-centric. We craft interactive interfaces that turn visitors into loyal customers, ensuring next-generation experiences that meet modern industry standards.",
+        },
+        {
+          imgSrc: integrationIcon,
+          title: "Hire E-commerce Developers",
+          description:
+            "With our advanced e-commerce development services in India, we offer you the flexibility to hire top developers on a part-time, full-time, or hourly basis. Extend your development team with proficient designers and developers to bring your project vision to life.",
+        },
+        {
+          imgSrc: debbugingIcon,
+          title: "Transparent Process",
+          description:
+            "Our e-commerce development team believes in maintaining complete transparency. We share all project records and details with our clients openly, ensuring nothing is hidden and every decision is made collaboratively for a trustworthy partnership.",
+        },
+        {
+          imgSrc: appStoreIcon,
+          title: "Seamless Integration",
+          description:
+            "At Moonstack, our e-commerce development team ensures seamless API integrations that extend your platform’s functionality with third-party tools. We specialise in integrating advanced features efficiently, ensuring speed, security, and scalability.",
+        },
+      ],
+    },
     solutions: {
       headingContent: "Our E-commerce Development Services ",
       subHeadingText:
@@ -682,50 +743,52 @@ export const pagesData: Record<
     ],
 
     tabs: {
-      headingText: "Why choose us for ecommerce portal development in India?",
+      headingText:
+        "Advanced Features that our e-commerce portal integrated with ",
       subHeadingText:
-        "We are the leading e-commerce development company in India. Our team has delivered a wide range of online portals in the market from that blend of creativity, tech stack, and powerful strategy that deliver next generation customer experiences. ",
+        "We integrated modern  functionalities that are powered by next generation technologies. With our B2B & B2C ecommerce website development services we integrate advanced features such as real time analytics and deliver seamless inventory management to enhance customer experience- ",
       tabs: [
         {
           id: 1,
-          title: "Experts E-commerce Developers",
+          title: "AI Powered Product Recommendation",
           description:
-            "Being the leading e-commerce development company in India, we have skilled e-commerce coders who build customised, high-performance e-commerce solutions. With our highly skilled team, we guarantee to meet the latest development standards and deliver seamless shopping experiences.",
-          image: androidIcon,
+            "Offering personalized shopping experiences with smart suggestions that meet customer expectations.",
+          image: aiImg,
+          imgHeight: "600px",
         },
         {
           id: 2,
-          title: "Customised E-commerce Business Solutions",
+          title: "Advanced Search & Filters",
           description:
-            "We develop customised e-commerce business solutions that perfectly match your business needs. Our secure e-commerce website developers in India create personalised strategies that align with your brand identity and exceed customer expectations.",
+            "Users can search their preferred items quickly and choose categories they prefer, saving time and improving navigation.",
           image: figmaIcon,
         },
         {
           id: 3,
-          title: "User Centric Designs",
+          title: "Real-Time Inventory Management",
           description:
-            "Our e-commerce development team focuses on conversion-driven designs that not only look appealing but are also highly user-centric. We craft interactive interfaces that turn visitors into loyal customers, ensuring next-generation experiences that meet modern industry standards.",
+            "Track and manage inventory in real time. Users have complete visibility of product data at their fingertips for smooth operations.",
           image: reactIcon,
         },
         {
           id: 4,
-          title: "Hire E-commerce Developers",
+          title: "Payment Gateway Integration",
           description:
-            "With our advanced e-commerce development services in India, you can hire the best e-commerce developers on a part-time, full-time, or hourly basis. Extend your development team with proficient designers and developers who can bring your project vision to life.",
+            "Integrate secure and trusted payment gateways, allowing users to pay seamlessly through their preferred third-party tools.",
           image: reactIcon,
         },
         {
           id: 5,
-          title: "Transparent Process",
+          title: "Order Tracking and Notifications",
           description:
-            "Our e-commerce development team believes in maintaining complete transparency. We share all records and project details openly with our clients, ensuring nothing is hidden and every decision is collaborative for a trustworthy partnership.",
+            "Keep customers informed about their orders and provide real-time updates through push and pop-up notifications.",
           image: reactIcon,
         },
         {
           id: 6,
-          title: "Seamless Integration",
+          title: "Data Analytics & Reporting Dashboard",
           description:
-            "At Moonstack, we ensure seamless API integrations that extend your e-commerce platform’s functionality with third-party tools. Our developers specialise in integrating advanced features efficiently, ensuring speed, security, and scalability.",
+            "Empower users with actionable insights through performance metrics, sales trends, and customer behavior tracking.",
           image: reactIcon,
         },
       ],
@@ -749,191 +812,16 @@ export const pagesData: Record<
         title: "Woo Commerce",
         desc: "At Moonstack, we believe in building technology.",
       },
-
+      {
+        image: iosIcon,
+        category: "E-Commerce Development",
+        title: "Shopify",
+        desc: "At Moonstack, we believe in building technology.",
+      },
       {
         image: reactIcon,
-        category: "Frontend",
-        title: "ReactJS Development",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: nextIcon,
-        category: "Frontend",
-        title: "Next.js",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: jsIcon,
-        category: "Frontend",
-        title: "JavaScript",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: html,
-        category: "Frontend",
-        title: "HTML5 Development",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: cssIcon,
-        category: "Frontend",
-        title: "CSS3",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: nodeIcon,
-        category: "Backend",
-        title: "NodeJS Development",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: dotNetIcon,
-        category: "Backend",
-        title: ".NET",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: phpIcon,
-        category: "Backend",
-        title: "PHP",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: javaIcon,
-        category: "Backend",
-        title: "Java",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: pythonIcon,
-        category: "Backend",
-        title: "Python",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: laravelIcon,
-        category: "Backend",
-        title: "Laravel",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: cakePhpIcon,
-        category: "Backend",
-        title: "CakePHP Development",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: codeIgniteIcon,
-        category: "Backend",
-        title: "CodeIgniter Development",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: dockerIcon,
-        category: "Devops",
-        title: "Docker",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: kubernetesIcon,
-        category: "Devops",
-        title: "Kubernetes",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: azureIcon,
-        category: "Devops",
-        title: "Azure Service",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: cloudIcon,
-        category: "Devops",
-        title: "Google Cloud Platform",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: awsIcon,
-        category: "Devops",
-        title: "Amazon Web Services",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: microsoftIcon,
-        category: "Devops",
-        title: "Microsoft Azure",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: googleAnalyticsIcon,
-        category: "SEO",
-        title: "Google Analytics",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: ahrefsIcon,
-        category: "SEO",
-        title: "Ahrefs",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: mozIcon,
-        category: "SEO",
-        title: "Moz",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: ubersuggestIcon,
-        category: "SEO",
-        title: "Ubersuggest",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: grammerlyIcon,
-        category: "SEO",
-        title: "Grammerly",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: woorankIcon,
-        category: "SEO",
-        title: "Woorank",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: figmaIcon,
-        category: "UI/UX",
-        title: "Figma",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: adobeIcon,
-        category: "UI/UX",
-        title: "Adobe Xd",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: photoshopIcon,
-        category: "UI/UX",
-        title: "Photoshop",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: illustatorIcon,
-        category: "UI/UX",
-        title: "Illustrator",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: framerIcon,
-        category: "UI/UX",
-        title: "Framer",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: sketchIcon,
-        category: "UI/UX",
-        title: "Sketch",
+        category: "E-Commerce Development",
+        title: "Woo Commerce",
         desc: "At Moonstack, we believe in building technology.",
       },
     ],

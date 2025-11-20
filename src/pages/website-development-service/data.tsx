@@ -42,6 +42,7 @@ import pwaIcon from "../../../public/assets/pwa-icon.svg";
 import nodeIcon from "../../../public/assets/node-icon.svg";
 import awsIcon from "../../../public/assets/aws-icon.svg";
 import figmaIcon from "../../../public/assets/figma-icon.svg";
+import heroImg from "../../../public/assets/website-hero.webp";
 
 interface IServiceArray {
   image: string;
@@ -128,6 +129,71 @@ export const featuresData = [
     title: "Generate Leads",
     description:
       "Generate Leads It lives in forests, grasslands, and even near cities, adjusting easily to different environments. With its sharp senses and quick reflexes, the fox is often seen as a symbol of wisdom and cunning in many cultures.",
+  },
+];
+export const benefits = [
+  {
+    icon: nodeIcon,
+    title: "Decade of Experience",
+    description:
+      "Moonstack has delivered 450+ projects across different industries. Our affordable website development service in India is in high demand among start-ups, mid-sized, and large enterprises.",
+  },
+  {
+    icon: nodeIcon,
+    title: "Data Security & Compliance",
+    description:
+      "We don’t only build websites to deliver. At Moonstack, we understand the importance of data security and follow essential compliance standards for complete protection.",
+  },
+  {
+    icon: nodeIcon,
+    title: "Next Generation Technology Stack",
+    description:
+      "As a secure website development service provider, we use the latest technologies including AI, Machine Learning, React, Next.js, and Laravel to build powerful and high-performance websites.",
+  },
+  {
+    icon: nodeIcon,
+    title: "Custom Web Solutions",
+    description:
+      "We provide end-to-end custom business website development solutions—from consultation to post-launch support—ensuring the website aligns with your business goals.",
+  },
+  {
+    icon: nodeIcon,
+    title: "Confidential Details",
+    description:
+      "Recognized as one of the top website development companies for small businesses, we keep all your ideas and strategies fully secure and confidential without sharing them with any third party.",
+  },
+  {
+    icon: nodeIcon,
+    title: "Post Launch Support",
+    description:
+      "We don’t just deliver websites—we build partnerships. After launching websites for startups to enterprises, we provide continuous post-launch support to ensure innovation and evolving customer experience.",
+  },
+];
+
+export const workflowItems = [
+  {
+    title: "Requirement Gatherings",
+    desc: "We collect all the information and understand what the business is all about and things that it requires.",
+  },
+  {
+    title: "Client Discussion",
+    desc: "After understanding, we have proper discussions with clients to learn what they are actually looking for.",
+  },
+  {
+    title: "Research and Brainstorming",
+    desc: "Our web development team researches market trends and brainstorms internally to align with the project.",
+  },
+  {
+    title: "Designing and Development",
+    desc: "Designers create immersive designs and developers build powerful websites using the right technologies.",
+  },
+  {
+    title: "Testing and Deployment",
+    desc: "Before launching, we perform end-to-end testing and deployment to ensure the website is error-free.",
+  },
+  {
+    title: "Launching",
+    desc: "We launch websites with the right SEO strategies, ensuring accessibility across web and mobile.",
   },
 ];
 
@@ -426,48 +492,49 @@ export const points = [
 ];
 export const chooseUsTabs = [
   {
-    title: "Decade of Experience ",
+    title: "Custom Website Development",
     description:
-      "Moonstack has delivered 450+ projects across different industries. Our affordable website development service India  is in high demand among start ups, mid sized, and large enterprises. ",
-    image: pythonIcon,
+      "Our web programmers develop custom websites for start ups to large enterprises that meet all business needs. Our web developers in India have a strategic approach that ensures to deliver high performance and responsive mobile friendly websites for your clients.",
+    image: heroImg,
     imgHeight: "420px",
   },
   {
-    title: "Data Security & Compliance ",
+    title: "Website Designing Services",
     description:
-      "We don’t only build websites to deliver. At Moonstack - leading website development company in Jaipur,  we know the importance of data security and to match the standards and protection with essential compliance. ",
+      "We focus on UI and UX website designing services that allow designers to create interactive and engaging experiences for clients. Our designs are easy to use, eye-catching, and reflect your business brand presence.",
     image: phpIcon,
     imgHeight: "420px",
   },
   {
-    title: "Next Generation Technology Stack ",
+    title: "Website Backend Services",
     description:
-      "Our secure website development service provider opt for the modern and latest technology stack AI and Machine Learning. Moreover, in languages we opt for React, Next.js , and Laravel that allow us to launch powerful and high performance websites. ",
+      "Our backend website experts build a strong digital ecosystem using modern technologies and frameworks such as React, Node.js, and more. With the right tech stack, we deliver high-performance and scalable websites.",
     image: javaIcon,
     imgHeight: "420px",
   },
   {
-    title: "Custom web Solutions  ",
+    title: "Website Frontend Services",
     description:
-      "Opt for custom business website development service in India. We offer end to end custom website solutions for our clients that includes consultation to post support. Our team builds custom websites that align with your business goals. ",
+      "Our team creates engaging and impressive frontend interfaces focused on user-centric and interactive design. We deliver responsive experiences that connect with audiences effectively.",
     image: phpIcon,
     imgHeight: "420px",
   },
   {
-    title: "Confidential Details  ",
+    title: "Website Testing and Migration Service",
     description:
-      "Opt for custom business website development service in India. We offer end to end custom website solutions for our clients that includes consultation to post support. Our team builds custom websites that align with your business goals.",
+      "Before launching, our team performs end-to-end testing with both manual and automated processes to ensure error-free deployment. We also specialize in website migration services.",
     image: javaIcon,
     imgHeight: "420px",
   },
   {
-    title: "Post Launch Support  ",
+    title: "Website Support and Maintenance",
     description:
-      "For us we don’t only deliver websites, but we partner as the top website development service provider. After launching the start ups to large enterprise level websites, we provide post launch support to our clients. We always stand with them to match the latest tech innovations and meet their customer expectations. ",
+      "Our website development team is available 24/7. We keep your websites responsive, detect bugs early, and fix issues instantly to avoid future problems and maintain high performance.",
     image: javaIcon,
     imgHeight: "420px",
   },
 ];
+
 export const serviceArr = [
   {
     image: arrowUp,

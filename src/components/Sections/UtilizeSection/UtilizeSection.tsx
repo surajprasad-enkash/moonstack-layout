@@ -36,8 +36,10 @@ const ReusableUtilizeSection: React.FC<UtilizeSectionProps> = ({
   const filteredItems = items.filter((item) => item.category === activeTab);
 
   return (
-    <div className={`${bgColor} text-white ${containerClass}`}>
-      <div className="w-full md:w-full lg:w-2/5 xl:w-[70%] text-center m-auto">
+    <div
+      className={`${bgColor} text-white ${containerClass} `}
+    >
+      <div className="m-auto w-full text-center md:w-full lg:w-2/5 xl:w-[70%]">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -47,7 +49,7 @@ const ReusableUtilizeSection: React.FC<UtilizeSectionProps> = ({
         >
           <Heading
             headingTag="h2"
-            className="font-bold pt-3 text-white font-36 text-center"
+            className="font-36 pt-3 text-center font-bold text-white"
             content={headingLines}
           />
         </motion.div>
@@ -62,7 +64,7 @@ const ReusableUtilizeSection: React.FC<UtilizeSectionProps> = ({
           >
             <Heading
               headingTag="p"
-              className="font-bold pt-3 text-white font-14 text-center"
+              className="font-14 pt-3 text-center font-bold text-white"
               content={subHeadingLines}
             />
           </motion.div>
@@ -74,12 +76,11 @@ const ReusableUtilizeSection: React.FC<UtilizeSectionProps> = ({
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 py-2 rounded-full  text-font-16 font-medium transition-all duration-300 
-                ${
-                  activeTab === tab
-                    ? "bg-[#009936] text-white "
-                    : "bg-[#003312] text-white "
-                }`}
+              className={`text-font-16 rounded-full px-4 py-2 font-medium transition-all duration-300 ${
+                activeTab === tab
+                  ? "bg-[#009936] text-white"
+                  : "bg-[#003312] text-white"
+              }`}
             >
               {tab}
             </button>
@@ -92,7 +93,7 @@ const ReusableUtilizeSection: React.FC<UtilizeSectionProps> = ({
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className={`grid ${gridCols} gap-6 pt-20 w-full mx-auto`}
+          className={`grid ${gridCols} mx-auto w-full gap-6 pt-20`}
         >
           {filteredItems.map((feature, index) => (
             <CategoryCard

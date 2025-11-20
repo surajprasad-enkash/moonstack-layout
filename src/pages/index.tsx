@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import Layout from "@/components/Layout";
 import FAQ from "@/components/Homepage/FAQ";
 import HomepageBanner from "@/components/Homepage/HomepageBanner";
@@ -66,14 +65,14 @@ export default function Home() {
     <div>
       <StickyCursor stickyElements={stickyRefs} />
       <Layout>
-        <HomepageBanner refs={homepageRefs} />
+        <HomepageBanner />
         <Marquee />
         <SolutionsComponent />
         <OurServices />
         <CaseStudies />
         <TechnologyComponent />
         <ProvenProcess />
-        <InsightsIdeas refs={insightsRefs} />
+        <InsightsIdeas />
         <FAQ
           accordionData={accordionData}
           infoBoxes={infoBoxes}
@@ -84,7 +83,7 @@ export default function Home() {
           }}
           showInfoBoxes={true}
         />
-        <ContactUs refs={contactUsRefs} />
+        <ContactUs  />
       </Layout>
     </div>
   );

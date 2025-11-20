@@ -8,7 +8,6 @@
   contain: content;
 }
 
-
 .main-bg video {
   position: absolute;
   top: 0;
@@ -16,9 +15,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -2; 
+  z-index: -2;
 }
-
 
 .main-bg::after {
   content: "";
@@ -28,7 +26,7 @@
   width: 100%;
   height: 100%;
   background: #020b05;
-  opacity: 0.8; 
+  opacity: 0.8;
   z-index: -1;
 }
 
@@ -79,7 +77,7 @@
   width: 100%;
   height: 100%;
   background: #062316;
-  opacity: 0.2; 
+  opacity: 0.2;
   z-index: -1;
 }
 
@@ -155,11 +153,7 @@
 }
 
 .bg-application {
-
-
- 
   padding-top: 80px;
-
 }
 #card-1 {
   --index: 1;
@@ -179,7 +173,7 @@
 
 .card {
   position: sticky;
-  top: 20px;
+  top: 100px;
   padding-top: calc(var(--index) * 1em);
 }
 
@@ -215,10 +209,11 @@
   /* mix-blend-mode: exclusion; */
 }
 
-.hover-white-text:hover {
-  color: pink;
+.hover-white-text:hover,
+.active-menu-item {
+  color: white;
   border-bottom: 2px solid;
-  border: 2px solid red ;
+  border: 2px solid #00dd4d;
   border-top: 0px;
   border-left: 0;
   border-right: 0px;
@@ -295,14 +290,17 @@
 .rotating-btn button {
   border: 3px solid transparent;
   cursor: pointer;
-  background: linear-gradient(black, black) padding-box,
+  background:
+    linear-gradient(black, black) padding-box,
     conic-gradient(from var(--angle, 0), transparent, green 90%) border-box;
 }
 
 @supports (animation-timeline: works) {
   @scroll-timeline cards-element-scrolls-in-body {
     source: selector(body);
-    scroll-offsets: selector(#cards) start 1, selector(#cards) start 0;
+    scroll-offsets:
+      selector(#cards) start 1,
+      selector(#cards) start 0;
     start: selector(#cards) start 1;
     end: selector(#cards) start 0;
     time-range: 4s;
@@ -333,10 +331,12 @@
 }
 @keyframes orbit {
   0% {
-    transform: rotate(var(--angle)) translateX(var(--radius)) rotate(calc(-1 * var(--angle)));
+    transform: rotate(var(--angle)) translateX(var(--radius))
+      rotate(calc(-1 * var(--angle)));
   }
   100% {
-    transform: rotate(calc(var(--angle) + 360deg)) translateX(var(--radius)) rotate(calc(-1 * var(--angle) - 360deg));
+    transform: rotate(calc(var(--angle) + 360deg)) translateX(var(--radius))
+      rotate(calc(-1 * var(--angle) - 360deg));
   }
 }
 
@@ -430,14 +430,33 @@
     opacity: 1;
   }
 }
- .app-category-speclity-card{
-  border-top: 2px solid var(--Primary-600, #00CF49);
-  background: linear-gradient(180deg, #001A09 27.16%, #001A09 92.88%, #004A1A 96.44%, #02A33B 100%);
+.app-category-speclity-card {
+  border-top: 2px solid var(--Primary-600, #00cf49);
+  background: linear-gradient(
+    180deg,
+    #001a09 27.16%,
+    #001a09 92.88%,
+    #004a1a 96.44%,
+    #02a33b 100%
+  );
+}
 
- }
+.app-category-speclity-card:hover {
+  background: #001a09;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 26, 9, 1) 0%,
+    rgba(0, 26, 9, 1) 0%,
+    rgba(2, 163, 59, 1) 100%
+  );
+}
 
-  .app-category-speclity-card:hover{
- background: #001A09;
-background: linear-gradient(90deg,rgba(0, 26, 9, 1) 0%, rgba(0, 26, 9, 1) 0%, rgba(2, 163, 59, 1) 100%);
- }
+.scrollbar-hide::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
 
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -30,7 +30,7 @@ const TrustSection: React.FC<TrustSectionProps> = ({
   const [activeStep, setActiveStep] = useState<number>(tabs[0]?.id || 1);
 
   const handleToggle = (id: number) => {
-    setActiveStep((prev) => (prev === id ? null : id));
+    // setActiveStep((prev) => (prev === id ? null : id));
   };
 
   const accentBorder = { borderColor: accentColor };

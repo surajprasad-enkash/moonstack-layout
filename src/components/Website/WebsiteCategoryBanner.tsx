@@ -16,7 +16,7 @@ interface WebsiteCategoryBannerProps {
   bgColor?: string;
   containerWidth?: string;
   textAlign?: "left" | "center" | "right";
-  backgroundImage?: string | StaticImageData; // 🆕 added background image prop
+  backgroundImage?: string | StaticImageData; 
 }
 
 const WebsiteCategoryBanner: React.FC<WebsiteCategoryBannerProps> = ({
@@ -45,7 +45,7 @@ const WebsiteCategoryBanner: React.FC<WebsiteCategoryBannerProps> = ({
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Text Section */}
+ 
       <div
         className={`flex flex-col items-start px-4 md:px-8 ${containerWidth} text-${textAlign} justify-center m-auto relative z-10`}
       >
@@ -65,7 +65,7 @@ const WebsiteCategoryBanner: React.FC<WebsiteCategoryBannerProps> = ({
         </div>
       </div>
 
-      {/* Right Image */}
+
       <div className="relative w-full flex justify-center z-10">
         <Image
           src={image}

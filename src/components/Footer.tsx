@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { Ref, RefObject } from "react";
 import Image from "next/image";
 import moment from "moment";
 
@@ -22,7 +22,10 @@ interface IFooterLink {
   id: number;
   paths: string[];
   title: string;
-  ref: React.RefObject<HTMLDivElement>;
+  ref:
+    | RefObject<HTMLImageElement | HTMLDivElement | null>
+    | HTMLDivElement
+    | undefined;
 }
 
 interface IFooterRefs {
@@ -52,77 +55,71 @@ const Footer = ({ refs }: { refs: IFooterRefs }) => {
   ];
 
   return (
-    <footer className="bg-black text-white p-6 md:p-10 container mx-auto">
+    <footer className="container mx-auto bg-black p-6 text-white md:p-4">
       {/* Top Row: Logo + Links + Social Icons */}
-      <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
-        <div className="w-40 mx-auto md:mx-0">
-          <Image
-            src={logo}
-            alt="logo"
-            className="h-auto w-auto object-contain"
-          />
-        </div>
+      <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+        <div className="flex gap-16">
+          <div className="mx-auto w-40 md:mx-0">
+            <Image
+              src={logo}
+              alt="logo"
+              className="h-auto w-auto object-contain"
+            />
+          </div>
 
-        <div className="flex flex-wrap justify-center md:justify-start items-center gap-2 md:gap-7">
-          {footerLinks.map((item, index) => (
-            <React.Fragment key={item.id}>
-              <div
-                className="block text-white cursor-pointer poppins-medium px-2 md:px-7 font-14 text-center md:text-left"
-                ref={item.ref}
-              >
-                {item.title}
-              </div>
-              {index < footerLinks.length - 1 && (
-                <span className="hidden md:inline-block separator">|</span>
-              )}
-            </React.Fragment>
-          ))}
+          <div className="flex flex-wrap items-center justify-center gap-2 md:justify-start md:gap-7">
+            {footerLinks.map((item, index) => (
+              <React.Fragment key={item.id}>
+                <div className="poppins-medium font-14 block cursor-pointer px-2 text-center text-white md:text-left">
+                  {item.title}
+                </div>
+                {index < footerLinks.length - 1 && (
+                  <span className="hidden md:inline-block">|</span>
+                )}
+              </React.Fragment>
+            ))}
+          </div>
         </div>
-
-        <div className="flex justify-center md:justify-end gap-3">
+        <div className="flex justify-center gap-3 md:justify-end">
           <Image
             src={twitter}
             alt="twitter"
-            className="w-7 h-auto object-contain cursor-pointer"
-            ref={refs.twitter}
+            className="h-auto w-7 cursor-pointer object-contain"
           />
           <Image
             src={linkedin}
             alt="linkedin"
-            className="w-7 h-auto object-contain cursor-pointer"
-            ref={refs.linkedin}
+            className="h-auto w-7 cursor-pointer object-contain"
           />
           <Image
             src={facebook}
             alt="facebook"
-            className="w-7 h-auto object-contain cursor-pointer"
-            ref={refs.facebook}
+            className="h-auto w-7 cursor-pointer object-contain"
           />
           <Image
             src={whatsapp}
             alt="whatsapp"
-            className="w-7 h-auto object-contain cursor-pointer"
-            ref={refs.whatsapp}
+            className="h-auto w-7 cursor-pointer object-contain"
           />
         </div>
       </div>
 
       {/* Middle Row: Images + Reviews */}
-      <div className="flex flex-col md:flex-row md:justify-between mt-8 gap-6">
-        <div className="flex justify-center md:justify-start gap-4">
+      <div className="mt-8 flex flex-col gap-6 md:flex-row md:justify-between">
+        <div className="flex justify-center gap-4 md:justify-start">
           <Image
             src={img1}
             alt="footer-img-1"
-            className="w-20 h-auto object-contain"
+            className="h-auto w-20 object-contain"
           />
           <Image
             src={img2}
             alt="footer-img-2"
-            className="w-20 h-auto object-contain"
+            className="h-auto w-20 object-contain"
           />
         </div>
 
-        <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-end flex-wrap">
+        <div className="flex flex-col flex-wrap justify-center gap-4 md:flex-row md:justify-end">
           {/* Review Pills */}
           {[
             {
@@ -147,29 +144,29 @@ const Footer = ({ refs }: { refs: IFooterRefs }) => {
               label: "ISO 27001:2018",
               icon: iso,
               platform: null,
-              count: "IND.44.121/IS/U",
+              // count: "IND.44.121/IS/U",
             },
           ].map((item, idx) => (
             <div
               key={idx}
-              className="review-pill flex flex-col gap-1 bg-white text-black p-2 rounded-md"
+              className="review-pill flex flex-col gap-1 rounded-md bg-white p-2 text-black"
             >
               <div className="flex items-center justify-between gap-2">
+                <span className="poppins-medium font-12">{item.label}</span>
                 {item.icon && (
                   <Image
                     alt="rating"
                     src={item.icon}
-                    className="w-5 h-auto object-contain"
+                    className="h-auto w-20 object-contain"
                   />
                 )}
-                <span className="poppins-medium font-12">{item.label}</span>
               </div>
               <div className="flex items-center justify-between gap-2">
                 {item.platform && (
                   <Image
                     alt="platform"
                     src={item.platform}
-                    className="w-10 h-auto object-contain"
+                    className="h-auto w-10 object-contain"
                   />
                 )}
                 <span className="poppins-regular font-12 text-gray-500">
@@ -182,7 +179,7 @@ const Footer = ({ refs }: { refs: IFooterRefs }) => {
       </div>
 
       {/* Bottom Row: Copyright */}
-      <div className="poppins-medium mt-6 text-center md:text-left font-14 text-gray-400">
+      <div className="poppins-medium font-14 mt-6 text-center text-gray-400 md:text-left">
         © {moment().year()} Moonstack. All rights reserved.
       </div>
     </footer>

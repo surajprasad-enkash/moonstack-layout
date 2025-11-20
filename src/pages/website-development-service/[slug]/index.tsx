@@ -4,16 +4,18 @@ import SolutionsComponent from "@/components/BackendDeveloper/SolutionsComponent
 import ReusableUtilizeSection from "@/components/Sections/UtilizeSection/UtilizeSection";
 import ReusableSliderSection from "@/components/Sections/SliderSection/SliderSection";
 import FAQ from "@/components/Homepage/FAQ";
-
-import importance from "../../../../public/assets/backend-importance.webp";
+import importance from "../../../../public/assets/e-commerce-importance.webp";
 import greenTick from "../../../../public/assets/green-tick-icon.svg";
 import { pagesData } from "./data";
 import ImportanceSection from "@/components/AppDevelopment/ImportanceComponent";
 import WebsiteCategoryBanner from "@/components/Website/WebsiteCategoryBanner";
-
 import TrustSection from "@/components/Sections/TrustSection/TrustSection";
-import dummyImg from "../../../../public/assets/backend-hero.webp";
 import ProcessSection from "@/components/Sections/ProcessSection/ProcessSection";
+import ChooseUsTabSection from "@/components/Sections/ChooseUsTab/ChooseUsTab";
+import HireNowBanner from "@/components/Sections/HireNowBanner/HireNowBanner";
+import bannerImg from "../../../../public/assets/e-commerce-hire.webp";
+import ReusableTechnologySection from "@/components/Sections/TechnologySection/TechnologySection";
+import GetQuoteBanner from "@/components/GetQuoteBanner/GetQuoteBanner";
 
 export default function ApplicationPage() {
   const router = useRouter();
@@ -51,17 +53,50 @@ export default function ApplicationPage() {
         benifitCardClassName="lg:grid-cols-3"
         bgColor="bg-[linear-gradient(180deg,#000000_0%,#0C401E_100%)] "
       />
-      {/* <ChooseUsTabSection
+      <ChooseUsTabSection
         headingLines={[{ text: page.tabs.headingText }]}
         subHeadingLines={[{ text: page.tabs.subHeadingText }]}
         tabs={page.tabs.tabs}
-      /> */}
-      <TrustSection
+        reverse={true}
+        headingLayout="between"
+      />
+
+      <SolutionsComponent
+        headingContent={
+          typeof page.featureDataContent?.headingContent === "string"
+            ? [{ text: page.featureDataContent.headingContent }]
+            : page.featureDataContent?.headingContent || []
+        }
+        subHeadingText={page.featureDataContent?.subHeadingText || ""}
+        featuresData={page.featureDataContent?.featuresData || []}
+        titleClassName="flex justify-between"
+        headingClassName="text-start md-w-auto"
+        benifitCardClassName="lg:grid-cols-3"
+        cardClassName="border border-[var(--Text-Colour-950,#5B5B5B)]"
+      />
+      <HireNowBanner
+        headingContent={[
+          {
+            text: "Scale Your Business with E-Commerce Experts",
+            color: "text-white",
+          },
+        ]}
+        subHeadingContent={[
+          {
+            text: "Android app development goes through different stages of work. As the premier Android app development agency in India",
+            color: "text-white",
+          },
+        ]}
+        buttonText="Connect with us"
+        image={bannerImg}
+      />
+
+      {/* <TrustSection
         headingLines={[{ text: page.tabs.headingText }]}
         subHeadingLines={[{ text: page.tabs.subHeadingText }]}
         tabs={page.tabs.tabs}
-      />{" "}
-      <ReusableUtilizeSection
+      />{" "} */}
+      <ReusableTechnologySection
         headingLines={[
           { text: "We Use Technology to " },
           { text: "Build What Matters", color: "#00CF49" },
@@ -71,22 +106,37 @@ export default function ApplicationPage() {
             text: "We leverage cutting-edge tech stacks to craft seamless experiences.",
           },
         ]}
-        tabs={["E-Commerce Development"]}
-        items={page.utilisArr}
-        bgColor="bg-[radial-gradient(99.15%_99.15%_at_50.87%_0.85%,_#0F592A_0%,_#000000_31%)]"
+        filteredItems={page.utilisArr}
+        // bgColor="bg-[radial-gradient(99.15%_99.15%_at_50.87%_0.85%,_#0F592A_0%,_#000000_31%)]"
       />
       {/* <Stepper
         steps={page.processSteps.steps}
         headingLines={[{ text: page.processSteps.headingText, color: "block" }]}
         subHeadingLines={[{ text: page.processSteps.subHeadingText }]}
       /> */}
-      <ProcessSection
+      {/* <ProcessSection
         headingLines={[{ text: page.processSteps.headingText, color: "block" }]}
         subHeadingLines={[{ text: page.processSteps.subHeadingText }]}
         servicesData={page.processSteps.steps}
         marginBottom="mb-22"
+      /> */}
+      <GetQuoteBanner
+        headingContent={[
+          {
+            text: "Scale Your Business with E-Commerce Experts",
+            color: "text-white",
+          },
+        ]}
+        subHeadingContent={[
+          {
+            text: "Android app development goes through different stages of work. As the premier Android app development agency in India",
+            color: "text-white",
+          },
+        ]}
+        buttonText="Connect with us"
+        image={bannerImg}
       />
-      <ReusableSliderSection
+      {/* <ReusableSliderSection
         buttonText="Process"
         headingLines={[
           { text: "Empowering Innovation ", color: "block" },
@@ -96,7 +146,7 @@ export default function ApplicationPage() {
         bgColor="bg-black"
         slidesToShow={5}
         autoplaySpeed={2000}
-      />
+      /> */}
       <FAQ
         accordionData={page.accordionData}
         tagText="Our FAQs"

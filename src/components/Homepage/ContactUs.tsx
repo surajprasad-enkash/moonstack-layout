@@ -14,11 +14,9 @@ interface IReviews {
   image?: string;
 }
 
-interface IBannerRefs {
-  sendBtnRef: React.RefObject<HTMLDivElement>;
-}
 
-const ContactUs = ({ refs }: { refs: IBannerRefs }) => {
+
+const ContactUs= () => {
   const sliderRef = useRef(null);
   const [progress, setProgress] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -195,7 +193,7 @@ const ContactUs = ({ refs }: { refs: IBannerRefs }) => {
           <button
             className="poppins-semibold py-4 mt-8 rounded-xl border-1 border-green-500 border-solid justify-self-start font-16 w-[100%]"
             style={{ backgroundColor: Colors.brand950 }}
-            ref={refs.sendBtnRef}
+        
           >
             Send Now
           </button>
@@ -206,6 +204,7 @@ const ContactUs = ({ refs }: { refs: IBannerRefs }) => {
           </div>
           <Slider ref={sliderRef} {...settings}>
             {reviewsArr.map((review) => (
+              // eslint-disable-next-line react/jsx-key
               <div>
                 <div className="poppins-regular leading-[200%] font-18">
                   {review.desc}

@@ -76,6 +76,7 @@ const BackendDeveloper = () => {
         ]}
         items={utilisArr}
         bgColor="bg-black utilize-bg"
+        tabs={[]}
       />
       <ReusableSliderSection
         buttonText="Process"

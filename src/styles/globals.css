@@ -3,13 +3,20 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #1cff6c;
 }
 
-@theme inline {
+@theme {
+  --color-*: initial;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-primary: #1cff6c;
+  --color-primary-300: #0d8035;
+  --color-primary-50: #05140a;
+  --color-black: #0a0a0a;
+  --color-primary-grey: #cbcbcb;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,10 +34,12 @@ body {
 
 @keyframes orbit {
   0% {
-    transform: rotate(var(--angle)) translateX(var(--radius)) rotate(calc(-1 * var(--angle)));
+    transform: rotate(var(--angle)) translateX(var(--radius))
+      rotate(calc(-1 * var(--angle)));
   }
   100% {
-    transform: rotate(calc(var(--angle) + 360deg)) translateX(var(--radius)) rotate(calc(-1 * var(--angle) - 360deg));
+    transform: rotate(calc(var(--angle) + 360deg)) translateX(var(--radius))
+      rotate(calc(-1 * var(--angle) - 360deg));
   }
 }
 
@@ -38,4 +47,3 @@ body {
   animation: orbit var(--duration) linear infinite;
   transform-origin: center center;
 }
-

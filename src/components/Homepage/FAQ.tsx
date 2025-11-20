@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import { Colors } from "@/colors/colors";
-import { Box, Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
+import {
+  Box,
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+} from "@mui/material";
 import Image from "next/image";
 import { styled } from "@mui/material/styles";
 
 import open from "../../../public/assets/acc-open.svg";
 import close from "../../../public/assets/acc-close.svg";
 import info from "../../../public/assets/info.svg";
-
+import vector from "../../../public/assets/footer-vector.svg";
 export interface IAccordionItem {
   title: string;
   desc: string;
@@ -46,10 +51,18 @@ const FAQ: React.FC<FAQProps> = ({
     },
     "& .MuiAccordion-root.Mui-expanded": {
       backgroundColor: "#062C06",
+      background:
+        "radial-gradient(43.91% 58.17% at 56.09% -8.17%, #195E2D 0%, #052811 100%) ",
+
       borderRadius: 20,
     },
     "& .MuiAccordionSummary-root": {
-      marginTop: "7%",
+      marginTop: "30px",
+      backgroundColor: "#062C06",
+      background:
+        "radial-gradient(43.91% 58.17% at 56.09% -8.17%, #195E2D 0%, #052811 100%) ",
+
+      borderRadius: 20,
     },
   }));
 
@@ -62,10 +75,16 @@ const FAQ: React.FC<FAQProps> = ({
   }
 
   return (
-    <div className={`bg-black p-6 md:p-15 text-white container mx-auto ${className}`}>
+    <div
+      className={`bg-black p-6 md:p-15 text-white container mx-auto relative${className}`}
+    >
+      {" "}
+      <div className=" absolute bottom-0 left-0">
+        <Image src={vector} alt={"vector"} />
+      </div>
       {/* Header */}
       <div className="flex flex-col md:flex-row justify-between">
-        <div className="w-full md:w-[35%] lg:w-[35%] xl:w-[35%] sticky top-0">
+        <div className="w-full md:w-[35%] lg:w-[35%] xl:w-[35%] sticky top-0 ">
           <div className="pt-10">
             <div className="poppins-semibold font-40">
               {tagText}{" "}
@@ -76,7 +95,7 @@ const FAQ: React.FC<FAQProps> = ({
               ) : null}
             </div>
             {heading?.text && (
-              <div className="poppins-medium leading-[200%] mt-4 w-2/3 font-16">
+              <div className="poppins-medium leading-[200%] mt-4 w-3/4 font-16">
                 {heading.text}
               </div>
             )}
@@ -96,7 +115,11 @@ const FAQ: React.FC<FAQProps> = ({
                   <AccordionSummary
                     expandIcon={
                       activeAccordion === i ? (
-                        <Image src={open} alt="" className="w-10 h-auto rotate-180" />
+                        <Image
+                          src={open}
+                          alt=""
+                          className="w-10 h-auto rotate-180"
+                        />
                       ) : (
                         <Image src={close} alt="" className="w-10 h-auto" />
                       )
@@ -105,7 +128,9 @@ const FAQ: React.FC<FAQProps> = ({
                     id={`panel${i}-header`}
                     className="poppins-semibold font-16"
                   >
-                    <span className="pr-4 font-28">{formatNumberWithLeadingZero(i + 1)}</span>
+                    <span className="pr-4 font-28">
+                      {formatNumberWithLeadingZero(i + 1)}
+                    </span>
                     <span className="mt-2">{item.title}</span>
                   </AccordionSummary>
                   <AccordionDetails className="poppins-medium leading-[200%] font-14">
@@ -117,7 +142,6 @@ const FAQ: React.FC<FAQProps> = ({
           </AccordionStyle>
         </div>
       </div>
-
       {/* Optional Info Boxes */}
       {showInfoBoxes && infoBoxes.length > 0 && (
         <div className="pt-20 flex flex-col md:flex-row justify-between gap-y-8">

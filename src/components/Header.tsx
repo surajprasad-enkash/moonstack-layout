@@ -3,6 +3,7 @@ import logo from "../../public/assets/logo-white.png";
 import Image from "next/image";
 import { Colors } from "@/colors/colors";
 import Link from "next/link";
+import CustomButton from "./CommanButton/CommanButton";
 
 interface IHeaderRefs {
   home: React.RefObject<HTMLDivElement>;
@@ -36,8 +37,8 @@ const Header = ({ refs }: { refs: IHeaderRefs }) => {
   ];
 
   return (
-    <header className="bg-black text-white p-4 fixed z-50 w-full ">
-      <div className="mx-auto container flex justify-between items-center">
+    <header className="fixed z-50 w-full bg-black p-4 text-white">
+      <div className="container mx-auto flex items-center justify-between">
         <div className="w-40">
           <Link href={"/"}>
             <Image
@@ -47,15 +48,14 @@ const Header = ({ refs }: { refs: IHeaderRefs }) => {
             />
           </Link>
         </div>
-
         <nav className="flex items-center space-x-10">
           {menuItems.map((item, index) => {
             const isActive = item.paths.includes("/");
+
             return (
               <div
                 key={index}
-                className={`hover-white-text  ml-3 py-1.5 px-5 flex justify-between items-center text-white cursor-pointer poppins-medium font-14`}
-                style={{ color: isActive ? Colors.brand200 : "#fff" }}
+                className={`hover-white-text poppins-medium font-14 ml-3 flex cursor-pointer items-center justify-between px-5 py-1.5 text-white ${isActive ? "active-menu-item" : ""}`}
                 ref={item.ref}
               >
                 {item.title}
@@ -65,15 +65,7 @@ const Header = ({ refs }: { refs: IHeaderRefs }) => {
         </nav>
 
         <div>
-          <button
-            className="talk-btn"
-            style={{ backgroundColor: Colors.brand400 }}
-            ref={refs.talkBtn}
-          >
-            <span className="text-black poppins-semibold font-16">
-              Let's Talk
-            </span>
-          </button>
+          <CustomButton text="  Let's Talk" variant="primary" />
         </div>
       </div>
     </header>

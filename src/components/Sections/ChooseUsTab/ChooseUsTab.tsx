@@ -16,27 +16,40 @@ interface ChooseUsTabSectionProps {
   headingLines: { text: string; color?: string }[];
   subHeadingLines?: { text: string; color?: string }[];
   tabs: TabItem[];
+  reverse?: boolean; // 👉 Layout reverse option (image left / right)
+  headingLayout?: "center" | "between"; // 👉 Heading layout option
 }
 
 const ChooseUsTabSection: React.FC<ChooseUsTabSectionProps> = ({
   headingLines,
   subHeadingLines,
   tabs,
+  reverse = false,
+  headingLayout = "center",
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <div className="bg-black text-white px-4 sm:px-10 py-12 md:py-20 container mx-auto">
-      <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[50%] text-center m-auto">
+      {/* Heading Section */}
+      <div
+        className={`w-full ${
+          headingLayout === "center"
+            ? "md:w-2/5 lg:w-2/5 xl:w-[50%] text-center m-auto"
+            : "flex flex-col md:flex-row justify-between items-center gap-4"
+        }`}
+      >
+        {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true, amount: 0.2 }}
+          className={headingLayout === "between" ? "text-left" : ""}
         >
           <Heading
             headingTag="h2"
-            className="font-bold pt-3 text-white font-36 text-center"
+            className="font-bold pt-3 text-white font-36"
             content={headingLines}
           />
         </motion.div>
@@ -48,19 +61,33 @@ const ChooseUsTabSection: React.FC<ChooseUsTabSectionProps> = ({
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true, amount: 0.2 }}
+            className={
+              headingLayout === "between"
+                ? "text-left md:w-auto w-full"
+                : "pt-3 text-center"
+            }
           >
             <Heading
               headingTag="p"
-              className="font-bold pt-3 text-white font-14 text-center"
+              className="font-bold text-white font-14"
               content={subHeadingLines}
             />
           </motion.div>
         )}
       </div>
-      {/* Tabs and Image */}
-      <div className="grid md:grid-cols-2 gap-16 lg:gap-32 items-stretch pt-16">
-        {/* Left Tabs */}
-        <div className="flex flex-col gap-4 rounded-lg p-5">
+
+      {/* Tabs and Image Section */}
+      <div
+        className={`grid md:grid-cols-2 gap-16 lg:gap-32 items-stretch pt-16 ${
+          reverse ? "md:grid-flow-col-dense" : ""
+        }`}
+      >
+        {/* Tabs */}
+        <div
+          className={`flex flex-col gap-4 rounded-lg p-5 ${
+            reverse ? "order-2 md:order-1" : "order-1"
+          }`}
+        >
           {tabs.map((tab, index) => (
             <button
               key={index}
@@ -85,8 +112,12 @@ const ChooseUsTabSection: React.FC<ChooseUsTabSectionProps> = ({
           ))}
         </div>
 
-        {/* Right Image */}
-        <div className="flex justify-center items-center overflow-hidden">
+        {/* Image */}
+        <div
+          className={`flex justify-center items-center overflow-hidden ${
+            reverse ? "order-1 md:order-2" : ""
+          }`}
+        >
           <Image
             src={tabs[activeIndex].image}
             alt={tabs[activeIndex].title}

@@ -4,12 +4,8 @@ import rating from "../../../public/assets/rating.svg";
 import robotImg from "../../../public/assets/robot-img.webp";
 import { Colors } from "@/colors/colors";
 
-interface IBannerRefs {
-  getStartedBtnRef: React.RefObject<HTMLDivElement>;
-  learnMoreBtnRef: React.RefObject<HTMLDivElement>;
-}
 
-const HomepageBanner = ({ refs }: { refs: IBannerRefs }) => {
+const HomepageBanner = () => {
   const rotatingRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -28,47 +24,44 @@ const HomepageBanner = ({ refs }: { refs: IBannerRefs }) => {
 
   return (
     <>
-      <div className="bg-black container mx-auto">
+      <div className="container mx-auto bg-black">
         <div className="main-bg">
           <video autoPlay loop muted>
             <source src="/assets/Home-hero-bg.mp4" type="video/mp4" />
           </video>
-          <div className="bg-gradient-to-r from-transparent via-black to-transparent w-1/2 p-4 py-20">
+          <div className="w-1/2 bg-gradient-to-r from-transparent via-black to-transparent p-4 py-20">
             <div className="flex items-center">
               <Image
                 src={rating}
                 alt="rating"
                 className="w-25 object-contain"
               />
-              <div className="poppins-medium text-white font-16 ml-2">
+              <div className="poppins-medium font-16 ml-2 text-white">
                 4.5(200+ customers available)
               </div>
             </div>
-            <h1 className="poppins-semibold text-white font-50 leading-[125%]">
+            <h1 className="poppins-semibold font-50 leading-[125%] text-white">
               Achieve Otherworldly Growth{" "}
-              <span style={{ color: Colors.brand200 }}> with Moonstack</span>{" "}
+              <span style={{ color: Colors.brand200 }}>
+                {" "}
+                with Moonstack
+              </span>{" "}
             </h1>
-            <div className="poppins-medium text-white mt-4 leading-[200%] font-14">
+            <div className="poppins-medium font-14 mt-4 leading-[200%] text-white">
               Work with a team that brings your ideas to life on your terms.
               Moonstack is one of the most experienced and reliable app and web
               development agencies in India. Skyrocket your business growth with
               Moonstack today!
             </div>
-            <div className="flex gap-8 mt-6">
-              <button
-                ref={refs.getStartedBtnRef}
-                className="bg-gradient-to-r from-green-500 to-black-500 text-white poppins-semibold py-2 px-10 rounded-4xl font-16 cursor-pointer"
-              >
+            <div className="mt-6 flex gap-8">
+              <button className="to-black-500 poppins-semibold font-16 cursor-pointer rounded-4xl bg-gradient-to-r from-green-500 px-10 py-2 text-white">
                 Get Started
               </button>
               {/* <button className="bg-black text-white poppins-semibold py-3 px-10 rounded-3xl mt-6 border-2 border-[#076227] hover:text-green-500 border-solid font-16">
                                 Learn More
                             </button> */}
-              <div className="rotating-btn" ref={refs.learnMoreBtnRef}>
-                <button
-                  className="rotating bg-black text-green-500 poppins-semibold py-3 px-10 rounded-4xl hover:text-green-500 font-16"
-                  ref={rotatingRef}
-                >
+              <div className="rotating-btn" >
+                <button className="rotating poppins-semibold font-16 rounded-4xl bg-black px-10 py-3 text-green-500 hover:text-green-500">
                   Learn More
                 </button>
               </div>

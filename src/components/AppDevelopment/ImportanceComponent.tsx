@@ -39,7 +39,7 @@ const ImportanceSection: React.FC<ImportanceSectionProps> = ({
           <Image
             src={image}
             alt={altText}
-            className="object-fill w-full h-full max-h-full"
+            className="object-fill w-full h-full max-h-full rounded-2xl"
           />
         </div>
       </div>

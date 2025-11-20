@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 interface CustomButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "rotating" | "small";
+  variant?: "primary" | "secondary" | "rotating" | "small" | "services";
   text: string;
 }
 
@@ -31,12 +31,14 @@ const CustomButton = forwardRef<HTMLButtonElement, CustomButtonProps>(
 
     const variantStyles = {
       primary:
-        "bg-gradient-to-r from-green-500 to-black-500 text-white py-2 px-10",
+        "bg-primary-300 from-green-500 to-black-500 text-white py-2 px-10",
       secondary:
         "bg-black text-white border-2 border-[#076227] hover:text-green-500 py-3 px-10",
       rotating: "bg-black text-green-500 py-3 px-10",
       small:
         "backdrop-blur-[22.2px] bg-[#10933E30] py-[10px] px-[20px] text-[#0BD954] ",
+      services:
+        "bg-primary-300 from-green-500 to-black-500 text-white font-14 py-2 px-[10px]",
     };
 
     return (
@@ -52,7 +54,7 @@ const CustomButton = forwardRef<HTMLButtonElement, CustomButtonProps>(
         {text}
       </button>
     );
-  }
+  },
 );
 
 CustomButton.displayName = "CustomButton";

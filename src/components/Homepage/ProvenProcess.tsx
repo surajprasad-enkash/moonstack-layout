@@ -38,7 +38,7 @@ const ProvenProcess = () => {
     <>
       <div className="bg-black p-15 pt-0 text-white flex flex-col md:flex-row container mx-auto">
         <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 sticky top-0 mix-blend-difference">
-          <div className="sticky top-0 pt-10">
+          <div className="sticky top-[100px] pt-10">
             <div className="poppins-semibold font-40">
               Our{" "}
               <span className="bg-gradient-to-r from-[#25E8B1] via=[#60F90D] to-[#60F90D] text-transparent bg-clip-text">

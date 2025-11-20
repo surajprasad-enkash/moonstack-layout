@@ -5,7 +5,7 @@ import Heading from "../Heading/Heading";
 import Tag from "../Tag/Tag";
 
 interface Step {
-  id: number;
+  id?: number;
   title: string;
   description: string;
 }
