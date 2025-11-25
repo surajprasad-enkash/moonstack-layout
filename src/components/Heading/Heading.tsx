@@ -35,7 +35,7 @@ const Heading: React.FC<HeadingProps> = ({
     h5: "text-[12px] leading-[16px] md:text-[24px] md:leading-[140%] tracking-[-0.04em]",
     h6: "text-[9px] leading-[28px] md:text-[20px] md:leading-[140%] tracking-[-0.04em]",
     h7: "text-[12px] leading-[28px] md:text-[18px] md:leading-[140%] tracking-[-0.04em]",
-    p: "text-[12px] leading-[28px] md:text-[14px] md:leading-[200%] tracking-[-0.04em]",
+    p: "text-[12px] leading-[28px] md:text-[14px] md:leading-[200%] tracking-[-0.04em] tracking-wider",
   };
 
   const defaultClass = headingClassMap[headingTag] || "";
@@ -59,7 +59,7 @@ const Heading: React.FC<HeadingProps> = ({
 
         const innerContent = (
           <Element key={i} className={segmentClasses} style={style}>
-            {text}
+            {' '+ text}
           </Element>
         );
 
