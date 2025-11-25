@@ -600,3 +600,41 @@ export const serviceArr = [
     buttonLink: "/services/laravel-development",
   },
 ];
+export const cardData = [
+  {
+    icon: arrowUp,
+    title: "Post Launch Support",
+    description:
+      "Moonstack has delivered 450+ projects across different industries...",
+  },
+  {
+    icon: arrowUp,
+    title: "End-to-End Consulting",
+    description:
+      "We help plan, design, develop, and scale your product efficiently.",
+  },
+  {
+    icon: arrowUp,
+    title: "Affordable Development",
+    description:
+      "We make development budget friendly while maintaining high quality.",
+  },
+  // {
+  //   icon: arrowUp,
+  //   title: "Post Launch Support",
+  //   description:
+  //     "Moonstack has delivered 450+ projects across different industries...",
+  // },
+  // {
+  //   icon: arrowUp,
+  //   title: "End-to-End Consulting",
+  //   description:
+  //     "We help plan, design, develop, and scale your product efficiently.",
+  // },
+  // {
+  //   icon: arrowUp,
+  //   title: "Affordable Development",
+  //   description:
+  //     "We make development budget friendly while maintaining high quality.",
+  // },
+];

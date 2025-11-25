@@ -460,3 +460,30 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.my-gradient-border {
+  position: relative;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.my-gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(
+    310.26deg,
+    hsl(141, 100%, 41%) 0.81%,
+    #000000 40.42%,
+    #000000 72.22%,
+    #00cf49 96.03%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}

@@ -1,13 +1,11 @@
 import React from "react";
-import { useMultipleRefs } from "@/hooks/useMultipleRefs";
 
 //data
 import {
   accordionData,
   benefits,
+  cardData,
   chooseUsTabs,
-  processSteps,
-  serviceArr,
   slides,
   utilisArr,
   workflowItems,
@@ -18,9 +16,7 @@ import ReusableUtilizeSection from "@/components/Sections/UtilizeSection/Utilize
 import ReusableSliderSection from "@/components/Sections/SliderSection/SliderSection";
 import ImportanceSection from "@/components/Sections/ImportanceSection/ImportanceSection";
 import importanceImg from "../../../public/assets/backend-importance.webp";
-import Stepper from "@/components/StepperComponent/StepperComponent";
 import ChooseUsTabSection from "@/components/Sections/ChooseUsTab/ChooseUsTab";
-import ServicesSection from "@/components/Website/OurSevices";
 import FAQ from "@/components/Homepage/FAQ";
 import Layout from "@/components/Layout";
 import WebsiteCategoryBanner from "@/components/Website/WebsiteCategoryBanner";
@@ -31,6 +27,7 @@ import bannerImg from "../../../public/assets/e-commerce-hire.webp";
 import HireNowBanner from "@/components/Sections/HireNowBanner/HireNowBanner";
 import WhyChooseSection from "@/components/Sections/WhyChooseSection/WhyChooseSection";
 import ReusableWorkflowSection from "@/components/Sections/WorkflowSection/WorkflowSection";
+import ExpertiseSection from "@/components/Sections/ExpertiseSection/ExpertiseSection";
 
 const Website = (): React.JSX.Element => {
   return (
@@ -44,7 +41,7 @@ const Website = (): React.JSX.Element => {
             },
             {
               text: "Service for Businesses",
-              color: "text-[#1CFF6C]",
+              color: "text-primary",
             },
           ]}
           description={[
@@ -57,6 +54,25 @@ const Website = (): React.JSX.Element => {
           buttonText={"Discuss with tech expert now"}
           bgColor="md:!pt-[115px]"
           backgroundImage={BgImg}
+        />
+        <ExpertiseSection
+          heading={[
+            {
+              text: " Our End-to-End Web ",
+              color: "text-white block",
+            },
+            {
+              text: "  Development Expertise ",
+              color: "text-white block",
+            },
+          ]}
+          subHeading={[
+            {
+              text: "We offer comprehensive end to end custom website development services in India. From website consulting - designing - development to migration - we are one stop for all your website development needs. ",
+              color: "text-white block",
+            },
+          ]}
+          cards={cardData}
         />
         <ImportanceSection
           bgImage={bodyBgImg}
@@ -74,17 +90,6 @@ const Website = (): React.JSX.Element => {
             "Website migration services  ",
           ]}
         />
-        <WhyChooseSection
-          heading={[
-            {
-              text: "Why Choose us for your next website  ",
-              color: "text-white block",
-            },
-            { text: "development services in India?", color: "text-[#1CFF6C]" },
-          ]}
-          description="Moonstack is the leading website development company in India. Serving a wide range of clients across the globe. We have top web professionals in India, who have in-depth experience on the latest tools and technologies to deliver successful solutions to a wide range of businesses."
-          cards={benefits}
-        />{" "}
         <HireNowBanner
           headingContent={[
             {
@@ -101,6 +106,16 @@ const Website = (): React.JSX.Element => {
           buttonText="Connect with us"
           image={bannerImg}
         />
+        <WhyChooseSection
+          heading={[
+            {
+              text: "Why Choose us for your next website development services in India? ",
+              color: "text-white block",
+            },
+          ]}
+          description="Moonstack is the leading website development company in India. Serving a wide range of clients across the globe. We have top web professionals in India, who have in-depth experience on the latest tools and technologies to deliver successful solutions to a wide range of businesses."
+          cards={benefits}
+        />{" "}
         <ReusableUtilizeSection
           headingLines={[{ text: "Tools We Utilized For Excellence" }]}
           subHeadingLines={[
@@ -117,8 +132,7 @@ const Website = (): React.JSX.Element => {
         />
         <ReusableWorkflowSection
           headingLines={[
-            { text: "Our Process of website  " },
-            { text: "development in India", color: "text-primary" },
+            { text: "Our Process of website  development in India" },
           ]}
           subHeadingLines={[
             {
@@ -130,10 +144,9 @@ const Website = (): React.JSX.Element => {
         <ChooseUsTabSection
           headingLines={[
             {
-              text: "Moonstack offer website   ",
+              text: "Moonstack offer website development services in India  ",
               color: "text-white",
             },
-            { text: "development services in India ", color: "text-primary" },
           ]}
           subHeadingLines={[
             {
@@ -142,6 +155,7 @@ const Website = (): React.JSX.Element => {
             },
           ]}
           tabs={chooseUsTabs}
+          headingLayout="between"
         />
         <ReusableSliderSection
           buttonText="Process"
@@ -151,7 +165,7 @@ const Website = (): React.JSX.Element => {
           ]}
           slides={slides}
           bgColor="bg-black"
-          slidesToShow={5}
+          slidesToShow={4}
           autoplaySpeed={2000}
         />{" "}
         <FAQ

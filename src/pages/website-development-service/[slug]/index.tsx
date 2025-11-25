@@ -16,6 +16,7 @@ import HireNowBanner from "@/components/Sections/HireNowBanner/HireNowBanner";
 import bannerImg from "../../../../public/assets/e-commerce-hire.webp";
 import ReusableTechnologySection from "@/components/Sections/TechnologySection/TechnologySection";
 import GetQuoteBanner from "@/components/GetQuoteBanner/GetQuoteBanner";
+import WhyChooseSection from "@/components/Sections/WhyChooseSection/WhyChooseSection";
 
 export default function ApplicationPage() {
   const router = useRouter();
@@ -33,7 +34,7 @@ export default function ApplicationPage() {
         description={page.hero.description}
         image={page.hero.image}
         buttonText={page.hero.buttonText}
-        bgColor="md:!pt-10"
+        bgColor=""
         backgroundImage={page.hero.backgroundImage}
       />
       <ImportanceSection
@@ -60,20 +61,21 @@ export default function ApplicationPage() {
         reverse={true}
         headingLayout="between"
       />
-
-      <SolutionsComponent
-        headingContent={
-          typeof page.featureDataContent?.headingContent === "string"
-            ? [{ text: page.featureDataContent.headingContent }]
-            : page.featureDataContent?.headingContent || []
-        }
-        subHeadingText={page.featureDataContent?.subHeadingText || ""}
-        featuresData={page.featureDataContent?.featuresData || []}
-        titleClassName="flex justify-between"
-        headingClassName="text-start md-w-auto"
-        benifitCardClassName="lg:grid-cols-3"
-        cardClassName="border border-[var(--Text-Colour-950,#5B5B5B)]"
-      />
+      {page?.featureDataContent && (
+        <SolutionsComponent
+          headingContent={
+            typeof page.featureDataContent.headingContent === "string"
+              ? [{ text: page.featureDataContent.headingContent }]
+              : page.featureDataContent.headingContent || []
+          }
+          subHeadingText={page.featureDataContent.subHeadingText || ""}
+          featuresData={page.featureDataContent.featuresData || []}
+          titleClassName="flex justify-between"
+          headingClassName="text-start md-w-auto"
+          benifitCardClassName="lg:grid-cols-3"
+          cardClassName="border border-[var(--Text-Colour-950,#5B5B5B)]"
+        />
+      )}
       <HireNowBanner
         headingContent={[
           {
@@ -90,7 +92,6 @@ export default function ApplicationPage() {
         buttonText="Connect with us"
         image={bannerImg}
       />
-
       {/* <TrustSection
         headingLines={[{ text: page.tabs.headingText }]}
         subHeadingLines={[{ text: page.tabs.subHeadingText }]}
@@ -114,12 +115,6 @@ export default function ApplicationPage() {
         headingLines={[{ text: page.processSteps.headingText, color: "block" }]}
         subHeadingLines={[{ text: page.processSteps.subHeadingText }]}
       /> */}
-      {/* <ProcessSection
-        headingLines={[{ text: page.processSteps.headingText, color: "block" }]}
-        subHeadingLines={[{ text: page.processSteps.subHeadingText }]}
-        servicesData={page.processSteps.steps}
-        marginBottom="mb-22"
-      /> */}
       <GetQuoteBanner
         headingContent={[
           {
@@ -136,6 +131,12 @@ export default function ApplicationPage() {
         buttonText="Connect with us"
         image={bannerImg}
       />
+      <ProcessSection
+        headingLines={[{ text: page.processSteps.headingText, color: "block" }]}
+        subHeadingLines={[{ text: page.processSteps.subHeadingText }]}
+        servicesData={page.processSteps.steps}
+        marginBottom="mb-22"
+      />
       {/* <ReusableSliderSection
         buttonText="Process"
         headingLines={[
@@ -147,6 +148,11 @@ export default function ApplicationPage() {
         slidesToShow={5}
         autoplaySpeed={2000}
       /> */}
+      <WhyChooseSection
+        heading={[{ text: page.whyChooseData.headingText, color: "block" }]}
+        description={page.whyChooseData.subHeadingText}
+        cards={page.whyChooseData.steps}
+      />{" "}
       <FAQ
         accordionData={page.accordionData}
         tagText="Our FAQs"

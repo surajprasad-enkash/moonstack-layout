@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../public/assets/logo-white.png";
 import Image from "next/image";
-import { Colors } from "@/colors/colors";
 import Link from "next/link";
 import CustomButton from "./CommanButton/CommanButton";
 
@@ -37,7 +36,7 @@ const Header = ({ refs }: { refs: IHeaderRefs }) => {
   ];
 
   return (
-    <header className="fixed z-50 w-full bg-black p-4 text-white">
+    <header className="fixed z-50 w-full bg-black p-4 text-white md:px-8">
       <div className="container mx-auto flex items-center justify-between">
         <div className="w-40">
           <Link href={"/"}>

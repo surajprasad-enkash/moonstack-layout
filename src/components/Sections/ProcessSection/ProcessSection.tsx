@@ -34,9 +34,9 @@ const ProcessSection: React.FC<ProcessSectionProps> = ({
   className,
 }) => {
   return (
-    <div className="bg-black px-4 sm:px-10 py-12 md:py-20 relative z-10 container mx-auto overflow-hidden">
+    <div className="relative z-10 container mx-auto overflow-hidden bg-black px-4 py-12 sm:px-10 md:py-20">
       {vectorImage && (
-        <div className="absolute right-0 top-0 -z-10">
+        <div className="absolute top-0 right-0 -z-10">
           <Image src={vectorImage} alt="vector" height={500} />
         </div>
       )}
@@ -59,22 +59,22 @@ const ProcessSection: React.FC<ProcessSectionProps> = ({
         transition={{ duration: 0.8, delay: 0.2 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        <div className="w-2/3 m-auto">
+        <div className="m-auto w-2/3">
           <Heading
             headingTag="h2"
-            className="font-bold font-36 text-center pt-3"
+            className="font-36 pt-3 text-center font-bold"
             content={headingLines}
           />
           <Heading
             headingTag="p"
-            className=" text-center pt-3"
+            className="pt-3 text-center"
             content={subHeadingLines}
           />
         </div>
       </motion.div>
 
       <motion.div
-        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-12 md:pt-20 ${className}`}
+        className={`grid grid-cols-1 gap-6 pt-12 sm:grid-cols-2 md:pt-20 lg:grid-cols-4 ${className}`}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}

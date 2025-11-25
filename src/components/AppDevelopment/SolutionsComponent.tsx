@@ -27,18 +27,18 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
   featuresData,
 }) => {
   return (
-    <div className="bg-black  px-4 sm:px-10 py-12 md:py-20 relative container mx-auto">
-      <div className="flex flex-col md:flex-row items-center justify-between pb-12 md:pb-20">
-        <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[40%] poppins-bold text-center md:text-left font-bold mb-6 md:mb-0">
+    <div className="relative container mx-auto bg-black px-4 py-12 sm:px-10 md:py-20">
+      <div className="flex flex-col items-center justify-between pb-12 md:flex-row md:pb-20">
+        <div className="poppins-bold mb-6 w-full text-center font-bold md:mb-0 md:w-2/5 md:text-left lg:w-2/5 xl:w-[40%]">
           <Heading
-            headingTag="h2"
-            className={`pt-3 font-36 text-start ${headingClassName}`}
+            headingTag="h3"
+            className={`text-start ${headingClassName}`}
             content={headingContent}
           />
         </div>
 
         {subHeadingText && (
-          <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[50%] text-center md:text-left leading-[200%]">
+          <div className="w-full text-center leading-[200%] md:w-2/5 md:text-left lg:w-2/5 xl:w-[50%]">
             <Heading
               headingTag="p"
               className={`py-6 ${subHeadingClassName}`}
@@ -48,7 +48,7 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
         )}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {featuresData.map((feature, index) => (
           <BenifitsCard
             key={index}
@@ -59,7 +59,7 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
         ))}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-10">
+      <div className="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 lg:grid-cols-3">
         {infoData.map((feature, index) => (
           <InfoCard
             key={index}

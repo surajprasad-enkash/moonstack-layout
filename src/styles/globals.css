@@ -12,16 +12,17 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-primary: #1cff6c;
+  --color-primary: #00cf49;
   --color-primary-300: #0d8035;
   --color-primary-50: #05140a;
   --color-black: #0a0a0a;
   --color-primary-grey: #cbcbcb;
+  --color-light-grey: #dfdfdf;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0000;
     --foreground: #ededed;
   }
 }

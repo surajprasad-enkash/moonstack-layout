@@ -30,8 +30,8 @@ const ReusableTechnologySection: React.FC<TechnologySectionProps> = ({
   gridCols = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3",
 }) => {
   return (
-    <section className={`${bgColor} text-white ${containerClass}`}>
-      <div className="max-w-5xl mx-auto text-center">
+    <section className={`${bgColor} text-white`}>
+      <div className={`mx-auto max-w-5xl text-center ${containerClass}`}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ const ReusableTechnologySection: React.FC<TechnologySectionProps> = ({
         >
           <Heading
             headingTag="h4"
-            className="font-bold text-3xl md:text-4xl text-white"
+            className="text-3xl font-bold text-white md:text-4xl"
             content={headingLines}
           />
         </motion.div>
@@ -55,19 +55,12 @@ const ReusableTechnologySection: React.FC<TechnologySectionProps> = ({
           >
             <Heading
               headingTag="p"
-              className="text-base md:text-lg text-gray-200"
+              className="text-base text-gray-200 md:text-lg"
               content={subHeadingLines}
             />
           </motion.div>
         )}
-
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true, amount: 0.2 }}
-          className={`grid ${gridCols} gap-6 pt-16`}
-        >
+        <div className={`grid ${gridCols} gap-6 pt-16`}>
           {filteredItems.map((feature, index) => (
             <CategoryCard
               key={index}
@@ -80,7 +73,7 @@ const ReusableTechnologySection: React.FC<TechnologySectionProps> = ({
               className="border-t border-[#33834F]"
             />
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

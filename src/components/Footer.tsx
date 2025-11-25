@@ -55,132 +55,134 @@ const Footer = ({ refs }: { refs: IFooterRefs }) => {
   ];
 
   return (
-    <footer className="container mx-auto bg-black p-6 text-white md:p-4">
-      {/* Top Row: Logo + Links + Social Icons */}
-      <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-        <div className="flex gap-16">
-          <div className="mx-auto w-40 md:mx-0">
+    <footer className="bg-[#000] p-6 text-white md:p-8">
+      <div className="container mx-auto">
+        {/* Top Row: Logo + Links + Social Icons */}
+        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div className="flex gap-16">
+            <div className="mx-auto w-40 md:mx-0">
+              <Image
+                src={logo}
+                alt="logo"
+                className="h-auto w-auto object-contain"
+              />
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center gap-2 md:justify-start md:gap-7">
+              {footerLinks.map((item, index) => (
+                <React.Fragment key={item.id}>
+                  <div className="poppins-medium font-14 block cursor-pointer px-2 text-center text-white md:text-left">
+                    {item.title}
+                  </div>
+                  {index < footerLinks.length - 1 && (
+                    <span className="hidden md:inline-block">|</span>
+                  )}
+                </React.Fragment>
+              ))}
+            </div>
+          </div>
+          <div className="flex justify-center gap-3 md:justify-end">
             <Image
-              src={logo}
-              alt="logo"
-              className="h-auto w-auto object-contain"
+              src={twitter}
+              alt="twitter"
+              className="h-auto w-7 cursor-pointer object-contain"
+            />
+            <Image
+              src={linkedin}
+              alt="linkedin"
+              className="h-auto w-7 cursor-pointer object-contain"
+            />
+            <Image
+              src={facebook}
+              alt="facebook"
+              className="h-auto w-7 cursor-pointer object-contain"
+            />
+            <Image
+              src={whatsapp}
+              alt="whatsapp"
+              className="h-auto w-7 cursor-pointer object-contain"
+            />
+          </div>
+        </div>
+
+        {/* Middle Row: Images + Reviews */}
+        <div className="mt-8 flex flex-col gap-6 md:flex-row md:justify-between">
+          <div className="flex justify-center gap-4 md:justify-start">
+            <Image
+              src={img1}
+              alt="footer-img-1"
+              className="h-auto w-20 object-contain"
+            />
+            <Image
+              src={img2}
+              alt="footer-img-2"
+              className="h-auto w-20 object-contain"
             />
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-2 md:justify-start md:gap-7">
-            {footerLinks.map((item, index) => (
-              <React.Fragment key={item.id}>
-                <div className="poppins-medium font-14 block cursor-pointer px-2 text-center text-white md:text-left">
-                  {item.title}
+          <div className="flex flex-col flex-wrap justify-center gap-4 md:flex-row md:justify-end">
+            {/* Review Pills */}
+            {[
+              {
+                label: "Review on",
+                icon: rating,
+                platform: upwork,
+                count: "95 reviews",
+              },
+              {
+                label: "Review on",
+                icon: rating,
+                platform: google,
+                count: "95 reviews",
+              },
+              {
+                label: "Review on",
+                icon: ratingRed,
+                platform: clutch,
+                count: "120 reviews",
+              },
+              {
+                label: "ISO 27001:2018",
+                icon: iso,
+                platform: null,
+                // count: "IND.44.121/IS/U",
+              },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="review-pill flex flex-col gap-1 rounded-md bg-white p-2 text-black"
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <span className="poppins-medium font-12">{item.label}</span>
+                  {item.icon && (
+                    <Image
+                      alt="rating"
+                      src={item.icon}
+                      className="h-auto w-20 object-contain"
+                    />
+                  )}
                 </div>
-                {index < footerLinks.length - 1 && (
-                  <span className="hidden md:inline-block">|</span>
-                )}
-              </React.Fragment>
+                <div className="flex items-center justify-between gap-2">
+                  {item.platform && (
+                    <Image
+                      alt="platform"
+                      src={item.platform}
+                      className="h-auto w-10 object-contain"
+                    />
+                  )}
+                  <span className="poppins-regular font-12 text-gray-500">
+                    {item.count}
+                  </span>
+                </div>
+              </div>
             ))}
           </div>
         </div>
-        <div className="flex justify-center gap-3 md:justify-end">
-          <Image
-            src={twitter}
-            alt="twitter"
-            className="h-auto w-7 cursor-pointer object-contain"
-          />
-          <Image
-            src={linkedin}
-            alt="linkedin"
-            className="h-auto w-7 cursor-pointer object-contain"
-          />
-          <Image
-            src={facebook}
-            alt="facebook"
-            className="h-auto w-7 cursor-pointer object-contain"
-          />
-          <Image
-            src={whatsapp}
-            alt="whatsapp"
-            className="h-auto w-7 cursor-pointer object-contain"
-          />
-        </div>
-      </div>
 
-      {/* Middle Row: Images + Reviews */}
-      <div className="mt-8 flex flex-col gap-6 md:flex-row md:justify-between">
-        <div className="flex justify-center gap-4 md:justify-start">
-          <Image
-            src={img1}
-            alt="footer-img-1"
-            className="h-auto w-20 object-contain"
-          />
-          <Image
-            src={img2}
-            alt="footer-img-2"
-            className="h-auto w-20 object-contain"
-          />
+        {/* Bottom Row: Copyright */}
+        <div className="poppins-medium font-14 mt-6 text-center text-gray-400 md:text-left">
+          © {moment().year()} Moonstack. All rights reserved.
         </div>
-
-        <div className="flex flex-col flex-wrap justify-center gap-4 md:flex-row md:justify-end">
-          {/* Review Pills */}
-          {[
-            {
-              label: "Review on",
-              icon: rating,
-              platform: upwork,
-              count: "95 reviews",
-            },
-            {
-              label: "Review on",
-              icon: rating,
-              platform: google,
-              count: "95 reviews",
-            },
-            {
-              label: "Review on",
-              icon: ratingRed,
-              platform: clutch,
-              count: "120 reviews",
-            },
-            {
-              label: "ISO 27001:2018",
-              icon: iso,
-              platform: null,
-              // count: "IND.44.121/IS/U",
-            },
-          ].map((item, idx) => (
-            <div
-              key={idx}
-              className="review-pill flex flex-col gap-1 rounded-md bg-white p-2 text-black"
-            >
-              <div className="flex items-center justify-between gap-2">
-                <span className="poppins-medium font-12">{item.label}</span>
-                {item.icon && (
-                  <Image
-                    alt="rating"
-                    src={item.icon}
-                    className="h-auto w-20 object-contain"
-                  />
-                )}
-              </div>
-              <div className="flex items-center justify-between gap-2">
-                {item.platform && (
-                  <Image
-                    alt="platform"
-                    src={item.platform}
-                    className="h-auto w-10 object-contain"
-                  />
-                )}
-                <span className="poppins-regular font-12 text-gray-500">
-                  {item.count}
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Bottom Row: Copyright */}
-      <div className="poppins-medium font-14 mt-6 text-center text-gray-400 md:text-left">
-        © {moment().year()} Moonstack. All rights reserved.
       </div>
     </footer>
   );

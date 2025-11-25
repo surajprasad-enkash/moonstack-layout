@@ -4,7 +4,6 @@ import Heading from "../../Heading/Heading";
 import { motion } from "framer-motion";
 
 interface ICardItem {
-
   title: string;
   desc: string;
   category?: string;
@@ -24,14 +23,16 @@ const ReusableWorkflowSection: React.FC<WorkflowSectionProps> = ({
   subHeadingLines,
   filteredItems = [],
   bgColor = "bg-black",
-  containerClass = "container mx-auto px-4 sm:px-10 py-12 md:py-20",
+  containerClass = "px-4 md:px-8 py-12 md:py-20",
   gridCols = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3",
 }) => {
   return (
     <section
-      className={`${bgColor} text-white ${containerClass} bg-[url('/assets/process-bg.webp')]`}
+      className={`${bgColor} bg-[url('/assets/process-bg.webp')] text-white`}
     >
-      <div className="mx-auto max-w-5xl text-center">
+      <div
+        className={`container mx-auto ${containerClass} w-[80%] text-center`}
+      >
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -39,8 +40,8 @@ const ReusableWorkflowSection: React.FC<WorkflowSectionProps> = ({
           viewport={{ once: true, amount: 0.2 }}
         >
           <Heading
-            headingTag="h4"
-            className="text-3xl font-bold text-white md:text-4xl"
+            headingTag="h3"
+            className="font-semibold text-white"
             content={headingLines}
           />
         </motion.div>
@@ -55,7 +56,7 @@ const ReusableWorkflowSection: React.FC<WorkflowSectionProps> = ({
           >
             <Heading
               headingTag="p"
-              className="text-base text-gray-200 md:text-lg"
+              className="text-light-grey"
               content={subHeadingLines}
             />
           </motion.div>
@@ -78,10 +79,16 @@ const ReusableWorkflowSection: React.FC<WorkflowSectionProps> = ({
               </span>
 
               <div className="relative z-10 mt-4 ps-[66px] text-start">
-                <h3 className="text-lg font-semibold text-white">
-                  {feature.title}
-                </h3>
-                <p className="mt-2 text-sm text-gray-300">{feature.desc}</p>
+                <Heading
+                  headingTag="h5"
+                  className="font-semibold text-white"
+                  content={feature.title}
+                />
+                <Heading
+                  headingTag="p"
+                  className="text-light-grey mt-2"
+                  content={feature.desc}
+                />
               </div>
             </div>
           ))}

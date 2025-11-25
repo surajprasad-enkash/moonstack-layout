@@ -1,5 +1,3 @@
-import androidImg from "../../../../public/assets/app-development-images/android-hero-img.webp";
-import iosImg from "../../../../public/assets/app-development-images/ios-hero-img.webp";
 import pwaImg from "../../../../public/assets/app-development-images/android-hero-img.webp";
 import reactNativeImg from "../../../../public/assets/app-development-images/android-hero-img.webp";
 import managementImg from "../../../../public/assets/app-development-images/android-hero-img.webp";
@@ -86,6 +84,8 @@ import laravelImg from "../../../../public/assets/laravel-hero-img.webp";
 import laravelBgImg from "../../../../public/assets/laravel-bg.webp";
 import ecommerceImg from "../../../../public/assets/e-commerce-hero.webp";
 import ecommerceBgImg from "../../../../public/assets/e-commerce-bg.webp";
+import websiteBgImg from "../../../../public/assets/website-development-images/web-designing-bg-img.webp";
+import websiteHeroImg from "../../../../public/assets/website-development-images/web-designing-hero.webp";
 import eCommServIconOne from "../../../../public/assets/e-com-ser-icon-one.svg";
 import aiImg from "../../../../public/assets/ai-Image.webp";
 import { IAccordionItem } from "@/components/Homepage/FAQ";
@@ -136,6 +136,15 @@ export const pagesData: Record<
       subHeadingText: string;
       steps: { title: string; description: string; id?: number }[];
     };
+    whyChooseData: {
+      headingText: string;
+      subHeadingText: string;
+      steps: {
+        icon: StaticImageData | string;
+        title: string;
+        description: string;
+      }[];
+    };
 
     slides: { image: StaticImageData | string; title: string; desc: string }[];
     accordionData: IAccordionItem[];
@@ -184,6 +193,19 @@ export const pagesData: Record<
       "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses. .",
       "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs. ",
     ],
+    solutionTitle: [
+      {
+        text: "We are best Laravel development company in India for -   ",
+        color: "text-white ",
+      },
+    ],
+    solutionPoints: [
+      "We offer custom Laravel website development services in India",
+      "From Moonstack, Hire Laravel web developers on hourly, full time, and part time basis",
+      "Offer end to end Laravel web development services such as custom development, e-commerce, API, migration and updates",
+      "We keep 100% transparency in project and keep all information fully secure",
+      "At Moonstack, we have team of highly professional and skilled Laravel developers ",
+    ],
     solutions: {
       headingContent: "Our Laravel web Development Services ",
       subHeadingText:
@@ -229,55 +251,55 @@ export const pagesData: Record<
     ],
 
     tabs: {
-      headingText: "Why Choose Us?",
+      headingText: "Our Scalable Laravel Web Solutions in India",
       subHeadingText:
-        "Still wondering if you should avail our Android app development service in India? Here are six reasons why we’re your best choice for an Android app development agency.",
+        "For decades MoonStack has been creating a wide range of Laravel web solutions for our clients for different industries that are ready to use as per different business with minor and major customisation processes. ",
       tabs: [
         {
           id: 1,
-          title: "Custom Solutions:",
+          title: "Laravel Web Apps",
           description:
-            "At Moonstack, we ensure every app is built specifically as per our client’s requirements. This means even if you want a specific functionality in your Android app that’s generally not standard in your market, we can make it for you, no questions asked.",
+            "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
           image: androidTabImgOne,
           imgHeight: "540px",
         },
         {
           id: 2,
-          title: "End-to-End Solutions:",
+          title: "Laravel E-commerce Solutions",
           description:
-            "We offer complete Android app development support from frameworking, UI/UX design, backend development, to app testing and launch support.",
+            "The best ecommerce website developers in India build innovative and highly functional Laravel online stores. We have integrated essential functionalities such as product catalog, shopping carts, order tracking, and secure payment gateways that increase conversion rates and user experience.",
           image: androidTabImgTwo,
-          imgHeight: "502px",
+          imgHeight: "540px",
         },
         {
           id: 3,
-          title: "Highly Qualified Developers: ",
+          title: "Laravel CRM Solutions",
           description:
-            " Our development team at Moonstack is led by highly qualified developers and designers with years of real-world professional experience.",
+            "Moonstack builds Laravel based CRM solutions that improve customer relationship management processes in companies. We design custom CRM solutions that allow us to track leads and automate conversions that lead to data driven decisions and streamline client communication processes.",
           image: androidTabImgThree,
           imgHeight: "540px",
         },
         {
-          id: 3,
-          title: "Focus on User Intent:",
+          id: 4,
+          title: "Laravel CMS Solutions",
           description:
-            " There’s an innate focus on user intent in our Android app development services in India. We ensure every app we build is practical in terms of design and engaging for users ",
+            "Professional Laravel experts offer robust Laravel based CMS development in India. We have built the best Laravel CMS solutions that allow businesses to easily update, publish, and manage content effortlessly on their websites. We deliver CMS solutions to businesses that have full control on content management systems.",
           image: androidTabImgFour,
           imgHeight: "540px",
         },
         {
-          id: 4,
-          title: "Production Transparency: ",
+          id: 5,
+          title: "POS Systems",
           description:
-            "Our enterprise Android app solutions in India always come with maintenance and post-launch support to ensure your app is functioning optimally and doesn’t have any compatibility issues moving forward.",
+            "Integrate modern Laravel powered POS systems that are developed by Laravel experts in India. Our POS systems help to streamline different operational processes, allow retailers to manage multiple outlets, and deliver best outcomes for customers. We have delivered a wide range of POS (Point of Sale solutions) to our retail businesses.",
           image: androidTabImgFive,
           imgHeight: "540px",
         },
         {
-          id: 5,
-          title: "Maintenance & Support:  ",
+          id: 6,
+          title: "Video Streaming and Media Apps",
           description:
-            "Our enterprise Android app solutions in India always come with maintenance and post-launch support to ensure your app is functioning optimally and doesn’t have any compatibility issues moving forward.",
+            "Develop your Laravel based video streaming and media apps with expert laravel web developers in India. We designed video streaming and media apps that support secure content delivery and content management. We develop video streaming and media apps in such a way that offer seamless streaming and integrated with user authentication and support multiple platforms.",
           image: androidTabImgSix,
           imgHeight: "540px",
         },
@@ -320,231 +342,98 @@ export const pagesData: Record<
         title: "Swift",
         desc: "At Moonstack, we believe in building technology.",
       },
-      {
-        image: angularIcon,
-        category: "Frontend",
-        title: "AngularJs Development",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: reactIcon,
-        category: "Frontend",
-        title: "ReactJS Development",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: nextIcon,
-        category: "Frontend",
-        title: "Next.js",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: jsIcon,
-        category: "Frontend",
-        title: "JavaScript",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: html,
-        category: "Frontend",
-        title: "HTML5 Development",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: cssIcon,
-        category: "Frontend",
-        title: "CSS3",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: nodeIcon,
-        category: "Backend",
-        title: "NodeJS Development",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: dotNetIcon,
-        category: "Backend",
-        title: ".NET",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: phpIcon,
-        category: "Backend",
-        title: "PHP",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: javaIcon,
-        category: "Backend",
-        title: "Java",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: pythonIcon,
-        category: "Backend",
-        title: "Python",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: laravelIcon,
-        category: "Backend",
-        title: "Laravel",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: cakePhpIcon,
-        category: "Backend",
-        title: "CakePHP Development",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: codeIgniteIcon,
-        category: "Backend",
-        title: "CodeIgniter Development",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: dockerIcon,
-        category: "Devops",
-        title: "Docker",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: kubernetesIcon,
-        category: "Devops",
-        title: "Kubernetes",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: azureIcon,
-        category: "Devops",
-        title: "Azure Service",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: cloudIcon,
-        category: "Devops",
-        title: "Google Cloud Platform",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: awsIcon,
-        category: "Devops",
-        title: "Amazon Web Services",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: microsoftIcon,
-        category: "Devops",
-        title: "Microsoft Azure",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: googleAnalyticsIcon,
-        category: "SEO",
-        title: "Google Analytics",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: ahrefsIcon,
-        category: "SEO",
-        title: "Ahrefs",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: mozIcon,
-        category: "SEO",
-        title: "Moz",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: ubersuggestIcon,
-        category: "SEO",
-        title: "Ubersuggest",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: grammerlyIcon,
-        category: "SEO",
-        title: "Grammerly",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: woorankIcon,
-        category: "SEO",
-        title: "Woorank",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: figmaIcon,
-        category: "UI/UX",
-        title: "Figma",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: adobeIcon,
-        category: "UI/UX",
-        title: "Adobe Xd",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: photoshopIcon,
-        category: "UI/UX",
-        title: "Photoshop",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: illustatorIcon,
-        category: "UI/UX",
-        title: "Illustrator",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: framerIcon,
-        category: "UI/UX",
-        title: "Framer",
-        desc: "At Moonstack, we believe in building technology.",
-      },
-      {
-        image: sketchIcon,
-        category: "UI/UX",
-        title: "Sketch",
-        desc: "At Moonstack, we believe in building technology.",
-      },
     ],
     processSteps: {
-      headingText: "Our Process",
+      headingText: "Our Process of Laravel website in India ",
       subHeadingText:
-        "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
+        "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges. ",
       steps: [
         {
           id: 1,
-          title: "Consultation & Discussion",
+          title: "Gather Requirements",
           description:
-            "Our consultation and discussion sessions are highly productive as we help our clients realise their app idea into a working development plan. But first, we also ensure our clients get a signed NDA from our end, ensuring their app ideas are safe with us. We follow a stringent process of understanding our client’s vision to help them turn that into an idea that’s built specifically to their purpose.",
+            "We collect all the information about the project to understand what our client actually needs that allows us to align with the project.",
         },
         {
           id: 2,
-          title: "App Framework & UI/UX Design",
+          title: "Client Discussion",
           description:
-            "Once we have a plan for what the app is going to be, our first job is to create a framework for the app, going into every detail to understand the scope of development. Then we move into the UI/UX development phase as a part of our Android UI/UX designing service in India to create clean and intuitive designs that are in line with the client’s brand image.",
+            "Once we have proper requirements, our Laravel team experts conduct a formal discussion with the client to resolve all queries.",
         },
         {
           id: 3,
-          title: "Custom Backend Development & Integrations",
+          title: "Internal Strategy Discussion",
           description:
-            "For complex enterprise Android app solutions in India, Moonstack goes into great detail to develop the complete codebase from scratch. This allows us to have complete control over the application, preventing glitches and bugs from hampering functionality. It also helps us keep the application and its data secure, which is crucial for large-scale enterprise Android apps.",
+            "After gathering requirements, we have an internal strategy discussion where our team brainstorms to deliver the best outcome.",
         },
         {
           id: 4,
-          title: "Testing, Launch, & Support",
+          title: "Designing - UI/UX Services",
           description:
-            "Lastly, our Android app testing services in India, led by experienced app testers and engineers, allow us to optimise the app’s performance and fix any performance issues or bugs. This completes the development process, post which we offer launch support, including deployment of the Android application to Google’s Play Store, and post-launch support.",
+            "Our designers begin the UI/UX design process focusing on creating an interactive and easy-to-use interface for the end users.",
+        },
+        {
+          id: 5,
+          title: "Development",
+          description:
+            "The development process begins with both frontend and backend teams collaborating to build the solution efficiently.",
+        },
+        {
+          id: 6,
+          title: "Deployment and Testing",
+          description:
+            "We deploy and test the Laravel software with automated and manual processes, ensuring that we deliver bug-free and optimized solutions.",
+        },
+        {
+          id: 7,
+          title: "Delivery and Post Support",
+          description:
+            "After testing, we deliver the Laravel-based solution and provide post-launch support to ensure our team is always there when needed.",
         },
       ],
     },
-
+    whyChooseData: {
+      headingText: "Our Process of Laravel website in India ",
+      subHeadingText:
+        "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges. ",
+      steps: [
+        { icon: managmentIconOne,
+          title: "Gather Requirements",
+          description:
+            "We collect all the information about the project to understand what our client actually needs that allows us to align with the project.",
+        },
+        { icon: managmentIconOne,
+          title: "Client Discussion",
+          description:
+            "Once we have proper requirements, our Laravel team experts conduct a formal discussion with the client to resolve all queries.",
+        },
+        { icon: managmentIconOne,
+          title: "Internal Strategy Discussion",
+          description:
+            "After gathering requirements, we have an internal strategy discussion where our team brainstorms to deliver the best outcome.",
+        },
+        { icon: managmentIconOne,
+          title: "Designing - UI/UX Services",
+          description:
+            "Our designers begin the UI/UX design process focusing on creating an interactive and easy-to-use interface for the end users.",
+        },
+        { icon: managmentIconOne,
+          title: "Development",
+          description:
+            "The development process begins with both frontend and backend teams collaborating to build the solution efficiently.",
+        },
+        { icon: managmentIconOne,
+          title: "Deployment and Testing",
+          description:
+            "We deploy and test the Laravel software with automated and manual processes, ensuring that we deliver bug-free and optimized solutions.",
+        },
+        { icon: managmentIconOne,
+          title: "Delivery and Post Support",
+          description:
+            "After testing, we deliver the Laravel-based solution and provide post-launch support to ensure our team is always there when needed.",
+        },
+      ],
+    },
     slides: [
       {
         image: SliderOne,
@@ -577,6 +466,7 @@ export const pagesData: Record<
         desc: "Earney is a financial solution...",
       },
     ],
+
     accordionData: [
       {
         title: "How much does Android app development cost in India?",
@@ -901,6 +791,48 @@ export const pagesData: Record<
         desc: "Earney is a financial solution...",
       },
     ],
+    whyChooseData: {
+      headingText: "Our Process of Laravel website in India ",
+      subHeadingText:
+        "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges. ",
+      steps: [
+        { icon: managmentIconOne,
+          title: "Gather Requirements",
+          description:
+            "We collect all the information about the project to understand what our client actually needs that allows us to align with the project.",
+        },
+        { icon: managmentIconOne,
+          title: "Client Discussion",
+          description:
+            "Once we have proper requirements, our Laravel team experts conduct a formal discussion with the client to resolve all queries.",
+        },
+        { icon: managmentIconOne,
+          title: "Internal Strategy Discussion",
+          description:
+            "After gathering requirements, we have an internal strategy discussion where our team brainstorms to deliver the best outcome.",
+        },
+        { icon: managmentIconOne,
+          title: "Designing - UI/UX Services",
+          description:
+            "Our designers begin the UI/UX design process focusing on creating an interactive and easy-to-use interface for the end users.",
+        },
+        { icon: managmentIconOne,
+          title: "Development",
+          description:
+            "The development process begins with both frontend and backend teams collaborating to build the solution efficiently.",
+        },
+        { icon: managmentIconOne,
+          title: "Deployment and Testing",
+          description:
+            "We deploy and test the Laravel software with automated and manual processes, ensuring that we deliver bug-free and optimized solutions.",
+        },
+        { icon: managmentIconOne,
+          title: "Delivery and Post Support",
+          description:
+            "After testing, we deliver the Laravel-based solution and provide post-launch support to ensure our team is always there when needed.",
+        },
+      ],
+    },
     accordionData: [
       {
         title:
@@ -1309,6 +1241,48 @@ export const pagesData: Record<
         },
       ],
     },
+    whyChooseData: {
+      headingText: "Our Process of Laravel website in India ",
+      subHeadingText:
+        "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges. ",
+      steps: [
+        { icon: managmentIconOne,
+          title: "Gather Requirements",
+          description:
+            "We collect all the information about the project to understand what our client actually needs that allows us to align with the project.",
+        },
+        { icon: managmentIconOne,
+          title: "Client Discussion",
+          description:
+            "Once we have proper requirements, our Laravel team experts conduct a formal discussion with the client to resolve all queries.",
+        },
+        { icon: managmentIconOne,
+          title: "Internal Strategy Discussion",
+          description:
+            "After gathering requirements, we have an internal strategy discussion where our team brainstorms to deliver the best outcome.",
+        },
+        { icon: managmentIconOne,
+          title: "Designing - UI/UX Services",
+          description:
+            "Our designers begin the UI/UX design process focusing on creating an interactive and easy-to-use interface for the end users.",
+        },
+        { icon: managmentIconOne,
+          title: "Development",
+          description:
+            "The development process begins with both frontend and backend teams collaborating to build the solution efficiently.",
+        },
+        { icon: managmentIconOne,
+          title: "Deployment and Testing",
+          description:
+            "We deploy and test the Laravel software with automated and manual processes, ensuring that we deliver bug-free and optimized solutions.",
+        },
+        { icon: managmentIconOne,
+          title: "Delivery and Post Support",
+          description:
+            "After testing, we deliver the Laravel-based solution and provide post-launch support to ensure our team is always there when needed.",
+        },
+      ],
+    },
     slides: [
       {
         image: SliderOne,
@@ -1383,7 +1357,9 @@ export const pagesData: Record<
           color: "text-white",
         },
       ],
-      image: pwaImg,
+      image: websiteHeroImg,
+
+      backgroundImage: websiteBgImg,
     },
     points: [
       "Moonstack offers highly advanced PWA solutions in India. Progressive Web Apps provide the benefits of app-like cross-platform performance and responsiveness to any device right from the user’s web browser. This is what makes them the hottest development asset in the market today. At Moonstack, we have the best PWA developers in India who can help you build consistent, functional, and reliable web apps.",
@@ -1743,6 +1719,48 @@ export const pagesData: Record<
         },
       ],
     },
+    whyChooseData: {
+      headingText: "Our Process of Laravel website in India ",
+      subHeadingText:
+        "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges. ",
+      steps: [
+        { icon: managmentIconOne,
+          title: "Gather Requirements",
+          description:
+            "We collect all the information about the project to understand what our client actually needs that allows us to align with the project.",
+        },
+        { icon: managmentIconOne,
+          title: "Client Discussion",
+          description:
+            "Once we have proper requirements, our Laravel team experts conduct a formal discussion with the client to resolve all queries.",
+        },
+        { icon: managmentIconOne,
+          title: "Internal Strategy Discussion",
+          description:
+            "After gathering requirements, we have an internal strategy discussion where our team brainstorms to deliver the best outcome.",
+        },
+        { icon: managmentIconOne,
+          title: "Designing - UI/UX Services",
+          description:
+            "Our designers begin the UI/UX design process focusing on creating an interactive and easy-to-use interface for the end users.",
+        },
+        { icon: managmentIconOne,
+          title: "Development",
+          description:
+            "The development process begins with both frontend and backend teams collaborating to build the solution efficiently.",
+        },
+        { icon: managmentIconOne,
+          title: "Deployment and Testing",
+          description:
+            "We deploy and test the Laravel software with automated and manual processes, ensuring that we deliver bug-free and optimized solutions.",
+        },
+        { icon: managmentIconOne,
+          title: "Delivery and Post Support",
+          description:
+            "After testing, we deliver the Laravel-based solution and provide post-launch support to ensure our team is always there when needed.",
+        },
+      ],
+    },
     slides: [
       {
         image: SliderOne,
@@ -1867,7 +1885,55 @@ export const pagesData: Record<
           "As a leading app maintenance agency, we help businesses with third-party mobile app maintenance services in India that are tailored to their needs. Our analytics and reporting services offer crucial insights on app performance and user behaviour, which can be used to optimise the app further.",
       },
     ],
-
+    whyChooseData: {
+      headingText: "Our Process of Laravel website in India ",
+      subHeadingText:
+        "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges. ",
+      steps: [
+        {
+          title: "Gather Requirements",
+           icon: managmentIconOne,
+          description:
+            "We collect all the information about the project to understand what our client actually needs that allows us to align with the project.",
+        },
+        {
+          title: "Client Discussion",
+           icon: managmentIconOne,
+          description:
+            "Once we have proper requirements, our Laravel team experts conduct a formal discussion with the client to resolve all queries.",
+        },
+        {
+          title: "Internal Strategy Discussion",
+           icon: managmentIconOne,
+          description:
+            "After gathering requirements, we have an internal strategy discussion where our team brainstorms to deliver the best outcome.",
+        },
+        {
+          title: "Designing - UI/UX Services",
+           icon: managmentIconOne,
+          description:
+            "Our designers begin the UI/UX design process focusing on creating an interactive and easy-to-use interface for the end users.",
+        },
+        {
+          title: "Development",
+           icon: managmentIconOne,
+          description:
+            "The development process begins with both frontend and backend teams collaborating to build the solution efficiently.",
+        },
+        {
+          icon: managmentIconOne,
+          title: "Deployment and Testing",
+          description:
+            "We deploy and test the Laravel software with automated and manual processes, ensuring that we deliver bug-free and optimized solutions.",
+        },
+        {
+          icon: managmentIconOne,
+          title: "Delivery and Post Support",
+          description:
+            "After testing, we deliver the Laravel-based solution and provide post-launch support to ensure our team is always there when needed.",
+        },
+      ],
+    },
     tabs: {
       headingText: "Why Choose Us?",
       subHeadingText:
@@ -2642,6 +2708,55 @@ export const pagesData: Record<
         desc: "Earney is a financial solution...",
       },
     ],
+    whyChooseData: {
+      headingText: "Our Process of Laravel website in India ",
+      subHeadingText:
+        "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges. ",
+      steps: [
+        {
+          icon: managmentIconOne,
+          title: "Gather Requirements",
+          description:
+            "We collect all the information about the project to understand what our client actually needs that allows us to align with the project.",
+        },
+        {
+          icon: managmentIconOne,
+          title: "Client Discussion",
+          description:
+            "Once we have proper requirements, our Laravel team experts conduct a formal discussion with the client to resolve all queries.",
+        },
+        {
+          icon: managmentIconOne,
+          title: "Internal Strategy Discussion",
+          description:
+            "After gathering requirements, we have an internal strategy discussion where our team brainstorms to deliver the best outcome.",
+        },
+        {
+          icon: managmentIconOne,
+          title: "Designing - UI/UX Services",
+          description:
+            "Our designers begin the UI/UX design process focusing on creating an interactive and easy-to-use interface for the end users.",
+        },
+        {
+          icon: managmentIconOne,
+          title: "Development",
+          description:
+            "The development process begins with both frontend and backend teams collaborating to build the solution efficiently.",
+        },
+        {
+          icon: managmentIconOne,
+          title: "Deployment and Testing",
+          description:
+            "We deploy and test the Laravel software with automated and manual processes, ensuring that we deliver bug-free and optimized solutions.",
+        },
+        {
+          icon: managmentIconOne,
+          title: "Delivery and Post Support",
+          description:
+            "After testing, we deliver the Laravel-based solution and provide post-launch support to ensure our team is always there when needed.",
+        },
+      ],
+    },
     accordionData: [
       {
         title: "What is the cost of PWA development in India?",
@@ -3077,6 +3192,48 @@ export const pagesData: Record<
         desc: "Earney is a financial solution...",
       },
     ],
+    whyChooseData: {
+      headingText: "Our Process of Laravel website in India ",
+      subHeadingText:
+        "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges. ",
+      steps: [
+        { icon: managmentIconOne,
+          title: "Gather Requirements",
+          description:
+            "We collect all the information about the project to understand what our client actually needs that allows us to align with the project.",
+        },
+        { icon: managmentIconOne,
+          title: "Client Discussion",
+          description:
+            "Once we have proper requirements, our Laravel team experts conduct a formal discussion with the client to resolve all queries.",
+        },
+        { icon: managmentIconOne,
+          title: "Internal Strategy Discussion",
+          description:
+            "After gathering requirements, we have an internal strategy discussion where our team brainstorms to deliver the best outcome.",
+        },
+        { icon: managmentIconOne,
+          title: "Designing - UI/UX Services",
+          description:
+            "Our designers begin the UI/UX design process focusing on creating an interactive and easy-to-use interface for the end users.",
+        },
+        { icon: managmentIconOne,
+          title: "Development",
+          description:
+            "The development process begins with both frontend and backend teams collaborating to build the solution efficiently.",
+        },
+        { icon: managmentIconOne,
+          title: "Deployment and Testing",
+          description:
+            "We deploy and test the Laravel software with automated and manual processes, ensuring that we deliver bug-free and optimized solutions.",
+        },
+        { icon: managmentIconOne,
+          title: "Delivery and Post Support",
+          description:
+            "After testing, we deliver the Laravel-based solution and provide post-launch support to ensure our team is always there when needed.",
+        },
+      ],
+    },
     accordionData: [
       {
         title: "What is mobile app maintenance?",

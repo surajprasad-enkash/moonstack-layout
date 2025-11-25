@@ -12,7 +12,7 @@ type ImportanceSectionProps = {
   tickIcon: StaticImageData;
   heading?: { text: string; color?: string; className?: string }[];
   subHeading?: string;
-  reverse?: boolean; // Optional → if true, image will appear on right side
+  reverse?: boolean;
   solutionHeading?: { text: string; color?: string; className?: string }[];
 };
 
@@ -28,97 +28,97 @@ const ImportanceSection: React.FC<ImportanceSectionProps> = ({
   reverse = false,
 }) => {
   return (
-    <div
-      className={`bg-black gap-20 utilize-bg px-4 sm:px-10 py-12 md:py-20 relative container mx-auto flex flex-col md:flex-row overflow-hidden ${
-        reverse ? "md:flex-row-reverse" : ""
-      }`}
-    >
-      {/* Left or Right Image */}
-      <div className="md:w-1/2 flex justify-center items-center md:h-auto">
-        <div className="w-full h-full flex justify-center items-center">
-          <Image
-            src={image}
-            alt={altText}
-            className="object-fill w-full h-full max-h-full rounded-2xl"
-          />
+    <section className="utilize-bg bg-black">
+      <div
+        className={`relative container mx-auto flex flex-col gap-20 overflow-hidden px-4 py-12 md:flex-row md:px-8 ${
+          reverse ? "md:flex-row-reverse" : ""
+        }`}
+      >
+        <div className="flex items-center justify-center md:h-auto md:w-1/2">
+          <div className="flex h-full w-full items-center justify-center">
+            <Image
+              src={image}
+              alt={altText}
+              className="h-full max-h-full w-full rounded-2xl object-fill"
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-col justify-center md:w-1/2">
+          {heading && (
+            <Heading
+              headingTag="h3"
+              className="pb-4 font-semibold text-white"
+              content={heading}
+            />
+          )}
+          {subHeading && (
+            <Heading
+              headingTag="p"
+              className="text-light-grey pb-6"
+              content={[{ text: subHeading }]}
+            />
+          )}
+
+          <ul className="flex flex-col gap-3 pt-4">
+            {points.map((text, index) => (
+              <motion.li
+                key={index}
+                className="flex items-start gap-5 pb-3"
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true, amount: 0.2 }}
+              >
+                <Image
+                  src={tickIcon}
+                  alt="tick"
+                  width={20}
+                  height={20}
+                  className="mt-1"
+                />
+                <Heading
+                  headingTag="p"
+                  className="text-primary-grey text-start"
+                  content={[{ text }]}
+                />
+              </motion.li>
+            ))}
+          </ul>
+
+          {solutionHeading && (
+            <>
+              <Heading
+                headingTag="h5"
+                className="pt-5 font-semibold text-white"
+                content={solutionHeading}
+              />{" "}
+              {solutionPoints && (
+                <ul className="flex flex-col gap-3 pt-4">
+                  {solutionPoints.map((text, index) => (
+                    <motion.li
+                      key={index}
+                      className="flex items-center gap-5 pb-3"
+                      initial={{ opacity: 0, x: 50 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.6, delay: index * 0.2 }}
+                      viewport={{ once: true, amount: 0.2 }}
+                    >
+                      <TbPointFilled className="text-[#0CE859]" />
+                      <Heading
+                        headingTag="p"
+                        className="text-primary-grey text-start"
+                        content={[{ text }]}
+                      />
+                    </motion.li>
+                  ))}
+                </ul>
+              )}
+            </>
+          )}
         </div>
       </div>
-
-      {/* Text & Points Section */}
-      <div className="md:w-1/2 flex flex-col justify-center">
-        {heading && (
-          <Heading
-            headingTag="h3"
-            className="text-white font-semibold pb-4"
-            content={heading}
-          />
-        )}
-        {subHeading && (
-          <Heading
-            headingTag="p"
-            className="text-white/80 text-lg pb-6"
-            content={[{ text: subHeading }]}
-          />
-        )}
-
-        <ul className="flex flex-col gap-3 pt-4">
-          {points.map((text, index) => (
-            <motion.li
-              key={index}
-              className="flex gap-5 items-start pb-3"
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: true, amount: 0.2 }}
-            >
-              <Image
-                src={tickIcon}
-                alt="tick"
-                width={20}
-                height={20}
-                className="mt-1"
-              />
-              <Heading
-                headingTag="p"
-                className="font-medium text-sm text-start text-white"
-                content={[{ text }]}
-              />
-            </motion.li>
-          ))}
-        </ul>
-
-        {solutionHeading && (
-          <>
-            <Heading
-              headingTag="h5"
-              className="text-white  font-semibold pt-5"
-              content={solutionHeading}
-            />{" "}
-            {solutionPoints && (
-              <ul className="flex flex-col gap-3 pt-4">
-                {solutionPoints.map((text, index) => (
-                  <motion.li
-                    key={index}
-                    className="flex gap-5 pb-3 items-center"
-                    initial={{ opacity: 0, x: 50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.2 }}
-                    viewport={{ once: true, amount: 0.2 }}
-                  >
-                    <TbPointFilled className="text-[#0CE859]" />
-                    <Heading
-                      headingTag="p"
-                      className="font-medium text-sm text-start text-white"
-                      content={[{ text }]}
-                    />
-                  </motion.li>
-                ))}
-              </ul>
-            )}
-          </>
-        )}
-      </div>
-    </div>
+    </section>
   );
 };
 

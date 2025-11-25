@@ -15,11 +15,10 @@ const StepCard: React.FC<StepCardProps> = ({
   accentColor = "#00FF88",
 }) => {
   return (
-    <div className="relative h-[-webkit-fill-available] flex flex-col md:flex-row items-start gap-6  p-6 bg-[#001A09]  transition-all duration-300 hover:shadow-[0_0_25px_rgba(12,232,89,0.3)] mb-[90px]">
-      {/* Number Badge */}
-      <div className="p-2 border-[2px] border-[#00B23F]  absolute top-[-33px]  rounded-full ">
+    <div className="relative mb-[90px] flex h-[-webkit-fill-available] flex-col items-start gap-6 bg-[#001A09] p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(12,232,89,0.3)] md:flex-row">
+      <div className="absolute top-[-33px] rounded-full border-[2px] border-[#00B23F] p-2">
         <div
-          className="flex-shrink-0   text-white bg-[#00B23F] flex items-center justify-center w-12 h-12 rounded-full border-2 font-semibold text-lg"
+          className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border-2 bg-[#00B23F] text-lg font-semibold text-white"
           style={{
             borderColor: accentColor,
             boxShadow: `0 0 10px ${accentColor}50`,
@@ -29,9 +28,9 @@ const StepCard: React.FC<StepCardProps> = ({
         </div>
       </div>{" "}
       {/* Text Content */}
-      <div className="pt-20">
-        <h3 className="text-white font-semibold text-lg mb-2">{title}</h3>
-        <p className="text-gray-400 text-sm leading-relaxed">{description}</p>
+      <div className="pt-14">
+        <h3 className="mb-2 text-lg font-semibold text-white">{title}</h3>
+        <p className="text-sm leading-relaxed text-gray-400">{description}</p>
       </div>
     </div>
   );

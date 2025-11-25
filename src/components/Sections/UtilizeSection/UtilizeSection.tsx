@@ -28,7 +28,7 @@ const ReusableUtilizeSection: React.FC<UtilizeSectionProps> = ({
   items,
   tabs,
   bgColor = "bg-black",
-  containerClass = "container mx-auto px-4 sm:px-10 py-12 md:py-20",
+  containerClass = " px-4 md:px-8 py-12 md:py-20",
   gridCols = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3",
 }) => {
   const [activeTab, setActiveTab] = useState(tabs[0]);
@@ -36,11 +36,8 @@ const ReusableUtilizeSection: React.FC<UtilizeSectionProps> = ({
   const filteredItems = items.filter((item) => item.category === activeTab);
 
   return (
-    <div
-      className={`${bgColor} text-white ${containerClass} `}
-    >
-      <div className="m-auto w-full text-center md:w-full lg:w-2/5 xl:w-[70%]">
-        {/* Heading */}
+    <section className={`${bgColor} text-white ${containerClass} `}>
+      <div className="container m-auto w-full text-center md:w-full lg:w-2/5 xl:w-[70%]">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -48,13 +45,12 @@ const ReusableUtilizeSection: React.FC<UtilizeSectionProps> = ({
           viewport={{ once: true, amount: 0.2 }}
         >
           <Heading
-            headingTag="h2"
-            className="font-36 pt-3 text-center font-bold text-white"
+            headingTag="h3"
+            className="pt-3 text-center font-semibold text-white"
             content={headingLines}
           />
         </motion.div>
 
-        {/* Subheading */}
         {subHeadingLines && (
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -64,7 +60,7 @@ const ReusableUtilizeSection: React.FC<UtilizeSectionProps> = ({
           >
             <Heading
               headingTag="p"
-              className="font-14 pt-3 text-center font-bold text-white"
+              className="text-light-grey pt-3 text-center"
               content={subHeadingLines}
             />
           </motion.div>
@@ -76,7 +72,7 @@ const ReusableUtilizeSection: React.FC<UtilizeSectionProps> = ({
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`text-font-16 rounded-full px-4 py-2 font-medium transition-all duration-300 ${
+              className={`text-font-16 cursor-pointer rounded-full px-4 py-2 font-medium transition-all duration-300 ${
                 activeTab === tab
                   ? "bg-[#009936] text-white"
                   : "bg-[#003312] text-white"
@@ -105,7 +101,7 @@ const ReusableUtilizeSection: React.FC<UtilizeSectionProps> = ({
           ))}
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

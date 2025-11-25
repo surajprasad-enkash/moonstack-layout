@@ -25,46 +25,48 @@ const HireNowBanner: React.FC<HireNowBannerProps> = ({
   containerClassName = "",
 }) => {
   return (
-    <section
-      className={`bg-black text-white px-4 sm:px-10 py-3 md:py-10 container mx-auto ${containerClassName}`}
-    >
+    <section className="bg-black">
       <div
-        className={`${bgGradient} relative py-20 px-[60px] rounded-[40px] overflow-hidden`}
+        className={`container mx-auto px-4 py-3 text-white md:px-8 md:py-10 ${containerClassName}`}
       >
         <div
-          className={`grid grid-cols-1 md:grid-cols-2 items-center gap-8 ${
-            reverse ? "md:flex-row-reverse" : ""
-          }`}
+          className={`${bgGradient} relative overflow-hidden rounded-[40px] px-[60px] py-20`}
         >
-          {/* Left Content */}
-          <div className="relative z-10">
-            <Heading
-              headingTag="h3"
-              className="text-left font-semibold"
-              content={headingContent}
-            />
-
-            {subHeadingContent && (
+          <div
+            className={`grid grid-cols-1 items-center gap-8 md:grid-cols-2 ${
+              reverse ? "md:flex-row-reverse" : ""
+            }`}
+          >
+            {/* Left Content */}
+            <div className="relative z-10">
               <Heading
-                headingTag="p"
-                className="text-left pt-2 pb-[38px]"
-                content={subHeadingContent}
+                headingTag="h3"
+                className="text-left font-semibold"
+                content={headingContent}
               />
-            )}
 
-            <CustomButton text={buttonText} variant="primary" />
-          </div>
+              {subHeadingContent && (
+                <Heading
+                  headingTag="p"
+                  className="pt-2 pb-[38px] text-left"
+                  content={subHeadingContent}
+                />
+              )}
 
-          {/* Right Image */}
-          <div className="absolute right-[50px] bottom-0">
-            <Image
-              src={image}
-              alt="banner-image"
-              width={430}
-              height={430}
-              className="object-contain z-0"
-              priority
-            />
+              <CustomButton text={buttonText} variant="primary" />
+            </div>
+
+            {/* Right Image */}
+            <div className="absolute right-[50px] bottom-0">
+              <Image
+                src={image}
+                alt="banner-image"
+                width={430}
+                height={430}
+                className="z-0 object-contain"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import Image, { StaticImageData } from "next/image";
 import Heading from "../../Heading/Heading";
 import Tag from "../../Tag/Tag";
-import { motion } from "framer-motion"; // <-- import Framer Motion
+import { motion } from "framer-motion";
 
 interface ISliderItem {
   image: string | StaticImageData;
@@ -45,8 +45,8 @@ const ReusableSliderSection: React.FC<ReusableSliderSectionProps> = ({
   };
 
   return (
-    <div className={`${bgColor} text-white`}>
-      <div className="w-full md:w-2/5 lg:w-2/5 xl:w-[50%] text-center m-auto py-5">
+    <section className={`${bgColor} text-white`}>
+      <div className="m-auto w-full py-5 text-center md:w-2/5 lg:w-2/5 xl:w-[50%]">
         {buttonText && (
           <motion.div
             className="text-center"
@@ -68,29 +68,29 @@ const ReusableSliderSection: React.FC<ReusableSliderSectionProps> = ({
         >
           <Heading
             headingTag="h2"
-            className="font-bold text-white font-36 text-center"
+            className="font-36 text-center font-bold text-white"
             content={headingLines}
           />
         </motion.div>
       </div>
-      <div className="slider-container mt-20 relative">
+      <div className="slider-container relative mt-20">
         <Slider ref={sliderRef} {...settings}>
           {slides.map((service, index) => (
             <div key={index}>
-              <div className="relative group overflow-hidden cursor-pointer">
+              <div className="group relative cursor-pointer overflow-hidden">
                 <Image
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-[417px] object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="h-[417px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
 
-                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-[#071C0E] via-[#071C0E80] to-transparent px-5 pb-8 pt-16 flex flex-col justify-end">
+                <div className="absolute bottom-0 left-0 flex w-full flex-col justify-end bg-gradient-to-t from-[#071C0E] via-[#071C0E80] to-transparent px-5 pt-16 pb-8">
                   <div className="transition-all duration-500 ease-in-out group-hover:-translate-y-2">
-                    <h3 className="text-white font-semibold text-lg leading-[125%]">
+                    <h3 className="text-lg leading-[125%] font-semibold text-white">
                       {service.title}
                     </h3>
                   </div>
-                  <p className="text-white text-sm opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out">
+                  <p className="translate-y-3 text-sm text-white opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-0 group-hover:opacity-100">
                     {service.desc}
                   </p>
                 </div>
@@ -99,7 +99,7 @@ const ReusableSliderSection: React.FC<ReusableSliderSectionProps> = ({
           ))}
         </Slider>
       </div>
-    </div>
+    </section>
   );
 };
 

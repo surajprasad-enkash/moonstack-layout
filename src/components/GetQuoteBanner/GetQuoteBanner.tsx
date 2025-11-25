@@ -11,8 +11,8 @@ interface GetQuoteBannerProps {
   subHeadingContent?: { text: string; color?: string }[];
   buttonText: string;
   image: StaticImageData | string;
-  reverse?: boolean; 
-  bgGradient?: string; 
+  reverse?: boolean;
+  bgGradient?: string;
   containerClassName?: string;
 }
 
@@ -21,24 +21,23 @@ const GetQuoteBanner: React.FC<GetQuoteBannerProps> = ({
   subHeadingContent,
   buttonText,
 
-
   containerClassName = "",
 }) => {
   return (
     <section
-      className={` relative bg-[linear-gradient(266.62deg,#007860_21.37%,#076127_72.13%)] text-white px-4 sm:px-10 py-3 md:py-20 container mx-auto ${containerClassName}`}
+      className={`relative bg-[linear-gradient(266.62deg,#007860_21.37%,#076127_72.13%)] px-4 py-3 text-white sm:px-10 md:py-20 ${containerClassName}`}
     >
       {" "}
-      <div className="absolute left-0 top-0">
+      <div className="absolute top-0 left-0">
         <Image
           src={topEllips}
           alt="banner-image"
-          className="object-contain z-0"
+          className="z-0 object-contain"
           priority
         />
       </div>
-      <div>
-        <div className="relative z-10 text-center mx-auto">
+      <div className="container mx-auto">
+        <div className="relative z-10 mx-auto text-center">
           <Heading
             headingTag="h3"
             className="text-center font-semibold"
@@ -48,7 +47,7 @@ const GetQuoteBanner: React.FC<GetQuoteBannerProps> = ({
           {subHeadingContent && (
             <Heading
               headingTag="p"
-              className="text-center pt-2 pb-[28px]"
+              className="pt-2 pb-[28px] text-center"
               content={subHeadingContent}
             />
           )}
@@ -56,12 +55,11 @@ const GetQuoteBanner: React.FC<GetQuoteBannerProps> = ({
           <CustomButton text={buttonText} variant="primary" />
         </div>
 
-
         <div className="absolute right-0 bottom-0">
           <Image
             src={bottomEllips}
             alt="banner-image"
-            className="object-contain z-0"
+            className="z-0 object-contain"
             priority
           />
         </div>

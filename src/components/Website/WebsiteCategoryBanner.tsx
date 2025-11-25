@@ -16,7 +16,7 @@ interface WebsiteCategoryBannerProps {
   bgColor?: string;
   containerWidth?: string;
   textAlign?: "left" | "center" | "right";
-  backgroundImage?: string | StaticImageData; 
+  backgroundImage?: string | StaticImageData;
 }
 
 const WebsiteCategoryBanner: React.FC<WebsiteCategoryBannerProps> = ({
@@ -27,11 +27,10 @@ const WebsiteCategoryBanner: React.FC<WebsiteCategoryBannerProps> = ({
   bgColor = "bg-black",
   containerWidth,
   textAlign = "center",
-  backgroundImage, // 🆕
+  backgroundImage,
 }) => {
   return (
-    <div
-      className={`${bgColor} relative overflow-hidden container mx-auto items-center md:items-start px-4 md:px-8 py-12 md:pt-40 md:pb-20 grid grid-cols-1 md:grid-cols-2 gap-4`}
+    <section
       style={{
         backgroundImage: backgroundImage
           ? `url(${
@@ -45,39 +44,40 @@ const WebsiteCategoryBanner: React.FC<WebsiteCategoryBannerProps> = ({
         backgroundRepeat: "no-repeat",
       }}
     >
- 
-      <div
-        className={`flex flex-col items-start px-4 md:px-8 ${containerWidth} text-${textAlign} justify-center m-auto relative z-10`}
-      >
-        <Heading
-          headingTag="h1"
-          className="font-bold font-40 tracking-[0em] leading-[140%] text-start"
-          content={title}
-        />
+      <div className="container mx-auto">
+        <div
+          className={`${bgColor} relative grid grid-cols-1 items-center gap-4 overflow-hidden px-4 py-12 md:grid-cols-2 md:items-start md:px-8 md:!pt-[160px] md:pb-20`}
+        >
+          <div
+            className={`flex flex-col items-start ${containerWidth} text-${textAlign} relative z-10 m-auto justify-center`}
+          >
+            <Heading
+              headingTag="h1"
+              className="text-start font-semibold"
+              content={title}
+            />
 
-        <Heading
-          headingTag="p"
-          className="font-medium pt-4 text-start"
-          content={description}
-        />
-        <div className="py-7 text-center relative z-40">
-          <CustomButton text={buttonText} variant="primary" />
+            <Heading
+              headingTag="p"
+              className="pt-4 text-start font-medium"
+              content={description}
+            />
+            <div className="relative z-40 py-7 text-center">
+              <CustomButton text={buttonText} variant="primary" />
+            </div>
+          </div>
+
+          <div className="relative z-10 flex w-full justify-center">
+            <Image
+              src={image}
+              alt="banner image"
+              height={423}
+              className="m-auto object-contain"
+            />
+          </div>
         </div>
       </div>
-
-
-      <div className="relative w-full flex justify-center z-10">
-        <Image
-          src={image}
-          alt="banner image"
-          height={556}
-          className="object-contain  m-auto"
-        />
-      </div>
-
-      {/* Optional overlay for readability */}
-      <div className="absolute inset-0 bg-black/40 z-0" />
-    </div>
+    </section>
   );
 };
 
