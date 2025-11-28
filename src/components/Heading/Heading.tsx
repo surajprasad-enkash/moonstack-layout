@@ -15,17 +15,22 @@ interface HeadingSegment {
 }
 
 interface HeadingProps {
-  content?: string | HeadingSegment[];
+  content?: string | number | HeadingSegment[];
   headingTag?: HeadingTag;
   className?: string;
 }
 
 const Heading: React.FC<HeadingProps> = ({
-  content = "",
+  content = [],
   headingTag = "h2",
   className = "",
 }) => {
   const Tag = headingTag;
+
+  // ✅ Normalize content
+  const normalizedContent: HeadingSegment[] = Array.isArray(content)
+    ? content
+    : [{ text: String(content) }];
 
   const headingClassMap: Record<string, string> = {
     h1: "text-[28px] leading-[32px] md:text-[60px] md:leading-[125%] tracking-normal",
@@ -39,15 +44,9 @@ const Heading: React.FC<HeadingProps> = ({
 
   const defaultClass = headingClassMap[headingTag] || "";
 
-  // ✅ If user passes a string → directly render
-  if (typeof content === "string") {
-    return <Tag className={clsx(defaultClass, className)}>{content}</Tag>;
-  }
-
-  // Otherwise render array format
   return (
     <Tag className={clsx(defaultClass, className)}>
-      {content.map((item, i) => {
+      {normalizedContent.map((item, i) => {
         const Element = item.tag || "span";
         const text = item.title ?? item.name ?? item.text ?? "";
 
@@ -58,6 +57,7 @@ const Heading: React.FC<HeadingProps> = ({
           item.className,
           isTailwindClass && item.color,
         );
+
         const style =
           !isTailwindClass && item.color ? { color: item.color } : undefined;
 

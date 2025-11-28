@@ -30,7 +30,7 @@ const ImportanceSection: React.FC<ImportanceSectionProps> = ({
   return (
     <section className="utilize-bg bg-black">
       <div
-        className={`relative container mx-auto flex flex-col gap-20 overflow-hidden px-4 py-12 md:flex-row md:px-8 ${
+        className={`relative container mx-auto flex flex-col gap-20 overflow-hidden px-4 py-12 sm:px-4 md:flex-row md:px-8 ${
           reverse ? "md:flex-row-reverse" : ""
         }`}
       >

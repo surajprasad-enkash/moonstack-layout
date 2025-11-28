@@ -15,9 +15,11 @@
   --color-primary: #00cf49;
   --color-primary-300: #0d8035;
   --color-primary-50: #05140a;
-  --color-black: #0a0a0a;
+  --color-black: #000;
   --color-primary-grey: #cbcbcb;
   --color-light-grey: #dfdfdf;
+  --color-white: #ffff;
+  --text-green-gradient: linear-gradient(to right, #25e8b1, #60f90d);
 }
 
 @media (prefers-color-scheme: dark) {

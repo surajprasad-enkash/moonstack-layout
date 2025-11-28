@@ -30,7 +30,7 @@ const StepCard: React.FC<StepCardProps> = ({
       {/* Text Content */}
       <div className="pt-14">
         <h3 className="mb-2 text-lg font-semibold text-white">{title}</h3>
-        <p className="text-sm leading-relaxed text-gray-400">{description}</p>
+        <p className="text-light-grey text-sm leading-relaxed">{description}</p>
       </div>
     </div>
   );

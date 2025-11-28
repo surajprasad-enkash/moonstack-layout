@@ -75,28 +75,29 @@ const FAQ: React.FC<FAQProps> = ({
   }
 
   return (
-    <section className="bg-black">
+    <section className="bg-[#000]">
       <div
-        className={`container mx-auto p-6 text-white md:p-15 relative${className}`}
+        className={`relative container mx-auto px-4 py-10 text-white md:px-8 lg:px-12 ${className}`}
       >
-        {" "}
-        <div className="absolute bottom-0 left-0">
+        <div className="absolute bottom-0 left-0 opacity-40 md:opacity-100">
           <Image src={vector} alt={"vector"} />
         </div>
+
         {/* Header */}
-        <div className="flex flex-col justify-between md:flex-row">
-          <div className="sticky top-0 w-full md:w-[35%] lg:w-[35%] xl:w-[35%]">
-            <div className="pt-10">
-              <div className="poppins-semibold font-40">
+        <div className="flex flex-col gap-10 md:flex-row md:justify-between">
+          <div className="sticky w-full md:top-10 md:w-[40%] lg:w-[35%]">
+            <div className="pt-6 md:pt-10">
+              <div className="poppins-semibold text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-[#25E8B1] via-[#60F90D] to-[#60F90D] bg-clip-text text-transparent">
                 {tagText}{" "}
-                {heading?.highlightText ? (
+                {heading?.highlightText && (
                   <span className="bg-gradient-to-r from-[#25E8B1] via-[#60F90D] to-[#60F90D] bg-clip-text text-transparent">
                     {heading.highlightText}
                   </span>
-                ) : null}
+                )}
               </div>
+
               {heading?.text && (
-                <div className="poppins-medium font-16 mt-4 w-3/4 leading-[200%]">
+                <div className="poppins-medium mt-4 text-sm leading-[180%] md:w-3/4 md:text-base">
                   {heading.text}
                 </div>
               )}
@@ -104,7 +105,7 @@ const FAQ: React.FC<FAQProps> = ({
           </div>
 
           {/* Accordion */}
-          <div className="mt-6 w-full md:mt-0 md:w-[60%] lg:w-[60%] xl:w-[60%]">
+          <div className="w-full md:w-[55%]">
             <AccordionStyle>
               <Box className="accordion-block">
                 {accordionData.map((item, i) => (
@@ -119,22 +120,27 @@ const FAQ: React.FC<FAQProps> = ({
                           <Image
                             src={open}
                             alt=""
-                            className="h-auto w-10 rotate-180"
+                            className="h-7 w-7 rotate-180 md:h-10 md:w-10"
                           />
                         ) : (
-                          <Image src={close} alt="" className="h-auto w-10" />
+                          <Image
+                            src={close}
+                            alt=""
+                            className="h-7 w-7 md:h-10 md:w-10"
+                          />
                         )
                       }
                       aria-controls={`panel${i}-content`}
                       id={`panel${i}-header`}
-                      className="poppins-semibold font-16"
+                      className="poppins-semibold text-base md:text-lg"
                     >
-                      <span className="font-28 pr-4">
-                        {formatNumberWithLeadingZero(i + 1)}
+                      <span className="pr-4 text-lg md:text-2xl">
+                        {String(i + 1).padStart(2, "0")}
                       </span>
-                      <span className="mt-2">{item.title}</span>
+                      <span className="pt-[2px]">{item.title}</span>
                     </AccordionSummary>
-                    <AccordionDetails className="poppins-medium font-14 leading-[200%]">
+
+                    <AccordionDetails className="poppins-medium text-sm leading-[180%] md:text-base">
                       {item.desc}
                     </AccordionDetails>
                   </Accordion>
@@ -143,24 +149,30 @@ const FAQ: React.FC<FAQProps> = ({
             </AccordionStyle>
           </div>
         </div>
-        {/* Optional Info Boxes */}
+
+        {/* Info Boxes */}
         {showInfoBoxes && infoBoxes.length > 0 && (
-          <div className="flex flex-col justify-between gap-y-8 pt-20 md:flex-row">
+          <div className="flex flex-col gap-6 pt-14 md:flex-row md:gap-8">
             {infoBoxes.map((box, index) => (
               <div
                 key={index}
-                className="flex w-full rounded-xl border-1 border-solid border-[#73FF6126] bg-[#73FF611F] p-5 md:w-[30%]"
+                className="flex w-full rounded-xl border border-[#73FF6126] bg-[#73FF611F] p-5 md:w-1/3"
               >
                 <div>
-                  <Image src={info} alt="" className="h-auto w-8" />
+                  <Image src={info} alt="" className="h-8 w-8" />
                 </div>
-                <div className="grid w-full pl-4 md:w-[90%]">
-                  <div className="poppins-semibold font-16">{box.title}</div>
-                  <div className="poppins-medium font-14 mt-2">
+
+                <div className="w-full pl-4">
+                  <div className="poppins-semibold text-base md:text-lg">
+                    {box.title}
+                  </div>
+
+                  <div className="poppins-medium mt-2 text-sm leading-[170%] md:text-base">
                     {box.content}
                   </div>
+
                   <button
-                    className="poppins-semibold font-14 mt-8 rounded-3xl border-1 border-solid border-green-500 px-8 py-2"
+                    className="poppins-semibold mt-6 rounded-3xl border border-green-500 px-6 py-2 text-sm md:text-base"
                     style={{ backgroundColor: Colors.brand950 }}
                     ref={box.ref}
                   >

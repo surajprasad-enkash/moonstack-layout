@@ -21,11 +21,7 @@ interface IMenuItems {
 }
 
 const Header = ({ refs }: { refs: IHeaderRefs }) => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
+  const [isOpen, setIsOpen] = useState(false);
 
   const menuItems: IMenuItems[] = [
     { id: 1, paths: ["/"], title: "Home", ref: refs.home },
@@ -35,9 +31,14 @@ const Header = ({ refs }: { refs: IHeaderRefs }) => {
     { id: 5, paths: ["/career"], title: "Career", ref: refs.career },
   ];
 
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
+
   return (
-    <header className="fixed z-50 w-full bg-black p-4 text-white md:px-8">
-      <div className="container mx-auto flex items-center justify-between">
+    <header className="fixed top-0 z-50 w-full bg-black text-white shadow-md">
+      {/* TOP BAR */}
+      <div className="container mx-auto flex items-center justify-between px-4 py-4 md:px-8">
+        {/* LOGO */}
         <div className="w-40">
           <Link href={"/"}>
             <Image
@@ -47,15 +48,19 @@ const Header = ({ refs }: { refs: IHeaderRefs }) => {
             />
           </Link>
         </div>
-        <nav className="flex items-center space-x-10">
+
+        {/* DESKTOP NAV */}
+        <nav className="hidden items-center space-x-10 md:flex">
           {menuItems.map((item, index) => {
             const isActive = item.paths.includes("/");
 
             return (
               <div
                 key={index}
-                className={`hover-white-text poppins-medium font-14 ml-3 flex cursor-pointer items-center justify-between px-5 py-1.5 text-white ${isActive ? "active-menu-item" : ""}`}
                 ref={item.ref}
+                className={`cursor-pointer px-5 py-1.5 font-medium text-white transition hover:text-gray-300 ${
+                  isActive ? "text-brand200" : ""
+                }`}
               >
                 {item.title}
               </div>
@@ -63,8 +68,41 @@ const Header = ({ refs }: { refs: IHeaderRefs }) => {
           })}
         </nav>
 
-        <div>
-          <CustomButton text="  Let's Talk" variant="primary" />
+        {/* DESKTOP BUTTON */}
+        <div className="hidden md:block">
+          <CustomButton text="Let's Talk" variant="primary" />
+        </div>
+
+        {/* MOBILE HAMBURGER */}
+        <button
+          onClick={toggleMenu}
+          className="block text-2xl focus:outline-none md:hidden"
+        >
+          {isOpen ? "✖" : "☰"}
+        </button>
+      </div>
+
+      {/* MOBILE MENU */}
+      <div
+        className={`overflow-hidden bg-black transition-all duration-300 md:hidden ${
+          isOpen ? "max-h-[500px] py-5" : "max-h-0"
+        }`}
+      >
+        <div className="flex flex-col space-y-6 px-6">
+          {menuItems.map((item, index) => (
+            <button
+              key={index}
+              onClick={closeMenu}
+              className="text-left text-lg font-medium text-white hover:text-gray-300"
+            >
+              {item.title}
+            </button>
+          ))}
+
+          {/* Mobile CTA */}
+          <div className="pt-4">
+            <CustomButton text="Let's Talk" variant="primary" />
+          </div>
         </div>
       </div>
     </header>

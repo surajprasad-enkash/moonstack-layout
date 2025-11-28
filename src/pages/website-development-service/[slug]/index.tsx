@@ -1,15 +1,12 @@
 import { useRouter } from "next/router";
 import Layout from "@/components/Layout";
 import SolutionsComponent from "@/components/BackendDeveloper/SolutionsComponent";
-import ReusableUtilizeSection from "@/components/Sections/UtilizeSection/UtilizeSection";
-import ReusableSliderSection from "@/components/Sections/SliderSection/SliderSection";
 import FAQ from "@/components/Homepage/FAQ";
 import importance from "../../../../public/assets/e-commerce-importance.webp";
 import greenTick from "../../../../public/assets/green-tick-icon.svg";
-import { pagesData } from "./data";
+import { pagesData, pagesKeys, TPageKeys } from "./data";
 import ImportanceSection from "@/components/AppDevelopment/ImportanceComponent";
 import WebsiteCategoryBanner from "@/components/Website/WebsiteCategoryBanner";
-import TrustSection from "@/components/Sections/TrustSection/TrustSection";
 import ProcessSection from "@/components/Sections/ProcessSection/ProcessSection";
 import ChooseUsTabSection from "@/components/Sections/ChooseUsTab/ChooseUsTab";
 import HireNowBanner from "@/components/Sections/HireNowBanner/HireNowBanner";
@@ -24,7 +21,7 @@ export default function ApplicationPage() {
 
   if (!slug || typeof slug !== "string") return <p>Loading...</p>;
 
-  const page = pagesData[slug];
+  const page = pagesData[pagesKeys[slug as TPageKeys] as TPageKeys];
   if (!page) return <p>Page not found</p>;
 
   return (
@@ -53,14 +50,27 @@ export default function ApplicationPage() {
         featuresData={page.featuresData}
         benifitCardClassName="lg:grid-cols-3"
         bgColor="bg-[linear-gradient(180deg,#000000_0%,#0C401E_100%)] "
+      />{" "}
+      {page?.tabs && (
+        <ChooseUsTabSection
+          headingLines={[{ text: page.tabs.headingText }]}
+          subHeadingLines={[{ text: page.tabs.subHeadingText }]}
+          tabs={page.tabs.tabs}
+          reverse={true}
+          headingLayout="between"
+        />
+      )}
+      <HireNowBanner
+        headingContent={page.banner?.headingText ?? []}
+        subHeadingContent={page.banner?.subHeadingText ?? []}
+        buttonText="Connect with us"
+        image={page.banner?.image ?? ""}
       />
-      <ChooseUsTabSection
-        headingLines={[{ text: page.tabs.headingText }]}
-        subHeadingLines={[{ text: page.tabs.subHeadingText }]}
-        tabs={page.tabs.tabs}
-        reverse={true}
-        headingLayout="between"
-      />
+      <WhyChooseSection
+        heading={[{ text: page.whyChooseData.headingText, color: "block" }]}
+        description={page.whyChooseData.subHeadingText}
+        cards={page.whyChooseData.steps}
+      />{" "}
       {page?.featureDataContent && (
         <SolutionsComponent
           headingContent={
@@ -76,45 +86,21 @@ export default function ApplicationPage() {
           cardClassName="border border-[var(--Text-Colour-950,#5B5B5B)]"
         />
       )}
-      <HireNowBanner
-        headingContent={[
-          {
-            text: "Scale Your Business with E-Commerce Experts",
-            color: "text-white",
-          },
-        ]}
-        subHeadingContent={[
-          {
-            text: "Android app development goes through different stages of work. As the premier Android app development agency in India",
-            color: "text-white",
-          },
-        ]}
-        buttonText="Connect with us"
-        image={bannerImg}
-      />
-      {/* <TrustSection
-        headingLines={[{ text: page.tabs.headingText }]}
-        subHeadingLines={[{ text: page.tabs.subHeadingText }]}
-        tabs={page.tabs.tabs}
-      />{" "} */}
-      <ReusableTechnologySection
-        headingLines={[
-          { text: "We Use Technology to " },
-          { text: "Build What Matters", color: "#00CF49" },
-        ]}
-        subHeadingLines={[
-          {
-            text: "We leverage cutting-edge tech stacks to craft seamless experiences.",
-          },
-        ]}
-        filteredItems={page.utilisArr}
-        // bgColor="bg-[radial-gradient(99.15%_99.15%_at_50.87%_0.85%,_#0F592A_0%,_#000000_31%)]"
-      />
-      {/* <Stepper
-        steps={page.processSteps.steps}
-        headingLines={[{ text: page.processSteps.headingText, color: "block" }]}
-        subHeadingLines={[{ text: page.processSteps.subHeadingText }]}
-      /> */}
+      {page?.utilisArr && (
+        <ReusableTechnologySection
+          headingLines={[
+            { text: "We Use Technology to " },
+            { text: "Build What Matters", color: "#00CF49" },
+          ]}
+          subHeadingLines={[
+            {
+              text: "We leverage cutting-edge tech stacks to craft seamless experiences.",
+            },
+          ]}
+          filteredItems={page.utilisArr}
+          // bgColor="bg-[radial-gradient(99.15%_99.15%_at_50.87%_0.85%,_#0F592A_0%,_#000000_31%)]"
+        />
+      )}
       <GetQuoteBanner
         headingContent={[
           {
@@ -131,28 +117,16 @@ export default function ApplicationPage() {
         buttonText="Connect with us"
         image={bannerImg}
       />
-      <ProcessSection
-        headingLines={[{ text: page.processSteps.headingText, color: "block" }]}
-        subHeadingLines={[{ text: page.processSteps.subHeadingText }]}
-        servicesData={page.processSteps.steps}
-        marginBottom="mb-22"
-      />
-      {/* <ReusableSliderSection
-        buttonText="Process"
-        headingLines={[
-          { text: "Empowering Innovation ", color: "block" },
-          { text: "Across Industries", color: "block" },
-        ]}
-        slides={page.slides}
-        bgColor="bg-black"
-        slidesToShow={5}
-        autoplaySpeed={2000}
-      /> */}
-      <WhyChooseSection
-        heading={[{ text: page.whyChooseData.headingText, color: "block" }]}
-        description={page.whyChooseData.subHeadingText}
-        cards={page.whyChooseData.steps}
-      />{" "}
+      {page?.processSteps && (
+        <ProcessSection
+          headingLines={[
+            { text: page.processSteps.headingText, color: "block" },
+          ]}
+          subHeadingLines={[{ text: page.processSteps.subHeadingText }]}
+          servicesData={page.processSteps.steps}
+          marginBottom="mb-22"
+        />
+      )}
       <FAQ
         accordionData={page.accordionData}
         tagText="Our FAQs"

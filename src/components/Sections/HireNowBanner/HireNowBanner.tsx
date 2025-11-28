@@ -9,10 +9,9 @@ interface HireNowBannerProps {
   subHeadingContent?: { text: string; color?: string }[];
   buttonText: string;
   image: StaticImageData | string;
-  /** Optional props */
-  reverse?: boolean; // to switch image and text sides
-  bgGradient?: string; // custom background gradient
-  containerClassName?: string; // extra styles
+  reverse?: boolean;
+  bgGradient?: string;
+  containerClassName?: string;
 }
 
 const HireNowBanner: React.FC<HireNowBannerProps> = ({
@@ -27,18 +26,20 @@ const HireNowBanner: React.FC<HireNowBannerProps> = ({
   return (
     <section className="bg-black">
       <div
-        className={`container mx-auto px-4 py-3 text-white md:px-8 md:py-10 ${containerClassName}`}
+        className={`container mx-auto px-4 py-6 text-white md:px-8 md:py-12 ${containerClassName}`}
       >
         <div
-          className={`${bgGradient} relative overflow-hidden rounded-[40px] px-[60px] py-20`}
+          className={`${bgGradient} relative overflow-hidden rounded-[30px] px-6 py-10 md:rounded-[40px] md:px-[60px] md:py-20`}
         >
           <div
-            className={`grid grid-cols-1 items-center gap-8 md:grid-cols-2 ${
-              reverse ? "md:flex-row-reverse" : ""
-            }`}
+            className={`grid grid-cols-1 items-center gap-10 md:grid-cols-2`}
           >
-            {/* Left Content */}
-            <div className="relative z-10">
+            {/* Text Content */}
+            <div
+              className={`relative z-10 ${
+                reverse ? "md:order-2" : "md:order-1"
+              }`}
+            >
               <Heading
                 headingTag="h3"
                 className="text-left font-semibold"
@@ -48,7 +49,7 @@ const HireNowBanner: React.FC<HireNowBannerProps> = ({
               {subHeadingContent && (
                 <Heading
                   headingTag="p"
-                  className="pt-2 pb-[38px] text-left"
+                  className="pt-2 pb-8 text-left"
                   content={subHeadingContent}
                 />
               )}
@@ -56,16 +57,23 @@ const HireNowBanner: React.FC<HireNowBannerProps> = ({
               <CustomButton text={buttonText} variant="primary" />
             </div>
 
-            {/* Right Image */}
-            <div className="absolute right-[50px] bottom-0">
-              <Image
-                src={image}
-                alt="banner-image"
-                width={430}
-                height={430}
-                className="z-0 object-contain"
-                priority
-              />
+            {/* Image Section */}
+            <div
+              className={`flex justify-center md:justify-end ${
+                reverse ? "md:order-1" : "md:order-2"
+              }`}
+            >
+              <div
+                className={`absolute bottom-0 left-1/2 h-[220px] w-full -translate-x-1/2 md:static md:bottom-auto md:left-auto md:h-[430px] md:w-[430px] md:translate-x-0`}
+              >
+                <Image
+                  src={image}
+                  alt="banner-image"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>

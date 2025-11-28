@@ -28,11 +28,11 @@ const AppCategoryBanner: React.FC<AppCategoryBannerProps> = ({
   bgColor = "bg-black",
   bgImage,
   containerWidth,
-  textAlign,
+  textAlign = "left",
 }) => {
   return (
-    <div
-      className={`${bgColor} grid grid-cols-2 relative overflow-hidden container mx-auto pb-14 pt-24`}
+    <section
+      className={`${bgColor}`}
       style={
         bgImage
           ? {
@@ -46,41 +46,48 @@ const AppCategoryBanner: React.FC<AppCategoryBannerProps> = ({
           : {}
       }
     >
-      {/* Text Section */}
-      <div
-        className={`flex flex-col items-start px-4 md:px-8 ${containerWidth} text-${textAlign} m-auto`}
-      >
-        <Heading
-          headingTag="h1"
-          className="font-bold font-40 tracking-[0em] leading-[140%]"
-          content={title}
-        />
+      <div className="container mx-auto">
+        <div
+          className={`relative grid grid-cols-1 gap-10 px-4 py-12 sm:px-8 md:pt-32 md:pb-20 lg:grid-cols-2 lg:items-center`}
+        >
+          {/* TEXT SECTION */}
+          <div
+            className={`flex flex-col justify-center ${containerWidth ?? "w-full"} text-${textAlign} `}
+          >
+            <Heading
+              headingTag="h1"
+              className="text-start font-semibold md:text-left"
+              content={title}
+            />
 
-        <Heading
-          headingTag="p"
-          className="font-medium pt-4"
-          content={description}
-        />
+            <Heading
+              headingTag="p"
+              className="pt-4 text-start font-medium md:text-left"
+              content={description}
+            />
 
-        <div className="py-7 text-center relative z-50">
-          <CustomButton text={buttonText} variant="primary" />
+            <div className="py-7">
+              <CustomButton text={buttonText} variant="primary" />
+            </div>
+          </div>
+
+          {/* IMAGE SECTION (Responsive + Animated) */}
+          <motion.div
+            className="relative flex w-full justify-center"
+            initial={{ y: 0, opacity: 0 }}
+            animate={{ y: [-20, 0], opacity: 1 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          >
+            <Image
+              src={image}
+              alt="banner image"
+              className="h-auto w-full max-w-[500px] object-contain"
+              priority
+            />
+          </motion.div>
         </div>
       </div>
-
-      {/* ✅ Image Section with smooth bounce once */}
-      <motion.div
-        className="relative w-full flex justify-center"
-        initial={{ y: 0, opacity: 0 }}
-        animate={{ y: [-20, 0], opacity: 1 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
-      >
-        <Image
-          src={image}
-          alt="banner image"
-          className="object-contain w-full h-auto z-20 m-auto"
-        />
-      </motion.div>
-    </div>
+    </section>
   );
 };
 

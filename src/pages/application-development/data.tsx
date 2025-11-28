@@ -467,6 +467,7 @@ export const accordionData: IAccordionItem[] = [
 export const points = [
   "As a premier mobile app development company in India, we excel in building custom Android, iOS, web, and cross-platform apps tailored to your business goals. Our team consists of developers, UI designers, and UX specialists who collaborate to build scalable apps with robust and secure backend systems and intuitive front-end design over a scalable architecture.",
   "From helping startups develop their MVP concepts to working with MNCs seeking enterprise mobile app solutions in India, we’ve worked across industries such as e-commerce, healthcare, finance, and logistics with great success. So, if you’re looking for an experienced mobile app development agency in India that offers an optimal balance of technical expertise and design fluency, choose Moonstack today",
+  "At Moonstack, we understand the power of mobile applications and deliver complete end-to-end mobile app solutions in India for businesses. When built right, mobile apps can scale businesses and build brands. They are the most direct connection customers have with brands and a gateway to customer retention and business growth.",
 ];
 
 export const tabs = [

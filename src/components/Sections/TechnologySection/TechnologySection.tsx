@@ -39,8 +39,8 @@ const ReusableTechnologySection: React.FC<TechnologySectionProps> = ({
           viewport={{ once: true, amount: 0.2 }}
         >
           <Heading
-            headingTag="h4"
-            className="text-3xl font-bold text-white md:text-4xl"
+            headingTag="h3"
+            className="font-semibold text-white"
             content={headingLines}
           />
         </motion.div>
@@ -55,7 +55,7 @@ const ReusableTechnologySection: React.FC<TechnologySectionProps> = ({
           >
             <Heading
               headingTag="p"
-              className="text-base text-gray-200 md:text-lg"
+              className="text-primary-grey"
               content={subHeadingLines}
             />
           </motion.div>

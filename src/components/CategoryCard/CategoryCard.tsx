@@ -1,5 +1,6 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import Heading from "../Heading/Heading";
 
 interface CategoryCardProps {
   imgSrc: StaticImageData | string;
@@ -26,13 +27,11 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
 }) => {
   return (
     <div
-      className={`w-full p-10  hover:bg-[var(--Primary-200,#0A662A)] 
-      transition-colors duration-300 bg-gradient-to-r from-transparent to-transparent 
-      hover:from-transparent hover:to-[#0D320D] rounded-2xl ${className}`}
+      className={`w-full rounded-2xl bg-gradient-to-r from-transparent to-transparent p-10 transition-colors duration-300 hover:bg-[var(--Primary-200,#0A662A)] hover:from-transparent hover:to-[#0D320D] ${className}`}
     >
       {titlePosition === "top" ? (
         <>
-          <div className="flex gap-3 items-center">
+          <div className="flex items-center gap-3">
             <Image
               src={imgSrc}
               alt={alt}
@@ -40,11 +39,18 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
               height={Number(imgHeight)}
               className="object-contain"
             />
-            <div className="text-start poppins-semibold font-18">{title}</div>
+
+            <Heading
+              headingTag="h5"
+              className="pt-3 font-semibold text-white"
+              content={title}
+            />
           </div>
-          <div className="mt-4 poppins-medium text-[#DFDFDF] font-14 leading-[200%] text-left">
-            {description}
-          </div>
+          <Heading
+            headingTag="p"
+            className="text-light-grey mt-4 text-left"
+            content={description}
+          />
         </>
       ) : (
         <>
@@ -56,11 +62,17 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
               height={Number(imgHeight)}
               className="object-contain"
             />
-            <div className="mt-12 poppins-semibold font-18">{title}</div>
+            <Heading
+              headingTag="h4"
+              className="pt-3 font-semibold text-white"
+              content={title}
+            />
           </div>
-          <div className="mt-4 poppins-medium text-[#DFDFDF] font-14 leading-[200%] text-left">
-            {description}
-          </div>
+          <Heading
+            headingTag="p"
+            className="text-light-grey mt-4 text-left"
+            content={description}
+          />
         </>
       )}
     </div>

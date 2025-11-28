@@ -26,11 +26,11 @@ const WhyChooseSection: React.FC<WhyChooseSectionProps> = ({
     <section className="bg-black bg-[url('/assets/choose-bg-img.webp')] bg-cover bg-center">
       <div className="container mx-auto items-center px-4 py-12 md:px-8 md:py-20">
         <div className="grid gap-12 lg:grid-cols-2">
-          {/* Left Section (Sticky) */}
+         
           <div className="self-start lg:sticky lg:top-24">
             <Heading
               headingTag="h3"
-              className="text-start font-semibold"
+              className="text-start font-semibold text-white"
               content={heading}
             />
 
@@ -55,12 +55,12 @@ const WhyChooseSection: React.FC<WhyChooseSectionProps> = ({
                   <div>
                     <Heading
                       headingTag="h5"
-                      className="text-start font-bold"
+                      className="text-start font-bold text-white"
                       content={[{ text: card.title }]}
                     />
                     <Heading
                       headingTag="p"
-                      className="primary-grey mt-2 text-start"
+                      className="text-primary-grey mt-2 text-start"
                       content={[{ text: card.description }]}
                     />
                   </div>

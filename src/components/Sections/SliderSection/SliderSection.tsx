@@ -35,13 +35,40 @@ const ReusableSliderSection: React.FC<ReusableSliderSectionProps> = ({
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "60px",
+    centerPadding: "0px",
     slidesToShow,
     autoplay: true,
     speed: autoplaySpeed,
     autoplaySpeed,
     cssEase: "linear",
     arrows: false,
+
+   
+    responsive: [
+      {
+        breakpoint: 1024, 
+        settings: {
+          slidesToShow: 3,
+          centerMode: true,
+          centerPadding: "40px",
+        },
+      },
+      {
+        breakpoint: 768, 
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+          centerPadding: "30px",
+        },
+      },
+      {
+        breakpoint: 640, 
+        settings: {
+          slidesToShow: 1,
+          centerMode: false, 
+        },
+      },
+    ],
   };
 
   return (

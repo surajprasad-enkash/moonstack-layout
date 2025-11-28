@@ -22,8 +22,8 @@ const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({
   cards,
 }) => {
   return (
-    <section className="bg-black py-16 text-white md:py-24">
-      <div className="container mx-auto px-4 md:px-8">
+    <section className="bg-black">
+      <div className="container mx-auto px-4 py-16 text-white md:px-8 md:py-24">
         <div className="grid gap-6 pb-20 md:grid-cols-2">
           <Heading
             headingTag="h3"

@@ -1,11 +1,13 @@
 import { useRouter } from "next/router";
 import Layout from "@/components/Layout";
 import AppCategoryBanner from "@/components/AppDevelopment/AppCategoryBanner";
-import SolutionsComponent from "@/components/Seo/SolutionsComponent";
-import ChooseUsTabSection from "@/components/AppDevelopment/ChooseUsTab";
+import SolutionsComponent from "@/components/Sections/SolutionSection/SolutionsComponent";
+import ChooseUsTabSection from "@/components/Sections/ChooseUsTab/ChooseUsTab";
+
 import Stepper from "@/components/StepperComponent/StepperComponent";
-import ReusableUtilizeSection from "@/components/Seo/UtilizeComponent";
-import ReusableSliderSection from "@/components/Seo/SliderComponent";
+import ReusableTechnologySection from "@/components/Sections/TechnologySection/TechnologySection";
+import ReusableSliderSection from "@/components/Sections/SliderSection/SliderSection";
+
 import FAQ from "@/components/Homepage/FAQ";
 
 import importance from "../../../../public/assets/backend-importance.webp";
@@ -37,7 +39,7 @@ export default function ApplicationPage() {
         altText="Backend importance image"
         points={page.points}
         tickIcon={greenTick}
-        reverse={false} // You can toggle this for layout switch
+        reverse={false}
       />
       <SolutionsComponent
         headingText={page.solutions.headingText}
@@ -48,34 +50,29 @@ export default function ApplicationPage() {
         headingClassName="text-center"
         cardClassName="app-category-speclity-card"
       />
-
       <ChooseUsTabSection
         headingLines={[{ text: page.tabs.headingText }]}
         subHeadingLines={[{ text: page.tabs.subHeadingText }]}
         tabs={page.tabs.tabs}
-      />
-
-      <ReusableUtilizeSection
+      />{" "}
+      <ReusableTechnologySection
         headingLines={[
           { text: "We Use Technology to " },
-          { text: "Build What Matters", color: "#00CF49" },
+          { text: "Build What Matters", color: "text-primary" },
         ]}
         subHeadingLines={[
           {
             text: "We leverage cutting-edge tech stacks to craft seamless experiences.",
           },
         ]}
-        tabs={["Mobile App", "Frontend", "Backend", "Devops", "SEO", "UI/UX"]}
-        items={page.utilisArr}
+        filteredItems={page.utilisArr}
         bgColor="bg-[radial-gradient(99.15%_99.15%_at_50.87%_0.85%,_#0F592A_0%,_#000000_31%)]"
       />
-
       <Stepper
         steps={page.processSteps.steps}
         headingLines={[{ text: page.processSteps.headingText, color: "block" }]}
         subHeadingLines={[{ text: page.processSteps.subHeadingText }]}
       />
-
       <ReusableSliderSection
         buttonText="Process"
         headingLines={[
@@ -84,10 +81,8 @@ export default function ApplicationPage() {
         ]}
         slides={page.slides}
         bgColor="bg-black"
-        slidesToShow={5}
         autoplaySpeed={2000}
       />
-
       <FAQ
         accordionData={page.accordionData}
         tagText="Our FAQs"

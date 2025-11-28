@@ -1,7 +1,7 @@
 import FAQ from "@/components/Homepage/FAQ";
 import Layout from "@/components/Layout";
 import OurServices from "@/components/Seo/OurSevices";
-import SolutionsComponent from "@/components/Seo/SolutionsComponent";
+import SolutionsComponent from "@/components/Sections/SolutionSection/SolutionsComponent";
 import { useMultipleRefs } from "@/hooks/useMultipleRefs";
 import google from "../../../public/assets/googleIcon.svg";
 import googleBottom from "../../../public/assets/googleIconBottom.svg";
@@ -61,18 +61,18 @@ const Seo = () => {
           ]}
           steps={stepperData}
         />
-      <ReusableUtilizeSection
-        headingLines={[
-          { text: "We Use Technology to " },
-          { text: "Build What Matters", color: "#00CF49" },
-        ]}
-        subHeadingLines={[
-          { text: "The fox is a clever and adaptable animal..." },
-        ]}
-        tabs={["Mobile App", "Frontend", "Backend", "Devops", "SEO", "UI/UX"]}
-        items={utilisArr}
-        bgColor="bg-[radial-gradient(99.15%_99.15%_at_50.87%_0.85%,_#0F592A_0%,_#000000_31%)]"
-      />
+        <ReusableUtilizeSection
+          headingLines={[
+            { text: "We Use Technology to " },
+            { text: "Build What Matters", color: "#00CF49" },
+          ]}
+          subHeadingLines={[
+            { text: "The fox is a clever and adaptable animal..." },
+          ]}
+          tabs={["Mobile App", "Frontend", "Backend", "Devops", "SEO", "UI/UX"]}
+          items={utilisArr}
+          bgColor="bg-[radial-gradient(99.15%_99.15%_at_50.87%_0.85%,_#0F592A_0%,_#000000_31%)]"
+        />
         <ReusableSliderSection
           buttonText="Process"
           headingLines={[

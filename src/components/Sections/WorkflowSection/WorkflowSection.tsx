@@ -72,7 +72,7 @@ const ReusableWorkflowSection: React.FC<WorkflowSectionProps> = ({
           {filteredItems.map((feature, index) => (
             <div
               key={index}
-              className="relative min-h-[200px] rounded-xl border border-[#1CFF6C]/40 !bg-black p-6"
+              className="relative min-h-[200px] rounded-xl border border-[#1CFF6C]/40 !bg-black px-4 py-6 sm:px-0"
             >
               <span className="absolute top-4 left-4 bg-gradient-to-b from-[#1CFF6C] to-[#000704] bg-clip-text text-[190px] leading-[190px] font-bold text-transparent">
                 {index + 1}

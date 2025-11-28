@@ -13,14 +13,16 @@ import {
   utilisArr,
 } from "./data";
 import Stepper from "@/components/StepperComponent/StepperComponent";
-import ReusableUtilizeSection from "@/components/Seo/UtilizeComponent";
+import ReusableUtilizeSection from "@/components/Sections/UtilizeSection/UtilizeSection";
 import ReusableSliderSection from "@/components/Seo/SliderComponent";
 import AppBanner from "@/components/AppDevelopment/AppBanner";
 import OurServices from "@/components/OurSevices";
 import importance from "../../../public/assets/backend-importance.webp";
 import greenTick from "../../../public/assets/green-tick-icon.svg";
 import ImportanceSection from "@/components/AppDevelopment/ImportanceComponent";
-
+import WebsiteCategoryBanner from "@/components/Website/WebsiteCategoryBanner";
+import heroImg from "../../../public/assets/app-development-hero.webp";
+import BgImg from "../../../public/assets/app-development-images/application-dev-bg.webp";
 const ApplicationDevelopment = (): React.JSX.Element => {
   //
 
@@ -31,13 +33,36 @@ const ApplicationDevelopment = (): React.JSX.Element => {
   ]);
   return (
     <Layout>
-      <AppBanner />
+      <WebsiteCategoryBanner
+        title={[
+          {
+            text: "Mobile Application  ",
+            color: "text-white block",
+          },
+          {
+            text: "Development Company",
+            color: "text-primary",
+          },
+        ]}
+        tabText="Mobile Application"
+        imageHeight="546px"
+        description={[
+          {
+            text: "",
+            color: "text-white",
+          },
+        ]}
+        image={heroImg}
+        buttonText={"Discuss with tech expert now"}
+        bgColor="!md:pt-[140px] "
+        backgroundImage={BgImg}
+      />
       <ImportanceSection
         image={importance}
         heading={[
           {
             text: "Get Customised Mobile App Solutions in India ",
-            color: "text-[#00CF49]  text-center ",
+            color: "text-primary  text-center ",
           },
           {
             text: "With Moonstack  ",
@@ -47,13 +72,13 @@ const ApplicationDevelopment = (): React.JSX.Element => {
         altText="Backend importance image"
         points={points}
         tickIcon={greenTick}
-        reverse={false} // You can toggle this for layout switch
+        reverse={false}
       />
       <OurServices
         headingLines={[
           {
             text: "Our Specialities ",
-            color: "text-[#00CF49]",
+            color: "text-primary",
           },
         ]}
         subHeadingLines={[
@@ -63,12 +88,10 @@ const ApplicationDevelopment = (): React.JSX.Element => {
           },
         ]}
         servicesData={servicesArr}
-        marginBottom="mb-22"
       />
 
       <Stepper
         steps={processSteps}
-        stepperClass="pt-0"
         headingLines={[{ text: "Our Process", color: "block" }]}
         subHeadingLines={[
           {
@@ -88,10 +111,10 @@ const ApplicationDevelopment = (): React.JSX.Element => {
             color: "text-white text-center ",
           },
         ]}
-        subHeadingClassName="flex-col text-center"
+        subHeadingClassName="flex-col text-center items-center"
         subHeadingText="As one of the top local mobile app development firms in India, Moonstack offers solutions that are rooted in practicality, transparency, and efficiency. Here are some of the highlight reasons on why you should work with us."
-        titleClassName="flex flex-col"
-        headingClassName="text-center md-w-auto"
+        titleClassName="flex flex-col items-center"
+        headingClassName="text-center md-w-auto items-center"
         featuresData={featuresData}
         benifitCardClassName="lg:grid-cols-3"
         cardClassName="border border-[var(--Text-Colour-950,#5B5B5B)]"
@@ -99,7 +122,7 @@ const ApplicationDevelopment = (): React.JSX.Element => {
       <ReusableUtilizeSection
         headingLines={[
           { text: "We Use Technology to " },
-          { text: "Build What Matters", color: "#00CF49" },
+          { text: "Build What Matters", color: "text-primary" },
         ]}
         subHeadingLines={[
           { text: "The fox is a clever and adaptable animal..." },
@@ -116,15 +139,13 @@ const ApplicationDevelopment = (): React.JSX.Element => {
         ]}
         slides={slides}
         bgColor="bg-black"
-        slidesToShow={5}
         autoplaySpeed={2000}
       />
       <FAQ
         accordionData={accordionData}
-        tagText="Our FAQs"
+        tagText="Frequently Asked Questions"
         heading={{
-          text: "Everything you need to know",
-          highlightText: "Questions",
+          text: "Everything you need to know about Application Development",
         }}
       />
     </Layout>

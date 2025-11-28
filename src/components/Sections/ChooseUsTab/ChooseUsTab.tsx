@@ -16,8 +16,8 @@ interface ChooseUsTabSectionProps {
   headingLines: { text: string; color?: string }[];
   subHeadingLines?: { text: string; color?: string }[];
   tabs: TabItem[];
-  reverse?: boolean; // 👉 Layout reverse option (image left / right)
-  headingLayout?: "center" | "between"; // 👉 Heading layout option
+  reverse?: boolean;
+  headingLayout?: "center" | "between";
 }
 
 const ChooseUsTabSection: React.FC<ChooseUsTabSectionProps> = ({
@@ -36,10 +36,9 @@ const ChooseUsTabSection: React.FC<ChooseUsTabSectionProps> = ({
           className={`w-full ${
             headingLayout === "center"
               ? "m-auto text-center md:w-2/5 lg:w-2/5 xl:w-[50%]"
-              : "flex flex-col items-center justify-between gap-4 md:flex-row"
+              : "grid flex-col items-center justify-between gap-4 lg:grid-cols-2"
           }`}
         >
-          {/* Heading */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -49,12 +48,11 @@ const ChooseUsTabSection: React.FC<ChooseUsTabSectionProps> = ({
           >
             <Heading
               headingTag="h3"
-              className="pt-3 font-semibold text-white"
+              className="font-semibold text-white"
               content={headingLines}
             />
           </motion.div>
 
-          {/* Subheading */}
           {subHeadingLines && (
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -77,50 +75,61 @@ const ChooseUsTabSection: React.FC<ChooseUsTabSectionProps> = ({
         </div>
 
         <div
-          className={`grid items-stretch gap-16 pt-16 md:grid-cols-2 lg:gap-32 ${
+          className={`grid gap-16 pt-16 md:grid-cols-2 lg:gap-32 ${
             reverse ? "md:grid-flow-col-dense" : ""
           }`}
         >
-          {/* Tabs */}
           <div
             className={`flex flex-col gap-4 rounded-lg ${
               reverse ? "order-2 md:order-1" : "order-1"
             }`}
           >
             {tabs.map((tab, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveIndex(index)}
-                className={`cursor-pointer rounded-lg border-2 p-4 text-left transition-all duration-300 ${
-                  activeIndex === index
-                    ? "border-[#0A662A] bg-[#00290F] text-green-500"
-                    : "border-transparent bg-[#00290F]/50 text-white hover:border-[#0A662A]/50"
-                }`}
-              >
-                <div className="flex items-center gap-2">
-                  {activeIndex === index ? <FaArrowRight /> : <FaArrowDown />}
+              <div key={index} className="w-full">
+                <button
+                  onClick={() => setActiveIndex(index)}
+                  className={`w-full cursor-pointer rounded-lg border-2 p-4 text-left transition-all duration-300 ${
+                    activeIndex === index
+                      ? "border-[#0A662A] bg-[#00290F] text-green-500"
+                      : "border-transparent bg-[#00290F]/50 text-white hover:border-[#0A662A]/50"
+                  }`}
+                >
+                  <div className="flex items-center gap-2">
+                    {activeIndex === index ? <FaArrowRight /> : <FaArrowDown />}
 
-                  <Heading
-                    headingTag="h6"
-                    className="font-16 font-semibold text-white"
-                    content={tab.title}
-                  />
-                </div>
+                    <Heading
+                      headingTag="h6"
+                      className="font-16 font-semibold text-white"
+                      content={tab.title}
+                    />
+                  </div>
 
-                {activeIndex === index && (
-                  <Heading
-                    headingTag="p"
-                    className="text-light-grey mt-4 transition-all duration-300"
-                    content={tab.description}
-                  />
-                )}
-              </button>
+                  {/* Description */}
+                  {activeIndex === index && (
+                    <Heading
+                      headingTag="p"
+                      className="text-light-grey mt-4 transition-all duration-300"
+                      content={tab.description}
+                    />
+                  )}
+
+                  {activeIndex === index && (
+                    <div className="mt-4 block md:hidden">
+                      <Image
+                        src={tab.image}
+                        alt={tab.title}
+                        className="w-full rounded-lg object-cover"
+                        style={{ maxHeight: tab.imgHeight || "400px" }}
+                      />
+                    </div>
+                  )}
+                </button>
+              </div>
             ))}
           </div>
 
-          {/* Image */}
           <div
-            className={`flex items-center justify-center overflow-hidden ${
+            className={`hidden items-center justify-center overflow-hidden md:flex ${
               reverse ? "order-1 md:order-2" : ""
             }`}
           >
