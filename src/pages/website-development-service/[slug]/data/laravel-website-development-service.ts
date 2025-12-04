@@ -31,12 +31,8 @@ export const laravel: PageData = {
   hero: {
     title: [
       {
-        text: "Laravel Web Development  ",
-        color: "text-white",
-      },
-      {
-        text: "Services in India ",
-        color: "text-primary",
+        text: "Laravel Web Development Services in India ",
+        color: "text-gradient",
       },
     ],
     description: [
@@ -69,13 +65,29 @@ export const laravel: PageData = {
     ],
     subHeadingText: [
       {
-        text: "Android app development goes through different stages of work.",
+        text: " Laravel development goes through different stages of work.",
         color: "text-white",
       },
     ],
     image: bannerImg,
+    imageHeight: "md:w-[394px]",
   },
-
+  quoteBanner: {
+    headingText: [
+      {
+        text: "Opt for your custom Laravel services now",
+        color: "text-white",
+      },
+    ],
+    subHeadingText: [
+      {
+        text: "Laravel services goes through different stages of work.",
+        color: "text-white",
+      },
+    ],
+    image: bannerImg,
+    buttonText: "Connect with us",
+  },
   solutionTitle: [
     {
       text: "We are best Laravel development company in India for -   ",

@@ -6,8 +6,6 @@ import img2 from "../../../public/assets/insight2.png";
 import img3 from "../../../public/assets/insight3.png";
 import arrow from "../../../public/assets/arrow-green.svg";
 
-
-
 const InsightsIdeas = () => {
   const rotatingRef = useRef<HTMLDivElement>(null);
 
@@ -26,8 +24,8 @@ const InsightsIdeas = () => {
   }, []);
 
   return (
-    <>
-      <div className="container mx-auto bg-black p-15 pt-25 text-white">
+    <section className="bg-black">
+      <div className="container mx-auto p-15 pt-25 text-white">
         <div className="w-full justify-self-center text-center md:w-1/2 lg:w-1/2 xl:w-1/2">
           <div className="poppins-semibold font-40">
             Blogs{" "}
@@ -116,14 +114,14 @@ const InsightsIdeas = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="rotating-btn" >
+          <div className="rotating-btn">
             <button className="poppins-semibold font-16 hover:color-black mt-8 justify-self-center rounded-4xl border-1 border-solid border-green-500 bg-black px-12 py-3 text-white">
               About Us
             </button>
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

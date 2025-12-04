@@ -65,6 +65,19 @@ interface IServiceArray {
   desc: string;
 }
 
+interface ProcessStep {
+  title: string;
+  description: string;
+  position: "left" | "right"; // controls layout
+  number: number; // step number
+}
+
+interface ProcessStepsData {
+  headingText: string;
+  subHeadingText: string;
+  steps: ProcessStep[];
+}
+
 export const utilisArr = [
   {
     image: androidIcon,
@@ -414,32 +427,40 @@ export const servicesArr: IServiceArray[] = [
   },
 ];
 
-export const processSteps = [
-  {
-    id: 1,
-    title: "Initial Discussion & Understanding Project Scope",
-    description:
-      "We get to work right from the first discussion to help you get started. Whether you’re trying to hire mobile app developers in India through Moonstack or you’re interested in our full-service app development solutions to outsource mobile app development in India, we can do it all. We also take confidentiality very seriously, which is why we sign a Non-Disclosure Agreement (NDA) with our clients to ensure they can trust us with their app ideas confidently.",
-  },
-  {
-    id: 2,
-    title: "Research & Prototyping",
-    description:
-      "Our experienced mobile app developers in India create every app from scratch, methodically creating a truly custom application that’s built specifically as per your security, design, and functionality specifications. Whether it is a cross-platform Native-React application or a native Android or iOS app, our QA engineers follow a strict quality standard to ensure there are no bugs or performance issues in your app.",
-  },
-  {
-    id: 3,
-    title: "Development & Testing",
-    description:
-      "Our experienced mobile app developers in India create every app from scratch, methodically creating a truly custom application that’s built specifically as per your security, design, and functionality specifications. Whether it is a cross-platform Native-React application or a native Android or iOS app, our QA engineers follow a strict quality standard to ensure there are no bugs or performance issues in your app.",
-  },
-  {
-    id: 4,
-    title: "Deployment & Launch Support",
-    description:
-      "As a part of our enterprise mobile app solutions in India, once the mobile application has passed testing and quality standards, we offer complete launch support to our clients. This includes the deployment of the apps on popular app stores like Google Play Store and Apple App Store. We also help our clients optimise their app listings on app stores to improve visibility and help with a successful app launch. We also offer app maintenance and monitoring support to our clients after the app launch is complete.",
-  },
-];
+export const processSteps: ProcessStepsData = {
+  headingText: "Our Process",
+  subHeadingText: "From idea to deployment",
+  steps: [
+    {
+      number: 1,
+      title: "Initial Discussion & Understanding Project Scope",
+      description:
+        "We get to work right from the first discussion to help you get started. Whether you want to hire mobile app developers in India through Moonstack or need full-service mobile app development solutions, we can do it all. We also sign a Non-Disclosure Agreement (NDA) to ensure complete confidentiality and protect your app idea.",
+      position: "left",
+    },
+    {
+      number: 2,
+      title: "Research & Prototyping",
+      description:
+        "After formalities, we begin with detailed market and industry research based on your app idea. We then create a project roadmap and a wireframe of the application. Our research helps identify market opportunities, ensuring your product meets user needs and offers an exceptional user experience.",
+      position: "right",
+    },
+    {
+      number: 3,
+      title: "Development & Testing",
+      description:
+        "Our skilled mobile app developers in India build every application from scratch as per your design, security, and functionality specifications. Whether it’s a cross-platform Native-React app or a native Android/iOS application, our QA engineers ensure strict quality standards, eliminating bugs and performance issues.",
+      position: "left",
+    },
+    {
+      number: 4,
+      title: "Deployment & Launch Support",
+      description:
+        "Once the app passes all quality checks, we provide complete launch support — including deployment on the Google Play Store and Apple App Store. We also optimise your app listing for better visibility and help with a successful launch. Post-launch, we offer maintenance and monitoring support.",
+      position: "right",
+    },
+  ],
+};
 
 export const accordionData: IAccordionItem[] = [
   {

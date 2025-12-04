@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -15,13 +13,27 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-primary: #00cf49;
-  --color-primary-300: #0d8035;
   --color-primary-50: #05140a;
+  --color-primary-100: #0a2613;
+  --color-primary-200: #082f16;
+  --color-primary-300: #0d8035;
+  --color-primary-400: #009936;
+  --color-primary-500: #0d3f1f;
   --color-black: #000;
   --color-primary-grey: #cbcbcb;
   --color-light-grey: #dfdfdf;
   --color-white: #ffff;
   --text-green-gradient: linear-gradient(to right, #25e8b1, #60f90d);
+}
+
+@layer utilities {
+  .text-gradient {
+    background: var(--text-green-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,11 +65,9 @@ body {
   transform-origin: center center;
 }
 
-.highlight-text{
-  color:#0CE859;
+.highlight-text {
+  color: #0ce859;
 }
-
-
 
 /* Active FAQ Gradient Only at Top */
 .faq-active {

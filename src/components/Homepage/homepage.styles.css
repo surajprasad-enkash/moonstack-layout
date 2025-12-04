@@ -487,3 +487,16 @@
   mask-composite: exclude;
   pointer-events: none;
 }
+.hero-bg {
+  background: linear-gradient(135deg, #4f46e5, #06b6d4);
+  animation: gradientShift 10s infinite alternate;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}

@@ -242,12 +242,34 @@ export const shopify: PageData = {
   banner: {
     headingText: [
       {
-        text: "     Build your Shopify store now with us ",
+        text: "So? Start your Shopify development process now ",
         color: "text-white",
       },
     ],
-
+    subHeadingText: [
+      {
+        text: "Shopify services goes through different stages of work.",
+        color: "text-white",
+      },
+    ],
+    imageHeight: "md:w-[490px]",
     image: bannerImg,
+  },
+  quoteBanner: {
+    headingText: [
+      {
+        text: "Choose your Shopify hiring model - Hire your Shopify developer now ",
+        color: "text-white",
+      },
+    ],
+    subHeadingText: [
+      {
+        text: "Shopify services goes through different stages of work.",
+        color: "text-white",
+      },
+    ],
+    image: bannerImg,
+    buttonText: "Connect with us",
   },
 
   processSteps: {

@@ -32,7 +32,7 @@ const BenifitsCard: React.FC<BenifitsCardProps> = ({
 }) => {
   return (
     <div
-      className={`relative h-[-webkit-fill-available] w-full bg-gradient-to-r p-10 ${bgColor} rounded-2xl transition duration-400 hover:from-transparent hover:to-[#0D320D] ${className}`}
+      className={`relative h-[-webkit-fill-available] w-full rounded-2xl p-10 transition duration-400 ${bgColor ? `bg-gradient-to-r ${bgColor}` : ""} ${className} `}
     >
       {cardTag && (
         <div

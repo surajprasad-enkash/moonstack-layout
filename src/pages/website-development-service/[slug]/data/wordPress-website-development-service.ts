@@ -108,6 +108,22 @@ export const wordPress: PageData = {
 
     image: bannerImg,
   },
+  quoteBanner: {
+    headingText: [
+      {
+        text: "Opt for your custom CRM services now",
+        color: "text-white",
+      },
+    ],
+    subHeadingText: [
+      {
+        text: "CRM services goes through different stages of work.",
+        color: "text-white",
+      },
+    ],
+    image: bannerImg,
+    buttonText: "Connect with us",
+  },
   tabs: {
     headingText:
       "Engagement models to choose the best WordPress Development Team ",

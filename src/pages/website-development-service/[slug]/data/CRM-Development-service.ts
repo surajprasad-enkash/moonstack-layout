@@ -1,15 +1,16 @@
 import { PageData } from "@/types/web-development-data-type";
 import androidIcon from "../../../../../public/assets/android-icon.svg";
-import iosIcon from "../../../../../public/assets/ios-icon.svg";
+import angularIcon from "../../../../../public/assets/angular-icon.svg";
 import reactIcon from "../../../../../public/assets/react-icon.svg";
-import pwaIcon from "../../../../../public/assets/pwa-icon.svg";
+import nodeIcon from "../../../../../public/assets/node-icon.svg";
+import mysqlIcon from "../../../../../public/assets/pwa-icon.svg";
 import SliderOne from "../../../../../public/assets/sliderOne.webp";
 import SliderTwo from "../../../../../public/assets/sliderTwo.webp";
 import SliderThree from "../../../../../public/assets/SliderThree.webp";
 import SliderFour from "../../../../../public/assets/sliderFour.webp";
 import SliderFive from "../../../../../public/assets/SliderFive.webp";
-import flutterIcon from "../../../../../public/assets/flutter-icon.svg";
-import swiftIcon from "../../../../../public/assets/swift-icon.svg";
+import phpIcon from "../../../../../public/assets/php-icon.svg";
+import mongodbIcon from "../../../../../public/assets/moz-icon.svg";
 import managmentIconOne from "../../../../../public/assets/app-development-images/managment-icon-one.svg";
 import pwaIconOne from "../../../../../public/assets/app-development-images/pwa-icon-one.svg";
 import pwaIconTwo from "../../../../../public/assets/app-development-images/pwa-icon-two.svg";
@@ -18,201 +19,237 @@ import pwaIconFour from "../../../../../public/assets/app-development-images/pwa
 import pwaIconFive from "../../../../../public/assets/app-development-images/pwa-icon-five.svg";
 import pwaIconSix from "../../../../../public/assets/app-development-images/pwa-icon-six.svg";
 import figmaIcon from "../../../../../public/assets/figma-icon.svg";
-import pwaImg from "../../../../../public/assets/app-development-images/android-hero-img.webp";
+import pwaImg from "../../../../../public/assets/website-development-images/crm-hero.webp";
 import bannerImg from "../../../../../public/assets/website-development-images/crm-banner.webp";
+import laravelBgImg from "../../../../../public/assets/laravel-bg.webp";
+
 export const crm: PageData = {
   hero: {
     title: [
       {
-        text: "Create Dynamic PWAs With Moonstack’s Custom ",
-        color: "text-white",
+        text: "Affordable CRM Development Service ",
+        color: "text-gradient",
       },
-      { text: "PWA Development Service in India", color: "text-primary" },
     ],
     description: [
       {
-        text: "",
+        text: "Develop powerful, intelligent, and fully customised CRM solutions that allow to manage diverse customer communication, support automate workflows, and increase operational processes. Our expert team has integrated modern CRM software for start ups and large enterprises. We focus on building CRM Software that convert insights into action that increases communication and streamline different sales processes. ",
         color: "text-white",
       },
     ],
     image: pwaImg,
+    backgroundImage: laravelBgImg,
+    buttonText: "Build your CRM Software now ",
   },
+  pointsTitle: [
+    {
+      text: "Leading CRM Development  ",
+      color: "text-white ",
+    },
+    { text: " Company in  India ", color: "text-primary" },
+  ],
   points: [
-    "Moonstack offers highly advanced PWA solutions in India. Progressive Web Apps provide the benefits of app-like cross-platform performance and responsiveness to any device right from the user’s web browser. This is what makes them the hottest development asset in the market today. At Moonstack, we have the best PWA developers in India who can help you build consistent, functional, and reliable web apps.",
-    "Moonstack offers highly advanced PWA solutions in India. Progressive Web Apps provide the benefits of app-like cross-platform performance and responsiveness to any device right from the user’s web browser. This is what makes them the hottest development asset in the market today. At Moonstack, we have the best PWA developers in India who can help you build consistent, functional, and reliable web apps.",
+    "Moonstack is the leading CRM development company in India. Our team of CRM experts are trusted by small businesses and large enterprises. We build high performance, intelligent, and customised CRM solutions that align with different business needs. With our CRM expert team, our aim is to streamline workflows, support customer relationships, and increase leads and sales processes. Along with different feature functionality, we also focus on clean UI/UX codes, security, and other aspects that need to be considered for businesses. We offer open source,  cloud based CRM solutions that allows you to integrate third party software and your team can access customer data, leads, and reports anytime, anywhere. ",
+    "We offer end to end CRM development services in India that includes custom CRM development, module development solutions, integration services, migration services, database integration, and many more. Moreover, with tech expertise, we are also known for strong communication, on time delivery, and constant updates with our team. In order to stay ahead in the market competition, our CRM app developers in India keep themselves updated with the latest technological advancements and sort last minute complex challenges. With CRM development services to meet the latest business needs, we also offer CRM solutions in India that are ready to use such as CRM software, CRM mobile app, Cloud based CRM software, and many more. ",
   ],
   solutions: {
-    headingContent: "Our Specialities",
+    headingContent: "Our CRM Development Services in India ",
     subHeadingText:
-      "As the top PWA development company in India, Moonstack has significant experience with PWA development, design, deployment, and maintenance. Here’s an overview of the different speciality services that make up our PWA development service in India.",
+      "We offer end to end CRM development  services in India. We offer custom CRM solutions, integration, automation, cloud based access, and many more CRM based functionalities that ensure to improve business efficiency, improve customer relationship, and boost sales. Our CRM services in India includes - ",
   },
   banner: {
-  headingText: [
-    { text: "Scale Your Business with E-Commerce Experts", color: "text-white" }
-  ],
-  subHeadingText: [
-    { 
-      text: "Android app development goes through different stages of work.", 
-      color: "text-white" 
-    }
-  ],
-  image: bannerImg,
-},
+    headingText: [
+      {
+        text: "Opt for your custom CRM services now",
+        color: "text-white",
+      },
+    ],
+    subHeadingText: [
+      {
+        text: "CRM services goes through different stages of work.",
+        color: "text-white",
+      },
+    ],
+    image: bannerImg,
+  },
+  quoteBanner: {
+    headingText: [
+      {
+        text: "Want CRM development services in India ",
+        color: "text-white",
+      },
+    ],
+    subHeadingText: [
+      {
+        text: "Let’s talk about your business ",
+        color: "text-white",
+      },
+    ],
+    image: bannerImg,
+    buttonText: "Connect with us",
+  },
 
   featuresData: [
     {
       imgSrc: pwaIconOne,
-      title: "Custom PWA Development",
+      title: "Custom CRM Development",
       description:
-        "Our custom PWA development services are some of the most affordable PWA development services in India. We ensure each aspect of your PWA is optimised for speed and performance across devices with custom code that’s built as per your business requirements and not templates.",
+        "We build fully customised CRM solutions tailored to your business needs. Our CRM experts develop software integrated with modern features, modules, and workflows that improve efficiency, boost productivity, and support long-term growth. We also ensure the CRM design reflects your brand identity and aligns perfectly with your business goals.",
     },
     {
       imgSrc: pwaIconTwo,
-      title: "PWA Migration",
+      title: "CRM Integration Services",
       description:
-        "Our PWA migration services in India are curated to help businesses transform existing applications into full-featured PWAs. We ensure each application has its unique set of features, while being perfectly compliant across devices and platforms. Best of all? Our service retains the existing design and data seamlessly.",
+        "Integrate powerful CRM services to streamline and automate your business processes. From WhatsApp, ERP, HRMS to secure payment gateways, we identify key features your business needs to reduce time, improve accuracy, and respond faster to customers. Our secure API-driven CRM integrations enable real-time syncing and deliver smarter, faster experiences.",
     },
     {
       imgSrc: pwaIconThree,
-      title: "Secure PWA Development",
+      title: "CRM Mobile Applications",
       description:
-        "Backend security is one of the most crucial aspects of PWA development. That’s why we offer the most trusted secure PWA development service in India at Moonstack. We ensure your code is secure, and specifically, user information and backend data are safe against breaches.",
+        "Build fast, secure, and intuitive CRM mobile apps for Android and iOS. Our CRM mobile apps bring your business infrastructure to users’ fingertips—helping track leads, manage follow-ups, and streamline communication. The apps ensure seamless access to data anytime, anywhere, enabling productivity on the go.",
     },
     {
       imgSrc: pwaIconFour,
-      title: "Fast Loading PWA Development",
+      title: "Cloud-Based CRM Services",
       description:
-        "Fine-tuning the performance of a PWA we’re developing is a major part of our backend process. That’s why we’re the premier provider of fast-loading PWA development service in India. We take loading time very seriously while ensuring that our responsive PWA development service in India is able to offer a holistic solution to our clients.",
+        "Moonstack delivers powerful cloud-based CRM solutions designed for speed, security, and reliability. Our cloud CRM offers automatic backups, real-time syncing, and smooth performance without worrying about servers or maintenance. It empowers teams to access and manage data instantly from anywhere.",
     },
     {
       imgSrc: pwaIconFive,
-      title: "UI/UX Design for PWAs",
+      title: "CRM Migration & Upgradation",
       description:
-        "Creating a web app with an immaculate user experience is at the cornerstone of our PWA design and development services in India at Moonstack. We ensure clean navigation and accessibility in all apps we develop across devices, ensuring perfect harmony with our cross-platform PWA development services in India.",
+        "Our CRM development services in India include complete CRM migration and upgrade solutions. We ensure smooth data transfer, feature optimisation, performance improvements, and seamless support throughout the migration process. We also provide system upgrades to enhance performance and add new functionalities.",
     },
     {
       imgSrc: pwaIconSix,
-      title: "QA & Deployment",
+      title: "CRM Ongoing Support & Maintenance",
       description:
-        "Whether it is deployment assistance and rigorous testing, if you’re looking to hire PWA developers in India, Moonstack can be your help. We handle the entire PWA lifecycle to ensure your app is performing optimally at all times.",
+        "As a leading CRM development company in India, we offer full-time support and maintenance services covering bug fixes, feature enhancements, troubleshooting, and continuous monitoring. Our end-to-end support ensures your CRM performs smoothly while meeting all technical and business standards.",
     },
   ],
 
   tabs: {
-    headingText: "Why Choose Us?",
+    headingText: "Our CRM Solutions that takes your Business to next level ",
     subHeadingText:
-      "From offering PWA development for startups in India to developing enterprise PWA solutions, Moonstack has done it all. If you’re still not convinced, here are six reasons why you must choose Moonstack for all your PWA development requirements.",
+      "As the leading CRM service provider in India, we have designed different CRM solutions for our clients to streamline different operations, improve customer interactions, and boost team productivity. We have ready to use CRM solutions that are easy to integrate in the workflow process that automate your internal operations and deliver faster responses  that are designed for all business needs. ",
     tabs: [
       {
         id: 1,
-        title: "Custom Business Solutions",
+        title: "Personalised AI Solutions",
         description:
-          "We provide tailored services that are custom-built for your business, keeping your requirements in mind. Everything is custom-built from scratch, just for you.",
+          "Our CRM app developers in India have designed the best CRM AI solution for businesses that provide personalized customer experiences to users. With CRM-based functionalities, our solutions offer personalized recommendations, offers, and content that match all customer satisfaction needs and increase engagement. With our smarter CRM solution, we offer end-to-end automation that boosts engagement, conversion rates, and long-term loyalty.",
         image: androidIcon,
       },
       {
         id: 2,
-        title: "Performance Focused Architecture",
+        title: "Data Analysis",
         description:
-          "Our development process at Moonstack focuses on optimising code to ensure the app is fast and offers smooth navigation across devices.",
+          "With our data analysis CRM solution, you can analyse large sets of customer data collected from social media, email integrations, websites, and many other platforms. Our AI and ML-powered CRM system identifies patterns and trends to help you make smart, data-driven decisions. This automation reduces repetitive tasks, eliminates manual efforts, and saves a significant amount of time.",
         image: figmaIcon,
       },
       {
         id: 3,
-        title: "Ensemble Developers",
+        title: "Chatbots and Virtual Assistants",
         description:
-          "We work with a team of the most experienced and talented developers with multi-platform development experience. Our experienced team always delivers native app-like performance for PWAs.",
+          "We integrate intelligent chatbots and advanced virtual assistants into CRM systems to improve customer engagement and reduce human dependency. Our bots are designed and trained to offer instant responses and resolve customer queries without delay. We have implemented a wide range of bots and virtual assistants capable of handling routine customer inquiries efficiently.",
         image: reactIcon,
       },
       {
         id: 4,
-        title: "Scalable Solutions",
+        title: "Automated CRM Based Marketing Campaigns",
         description:
-          "Scalability is a factor that limits many PWAs. This is why we always build our PWAs on scalable platforms, which allow future expansion without complete redevelopment.",
+          "With our extensive CRM experience, we integrate AI and modern technologies to automate marketing campaigns. Our advanced CRM systems support content creation, automated email campaigns, and social media scheduling. With AI support, we analyse user behaviour, identify high-retention customer groups, and target relevant campaigns. Our AI predictions help run high-performing marketing campaigns that maximize conversions.",
         image: androidIcon,
       },
       {
         id: 5,
-        title: "24/7 Support",
+        title: "Cloud Based CRM Solution",
         description:
-          "Need to discuss updates regarding your project? Our team is always available to discuss and talk to you. Never be in the dark when you choose Moonstack.",
+          "Our cloud-based CRM solutions allow sales teams to access data anytime and anywhere using simple credentials—with no need for complex server configurations. All enterprise data, interactions, and information are stored securely in the cloud, enabling easy access and real-time updates across multiple devices. This ensures smooth collaboration and uninterrupted productivity.",
         image: figmaIcon,
       },
       {
         id: 6,
         title: "Proven Experience Across Industries",
         description:
-          "We have worked with businesses like startups, MNCs, and everything in between across industries. Our proven track record allows us to be the best PWA development agency in India.",
+          "We have worked with startups, enterprises, and global brands across multiple industries. Our proven experience allows us to deliver high-performing, scalable, and reliable CRM solutions tailored to unique business needs. This industry exposure helps us build CRM systems that are future-ready and aligned with modern digital transformation demands.",
         image: reactIcon,
       },
     ],
   },
   utilisArr: [
     {
-      image: androidIcon,
-      category: "Mobile App",
-      title: "Android Development",
-      desc: "At Moonstack, we believe in building technology.",
-    },
-    {
-      image: iosIcon,
-      category: "Mobile App",
-      title: "iOS Development",
-      desc: "At Moonstack, we believe in building technology.",
-    },
-    {
       image: reactIcon,
       category: "Mobile App",
-      title: "React Native App Development",
+      title: "React.js",
       desc: "At Moonstack, we believe in building technology.",
     },
     {
-      image: flutterIcon,
+      image: angularIcon,
       category: "Mobile App",
-      title: "Flutter",
+      title: "Angular",
       desc: "At Moonstack, we believe in building technology.",
     },
     {
-      image: pwaIcon,
+      image: nodeIcon,
       category: "Mobile App",
-      title: "PWA Development",
+      title: " Node.js",
       desc: "At Moonstack, we believe in building technology.",
     },
     {
-      image: swiftIcon,
+      image: phpIcon,
+      category: " PHP",
+      title: " PHP",
+      desc: "At Moonstack, we believe in building technology.",
+    },
+    {
+      image: mysqlIcon,
       category: "Mobile App",
-      title: "Swift",
+      title: "MySQL",
+      desc: "At Moonstack, we believe in building technology.",
+    },
+    {
+      image: mongodbIcon,
+      category: "Mobile App",
+      title: "Mongo Db",
       desc: "At Moonstack, we believe in building technology.",
     },
   ],
   processSteps: {
-    headingText: "Our Process",
+    headingText:
+      "Moonstack process we follow to integrate CRM Solutions in your Business infrastructure",
     subHeadingText:
-      "As the top PWA development agency in India, our working process relies on transparency. We ensure our production process hinges on personalised and tailored solutions rather than cookie-cutter designs and development. Here’s a brief overview of our working process.",
+      "At Moonstack, we have a defined and structured approach that delivers the best CRM solutions to our clients with the right strategy. We have delivered a wide range of CRM solutions and have hands-on experience with the delivery process and know the exact method to implement in the CRM delivery process. We have opted for the agile methodology and include best CRM development experts in India who focus on timely delivery and ensure to solve last minute complex challenges. ",
     steps: [
       {
         id: 1,
-        title: "Confidentiality Agreement",
+        title: "Understand Business",
         description:
-          "We provide a promise of confidentiality to all our clients with a signed NDA, ensuring their app idea and development process is safe with our team. We also hit the ground running with a detailed and robust working architecture that involves getting started with our work from the first call itself. This is why we’re the top PWA consulting service in India.",
+          "For the right CRM integration services, it is important to understand the business in depth. Our CRM software developers understand your business thoroughly to identify gaps and provide you with the best CRM solution in India.",
       },
       {
         id: 2,
-        title: "Development & Prototyping",
+        title: "Planning and Discussions",
         description:
-          "The development process starts with designing the UI and creating the different functions of the app over a scalable architecture and framework. There’s a lot of focus on user experience, which includes ensuring the design is accessible across devices. Ensuring design translation across devices is a big part of our enterprise PWA development service in India at Moonstack.",
+          "Once our CRM development team understands your business needs, we conduct detailed discussions to plan future strategies and create clear roadmaps. Proper planning ensures clarity and helps in forming the best strategies.",
       },
       {
         id: 3,
-        title: "Quality Assurance",
+        title: "Customisation and Set Up",
         description:
-          "Moonstack puts every app we build through rigorous quality assurance. This helps us ensure the app’s functionality is not compromised in any situation, especially for core services to create a seamless user experience. Our quality assurance makes us the best agency for PWA development for small businesses in India.",
+          "At Moonstack, we configure different modules, automation flows, dashboards, and user roles tailored to specific business requirements. We customise CRM solutions and ensure a complete set-up process for our customers.",
       },
       {
         id: 4,
-        title: "Deployment & Support",
+        title: "Integration and Testing",
         description:
-          "Once the development process is complete, we offer complete deployment support for PWA for e-commerce services in India. This allows businesses to streamline online operations and increase their reach among customers with our PWA deployment and maintenance services.",
+          "We integrate CRM solutions with your business operations and run end-to-end testing to ensure smooth performance without technical issues. Our CRM app development team performs both manual and automated testing for complete reliability.",
+      },
+      {
+        id: 5,
+        title: "Full Time Support",
+        description:
+          "Our CRM team provides full-time support with dedicated experts who monitor the entire CRM system, manage updates, and resolve issues instantly. Moonstack ensures zero downtime, seamless operations, and continuous monitoring with tech experts.",
       },
     ],
   },
@@ -249,74 +286,74 @@ export const crm: PageData = {
     },
   ],
   whyChooseData: {
-    headingText: "Our Process of Laravel website in India ",
+    headingText:
+      "Why choose us for your CRM software development services in India?  ",
     subHeadingText:
-      "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges. ",
+      "We are the best CRM Software development company in India. Our CRM team offers end to end services from small to large enterprises. At Moonstack, we have delivered a wide range of CRM solutions to different industries as per the latest technological advancements and market trends. With tech expertise, we also focus on timely delivery and strong communication processes.  ",
     steps: [
       {
         icon: managmentIconOne,
-        title: "Gather Requirements",
+        title: "Experienced Team",
         description:
-          "We collect all the information about the project to understand what our client actually needs that allows us to align with the project.",
+          "We have a team of CRM developers with decades of experience delivering a wide range of CRM solutions across industries like real estate, healthcare, education, fintech, and more. At Moonstack, we handle last-minute complex challenges with ease and deliver CRM solutions that align with your business needs and the latest market innovations.",
       },
       {
         icon: managmentIconOne,
-        title: "Client Discussion",
+        title: "Updated with Latest Tech Trends",
         description:
-          "Once we have proper requirements, our Laravel team experts conduct a formal discussion with the client to resolve all queries.",
+          "Our CRM professionals stay updated with the latest technological trends and frameworks to meet modern market standards. While we have hands-on experience with a variety of tools and technologies, we continuously upgrade our skills to adopt new innovations. At Moonstack, we avoid outdated strategies and always prioritize modern advancements.",
       },
       {
         icon: managmentIconOne,
-        title: "Internal Strategy Discussion",
+        title: "On Time Delivery",
         description:
-          "After gathering requirements, we have an internal strategy discussion where our team brainstorms to deliver the best outcome.",
+          "We strongly believe in on-time delivery. Our focus is to deliver CRM projects within the promised timeline without compromising quality. At Moonstack, we plan, execute, and review each aspect thoroughly to ensure timely delivery, eliminate delays, and maintain complete professionalism. Punctuality is our priority.",
       },
       {
         icon: managmentIconOne,
-        title: "Designing - UI/UX Services",
+        title: "Strong Communication",
         description:
-          "Our designers begin the UI/UX design process focusing on creating an interactive and easy-to-use interface for the end users.",
+          "We maintain strong, transparent communication throughout the entire development process. Our team ensures clients stay informed at every stage with clear, structured, and professional updates. This helps eliminate confusion and keeps the entire development journey aligned with expectations.",
       },
       {
         icon: managmentIconOne,
-        title: "Development",
+        title: "Seamless Integrations",
         description:
-          "The development process begins with both frontend and backend teams collaborating to build the solution efficiently.",
+          "At Moonstack, we offer seamless CRM integration with tools like WhatsApp, ERP, HRMS, email platforms, and payment gateways. Our CRM development team ensures real-time data flow, improved accuracy, fast operations, and reduced manual work for maximum efficiency.",
       },
       {
         icon: managmentIconOne,
-        title: "Deployment and Testing",
+        title: "Dedicated Support and Maintenance",
         description:
-          "We deploy and test the Laravel software with automated and manual processes, ensuring that we deliver bug-free and optimized solutions.",
-      },
-      {
-        icon: managmentIconOne,
-        title: "Delivery and Post Support",
-        description:
-          "After testing, we deliver the Laravel-based solution and provide post-launch support to ensure our team is always there when needed.",
+          "We offer end-to-end dedicated support and maintenance to our clients. For us, it doesn’t end at deployment — we stay committed throughout the journey. Our long-term support ensures smooth performance, continuous updates, issue resolution, and the ability to leverage modern technologies without disruptions.",
       },
     ],
   },
   accordionData: [
     {
-      title: "What is the cost of PWA development in India?",
-      desc: "The cost of PWA development in India depends on your requirements and whether you have an existing app or not. Migration projects are less costly compared to full-fledged development projects. You can get a free quote from Moonstack for your PWA requirements. So feel free to contact us today.",
+      title: "What is CRM software and why should we opt in our business?",
+      desc: "CRM software refers to Customer Relationship Management. It helps businesses manage leads, customer sales, and communication in one place. CRM improves efficiency, reduces manual tasks, and enhances team visibility, helping businesses make smarter decisions.",
     },
     {
-      title: "How long does it take to develop PWAs?",
-      desc: "A full PWA development takes one or two months when building from scratch. Migration projects can take less time than that, depending on your requirements. However, no matter your requirement, if you have a timeline, Moonstack can try its best to meet your deadlines.",
+      title: "How much time would you take to deliver CRM solutions?",
+      desc: "There is no fixed time for delivering CRM solutions. The duration depends on several factors such as project complexity, features required, integrations, and overall business needs.",
     },
     {
-      title: "Can Moonstack migrate my existing app into a PWA?",
-      desc: "Yes, it is called migrating the application, and Moonstack offers dedicated PWA migration services in India. We can help you transform your existing application into a fully-functioning PWA without changing its design or functionalities.",
+      title:
+        "Can you help me with the integration of the CRM tool with the existing enterprise tools?",
+      desc: "Yes, we can integrate custom CRM software with your existing enterprise tools to ensure smooth and connected business operations.",
     },
     {
-      title: "Are PWAs accessible across devices?",
-      desc: "Yes, PWAs are accessible across devices and even feature offline functionality right from your web browser. For more information about PWAs, feel free to reach out to our team at Moonstack.",
+      title: "Is Cloud based infrastructure secure with CRM?",
+      desc: "Yes, cloud-based CRM solutions are secure and use encrypted storage, secure servers, and advanced access controls. Cloud infrastructure also enables automatic backups and safe accessibility from anywhere.",
     },
     {
-      title: "What is the best platform for PWA development?",
-      desc: "Most PWAs are developed using strong and capable platforms like React, Vue.js, or Angular. The build platform is decided based on the type of PWA you require. The best part is that all of the popular PWA development platforms allow businesses to build scalable PWAs.",
+      title: "Will you provide training to our staff after CRM integration?",
+      desc: "Yes, we provide complete end-to-end training after CRM installation so your team can fully leverage all the features of the modern CRM system.",
+    },
+    {
+      title: "Can I upgrade CRM software as my business grows?",
+      desc: "Yes, you can upgrade your CRM software as your business scales. With CRM experts in India, you can integrate advanced technologies and add new functionalities to streamline the next phase of your operations.",
     },
   ],
 };

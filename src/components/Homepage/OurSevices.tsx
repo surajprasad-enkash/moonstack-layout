@@ -39,33 +39,33 @@ const OurServices = () => {
     },
   ];
   return (
-    <>
-      <div className="bg-black p-15 text-white container mx-auto">
-        <div className="flex flex-col md:flex-row flex-wrap justify-between gap-y-15">
-          <div className="w-full md:w-[30%] lg:w-[30%] xl:w-[30%] poppins-bold font-40">
+    <section className="bg-black">
+      <div className="container mx-auto p-15 text-white">
+        <div className="flex flex-col flex-wrap justify-between gap-y-15 md:flex-row">
+          <div className="poppins-bold font-40 w-full md:w-[30%] lg:w-[30%] xl:w-[30%]">
             <div>Our</div>
-            <div className="bg-gradient-to-r from-[#25E8B1] via=[#60F90D] to-[#60F90D] text-transparent bg-clip-text">
+            <div className="via=[#60F90D] bg-gradient-to-r from-[#25E8B1] to-[#60F90D] bg-clip-text text-transparent">
               Sevices
             </div>
-            <div className="mt-6 poppins-medium leading-[200%] font-16">
+            <div className="poppins-medium font-16 mt-6 leading-[200%]">
               Moonstack offers completely transparent and highly secure web and
               app development solutions. Here’s a look at all of our services.
             </div>
           </div>
           {servicesArr.map((li) => (
             // eslint-disable-next-line react/jsx-key
-            <div className="w-full group md:w-[32%] lg:w-[32%] xl:w-[32%] rounded-3xl border-b-2 border-green-500 p-8 items-between grid bg-gradient-to-b from-transparent to-transparent hover:from-transparent hover:to-[#0C4A0C] transition duration-400">
-              <div className="flex justify-between mb-4">
-                <Image src={li.image} alt="" className="w-10 h-auto" />
+            <div className="group items-between border-primary-400 grid w-full rounded-3xl border-b-2 bg-gradient-to-b from-transparent to-transparent p-8 transition duration-400 hover:from-transparent hover:to-[#0C4A0C] md:w-[32%] lg:w-[32%] xl:w-[32%]">
+              <div className="mb-4 flex justify-between">
+                <Image src={li.image} alt="" className="h-auto w-10" />
                 <Image
                   src={arrow}
                   alt=""
-                  className="w-8 h-auto hidden group-hover:block"
+                  className="hidden h-auto w-8 group-hover:block"
                 />
               </div>
               <div className="mt-auto">
                 <div className="poppins-semibold font-18 mb-4">{li.title}</div>
-                <div className="poppins-regular leading-[200%] font-16">
+                <div className="poppins-regular font-16 leading-[200%]">
                   {li.desc}
                 </div>
               </div>
@@ -73,7 +73,7 @@ const OurServices = () => {
           ))}
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

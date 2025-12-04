@@ -65,6 +65,7 @@ export default function ApplicationPage() {
         subHeadingContent={page.banner?.subHeadingText ?? []}
         buttonText="Connect with us"
         image={page.banner?.image ?? ""}
+        imageHeight={page.banner?.imageHeight ?? "md:w-[405px]"}
       />
       <WhyChooseSection
         heading={[{ text: page.whyChooseData.headingText, color: "block" }]}
@@ -102,6 +103,13 @@ export default function ApplicationPage() {
         />
       )}
       <GetQuoteBanner
+        headingContent={page.quoteBanner?.headingText ?? []}
+        subHeadingContent={page.quoteBanner?.subHeadingText ?? []}
+        buttonText={page.quoteBanner?.buttonText ?? "Connect with us"}
+        image={page.quoteBanner?.image ?? ""}
+      />
+      {/* 
+        <GetQuoteBanner
         headingContent={[
           {
             text: "Scale Your Business with E-Commerce Experts",
@@ -116,7 +124,7 @@ export default function ApplicationPage() {
         ]}
         buttonText="Connect with us"
         image={bannerImg}
-      />
+      /> */}
       {page?.processSteps && (
         <ProcessSection
           headingLines={[

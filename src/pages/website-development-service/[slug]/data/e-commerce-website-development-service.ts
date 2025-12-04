@@ -23,7 +23,7 @@ export const ecommerce: PageData = {
     title: [
       {
         text: "E-commerce Website Development Services ",
-        color: "text-white",
+        color: "text-gradient",
       },
     ],
     description: [
@@ -46,19 +46,29 @@ export const ecommerce: PageData = {
   banner: {
     headingText: [
       {
-        text: "Scale Your Business with E-Commerce Experts",
+        text: "Launch your online store now ",
+        color: "text-white",
+      },
+    ],
+
+    image: bannerImg,
+  },
+  quoteBanner: {
+    headingText: [
+      {
+        text: "Get your e-commerce development services now  ",
         color: "text-white",
       },
     ],
     subHeadingText: [
       {
-        text: "Android app development goes through different stages of work.",
+        text: "E-commerce services goes through different stages of work.",
         color: "text-white",
       },
     ],
     image: bannerImg,
+    buttonText: "Connect with us",
   },
-
   solutionTitle: [
     {
       text: "Our E-Commerce Solutions -  ",

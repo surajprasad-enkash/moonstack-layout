@@ -58,14 +58,29 @@ export const fullstack: PageData = {
   banner: {
     headingText: [
       {
-        text: "Opt your full stack development services now! ",
+        text: "Partner with us for all your Full Stack needs  ",
         color: "text-white",
       },
     ],
 
     image: bannerImg,
   },
-
+  quoteBanner: {
+    headingText: [
+      {
+        text: "Choose your hiring model now ",
+        color: "text-white",
+      },
+    ],
+    subHeadingText: [
+      {
+        text: "We offer different hiring modules to our clients that help to meet their hiring preferences for a long term, short term, and hourly basis. At Moonstack, our focus is too simple to meet our client’s expectations. ",
+        color: "text-white",
+      },
+    ],
+    image: bannerImg,
+    buttonText: "Connect with us",
+  },
   solutions: {
     headingContent: "Our Full Stack Development Services in India ",
     subHeadingText:

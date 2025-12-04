@@ -1,19 +1,22 @@
 import { useRouter } from "next/router";
 import Layout from "@/components/Layout";
+
+//components
 import AppCategoryBanner from "@/components/AppDevelopment/AppCategoryBanner";
 import SolutionsComponent from "@/components/Sections/SolutionSection/SolutionsComponent";
 import ChooseUsTabSection from "@/components/Sections/ChooseUsTab/ChooseUsTab";
-
-import Stepper from "@/components/StepperComponent/StepperComponent";
+import CloudTimeline from "@/components/Sections/CloudServices/CloudTimeline/CloudTimeline";
 import ReusableTechnologySection from "@/components/Sections/TechnologySection/TechnologySection";
 import ReusableSliderSection from "@/components/Sections/SliderSection/SliderSection";
-
 import FAQ from "@/components/Homepage/FAQ";
+import ImportanceSection from "@/components/AppDevelopment/ImportanceComponent";
 
+//utils
 import importance from "../../../../public/assets/backend-importance.webp";
 import greenTick from "../../../../public/assets/green-tick-icon.svg";
+
+//data
 import { pagesData } from "./data";
-import ImportanceSection from "@/components/AppDevelopment/ImportanceComponent";
 
 export default function ApplicationPage() {
   const router = useRouter();
@@ -39,6 +42,7 @@ export default function ApplicationPage() {
         altText="Backend importance image"
         points={page.points}
         tickIcon={greenTick}
+        heading={page.heading}
         reverse={false}
       />
       <SolutionsComponent
@@ -68,10 +72,11 @@ export default function ApplicationPage() {
         filteredItems={page.utilisArr}
         bgColor="bg-[radial-gradient(99.15%_99.15%_at_50.87%_0.85%,_#0F592A_0%,_#000000_31%)]"
       />
-      <Stepper
+      <CloudTimeline
+        title={page.processSteps.headingText}
+        highlight=""
+        subtitle={page.processSteps.subHeadingText}
         steps={page.processSteps.steps}
-        headingLines={[{ text: page.processSteps.headingText, color: "block" }]}
-        subHeadingLines={[{ text: page.processSteps.subHeadingText }]}
       />
       <ReusableSliderSection
         buttonText="Process"

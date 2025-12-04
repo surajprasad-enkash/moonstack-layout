@@ -11,6 +11,7 @@ interface HireNowBannerProps {
   image: StaticImageData | string;
   reverse?: boolean;
   bgGradient?: string;
+  imageHeight?: string;
   containerClassName?: string;
 }
 
@@ -22,24 +23,21 @@ const HireNowBanner: React.FC<HireNowBannerProps> = ({
   reverse = false,
   bgGradient = "bg-[linear-gradient(180deg,rgba(110,250,255,0.2)_0%,rgba(0,207,73,0.2)_100%)]",
   containerClassName = "",
+  imageHeight = "md:w-[405px]",
 }) => {
   return (
-    <section className="bg-black">
+    <section className="relative bg-black">
       <div
         className={`container mx-auto px-4 py-6 text-white md:px-8 md:py-12 ${containerClassName}`}
       >
         <div
-          className={`${bgGradient} relative overflow-hidden rounded-[30px] px-6 py-10 md:rounded-[40px] md:px-[60px] md:py-20`}
+          className={`${bgGradient} overflow-hidden rounded-[30px] px-6 py-10 md:rounded-[40px] md:px-[60px] md:py-20`}
         >
           <div
             className={`grid grid-cols-1 items-center gap-10 md:grid-cols-2`}
           >
             {/* Text Content */}
-            <div
-              className={`relative z-10 ${
-                reverse ? "md:order-2" : "md:order-1"
-              }`}
-            >
+            <div className={`z-10 ${reverse ? "md:order-2" : "md:order-1"}`}>
               <Heading
                 headingTag="h3"
                 className="text-left font-semibold"
@@ -64,7 +62,7 @@ const HireNowBanner: React.FC<HireNowBannerProps> = ({
               }`}
             >
               <div
-                className={`absolute bottom-0 left-1/2 h-[220px] w-full -translate-x-1/2 md:static md:bottom-auto md:left-auto md:h-[430px] md:w-[430px] md:translate-x-0`}
+                className={`md:stati absolute bottom-0 left-1/2 h-[220px] w-full -translate-x-1/2 md:left-auto md:h-[427px] md:translate-x-0 ${imageHeight}`}
               >
                 <Image
                   src={image}

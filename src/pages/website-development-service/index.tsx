@@ -36,12 +36,8 @@ const Website = (): React.JSX.Element => {
         <WebsiteCategoryBanner
           title={[
             {
-              text: "Website Development ",
-              color: "text-white block",
-            },
-            {
-              text: "Service for Businesses",
-              color: "text-primary",
+              text: "Website Development Service for Businesses",
+              color: "text-gradient font-50",
             },
           ]}
           description={[
@@ -144,7 +140,7 @@ const Website = (): React.JSX.Element => {
         <ChooseUsTabSection
           headingLines={[
             {
-              text: "Moonstack offer website development services in India  ",
+              text: "Moonstack offers website development services in India  ",
               color: "text-white",
             },
           ]}

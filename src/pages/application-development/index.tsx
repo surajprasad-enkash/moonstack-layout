@@ -1,8 +1,16 @@
+import React from "react";
+import Layout from "@/components/Layout";
+
+//components
 import SolutionsComponent from "@/components/BackendDeveloper/SolutionsComponent";
 import FAQ from "@/components/Homepage/FAQ";
-import Layout from "@/components/Layout";
-import { useMultipleRefs } from "@/hooks/useMultipleRefs";
-import React from "react";
+import ReusableUtilizeSection from "@/components/Sections/UtilizeSection/UtilizeSection";
+import ReusableSliderSection from "@/components/Seo/SliderComponent";
+import OurServices from "@/components/OurSevices";
+import ImportanceSection from "@/components/AppDevelopment/ImportanceComponent";
+import WebsiteCategoryBanner from "@/components/Website/WebsiteCategoryBanner";
+
+//data
 import {
   accordionData,
   featuresData,
@@ -12,36 +20,24 @@ import {
   slides,
   utilisArr,
 } from "./data";
-import Stepper from "@/components/StepperComponent/StepperComponent";
-import ReusableUtilizeSection from "@/components/Sections/UtilizeSection/UtilizeSection";
-import ReusableSliderSection from "@/components/Seo/SliderComponent";
-import AppBanner from "@/components/AppDevelopment/AppBanner";
-import OurServices from "@/components/OurSevices";
+
+//utils
 import importance from "../../../public/assets/backend-importance.webp";
 import greenTick from "../../../public/assets/green-tick-icon.svg";
-import ImportanceSection from "@/components/AppDevelopment/ImportanceComponent";
-import WebsiteCategoryBanner from "@/components/Website/WebsiteCategoryBanner";
 import heroImg from "../../../public/assets/app-development-hero.webp";
 import BgImg from "../../../public/assets/app-development-images/application-dev-bg.webp";
+import CloudTimeline from "@/components/Sections/CloudServices/CloudTimeline/CloudTimeline";
+
 const ApplicationDevelopment = (): React.JSX.Element => {
   //
 
-  const faqRefs = useMultipleRefs([
-    "callNowBtnRef1",
-    "callNowBtnRef2",
-    "callNowBtnRef3",
-  ]);
   return (
     <Layout>
       <WebsiteCategoryBanner
         title={[
           {
-            text: "Mobile Application  ",
-            color: "text-white block",
-          },
-          {
-            text: "Development Company",
-            color: "text-primary",
+            text: "Mobile Application Development Company ",
+            color: "text-gradient ",
           },
         ]}
         tabText="Mobile Application"
@@ -90,19 +86,11 @@ const ApplicationDevelopment = (): React.JSX.Element => {
         servicesData={servicesArr}
       />
 
-      <Stepper
-        steps={processSteps}
-        headingLines={[{ text: "Our Process", color: "block" }]}
-        subHeadingLines={[
-          {
-            text: "At Moonstack, our process is focused on transparency, confidentiality, and a personalised working experience for our clients.",
-            color: "block",
-          },
-          {
-            text: "Here’s a detailed overview of our working process for our mobile app development services in India",
-            color: "block",
-          },
-        ]}
+      <CloudTimeline
+        title="Our Process"
+        highlight=""
+        subtitle="At Moonstack, our process is focused on transparency, confidentiality, and a personalised working experience for our clients. Here’s a detailed overview of our working process for our mobile app development services in India"
+        steps={processSteps.steps}
       />
       <SolutionsComponent
         headingContent={[

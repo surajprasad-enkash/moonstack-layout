@@ -59,11 +59,9 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
         className={`relative container mx-auto px-4 py-12 md:px-8 md:py-20 ${ClassName}`}
       >
         {/* Heading + Subheading */}
-        <div
-          className={`flex justify-between pb-12 md:pb-14 ${titleClassName}`}
-        >
+        <div className={`flex pb-12 md:pb-14 ${titleClassName}`}>
           <motion.div
-            className="mb-6 w-full text-center md:mb-0 md:text-left"
+            className="mb-6 w-full text-center md:mb-0 md:w-1/2 md:text-left"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -78,7 +76,7 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
 
           {subHeadingText && (
             <motion.div
-              className="w-full text-center leading-[200%] md:w-2/5 md:text-left lg:w-2/5 xl:w-[50%]"
+              className="w-full text-center leading-[200%] md:w-1/2 md:text-left"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}

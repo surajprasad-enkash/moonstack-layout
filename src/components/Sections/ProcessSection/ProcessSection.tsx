@@ -63,7 +63,7 @@ const ProcessSection: React.FC<ProcessSectionProps> = ({
           <div className="m-auto w-2/3">
             <Heading
               headingTag="h2"
-              className="font-36 pt-3 text-center font-bold text-white"
+              className="font-36 pt-3 text-center font-semibold text-white"
               content={headingLines}
             />
             <Heading

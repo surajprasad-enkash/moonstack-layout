@@ -56,7 +56,7 @@ const AppCategoryBanner: React.FC<AppCategoryBannerProps> = ({
           >
             <Heading
               headingTag="h1"
-              className="text-start font-semibold md:text-left"
+              className="text-gradient text-start font-semibold md:text-left"
               content={title}
             />
 

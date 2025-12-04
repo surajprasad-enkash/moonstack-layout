@@ -14,9 +14,7 @@ interface IReviews {
   image?: string;
 }
 
-
-
-const ContactUs= () => {
+const ContactUs = () => {
   const sliderRef = useRef(null);
   const [progress, setProgress] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -103,7 +101,7 @@ const ContactUs= () => {
       <Image
         alt=""
         src={arrowNext}
-        className={`w-10 h-auto ${direction == "prev" && "rotate-180"}`}
+        className={`h-auto w-10 ${direction == "prev" && "rotate-180"}`}
         onClick={handleClick}
       />
     );
@@ -120,12 +118,12 @@ const ContactUs= () => {
   }, []);
 
   return (
-    <>
-      <div className="bg-black p-15 flex flex-col md:flex-row justify-between text-white container mx-auto">
+    <section className="bg-black">
+      <div className="container mx-auto flex flex-col justify-between p-15 text-white md:flex-row">
         <div className="w-full md:w-[45%] lg:w-[45%] xl:w-[45%]">
           <div className="poppins-medium font-30">
             Get in touch to discuss your software vision{" "}
-            <span className="bg-gradient-to-r from-[#25E8B1] via=[#60F90D] to-[#60F90D] text-transparent bg-clip-text">
+            <span className="via=[#60F90D] bg-gradient-to-r from-[#25E8B1] to-[#60F90D] bg-clip-text text-transparent">
               with industry experts
             </span>
           </div>
@@ -180,25 +178,24 @@ const ContactUs= () => {
               />
             </div>
           </Box>
-          <div className="mt-5 poppins-medium font-12 text-[#9A9A9A]">
+          <div className="poppins-medium font-12 mt-5 text-[#9A9A9A]">
             We will add your info to our CRM for contacting you regarding your
             request. For more info please consult our{" "}
             <span
-              className="text-white cursor-pointer"
+              className="cursor-pointer text-white"
               style={{ textDecoration: "underline" }}
             >
               privacy policy
             </span>
           </div>
           <button
-            className="poppins-semibold py-4 mt-8 rounded-xl border-1 border-green-500 border-solid justify-self-start font-16 w-[100%]"
+            className="poppins-semibold font-16 mt-8 w-[100%] justify-self-start rounded-xl border-1 border-solid border-green-500 py-4"
             style={{ backgroundColor: Colors.brand950 }}
-        
           >
             Send Now
           </button>
         </div>
-        <div className="rounded-2xl p-10 justify-between bg-gradient-to-br from-[#177634] via-black to-black-500 w-full md:w-[45%] lg:w-[45%] xl:w-[45%]">
+        <div className="to-black-500 w-full justify-between rounded-2xl bg-gradient-to-br from-[#177634] via-black p-10 md:w-[45%] lg:w-[45%] xl:w-[45%]">
           <div className="poppins-semibold font-22 mb-20">
             What Our Customers Say
           </div>
@@ -206,14 +203,14 @@ const ContactUs= () => {
             {reviewsArr.map((review) => (
               // eslint-disable-next-line react/jsx-key
               <div>
-                <div className="poppins-regular leading-[200%] font-18">
+                <div className="poppins-regular font-18 leading-[200%]">
                   {review.desc}
                 </div>
-                <div className="flex mt-10">
+                <div className="mt-10 flex">
                   <Image
                     src={customer}
                     alt="image"
-                    className="w-11 h-11 mr-3"
+                    className="mr-3 h-11 w-11"
                   />
                   <div>
                     <div
@@ -230,10 +227,10 @@ const ContactUs= () => {
               </div>
             ))}
           </Slider>
-          <div className="flex justify-between items-center mt-15">
-            <div className="w-[75%] bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+          <div className="mt-15 flex items-center justify-between">
+            <div className="h-2 w-[75%] rounded-full bg-gray-200 dark:bg-gray-700">
               <div
-                className="bg-green-600 h-2 rounded-full"
+                className="h-2 rounded-full bg-green-600"
                 style={{ width: `${progress}%` }}
               />
             </div>
@@ -246,7 +243,7 @@ const ContactUs= () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

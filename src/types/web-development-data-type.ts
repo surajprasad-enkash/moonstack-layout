@@ -66,6 +66,14 @@ export interface PageData {
     headingText: { text: string; color?: string }[];
     subHeadingText?: { text: string; color?: string }[];
     image: StaticImageData | string;
+    imageHeight?: string;
+  };
+
+  quoteBanner?: {
+    headingText: { text: string; color?: string }[];
+    subHeadingText?: { text: string; color?: string }[];
+    image: StaticImageData | string;
+    buttonText?: string;
   };
 
   accordionData: IAccordionItem[];

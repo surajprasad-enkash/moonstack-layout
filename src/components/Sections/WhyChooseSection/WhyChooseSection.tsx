@@ -25,9 +25,8 @@ const WhyChooseSection: React.FC<WhyChooseSectionProps> = ({
   return (
     <section className="bg-black bg-[url('/assets/choose-bg-img.webp')] bg-cover bg-center">
       <div className="container mx-auto items-center px-4 py-12 md:px-8 md:py-20">
-        <div className="grid gap-12 lg:grid-cols-2">
-         
-          <div className="self-start lg:sticky lg:top-24">
+        <div className="flex flex-col items-start gap-12 md:flex-row">
+          <div className="sticky top-[100px] w-full md:w-1/2">
             <Heading
               headingTag="h3"
               className="text-start font-semibold text-white"
@@ -41,7 +40,7 @@ const WhyChooseSection: React.FC<WhyChooseSectionProps> = ({
             />
           </div>
 
-          <div className="scrollbar-hide flex max-h-[600px] flex-col gap-5 overflow-y-auto pr-2">
+          <div className="flex w-full flex-col gap-5 md:w-1/2">
             {cards.map((card, index) => (
               <div key={index} className="bg-primary-50 rounded-xl p-[40px]">
                 <div className="flex items-center gap-[40px]">

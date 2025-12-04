@@ -33,7 +33,7 @@ const Heading: React.FC<HeadingProps> = ({
     : [{ text: String(content) }];
 
   const headingClassMap: Record<string, string> = {
-    h1: "text-[28px] leading-[32px] md:text-[60px] md:leading-[125%] tracking-normal",
+    h1: "text-[28px] leading-[32px] md:text-[48px] md:leading-[125%] tracking-normal",
     h2: "text-[21px] leading-[32px] md:text-[40px] md:leading-[140%] tracking-[-0.04em]",
     h3: "text-[20px] leading-[32px] md:text-[36px] md:leading-[140%] tracking-normal",
     h4: "text-[16px] leading-[32px] md:text-[24px] md:leading-[140%] tracking-[-0.04em]",
@@ -63,7 +63,7 @@ const Heading: React.FC<HeadingProps> = ({
 
         const innerContent = (
           <Element key={i} className={segmentClasses} style={style}>
-            {' '+ text}
+            {" " + text}
           </Element>
         );
 

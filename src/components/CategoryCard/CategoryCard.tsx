@@ -6,8 +6,9 @@ interface CategoryCardProps {
   imgSrc: StaticImageData | string;
   alt?: string;
   title: string;
-  description: string;
+  description?: string;
   className?: string;
+  classTextAlign?:string;
   /** 🆕 Title position - top (default) or bottom */
   titlePosition?: "top" | "bottom";
   /** 🆕 Image width and height customization */
@@ -20,6 +21,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
   alt = "",
   title,
   description,
+  classTextAlign,
   className = "feature-card-gradient-bdr",
   titlePosition = "top",
   imgWidth = 32,
@@ -31,7 +33,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
     >
       {titlePosition === "top" ? (
         <>
-          <div className="flex items-center gap-3">
+          <div className={`flex items-center gap-3 ${classTextAlign}`}>
             <Image
               src={imgSrc}
               alt={alt}

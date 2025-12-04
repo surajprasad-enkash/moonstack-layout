@@ -26,10 +26,9 @@ export const webDesigning: PageData = {
   hero: {
     title: [
       {
-        text: "Best Website Design  ",
-        color: "text-white",
+        text: "Best Website Design  Services in India",
+        color: "text-gradient",
       },
-      { text: "Services in India", color: "text-primary" },
     ],
     description: [
       {
@@ -55,19 +54,34 @@ export const webDesigning: PageData = {
   banner: {
     headingText: [
       {
-        text: "Scale Your Business with E-Commerce Experts",
+        text: "Create your brand web design today",
         color: "text-white",
       },
     ],
     subHeadingText: [
       {
-        text: "Android app development goes through different stages of work.",
+        text: "Web Designing goes through different stages of work.",
         color: "text-white",
       },
     ],
     image: bannerImg,
   },
-
+  quoteBanner: {
+    headingText: [
+      {
+        text: "Start your web design process now ",
+        color: "text-white",
+      },
+    ],
+    subHeadingText: [
+      {
+        text: "Web Design  goes through different stages of work.",
+        color: "text-white",
+      },
+    ],
+    image: bannerImg,
+    buttonText: "Connect with us",
+  },
   solutions: {
     headingContent: "Our Web Designing Services in India ",
     subHeadingText:

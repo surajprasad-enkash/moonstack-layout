@@ -93,7 +93,7 @@ const CaseStudies = () => {
       <Image
         alt=""
         src={arrowNext}
-        className={`w-10 h-auto ${direction == "prev" && "rotate-180"}`}
+        className={`h-auto w-10 ${direction == "prev" && "rotate-180"}`}
         onClick={handleClick}
       />
     );
@@ -107,22 +107,22 @@ const CaseStudies = () => {
   }
 
   return (
-    <>
-      <div className="bg-black text-white pb-15 container mx-auto">
-        <div className="flex flex-col md:flex-row justify-between p-15 mix-blend-difference">
-          <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%] poppins-semibold font-36">
+    <section className="bg-black">
+      <div className="container mx-auto pb-15 text-white">
+        <div className="flex flex-col justify-between p-15 mix-blend-difference md:flex-row">
+          <div className="poppins-semibold font-36 w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
             Our Services That Power & {""}
-            <span className="bg-gradient-to-r from-[#25E8B1] via=[#60F90D] to-[#60F90D] text-transparent bg-clip-text">
+            <span className="via=[#60F90D] bg-gradient-to-r from-[#25E8B1] to-[#60F90D] bg-clip-text text-transparent">
               Scale Businesses
             </span>
           </div>
-          <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%] poppins-medium leading-[200%] font-16">
+          <div className="poppins-medium font-16 w-full leading-[200%] md:w-[40%] lg:w-[40%] xl:w-[40%]">
             Take a look at some of our highlight projects that have shaped the
             course of business for our clients and helped them meet their
             business goals.
           </div>
         </div>
-        <div className="pt-20 justify-center flex mix-blend-difference">
+        <div className="flex justify-center pt-20 mix-blend-difference">
           <div className="flex w-[70%] justify-between">
             <CustomArrow
               direction="prev"
@@ -133,7 +133,7 @@ const CaseStudies = () => {
               {dataArr.map((review, i) => (
                 <div className="text-center">
                   <div
-                    className={`poppins-medium leading-[200%] font-18 ${
+                    className={`poppins-medium font-18 leading-[200%] ${
                       i == currentSlide && "text-[#00EA52]"
                     }`}
                   >
@@ -155,7 +155,7 @@ const CaseStudies = () => {
               <div>
                 {i == currentSlide && (
                   <>
-                    <div className="justify-center flex">
+                    <div className="flex justify-center">
                       <svg
                         width="20"
                         height="20"
@@ -165,23 +165,23 @@ const CaseStudies = () => {
                         <polygon points="25,0 0,50 50,50" fill="#00EA52" />
                       </svg>
                     </div>
-                    <div className="h-6 overflow-hidden mt-4">
+                    <div className="mt-4 h-6 overflow-hidden">
                       <div className="arc"></div>
                     </div>
                   </>
                 )}
                 <div
-                  className={`rounded-[100%] p-10  w-[500] h-[500] items-center justify-center flex flex-col ${
+                  className={`flex h-[500] w-[500] flex-col items-center justify-center rounded-[100%] p-10 ${
                     currentSlide == i &&
-                    "bg-gradient-to-tl from-[#32C332] via-black to-black-500 border-[#116011] border-1"
+                    "to-black-500 border-1 border-[#116011] bg-gradient-to-tl from-[#32C332] via-black"
                   } ${currentSlide !== i && "bg-[#041004]"}`}
                 >
                   <div className="flex flex-wrap justify-center gap-6">
                     {review.images.map((img) => (
-                      <Image alt="" src={img} className="w-[54] h-auto" />
+                      <Image alt="" src={img} className="h-auto w-[54]" />
                     ))}
                   </div>
-                  <div className="flex justify-center items-center mt-8">
+                  <div className="mt-8 flex items-center justify-center">
                     {review.users.map((user: string, i: number) => {
                       const isCenter =
                         getCenterIndex(review.users) == i ? true : false;
@@ -189,7 +189,7 @@ const CaseStudies = () => {
                         <Image
                           src={user}
                           alt="image"
-                          className={`w-[35] h-auto ml-[-10] rounded-3xl border-black border-2 ${
+                          className={`ml-[-10] h-auto w-[35] rounded-3xl border-2 border-black ${
                             isCenter && "z-999"
                           }`}
                         />
@@ -211,7 +211,7 @@ const CaseStudies = () => {
           </Slider>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
