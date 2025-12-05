@@ -27,6 +27,7 @@ import greenTick from "../../../public/assets/green-tick-icon.svg";
 import heroImg from "../../../public/assets/app-development-hero.webp";
 import BgImg from "../../../public/assets/app-development-images/application-dev-bg.webp";
 import CloudTimeline from "@/components/Sections/CloudServices/CloudTimeline/CloudTimeline";
+import Meta from "@/components/MetaData";
 
 const ApplicationDevelopment = (): React.JSX.Element => {
   //
