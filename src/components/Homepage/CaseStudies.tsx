@@ -56,6 +56,7 @@ const CaseStudies = () => {
     centerMode: true,
     centerPadding: "50px",
     slidesToScroll: 1,
+
     afterChange: (next: any) => {
       setCurrentSlide(next);
     },
