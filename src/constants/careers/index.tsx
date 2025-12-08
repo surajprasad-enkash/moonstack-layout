@@ -55,3 +55,5 @@ export const benefitsData = [
     description: "Best-in-market salary & perks.",
   },
 ];
+
+export default {}

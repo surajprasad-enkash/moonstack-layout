@@ -10,7 +10,6 @@ import WebsiteCategoryBanner from "@/components/Website/WebsiteCategoryBanner";
 import ProcessSection from "@/components/Sections/ProcessSection/ProcessSection";
 import ChooseUsTabSection from "@/components/Sections/ChooseUsTab/ChooseUsTab";
 import HireNowBanner from "@/components/Sections/HireNowBanner/HireNowBanner";
-import bannerImg from "../../../../public/assets/e-commerce-hire.webp";
 import ReusableTechnologySection from "@/components/Sections/TechnologySection/TechnologySection";
 import GetQuoteBanner from "@/components/GetQuoteBanner/GetQuoteBanner";
 import WhyChooseSection from "@/components/Sections/WhyChooseSection/WhyChooseSection";

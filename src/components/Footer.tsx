@@ -17,7 +17,15 @@ import google from "../../public/assets/google.png";
 import clutch from "../../public/assets/clutch.png";
 import iso from "../../public/assets/iso.png";
 
-const Footer = ({ refs }) => {
+interface FooterRefs {
+  footerCareer: React.RefObject<HTMLDivElement>;
+  terms: React.RefObject<HTMLDivElement>;
+  privacy: React.RefObject<HTMLDivElement>;
+  blog: React.RefObject<HTMLDivElement>;
+  footerContactUs: React.RefObject<HTMLDivElement>;
+}
+
+const Footer: React.FC<{ refs: FooterRefs }> = ({ refs }) => {
   const footerLinks = [
     { id: 1, title: "Career", ref: refs.footerCareer },
     { id: 2, title: "Terms & Conditions", ref: refs.terms },
@@ -27,6 +35,7 @@ const Footer = ({ refs }) => {
   ];
 
   return (
+     
     <footer className="bg-black px-5 py-10 text-white md:px-8">
       <div className="container mx-auto w-full">
         {/* Top Row */}

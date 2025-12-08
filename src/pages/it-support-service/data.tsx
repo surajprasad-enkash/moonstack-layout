@@ -80,3 +80,5 @@ export const accordionData: IAccordionItem[] = [
     answer: "Yes, you can hire web developers for your project. We offer different hiring modules that allow you to hire developers on hourly, part time, and full time basis. Our web development team makes sure they provide you a resume of the best resources as per you are looking for, and you can choose your web development resources who work dedicatedly for your project.",
   },
 ];
+
+export default {}

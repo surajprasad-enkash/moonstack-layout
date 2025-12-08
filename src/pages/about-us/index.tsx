@@ -5,7 +5,7 @@ import AboutGallery from "./aboutGallerySection";
 import AboutStepper from "./aboutStepper";
 import MissionSection from "./missionSection";
 import WorkflowSection from "./workflow";
-import { steps } from "./data";
+import { steps } from "../../constants/about";
 
 const AboutUs = (): React.JSX.Element => {
   return (
