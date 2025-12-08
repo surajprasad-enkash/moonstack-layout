@@ -41,6 +41,16 @@ export const crm: PageData = {
     backgroundImage: laravelBgImg,
     buttonText: "Build your CRM Software now ",
   },
+  seo: {
+    title: "Custom CRM Development Company India & USA | Moonstack",
+    description:
+      "Need a custom CRM For your business in India? Moonstack designs and develops CRM systems that match your workflows and integrate with your existing tools.",
+    keywords:
+      "crm development company India,affordable crm solutions India, custom crm software development India, crm app developers India",
+    canonical:
+      "https://www.moonstack.com/website-development-service/CRM-Development-service",
+    ogImage: "/opengraph-image.png",
+  },
   pointsTitle: [
     {
       text: "Leading CRM Development  ",

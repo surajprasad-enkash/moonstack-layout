@@ -76,6 +76,14 @@ export interface PageData {
     buttonText?: string;
   };
 
+  seo: {
+    title: string;
+    description: string;
+    keywords: string;
+    canonical: string;
+    ogImage: string;
+  };
+  
   accordionData: IAccordionItem[];
   featureDataContent?: {
     headingContent: { text: string; color: string }[];

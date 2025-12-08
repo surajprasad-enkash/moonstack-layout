@@ -36,6 +36,16 @@ export const ecommerce: PageData = {
     backgroundImage: ecommerceBgImg,
     buttonText: "Build your online store now ",
   },
+  seo: {
+    title: "Ecommerce Website Development Company India & USA | Moonstack",
+    description:
+      "Need an ecommerce site that increase sells? We designs and develops conversion‑focused online stores with secure payments and mobile‑first UX. Get Quote Now!",
+    keywords:
+      "ecommerce website development company India,custom ecommerce website design India,affordable ecommerce web development India,ecommerce website development for small business",
+    canonical:
+      "https://www.moonstack.com/website-development-service/e-commerce-website-development-service",
+    ogImage: "/opengraph-image.png",
+  },
   pointsTitle: [
     {
       text: "Trusted E-commerce Development Company  ",
