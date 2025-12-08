@@ -28,6 +28,7 @@ const SeoBanner = () => {
             <CustomButton text="Connect with us" variant="primary" />
             <div className="rotating-btn">
               <CustomButton text="Learn More" variant="rotating" />
+              
             </div>
           </div>
         </div>

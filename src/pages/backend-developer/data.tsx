@@ -195,3 +195,5 @@ export const processSteps = [
       "As a part of our enterprise mobile app solutions in India, once the mobile application has passed testing and quality standards, we offer complete launch support to our clients. This includes the deployment of the apps on popular app stores like Google Play Store and Apple App Store. We also help our clients optimise their app listings on app stores to improve visibility and help with a successful app launch. We also offer app maintenance and monitoring support to our clients after the app launch is complete.",
   },
 ];
+
+export default {}

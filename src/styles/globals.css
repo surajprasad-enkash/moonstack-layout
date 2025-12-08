@@ -51,12 +51,11 @@ body {
 
 @keyframes orbit {
   0% {
-    transform: rotate(var(--angle)) translateX(var(--radius))
-      rotate(calc(-1 * var(--angle)));
+    transform: rotate(var(--angle)) translateX(var(--radius)) rotate(calc(-1 * var(--angle)));
   }
+
   100% {
-    transform: rotate(calc(var(--angle) + 360deg)) translateX(var(--radius))
-      rotate(calc(-1 * var(--angle) - 360deg));
+    transform: rotate(calc(var(--angle) + 360deg)) translateX(var(--radius)) rotate(calc(-1 * var(--angle) - 360deg));
   }
 }
 
@@ -72,7 +71,8 @@ body {
 /* Active FAQ Gradient Only at Top */
 .faq-active {
   position: relative;
-  background-color: #082313; /* bottom solid color */
+  background-color: #082313;
+  /* bottom solid color */
   overflow: hidden;
   z-index: 1;
 }
@@ -82,14 +82,159 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 130px; /* adjust height for effect */
+  height: 130px;
+  /* adjust height for effect */
   width: 100%;
   border-radius: inherit;
-  background: radial-gradient(
-    43.91% 58.17% at 56.09% -8.17%,
-    #195e2d 0%,
-    #052811 100%
-  );
+  background: radial-gradient(43.91% 58.17% at 56.09% -8.17%,
+      #195e2d 0%,
+      #052811 100%);
   pointer-events: none;
   z-index: -1;
 }
+
+
+.primary-btn{
+  background: #00EA52;
+padding: 10px 20px;
+}
+
+.menu-list {}
+
+.menu-list li {}
+
+.menu-list .menu-item {
+  padding: 0px 24px 5px;
+  border-bottom: 2px solid #00EA5200;
+  border-radius: 40px;
+  display: block;
+}
+
+.menu-list .menu-item:hover {
+  border-color: #0CE859;
+  color: #0CE859;
+}
+
+.isActive {
+  border-radius: 40px;
+  border-bottom: 2px solid #0CE859 !important;
+  color: #0CE859;
+}
+
+.menu-list .subMenu {
+  top: 24px;
+  padding: 24px 50px 50px;
+  z-index: 1;
+}
+
+.menu-list .subMenu .isActive {
+  border: none !important;
+}
+
+.menu-list .subMenu .isActive a {
+  background: #009936;
+  color: #fff;
+
+
+}
+
+.menu-list .subMenu li {
+  line-height: normal;
+  font-weight: 400;
+  padding: 0;
+}
+
+.menu-list .subMenu li a {
+  line-height: normal;
+  font-weight: 400;
+  width: 100%;
+  transition: 0.5s;
+  display: block;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.menu-list .subMenu .subMenuInner {
+  padding: 40px;
+  border-radius: 0 0 10px 10px;
+  background-position: bottom right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #009936;
+}
+
+.menu-list .subMenu .subMenuInner .submenu-list {
+  position: relative;
+}
+
+.menu-list .subMenu .subMenuInner .submenu-list::after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  right: -15px;
+  background: #0A420A;
+  top: 0;
+  position: absolute;
+}
+
+.submenuList a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #07481E80;
+  transition: 0.3s;
+  padding: 10px;
+}
+
+.submenuList a:hover {
+  border-color: #07481E;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(12, 64, 30, 1) 100%);
+}
+
+.sub-menu-list {
+  background-size: cover;
+  background-position: top left;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-top: 0;
+}
+
+.sub-menu-list li {
+  padding: 5px 10px;
+}
+
+.sub-menu-list a {
+  color: #fff8;
+}
+
+.sub-menu-list a:hover {
+  color: #fff;
+}
+
+.megaMenuItem::after {
+  content: "";
+  position: absolute;
+  top: 38px;
+  left: calc(50% - 10px);
+  z-index: -1;
+  transition: 0;
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  display: none;
+  border-right: 11px solid transparent;
+  border-bottom: 11px solid #009936;
+}
+
+.megaMenuItem:hover::after {
+  display: block;
+}
+
+
+
+

@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-
+import BodyClass from "./BodyClass/BodyClass"; // Ensure this path is correct
+import NewHeader from "@/components/Header/Header";
 
 interface IHeaderRefs {
   home: React.RefObject<HTMLDivElement>;
@@ -35,8 +36,9 @@ const Layout: React.FC<{
 }) => {
   return (
     <>
-      <Header refs={refs} />
-
+      <BodyClass />
+      {/* <Header refs={refs} /> */}
+      <NewHeader />
       <main className="bg-black">{children}</main>
       <Footer refs={footerRefs} />
     </>

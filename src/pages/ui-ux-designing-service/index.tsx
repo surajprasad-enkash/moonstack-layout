@@ -14,7 +14,6 @@ import {
   accordionData,
 } from "./data";
 
-import FAQ from "@/components/Homepage/FAQ";
 import EdgeToolsSection from "@/components/Sections/CloudServices/EdgeToolsSection/EdgeToolsSection";
 import CloudServicesSection from "@/components/Sections/CloudServices/CloudServicesSection/CloudServicesSection";
 import CloudTimeline from "@/components/Sections/CloudServices/CloudTimeline/CloudTimeline";

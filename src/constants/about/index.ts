@@ -1,23 +1,21 @@
-import revenue from "../../../public/assets/revenue.svg";
-
 export const featuresData = [
   {
-    imgSrc: revenue,
+    imgSrc: "/assets/revenue.svg",
     title: "Generate Leads",
     description: "Our frontend development team focuses on building.",
   },
   {
-    imgSrc: revenue,
+    imgSrc: "/assets/revenue.svg",
     title: "Generate Leads",
     description: "Our frontend development team focuses on building.",
   },
   {
-    imgSrc: revenue,
+    imgSrc: "/assets/revenue.svg",
     title: "Generate Leads",
     description: "Our frontend development team focuses on building.",
   },
   {
-    imgSrc: revenue,
+    imgSrc: "/assets/revenue.svg",
     title: "Generate Leads",
     description: "Our frontend development team focuses on building.",
   },
@@ -34,8 +32,7 @@ export const timelineData = [
   },
   {
     title: "2017 - Expansion",
-    description:
-      "Onboard introduced new features and improved filtering options.",
+    description: "Onboard introduced new features and improved filtering options.",
     day: "SAT",
     date: "24",
     image: "/assets/about-us/gallary.png",
@@ -57,6 +54,7 @@ export const timelineData = [
     image: "/assets/about-us/gallary.png",
   },
 ];
+
 export const steps = [
   {
     number: 1,
@@ -107,3 +105,6 @@ export const steps = [
       "Define project goals, gather requirements, and outline timelines to set a clear path for development",
   },
 ];
+
+
+export default  {}

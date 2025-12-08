@@ -3,7 +3,7 @@ import backgroundImg from "../../../public/assets/about-us/backgroundImg.webp";
 import Heading from "@/components/Heading/Heading";
 import CustomButton from "@/components/CommanButton/CommanButton";
 import BenifitsCard from "@/components/BenifitsCard/BenifitsCard";
-import { featuresData } from "./data";
+import { featuresData } from "../../constants/about";
 import FeatureCard from "@/components/FeaturesCard/FeatureCard";
 
 const HeroSection = (): React.JSX.Element => {
