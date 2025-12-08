@@ -40,6 +40,17 @@ export const webDesigning: PageData = {
     buttonText: "Create your customised design now ",
     backgroundImage: websiteBgImg,
   },
+  seo: {
+    title: " Affordable Website Design Services India & USA | Moonstack",
+    description:
+      "Want a modern, conversion focused website design service on affordable price, aligns with your brand and improves engagement and leads. Explore our web design services.",
+    keywords:
+      "website designing company in India,affordable website designing service India, best website design services India, custom website design company India",
+    canonical:
+      "https://www.moonstack.com/website-development-service/web-designing-service",
+    ogImage: "/opengraph-image.png",
+  },
+
   pointsTitle: [
     {
       text: "Website Designing Company in India  ",
@@ -51,6 +62,7 @@ export const webDesigning: PageData = {
     "Moonstack is known as a one stop solution for all your IT needs. We specialize in creating stunning and mobile friendly designs that can connect with your audience. Our UI UX web designing services in India are designed in such a way that attracts users with animations, font color, and other latest designing trends. Along with this, experts also focus on delivering easy to navigate designs.",
     "At Moonstack, we blend creativity and technology that ensure to exclude all the gaps between client and businesses. Our web design agency in Jaipur offers affordable designing services for startups, mid sizes, and large enterprises. We not only create designs but make connections with customers across the globe. With our designs you can deliver your brand message as well as offer premium experiences. ",
   ],
+
   banner: {
     headingText: [
       {
@@ -66,6 +78,7 @@ export const webDesigning: PageData = {
     ],
     image: bannerImg,
   },
+
   quoteBanner: {
     headingText: [
       {
@@ -82,11 +95,13 @@ export const webDesigning: PageData = {
     image: bannerImg,
     buttonText: "Connect with us",
   },
+
   solutions: {
     headingContent: "Our Web Designing Services in India ",
     subHeadingText:
       "We offer end to end website designing services in India with the motive to deliver powerful digital identities. Our focus is to deliver powerful, responsive, and user friendly designs. ",
   },
+
   featuresData: [
     {
       imgSrc: pwaIconOne,
@@ -164,6 +179,7 @@ export const webDesigning: PageData = {
       desc: "At Moonstack, we believe in building technology.",
     },
   ],
+
   processSteps: {
     headingText:
       "Process we opt to deliver successful web design services in India ",
@@ -214,6 +230,7 @@ export const webDesigning: PageData = {
       },
     ],
   },
+
   whyChooseData: {
     headingText: "Why Choose us for Website Designing Services in India? ",
     subHeadingText:
@@ -257,6 +274,7 @@ export const webDesigning: PageData = {
       },
     ],
   },
+
   slides: [
     {
       image: SliderOne,
@@ -289,6 +307,7 @@ export const webDesigning: PageData = {
       desc: "Earney is a financial solution...",
     },
   ],
+
   accordionData: [
     {
       title:

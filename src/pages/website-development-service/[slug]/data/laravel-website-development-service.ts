@@ -44,7 +44,16 @@ export const laravel: PageData = {
     image: laravelImg,
     backgroundImage: laravelBgImg,
     buttonText: "Discuss your tech needs now ",
-  },
+  },    seo: {
+      title: " Laravel Web Development Company in India & USA | Moonstack",
+      description:
+        " Build secure, scalable Laravel websites and web apps with experienced developers, clean code, and long-term maintainability. Share your Laravel requirements with us today.",
+      keywords:
+        " laravel web development service India,laravel web development company India,  Custom laravel website development service,hire laravel developer India",
+      canonical:
+        "https://www.moonstack.com/website-development-service/laravel-website-development-service",
+      ogImage: "/opengraph-image.png",
+    },
   pointsTitle: [
     {
       text: "Moonstack - Leading Laravel Development Company  ",

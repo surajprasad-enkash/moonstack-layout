@@ -87,6 +87,13 @@ export const pagesData: Record<
         number: number;
       }[];
     };
+    seo: {
+      title: string;
+      description: string;
+      keywords: string;
+      canonical: string;
+      ogImage: string;
+    };
 
     slides: { image: StaticImageData | string; title: string; desc: string }[];
     accordionData: IAccordionItem[];
@@ -108,6 +115,16 @@ export const pagesData: Record<
       description: [],
       image: androidImg,
       bgImage: androidBgImg,
+    },
+    seo: {
+      title: "Android App Development Company India & USA | Moonstack",
+      description:
+        "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      keywords:
+        "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
+      canonical:
+        "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      ogImage: "/opengraph-image.png",
     },
     points: [
       "Android is the most popular mobile phone operating system in the world, with an estimated 4.5 billion users worldwide. Our native Android development service in India can help your business develop applications that allow you to reach that humongous audience. Every day, over 250 million Android apps are downloaded globally. With Moonstack’s custom Android application development in India, we can help you build apps that meet your customer’s needs, while meeting your business goals and technical requirements.",
@@ -348,6 +365,16 @@ export const pagesData: Record<
       image: iosImg,
       bgImage: androidBgImg,
     },
+    seo: {
+      title: "IOS App Development Company in India & USA | Moonstack",
+      description:
+        "Searching for expert IOS app developers in India? Moonstack designs and builds iPhone and iPad apps with pixel‑perfect UI and App Store–ready performance. Call Now!",
+      keywords:
+        " iOS app development Service India, iOS app development company India, Best iOS app developers India,  Custom iOS application development service India",
+      canonical:
+        "https://www.moonstack.com/android-app-development-service/iOS-app-development-service",
+      ogImage: "/opengraph-image.png",
+    },
     heading: [
       {
         text: "Build iOS Apps for Every Apple Screen With Moonstack:",
@@ -580,6 +607,16 @@ export const pagesData: Record<
       ],
       bgImage: androidBgImg,
       image: reactNativeImg,
+    },
+    seo: {
+      title: " React Native App Development Company in India & USA | Moonstack",
+      description:
+        "Want a cross‑platform app built with React Native? Moonstack helps Companies in India & USA ship fast, stable React Native apps for Android and iOS from a single codebase.",
+      keywords:
+        "React Native app development Service India, React Native app development company India,  Best React Native app developers India, React Native developers India",
+      canonical:
+        "https://www.moonstack.com/android-app-development-service/react-native-app-development-service",
+      ogImage: "/opengraph-image.png",
     },
     points: [
       "In 2025, we recommend our cross-platform app development service in India to all our clients. Dedicated and separate native development of both platforms can be excessively time-consuming, expensive, and offer a different user experience to users across different platforms. That’s why we develop custom React Native applications in India that function seamlessly across Android and iOS devices as they feature the same codebase.",
@@ -829,6 +866,16 @@ export const pagesData: Record<
       ],
       image: pwaImg,
       bgImage: androidBgImg,
+    },
+    seo: {
+      title: "Progressive Web App (PWA) Development in India & USA | Moonstack",
+      description:
+        " Build fast, installable PWAs that work offline, feel native, and boost conversions across devices with our expert PWA development team. Request a PWA strategy session.",
+      keywords:
+        "PWA development service India, PWA development company India,  Progressive web app development service India,  Hire PWA developer in India",
+      canonical:
+        "https://www.moonstack.com/android-app-development-service/ PWA-development-service",
+      ogImage: "/opengraph-image.png",
     },
     heading: [
       { text: "Create Dynamic PWAs With Moonstack", color: "text-white" },
@@ -1094,6 +1141,16 @@ export const pagesData: Record<
       ],
       image: managementImg,
       bgImage: androidBgImg,
+    },
+    seo: {
+      title: "Mobile App Maintenance & Support in India & USA | Moonstack",
+      description:
+        "Want mobile app maintenance Service? We provide ongoing updates, crash fixes, performance tuning, and OS compatibility support for your Android and iOS apps.",
+      keywords:
+        "Mobile app maintenance services India, Mobile app maintenance company India,  App support and maintenance India, App optimization services India",
+      canonical:
+        "https://www.moonstack.com/android-app-development-service/mobile-app-maintenance -service",
+      ogImage: "/opengraph-image.png",
     },
     points: [
       "Mobile applications require periodic maintenance and updates to function optimally. That’s why Moonstack offers the best mobile app maintenance services in India. Whether you’ve availed of our development services or not, we can help you maintain your app to the highest standards of security, stability, future-proof compatibility, and user experience. We even help apps fix bugs, optimise performance issues, and monitor analytics as a part of our app performance monitoring services in India.",

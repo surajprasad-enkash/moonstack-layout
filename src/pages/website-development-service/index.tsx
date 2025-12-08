@@ -28,10 +28,18 @@ import HireNowBanner from "@/components/Sections/HireNowBanner/HireNowBanner";
 import WhyChooseSection from "@/components/Sections/WhyChooseSection/WhyChooseSection";
 import ReusableWorkflowSection from "@/components/Sections/WorkflowSection/WorkflowSection";
 import ExpertiseSection from "@/components/Sections/ExpertiseSection/ExpertiseSection";
+import Meta from "@/components/MetaData";
 
 const Website = (): React.JSX.Element => {
   return (
     <>
+      <Meta
+        title="  Customized Website Development Company in India & US | Moonstack"
+        description="Get fast, secure, SEO-friendly websites built by full-stack experts focused on performance, scalability, & business results. Start your website project with Moonstack."
+        keywords=" web development service in India,  web development company in India,   affordable website development service India,  custom web development service India, best web development agency India,"
+        canonical="https://www.moonstack.com/website-development-service"
+        ogImage="/opengraph-image.png"
+      />
       <Layout>
         <WebsiteCategoryBanner
           title={[

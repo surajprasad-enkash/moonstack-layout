@@ -45,6 +45,16 @@ export const fullstack: PageData = {
     backgroundImage: bgImg,
     buttonText: "Get your full stack development partner now ",
   },
+      seo: {
+      title: "Full-Stack Web Development Company India & USA | Moonstack",
+      description:
+        "Looking for a fullstack web development team in India? We handling frontend, backend, APIs, and cloud infrastructure under one roof. Book a product discovery call.",
+      keywords:
+        "full stack development company India, hire full stack developers India,  best full stack web development service India, affordable full stack developers India",
+      canonical:
+        "https://www.moonstack.com/website-development-service/full-stack-website-development-service",
+      ogImage: "/opengraph-image.png",
+    },
   pointsTitle: [
     {
       text: "Leading Full Stack Development Company   ",

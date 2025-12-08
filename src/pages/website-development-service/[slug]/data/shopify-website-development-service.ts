@@ -44,6 +44,16 @@ export const shopify: PageData = {
     backgroundImage: backgroundImage,
     buttonText: "Launch your Shopify store now",
   },
+    seo: {
+    title: "Shopify Website Development Company India & USA | Moonstack",
+    description:
+      "Looking to build and scale a Shopify store? Moonstack develops custom Shopify themes, apps, and optimized funnels to increase your online sales. Call Now!",
+    keywords:
+      "shopify website development company India, affordable shopify website developers India, shopify website design services India, shopify website experts India",
+    canonical:
+      "https://www.moonstack.com/website-development-service/shopify-website-development-service",
+    ogImage: "/opengraph-image.png",
+  },
   pointsTitle: [
     {
       text: "Shopify Website Development Company in India  ",

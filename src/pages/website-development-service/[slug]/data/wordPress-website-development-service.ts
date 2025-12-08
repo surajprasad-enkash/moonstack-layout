@@ -42,6 +42,17 @@ export const wordPress: PageData = {
     image: managementImg,
     backgroundImage: backgroundImage,
   },
+
+    seo: {
+    title: "WordPress Website Development Company India & USA | Moonstack",
+    description:
+      "Looking for WordPress developers in India? Moonstack launches and maintains secure, fast WordPress sites with custom themes, plugins, and SEO‑ready setups. call now!",
+    keywords:
+      "wordpress development company India,wordpress development service India,custom wordpress development service India,hire wordpress website developers India",
+    canonical:
+      "https://www.moonstack.com/website-development-service/wordPress-website-development-service",
+    ogImage: "/opengraph-image.png",
+  },
   pointsTitle: [
     {
       text: "Leading WordPress Development Company in India ",
