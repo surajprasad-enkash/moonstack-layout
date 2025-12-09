@@ -4,11 +4,14 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
-  output:"export",
-  distDir:"dist",
-  eslint:{
-    ignoreDuringBuilds:true
-  }
+  output: "export",
+  distDir: "dist",
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default withNextVideo(nextConfig);

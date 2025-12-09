@@ -1,25 +1,25 @@
 import { PageData } from "@/types/web-development-data-type";
-import backgroundImage from "../../../../../public/assets/website-development-images/wordpress-bg.webp";
-import androidIcon from "../../../../../public/assets/android-icon.svg";
-import iosIcon from "../../../../../public/assets/ios-icon.svg";
-import reactIcon from "../../../../../public/assets/react-icon.svg";
-import pwaIcon from "../../../../../public/assets/pwa-icon.svg";
-import SliderOne from "../../../../../public/assets/sliderOne.webp";
-import SliderTwo from "../../../../../public/assets/sliderTwo.webp";
-import SliderThree from "../../../../../public/assets/SliderThree.webp";
-import SliderFour from "../../../../../public/assets/sliderFour.webp";
-import SliderFive from "../../../../../public/assets/SliderFive.webp";
-import flutterIcon from "../../../../../public/assets/flutter-icon.svg";
-import swiftIcon from "../../../../../public/assets/swift-icon.svg";
-import managementImg from "../../../../../public/assets/website-development-images/wordpress-hero.webp";
-import figmaIcon from "../../../../../public/assets/figma-icon.svg";
-import managmentIconOne from "../../../../../public/assets/app-development-images/managment-icon-one.svg";
-import managmentIconTwo from "../../../../../public/assets/app-development-images/managment-icon-two.svg";
-import managmentIconThree from "../../../../../public/assets/app-development-images/managment-icon-three.svg";
-import managmentIconFour from "../../../../../public/assets/app-development-images/managment-icon-four.svg";
-import managmentIconFive from "../../../../../public/assets/app-development-images/managment-icon-five.svg";
-import managmentIconSix from "../../../../../public/assets/app-development-images/managment-icon-six.svg";
-import bannerImg from "../../../../../public/assets/website-development-images/wordpress-banner.webp";
+import backgroundImage from "../../../public/assets/website-development-images/web-designing-bg-img.webp";
+import androidIcon from "../../../public/assets/android-icon.svg";
+import iosIcon from "../../../public/assets/ios-icon.svg";
+import reactIcon from "../../../public/assets/react-icon.svg";
+import pwaIcon from "../../../public/assets/pwa-icon.svg";
+import SliderOne from "../../../public/assets/sliderOne.webp";
+import SliderTwo from "../../../public/assets/sliderTwo.webp";
+import SliderThree from "../../../public/assets/SliderThree.webp";
+import SliderFour from "../../../public/assets/sliderFour.webp";
+import SliderFive from "../../../public/assets/SliderFive.webp";
+import flutterIcon from "../../../public/assets/flutter-icon.svg";
+import swiftIcon from "../../../public/assets/swift-icon.svg";
+import managementImg from "../../../public/assets/website-development-images/wordpress-hero.webp";
+import figmaIcon from "../../../public/assets/figma-icon.svg";
+import managmentIconOne from "../../../public/assets/app-development-images/managment-icon-one.svg";
+import managmentIconTwo from "../../../public/assets/app-development-images/managment-icon-two.svg";
+import managmentIconThree from "../../../public/assets/app-development-images/managment-icon-three.svg";
+import managmentIconFour from "../../../public/assets/app-development-images/managment-icon-four.svg";
+import managmentIconFive from "../../../public/assets/app-development-images/managment-icon-five.svg";
+import managmentIconSix from "../../../public/assets/app-development-images/managment-icon-six.svg";
+import bannerImg from "../../../public/assets/website-development-images/wordpress-banner.webp";
 
 export const wordPress: PageData = {
   hero: {

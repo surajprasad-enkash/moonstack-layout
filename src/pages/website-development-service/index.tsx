@@ -9,7 +9,7 @@ import {
   slides,
   utilisArr,
   workflowItems,
-} from "./data";
+} from "../../constants/website-development/data";
 
 //component
 import ReusableUtilizeSection from "@/components/Sections/UtilizeSection/UtilizeSection";

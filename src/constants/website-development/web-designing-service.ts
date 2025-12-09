@@ -1,26 +1,26 @@
 import { PageData } from "@/types/web-development-data-type";
 
-import managmentIconOne from "../../../../../public/assets/app-development-images/managment-icon-one.svg";
-import androidIcon from "../../../../../public/assets/figma-icon.svg";
-import iosIcon from "../../../../../public/assets/adobe-xd.svg";
-import reactIcon from "../../../../../public/assets/photoshop-icon.svg";
-import pwaIcon from "../../../../../public/assets/framer-icon.svg";
-import SliderOne from "../../../../../public/assets/sliderOne.webp";
-import SliderTwo from "../../../../../public/assets/sliderTwo.webp";
-import SliderThree from "../../../../../public/assets/SliderThree.webp";
-import SliderFour from "../../../../../public/assets/sliderFour.webp";
-import SliderFive from "../../../../../public/assets/SliderFive.webp";
-import flutterIcon from "../../../../../public/assets/iullustrator.svg";
-import swiftIcon from "../../../../../public/assets/swift-icon.svg";
-import websiteBgImg from "../../../../../public/assets/website-development-images/web-designing-bg-img.webp";
-import websiteHeroImg from "../../../../../public/assets/website-development-images/web-designing-hero.webp";
-import pwaIconOne from "../../../../../public/assets/app-development-images/pwa-icon-one.svg";
-import pwaIconTwo from "../../../../../public/assets/app-development-images/pwa-icon-two.svg";
-import pwaIconThree from "../../../../../public/assets/app-development-images/pwa-icon-three.svg";
-import pwaIconFour from "../../../../../public/assets/app-development-images/pwa-icon-four.svg";
-import pwaIconFive from "../../../../../public/assets/app-development-images/pwa-icon-five.svg";
-import pwaIconSix from "../../../../../public/assets/app-development-images/pwa-icon-six.svg";
-import bannerImg from "../../../../../public/assets/e-commerce-hire.webp";
+import managmentIconOne from "../../../public/assets/app-development-images/managment-icon-one.svg";
+import androidIcon from "../../../public/assets/figma-icon.svg";
+import iosIcon from "../../../public/assets/adobe-xd.svg";
+import reactIcon from "../../../public/assets/photoshop-icon.svg";
+import pwaIcon from "../../../public/assets/framer-icon.svg";
+import SliderOne from "../../../public/assets/sliderOne.webp";
+import SliderTwo from "../../../public/assets/sliderTwo.webp";
+import SliderThree from "../../../public/assets/SliderThree.webp";
+import SliderFour from "../../../public/assets/sliderFour.webp";
+import SliderFive from "../../../public/assets/SliderFive.webp";
+import flutterIcon from "../../../public/assets/iullustrator.svg";
+import swiftIcon from "../../../public/assets/swift-icon.svg";
+import websiteBgImg from "../../../public/assets/website-development-images/web-designing-bg-img.webp";
+import websiteHeroImg from "../../../public/assets/website-development-images/web-designing-hero.webp";
+import pwaIconOne from "../../../public/assets/app-development-images/pwa-icon-one.svg";
+import pwaIconTwo from "../../../public/assets/app-development-images/pwa-icon-two.svg";
+import pwaIconThree from "../../../public/assets/app-development-images/pwa-icon-three.svg";
+import pwaIconFour from "../../../public/assets/app-development-images/pwa-icon-four.svg";
+import pwaIconFive from "../../../public/assets/app-development-images/pwa-icon-five.svg";
+import pwaIconSix from "../../../public/assets/app-development-images/pwa-icon-six.svg";
+import bannerImg from "../../../public/assets/e-commerce-hire.webp";
 
 export const webDesigning: PageData = {
   hero: {
