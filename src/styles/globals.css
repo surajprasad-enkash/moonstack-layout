@@ -153,6 +153,11 @@ padding: 10px 20px;
   border-radius: 10px;
   padding: 10px 20px;
 }
+.pageFooter{
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
 
 .menu-list .subMenu .subMenuInner {
   padding: 40px;
@@ -160,7 +165,6 @@ padding: 10px 20px;
   background-position: bottom right;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #009936;
 }
 
 .menu-list .subMenu .subMenuInner .submenu-list {

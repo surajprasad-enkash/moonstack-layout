@@ -1,6 +1,6 @@
 "use client";
 import { FC } from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { FiClock } from "react-icons/fi";
 import { MdLocationPin } from "react-icons/md";
 import { BsPersonWorkspace } from "react-icons/bs";
@@ -18,14 +18,14 @@ interface LatestOpportunityProps {
   heading: string;
   highlighted: string;
   description: string;
-  jobs: Job[];
+  jobs?: Job[]; // <-- optional
 }
 
 const LatestOpportunity: FC<LatestOpportunityProps> = ({
   heading,
   highlighted,
   description,
-  jobs,
+  jobs = [], // <-- DEFAULT VALUE FIX
 }) => {
   return (
     <section className="w-full bg-black text-white">
@@ -42,7 +42,7 @@ const LatestOpportunity: FC<LatestOpportunityProps> = ({
         </div>
 
         <div className="flex flex-col gap-6">
-          {jobs.map((job, index) => (
+          {(jobs ?? []).map((job, index) => (
             <div
               key={index}
               className="flex items-center justify-between rounded-xl border border-[#12391e] bg-[#0d1a12] p-6 shadow-lg md:p-8"
@@ -55,13 +55,16 @@ const LatestOpportunity: FC<LatestOpportunityProps> = ({
                     <FiClock />
                     {job.posted}
                   </div>
+
                   <hr className="h-3 w-[1px] bg-white" />
+
                   <div className="flex items-center gap-3">
-                    {" "}
                     <MdLocationPin />
                     {job.location}
                   </div>
+
                   <hr className="h-3 w-[1px] bg-white" />
+
                   <div className="flex items-center gap-3">
                     <BsPersonWorkspace />
                     {job.type}
@@ -77,7 +80,12 @@ const LatestOpportunity: FC<LatestOpportunityProps> = ({
 
               <div className="hidden md:block">
                 <div className="flex h-36 w-36 items-center justify-center">
-                  <Image src={job.image} alt={job.type} />
+                  <Image
+                    src={job.image}
+                    alt={job.type}
+                    width={144}
+                    height={144}
+                  />
                 </div>
               </div>
             </div>

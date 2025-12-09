@@ -1,23 +1,23 @@
 import { PageData } from "@/types/web-development-data-type";
 
-import managmentIconOne from "../../../../../public/assets/app-development-images/managment-icon-one.svg";
-import androidIcon from "../../../../../public/assets/android-icon.svg";
-import iosIcon from "../../../../../public/assets/ios-icon.svg";
-import reactIcon from "../../../../../public/assets/react-icon.svg";
-import SliderOne from "../../../../../public/assets/sliderOne.webp";
-import SliderTwo from "../../../../../public/assets/sliderTwo.webp";
-import SliderThree from "../../../../../public/assets/SliderThree.webp";
-import SliderFour from "../../../../../public/assets/sliderFour.webp";
-import SliderFive from "../../../../../public/assets/SliderFive.webp";
-import ecommerceImg from "../../../../../public/assets/e-commerce-hero.webp";
-import ecommerceBgImg from "../../../../../public/assets/e-commerce-bg.webp";
-import appleIcon from "../../../../../public/assets/app-development-images/apple-icon.svg";
-import mobileIconcon from "../../../../../public/assets/app-development-images/mobile-icon.svg";
-import developmentIcon from "../../../../../public/assets/app-development-images/development-icon.svg";
-import integrationIcon from "../../../../../public/assets/app-development-images/integration-icon.svg";
-import debbugingIcon from "../../../../../public/assets/app-development-images/debbuging-icon.svg";
-import appStoreIcon from "../../../../../public/assets/app-development-images/app-store.svg";
-import bannerImg from "../../../../../public/assets/e-commerce-hire.webp";
+import managmentIconOne from "../../../public/assets/app-development-images/managment-icon-one.svg";
+import androidIcon from "../../../public/assets/android-icon.svg";
+import iosIcon from "../../../public/assets/ios-icon.svg";
+import reactIcon from "../../../public/assets/react-icon.svg";
+import SliderOne from "../../../public/assets/sliderOne.webp";
+import SliderTwo from "../../../public/assets/sliderTwo.webp";
+import SliderThree from "../../../public/assets/SliderThree.webp";
+import SliderFour from "../../../public/assets/sliderFour.webp";
+import SliderFive from "../../../public/assets/SliderFive.webp";
+import ecommerceImg from "../../../public/assets/e-commerce-hero.webp";
+import ecommerceBgImg from "../../../public/assets/e-commerce-bg.webp";
+import appleIcon from "../../../public/assets/app-development-images/apple-icon.svg";
+import mobileIconcon from "../../../public/assets/app-development-images/mobile-icon.svg";
+import developmentIcon from "../../../public/assets/app-development-images/development-icon.svg";
+import integrationIcon from "../../../public/assets/app-development-images/integration-icon.svg";
+import debbugingIcon from "../../../public/assets/app-development-images/debbuging-icon.svg";
+import appStoreIcon from "../../../public/assets/app-development-images/app-store.svg";
+import bannerImg from "../../../public/assets/e-commerce-hire.webp";
 export const ecommerce: PageData = {
   hero: {
     title: [

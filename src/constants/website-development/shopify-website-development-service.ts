@@ -1,26 +1,26 @@
 import { PageData } from "@/types/web-development-data-type";
-import managementImg from "../../../../../public/assets/website-development-images/shopify-hero.webp";
-import backgroundImage from "../../../../../public/assets/website-development-images/shopify-bg.webp";
-import reactIcon from "../../../../../public/assets/react-icon.svg";
-import SliderOne from "../../../../../public/assets/sliderOne.webp";
-import SliderTwo from "../../../../../public/assets/sliderTwo.webp";
-import SliderThree from "../../../../../public/assets/SliderThree.webp";
-import SliderFour from "../../../../../public/assets/sliderFour.webp";
-import SliderFive from "../../../../../public/assets/SliderFive.webp";
-import managmentIconOne from "../../../../../public/assets/app-development-images/managment-icon-one.svg";
-import managmentIconTwo from "../../../../../public/assets/app-development-images/managment-icon-two.svg";
-import managmentIconThree from "../../../../../public/assets/app-development-images/managment-icon-three.svg";
-import managmentIconFour from "../../../../../public/assets/app-development-images/managment-icon-four.svg";
-import managmentIconFive from "../../../../../public/assets/app-development-images/managment-icon-five.svg";
-import managmentIconSix from "../../../../../public/assets/app-development-images/managment-icon-six.svg";
-import appleIcon from "../../../../../public/assets/app-development-images/apple-icon.svg";
-import mobileIconcon from "../../../../../public/assets/app-development-images/mobile-icon.svg";
-import developmentIcon from "../../../../../public/assets/app-development-images/development-icon.svg";
-import integrationIcon from "../../../../../public/assets/app-development-images/integration-icon.svg";
-import debbugingIcon from "../../../../../public/assets/app-development-images/debbuging-icon.svg";
-import appStoreIcon from "../../../../../public/assets/app-development-images/app-store.svg";
-import figmaIcon from "../../../../../public/assets/figma-icon.svg";
-import bannerImg from "../../../../../public/assets/website-development-images/shopify-banner.webp";
+import managementImg from "../../../public/assets/website-development-images/shopify-hero.webp";
+import backgroundImage from "../../../public/assets/website-development-images/shopify-bg.webp";
+import reactIcon from "../../../public/assets/react-icon.svg";
+import SliderOne from "../../../public/assets/sliderOne.webp";
+import SliderTwo from "../../../public/assets/sliderTwo.webp";
+import SliderThree from "../../../public/assets/SliderThree.webp";
+import SliderFour from "../../../public/assets/sliderFour.webp";
+import SliderFive from "../../../public/assets/SliderFive.webp";
+import managmentIconOne from "../../../public/assets/app-development-images/managment-icon-one.svg";
+import managmentIconTwo from "../../../public/assets/app-development-images/managment-icon-two.svg";
+import managmentIconThree from "../../../public/assets/app-development-images/managment-icon-three.svg";
+import managmentIconFour from "../../../public/assets/app-development-images/managment-icon-four.svg";
+import managmentIconFive from "../../../public/assets/app-development-images/managment-icon-five.svg";
+import managmentIconSix from "../../../public/assets/app-development-images/managment-icon-six.svg";
+import appleIcon from "../../../public/assets/app-development-images/apple-icon.svg";
+import mobileIconcon from "../../../public/assets/app-development-images/mobile-icon.svg";
+import developmentIcon from "../../../public/assets/app-development-images/development-icon.svg";
+import integrationIcon from "../../../public/assets/app-development-images/integration-icon.svg";
+import debbugingIcon from "../../../public/assets/app-development-images/debbuging-icon.svg";
+import appStoreIcon from "../../../public/assets/app-development-images/app-store.svg";
+import figmaIcon from "../../../public/assets/figma-icon.svg";
+import bannerImg from "../../../public/assets/website-development-images/shopify-banner.webp";
 
 export const shopify: PageData = {
   hero: {
@@ -44,7 +44,7 @@ export const shopify: PageData = {
     backgroundImage: backgroundImage,
     buttonText: "Launch your Shopify store now",
   },
-    seo: {
+  seo: {
     title: "Shopify Website Development Company India & USA | Moonstack",
     description:
       "Looking to build and scale a Shopify store? Moonstack develops custom Shopify themes, apps, and optimized funnels to increase your online sales. Call Now!",

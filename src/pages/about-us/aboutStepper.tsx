@@ -106,7 +106,7 @@ export default function AboutStepper({
           ></div>
 
           <div className="w-full space-y-20 pt-10">
-            {steps.map((item, index) => {
+            {(steps || []).map((item, index) => {
               const isActive = index + 1 <= activeStep;
 
               return (

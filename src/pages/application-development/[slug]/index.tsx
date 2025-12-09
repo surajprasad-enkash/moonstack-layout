@@ -16,7 +16,7 @@ import importance from "../../../../public/assets/backend-importance.webp";
 import greenTick from "../../../../public/assets/green-tick-icon.svg";
 
 //data
-import { pagesData } from "./data";
+import { pagesData } from "../../../constants/application-development/data";
 import Meta from "@/components/MetaData";
 
 export default function ApplicationPage() {

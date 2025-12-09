@@ -4,7 +4,11 @@ import SolutionsComponent from "@/components/BackendDeveloper/SolutionsComponent
 import FAQ from "@/components/Homepage/FAQ";
 import importance from "../../../../public/assets/e-commerce-importance.webp";
 import greenTick from "../../../../public/assets/green-tick-icon.svg";
-import { pagesData, pagesKeys, TPageKeys } from "./data";
+import {
+  pagesData,
+  pagesKeys,
+  TPageKeys,
+} from "../../../constants/website-development";
 import ImportanceSection from "@/components/AppDevelopment/ImportanceComponent";
 import WebsiteCategoryBanner from "@/components/Website/WebsiteCategoryBanner";
 import ProcessSection from "@/components/Sections/ProcessSection/ProcessSection";

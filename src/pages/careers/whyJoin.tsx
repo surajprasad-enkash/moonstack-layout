@@ -9,42 +9,41 @@ interface Benefit {
 }
 
 interface WhyJoinProps {
-  heading: { text: string; color?: string; className?: string }[];
-
-  description: { text: string; color?: string; className?: string }[];
-  benefits: Benefit[];
+  heading?: { text: string; color?: string; className?: string }[];
+  description?: { text: string; color?: string; className?: string }[];
+  benefits?: Benefit[];
 }
 
 const WhyJoinSection: FC<WhyJoinProps> = ({
-  heading,
-
-  description,
-  benefits,
+  heading = [], // DEFAULT VALUE
+  description = [], // DEFAULT VALUE
+  benefits = [], // DEFAULT VALUE
 }) => {
   return (
     <section className="w-full bg-black text-white">
       <div className="container mx-auto px-4 py-12 sm:px-10 md:py-20">
+        {/* TOP SECTION */}
         <div className="mb-12 flex flex-col items-start justify-between gap-4 md:flex-row">
           <div className="w-1/2">
-            {" "}
             <Heading
               headingTag="h3"
               className="pb-4 font-semibold text-white"
-              content={heading}
+              content={heading ?? []} // SAFE PASS
             />
           </div>
+
           <div className="w-1/2">
             <Heading
               headingTag="p"
               className="text-light-grey pb-6"
-              content={description}
+              content={description ?? []} // SAFE PASS
             />
           </div>
         </div>
 
-        {/* Cards Grid */}
+        {/* BENEFITS GRID */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-          {benefits.map((item, index) => (
+          {(benefits ?? []).map((item, index) => (
             <div
               key={index}
               className="flex items-start justify-between rounded-xl border border-[#12391e] bg-[#0a170e] p-6 shadow-lg"

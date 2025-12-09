@@ -17,6 +17,8 @@ import google from "../../public/assets/google.png";
 import clutch from "../../public/assets/clutch.png";
 import iso from "../../public/assets/iso.png";
 
+import footerBg from '../../public/assets/footerbg.svg';
+
 interface FooterRefs {
   footerCareer: React.RefObject<HTMLDivElement>;
   terms: React.RefObject<HTMLDivElement>;
@@ -36,7 +38,7 @@ const Footer: React.FC<{ refs: FooterRefs }> = ({ refs }) => {
 
   return (
      
-    <footer className="bg-black px-5 py-10 text-white md:px-8">
+    <footer className="bg-black px-5 py-10 text-white md:px-8 pageFooter" style={{backgroundImage:`url(${footerBg.src})`}}>
       <div className="container mx-auto w-full">
         {/* Top Row */}
         <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">

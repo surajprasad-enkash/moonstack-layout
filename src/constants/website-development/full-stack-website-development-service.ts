@@ -1,27 +1,27 @@
 import { PageData } from "@/types/web-development-data-type";
-import managmentIconOne from "../../../../../public/assets/app-development-images/managment-icon-one.svg";
-import androidIcon from "../../../../../public/assets/android-icon.svg";
-import iosIcon from "../../../../../public/assets/next-icon.svg";
-import reactIcon from "../../../../../public/assets/react-icon.svg";
-import nodeIcon from "../../../../../public/assets/node-icon.svg";
-import pwaIcon from "../../../../../public/assets/docker-icon.svg";
-import SliderOne from "../../../../../public/assets/sliderOne.webp";
-import SliderTwo from "../../../../../public/assets/sliderTwo.webp";
-import SliderThree from "../../../../../public/assets/SliderThree.webp";
-import SliderFour from "../../../../../public/assets/sliderFour.webp";
-import SliderFive from "../../../../../public/assets/SliderFive.webp";
-import flutterIcon from "../../../../../public/assets/python-icon.svg";
-import swiftIcon from "../../../../../public/assets/aws-icon.svg";
-import nativeIconOne from "../../../../../public/assets/app-development-images/native-icon-one.svg";
-import nativeIconTwo from "../../../../../public/assets/app-development-images/native-icon-two.svg";
-import nativeIconThree from "../../../../../public/assets/app-development-images/native-icon-three.png";
-import nativeIconFour from "../../../../../public/assets/app-development-images/native-icon-four.svg";
-import nativeIconFive from "../../../../../public/assets/app-development-images/native-icon-five.svg";
-import nativeIconSix from "../../../../../public/assets/app-development-images/native-icon-six.svg";
-import figmaIcon from "../../../../../public/assets/figma-icon.svg";
-import hero from "../../../../../public/assets/website-development-images/fullstack-hero.webp";
-import bgImg from "../../../../../public/assets/website-development-images/fullstack-bg.webp";
-import bannerImg from "../../../../../public/assets/website-development-images/fullstackImg.webp";
+import managmentIconOne from "../../../public/assets/app-development-images/managment-icon-one.svg";
+import androidIcon from "../../../public/assets/android-icon.svg";
+import iosIcon from "../../../public/assets/next-icon.svg";
+import reactIcon from "../../../public/assets/react-icon.svg";
+import nodeIcon from "../../../public/assets/node-icon.svg";
+import pwaIcon from "../../../public/assets/docker-icon.svg";
+import SliderOne from "../../../public/assets/sliderOne.webp";
+import SliderTwo from "../../../public/assets/sliderTwo.webp";
+import SliderThree from "../../../public/assets/SliderThree.webp";
+import SliderFour from "../../../public/assets/sliderFour.webp";
+import SliderFive from "../../../public/assets/SliderFive.webp";
+import flutterIcon from "../../../public/assets/python-icon.svg";
+import swiftIcon from "../../../public/assets/aws-icon.svg";
+import nativeIconOne from "../../../public/assets/app-development-images/native-icon-one.svg";
+import nativeIconTwo from "../../../public/assets/app-development-images/native-icon-two.svg";
+import nativeIconThree from "../../../public/assets/app-development-images/native-icon-three.png";
+import nativeIconFour from "../../../public/assets/app-development-images/native-icon-four.svg";
+import nativeIconFive from "../../../public/assets/app-development-images/native-icon-five.svg";
+import nativeIconSix from "../../../public/assets/app-development-images/native-icon-six.svg";
+import figmaIcon from "../../../public/assets/figma-icon.svg";
+import hero from "../../../public/assets/website-development-images/fullstack-hero.webp";
+import bgImg from "../../../public/assets/website-development-images/fullstack-bg.webp";
+import bannerImg from "../../../public/assets/website-development-images/fullstackImg.webp";
 
 export const fullstack: PageData = {
   hero: {
@@ -45,16 +45,16 @@ export const fullstack: PageData = {
     backgroundImage: bgImg,
     buttonText: "Get your full stack development partner now ",
   },
-      seo: {
-      title: "Full-Stack Web Development Company India & USA | Moonstack",
-      description:
-        "Looking for a fullstack web development team in India? We handling frontend, backend, APIs, and cloud infrastructure under one roof. Book a product discovery call.",
-      keywords:
-        "full stack development company India, hire full stack developers India,  best full stack web development service India, affordable full stack developers India",
-      canonical:
-        "https://www.moonstack.com/website-development-service/full-stack-website-development-service",
-      ogImage: "/opengraph-image.png",
-    },
+  seo: {
+    title: "Full-Stack Web Development Company India & USA | Moonstack",
+    description:
+      "Looking for a fullstack web development team in India? We handling frontend, backend, APIs, and cloud infrastructure under one roof. Book a product discovery call.",
+    keywords:
+      "full stack development company India, hire full stack developers India,  best full stack web development service India, affordable full stack developers India",
+    canonical:
+      "https://www.moonstack.com/website-development-service/full-stack-website-development-service",
+    ogImage: "/opengraph-image.png",
+  },
   pointsTitle: [
     {
       text: "Leading Full Stack Development Company   ",

@@ -28,7 +28,6 @@ export const jobsData = [
   },
 ];
 
-
 export const benefitsData = [
   {
     title: "Balanced work",
@@ -56,4 +55,6 @@ export const benefitsData = [
   },
 ];
 
-export default {}
+// ✅ FIX: Export a dummy React component instead of {}
+const CareersDataPage = () => null;
+export default CareersDataPage;
