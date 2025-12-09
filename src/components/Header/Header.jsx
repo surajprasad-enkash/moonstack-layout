@@ -7,6 +7,39 @@ import logo from "../../../public/assets/logo-white.png";
 import magaMenuBg from '../../../public/assets/header/magamenu-bg.svg'
 import submenuBg from '../../../public/assets/header/submenu-bg.svg'
 
+// application development icon
+import appDevIcon1 from '../../../public/assets/header/mobile-application-development.svg';
+import appDevIcon2 from '../../../public/assets/header/andriod-development.svg';
+import appDevIcon3 from '../../../public/assets/header/logo-pwa-svgrepo-com.svg';
+import appDevIcon4 from '../../../public/assets/header/react-svgrepo-com.svg';
+import appDevIcon5 from '../../../public/assets/header/Ios.svg';
+import appDevIcon6 from '../../../public/assets/header/mobile-app-developing.svg';
+
+// web development icon
+import webDevIcon1 from '../../../public/assets/header/web-development-svgrepo-com (2).svg';
+import webDevIcon2 from '../../../public/assets/header/shopify-svgrepo-com.svg';
+import webDevIcon3 from '../../../public/assets/header/Frame 427324601.svg';
+import webDevIcon4 from '../../../public/assets/header/shop-sell-commerce-store-svgrepo-com.svg';
+import webDevIcon5 from '../../../public/assets/header/web-designer.svg';
+import webDevIcon6 from '../../../public/assets/header/wordpress-svgrepo-com.svg';
+
+// frontend development icon
+import frontDevIcon1 from '../../../public/assets/header/frontendIcon/angularjs.svg';
+import frontDevIcon2 from '../../../public/assets/header/frontendIcon/css3-svgrepo-com.svg';
+import frontDevIcon3 from '../../../public/assets/header/frontendIcon/vue-js-svgrepo-com.svg';
+import frontDevIcon4 from '../../../public/assets/header/frontendIcon/html-124-svgrepo-com.svg';
+import frontDevIcon5 from '../../../public/assets/header/frontendIcon/javascript-fill-svgrepo-com.svg';
+import frontDevIcon6 from '../../../public/assets/header/frontendIcon/react-svgrepo-com.svg';
+
+// Backend development icon
+import backendicon1 from '../../../public/assets/header/backend/dotnet.svg';
+import backendicon2 from '../../../public/assets/header/backend/nodejs.svg';
+import backendicon3 from '../../../public/assets/header/backend/laravel.svg';
+import backendicon4 from '../../../public/assets/header/backend/cakephp.svg';
+import backendicon5 from '../../../public/assets/header/backend/codeigniter.svg';
+import backendicon6 from '../../../public/assets/header/backend/python.svg';
+import backendicon7 from '../../../public/assets/header/backend/java-filled.svg';
+import backendicon8 from '../../../public/assets/header/backend/php.svg';
 export default function Header() {
     const pathname = usePathname(); 
     const [openMenu, setOpenMenu] = useState(null);
@@ -37,41 +70,40 @@ export default function Header() {
     // MENU DATA
     const menuData = {
         "Application Development": [
-            { title: "Android App Development", icon: webDev.src, url: '/' },
-            { title: "iOS App Development", icon: webDev.src, url: '/' },
-            { title: "React Native App Development", icon: webDev.src, url: '/' },
-            { title: "App Maintenance service", icon: webDev.src, url: '/' },
-            { title: "PWA Development", icon: webDev.src, url: '/' },
+            { title: "Mobile App Development", icon: appDevIcon1.src, url: '/' },
+            { title: "Android App Development", icon: appDevIcon2.src, url: '/' },
+            { title: "PWA Development", icon: appDevIcon3.src, url: '/' },
+            { title: "React Native  Development", icon: appDevIcon4.src, url: '/' },
+            { title: "iOS App Development", icon: appDevIcon5.src, url: '/' },
+            { title: "Mobile App Maintenance ", icon: appDevIcon6.src, url: '/' },
         ],
         "Web Development": [
-            { title: "Website Development", icon: webDev.src, url: '/' },
-            { title: "Custom Web Apps", icon: webDev.src, url: '/' },
-            { title: "Full Stack Development", icon: webDev.src, url: '/' },
-            { title: "Full Stack Development", icon: webDev.src, url: '/' },
-            { title: "Full Stack Development", icon: webDev.src, url: '/' },
-            { title: "Full Stack Development", icon: webDev.src, url: '/' },
-            { title: "Full Stack Development", icon: webDev.src, url: '/' },
-            { title: "Full Stack Development", icon: webDev.src, url: '/' },
+            { title: "Website Development", icon: webDevIcon1.src, url: '/' },
+            { title: "Shopify Development", icon: webDevIcon2.src, url: '/' },
+            { title: "Laravel website", icon: webDevIcon3.src, url: '/' },
+            { title: "eCommerce website", icon: webDevIcon4.src, url: '/' },
+            { title: "Web Designing", icon: webDevIcon5.src, url: '/' },
+            { title: "WordPress Development", icon: webDevIcon6.src, url: '/' },
+            { title: "Full Stack Development", icon: webDevIcon1.src, url: '/' },
+            { title: "CRM Development", icon: webDevIcon1.src, url: '/' },
         ],
         "Frontend Development": [
-            { title: "React.js Development", icon: webDev.src, url: '/' },
-            { title: "Next.js Development", icon: webDev.src, url: '/' },
-            { title: "Vue.js Development", icon: webDev.src, url: '/' },
-            { title: "Vue.js Development", icon: webDev.src, url: '/' },
-            { title: "Vue.js Development", icon: webDev.src, url: '/' },
-            { title: "Vue.js Development", icon: webDev.src, url: '/' },
-            { title: "Vue.js Development", icon: webDev.src, url: '/' },
-            { title: "Vue.js Development", icon: webDev.src, url: '/' },
+            { title: "AngularJs", icon: frontDevIcon1.src, url: '/' },
+            { title: "CSS3", icon: frontDevIcon2.src, url: '/' },
+            { title: "Vue.js", icon: frontDevIcon3.src, url: '/' },
+            { title: "HTML5", icon: frontDevIcon4.src, url: '/' },
+            { title: "JavaScript", icon: frontDevIcon5.src, url: '/' },
+            { title: "ReactJS", icon: frontDevIcon6.src, url: '/' },
         ],
         "Backend Development": [
-            { title: "Node.js Development", icon: webDev.src, url: '/' },
-            { title: "Laravel Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
+            { title: ".NET", icon: backendicon1.src, url: '/' },
+            { title: "NodeJS", icon: backendicon2.src, url: '/' },
+            { title: "Laravel", icon: backendicon3.src, url: '/' },
+            { title: "CakePHP", icon: backendicon4.src, url: '/' },
+            { title: "CodeIgniter", icon: backendicon5.src, url: '/' },
+            { title: "Python", icon: backendicon6.src, url: '/' },
+            { title: "Java", icon: backendicon7.src, url: '/' },
+            { title: "PHP", icon: backendicon8.src, url: '/' },
         ],
         "Search Engine Optimization": [
             { title: "Node.js Development", icon: webDev.src, url: '/' },
@@ -185,7 +217,7 @@ export default function Header() {
                                         </ul>
 
                                         {/* RIGHT ITEMS */}
-                                        <div className="flex justify-between gap-4 flex-wrap h-[max-content] w-[100%] ps-5">
+                                        <div className="flex gap-4 flex-wrap h-[max-content] w-[100%] ps-5">
                                             {menuData[activeCategory].map((item, i) => (
                                                 <div key={i} className="text-center submenuList w-[calc(25%-12px)] h-[150px]">
                                                     <Link href={item.url}>

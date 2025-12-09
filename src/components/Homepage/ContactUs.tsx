@@ -200,9 +200,9 @@ const ContactUs = () => {
             What Our Customers Say
           </div>
           <Slider ref={sliderRef} {...settings}>
-            {reviewsArr.map((review) => (
+            {reviewsArr.map((review,index) => (
               // eslint-disable-next-line react/jsx-key
-              <div>
+              <div key={index}>
                 <div className="poppins-regular font-18 leading-[200%]">
                   {review.desc}
                 </div>

@@ -52,9 +52,9 @@ const OurServices = () => {
               app development solutions. Here’s a look at all of our services.
             </div>
           </div>
-          {servicesArr.map((li) => (
+          {servicesArr.map((li,i) => (
             // eslint-disable-next-line react/jsx-key
-            <div className="group items-between border-primary-400 grid w-full rounded-3xl border-b-2 bg-gradient-to-b from-transparent to-transparent p-8 transition duration-400 hover:from-transparent hover:to-[#0C4A0C] md:w-[32%] lg:w-[32%] xl:w-[32%]">
+            <div key={i} className="group items-between border-primary-400 grid w-full rounded-3xl border-b-2 bg-gradient-to-b from-transparent to-transparent p-8 transition duration-400 hover:from-transparent hover:to-[#0C4A0C] md:w-[32%] lg:w-[32%] xl:w-[32%]">
               <div className="mb-4 flex justify-between">
                 <Image src={li.image} alt="" className="h-auto w-10" />
                 <Image

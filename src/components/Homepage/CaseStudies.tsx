@@ -132,7 +132,7 @@ const CaseStudies = () => {
             />
             <Slider ref={sliderRef} {...settings} className="w-[80%]">
               {dataArr.map((review, i) => (
-                <div className="text-center">
+                <div className="text-center" key={i}>
                   <div
                     className={`poppins-medium font-18 leading-[200%] ${
                       i == currentSlide && "text-[#00EA52]"
@@ -156,7 +156,7 @@ const CaseStudies = () => {
               <div>
                 {i == currentSlide && (
                   <>
-                    <div className="flex justify-center">
+                    <div className="flex justify-center" key={i}>
                       <svg
                         width="20"
                         height="20"
@@ -190,6 +190,7 @@ const CaseStudies = () => {
                         <Image
                           src={user}
                           alt="image"
+                          key={1}
                           className={`ml-[-10] h-auto w-[35] rounded-3xl border-2 border-black ${
                             isCenter && "z-999"
                           }`}

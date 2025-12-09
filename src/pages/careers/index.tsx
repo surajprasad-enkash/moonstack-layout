@@ -8,7 +8,7 @@ import WhyJoinSection from "./whyJoin";
 import LatestOpportunity from "./latestOpp";
 
 //data
-import { benefitsData, jobsData } from "../../constants/careers";
+import { benefitsData, jobsData } from "./data";
 
 //utils
 import bannerImg from "../../../public/assets/website-development-images/crm-banner.webp";
