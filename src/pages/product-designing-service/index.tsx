@@ -12,7 +12,7 @@ import heroImg from "../../../public/assets/product-designing-service/banner-rig
 import {
   ServicesContentSection as ServicesContent,
   accordionData,
-} from "./data";
+} from "../../constants/product-designing";
 
 import FAQ from "@/components/Homepage/FAQ";
 import EdgeToolsSection from "@/components/Sections/CloudServices/EdgeToolsSection/EdgeToolsSection";

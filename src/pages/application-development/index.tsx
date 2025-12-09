@@ -19,7 +19,7 @@ import {
   servicesArr,
   slides,
   utilisArr,
-} from "./data";
+} from "../../constants/application-development";
 
 //utils
 import importance from "../../../public/assets/backend-importance.webp";

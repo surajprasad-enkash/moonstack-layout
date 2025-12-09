@@ -10,7 +10,7 @@ import TechnologyComponent from "@/components/Homepage/TechnologyComponent";
 import ContactUs from "@/components/Homepage/ContactUs";
 import CaseStudies from "@/components/Homepage/CaseStudies";
 
-import { accordionData, infoBoxes } from "./data";
+import { accordionData, infoBoxes } from "../constants/home";
 import Meta from "@/components/MetaData";
 
 export default function Home() {

@@ -3,7 +3,7 @@ import Heading from "../Heading/Heading";
 import { StaticImageData } from "next/image";
 import BenifitsCard from "../BenifitsCard/BenifitsCard";
 import InfoCard from "../InfoCard/InfoCard";
-import { infoData } from "@/pages/backend-developer/data";
+import { infoData } from "@/constants/backend-developer";
 
 interface FeatureItem {
   imgSrc: StaticImageData | string;

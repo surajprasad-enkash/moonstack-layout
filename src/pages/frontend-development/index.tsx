@@ -1,9 +1,5 @@
 import Layout from "@/components/Layout";
 import icon1 from "../../../public/assets/cloud-services/TechnicalImplementationIcon.svg";
-import icon2 from "../../../public/assets/cloud-services/TechnicalImplementationIcon.svg";
-import icon3 from "../../../public/assets/cloud-services/TechnicalImplementationIcon.svg";
-import icon4 from "../../../public/assets/cloud-services/TechnicalImplementationIcon.svg";
-import icon5 from "../../../public/assets/cloud-services/TechnicalImplementationIcon.svg";
 import React from "react";
 import BgImg from "../../../public/assets/cloud-services/banner-bg.png"; // Adjust the path as needed
 import heroImg from "../../../public/assets/cloud-services/banner-right-4.webp"; // Adjust the path as needed
@@ -11,12 +7,10 @@ import heroImg from "../../../public/assets/cloud-services/banner-right-4.webp";
 import {
   ServicesContentSection as ServicesContent,
   accordionData,
-} from "./data";
+} from "../../constants/frontend-development";
 
-import EdgeToolsSection from "@/components/Sections/CloudServices/EdgeToolsSection/EdgeToolsSection";
-import CloudServicesSection from "@/components/Sections/CloudServices/CloudServicesSection/CloudServicesSection";
+
 import CloudTimeline from "@/components/Sections/CloudServices/CloudTimeline/CloudTimeline";
-import ServicesContentSection from "@/components/Sections/CloudServices/ServicesContentSection/ServicesContentSection";
 import HeroCloudSection from "@/components/Sections/CloudServices/BannerSection/BannerSection";
 import FAQSection from "@/components/Sections/FaqSection/FaqSection";
 import BenefitsSection from "@/components/Sections/BenefitsSection/BenefitsSection";

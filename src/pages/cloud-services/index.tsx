@@ -12,7 +12,7 @@ import heroImg from "../../../public/assets/cloud-services/banner-right-4.webp";
 import {
   ServicesContentSection as ServicesContent,
   accordionData,
-} from "./data";
+} from "../../constants/cloud-services";
 
 import EdgeToolsSection from "@/components/Sections/CloudServices/EdgeToolsSection/EdgeToolsSection";
 import CloudServicesSection from "@/components/Sections/CloudServices/CloudServicesSection/CloudServicesSection";

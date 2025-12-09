@@ -11,9 +11,9 @@ import {
   slides,
   stepperData,
   utilisArr,
-} from "./data";
+} from "../../constants/seo";
 import vector from "../../../public/assets/seo-services-vector.webp";
-import { servicesArr } from "@/pages/seo/data";
+import { servicesArr } from "@/constants/seo";
 import React from "react";
 import StepperComponent from "@/components/Seo/StepperComponent";
 import ReusableUtilizeSection from "@/components/Seo/UtilizeComponent";

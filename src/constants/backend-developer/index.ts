@@ -10,7 +10,6 @@ import SliderFour from "../../../public/assets/sliderFour.webp";
 import SliderFive from "../../../public/assets/SliderFive.webp";
 import html from "../../../public/assets/htmlWithoutBg.svg";
 import { IAccordionItem } from "@/components/Homepage/FAQ";
-import { Step } from "@/components/Seo/StepperComponent";
 
 interface IServiceArray {
   image: string;

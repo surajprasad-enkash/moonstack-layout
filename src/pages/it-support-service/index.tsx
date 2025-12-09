@@ -11,7 +11,7 @@ import heroImg from "../../../public/assets/it-support-service/banner-right-4.we
 import {
   ServicesContentSection as ServicesContent,
   accordionData,
-} from "./data";
+} from "../../constants/it-support-service";
 
 import FAQ from "@/components/Sections/FaqSection/FaqSection";
 import EdgeToolsSection from "@/components/Sections/CloudServices/EdgeToolsSection/EdgeToolsSection";

@@ -12,7 +12,7 @@ import {
   servicesArr,
   slides,
   utilisArr,
-} from "./data";
+} from "../../constants/backend-developer";
 import ImportanceComponent from "@/components/BackendDeveloper/ImportanceComponent";
 import Stepper from "@/components/StepperComponent/StepperComponent";
 import ReusableUtilizeSection from "@/components/Seo/UtilizeComponent";
