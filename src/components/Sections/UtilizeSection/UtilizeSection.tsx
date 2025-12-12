@@ -9,14 +9,14 @@ interface ICardItem {
   image: string | StaticImageData;
   title: string;
   desc: string;
-  category: string; // 👈 Add category to each item
+  category: string; 
 }
 
 interface UtilizeSectionProps {
   headingLines: { text: string; color?: string }[];
   subHeadingLines?: { text: string; color?: string }[];
   items: ICardItem[];
-  tabs: string[]; // 👈 Tab labels
+  tabs: string[]; 
   bgColor?: string;
   containerClass?: string;
   gridCols?: string;

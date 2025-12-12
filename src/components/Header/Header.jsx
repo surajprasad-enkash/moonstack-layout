@@ -62,30 +62,50 @@ export default function Header() {
 
     // CHECK IF COMPANY ANY INNER PAGE ACTIVE
     const isCompanyActive = () =>
-        pathname.startsWith("/about") ||
+        pathname.startsWith("/about-us") ||
         pathname.startsWith("/career") ||
         pathname.startsWith("/blogs") ||
         pathname.includes("company");
 
     // MENU DATA
     const menuData = {
-        "Application Development": [
-            { title: "Mobile App Development", icon: appDevIcon1.src, url: '/' },
-            { title: "Android App Development", icon: appDevIcon2.src, url: '/' },
-            { title: "PWA Development", icon: appDevIcon3.src, url: '/' },
-            { title: "React Native  Development", icon: appDevIcon4.src, url: '/' },
-            { title: "iOS App Development", icon: appDevIcon5.src, url: '/' },
-            { title: "Mobile App Maintenance ", icon: appDevIcon6.src, url: '/' },
-        ],
+ "Application Development": [
+  {
+    title: "Android App Development",
+    icon: webDev.src,
+    url: "/application-development/android-app-development-service",
+  },
+  {
+    title: "iOS App Development",
+    icon: webDev.src,
+    url: "/application-development/iOS-app-development-service",
+  },
+  {
+    title: "React Native App Development",
+    icon: webDev.src,
+    url: "/application-development/react-native-app-development-service",
+  },
+  {
+    title: "App Maintenance Service",
+    icon: webDev.src,
+    url: "/application-development/mobile-app-maintenance-service",
+  },
+  {
+    title: "PWA Development",
+    icon: webDev.src,
+    url: "/application-development/pwa-development-service",
+  },
+],
+
         "Web Development": [
-            { title: "Website Development", icon: webDevIcon1.src, url: '/' },
-            { title: "Shopify Development", icon: webDevIcon2.src, url: '/' },
-            { title: "Laravel website", icon: webDevIcon3.src, url: '/' },
-            { title: "eCommerce website", icon: webDevIcon4.src, url: '/' },
-            { title: "Web Designing", icon: webDevIcon5.src, url: '/' },
-            { title: "WordPress Development", icon: webDevIcon6.src, url: '/' },
-            { title: "Full Stack Development", icon: webDevIcon1.src, url: '/' },
-            { title: "CRM Development", icon: webDevIcon1.src, url: '/' },
+            { title: "Laravel Development ", icon: webDev.src, url: '/website-development-service/laravel-website-development-service' },
+            { title: "E-Commerce website Development", icon: webDev.src, url: '/website-development-service/e-commerce-website-development-service' },
+            { title: "Full Stack Development", icon: webDev.src, url: '/website-development-service/full-stack-website-development-service' },
+            { title: "Web Designing", icon: webDev.src, url: '/website-development-service/web-designing-service' },
+            { title: "Shopify Development", icon: webDev.src, url: '/website-development-service/shopify-website-development-service' },
+            { title: "CRM Development", icon: webDev.src, url: '/website-development-service/CRM-Development-service' },
+            { title: "WordPress Development", icon: webDev.src, url: '/website-development-service/wordPress-website-development-service' },
+        
         ],
         "Frontend Development": [
             { title: "AngularJs", icon: frontDevIcon1.src, url: '/' },
@@ -252,7 +272,7 @@ export default function Header() {
                                         className="space-y-2 z-50 sub-menu-list"
                                         style={{ backgroundImage: `url(${submenuBg.src})` }}
                                     >
-                                        <li><Link href="/about" className="sub-menu-item">About us</Link></li>
+                                        <li><Link href="/about-us" className="sub-menu-item">About us</Link></li>
                                         <li><Link href="/blogs" className="sub-menu-item">Blogs</Link></li>
                                         <li><Link href="/career" className="sub-menu-item">Career</Link></li>
                                     </ul>
@@ -263,7 +283,7 @@ export default function Header() {
                         {/* CONTACT */}
                         <li>
                             <Link
-                                href="/contact"
+                                href="/contact-us"
                                 className={`menu-item transition ${
                                     isActive("/contact") ? "text-green-400 underline underline-offset-8" : "hover:text-green-400"
                                 }`}

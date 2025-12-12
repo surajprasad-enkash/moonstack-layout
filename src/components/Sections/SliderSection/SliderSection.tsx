@@ -43,10 +43,9 @@ const ReusableSliderSection: React.FC<ReusableSliderSectionProps> = ({
     cssEase: "linear",
     arrows: false,
 
-   
     responsive: [
       {
-        breakpoint: 1024, 
+        breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           centerMode: true,
@@ -54,7 +53,7 @@ const ReusableSliderSection: React.FC<ReusableSliderSectionProps> = ({
         },
       },
       {
-        breakpoint: 768, 
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           centerMode: true,
@@ -62,17 +61,17 @@ const ReusableSliderSection: React.FC<ReusableSliderSectionProps> = ({
         },
       },
       {
-        breakpoint: 640, 
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
-          centerMode: false, 
+          centerMode: false,
         },
       },
     ],
   };
 
   return (
-    <section className={`${bgColor} text-white`}>
+    <section className={`${bgColor} py-12 text-white md:py-20`}>
       <div className="m-auto w-full py-5 text-center md:w-2/5 lg:w-2/5 xl:w-[50%]">
         {buttonText && (
           <motion.div

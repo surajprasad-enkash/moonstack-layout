@@ -13,6 +13,7 @@ type ImportanceSectionProps = {
   heading?: { text: string; color?: string; className?: string }[];
   subHeading?: string;
   reverse?: boolean;
+  bgImg?: StaticImageData | string;
   solutionHeading?: { text: string; color?: string; className?: string }[];
 };
 
@@ -26,9 +27,17 @@ const ImportanceSection: React.FC<ImportanceSectionProps> = ({
   solutionHeading,
   solutionPoints,
   reverse = false,
+  bgImg,
 }) => {
   return (
-    <section className="utilize-bg bg-black">
+    <section
+      className="w-full bg-black bg-cover bg-center"
+      style={{
+        backgroundImage: bgImg
+          ? `url(${typeof bgImg === "string" ? bgImg : bgImg.src})`
+          : "none",
+      }}
+    >
       <div
         className={`relative container mx-auto flex flex-col gap-20 overflow-hidden px-4 py-12 sm:px-4 md:flex-row md:px-8 ${
           reverse ? "md:flex-row-reverse" : ""

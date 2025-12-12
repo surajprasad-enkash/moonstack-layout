@@ -61,7 +61,7 @@ const OurServices: React.FC<OurServicesProps> = ({
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true, amount: 0.2 }}
         >
-          <div className="m-auto w-2/3">
+          <div className="m-auto w-3/4">
             <Heading
               headingTag="h3"
               className="text-center font-semibold"

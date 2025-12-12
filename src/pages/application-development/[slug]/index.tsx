@@ -14,10 +14,11 @@ import ImportanceSection from "@/components/AppDevelopment/ImportanceComponent";
 //utils
 import importance from "../../../../public/assets/backend-importance.webp";
 import greenTick from "../../../../public/assets/green-tick-icon.svg";
-
 //data
 import { pagesData } from "../../../constants/application-development/data";
 import Meta from "@/components/MetaData";
+import HireNowBanner from "@/components/Sections/HireNowBanner/HireNowBanner";
+import ReusableBanner from "@/components/ReuseableBanner";
 
 export default function ApplicationPage() {
   const router = useRouter();
@@ -84,11 +85,28 @@ export default function ApplicationPage() {
           filteredItems={page.utilisArr}
           bgColor="bg-[radial-gradient(99.15%_99.15%_at_50.87%_0.85%,_#0F592A_0%,_#000000_31%)]"
         />
+      
+        <HireNowBanner
+          headingContent={page.banner?.headingText ?? []}
+          subHeadingContent={page.banner?.subHeadingText ?? []}
+          buttonText="Connect with us"
+          image={page.banner?.image ?? ""}
+          imageHeight={page.banner?.imageHeight ?? "md:w-[405px]"}
+          bgImage={page.banner?.bgImage}
+        />
         <CloudTimeline
           title={page.processSteps.headingText}
           highlight=""
           subtitle={page.processSteps.subHeadingText}
           steps={page.processSteps.steps}
+        />
+        <ReusableBanner
+          title={page.quoteBanner?.headingText ?? []}
+          description={page.quoteBanner?.subHeadingText ?? []}
+          rightImg={page.quoteBanner?.image ?? ""}
+          bgImg={page.quoteBanner?.bgImg ?? ""}
+          buttonLabel="Talk with us"
+          buttonLink="/contact"
         />
         <ReusableSliderSection
           buttonText="Process"

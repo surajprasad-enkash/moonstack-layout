@@ -1,4 +1,3 @@
-
 import sol1 from "../../../public/assets/sol1.svg";
 import sol2 from "../../../public/assets/sol2.svg";
 import sol3 from "../../../public/assets/sol3.svg";
@@ -94,7 +93,7 @@ export const utilisArr = [
   {
     image: reactIcon,
     category: "Mobile App",
-    title: "React Native App Development",
+    title: "React Native ",
     desc: "At Moonstack, we believe in building technology.",
   },
   {
