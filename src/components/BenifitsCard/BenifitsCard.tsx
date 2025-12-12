@@ -1,6 +1,8 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import Heading from "../../components/Heading/Heading";
+
 import arrowUp from "../../../public/assets/arrow-up.svg";
 
 interface BenifitsCardProps {
@@ -32,7 +34,7 @@ const BenifitsCard: React.FC<BenifitsCardProps> = ({
 }) => {
   return (
     <div
-      className={`relative h-[-webkit-fill-available] w-full rounded-2xl p-10 transition duration-400 ${bgColor ? `bg-gradient-to-r ${bgColor}` : ""} ${className} `}
+      className={`hover:shadow-primary-200 relative h-[-webkit-fill-available] w-full rounded-2xl p-10 transition-all duration-300 hover:shadow-2xl ${bgColor ? `bg-gradient-to-r ${bgColor}` : ""} ${className}`}
     >
       {cardTag && (
         <div
@@ -43,14 +45,25 @@ const BenifitsCard: React.FC<BenifitsCardProps> = ({
         ></div>
       )}
       <div className={imgClassName}>
-        <Image src={imgSrc} alt={alt} className={cardIconSize} />
+        <Image
+          src={imgSrc}
+          alt={alt}
+          className={cardIconSize}
+          width={20}
+          height={20}
+        />
       </div>
-      <div className="poppins-semibold font-18 mt-[60px] text-white">
-        {title}
-      </div>
-      <div className="poppins-medium font-14 mt-2 leading-[200%] text-white">
-        {description}
-      </div>
+      <Heading
+        headingTag="h5"
+        className="mt-[60px] text-left font-semibold text-white"
+        content={title}
+      />
+
+      <Heading
+        headingTag="p"
+        className="text-light-grey mt-2 text-left font-normal"
+        content={description}
+      />
 
       {buttonLabel && (
         <div className="mt-6">

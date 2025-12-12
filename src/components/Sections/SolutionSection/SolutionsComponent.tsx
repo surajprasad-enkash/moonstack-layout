@@ -50,7 +50,7 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
         )}
 
         <div className="flex flex-col items-center justify-between pb-12 md:pb-10">
-          <div className="w-full text-center md:mb-0 md:w-2/5 md:text-left lg:w-2/5 xl:w-[40%]">
+          <div className="w-full text-center md:mb-0 md:w-3/4 md:text-left">
             {buttonText && (
               <CustomButton text={buttonText} variant={buttonVariant} />
             )}
@@ -69,7 +69,7 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
           </div>
 
           {subHeadingText && (
-            <div className="w-full text-center leading-[200%] md:w-2/5 lg:w-2/5 xl:w-[50%]">
+            <div className="w-full text-center leading-[200%] md:w-3/4">
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}

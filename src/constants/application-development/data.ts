@@ -37,8 +37,19 @@ import nativeIconThree from "../../../public/assets/app-development-images/nativ
 import nativeIconFour from "../../../public/assets/app-development-images/native-icon-four.svg";
 import nativeIconFive from "../../../public/assets/app-development-images/native-icon-five.svg";
 import nativeIconSix from "../../../public/assets/app-development-images/native-icon-six.svg";
+import androidBannerImg from "../../../public/assets/app-development-images/android-banner.webp";
+import androidBannerBg from "../../../public/assets/app-development-images/app-hire-banner.webp";
+import iosBannerImg from "../../../public/assets/app-development-images/ios-hire-img.webp";
+import nativeBannerImg from "../../../public/assets/app-development-images/native-banner-img.webp";
+import pwaBannerImg from "../../../public/assets/app-development-images/pwa-banner-img.webp";
 import androidBgImg from "../../../public/assets/android-app-bg.webp";
-
+import androidContactbannerImg from "../../../public/assets/app-development-images/contact-app-img.webp";
+import androidContactbannerBg from "../../../public/assets/app-development-images/contact-app-bg.webp";
+import iosContactbannerBg from "../../../public/assets/app-development-images/ios-contact-img.webp";
+import nativeContactbannerImg from "../../../public/assets/app-development-images/react-native-contact-img.webp";
+import nativeContactbannerBg from "../../../public/assets/app-development-images/react-native-contact-bg.webp";
+import maintenanceContactbannerImg from "../../../public/assets/app-development-images/maintanance-contact-img.webp";
+import maintenanceContactbannerBg from "../../../public/assets/app-development-images/maintanance-contact-bg.webp";
 import { IAccordionItem } from "@/components/Homepage/FAQ";
 import { StaticImageData } from "next/image";
 
@@ -97,6 +108,22 @@ export const pagesData: Record<
 
     slides: { image: StaticImageData | string; title: string; desc: string }[];
     accordionData: IAccordionItem[];
+
+    banner?: {
+      headingText: { text: string; color?: string }[];
+      subHeadingText?: { text: string; color?: string }[];
+      image: StaticImageData | string;
+      imageHeight?: string;
+      bgImage?: StaticImageData | string;
+    };
+
+    quoteBanner?: {
+      headingText: { text: string; color?: string }[];
+      subHeadingText?: { text: string; color?: string }[];
+      image?: StaticImageData | string;
+      bgImg: StaticImageData | string;
+      buttonText?: string;
+    };
   }
 > = {
   // ✅ ANDROID APP DEVELOPMENT
@@ -345,6 +372,40 @@ export const pagesData: Record<
         desc: "The timeline for app development depends on various factors; however, the development process can generally take between a few weeks to a few months, based on underlying factors.",
       },
     ],
+
+    banner: {
+      headingText: [
+        {
+          text: "Opt for your custom Android app development services now",
+          color: "text-white",
+        },
+      ],
+      subHeadingText: [
+        {
+          text: "Android app development goes through different stages of work.",
+          color: "text-white",
+        },
+      ],
+      image: androidBannerImg,
+      bgImage: androidBannerBg,
+    },
+    quoteBanner: {
+      headingText: [
+        {
+          text: "Looking To Hire Android Developers in India? ",
+          color: "text-white",
+        },
+      ],
+      subHeadingText: [
+        {
+          text: "We offer top-rated Android e-commerce app development in India. ",
+          color: "text-white",
+        },
+      ],
+      image: androidContactbannerImg,
+      bgImg: androidContactbannerBg,
+      buttonText: "Connect with us",
+    },
   },
 
   // ✅ iOS APP DEVELOPMENT
@@ -588,6 +649,39 @@ export const pagesData: Record<
         desc: "Yes, you can easily avail of our iOS app upgrade services in India. Simply contact us through our website, and we will help you get started as soon as possible.",
       },
     ],
+
+    banner: {
+      headingText: [
+        {
+          text: "Opt for your custom IOS app development services now",
+          color: "text-white",
+        },
+      ],
+      subHeadingText: [
+        {
+          text: "IOS app development  services goes through different stages of work.",
+          color: "text-white",
+        },
+      ],
+      image: iosBannerImg,
+      bgImage: androidBannerBg,
+    },
+    quoteBanner: {
+      headingText: [
+        {
+          text: "Develop an Optimised Proof of Concept With Our iOS App Development for Startups in India",
+          color: "text-white",
+        },
+      ],
+      subHeadingText: [
+        {
+          text: "Build investor confidence with a proof-of-concept iOS application with our iOS app development services in India. ",
+          color: "text-white",
+        },
+      ],
+      bgImg: iosContactbannerBg,
+      buttonText: "Connect with us",
+    },
   },
 
   // ✅ REACT NATIVE
@@ -850,6 +944,41 @@ export const pagesData: Record<
         desc: "Native app development offers more system-specific development features, while React Native focuses on cross-platform compatibility. Each has its pros and cons; the better option depends solely on your requirements.",
       },
     ],
+
+    banner: {
+      headingText: [
+        {
+          text: "Opt for your custom React Native services now",
+          color: "text-white",
+        },
+      ],
+      subHeadingText: [
+        {
+          text: "React Native  services goes through different stages of work.",
+          color: "text-white",
+        },
+      ],
+      image: nativeBannerImg,
+      bgImage: androidBannerBg,
+      imageHeight: "md:w-[412px]",
+    },
+    quoteBanner: {
+      headingText: [
+        {
+          text: "Scale Your Business  With Our React Native eCommerce Apps Development in India",
+          color: "text-white",
+        },
+      ],
+      subHeadingText: [
+        {
+          text: "We can help you expand the reach of your e-commerce business with our multi-platform React Native app development service in India.  ",
+          color: "text-white",
+        },
+      ],
+      image: nativeContactbannerImg,
+      bgImg: nativeContactbannerBg,
+      buttonText: "Connect with us",
+    },
   },
 
   // ✅ PWA
@@ -1122,10 +1251,45 @@ export const pagesData: Record<
         desc: "Most PWAs are developed using strong and capable platforms like React, Vue.js, or Angular. The build platform is decided based on the type of PWA you require. The best part is that all of the popular PWA development platforms allow businesses to build scalable PWAs.",
       },
     ],
+
+    banner: {
+      headingText: [
+        {
+          text: "Opt for your custom PWA services now",
+          color: "text-white",
+        },
+      ],
+      subHeadingText: [
+        {
+          text: "PWA services goes through different stages of work.",
+          color: "text-white",
+        },
+      ],
+      image: pwaBannerImg,
+      bgImage: androidBannerBg,
+      imageHeight: "md:w-[434px]",
+    },
+    quoteBanner: {
+      headingText: [
+        {
+          text: "Build Scalable PWAs For Your Dynamic Business: Choose Moonstack",
+          color: "text-white",
+        },
+      ],
+      subHeadingText: [
+        {
+          text: "Our services are tailored to meet your business needs and create fully custom PWAs based on your requirements.",
+          color: "text-white",
+        },
+      ],
+
+      bgImg: iosContactbannerBg,
+      buttonText: "Connect with us",
+    },
   },
 
   // ✅ MANAGEMENT
-  "mobile-app-maintenance -service": {
+  "mobile-app-maintenance-service": {
     hero: {
       title: [
         {
@@ -1377,5 +1541,39 @@ export const pagesData: Record<
         desc: "Yes, we provide complete app optimisation services that include fixing performance issues and bugs as part of our maintenance services.",
       },
     ],
+
+    banner: {
+      headingText: [
+        {
+          text: "Opt for your custom Mobile App Maintenance services now",
+          color: "text-white",
+        },
+      ],
+      subHeadingText: [
+        {
+          text: "Mobile App Maintenance services goes through different stages of work.",
+          color: "text-white",
+        },
+      ],
+      image: androidBannerImg,
+      bgImage: androidBannerBg,
+    },
+    quoteBanner: {
+      headingText: [
+        {
+          text: "Don’t Let App Downtime Stagger Your Business: Choose Our App Optimisation Services in India at Moonstack",
+          color: "text-white",
+        },
+      ],
+      subHeadingText: [
+        {
+          text: "Our third-party app maintenance and management services can ensure your app is optimally functioning at all times. ",
+          color: "text-white",
+        },
+      ],
+      image: maintenanceContactbannerImg,
+      bgImg: maintenanceContactbannerBg,
+      buttonText: "Connect with us",
+    },
   },
 };

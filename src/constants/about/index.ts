@@ -32,7 +32,8 @@ export const timelineData = [
   },
   {
     title: "2017 - Expansion",
-    description: "Onboard introduced new features and improved filtering options.",
+    description:
+      "Onboard introduced new features and improved filtering options.",
     day: "SAT",
     date: "24",
     image: "/assets/about-us/gallary.png",
@@ -106,5 +107,4 @@ export const steps = [
   },
 ];
 
-
-export default  {}
+export default {};

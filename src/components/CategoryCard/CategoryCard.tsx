@@ -8,7 +8,7 @@ interface CategoryCardProps {
   title: string;
   description?: string;
   className?: string;
-  classTextAlign?:string;
+  classTextAlign?: string;
   /** 🆕 Title position - top (default) or bottom */
   titlePosition?: "top" | "bottom";
   /** 🆕 Image width and height customization */
@@ -24,12 +24,12 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
   classTextAlign,
   className = "feature-card-gradient-bdr",
   titlePosition = "top",
-  imgWidth = 32,
-  imgHeight = 32,
+  imgWidth = 20,
+  imgHeight = 20,
 }) => {
   return (
     <div
-      className={`w-full rounded-2xl bg-gradient-to-r from-transparent to-transparent p-10 transition-colors duration-300 hover:bg-[var(--Primary-200,#0A662A)] hover:from-transparent hover:to-[#0D320D] ${className}`}
+      className={`bg-primary-200 w-full rounded-2xl from-transparent to-transparent p-5 transition-colors duration-300 hover:bg-[var(--Primary-200,#0A662A)] hover:from-transparent hover:to-[#0D320D] ${className}`}
     >
       {titlePosition === "top" ? (
         <>
@@ -43,16 +43,11 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
             />
 
             <Heading
-              headingTag="h5"
-              className="pt-3 font-semibold text-white"
+              headingTag="h6"
+              className="font-semibold text-white"
               content={title}
             />
           </div>
-          <Heading
-            headingTag="p"
-            className="text-light-grey mt-4 text-left"
-            content={description}
-          />
         </>
       ) : (
         <>

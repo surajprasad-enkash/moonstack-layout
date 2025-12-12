@@ -1,17 +1,25 @@
 import React, { forwardRef, useRef, useEffect } from "react";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 interface CustomButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "rotating" | "small" | "services";
+  variant?:
+    | "primary"
+    | "secondary"
+    | "rotating"
+    | "small"
+    | "services"
+    | "white";
   text: string;
+  href?: string; // <-- Add link support
 }
 
 const CustomButton = forwardRef<HTMLButtonElement, CustomButtonProps>(
-  ({ variant = "primary", text, className, ...props }, ref) => {
+  ({ variant = "primary", text, className, href, ...props }, ref) => {
     const rotatingRef = useRef<HTMLButtonElement>(null);
 
-    // Only apply rotation if variant is rotating
+    // Rotation effect only for rotating variant
     useEffect(() => {
       if (variant !== "rotating") return;
       let angle = 0;
@@ -39,7 +47,19 @@ const CustomButton = forwardRef<HTMLButtonElement, CustomButtonProps>(
         "backdrop-blur-[22.2px] bg-[#10933E30] py-[10px] px-[20px] text-[#0BD954] ",
       services:
         "bg-primary-300 from-green-500 to-black-500 text-white font-14 py-2 px-[10px]",
+      white: "bg-white text-black font-14 py-4 px-[32px]",
     };
+
+    const classes = cn(baseStyles, variantStyles[variant], className);
+
+    // If href exists → render a link styled like a button
+    if (href) {
+      return (
+        <Link href={href} className={classes}>
+          {text}
+        </Link>
+      );
+    }
 
     return (
       <button
@@ -48,7 +68,7 @@ const CustomButton = forwardRef<HTMLButtonElement, CustomButtonProps>(
             ? rotatingRef
             : (ref as React.RefObject<HTMLButtonElement>)
         }
-        className={cn(baseStyles, variantStyles[variant], className)}
+        className={classes}
         {...props}
       >
         {text}

@@ -111,7 +111,7 @@ export default function ApplicationPage() {
               },
             ]}
             filteredItems={page.utilisArr}
-            // bgColor="bg-[radial-gradient(99.15%_99.15%_at_50.87%_0.85%,_#0F592A_0%,_#000000_31%)]"
+           
           />
         )}
         <GetQuoteBanner
