@@ -77,8 +77,7 @@ export default function ApplicationPage() {
           subHeadingContent={page.banner?.subHeadingText ?? []}
           buttonText="Connect with us"
           image={page.banner?.image ?? ""}
-          imageHeight={page.banner?.imageHeight ?? "md:w-[405px]"}
-        />
+          imageHeight={page.banner?.imageHeight ?? "md:w-[405px]"} bgImage={""}        />
         <WhyChooseSection
           heading={[{ text: page.whyChooseData.headingText, color: "block" }]}
           description={page.whyChooseData.subHeadingText}

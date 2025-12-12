@@ -15,9 +15,9 @@ import {
 } from "../../constants/backend-developer";
 import ImportanceComponent from "@/components/BackendDeveloper/ImportanceComponent";
 import Stepper from "@/components/StepperComponent/StepperComponent";
-import ReusableUtilizeSection from "@/components/Seo/UtilizeComponent";
-import ReusableSliderSection from "@/components/Seo/SliderComponent";
 import OurServices from "@/components/OurSevices";
+import ReusableSliderSection from "@/components/Sections/SliderSection/SliderSection";
+import ReusableUtilizeSection from "@/components/Seo/UtilizeComponent";
 
 const BackendDeveloper = () => {
   //

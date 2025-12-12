@@ -17,8 +17,8 @@ import { servicesArr } from "@/constants/seo";
 import React from "react";
 import StepperComponent from "@/components/Seo/StepperComponent";
 import ReusableUtilizeSection from "@/components/Seo/UtilizeComponent";
-import ReusableSliderSection from "@/components/Seo/SliderComponent";
 import SeoBanner from "@/components/Seo/SeoBanner";
+import ReusableSliderSection from "@/components/Sections/SliderSection/SliderSection";
 
 const Seo = () => {
   const faqRefs = useMultipleRefs([

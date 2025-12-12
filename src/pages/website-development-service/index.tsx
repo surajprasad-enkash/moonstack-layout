@@ -108,8 +108,7 @@ const Website = (): React.JSX.Element => {
             },
           ]}
           buttonText="Connect with us"
-          image={bannerImg}
-        />
+          image={bannerImg} bgImage={""}        />
         <WhyChooseSection
           heading={[
             {

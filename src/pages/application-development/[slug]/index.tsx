@@ -92,7 +92,7 @@ export default function ApplicationPage() {
           buttonText="Connect with us"
           image={page.banner?.image ?? ""}
           imageHeight={page.banner?.imageHeight ?? "md:w-[405px]"}
-          bgImage={page.banner?.bgImage}
+          bgImage={page.banner?.bgImage ?? ""}
         />
         <CloudTimeline
           title={page.processSteps.headingText}

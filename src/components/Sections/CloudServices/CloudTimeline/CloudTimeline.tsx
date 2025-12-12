@@ -25,11 +25,21 @@ export default function CloudTimeline({
   steps,
 }: CloudTimelineProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
+
+  // ⭐ NEW: wrapper and step refs
+  const stepsWrapperRef = useRef<HTMLDivElement | null>(null);
+  const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  // existing
   const circleRefs = useRef<(HTMLDivElement | null)[]>([]);
+
   const [lineHeight, setLineHeight] = useState(0);
   const [activeStep, setActiveStep] = useState(1);
+  const [lineMaxHeight, setLineMaxHeight] = useState(0);
 
-  /* ----------------------- 1) Animate vertical line ------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /*                         1. Scroll Animation Logic                          */
+  /* -------------------------------------------------------------------------- */
   useEffect(() => {
     const handleScroll = () => {
       if (!containerRef.current) return;
@@ -45,12 +55,12 @@ export default function CloudTimeline({
       const percentage = visible * 100;
       setLineHeight(percentage);
 
-      /* ---------------- 2) Detect circle when line touches it ---------------- */
+      /* Circle activation */
       circleRefs.current.forEach((circle, index) => {
-        if (!circle) return;
+        if (!circle || !containerRef.current) return;
 
         const circleRect = circle.getBoundingClientRect();
-        const containerRect = containerRef.current!.getBoundingClientRect();
+        const containerRect = containerRef.current.getBoundingClientRect();
 
         const circleCenter =
           circleRect.top +
@@ -68,16 +78,37 @@ export default function CloudTimeline({
 
     window.addEventListener("scroll", handleScroll);
     handleScroll();
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  /* -------------------------------------------------------------------------- */
+  /*    2. NEW: Total wrapper height − last step height + 50 (FINAL LOGIC)      */
+  /* -------------------------------------------------------------------------- */
+  useEffect(() => {
+    if (!stepsWrapperRef.current || stepRefs.current.length === 0) return;
+
+    const wrapperRect = stepsWrapperRef.current.getBoundingClientRect();
+    const lastStep = stepRefs.current[stepRefs.current.length - 1];
+    if (!lastStep) return;
+
+    const lastStepRect = lastStep.getBoundingClientRect();
+
+    const wrapperHeight = wrapperRect.height;
+    const lastStepHeight = lastStepRect.height;
+
+    // ⭐ FINAL RESULT
+    const finalHeight = wrapperHeight - lastStepHeight + 0;
+
+    setLineMaxHeight(finalHeight);
+  }, [steps]);
 
   /* -------------------------------------------------------------------------- */
 
   return (
     <section className="w-full bg-[#000] px-[20px] md:px-[80px] py-20 text-white">
       <div className="container mx-auto max-w-5xl">
-        {/* Main Heading */}
+        
+        {/* Heading */}
         <div className="mb-12 text-center">
           <Heading
             headingTag="h2"
@@ -87,6 +118,7 @@ export default function CloudTimeline({
               { text: highlight, className: "highlight-text" },
             ]}
           />
+
           {subtitle && (
             <Heading
               headingTag="p"
@@ -98,36 +130,54 @@ export default function CloudTimeline({
 
         {/* Timeline */}
         <div ref={containerRef} className="relative flex flex-col items-center">
-          {/* Background Line */}
-          <div className="absolute top-[50px] left-1/2 h-full w-[3px] max-h-[calc(100%-120px)] -translate-x-1/2 bg-[#1A4C2B]"></div>
 
-          {/* Animated Line */}
+          {/* Background Line */}
           <div
-            className="absolute top-[50px] left-1/2 w-[3px] max-h-[calc(100%-120px)] -translate-x-1/2 bg-[#00CF49] transition-all duration-100"
-            style={{ height: `${lineHeight}%` }}
+            className="absolute top-[50px] left-1/2 w-[3px] -translate-x-1/2 bg-[#1A4C2B]"
+            style={{ height: `${lineMaxHeight}px` }}
           ></div>
 
-          <div className="w-full space-y-20 pt-10">
+          {/* Animated Progress Line */}
+          <div
+            className="absolute top-[50px] left-1/2 w-[3px] -translate-x-1/2 bg-[#00CF49] transition-all duration-100"
+            style={{
+              height: `${lineHeight}%`,
+              maxHeight: `${lineMaxHeight}px`,
+            }}
+          ></div>
+
+          {/* ⭐ Steps Wrapper */}
+          <div
+            ref={stepsWrapperRef}
+            className="w-full space-y-20 pt-10"
+          >
             {steps.map((item, index) => {
               const isActive = index + 1 <= activeStep;
 
               return (
-                <div key={index} className="relative flex w-full">
-                  {/* LEFT CONTENT */}
+                <div
+                  key={index}
+                  ref={(el) => {
+                    stepRefs.current[index] = el
+                  }}
+                  className="relative flex w-full"
+                >
+                  {/* LEFT SIDE */}
                   {item.position === "left" && (
                     <>
                       <div className="w-1/2 pr-20 text-left">
                         <Heading
                           headingTag="h4"
                           className={`font-20 font-semibold ${
-                            isActive ? "text-[#fff]" : "text-[#fff]/40"
+                            isActive ? "text-white" : "text-white/40"
                           }`}
                           content={[{ text: item.title, color: "" }]}
                         />
+
                         <Heading
                           headingTag="p"
                           className={`font-14 pt-2 text-[12px] leading-[24px] ${
-                             isActive ? "text-[#fff]" : "text-[#fff]/40"
+                            isActive ? "text-white" : "text-white/40"
                           }`}
                           content={[{ text: item.description, color: "" }]}
                         />
@@ -136,21 +186,19 @@ export default function CloudTimeline({
                       {/* Center Circle */}
                       <div className="absolute left-1/2 -translate-x-1/2">
                         <div
-                          ref={(el) => {
-                            circleRefs.current[index] = el;
-                          }}
-                          className={`relative flex h-14 w-14 items-center justify-center rounded-full transition-all duration-300
-                            ${
-                              isActive
-                                ? "bg-[#00CF49] after:border-[#00CF49]"
-                                : "bg-[#0B2714] after:border-[#1A4C2B]"
-                            }
-                            after:absolute after:top-[-5px] after:right-[-5px] after:bottom-[-5px] after:left-[-5px]
-                            after:rounded-full after:border-2 after:content-['']`}
+                          ref={(el) => {circleRefs.current[index] = el}}
+                          className={`relative flex h-14 w-14 items-center justify-center rounded-full transition-all duration-300 ${
+                            isActive
+                              ? "bg-[#00CF49] after:border-[#00CF49]"
+                              : "bg-[#0B2714] after:border-[#1A4C2B]"
+                          }
+                          after:absolute after:top-[-5px] after:right-[-5px]
+                          after:bottom-[-5px] after:left-[-5px]
+                          after:rounded-full after:border-2 after:content-['']`}
                         >
                           <span
                             className={`text-lg font-bold ${
-                              isActive ? "text-[#fff]" : "text-[#fff]/40"
+                              isActive ? "text-white" : "text-white/40"
                             }`}
                           >
                             {item.number}
@@ -162,29 +210,27 @@ export default function CloudTimeline({
                     </>
                   )}
 
-                  {/* RIGHT CONTENT */}
+                  {/* RIGHT SIDE */}
                   {item.position === "right" && (
                     <>
                       <div className="hidden w-1/2 md:block"></div>
 
-                      {/* Center Circle */}
+                      {/* Circle */}
                       <div className="absolute left-1/2 -translate-x-1/2">
                         <div
-                          ref={(el) => {
-                            circleRefs.current[index] = el;
-                          }}
-                          className={`relative flex h-14 w-14 items-center justify-center rounded-full transition-all duration-300
-                            ${
-                              isActive
-                                ? "bg-[#00CF49] after:border-[#00CF49]"
-                                : "bg-[#0B2714] after:border-[#1A4C2B]"
-                            }
-                            after:absolute after:top-[-5px] after:right-[-5px] after:bottom-[-5px] after:left-[-5px]
-                            after:rounded-full after:border-2 after:content-['']`}
+                          ref={(el) => {circleRefs.current[index] = el}}
+                          className={`relative flex h-14 w-14 items-center justify-center rounded-full transition-all duration-300 ${
+                            isActive
+                              ? "bg-[#00CF49] after:border-[#00CF49]"
+                              : "bg-[#0B2714] after:border-[#1A4C2B]"
+                          }
+                          after:absolute after:top-[-5px] after:right-[-5px]
+                          after:bottom-[-5px] after:left-[-5px]
+                          after:rounded-full after:border-2 after:content-['']`}
                         >
                           <span
                             className={`text-lg font-bold ${
-                              isActive ? "text-[#fff]" : "text-[#fff]/40"
+                              isActive ? "text-white" : "text-white/40"
                             }`}
                           >
                             {item.number}
@@ -192,18 +238,19 @@ export default function CloudTimeline({
                         </div>
                       </div>
 
+                      {/* Right Content */}
                       <div className="w-1/2 pl-20 text-left">
                         <Heading
                           headingTag="h4"
                           className={`font-20 font-semibold ${
-                            isActive ? "text-[#fff]" : "text-[#fff]/40"
+                            isActive ? "text-white" : "text-white/40"
                           }`}
                           content={[{ text: item.title, color: "" }]}
                         />
                         <Heading
                           headingTag="p"
                           className={`font-14 pt-2 text-[12px] leading-[24px] ${
-                            isActive ? "text-[#fff]" : "text-[#fff]/40"
+                            isActive ? "text-white" : "text-white/40"
                           }`}
                           content={[{ text: item.description, color: "" }]}
                         />
