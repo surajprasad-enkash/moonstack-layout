@@ -1,17 +1,23 @@
 import Layout from "@/components/Layout";
-import FAQ from "@/components/Homepage/FAQ";
-import HomepageBanner from "@/components/Homepage/HomepageBanner";
 import InsightsIdeas from "@/components/Homepage/InsightsIdeas";
 import Marquee from "@/components/Homepage/Marquee";
 import OurServices from "@/components/Homepage/OurSevices";
 import ProvenProcess from "@/components/Homepage/ProvenProcess";
-import SolutionsComponent from "@/components/Homepage/SolutionsComponent";
 import TechnologyComponent from "@/components/Homepage/TechnologyComponent";
 import ContactUs from "@/components/Homepage/ContactUs";
 import CaseStudies from "@/components/Homepage/CaseStudies";
 
-import { accordionData, infoBoxes } from "../constants/home";
+import { accordionData } from "../constants/home";
 import Meta from "@/components/MetaData";
+import HeroSection from "@/components/Homepage/HeroSection";
+
+import upwork from "../../public/assets/home/upwork.svg";
+import google from "../../public/assets/home/google.svg";
+import clutch from "../../public/assets/home/clutch.svg";
+import FAQSection from "@/components/Sections/FaqSection/FaqSection";
+import SmartSection from "@/components/Homepage/SmartSection";
+
+import counterBg from "../../public/assets/home/counter/counterBg.webp";
 
 export default function Home() {
   return (
@@ -25,23 +31,50 @@ export default function Home() {
       />
 
       <Layout>
-        <HomepageBanner />
+        <HeroSection
+          reviews={[
+            { platform: "Upwork", reviews: 94, icon: upwork },
+            { platform: "Google", reviews: 30, icon: google },
+            { platform: "Clutch", reviews: 10, icon: clutch },
+          ]}
+          buttonText="Get Started"
+          buttonLink="/contact"
+        />
+
         <Marquee />
-        <SolutionsComponent />
+        <SmartSection
+          title="Why Moonstack Is the"
+          highlight="Smart Choice for"
+          description="Work with a team that brings your ideas to life on your terms. Moonstack is one of the most reliable development agencies in India."
+          buttonText="About us"
+          backgroundImage={counterBg.src}
+          stats={[
+            { value: 115, suffix: "+", label: "Project we have complete" },
+            { value: 98, suffix: "%", label: "Project success rate" },
+            { value: 10, suffix: "mins", label: "Avg reply time" },
+            { value: 13, suffix: "year", label: "Experience" },
+          ]}
+        />
+        {/* <HomepageBanner /> */}
+
+        {/* <SolutionsComponent /> */}
         <OurServices />
+
         <CaseStudies />
         <TechnologyComponent />
         <ProvenProcess />
         <InsightsIdeas />
-        <FAQ
-          accordionData={accordionData}
-          infoBoxes={infoBoxes}
-          tagText="Our FAQs"
-          heading={{
-            text: "Wondering whether Moonstack is the right fit for your business or not? Here are the most important client queries answered from our side.",
-            highlightText: "Questions",
-          }}
+        <FAQSection
+          title="Our FAQs "
+          highlight=" Questions"
+          description="Wondering whether Moonstack is the right fit for your business or not? Here are the most important client queries answered from our side."
+          faqs={accordionData.map((item) => ({
+            question: item.title,
+            answer: item.desc,
+          }))}
+          classname=""
         />
+
         <ContactUs />
       </Layout>
     </>

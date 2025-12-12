@@ -9,10 +9,10 @@ import submenuBg from '../../../public/assets/header/submenu-bg.svg'
 
 // application development icon
 import appDevIcon1 from '../../../public/assets/header/mobile-application-development.svg';
-import appDevIcon2 from '../../../public/assets/header/andriod-development.svg';
+import appDevIcon2 from '../../../public/assets/header/Ios.svg';
 import appDevIcon3 from '../../../public/assets/header/logo-pwa-svgrepo-com.svg';
 import appDevIcon4 from '../../../public/assets/header/react-svgrepo-com.svg';
-import appDevIcon5 from '../../../public/assets/header/Ios.svg';
+import appDevIcon5 from '../../../public/assets/header/andriod-development.svg';
 import appDevIcon6 from '../../../public/assets/header/mobile-app-developing.svg';
 
 // web development icon
@@ -22,6 +22,8 @@ import webDevIcon3 from '../../../public/assets/header/Frame 427324601.svg';
 import webDevIcon4 from '../../../public/assets/header/shop-sell-commerce-store-svgrepo-com.svg';
 import webDevIcon5 from '../../../public/assets/header/web-designer.svg';
 import webDevIcon6 from '../../../public/assets/header/wordpress-svgrepo-com.svg';
+import webDevIcon7 from '../../../public/assets/header/crm-development.svg';
+import webDevIcon8 from '../../../public/assets/header/fullstack-development.svg';
 
 // frontend development icon
 import frontDevIcon1 from '../../../public/assets/header/frontendIcon/angularjs.svg';
@@ -41,7 +43,7 @@ import backendicon6 from '../../../public/assets/header/backend/python.svg';
 import backendicon7 from '../../../public/assets/header/backend/java-filled.svg';
 import backendicon8 from '../../../public/assets/header/backend/php.svg';
 export default function Header() {
-    const pathname = usePathname(); 
+    const pathname = usePathname();
     const [openMenu, setOpenMenu] = useState(null);
     const [activeCategory, setActiveCategory] = useState("Application Development");
 
@@ -69,43 +71,43 @@ export default function Header() {
 
     // MENU DATA
     const menuData = {
- "Application Development": [
-  {
-    title: "Android App Development",
-    icon: webDev.src,
-    url: "/application-development/android-app-development-service",
-  },
-  {
-    title: "iOS App Development",
-    icon: webDev.src,
-    url: "/application-development/iOS-app-development-service",
-  },
-  {
-    title: "React Native App Development",
-    icon: webDev.src,
-    url: "/application-development/react-native-app-development-service",
-  },
-  {
-    title: "App Maintenance Service",
-    icon: webDev.src,
-    url: "/application-development/mobile-app-maintenance-service",
-  },
-  {
-    title: "PWA Development",
-    icon: webDev.src,
-    url: "/application-development/pwa-development-service",
-  },
-],
+        "Application Development": [
+            {
+                title: "Android App Development",
+                icon: appDevIcon5.src,
+                url: "/application-development/android-app-development-service",
+            },
+            {
+                title: "iOS App Development",
+                icon: appDevIcon2.src,
+                url: "/application-development/iOS-app-development-service",
+            },
+            {
+                title: "React Native App Development",
+                icon: appDevIcon4.src,
+                url: "/application-development/react-native-app-development-service",
+            },
+            {
+                title: "App Maintenance Service",
+                icon: appDevIcon6.src,
+                url: "/application-development/mobile-app-maintenance-service",
+            },
+            {
+                title: "PWA Development",
+                icon: appDevIcon3.src,
+                url: "/application-development/pwa-development-service",
+            },
+        ],
 
         "Web Development": [
-            { title: "Laravel Development ", icon: webDev.src, url: '/website-development-service/laravel-website-development-service' },
-            { title: "E-Commerce website Development", icon: webDev.src, url: '/website-development-service/e-commerce-website-development-service' },
-            { title: "Full Stack Development", icon: webDev.src, url: '/website-development-service/full-stack-website-development-service' },
-            { title: "Web Designing", icon: webDev.src, url: '/website-development-service/web-designing-service' },
-            { title: "Shopify Development", icon: webDev.src, url: '/website-development-service/shopify-website-development-service' },
-            { title: "CRM Development", icon: webDev.src, url: '/website-development-service/CRM-Development-service' },
-            { title: "WordPress Development", icon: webDev.src, url: '/website-development-service/wordPress-website-development-service' },
-        
+            { title: "Laravel Development ", icon: webDevIcon3.src, url: '/website-development-service/laravel-website-development-service' },
+            { title: "E-Commerce website Development", icon: webDevIcon4.src, url: '/website-development-service/e-commerce-website-development-service' },
+            { title: "Full Stack Development", icon: webDevIcon8.src, url: '/website-development-service/full-stack-website-development-service' },
+            { title: "Web Designing", icon: webDevIcon5.src, url: '/website-development-service/web-designing-service' },
+            { title: "Shopify Development", icon: webDevIcon2.src, url: '/website-development-service/shopify-website-development-service' },
+            { title: "CRM Development", icon: webDevIcon7.src, url: '/website-development-service/CRM-Development-service' },
+            { title: "WordPress Development", icon: webDevIcon6.src, url: '/website-development-service/wordPress-website-development-service' },
+
         ],
         "Frontend Development": [
             { title: "AngularJs", icon: frontDevIcon1.src, url: '/' },
@@ -126,41 +128,24 @@ export default function Header() {
             { title: "PHP", icon: backendicon8.src, url: '/' },
         ],
         "Search Engine Optimization": [
-            { title: "Node.js Development", icon: webDev.src, url: '/' },
-            { title: "Laravel Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
+            { title: "SEO", icon: webDev.src, url: '/seo' },
+           
         ],
         "Product Designing": [
-            { title: "Node.js Development", icon: webDev.src, url: '/' },
-            { title: "Laravel Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
+            { title: "Product Designing", icon: webDev.src, url: '/product-designing-service' },
+          
         ],
         "Ui/Ux Designing": [
-            { title: "Node.js Development", icon: webDev.src, url: '/' },
-            { title: "Laravel Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
+            { title: "Ui/Ux Designing", icon: webDev.src, url: '/ui-ux-designing-service' },
+           
         ],
         "Cloud Service": [
-            { title: "Node.js Development", icon: webDev.src, url: '/' },
-            { title: "Laravel Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
+            { title: "Cloud Service", icon: webDev.src, url: '/cloud-services' },
+           
         ],
         "Industries": [
-            { title: "Node.js Development", icon: webDev.src, url: '/' },
-            { title: "Laravel Development", icon: webDev.src, url: '/' },
-            { title: "Laravel Development", icon: webDev.src, url: '/' },
-            { title: "Laravel Development", icon: webDev.src, url: '/' },
-            { title: "Django Development", icon: webDev.src, url: '/' },
+            { title: "Industries", icon: webDev.src, url: '/industries' },
+           
         ],
     };
 
@@ -201,8 +186,7 @@ export default function Header() {
 
                         {/* SERVICES MENU */}
                         <li
-                            className={`menu-item relative megaMenuItem ${
-                                    isServicesActive() ? "isActive current" : "hover:text-green-400"
+                            className={`menu-item relative megaMenuItem ${isServicesActive() ? "isActive current" : "hover:text-green-400"
                                 }`}
                             onMouseEnter={() => setOpenMenu("services")}
                             onMouseLeave={() => setOpenMenu(null)}
@@ -225,9 +209,8 @@ export default function Header() {
                                                 <li
                                                     key={name}
                                                     onMouseEnter={() => setActiveCategory(name)}
-                                                    className={`submenu-item px-4 py-2 rounded-lg cursor-pointer ${
-                                                        activeCategory === name ? "isActive current" : "text-white/80"
-                                                    }`}
+                                                    className={`submenu-item px-4 py-2 rounded-lg cursor-pointer ${activeCategory === name ? "isActive current" : "text-white/80"
+                                                        }`}
                                                 >
                                                     <Link href={leftMenuLinks[name]} className="block w-full h-full">
                                                         {name}
@@ -259,9 +242,8 @@ export default function Header() {
                             onMouseLeave={() => setOpenMenu(null)}
                         >
                             <button
-                                className={`transition cursor-pointer ${
-                                    isCompanyActive() ? "isActive current" : "hover:text-green-400"
-                                }`}
+                                className={`transition cursor-pointer ${isCompanyActive() ? "isActive current" : "hover:text-green-400"
+                                    }`}
                             >
                                 Company
                             </button>
@@ -284,9 +266,8 @@ export default function Header() {
                         <li>
                             <Link
                                 href="/contact-us"
-                                className={`menu-item transition ${
-                                    isActive("/contact") ? "text-green-400 underline underline-offset-8" : "hover:text-green-400"
-                                }`}
+                                className={`menu-item transition ${isActive("/contact") ? "text-green-400 underline underline-offset-8" : "hover:text-green-400"
+                                    }`}
                             >
                                 Contact us
                             </Link>

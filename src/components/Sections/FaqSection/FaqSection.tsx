@@ -14,6 +14,7 @@ interface FAQSectionProps {
   title: string;
   highlight: string;
   description: string;
+  classname?: string;
   faqs: FAQItem[];
 }
 
@@ -22,6 +23,7 @@ export default function FAQSection({
   highlight,
   description,
   faqs,
+  classname = "block",
 }: FAQSectionProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
@@ -39,7 +41,7 @@ export default function FAQSection({
             className="font-36 mb-3 pt-3 font-bold"
             content={[
               { text: `${title} `, color: "text-white" },
-              { text: highlight, className: "highlight-text block" },
+              { text: highlight, className: `highlight-text ${classname}` },
             ]}
           />
 
@@ -78,7 +80,7 @@ export default function FAQSection({
                   onClick={() => toggleFAQ(index)}
                 >
                   <p
-                    className={`pl-3 text-start text-sm font-medium md:text-base ${
+                    className={`text-start text-sm font-medium md:text-base ${
                       isActive ? "text-white" : "text-white/80"
                     }`}
                   >
