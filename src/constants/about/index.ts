@@ -1,23 +1,23 @@
 export const featuresData = [
   {
     imgSrc: "/assets/revenue.svg",
-    title: "Generate Leads",
-    description: "Our frontend development team focuses on building.",
+    title: "115+",
+    description: "Project we have complete",
   },
   {
     imgSrc: "/assets/revenue.svg",
-    title: "Generate Leads",
-    description: "Our frontend development team focuses on building.",
+    title: "98%",
+    description: "Project success rate",
   },
   {
     imgSrc: "/assets/revenue.svg",
-    title: "Generate Leads",
-    description: "Our frontend development team focuses on building.",
+    title: "10 mins",
+    description: "Avg reply time",
   },
   {
     imgSrc: "/assets/revenue.svg",
-    title: "Generate Leads",
-    description: "Our frontend development team focuses on building.",
+    title: "13 years",
+    description: "Experience",
   },
 ];
 

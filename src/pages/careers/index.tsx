@@ -32,7 +32,7 @@ const carreers = (): React.JSX.Element => {
           ]}
           description={[
             {
-              text: "Get Customised Mobile App Solutions in India ",
+              text: "Looking for a company that’ll value your potential? Look no further.",
               color: "text-white  text-center ",
             },
             {
@@ -43,9 +43,8 @@ const carreers = (): React.JSX.Element => {
           benefits={benefitsData}
         />
         <LatestOpportunity
-          heading="Latest"
-          highlighted="Opportunity"
-          description="Every project begins with a problem that needs solving. For example, in the hiring industry, companies often face delays."
+          heading="Latest Opportunity"
+          description="Work doesn’t feel like work when you’re supported by a driven team, fuelled by limitless opportunities and empowered by remarkable benefits"
           jobs={jobsData}
         />
 

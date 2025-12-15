@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FiClock } from "react-icons/fi";
 import { MdLocationPin } from "react-icons/md";
 import { BsPersonWorkspace } from "react-icons/bs";
+import Heading from "@/components/Heading/Heading";
 
 interface Job {
   title: string;
@@ -16,14 +17,14 @@ interface Job {
 
 interface LatestOpportunityProps {
   heading: string;
-  highlighted: string;
+
   description: string;
   jobs?: Job[]; // <-- optional
 }
 
 const LatestOpportunity: FC<LatestOpportunityProps> = ({
   heading,
-  highlighted,
+
   description,
   jobs = [], // <-- DEFAULT VALUE FIX
 }) => {
@@ -31,16 +32,22 @@ const LatestOpportunity: FC<LatestOpportunityProps> = ({
     <section className="w-full bg-black text-white">
       <div className="container mx-auto px-4 py-12 sm:px-10 md:py-20">
         <div className="mb-12 flex flex-col items-start justify-between gap-4 md:flex-row">
-          <h2 className="text-3xl font-semibold md:text-4xl">
-            {heading}{" "}
-            <span className="font-bold text-green-400">{highlighted}</span>
-          </h2>
+          <div className="w-1/2">
+            <Heading
+              headingTag="h3"
+              className="pb-4 font-semibold text-white"
+              content={heading ?? []}
+            />
+          </div>
 
-          <p className="max-w-lg text-sm leading-relaxed text-gray-300 md:text-base">
-            {description}
-          </p>
+          <div className="w-1/2">
+            <Heading
+              headingTag="p"
+              className="text-light-grey pb-6"
+              content={description ?? []}
+            />
+          </div>
         </div>
-
         <div className="flex flex-col gap-6">
           {(jobs ?? []).map((job, index) => (
             <div

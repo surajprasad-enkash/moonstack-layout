@@ -40,6 +40,7 @@ const Website = (): React.JSX.Element => {
         canonical="https://www.moonstack.com/website-development-service"
         ogImage="/opengraph-image.png"
       />
+      
       <Layout>
         <WebsiteCategoryBanner
           title={[
@@ -108,8 +109,9 @@ const Website = (): React.JSX.Element => {
             },
           ]}
           buttonText="Connect with us"
-          image={bannerImg}
-        />
+          image={bannerImg} bgImage={""}/>
+
+
         <WhyChooseSection
           heading={[
             {
