@@ -1,4 +1,3 @@
-
 import CareerForm from "@/components/careers-form";
 import Heading from "@/components/Heading/Heading";
 import React from "react";
@@ -44,7 +43,7 @@ const HeroSection = () => {
                   className="pt-2 text-start"
                   content={[
                     {
-                      text: "200 ",
+                      text: "50 + ",
                       color: "text-white font-semibold ",
                     },
                   ]}
@@ -66,7 +65,7 @@ const HeroSection = () => {
                   className="pt-2 text-start"
                   content={[
                     {
-                      text: "200 ",
+                      text: "200 + ",
                       color: "text-white font-semibold ",
                     },
                   ]}
@@ -76,7 +75,7 @@ const HeroSection = () => {
                   className="pt-2 text-start"
                   content={[
                     {
-                      text: "Team Member",
+                      text: "Projects",
                       color: "text-white ",
                     },
                   ]}
