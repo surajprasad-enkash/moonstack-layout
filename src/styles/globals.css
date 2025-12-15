@@ -51,11 +51,13 @@ body {
 
 @keyframes orbit {
   0% {
-    transform: rotate(var(--angle)) translateX(var(--radius)) rotate(calc(-1 * var(--angle)));
+    transform: rotate(var(--angle)) translateX(var(--radius))
+      rotate(calc(-1 * var(--angle)));
   }
 
   100% {
-    transform: rotate(calc(var(--angle) + 360deg)) translateX(var(--radius)) rotate(calc(-1 * var(--angle) - 360deg));
+    transform: rotate(calc(var(--angle) + 360deg)) translateX(var(--radius))
+      rotate(calc(-1 * var(--angle) - 360deg));
   }
 }
 
@@ -86,39 +88,42 @@ body {
   /* adjust height for effect */
   width: 100%;
   border-radius: inherit;
-  background: radial-gradient(43.91% 58.17% at 56.09% -8.17%,
-      #195e2d 0%,
-      #052811 100%);
+  background: radial-gradient(
+    43.91% 58.17% at 56.09% -8.17%,
+    #195e2d 0%,
+    #052811 100%
+  );
   pointer-events: none;
   z-index: -1;
 }
 
-
-.primary-btn{
-  background: #00EA52;
-padding: 10px 20px;
+.primary-btn {
+  background: #00ea52;
+  padding: 10px 20px;
 }
 
-.menu-list {}
+.menu-list {
+}
 
-.menu-list li {}
+.menu-list li {
+}
 
 .menu-list .menu-item {
   padding: 0px 24px 5px;
-  border-bottom: 2px solid #00EA5200;
+  border-bottom: 2px solid #00ea5200;
   border-radius: 40px;
   display: block;
 }
 
 .menu-list .menu-item:hover {
-  border-color: #0CE859;
-  color: #0CE859;
+  border-color: #0ce859;
+  color: #0ce859;
 }
 
 .isActive {
   border-radius: 40px;
-  border-bottom: 2px solid #0CE859 !important;
-  color: #0CE859;
+  border-bottom: 2px solid #0ce859 !important;
+  color: #0ce859;
 }
 
 .menu-list .subMenu {
@@ -134,8 +139,6 @@ padding: 10px 20px;
 .menu-list .subMenu .isActive a {
   background: #009936;
   color: #fff;
-
-
 }
 
 .menu-list .subMenu li {
@@ -153,7 +156,7 @@ padding: 10px 20px;
   border-radius: 10px;
   padding: 10px 20px;
 }
-.pageFooter{
+.pageFooter {
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -172,11 +175,11 @@ padding: 10px 20px;
 }
 
 .menu-list .subMenu .subMenuInner .submenu-list::after {
-  content: '';
+  content: "";
   width: 1px;
   height: 100%;
   right: -15px;
-  background: #0A420A;
+  background: #0a420a;
   top: 0;
   position: absolute;
 }
@@ -189,14 +192,18 @@ padding: 10px 20px;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  border: 1px solid #07481E80;
+  border: 1px solid #07481e80;
   transition: 0.3s;
   padding: 10px;
 }
 
 .submenuList a:hover {
-  border-color: #07481E;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(12, 64, 30, 1) 100%);
+  border-color: #07481e;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(12, 64, 30, 1) 100%
+  );
 }
 
 .sub-menu-list {
@@ -239,6 +246,31 @@ padding: 10px 20px;
   display: block;
 }
 
+/* Select button (flag + arrow area) */
+.PhoneInputCountrySelect {
+  background-color: #021a0e !important;
+  color: white !important;
+}
 
+/* Dropdown options */
+.PhoneInputCountrySelect option {
+  background-color: #000000 !important;
+  color: white !important;
+}
 
+/* Selected / hover option */
+.PhoneInputCountrySelect option:checked {
+  background-color: #16a34a !important;
+  color: white !important;
+}
 
+/* Phone number input */
+.PhoneInputInput {
+  background-color: #021a0e;
+  color: white;
+}
+
+/* Placeholder */
+.PhoneInputInput::placeholder {
+  color: #9ca3af;
+}

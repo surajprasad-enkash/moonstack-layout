@@ -2,11 +2,13 @@
 
 import { useState } from "react";
 import { FaUpload } from "react-icons/fa";
-import { FaCheck } from "react-icons/fa6";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
+import type { Value } from "react-phone-number-input";
 
 export default function ContactForm() {
   const [checked, setChecked] = useState(false);
-
+  const [value, setValue] = useState<Value>();
   return (
     <div className="mx-auto w-full max-w-xl rounded-xl border border-[#03361D] bg-[#021A0E] p-8 text-white shadow-xl">
       <h2 className="mb-6 text-2xl font-semibold">Let’s Connect With Us</h2>
@@ -21,7 +23,7 @@ export default function ContactForm() {
       {/* Phone + Email */}
       <div className="mb-4 flex gap-4">
         {/* Phone */}
-        <div className="border-primary bg-primary-100 flex w-full items-center gap-2 rounded-md border p-3">
+        {/* <div className="border-primary bg-primary-100 flex w-full items-center gap-2 rounded-md border p-3">
           <span>🇮🇳</span>
           <span className="text-gray-400">(+91)</span>
           <input
@@ -29,7 +31,16 @@ export default function ContactForm() {
             placeholder="000-000-0000"
             className="bg-primary-100 w-full outline-none placeholder:text-gray-400"
           />
-        </div>
+        </div> */}
+        <PhoneInput
+          defaultCountry="IN"
+          placeholder="Enter phone number"
+          value={value}
+          onChange={setValue}
+          className="border-primary bg-primary-100 flex w-full items-center gap-2 rounded-md border p-3 contactFormnumperInput"
+          inputClassName="bg-primary-100 text-white outline-none"
+          countrySelectClassName="bg-primary text-white "
+        />
 
         {/* Email */}
         <div className="border-primary bg-primary-100 flex w-full items-center gap-2 rounded-md border p-3">

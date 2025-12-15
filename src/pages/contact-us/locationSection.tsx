@@ -49,13 +49,18 @@ const LocationSection = () => {
                     },
                   ]}
                 />
-                <a className="border-primary text-primary z-10 rounded-full border px-4 py-2 text-sm transition hover:bg-green-600 hover:text-white">
+                <a
+                  href="https://maps.app.goo.gl/CieCPT4nfzxaAmEs6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-primary text-primary z-10 rounded-full border px-4 py-2 text-sm transition hover:bg-green-600 hover:text-white"
+                >
                   Location
                 </a>
               </div>
             </div>{" "}
           </div>
-          <div className="absolute right-0">
+          <div className="right-0 md:absolute">
             <Image src={mapImg} alt={"map"} height={544} width={700} />
           </div>
         </div>
