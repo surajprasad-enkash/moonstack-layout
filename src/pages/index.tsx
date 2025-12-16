@@ -18,6 +18,7 @@ import FAQSection from "@/components/Sections/FaqSection/FaqSection";
 import SmartSection from "@/components/Homepage/SmartSection";
 
 import counterBg from "../../public/assets/home/counter/counterBg.webp";
+import BackedByBestSlider from "@/components/BestSlider";
 
 export default function Home() {
   return (
@@ -63,6 +64,7 @@ export default function Home() {
         <CaseStudies />
         <TechnologyComponent />
         <ProvenProcess />
+        <BackedByBestSlider />
         <InsightsIdeas />
         <FAQSection
           title="Our FAQs "
