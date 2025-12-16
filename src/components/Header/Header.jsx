@@ -129,23 +129,23 @@ export default function Header() {
         ],
         "Search Engine Optimization": [
             { title: "SEO", icon: webDev.src, url: '/seo' },
-           
+
         ],
         "Product Designing": [
             { title: "Product Designing", icon: webDev.src, url: '/product-designing-service' },
-          
+
         ],
         "Ui/Ux Designing": [
             { title: "Ui/Ux Designing", icon: webDev.src, url: '/ui-ux-designing-service' },
-           
+
         ],
         "Cloud Service": [
             { title: "Cloud Service", icon: webDev.src, url: '/cloud-services' },
-           
+
         ],
         "Industries": [
             { title: "Industries", icon: webDev.src, url: '/industries' },
-           
+
         ],
     };
 
@@ -237,14 +237,12 @@ export default function Header() {
 
                         {/* COMPANY */}
                         <li
-                            className="menu-item relative megaMenuItem"
+                            className={`menu-item relative megaMenuItem ${isCompanyActive() ? "isActive current" : "hover:text-green-400"
+                                }`}
                             onMouseEnter={() => setOpenMenu("company")}
                             onMouseLeave={() => setOpenMenu(null)}
                         >
-                            <button
-                                className={`transition cursor-pointer ${isCompanyActive() ? "isActive current" : "hover:text-green-400"
-                                    }`}
-                            >
+                            <button className={`transition cursor-pointer `} >
                                 Company
                             </button>
 
@@ -254,9 +252,41 @@ export default function Header() {
                                         className="space-y-2 z-50 sub-menu-list"
                                         style={{ backgroundImage: `url(${submenuBg.src})` }}
                                     >
-                                        <li><Link href="/about-us" className="sub-menu-item">About us</Link></li>
-                                        <li><Link href="/blogs" className="sub-menu-item">Blogs</Link></li>
-                                        <li><Link href="/career" className="sub-menu-item">Career</Link></li>
+                                        <li>
+                                            <Link
+                                                href="/about-us"
+                                                className={`sub-menu-item ${isActive("/about-us")
+                                                        ? "border-b-1 border-[#0ce859] !text-[#0ce859]"
+                                                        : "border-b-1 border-transparent hover:border-b-1 hover:border-[#0ce859] hover:!text-[#0ce859]"
+                                                    }`}
+                                            >
+                                                About us
+                                            </Link>
+                                        </li>
+
+                                        <li>
+                                            <Link
+                                                href="/blogs"
+                                                className={`sub-menu-item ${isActive("/blogs")
+                                                        ? "border-b-1 border-[#0ce859] !text-[#0ce859]"
+                                                        : "border-b-1 border-transparent hover:border-b-1 hover:border-[#0ce859] hover:!text-[#0ce859]"
+                                                    }`}
+                                            >
+                                                Blogs
+                                            </Link>
+                                        </li>
+
+                                        <li>
+                                            <Link
+                                                href="/careers"
+                                                className={`sub-menu-item ${isActive("/careers")
+                                                        ? "border-b-1 border-[#0ce859] !text-[#0ce859]"
+                                                        : "border-b-1 border-transparent hover:border-b-1 hover:border-[#0ce859] hover:!text-[#0ce859]"
+                                                    }`}
+                                            >
+                                                Career
+                                            </Link>
+                                        </li>
                                     </ul>
                                 </div>
                             )}
@@ -266,7 +296,7 @@ export default function Header() {
                         <li>
                             <Link
                                 href="/contact-us"
-                                className={`menu-item transition ${isActive("/contact") ? "text-green-400 underline underline-offset-8" : "hover:text-green-400"
+                                className={`menu-item transition ${isActive("/contact-us") ? "isActive current" : "hover:text-green-400"
                                     }`}
                             >
                                 Contact us
