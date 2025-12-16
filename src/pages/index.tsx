@@ -43,6 +43,8 @@ export default function Home() {
         />
 
         <Marquee />
+     
+       
         <SmartSection
           title="Why Moonstack Is the"
           highlight="Smart Choice for"
