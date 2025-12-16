@@ -5,10 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 import blogBg from "../../../public/assets/home/blogBg.webp";
-import clockIcon from "../../../public/assets/home/clock_icon.svg";
+import { FaClock } from "react-icons/fa";
 
 import Heading from "../Heading/Heading";
-import Loader from "../Loader/Loader";
+import Loader from "../Loader";
 
 interface PostItem {
   category: {
@@ -186,7 +186,7 @@ export default function BlogCardGrid() {
                   </h4>
 
                   <div className="flex items-center gap-2 text-xs text-gray-400">
-                    <Image src={clockIcon} alt="clock" />
+                    <FaClock />
                     {post.date}
                   </div>
                 </div>

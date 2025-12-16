@@ -6,7 +6,7 @@ import blogBg from "../../../public/assets/home/blogBg.webp";
 import Heading from "../Heading/Heading";
 import Link from "next/link";
 import clockIcon from "../../../public/assets/home/clock_icon.svg";
-import Loader from "../Loader/Loader";
+// import Loader from "../Loader/";
 
 interface PostItem {
   category: {
@@ -67,29 +67,30 @@ export default function BlogCardGrid() {
 
   // ⏳ Loading
   if (loading) {
-    return <div className="py-20 items-center justify-center flex min-h-[855px]">
-           <Loader />
-    </div>;
+    return (
+      <div className="flex min-h-[855px] items-center justify-center py-20">
+        {/* <Loader /> */}
+      </div>
+    );
   }
-  
+
   // ❌ Error
   if (error) {
-      return <div className="py-20 text-center text-red-500">{error}</div>;
-    }
-    
-    // 🚫 No posts
-    if (!posts.length) {
-        return (
-            <div className="py-20 text-center text-gray-400">No posts found</div>
-        );
-    }
-    
+    return <div className="py-20 text-center text-red-500">{error}</div>;
+  }
+
+  // 🚫 No posts
+  if (!posts.length) {
     return (
-        <section
-        className="w-full bg-black bg-cover bg-center px-5 py-20 md:px-20"
-        style={{ backgroundImage: `url(${blogBg.src})` }}
-        >
-            
+      <div className="py-20 text-center text-gray-400">No posts found</div>
+    );
+  }
+
+  return (
+    <section
+      className="w-full bg-black bg-cover bg-center px-5 py-20 md:px-20"
+      style={{ backgroundImage: `url(${blogBg.src})` }}
+    >
       <div className="container">
         <div className="row pb-20">
           <div className="m-auto max-w-[780px] text-center">
@@ -97,7 +98,10 @@ export default function BlogCardGrid() {
               headingTag="h2"
               className="font-36 mb-3 font-[500]"
               content={[
-                { text: `Blogs & Insights `, color: "text-white block text-gradient" },
+                {
+                  text: `Blogs & Insights `,
+                  color: "text-white block text-gradient",
+                },
               ]}
             />
             <Heading
@@ -112,7 +116,7 @@ export default function BlogCardGrid() {
             />
           </div>
         </div>
-        <div className="row flex gap-5 ">
+        <div className="row flex gap-5">
           {posts.map((post, index) => (
             <article
               key={index}
