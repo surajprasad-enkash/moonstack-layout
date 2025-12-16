@@ -42,7 +42,7 @@ export default function Home() {
           buttonText="Get Started"
           buttonLink="/contact"
         />
-        <Marquee />
+       
        
         <SmartSection
           title="Why Moonstack Is the"
