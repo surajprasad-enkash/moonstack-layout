@@ -97,7 +97,7 @@ export default function BlogCardGrid() {
               headingTag="h2"
               className="font-36 mb-3 font-[500]"
               content={[
-                { text: `Blogs & Insights `, color: "text-white block" },
+                { text: `Blogs & Insights `, color: "text-white block text-gradient" },
               ]}
             />
             <Heading

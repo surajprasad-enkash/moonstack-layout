@@ -33,7 +33,7 @@ export default function HeroSection({
         {/* Heading */}
         <h1 className="text-[60px] leading-[125%] font-[500]">
           <span className="flex justify-center">{title}<Image src={headingIcon} width={60} height={60} alt={""}></Image></span>
-          <span className="highlight-text">{highlight}</span>
+          <span className="text-gradient">{highlight}</span>
         </h1>
 
         {/* Description */}
