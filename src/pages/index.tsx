@@ -19,6 +19,8 @@ import SmartSection from "@/components/Homepage/SmartSection";
 
 import counterBg from "../../public/assets/home/counter/counterBg.webp";
 import BackedByBestSlider from "@/components/BestSlider";
+import BlogCardGrid2 from "@/components/BlogCardGrid/BlogCardGrid2";
+import TechAssistanceSection from "@/components/Homepage/TechAssistanceSection";
 
 export default function Home() {
   return (
@@ -42,9 +44,8 @@ export default function Home() {
           buttonLink="/contact"
         />
 
-        <Marquee />
+        {/* <Marquee /> */}
      
-       
         <SmartSection
           title="Why Moonstack Is the"
           highlight="Smart Choice for"
@@ -61,12 +62,15 @@ export default function Home() {
         {/* <HomepageBanner /> */}
 
         {/* <SolutionsComponent /> */}
+        
+       <TechAssistanceSection />
         <OurServices />
 
         <CaseStudies />
         <TechnologyComponent />
         <ProvenProcess />
         <BackedByBestSlider />
+        <BlogCardGrid2 />
         <InsightsIdeas />
         <FAQSection
           title="Our FAQs "

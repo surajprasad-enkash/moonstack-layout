@@ -2,126 +2,202 @@
 import React from "react";
 import Image from "next/image";
 import moment from "moment";
+import Link from "next/link";
 
-import logo from "../../public/assets/logo-green.png";
-import img1 from "../../public/assets/footer-1.png";
-import img2 from "../../public/assets/footer-2.png";
-import twitter from "../../public/assets/twitter.svg";
-import linkedin from "../../public/assets/linkedin.svg";
-import facebook from "../../public/assets/facebook.svg";
-import whatsapp from "../../public/assets/whatsapp.svg";
-import rating from "../../public/assets/rating.svg";
-import ratingRed from "../../public/assets/rating-red.svg";
-import upwork from "../../public/assets/upwork.png";
-import google from "../../public/assets/google.png";
-import clutch from "../../public/assets/clutch.png";
-import iso from "../../public/assets/iso.png";
+/* Assets */
+import logo from "../../public/assets/logo-white.png";
+import upwork from "../../public/assets/home/upwork.svg";
+import clutch from "../../public/assets/home/clutch.svg";
+import facebook from "../../public/assets/footer/Facebook.svg";
+import linkedin from "../../public/assets/footer/linkdin.svg";
+import twitter from "../../public/assets/footer/twitter.svg";
+import instagram from "../../public/assets/footer/instagram.svg";
+import youtube from "../../public/assets/footer/youtube.svg";
 
-import footerBg from '../../public/assets/footerbg.svg';
+// BIG moonstack image
+import moonstackText from "../../public/assets/footer/moonstack.svg";
 
-interface FooterRefs {
-  footerCareer: React.RefObject<HTMLDivElement>;
-  terms: React.RefObject<HTMLDivElement>;
-  privacy: React.RefObject<HTMLDivElement>;
-  blog: React.RefObject<HTMLDivElement>;
-  footerContactUs: React.RefObject<HTMLDivElement>;
-}
+// footer bg image
 
-const Footer: React.FC<{ refs: FooterRefs }> = ({ refs }) => {
-  const footerLinks = [
-    { id: 1, title: "Career", ref: refs.footerCareer },
-    { id: 2, title: "Terms & Conditions", ref: refs.terms },
-    { id: 3, title: "Privacy Policy", ref: refs.privacy },
-    { id: 4, title: "Blog", ref: refs.blog },
-    { id: 5, title: "Contact Us", ref: refs.footerContactUs },
-  ];
+import footerBg from "../../public/assets/footer/footer-bg.webp";
 
+const Footer = () => {
   return (
-     
-    <footer className="bg-black px-5 py-10 text-white md:px-8 pageFooter" style={{backgroundImage:`url(${footerBg.src})`}}>
-      <div className="container mx-auto w-full">
-        {/* Top Row */}
-        <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
-          {/* Logo + Links */}
-          <div className="flex flex-col items-center gap-6 md:flex-row md:items-start">
-            <div className="w-32 md:w-40">
-              <Image src={logo} alt="logo" className="w-full object-contain" />
-            </div>
-
-            <div className="flex flex-wrap items-center justify-center gap-3 text-center md:justify-start md:gap-5">
-              {footerLinks.map((item, index) => (
-                <React.Fragment key={item.id}>
-                  <div className="cursor-pointer text-sm poppins-medium whitespace-nowrap">
-                    {item.title}
+    <footer className="footer z-1 relative">
+      <div className="pageFooter">
+        {/* TOP SECTION */}
+        <div
+          className="footerTop bg-cover bg-center px-20 py-10"
+          style={{ backgroundImage: `url(${footerBg.src})` }}
+        >
+          <div className="container">
+            <div className="row flex flex-wrap">
+              {/* LEFT */}
+              <div className="footerLeft w-[100%] md:w-[50%]">
+                <div className="max-w-[500]">
+                  <div className="footer_logo mb-[24px]">
+                    <Link href="/">
+                      <Image src={logo} width={175} alt="Moonstack" />
+                    </Link>
                   </div>
 
-                  {/* Divider only on desktop */}
-                  {index < footerLinks.length - 1 && (
-                    <span className="hidden md:inline-block">|</span>
-                  )}
-                </React.Fragment>
-              ))}
-            </div>
-          </div>
+                  <p className="footer_description mb-[24px] text-[14px] leading-[200%] font-[400]">
+                    Welcome to Moonstack, where innovation meets our passion in
+                    a journey that started with a simple idea and a shared
+                    dream.
+                  </p>
 
-          {/* Social Icons */}
-          <div className="flex justify-center gap-4 md:justify-end">
-            <Image src={twitter} alt="twitter" className="w-6 cursor-pointer" />
-            <Image src={linkedin} alt="linkedin" className="w-6 cursor-pointer" />
-            <Image src={facebook} alt="facebook" className="w-6 cursor-pointer" />
-            <Image src={whatsapp} alt="whatsapp" className="w-6 cursor-pointer" />
-          </div>
-        </div>
+                  {/* REVIEWS */}
+                  <div className="footerReviews">
+                    <div className="reviewBox">
+                      <Image src={upwork} alt="Upwork" />
+                      <p>
+                        <span className="reviewStars">★★★★★</span>
+                        <span className="reviewCount">(95 Reviews)</span>
+                      </p>
+                    </div>
 
-        {/* Middle Row */}
-        <div className="mt-10 flex flex-col items-center gap-8 md:flex-row md:justify-between">
-          {/* Images */}
-          <div className="flex justify-center gap-5 md:justify-start">
-            <Image src={img1} alt="footer 1" className="w-20 object-contain" />
-            <Image src={img2} alt="footer 2" className="w-20 object-contain" />
-          </div>
-
-          {/* Reviews */}
-          <div className="flex flex-wrap justify-center gap-4 md:justify-end">
-            {[
-              { label: "Review on", icon: rating, platform: upwork, count: "95 reviews" },
-              { label: "Review on", icon: rating, platform: google, count: "95 reviews" },
-              { label: "Review on", icon: ratingRed, platform: clutch, count: "120 reviews" },
-              { label: "ISO 27001:2018", icon: iso, platform: null, count: null },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="w-[150px] rounded-md bg-white p-3 text-black shadow-sm"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="text-xs poppins-medium">{item.label}</span>
-                  {item.icon && (
-                    <Image src={item.icon} alt="rating" className="w-16" />
-                  )}
-                </div>
-
-                <div className="mt-1 flex items-center justify-between">
-                  {item.platform && (
-                    <Image
-                      src={item.platform}
-                      alt="platform"
-                      className="w-10 object-contain"
-                    />
-                  )}
-                  {item.count && (
-                    <span className="text-xs poppins-regular text-gray-500">
-                      {item.count}
-                    </span>
-                  )}
+                    <div className="reviewBox">
+                      <Image src={clutch} alt="Clutch" />
+                      <p>
+                        <span className="reviewStars">★★★★★</span>
+                        <span className="reviewCount">(120 Reviews)</span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            ))}
+
+              {/* LINKS */}
+              <div className="footerLinksWrapper w-[100%] md:w-[50%]">
+                <div className="flex w-[100%] flex-wrap">
+                  <div className="footerLinks w-[100%] md:w-[33.33%]">
+                    <h4 className="footerTitle mb-[21px] text-[14px] leading-[150%] text-[#878686]">
+                      Company
+                    </h4>
+                    <ul className="footerMenu">
+                      <li>
+                        <Link href="/about-us">About us</Link>
+                      </li>
+                      <li>
+                        <Link href="/contact-us">Contact us</Link>
+                      </li>
+                      <li>
+                        <Link href="/careers">Careers</Link>
+                      </li>
+                      <li>
+                        <Link href="/blogs">Blogs & insights</Link>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="footerLinks w-[100%] md:w-[33.33%]">
+                    <h4 className="footerTitle mb-[21px] text-[14px] leading-[150%] text-[#878686]">
+                      Solutions
+                    </h4>
+                    <ul className="footerMenu">
+                      <li>
+                        <Link href="/website-development-service">
+                          Web development
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/application-development">
+                          App development
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/frontend-development">
+                          Frontend development
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/backend-developer">
+                          Backend development
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="footerLinks w-[100%] md:w-[33.33%]">
+                    <h4 className="footerTitle mb-[21px] text-[14px] leading-[150%] text-[#878686]">
+                      Resources
+                    </h4>
+                    <ul className="footerMenu">
+                      <li>
+                        <Link href="/terms-conditions">Terms & Conditions</Link>
+                      </li>
+                      <li>
+                        <Link href="/privacy-policy">Privacy policy</Link>
+                      </li>
+                      <li>
+                        <Link href="/cookies">Cookies</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              {/* SOCIAL */}
+              <div className="footerSocial flex w-[100%] flex-wrap items-center pt-[68px]">
+                <div className="footerSocialLeft md:w-[50%]">
+                  <p className="footerConnectText text-[14px] leading-[200%] font-[400]">
+                    Connect with us on other platforms
+                  </p>
+                </div>
+                <div className="footerSocialRight flex justify-end gap-[20px] md:w-[50%]">
+                  <Link
+                    target="_blank"
+                    href="https://www.facebook.com/people/Moonstack/100085468621969/?_rdr"
+                    aria-label="Facebook"
+                  >
+                    <Image src={facebook} alt="Facebook" />
+                  </Link>
+                  <Link
+                    target="_blank"
+                    href="https://www.linkedin.com/company/moonstack-co/"
+                    aria-label="LinkedIn"
+                  >
+                    <Image src={linkedin} alt="LinkedIn" />
+                  </Link>
+                  <Link
+                    target="_blank"
+                    href="https://x.com/at_moonstack"
+                    aria-label="Twitter"
+                  >
+                    <Image src={twitter} alt="Twitter" />
+                  </Link>
+                  <Link
+                    target="_blank"
+                    href="https://www.instagram.com/moonstack.co/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                    aria-label="Instagram"
+                  >
+                    <Image src={instagram} alt="Instagram" />
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="mt-8 text-center text-sm text-gray-400 md:text-left">
-          © {moment().year()} Moonstack. All rights reserved.
+        {/* BRAND IMAGE (NOT TEXT, CLASS KEPT) */}
+        <div className="footerBrandText px-[20px] pt-15 pb-12 md:px-20">
+          <div className="container">
+            <div className="flex justify-center">
+              <Image
+                src={moonstackText}
+                alt="Moonstack"
+                className="footerBrandImage"
+              />
+            </div>
+
+            {/* BOTTOM */}
+            <div className="footerBottom mt-[50px] text-center">
+              <p>
+                Copyright © {moment().year()} Moonstack | Design by Moonstack
+                Team
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
