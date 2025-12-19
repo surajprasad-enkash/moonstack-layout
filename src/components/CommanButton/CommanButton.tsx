@@ -13,7 +13,6 @@ interface CustomButtonProps
     | "white";
   text: string;
   href?: string; // <-- Add link support
-  
 }
 
 const CustomButton = forwardRef<HTMLButtonElement, CustomButtonProps>(
@@ -48,7 +47,7 @@ const CustomButton = forwardRef<HTMLButtonElement, CustomButtonProps>(
         "backdrop-blur-[22.2px] bg-[#10933E30] py-[10px] px-[20px] text-[#0BD954] ",
       services:
         "bg-primary-300 from-green-500 to-black-500 text-white font-14 py-2 px-[10px]",
-      white: "bg-white text-black font-14 py-4 px-[32px]",
+      white: "bg-white text-black font-14 py-4 px-[32px] font-semibold",
     };
 
     const classes = cn(baseStyles, variantStyles[variant], className);

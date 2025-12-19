@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import blogBg from "../../../public/assets/home/blogBg.webp";
 import { FaClock } from "react-icons/fa";
 
 import Heading from "../Heading/Heading";
-import Loader from "../Loader/Loader";
-
+import Loader from "../Loader";
 
 interface PostItem {
   category: {

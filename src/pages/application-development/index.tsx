@@ -50,7 +50,11 @@ const ApplicationDevelopment = (): React.JSX.Element => {
         <WebsiteCategoryBanner
           title={[
             {
-              text: "Mobile Application Development Company ",
+              text: "Mobile Application Development  ",
+              color: "text-white ",
+            },
+            {
+              text: "Company ",
               color: "text-gradient ",
             },
           ]}
@@ -72,11 +76,11 @@ const ApplicationDevelopment = (): React.JSX.Element => {
           heading={[
             {
               text: "Get Customised Mobile App Solutions in India ",
-              color: "text-primary  text-center ",
+              color: "text-white  text-center ",
             },
             {
               text: "With Moonstack  ",
-              color: " text-white text-center ",
+              color: "text-gradient  text-center ",
             },
           ]}
           altText="Backend importance image"
@@ -90,7 +94,7 @@ const ApplicationDevelopment = (): React.JSX.Element => {
           headingLines={[
             {
               text: "Our Specialities ",
-              color: "text-primary",
+              color: "text-white",
             },
           ]}
           subHeadingLines={[

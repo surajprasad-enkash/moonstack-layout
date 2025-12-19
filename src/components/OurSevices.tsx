@@ -63,8 +63,8 @@ const OurServices: React.FC<OurServicesProps> = ({
         >
           <div className="m-auto w-3/4">
             <Heading
-              headingTag="h3"
-              className="text-center font-semibold"
+              headingTag="h2"
+              className="text-center font-bold"
               content={headingLines}
             />
             <Heading

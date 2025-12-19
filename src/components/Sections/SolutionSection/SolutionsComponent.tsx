@@ -62,7 +62,7 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
             >
               <Heading
                 headingTag="h2"
-                className={`pt-3 font-semibold ${headingClassName}`}
+                className={`font-semibold ${headingClassName}`}
                 content={[{ text: headingText, color: "text-white" }]}
               />
             </motion.div>
@@ -78,7 +78,7 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
               >
                 <Heading
                   headingTag="p"
-                  className={`pt-3 ${subHeadingClassName}`}
+                  className={`pt-4 ${subHeadingClassName}`}
                   content={[{ text: subHeadingText, color: "text-gray-100" }]}
                 />
               </motion.div>

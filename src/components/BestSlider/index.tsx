@@ -69,9 +69,9 @@ export default function BackedByBestSlider() {
                 {/* CENTER CARD */}
                 <div className="center-card">
                   <div className="flex h-[420px] w-[520px] rounded-3xl bg-[#1f1f1f] p-8 text-white transition duration-150 ease-in-out">
-                    <div className="flex w-1/2 flex-col justify-between">
+                    <div className="flex w-1/2 flex-col justify-between pr-8">
                       <p className="text-xl leading-relaxed font-medium">
-                        <span className="mr-2 text-4xl text-purple-400">“</span>
+                        <span className="text-4xl text-purple-400">“</span>
                         {item.quote}
                       </p>
 

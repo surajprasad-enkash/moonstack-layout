@@ -35,7 +35,7 @@ const ReusableBanner: React.FC<BannerProps> = ({
           <div className="text-white">
             <Heading
               headingTag="h3"
-              className="text-left font-semibold"
+              className="text-left font-bold"
               content={title}
             />
             <Heading

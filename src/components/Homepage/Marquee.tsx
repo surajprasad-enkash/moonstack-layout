@@ -27,7 +27,11 @@ const MarqueeComponent = () => {
           <Image src={coralogix} alt="coralogix" className="h-auto w-25" />
         </div>
         <div className="px-8">
-          <Image src={craftywekabar} alt="craftywekabar" className="h-auto w-25" />
+          <Image
+            src={craftywekabar}
+            alt="craftywekabar"
+            className="h-auto w-25"
+          />
         </div>
         <div className="px-8">
           <Image src={dnwe} alt="dnwe" className="h-auto w-25" />

@@ -8,11 +8,11 @@ const HeroSection = () => {
     <section className="relative overflow-hidden bg-black py-12 md:pt-32 md:pb-20">
       <BiDirectionalMarquee />
       <div className="container mx-auto">
-        <div className="absolute top-[32%] left-1/2 z-10 flex w-1/2 -translate-x-1/2 items-center justify-center bg-black p-9 shadow-[0_0_26px_15px_#000]">
+        <div className="absolute top-[32%] left-1/2 z-10 flex w-1/2 -translate-x-1/2 items-center justify-center bg-black p-2 shadow-[0_0_26px_15px_#000]">
           <div>
             <Heading
               headingTag="h1"
-              className="text-center leading-tight font-semibold"
+              className="text-center leading-tight font-extrabold"
               content={[
                 {
                   text: "Explore new job vacancies all",
@@ -27,7 +27,7 @@ const HeroSection = () => {
 
             <Heading
               headingTag="p"
-              className="mt-4 text-center text-gray-400"
+              className="text-primary-grey mt-4 text-center"
               content={[
                 {
                   text: "Find opportunities that match your skills and ambition. Join teams building meaningful products across the globe.",

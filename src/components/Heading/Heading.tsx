@@ -33,13 +33,13 @@ const Heading: React.FC<HeadingProps> = ({
     : [{ text: String(content) }];
 
   const headingClassMap: Record<string, string> = {
-    h1: "text-[28px] leading-[32px] md:text-[48px] md:leading-[125%] tracking-normal",
+    h1: "text-[28px] leading-[32px] md:text-[48px] md:leading-[60px] tracking-normal font-bold",
     h2: "text-[21px] leading-[32px] md:text-[40px] md:leading-[140%] tracking-[-0.04em]",
     h3: "text-[20px] leading-[32px] md:text-[36px] md:leading-[140%] tracking-normal",
     h4: "text-[16px] leading-[32px] md:text-[24px] md:leading-[140%] tracking-[-0.04em]",
     h5: "text-[12px] leading-[16px] md:text-[20px] md:leading-[140%] tracking-[-0.04em]",
     h6: "text-[9px] leading-[28px] md:text-[18px] md:leading-[140%] tracking-[-0.04em]",
-    p: "text-[12px] leading-[28px] md:text-[14px] md:leading-[200%] tracking-[-0.04em] tracking-wider",
+    p: "text-[12px] leading-[28px] md:text-[16px] md:leading-[200%] tracking-[-0.04em] tracking-wider",
   };
 
   const defaultClass = headingClassMap[headingTag] || "";

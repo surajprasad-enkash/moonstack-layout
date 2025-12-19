@@ -18,12 +18,15 @@ import FAQSection from "@/components/Sections/FaqSection/FaqSection";
 import SmartSection from "@/components/Homepage/SmartSection";
 
 import counterBg from "../../public/assets/home/counter/counterBg.webp";
+import BlogCardGrid from "@/components/BlogCardGrid/BlogCardGrid2";
 import BackedByBestSlider from "@/components/BestSlider";
 import BlogCardGrid2 from "@/components/BlogCardGrid/BlogCardGrid2";
 import TechAssistanceSection from "@/components/Homepage/TechAssistanceSection";
 import AppWebDevelopment from "@/components/Homepage/AppWebDevelopment/AppWebDevelopment";
 import SmartSolutions from "@/components/Homepage/SmartSolutions/SmartSolutions";
 import BackgroundLines from "@/components/Homepage/BackgroundLines";
+// import BlogCardGrid from "@/components/BlogCardGrid/BlogCardGrid";
+
 
 export default function Home() {
   return (

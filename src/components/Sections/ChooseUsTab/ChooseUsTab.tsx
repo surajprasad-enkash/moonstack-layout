@@ -9,7 +9,7 @@ interface TabItem {
   title: string;
   description: string;
   image: string | StaticImageData;
-  imgHeight?: string | "400";
+  imgHeight?: string;
 }
 
 interface ChooseUsTabSectionProps {
@@ -47,8 +47,8 @@ const ChooseUsTabSection: React.FC<ChooseUsTabSectionProps> = ({
             className={headingLayout === "between" ? "text-left" : ""}
           >
             <Heading
-              headingTag="h3"
-              className="font-semibold text-white"
+              headingTag="h2"
+              className="font-bold text-white"
               content={headingLines}
             />
           </motion.div>
@@ -62,7 +62,7 @@ const ChooseUsTabSection: React.FC<ChooseUsTabSectionProps> = ({
               className={
                 headingLayout === "between"
                   ? "w-full text-left md:w-auto"
-                  : "pt-3 text-center"
+                  : "pt-4 text-center"
               }
             >
               <Heading

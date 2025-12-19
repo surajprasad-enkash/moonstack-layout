@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./Header";
 import Footer from "./Footer";
 import BodyClass from "./BodyClass/BodyClass"; // Ensure this path is correct
 import NewHeader from "@/components/Header/Header";
@@ -31,8 +30,7 @@ const Layout: React.FC<{
   footerRefs?: IFooterRefs;
 }> = ({
   children,
-  refs = {} as IHeaderRefs,
-  footerRefs = {} as IFooterRefs,
+
 }) => {
   return (
     <>

@@ -23,11 +23,11 @@ const carreers = (): React.JSX.Element => {
         <WhyJoinSection
           heading={[
             {
-              text: "Get Customised Mobile App Solutions in India ",
+              text: "Get Customised  ",
               color: "text-primary  text-center ",
             },
             {
-              text: "With Moonstack  ",
+              text: " Mobile App Solutions in India With Moonstack  ",
               color: " text-white text-center ",
             },
           ]}
@@ -64,7 +64,6 @@ const carreers = (): React.JSX.Element => {
         <LatestOpportunity
           heading="Latest Opportunity"
           description="Work doesn’t feel like work when you’re supported by a driven team, fuelled by limitless opportunities and empowered by remarkable benefits"
-          jobs={jobsData}
         />
 
         <GetQuoteBanner

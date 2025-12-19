@@ -17,8 +17,8 @@ const ProcessSection: FC<ProcessProps> = ({
       <div className="container mx-auto flex items-center px-4 py-12 sm:px-10 md:py-20">
         <div className="mb-12 w-1/2 items-start justify-between gap-4 pt-5 md:flex-row">
           <Heading
-            headingTag="h3"
-            className="pb-4 font-semibold text-white"
+            headingTag="h2"
+            className="pb-4 font-bold text-white"
             content={heading ?? []} // SAFE PASS
           />
 

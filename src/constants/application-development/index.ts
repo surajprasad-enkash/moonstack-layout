@@ -186,18 +186,7 @@ export const utilisArr = [
     title: "Laravel",
     desc: "At Moonstack, we believe in building technology.",
   },
-  {
-    image: cakePhpIcon,
-    category: "Backend",
-    title: "CakePHP Development",
-    desc: "At Moonstack, we believe in building technology.",
-  },
-  {
-    image: codeIgniteIcon,
-    category: "Backend",
-    title: "CodeIgniter Development",
-    desc: "At Moonstack, we believe in building technology.",
-  },
+
   {
     image: dockerIcon,
     category: "Devops",
