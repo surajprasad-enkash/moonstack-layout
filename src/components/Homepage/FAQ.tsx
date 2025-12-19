@@ -83,10 +83,10 @@ const FAQ: React.FC<FAQProps> = ({
           <div className="flex flex-col gap-10 md:flex-row md:justify-between">
             <div className="sticky w-full md:top-10 md:w-[40%] lg:w-[35%]">
               <div className="pt-6 md:pt-10">
-                <div className="poppins-semibold bg-gradient-to-r from-[#25E8B1] via-[#60F90D] to-[#60F90D] bg-clip-text text-3xl text-transparent md:text-4xl lg:text-5xl">
+                <div className="bg-gradient-to-r from-[#25E8B1] via-[#60F90D] to-[#60F90D] bg-clip-text text-3xl font-bold text-transparent md:text-4xl lg:text-5xl">
                   {tagText}{" "}
                   {heading?.highlightText && (
-                    <span className="bg-gradient-to-r from-[#25E8B1] via-[#60F90D] to-[#60F90D] bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-[#25E8B1] via-[#60F90D] to-[#60F90D] bg-clip-text font-bold text-transparent">
                       {heading.highlightText}
                     </span>
                   )}
@@ -130,13 +130,13 @@ const FAQ: React.FC<FAQProps> = ({
                         id={`panel${i}-header`}
                         className="poppins-semibold text-base md:text-lg"
                       >
-                        <span className="pr-4 text-lg md:text-2xl">
+                        <span className="pr-4 text-lg font-bold md:text-2xl">
                           {String(i + 1).padStart(2, "0")}
                         </span>
-                        <span className="pt-[2px]">{item.title}</span>
+                        <span className="pt-[2px] font-bold">{item.title}</span>
                       </AccordionSummary>
 
-                      <AccordionDetails className="poppins-medium text-sm leading-[180%] md:text-base">
+                      <AccordionDetails className="text-sm leading-[180%] md:text-base">
                         {item.desc}
                       </AccordionDetails>
                     </Accordion>

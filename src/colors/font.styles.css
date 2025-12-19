@@ -1,165 +1,59 @@
-.poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.poppins-extralight {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.poppins-light {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.poppins-semibold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.poppins-extrabold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-}
-
-.poppins-black {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.poppins-thin-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-}
-
-.poppins-extralight-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-}
-
-.poppins-light-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.poppins-regular-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.poppins-medium-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-.poppins-semibold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-}
-
-.poppins-bold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.poppins-extrabold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-}
-
-.poppins-black-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-}
 
 .font-12 {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .font-14 {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .font-16 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .font-18 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .font-20 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .font-22 {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 .font-24 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .font-28 {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .font-30 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .font-36 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .font-38 {
-    font-size: 38px;
+  font-size: 38px;
 }
 
 .font-40 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
+.font-45 {
+  font-size: 45px;
+}
 .font-50 {
-    font-size: 50px;
+  font-size: 50px;
 }
-
-
 
 .font-60 {
-    font-size: 60px;
+  font-size: 60px;
 }

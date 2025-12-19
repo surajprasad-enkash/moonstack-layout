@@ -63,7 +63,7 @@ const WebsiteCategoryBanner: React.FC<WebsiteCategoryBannerProps> = ({
             {tabText && <Tag text={tabText} variant="blur" icon={circleIcon} />}
             <Heading
               headingTag="h1"
-              className="pt-2 text-start font-semibold"
+              className="pt-2 text-start font-extrabold"
               content={title}
             />
             <Heading

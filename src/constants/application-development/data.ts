@@ -38,7 +38,6 @@ import nativeIconFour from "../../../public/assets/app-development-images/native
 import nativeIconFive from "../../../public/assets/app-development-images/native-icon-five.svg";
 import nativeIconSix from "../../../public/assets/app-development-images/native-icon-six.svg";
 
-
 import androidBannerImg from "../../../public/assets/app-development-images/android-banner.webp";
 import androidBannerBg from "../../../public/assets/app-development-images/app-hire-banner.webp";
 import iosBannerImg from "../../../public/assets/app-development-images/ios-hire-img.webp";
@@ -52,6 +51,13 @@ import nativeContactbannerImg from "../../../public/assets/app-development-image
 import nativeContactbannerBg from "../../../public/assets/app-development-images/react-native-contact-bg.webp";
 import maintenanceContactbannerImg from "../../../public/assets/app-development-images/maintanance-contact-img.webp";
 import maintenanceContactbannerBg from "../../../public/assets/app-development-images/maintanance-contact-bg.webp";
+import androidTabOne from "../../../public/assets/app-development-images/android-tab-img-one.webp";
+import androidTabTwo from "../../../public/assets/app-development-images/android-tab-img-two.webp";
+import androidTabThree from "../../../public/assets/app-development-images/android-tab-img-three.webp";
+import androidTabFour from "../../../public/assets/app-development-images/android-tab-img-four.webp";
+import androidTabFive from "../../../public/assets/app-development-images/android-tab-img-five.webp";
+import androidTabSix from "../../../public/assets/app-development-images/android-tab-img-six.webp";
+
 import { IAccordionItem } from "@/components/Homepage/FAQ";
 import { StaticImageData } from "next/image";
 
@@ -82,6 +88,7 @@ export const pagesData: Record<
         title: string;
         description: string;
         image: StaticImageData | string;
+        imgHeight?: string;
       }[];
     };
     utilisArr: {
@@ -128,13 +135,12 @@ export const pagesData: Record<
     };
   }
 > = {
-  // ✅ ANDROID APP DEVELOPMENT
-  "android-app-development-service": {
+  "android-app": {
     hero: {
       title: [
         {
           text: "  Android Application  Development",
-          color: "text-gradient",
+          color: "text-white",
         },
         {
           text: " Service in India",
@@ -212,37 +218,43 @@ export const pagesData: Record<
           title: "Custom Solutions:",
           description:
             "At Moonstack, we ensure every app is built specifically as per our client’s requirements. This means even if you want a specific functionality in your Android app that’s generally not standard in your market, we can make it for you, no questions asked.",
-          image: androidIcon,
+          image: androidTabOne,
+          imgHeight: "569px",
         },
         {
           title: "End-to-End Solutions:",
           description:
             "We offer complete Android app development support from frameworking, UI/UX design, backend development, to app testing and launch support.",
-          image: figmaIcon,
+          image: androidTabTwo,
+          imgHeight: "569px",
         },
         {
           title: "Highly Qualified Developers: ",
           description:
             " Our development team at Moonstack is led by highly qualified developers and designers with years of real-world professional experience.",
-          image: reactIcon,
+          image: androidTabThree,
+          imgHeight: "569px",
         },
         {
           title: "Focus on User Intent:",
           description:
             " There’s an innate focus on user intent in our Android app development services in India. We ensure every app we build is practical in terms of design and engaging for users ",
-          image: reactIcon,
+          image: androidTabFour,
+          imgHeight: "569px",
         },
         {
           title: "Production Transparency: ",
           description:
             "Our enterprise Android app solutions in India always come with maintenance and post-launch support to ensure your app is functioning optimally and doesn’t have any compatibility issues moving forward.",
-          image: reactIcon,
+          image: androidTabFive,
+          imgHeight: "569px",
         },
         {
           title: "Maintenance & Support:  ",
           description:
             "Our enterprise Android app solutions in India always come with maintenance and post-launch support to ensure your app is functioning optimally and doesn’t have any compatibility issues moving forward.",
-          image: reactIcon,
+          image: androidTabSix,
+          imgHeight: "569px",
         },
       ],
     },
@@ -410,12 +422,15 @@ export const pagesData: Record<
     },
   },
 
-  // ✅ iOS APP DEVELOPMENT
-  "iOS-app-development-service": {
+  "iOS-app": {
     hero: {
       title: [
         {
-          text: "IOS App Development Services in India",
+          text: "IOS App Development ",
+          color: "text-white",
+        },
+        {
+          text: "Services in India",
           color: "text-gradient",
         },
       ],
@@ -686,12 +701,15 @@ export const pagesData: Record<
     },
   },
 
-  // ✅ REACT NATIVE
-  "react-native-app-development-service": {
+  "react-native-app": {
     hero: {
       title: [
         {
-          text: " React Native Development Service in India ",
+          text: " React Native Development  ",
+          color: "text-white",
+        },
+        {
+          text: "Service in India ",
           color: "text-gradient",
         },
       ],
@@ -983,11 +1001,11 @@ export const pagesData: Record<
     },
   },
 
-  // ✅ PWA
-  "pwa-development-service": {
+  pwa: {
     hero: {
       title: [
-        { text: "PWA Development Service in India", color: "text-gradient" },
+        { text: "PWA Development ", color: "text-white" },
+        { text: "Service in India", color: "text-gradient" },
       ],
       description: [
         {
@@ -1290,12 +1308,15 @@ export const pagesData: Record<
     },
   },
 
-  // ✅ MANAGEMENT
-  "mobile-app-maintenance-service": {
+  "app-maintenance": {
     hero: {
       title: [
         {
-          text: "Mobile App Maintenance Services in India",
+          text: "Mobile App Maintenance ",
+          color: "text-white",
+        },
+        {
+          text: "Services in India",
           color: "text-gradient",
         },
       ],

@@ -56,8 +56,8 @@ const ImportanceSection: React.FC<ImportanceSectionProps> = ({
         <div className="flex flex-col justify-center md:w-1/2">
           {heading && (
             <Heading
-              headingTag="h3"
-              className="pb-4 font-semibold text-white"
+              headingTag="h2"
+              className="pb-4 font-bold"
               content={heading}
             />
           )}

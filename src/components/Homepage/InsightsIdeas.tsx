@@ -5,7 +5,6 @@ import img1 from "../../../public/assets/insight1.png";
 import img2 from "../../../public/assets/insight2.png";
 import img3 from "../../../public/assets/insight3.png";
 import arrow from "../../../public/assets/arrow-green.svg";
-import Link from "next/link";
 
 const InsightsIdeas = () => {
   const rotatingRef = useRef<HTMLDivElement>(null);
@@ -115,10 +114,10 @@ const InsightsIdeas = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="">
-            <Link href="/about-us" className="rotating-btn poppins-semibold font-16 hover:color-black mt-8 justify-self-center rounded-4xl  px-12 py-3 text-white">
+          <div className="rotating-btn">
+            <button className="poppins-semibold font-16 hover:color-black mt-8 justify-self-center rounded-4xl border-1 border-solid border-green-500 bg-black px-12 py-3 text-white">
               About Us
-            </Link>
+            </button>
           </div>
         </div>
       </div>

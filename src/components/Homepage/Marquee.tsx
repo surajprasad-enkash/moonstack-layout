@@ -15,7 +15,7 @@ import barinmate from "../../../public/assets/home/slider-logo/brainmate.svg";
 
 const MarqueeComponent = () => {
   return (
-    <div className="mt-[80px] py-4">
+    <div className="py-4">
       <Marquee autoFill>
         <div className="px-8">
           <Image src={accord} alt="accord" className="h-auto w-25" />
@@ -27,7 +27,11 @@ const MarqueeComponent = () => {
           <Image src={coralogix} alt="coralogix" className="h-auto w-25" />
         </div>
         <div className="px-8">
-          <Image src={craftywekabar} alt="craftywekabar" className="h-auto w-25" />
+          <Image
+            src={craftywekabar}
+            alt="craftywekabar"
+            className="h-auto w-25"
+          />
         </div>
         <div className="px-8">
           <Image src={dnwe} alt="dnwe" className="h-auto w-25" />

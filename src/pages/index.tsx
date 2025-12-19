@@ -22,6 +22,7 @@ import BlogCardGrid from "@/components/BlogCardGrid/BlogCardGrid2";
 import BackedByBestSlider from "@/components/BestSlider";
 // import BlogCardGrid from "@/components/BlogCardGrid/BlogCardGrid";
 
+
 export default function Home() {
   return (
     <>
@@ -44,6 +45,9 @@ export default function Home() {
           buttonLink="/contact"
         />
 
+        <Marquee />
+     
+       
         <SmartSection
           title="Why Moonstack Is the"
           highlight="Smart Choice for"
@@ -68,6 +72,7 @@ export default function Home() {
         <BackedByBestSlider />
         {/* <InsightsIdeas /> */}
         <BlogCardGrid />
+        <InsightsIdeas />
         <FAQSection
           title="Our FAQs "
           highlight=" Questions"

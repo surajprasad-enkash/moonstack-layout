@@ -19,6 +19,7 @@ import { pagesData } from "../../../constants/application-development/data";
 import Meta from "@/components/MetaData";
 import HireNowBanner from "@/components/Sections/HireNowBanner/HireNowBanner";
 import ReusableBanner from "@/components/ReuseableBanner";
+import TechMarqueeComponent from "@/components/Sections/TechMarquee";
 
 export default function ApplicationPage() {
   const router = useRouter();
@@ -72,6 +73,7 @@ export default function ApplicationPage() {
           subHeadingLines={[{ text: page.tabs.subHeadingText }]}
           tabs={page.tabs.tabs}
         />{" "}
+        <TechMarqueeComponent />
         <ReusableTechnologySection
           headingLines={[
             { text: "We Use Technology to " },
@@ -85,7 +87,6 @@ export default function ApplicationPage() {
           filteredItems={page.utilisArr}
           bgColor="bg-[radial-gradient(99.15%_99.15%_at_50.87%_0.85%,_#0F592A_0%,_#000000_31%)]"
         />
-      
         <HireNowBanner
           headingContent={page.banner?.headingText ?? []}
           subHeadingContent={page.banner?.subHeadingText ?? []}

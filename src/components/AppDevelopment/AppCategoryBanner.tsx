@@ -3,6 +3,7 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import CustomButton from "../CommanButton/CommanButton";
 import Heading from "../Heading/Heading";
+import MarqueeComponent from "../Homepage/Marquee";
 
 interface BannerContent {
   text: string;
@@ -56,7 +57,7 @@ const AppCategoryBanner: React.FC<AppCategoryBannerProps> = ({
           >
             <Heading
               headingTag="h1"
-              className="text-gradient text-start font-semibold md:text-left"
+              className="text-start font-extrabold md:text-left"
               content={title}
             />
 
@@ -71,7 +72,6 @@ const AppCategoryBanner: React.FC<AppCategoryBannerProps> = ({
             </div>
           </div>
 
-          {/* IMAGE SECTION (Responsive + Animated) */}
           <motion.div
             className="relative flex w-full justify-center"
             initial={{ y: 0, opacity: 0 }}
@@ -85,6 +85,18 @@ const AppCategoryBanner: React.FC<AppCategoryBannerProps> = ({
               priority
             />
           </motion.div>
+        </div>
+        <div className="grid grid-cols-3 gap-4 px-4 sm:px-8">
+          <div>
+            <Heading
+              headingTag="p"
+              className="pt-4 text-start font-semibold md:text-left"
+              content="Join our ecosystem of partners"
+            />
+          </div>
+          <div className="marquee-in-services col-span-2">
+            <MarqueeComponent />
+          </div>
         </div>
       </div>
     </section>

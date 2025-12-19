@@ -66,8 +66,8 @@ const LatestOpportunity: FC<LatestOpportunityProps> = ({
         <div className="mb-12 flex flex-col items-start justify-between gap-4 md:flex-row">
           <div className="w-1/2">
             <Heading
-              headingTag="h3"
-              className="pb-4 font-semibold text-white"
+              headingTag="h2"
+              className="pb-4 font-bold text-white"
               content={heading ?? ""}
             />
           </div>

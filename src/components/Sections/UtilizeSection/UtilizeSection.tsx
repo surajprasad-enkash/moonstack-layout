@@ -9,14 +9,14 @@ interface ICardItem {
   image: string | StaticImageData;
   title: string;
   desc: string;
-  category: string; 
+  category: string;
 }
 
 interface UtilizeSectionProps {
   headingLines: { text: string; color?: string }[];
   subHeadingLines?: { text: string; color?: string }[];
   items: ICardItem[];
-  tabs: string[]; 
+  tabs: string[];
   bgColor?: string;
   containerClass?: string;
   gridCols?: string;
@@ -45,8 +45,8 @@ const ReusableUtilizeSection: React.FC<UtilizeSectionProps> = ({
           viewport={{ once: true, amount: 0.2 }}
         >
           <Heading
-            headingTag="h3"
-            className="pt-3 text-center font-semibold text-white"
+            headingTag="h2"
+            className="pt-3 text-center font-bold text-white"
             content={headingLines}
           />
         </motion.div>
