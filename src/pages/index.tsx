@@ -1,10 +1,5 @@
 import Layout from "@/components/Layout";
-import InsightsIdeas from "@/components/Homepage/InsightsIdeas";
-import Marquee from "@/components/Homepage/Marquee";
-import OurServices from "@/components/Homepage/OurSevices";
-import ProvenProcess from "@/components/Homepage/ProvenProcess";
 import TechnologyComponent from "@/components/Homepage/TechnologyComponent";
-import ContactUs from "@/components/Homepage/ContactUs";
 import CaseStudies from "@/components/Homepage/CaseStudies";
 
 import { accordionData } from "../constants/home";
@@ -15,13 +10,7 @@ import upwork from "../../public/assets/home/upwork.svg";
 import google from "../../public/assets/home/google.svg";
 import clutch from "../../public/assets/home/clutch.svg";
 import FAQSection from "@/components/Sections/FaqSection/FaqSection";
-import SmartSection from "@/components/Homepage/SmartSection";
-
-import counterBg from "../../public/assets/home/counter/counterBg.webp";
-import BlogCardGrid from "@/components/BlogCardGrid/BlogCardGrid2";
 import BackedByBestSlider from "@/components/BestSlider";
-// import BlogCardGrid from "@/components/BlogCardGrid/BlogCardGrid";
-
 import BlogCardGrid2 from "@/components/BlogCardGrid/BlogCardGrid2";
 import TechAssistanceSection from "@/components/Homepage/TechAssistanceSection";
 import AppWebDevelopment from "@/components/Homepage/AppWebDevelopment/AppWebDevelopment";
@@ -58,8 +47,8 @@ export default function Home() {
         <CaseStudies />
         <BackedByBestSlider />
         {/* <InsightsIdeas /> */}
-        <BlogCardGrid />
-        <InsightsIdeas />
+        {/* <BlogCardGrid /> */}
+        {/* <InsightsIdeas /> */}
         <BlogCardGrid2 />
         <FAQSection
           title=""

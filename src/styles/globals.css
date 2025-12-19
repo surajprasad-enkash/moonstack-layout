@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@font-face {
+/* @font-face {
   font-family: "StyreneA";
   src: url("/fonts/StyreneA-Light.woff2") format("woff2");
   font-weight: 400;
@@ -37,12 +37,13 @@
   font-weight: 800;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --primary: #1cff6c;
+  font-family: var(--font-hanken), sans-serif;
 }
 
 @theme {
@@ -86,7 +87,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "StyreneA", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 p {
@@ -134,11 +135,13 @@ h6 {
 
 @keyframes orbit {
   0% {
-    transform: rotate(var(--angle)) translateX(var(--radius)) rotate(calc(-1 * var(--angle)));
+    transform: rotate(var(--angle)) translateX(var(--radius))
+      rotate(calc(-1 * var(--angle)));
   }
 
   100% {
-    transform: rotate(calc(var(--angle) + 360deg)) translateX(var(--radius)) rotate(calc(-1 * var(--angle) - 360deg));
+    transform: rotate(calc(var(--angle) + 360deg)) translateX(var(--radius))
+      rotate(calc(-1 * var(--angle) - 360deg));
   }
 }
 
@@ -169,9 +172,11 @@ h6 {
   /* adjust height for effect */
   width: 100%;
   border-radius: inherit;
-  background: radial-gradient(43.91% 58.17% at 56.09% -8.17%,
-      #195e2d 0%,
-      #052811 100%);
+  background: radial-gradient(
+    43.91% 58.17% at 56.09% -8.17%,
+    #195e2d 0%,
+    #052811 100%
+  );
   pointer-events: none;
   z-index: -1;
 }
@@ -199,9 +204,11 @@ h6 {
   padding: 10px 20px;
 }
 
-.menu-list {}
+.menu-list {
+}
 
-.menu-list li {}
+.menu-list li {
+}
 
 .menu-list .menu-item {
   padding: 0px 24px 5px;
@@ -295,9 +302,11 @@ h6 {
 
 .submenuList a:hover {
   border-color: #07481e;
-  background: linear-gradient(180deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(12, 64, 30, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(12, 64, 30, 1) 100%
+  );
 }
 
 .sub-menu-list {
@@ -480,7 +489,6 @@ h6 {
 }
 
 @keyframes bg-transform {
-
   0%,
   100% {
     transform: translate(-80%, 0%);
@@ -504,7 +512,6 @@ h6 {
 }
 
 @-webkit-keyframes bg-transform {
-
   0%,
   100% {
     -webkit-transform: translate(-80%, 0%);
@@ -591,7 +598,6 @@ h6 {
 }
 
 @keyframes loader-letter-anim {
-
   0%,
   100% {
     opacity: 0.5;
@@ -610,7 +616,6 @@ h6 {
 }
 
 @-webkit-keyframes loader-letter-anim {
-
   0%,
   100% {
     opacity: 0.5;
@@ -758,9 +763,6 @@ h6 {
   position: absolute;
 }
 
-
-
-
 /* From Uiverse.io by dexter-st */
 .loader-wrapper {
   position: relative;
@@ -845,7 +847,6 @@ h6 {
 }
 
 @keyframes bg-transform {
-
   0%,
   100% {
     transform: translate(-80%, 0%);
@@ -869,7 +870,6 @@ h6 {
 }
 
 @-webkit-keyframes bg-transform {
-
   0%,
   100% {
     -webkit-transform: translate(-80%, 0%);
@@ -956,7 +956,6 @@ h6 {
 }
 
 @keyframes loader-letter-anim {
-
   0%,
   100% {
     opacity: 0.5;
@@ -975,7 +974,6 @@ h6 {
 }
 
 @-webkit-keyframes loader-letter-anim {
-
   0%,
   100% {
     opacity: 0.5;
@@ -993,8 +991,6 @@ h6 {
   }
 }
 
-
-
 /* ===============================
    OUTER CIRCLE CONTAINER
 ================================ */
@@ -1011,7 +1007,7 @@ h6 {
 /* OUTER CIRCLE BORDER */
 .needAssistanceBgCircleOuter {
   position: absolute;
-  border: 1px solid #00591F;
+  border: 1px solid #00591f;
   border-radius: 50%;
   inset: 0;
   animation: rotateCircleOuter 12s linear infinite;
@@ -1022,7 +1018,7 @@ h6 {
 ================================ */
 .needAssistanceBgCircleInner {
   position: absolute;
-  border: 1px solid #00591F;
+  border: 1px solid #00591f;
   border-radius: 50%;
   top: 70px;
   left: 70px;
@@ -1129,7 +1125,6 @@ h6 {
   z-index: 2;
 }
 
-
 .SmartSolutionsBox:nth-child(2) .imageBox,
 .SmartSolutionsBox:nth-child(4) .imageBox {
   bottom: 40px !important;
@@ -1144,11 +1139,10 @@ h6 {
   left: -70px;
   bottom: 100px;
   z-index: -1;
-
 }
 
 .cricleLeftSideOuter::after {
-  content: '';
+  content: "";
   box-shadow: 0 0 220px 160px #00ea52;
   position: absolute;
   border-radius: 50%;
@@ -1167,14 +1161,16 @@ h6 {
   right: -22%;
   box-shadow: 0 0 220px 160px #00ea52;
   top: 78%;
-
 }
 
-.smartSolutionSectionHome,.techonologyhomePageSectionRight,.caseStudySliderHomePageSection, .blogSectionHomePage{
+.smartSolutionSectionHome,
+.techonologyhomePageSectionRight,
+.caseStudySliderHomePageSection,
+.blogSectionHomePage {
   position: relative;
   z-index: 1;
 }
-.smartSolutionSectionHome::after{
+.smartSolutionSectionHome::after {
   content: "";
   z-index: -1;
   position: absolute;
@@ -1182,7 +1178,7 @@ h6 {
   box-shadow: 0 0 220px 160px #00ea52;
   top: 40%;
 }
-.smartSolutionSectionHome::before{
+.smartSolutionSectionHome::before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -1190,7 +1186,7 @@ h6 {
   box-shadow: 0 0 220px 160px #00ea52;
   top: 42%;
 }
-.techonologyhomePageSectionRight::before{
+.techonologyhomePageSectionRight::before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -1198,7 +1194,7 @@ h6 {
   box-shadow: 0 0 220px 160px #00ea52;
   top: 200px;
 }
-.caseStudySliderHomePageSection::before{
+.caseStudySliderHomePageSection::before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -1207,7 +1203,7 @@ h6 {
   top: 200px;
 }
 
-.blogSectionHomePage::before{
+.blogSectionHomePage::before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -1215,7 +1211,7 @@ h6 {
   box-shadow: 0 0 220px 160px #00ea52;
   top: 200px;
 }
-.blogSectionHomePage::after{
+.blogSectionHomePage::after {
   content: "";
   z-index: -1;
   position: absolute;
@@ -1223,7 +1219,7 @@ h6 {
   box-shadow: 0 0 220px 160px #00ea52;
   top: 300px;
 }
-.faqSection::before{
+.faqSection::before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -1231,7 +1227,7 @@ h6 {
   box-shadow: 0 0 220px 160px #00ea52;
   top: 200px;
 }
-.faqSection::after{
+.faqSection::after {
   content: "";
   z-index: -1;
   position: absolute;
@@ -1239,4 +1235,3 @@ h6 {
   box-shadow: 0 0 220px 160px #00ea52;
   top: 50%;
 }
-
