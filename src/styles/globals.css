@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@font-face {
+/* @font-face {
   font-family: "StyreneA";
   src: url("/fonts/StyreneA-Light.woff2") format("woff2");
   font-weight: 400;
@@ -38,12 +38,13 @@
   font-weight: 800;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --primary: #1cff6c;
+  font-family: var(--font-hanken), sans-serif;
 }
 
 @theme {
@@ -87,7 +88,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "StyreneA", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 p {
@@ -135,11 +136,13 @@ h6 {
 
 @keyframes orbit {
   0% {
-    transform: rotate(var(--angle)) translateX(var(--radius)) rotate(calc(-1 * var(--angle)));
+    transform: rotate(var(--angle)) translateX(var(--radius))
+      rotate(calc(-1 * var(--angle)));
   }
 
   100% {
-    transform: rotate(calc(var(--angle) + 360deg)) translateX(var(--radius)) rotate(calc(-1 * var(--angle) - 360deg));
+    transform: rotate(calc(var(--angle) + 360deg)) translateX(var(--radius))
+      rotate(calc(-1 * var(--angle) - 360deg));
   }
 }
 
@@ -170,9 +173,11 @@ h6 {
   /* adjust height for effect */
   width: 100%;
   border-radius: inherit;
-  background: radial-gradient(43.91% 58.17% at 56.09% -8.17%,
-      #195e2d 0%,
-      #052811 100%);
+  background: radial-gradient(
+    43.91% 58.17% at 56.09% -8.17%,
+    #195e2d 0%,
+    #052811 100%
+  );
   pointer-events: none;
   z-index: -1;
 }
@@ -202,9 +207,11 @@ h6 {
   font-weight: 500 !important;
 }
 
-.menu-list {}
+.menu-list {
+}
 
-.menu-list li {}
+.menu-list li {
+}
 
 .menu-list .menu-item {
   padding: 0px 24px 5px;
@@ -298,9 +305,11 @@ h6 {
 
 .submenuList a:hover {
   border-color: #07481e;
-  background: linear-gradient(180deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(12, 64, 30, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(12, 64, 30, 1) 100%
+  );
 }
 
 .sub-menu-list {
@@ -483,7 +492,6 @@ h6 {
 }
 
 @keyframes bg-transform {
-
   0%,
   100% {
     transform: translate(-80%, 0%);
@@ -507,7 +515,6 @@ h6 {
 }
 
 @-webkit-keyframes bg-transform {
-
   0%,
   100% {
     -webkit-transform: translate(-80%, 0%);
@@ -594,7 +601,6 @@ h6 {
 }
 
 @keyframes loader-letter-anim {
-
   0%,
   100% {
     opacity: 0.5;
@@ -613,7 +619,6 @@ h6 {
 }
 
 @-webkit-keyframes loader-letter-anim {
-
   0%,
   100% {
     opacity: 0.5;
@@ -680,6 +685,89 @@ h6 {
 
 
 
+.techMarqueeComponent .rfm-marquee-container {
+  overflow: hidden !important;
+  box-shadow: 0px 0px 26px 15px #000;
+}
+.techMarqueeComponent {
+  box-shadow: 0px 0px 26px 15px #000;
+}
+
+.marquee-in-services {
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    #000 10%,
+    #000 90%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    #000 10%,
+    #000 90%,
+    transparent
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.techMarqueeItem {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 52px 26px rgba(255, 255, 255, 2.6);
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px !important;
+}
+.techMarqueeItem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+.techMarqueeItem::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+.techMarqueeLogo {
+  right: 46%;
+  top: 192px;
+  z-index: 9;
+
+  box-shadow: -17px 39px 146px 143px #000;
+  position: absolute;
+}
 
 /* From Uiverse.io by dexter-st */
 .loader-wrapper {
@@ -765,7 +853,6 @@ h6 {
 }
 
 @keyframes bg-transform {
-
   0%,
   100% {
     transform: translate(-80%, 0%);
@@ -789,7 +876,6 @@ h6 {
 }
 
 @-webkit-keyframes bg-transform {
-
   0%,
   100% {
     -webkit-transform: translate(-80%, 0%);
@@ -876,7 +962,6 @@ h6 {
 }
 
 @keyframes loader-letter-anim {
-
   0%,
   100% {
     opacity: 0.5;
@@ -895,7 +980,6 @@ h6 {
 }
 
 @-webkit-keyframes loader-letter-anim {
-
   0%,
   100% {
     opacity: 0.5;
@@ -913,8 +997,6 @@ h6 {
   }
 }
 
-
-
 /* ===============================
    OUTER CIRCLE CONTAINER
 ================================ */
@@ -931,7 +1013,7 @@ h6 {
 /* OUTER CIRCLE BORDER */
 .needAssistanceBgCircleOuter {
   position: absolute;
-  border: 1px solid #00591F;
+  border: 1px solid #00591f;
   border-radius: 50%;
   inset: 0;
   animation: rotateCircleOuter 12s linear infinite;
@@ -942,7 +1024,7 @@ h6 {
 ================================ */
 .needAssistanceBgCircleInner {
   position: absolute;
-  border: 1px solid #00591F;
+  border: 1px solid #00591f;
   border-radius: 50%;
   top: 70px;
   left: 70px;
@@ -1049,7 +1131,6 @@ h6 {
   z-index: 2;
 }
 
-
 .SmartSolutionsBox:nth-child(2) .imageBox,
 .SmartSolutionsBox:nth-child(4) .imageBox {
   bottom: 40px !important;
@@ -1064,7 +1145,6 @@ h6 {
   left: -70px;
   bottom: 100px;
   z-index: -1;
-
 }
 
 .cricleLeftSideOuter {
@@ -1072,7 +1152,7 @@ h6 {
 }
 
 .cricleLeftSideOuter::after {
-  content: '';
+  content: "";
   box-shadow: 0 0 220px 160px #00ea52;
   position: absolute;
   border-radius: 50%;
@@ -1091,7 +1171,6 @@ h6 {
   right: -22%;
   box-shadow: 0 0 220px 160px #00ea52;
   top: 78%;
-
 }
 
 .smartSolutionSectionHome,
@@ -1111,7 +1190,6 @@ h6 {
   box-shadow: 0 0 220px 160px #00ea52;
   top: 40%;
 }
-
 .smartSolutionSectionHome::before {
   content: "";
   z-index: -1;
@@ -1120,7 +1198,6 @@ h6 {
   box-shadow: 0 0 220px 160px #00ea52;
   top: 42%;
 }
-
 .techonologyhomePageSectionRight::before {
   content: "";
   z-index: -1;
@@ -1129,7 +1206,6 @@ h6 {
   box-shadow: 0 0 220px 160px #00ea52;
   top: 200px;
 }
-
 .caseStudySliderHomePageSection::before {
   content: "";
   z-index: -1;
@@ -1147,7 +1223,6 @@ h6 {
   box-shadow: 0 0 220px 160px #00ea52;
   top: 200px;
 }
-
 .blogSectionHomePage::after {
   content: "";
   z-index: -1;
@@ -1156,7 +1231,6 @@ h6 {
   box-shadow: 0 0 220px 160px #00ea52;
   top: 300px;
 }
-
 .faqSection::before {
   content: "";
   z-index: -1;
@@ -1183,6 +1257,10 @@ h6 {
   left: -15%;
   box-shadow: 0 0 220px 160px #00ea52;
   top: 50%;
+}
+.pulse {
+  animation: pulse-green 1.6s ease-out infinite;
+  transform-origin: center;
 }
 
 .techMarqueeComponent .rfm-marquee-container {
@@ -1380,4 +1458,55 @@ h6 {
   right: 16px;
   width: 80px;
   height: 28px;
+}
+@keyframes pulse-green {
+  0% {
+    r: 5;
+    opacity: 0.9;
+  }
+  70% {
+    r: 18;
+    opacity: 0;
+  }
+  100% {
+    r: 18;
+    opacity: 0;
+  }
+}
+
+.contact-hero_form-info {
+  grid-column-gap: 5.6rem;
+  grid-row-gap: 5.6rem;
+  background-image:
+    linear-gradient(148deg, #04230f, #0d171de6),
+    linear-gradient(#1c1c1c 7%, #1c1c1c00);
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 54px;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 3.2rem;
+  display: flex;
+  overflow: hidden;
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.contact-hero_reach-out-info {
+  grid-column-gap: 1.2rem;
+  grid-row-gap: 1.2rem;
+  background-color: #0d968d0a;
+  border-radius: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.8rem 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1.2rem;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  opacity: 1;
 }

@@ -1,6 +1,5 @@
 import Layout from "@/components/Layout";
 import TechnologyComponent from "@/components/Homepage/TechnologyComponent";
-import ContactUs from "@/components/Homepage/ContactUs";
 import CaseStudies from "@/components/Homepage/CaseStudies";
 
 import { accordionData } from "../constants/home";
@@ -11,10 +10,6 @@ import upwork from "../../public/assets/home/upwork.svg";
 import google from "../../public/assets/home/google.svg";
 import clutch from "../../public/assets/home/clutch.svg";
 import FAQSection from "@/components/Sections/FaqSection/FaqSection";
-import SmartSection from "@/components/Homepage/SmartSection";
-
-import counterBg from "../../public/assets/home/counter/counterBg.webp";
-import BlogCardGrid from "@/components/BlogCardGrid/BlogCardGrid2";
 import BackedByBestSlider from "@/components/BestSlider";
 import BlogCardGrid2 from "@/components/BlogCardGrid/BlogCardGrid2";
 import TechAssistanceSection from "@/components/Homepage/TechAssistanceSection";
