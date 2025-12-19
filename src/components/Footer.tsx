@@ -23,7 +23,7 @@ import footerBg from "../../public/assets/footer/footer-bg.webp";
 
 const Footer = () => {
   return (
-    <footer className="footer z-1 relative">
+    <footer className="footer z-2 relative">
       <div className="pageFooter">
         {/* TOP SECTION */}
         <div
@@ -180,7 +180,7 @@ const Footer = () => {
         </div>
 
         {/* BRAND IMAGE (NOT TEXT, CLASS KEPT) */}
-        <div className="footerBrandText px-[20px] pt-15 pb-12 md:px-20">
+        <div className="footerBrandText bg-[#000000] px-[20px] pt-15 pb-12 md:px-20">
           <div className="container">
             <div className="flex justify-center">
               <Image

@@ -89,13 +89,13 @@ export default function BlogCardGrid() {
   /* ---------------- UI ---------------- */
 
   return (
-    <section className="w-full bg-[#000] bg-black bg-cover bg-center px-5 py-20 md:px-20">
-      <div className="container mx-auto">
+    <section className="w-full blogSectionHomePage px-5 py-20 md:px-20">
+      <div className="container">
         {/* HEADING */}
         <div className="pb-20 text-center">
           <Heading
             headingTag="h2"
-            className="mb-3 text-[36px] font-[500]"
+            className="mb-3"
             content={[
               { text: "Blogs ", color: "text-white", className: "" },
               { text: "& Insights", color: "", className: "text-gradient" },
@@ -116,14 +116,14 @@ export default function BlogCardGrid() {
         <div className="flex gap-5">
           {/* LEFT BIG CARD */}
           <div className="leftBox w-[50%]">
-            <article className="relative overflow-hidden rounded-[16px] bg-[#0A7539]/20 shadow-[inset_0_0_1px_#0A7539]">
+            <article className=" backdrop-blur relative overflow-hidden rounded-[16px] bg-[#0A7539]/20 shadow-[inset_0_0_1px_#0A7539]">
               <div className="relative p-6 pb-0">
                 <Image
                   src={firstPost.image}
                   alt={firstPost.title}
                   width={500}
                   height={300}
-                  className="w-[100%] rounded-[16px] object-cover object-top"
+                  className="w-[100%] max-h-[290px] rounded-[16px] object-cover object-top"
                 />
               </div>
 
@@ -131,14 +131,14 @@ export default function BlogCardGrid() {
                 {/* CATEGORY BADGE */}
                 <Link
                   href={firstPost.category.link}
-                  className="inline-block text-[#0CE859]"
+                  className="inline-block text-[#0CE859] mb-2"
                 >
                   {firstPost.category.name}
                 </Link>
 
-                <h3 className="text-[18px] font-[500] text-white transition hover:text-[#0CE859]">
+                <h6 className="text-[18px] font-[500] text-white transition hover:text-[#0CE859]">
                   <Link href={firstPost.post_link}>{firstPost.title}</Link>
-                </h3>
+                </h6>
 
                 <Link
                   href={firstPost.post_link}
@@ -154,7 +154,7 @@ export default function BlogCardGrid() {
             {sidePosts.map((post, index) => (
               <article
                 key={index}
-                className="flex gap-4 rounded-[14px] bg-[#0A7539]/10 p-4 shadow-[inset_0_0_1px_#0A7539]"
+                className="backdrop-blur flex gap-4 rounded-[14px] bg-[#0A7539]/10 p-4 shadow-[inset_0_0_1px_#0A7539]"
               >
                 {/* IMAGE */}
                 <div className="relative h-[100%] w-[140px] flex-shrink-0 overflow-hidden rounded-[10px]">
@@ -176,14 +176,14 @@ export default function BlogCardGrid() {
                     {post.category.name}
                   </Link>
 
-                  <h4 className="text-[18px] leading-snug font-semibold text-white">
+                  <h6 className=" leading-snug font-semibold text-white">
                     <Link
                       className="transition hover:text-[#0CE859]"
                       href={post.post_link}
                     >
                       {post.title}
                     </Link>
-                  </h4>
+                  </h6>
 
                   <div className="flex items-center gap-2 text-xs text-gray-400">
                     <FaClock />

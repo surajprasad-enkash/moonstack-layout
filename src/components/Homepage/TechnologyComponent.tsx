@@ -5,9 +5,9 @@ import getStarted from "../../../videos/get-started.mp4";
 
 const TechnologyComponent = () => {
   return (
-    <section className="bg-black">
-      <div className="container mx-auto p-15 text-white">
-        <div className="mb-10 flex flex-col justify-between mix-blend-difference md:flex-row">
+    <section className="techonologyhomePageSection z-1 relative  text-white px-[80px] pt-[00px]">
+      <div className="container">
+        <div className="mb-10 flex flex-col justify-between mix-blend-difference md:flex-row techonologyhomePageSectionRight">
           <div className="poppins-semibold font-36 w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
             Our Best Technology we have used in{" "}
             <span className="via=[#60F90D] bg-gradient-to-r from-[#25E8B1] to-[#60F90D] bg-clip-text text-transparent">
@@ -19,6 +19,7 @@ const TechnologyComponent = () => {
             that every project is future-ready and tailored to client needs.
           </div>
         </div>
+        
         <div id="cards" className="mix-blend-difference">
           <div className="card" id="card-1">
             <div className="to-black-500 flex flex-col items-center justify-between gap-y-6 rounded-4xl border-t-2 border-primary-300 bg-gradient-to-br from-[#177634] via-black p-10 md:flex-row">
