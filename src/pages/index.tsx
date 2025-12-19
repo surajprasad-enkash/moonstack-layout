@@ -21,6 +21,7 @@ import TechAssistanceSection from "@/components/Homepage/TechAssistanceSection";
 import AppWebDevelopment from "@/components/Homepage/AppWebDevelopment/AppWebDevelopment";
 import SmartSolutions from "@/components/Homepage/SmartSolutions/SmartSolutions";
 import BackgroundLines from "@/components/Homepage/BackgroundLines";
+import LovedByTeamsSlider from "@/components/LovedByTeamsSlider/LovedByTeamsSlider";
 // import BlogCardGrid from "@/components/BlogCardGrid/BlogCardGrid";
 
 
@@ -36,7 +37,7 @@ export default function Home() {
       />
 
       <Layout>
-        <BackgroundLines />
+     
         <HeroSection
           reviews={[
             { platform: "Upwork", reviews: 94, icon: upwork },
@@ -46,6 +47,7 @@ export default function Home() {
           buttonText="Get Started"
           buttonLink="/contact"
         />
+        
         <AppWebDevelopment />
         <TechAssistanceSection />
         <SmartSolutions />
@@ -53,7 +55,8 @@ export default function Home() {
         <BlogCardGrid2 />
         <TechnologyComponent />
         <CaseStudies />
-        <BackedByBestSlider />
+        <LovedByTeamsSlider />
+        {/* <BackedByBestSlider /> */}
         <FAQSection
           title=""
           highlight="FAQs"
@@ -64,7 +67,7 @@ export default function Home() {
           }))}
           classname=""
         />
-        <ContactUs />
+        {/* <ContactUs /> */}
       </Layout>
     </>
   );

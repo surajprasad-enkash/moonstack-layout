@@ -1,4 +1,11 @@
-import React, { useState, useRef } from "react";
+"use client";
+
+import React, {
+  useState,
+  useRef,
+  useCallback,
+  memo,
+} from "react";
 import Image from "next/image";
 import customer from "../../../public/assets/customer.png";
 import arrowNext from "../../../public/assets/arrow-next.svg";
@@ -10,12 +17,29 @@ import py from "../../../public/assets/py.svg";
 import red from "../../../public/assets/red.svg";
 import meta from "../../../public/assets/meta.svg";
 import vs from "../../../public/assets/vs.png";
+import Heading from "../Heading/Heading";
 
 interface IData {
   title: string;
-  images: string[];
+  images: any[];
   users: any;
 }
+
+/* ---------------- MEMOIZED ARROW (LOGIC SAME) ---------------- */
+const CustomArrow = memo(({ direction, onClick }: any) => {
+  return (
+    <Image
+      alt=""
+      src={arrowNext}
+      onClick={onClick}
+      className={`h-auto w-10 cursor-pointer ${
+        direction === "prev" && "rotate-180"
+      }`}
+    />
+  );
+});
+
+CustomArrow.displayName = "CustomArrow";
 
 const CaseStudies = () => {
   const sliderRef = useRef<any>(null);
@@ -25,7 +49,10 @@ const CaseStudies = () => {
   const dataArr: IData[] = [
     {
       title: "Frontend Developer",
-      images: [figma, meta, figma, vs, red, discord, py, html],
+      images: [
+        figma, meta, figma, vs, red, discord, py, html,
+        figma, meta, figma, vs, red, discord, py, html, figma,
+      ],
       users: [customer, customer, customer, customer, customer],
     },
     {
@@ -45,7 +72,7 @@ const CaseStudies = () => {
     },
   ];
 
-  /* ---------------- SLIDER SETTINGS ---------------- */
+  /* ---------------- SLIDER SETTINGS (UNCHANGED) ---------------- */
   const settings = {
     dots: false,
     infinite: true,
@@ -57,7 +84,6 @@ const CaseStudies = () => {
     centerPadding: "50px",
     slidesToScroll: 1,
     arrows: false,
-
     beforeChange: (oldIndex: number, newIndex: number) => {
       setCurrentSlide(newIndex);
       sliderRef2.current?.slickGoTo(newIndex);
@@ -68,79 +94,67 @@ const CaseStudies = () => {
     dots: false,
     infinite: true,
     speed: 600,
-    autoplay: false, // ❗ MUST BE FALSE
+    autoplay: false,
     autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: "28%",
     arrows: false,
-
     beforeChange: (oldIndex: number, newIndex: number) => {
       sliderRef.current?.slickGoTo(newIndex);
     },
   };
 
-  /* ---------------- CUSTOM ARROW ---------------- */
-  const CustomArrow = ({ direction }: any) => {
-    const handleClick = () => {
-      const total = dataArr.length;
+  /* ---------------- ARROW HANDLERS (STABLE) ---------------- */
+  const totalSlides = dataArr.length;
 
-      if (direction === "next") {
-        if (currentSlide === total - 1) {
-          sliderRef.current.slickGoTo(0);
-          sliderRef2.current.slickGoTo(0);
-        } else {
-          sliderRef.current.slickNext();
-          sliderRef2.current.slickNext();
-        }
-      } else {
-        if (currentSlide === 0) {
-          sliderRef.current.slickGoTo(total - 1);
-          sliderRef2.current.slickGoTo(total - 1);
-        } else {
-          sliderRef.current.slickPrev();
-          sliderRef2.current.slickPrev();
-        }
-      }
-    };
+  const handleNext = useCallback(() => {
+    if (currentSlide === totalSlides - 1) {
+      sliderRef.current.slickGoTo(0);
+      sliderRef2.current.slickGoTo(0);
+    } else {
+      sliderRef.current.slickNext();
+      sliderRef2.current.slickNext();
+    }
+  }, [currentSlide, totalSlides]);
 
-    return (
-      <Image
-        alt=""
-        src={arrowNext}
-        onClick={handleClick}
-        className={`h-auto w-10 cursor-pointer ${
-          direction === "prev" && "rotate-180"
-        }`}
-      />
-    );
-  };
-
-  const getCenterIndex = (arr: string[]) =>
-    arr.length ? Math.floor(arr.length / 2) : -1;
+  const handlePrev = useCallback(() => {
+    if (currentSlide === 0) {
+      sliderRef.current.slickGoTo(totalSlides - 1);
+      sliderRef2.current.slickGoTo(totalSlides - 1);
+    } else {
+      sliderRef.current.slickPrev();
+      sliderRef2.current.slickPrev();
+    }
+  }, [currentSlide, totalSlides]);
 
   return (
     <section className="caseStudySliderHomePageSection relative z-1 px-[0px] pt-[80px]">
       <div className="container">
-        {/* ---------- TITLE SECTION ---------- */}
         <div className="flex flex-col justify-between mix-blend-difference md:flex-row">
-          <div className="poppins-semibold font-36 w-full md:w-[40%]">
-            Our Services That Power &{" "}
-            <span className="via=[#60F90D] bg-gradient-to-r from-[#25E8B1] to-[#60F90D] bg-clip-text text-transparent">
-              Scale Businesses
-            </span>
-          </div>
-          <div className="poppins-medium font-16 w-full leading-[200%] md:w-[40%]">
-            Take a look at some of our highlight projects that have shaped the
-            course of business.
+          <div className="w-full md:max-w-[700px] m-auto">
+            <Heading
+              headingTag="h2"
+              content={[
+                {
+                  text: "Real-World Case Studies of Smart,",
+                  color: "text-white",
+                },
+                {
+                  text: "Scalable Technology",
+                  className: "highlight-text",
+                },
+              ]}
+            />
           </div>
         </div>
       </div>
+
       {/* ---------- TOP SLIDER WITH TABS ---------- */}
       <div className="flex justify-center pt-20 mix-blend-difference">
         <div className="flex w-[70%] justify-between">
-          <CustomArrow direction="prev" />
+          <CustomArrow direction="prev" onClick={handlePrev} />
 
           <Slider ref={sliderRef} {...settings} className="w-[80%]">
             {dataArr.map((review, i) => (
@@ -156,7 +170,7 @@ const CaseStudies = () => {
             ))}
           </Slider>
 
-          <CustomArrow direction="next" />
+          <CustomArrow direction="next" onClick={handleNext} />
         </div>
       </div>
 
@@ -182,32 +196,6 @@ const CaseStudies = () => {
                   {review.images.map((img, i) => (
                     <Image alt="" key={i} src={img} className="h-auto w-[54]" />
                   ))}
-                </div>
-
-                <div className="mt-8 flex items-center justify-center">
-                  {review.users.map((user: string, i: number) => {
-                    const isCenter = getCenterIndex(review.users) === i;
-                    return (
-                      <Image
-                        src={user}
-                        alt=""
-                        key={i}
-                        className={`ml-[-10] h-auto w-[35] rounded-3xl border-2 border-black ${
-                          isCenter && "z-999"
-                        }`}
-                      />
-                    );
-                  })}
-                </div>
-
-                <div className="poppins-semibold font-14 mt-8">
-                  900+ Experts
-                </div>
-                <div
-                  className="poppins-medium font-12 mt-2"
-                  style={{ color: "#FF9E2F" }}
-                >
-                  Available
                 </div>
               </div>
             </div>

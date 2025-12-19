@@ -89,7 +89,7 @@ export default function BlogCardGrid() {
   /* ---------------- UI ---------------- */
 
   return (
-    <section className="w-full blogSectionHomePage px-5 py-20 md:px-20">
+    <section className="w-full blogSectionHomePage px-5 pb-20 md:px-20">
       <div className="container">
         {/* HEADING */}
         <div className="pb-20 text-center">
