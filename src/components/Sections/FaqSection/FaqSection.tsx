@@ -32,7 +32,7 @@ export default function FAQSection({
   };
 
   return (
-    <section className="relative w-full bg-[#000] px-6 py-20 text-white lg:px-20 overflow-hidden">
+    <section className="relative faqSection w-full py-20 text-white">
       <div className="relative z-10 container mx-auto grid grid-cols-1 gap-10 lg:grid-cols-2">
         {/* LEFT SECTION */}
         <div>
@@ -53,13 +53,13 @@ export default function FAQSection({
 
           <div className="relative mt-16 hidden opacity-70 lg:block">
             <div className="absolute left-[-80px]">
-              <Image
+              {/* <Image
                 src={images.src}
                 alt="pattern"
                 width={550}
                 height={500}
                 className="object-contain"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -121,7 +121,8 @@ export default function FAQSection({
       </div>
 
       {/* BACKGROUND EFFECTS */}
-      <div className="absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-green-600/10 blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 h-[550px] w-[500px] flex items-end">
+        </div>
       <div className="absolute top-10 right-10 h-[300px] w-[300px] rounded-full bg-green-400/10 blur-3xl"></div>
     </section>
   );

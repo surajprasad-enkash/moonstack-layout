@@ -23,11 +23,11 @@ import footerBg from "../../public/assets/footer/footer-bg.webp";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer z-2 relative">
       <div className="pageFooter">
         {/* TOP SECTION */}
         <div
-          className="footerTop bg-cover bg-center px-20 py-20"
+          className="footerTop bg-cover bg-center px-20 py-10"
           style={{ backgroundImage: `url(${footerBg.src})` }}
         >
           <div className="container">
@@ -83,7 +83,7 @@ const Footer = () => {
                         <Link href="/contact-us">Contact us</Link>
                       </li>
                       <li>
-                        <Link href="/career">Career</Link>
+                        <Link href="/careers">Careers</Link>
                       </li>
                       <li>
                         <Link href="/blogs">Blogs & insights</Link>
@@ -180,7 +180,7 @@ const Footer = () => {
         </div>
 
         {/* BRAND IMAGE (NOT TEXT, CLASS KEPT) */}
-        <div className="footerBrandText px-[20px] pt-15 pb-12 md:px-20">
+        <div className="footerBrandText bg-[#000000] px-[20px] pt-15 pb-12 md:px-20">
           <div className="container">
             <div className="flex justify-center">
               <Image

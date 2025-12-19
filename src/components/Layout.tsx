@@ -37,8 +37,8 @@ const Layout: React.FC<{
       <BodyClass />
       {/* <Header refs={refs} /> */}
       <NewHeader />
-      <main className="bg-black">{children}</main>
-      <Footer  />
+      <main className="bg-black relative">{children}</main>
+      <Footer />
     </>
   );
 };

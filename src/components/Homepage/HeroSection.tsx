@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-
+import Marquee from "@/components/Homepage/Marquee";
 import bannerImg from "../../../public/assets/home/banner-img.svg";
 import headingIcon from "../../../public/assets/home/heading-icon.svg";
 import Link from "next/link";
@@ -21,10 +21,10 @@ export default function HeroSection({
 }) {
   return (
     <section
-      className="relative mt-[62px] w-full overflow-hidden bg-cover bg-center pt-[110px] pb-[100px] text-white"
+      className="relative mt-[62px] w-full overflow-hidden bg-cover bg-center pt-[110px] pb-[0px] text-white"
       style={{ backgroundImage: `url(${bannerImg.src})` }}
     >
-      <div className="relative z-10 mx-auto max-w-6xl px-6 text-center">
+      <div className="relative z-10 mx-auto max-w-6xl px-6 text-center mb-[80px]">
         {/* Tagline */}
         <p className="mb-[6px] inline-block rounded-full border border-[#114624] bg-[#092413] px-5 py-2 text-sm tracking-wide text-white">
           {tagline}
@@ -33,7 +33,7 @@ export default function HeroSection({
         {/* Heading */}
         <h1 className="text-[60px] leading-[125%] font-[500]">
           <span className="flex justify-center">{title}<Image src={headingIcon} width={60} height={60} alt={""}></Image></span>
-          <span className="highlight-text">{highlight}</span>
+          <span className="text-gradient">{highlight}</span>
         </h1>
 
         {/* Description */}
@@ -99,6 +99,7 @@ export default function HeroSection({
           </Link>
         </div>
       </div>
+        <Marquee />
     </section>
   );
 }

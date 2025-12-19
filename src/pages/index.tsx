@@ -22,6 +22,11 @@ import BlogCardGrid from "@/components/BlogCardGrid/BlogCardGrid2";
 import BackedByBestSlider from "@/components/BestSlider";
 // import BlogCardGrid from "@/components/BlogCardGrid/BlogCardGrid";
 
+import BlogCardGrid2 from "@/components/BlogCardGrid/BlogCardGrid2";
+import TechAssistanceSection from "@/components/Homepage/TechAssistanceSection";
+import AppWebDevelopment from "@/components/Homepage/AppWebDevelopment/AppWebDevelopment";
+import SmartSolutions from "@/components/Homepage/SmartSolutions/SmartSolutions";
+import BackgroundLines from "@/components/Homepage/BackgroundLines";
 
 export default function Home() {
   return (
@@ -35,6 +40,7 @@ export default function Home() {
       />
 
       <Layout>
+        <BackgroundLines />
         <HeroSection
           reviews={[
             { platform: "Upwork", reviews: 94, icon: upwork },
@@ -44,38 +50,20 @@ export default function Home() {
           buttonText="Get Started"
           buttonLink="/contact"
         />
+        <AppWebDevelopment />
+        <TechAssistanceSection />
+        <SmartSolutions />
 
-        <Marquee />
-     
-       
-        <SmartSection
-          title="Why Moonstack Is the"
-          highlight="Smart Choice for"
-          description="Work with a team that brings your ideas to life on your terms. Moonstack is one of the most reliable development agencies in India."
-          buttonText="About us"
-          backgroundImage={counterBg.src}
-          stats={[
-            { value: 115, suffix: "+", label: "Project we have complete" },
-            { value: 98, suffix: "%", label: "Project success rate" },
-            { value: 10, suffix: "mins", label: "Avg reply time" },
-            { value: 13, suffix: "year", label: "Experience" },
-          ]}
-        />
-        {/* <HomepageBanner /> */}
-
-        {/* <SolutionsComponent /> */}
-        <OurServices />
-
-        <CaseStudies />
         <TechnologyComponent />
-        <ProvenProcess />
+        <CaseStudies />
         <BackedByBestSlider />
         {/* <InsightsIdeas /> */}
         <BlogCardGrid />
         <InsightsIdeas />
+        <BlogCardGrid2 />
         <FAQSection
-          title="Our FAQs "
-          highlight=" Questions"
+          title=""
+          highlight="FAQs"
           description="Wondering whether Moonstack is the right fit for your business or not? Here are the most important client queries answered from our side."
           faqs={accordionData.map((item) => ({
             question: item.title,
@@ -83,8 +71,7 @@ export default function Home() {
           }))}
           classname=""
         />
-
-        <ContactUs />
+        {/* <ContactUs /> */}
       </Layout>
     </>
   );
