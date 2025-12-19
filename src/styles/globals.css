@@ -1063,7 +1063,9 @@ h6 {
   z-index: -1;
 
 }
-
+.cricleLeftSideOuter {
+  z-index: 1;
+}
 .cricleLeftSideOuter::after {
   content: '';
   box-shadow: 0 0 220px 160px #00ea52;

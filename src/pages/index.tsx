@@ -1,8 +1,4 @@
 import Layout from "@/components/Layout";
-import InsightsIdeas from "@/components/Homepage/InsightsIdeas";
-import Marquee from "@/components/Homepage/Marquee";
-import OurServices from "@/components/Homepage/OurSevices";
-import ProvenProcess from "@/components/Homepage/ProvenProcess";
 import TechnologyComponent from "@/components/Homepage/TechnologyComponent";
 import ContactUs from "@/components/Homepage/ContactUs";
 import CaseStudies from "@/components/Homepage/CaseStudies";
@@ -54,10 +50,10 @@ export default function Home() {
         <TechAssistanceSection />
         <SmartSolutions />
 
+        <BlogCardGrid2 />
         <TechnologyComponent />
         <CaseStudies />
         <BackedByBestSlider />
-        <BlogCardGrid2 />
         <FAQSection
           title=""
           highlight="FAQs"
@@ -68,7 +64,7 @@ export default function Home() {
           }))}
           classname=""
         />
-        {/* <ContactUs /> */}
+        <ContactUs />
       </Layout>
     </>
   );

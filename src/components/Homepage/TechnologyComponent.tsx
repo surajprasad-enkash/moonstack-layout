@@ -2,21 +2,30 @@ import React from "react";
 // import video1 from '../../../public/assets/video1.mp4'
 import Video from "next-video";
 import getStarted from "../../../videos/get-started.mp4";
+import Heading from "../Heading/Heading";
+import { Link } from "@mui/material";
 
 const TechnologyComponent = () => {
   return (
     <section className="techonologyhomePageSection z-1 relative  text-white px-[80px] pt-[00px]">
       <div className="container">
-        <div className="mb-10 flex flex-col justify-between mix-blend-difference md:flex-row techonologyhomePageSectionRight">
-          <div className="poppins-semibold font-36 w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
-            Our Best Technology we have used in{" "}
-            <span className="via=[#60F90D] bg-gradient-to-r from-[#25E8B1] to-[#60F90D] bg-clip-text text-transparent">
-              our projects
-            </span>
+        <div className="flex flex-wrap techonologyhomePageSectionRight">
+          <div className="w-[100%] md:w-[50%]">
+           <Heading
+              headingTag="h2"
+              className="mb-[20px] "
+              content={[
+                { text: `Case Studies That Highlight Smart,`, color: "text-white" },
+                {
+                  text: `Scalable Solutions`,
+                  color: "",
+                  className: "highlight-text",
+                },
+              ]}
+            />
           </div>
-          <div className="poppins-medium font-16 w-full leading-[200%] md:w-[40%] lg:w-[40%] xl:w-[40%]">
-            We focus on scalability, security, and user-centric design, ensuring
-            that every project is future-ready and tailored to client needs.
+          <div className="w-[100%] md:w-[50%] flex items-end justify-end">
+       <Link href="" className="cursor-pointer inline-flex rounded-full !px-[40px] !py-[14px] text-[16px] font-[600] tracking-[0.8px] text-black transition">Explore Now</Link>
           </div>
         </div>
         
