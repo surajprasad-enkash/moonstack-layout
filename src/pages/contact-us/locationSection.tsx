@@ -1,112 +1,107 @@
-import Heading from "@/components/Heading/Heading";
-import React from "react";
-import { GrLocation } from "react-icons/gr";
-import Tag from "@/components/Tag/Tag";
+"use client";
+
+import React, { useState } from "react";
 import dynamic from "next/dynamic";
+import Image from "next/image";
+import Heading from "@/components/Heading/Heading";
+import usaFlag from "../../../public/assets/contact-us/usa-flag.png";
+import indiaFlag from "../../../public/assets/contact-us/india-flag.png";
+import CustomButton from "@/components/CommanButton/CommanButton";
 
 const WorldMap = dynamic(() => import("@/components/Map"), {
   ssr: false,
 });
 
-const LocationSection = () => {
+type LocationSectionProps = {
+  heading: {
+    text: string;
+    color?: string;
+  }[];
+  subHeading?: string;
+  buttonText: string;
+  buttonLink: string;
+};
+
+const LocationSection = ({
+  heading,
+  subHeading,
+  buttonText,
+  buttonLink,
+}: LocationSectionProps) => {
+  const [activeLocation, setActiveLocation] = useState<string | null>(null);
+
   return (
     <section className="bg-black">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 items-center gap-4 px-4 py-12 pt-28 md:grid-cols-2 md:items-start md:px-8 md:py-20">
-          <div>
-            <div>
-              <Tag text={"Location"} />
-              <Heading
-                headingTag="h3"
-                className="pt-5 text-start font-semibold"
-                content={[
-                  {
-                    text: "Meet With US  ",
-                    color: "text-white ",
-                  },
-                  {
-                    text: "For Great Experience",
-                    color: "text-gradient ",
-                  },
-                ]}
-              />
-              <div className="relative mt-[26px] flex w-full max-w-xl items-center justify-between overflow-hidden rounded-2xl bg-[#04230F] p-5 shadow-lg">
-                <div className="z-10 flex flex-col items-start gap-6">
-                  <div className="flex gap-3">
-                    {" "}
-                    <GrLocation className="text-white" size={28} />
-                    <Heading
-                      headingTag="p"
-                      className="text-start"
-                      content={[
-                        {
-                          text: "Moonstack Pvt. Ltd ",
-                          color: "text-white ",
-                        },
-                      ]}
-                    />
-                  </div>{" "}
-                  <Heading
-                    headingTag="p"
-                    className="text-start"
-                    content={[
-                      {
-                        text: "8 The Green, STE R, Dover, DE 19901, USA",
-                        color: "text-white ",
-                      },
-                    ]}
-                  />
-                  <a
-                    href="https://maps.app.goo.gl/QKwTMpTyMhJ4dNbi8"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-primary text-primary z-10 rounded-full border px-4 py-2 text-sm transition hover:bg-green-600 hover:text-white"
-                  >
-                    Location
-                  </a>
-                </div>
-              </div>{" "}
-              <div className="relative mt-[26px] flex w-full max-w-xl items-center justify-between overflow-hidden rounded-2xl bg-[#04230F] p-5 shadow-lg">
-                <div className="z-10 flex flex-col items-start gap-6">
-                  <div className="flex gap-3">
-                    {" "}
-                    <GrLocation className="text-white" size={28} />
-                    <Heading
-                      headingTag="p"
-                      className="text-start"
-                      content={[
-                        {
-                          text: "Moonstack Pvt. Ltd ",
-                          color: "text-white ",
-                        },
-                      ]}
-                    />
-                  </div>
+      <div className="container mx-auto px-4 py-20">
+        {/* TOP CONTENT */}
+        <div className="mx-auto w-3/4 text-center">
+          <Heading
+            headingTag="h2"
+            className="text-center font-semibold"
+            content={heading}
+          />
 
-                  <Heading
-                    headingTag="p"
-                    className="text-start"
-                    content={[
-                      {
-                        text: "E6, 3rd Floor, Gautam Marg, Vaishali Nagar, Jaipur, Rajasthan 302021",
-                        color: "text-white ",
-                      },
-                    ]}
-                  />
-                  <a
-                    href="https://maps.app.goo.gl/CieCPT4nfzxaAmEs6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-primary text-primary z-10 rounded-full border px-4 py-2 text-sm transition hover:bg-green-600 hover:text-white"
-                  >
-                    Location
-                  </a>
-                </div>
-              </div>{" "}
+          <Heading
+            headingTag="p"
+            className="py-4 text-center text-white"
+            content={subHeading}
+          />
+
+          <CustomButton text={buttonText} variant="primary" href={buttonLink} />
+        </div>
+
+        {/* MAP + CARDS */}
+        <div>
+          <WorldMap
+            activeLocation={activeLocation}
+            setActiveLocation={setActiveLocation}
+          />
+
+          <div className="mx-auto flex items-center justify-center gap-4">
+            {/* USA CARD */}
+            <div
+              onMouseEnter={() => setActiveLocation("USA")}
+              onMouseLeave={() => setActiveLocation(null)}
+              className={`rounded-2xl p-5 transition ${
+                activeLocation === "USA"
+                  ? "bg-[#D0F601] text-black"
+                  : "bg-[#04230F] text-white"
+              }`}
+            >
+              <div className="flex items-center justify-between">
+                <Heading
+                  headingTag="p"
+                  content={[{ text: "Moonstack Pvt. Ltd" }]}
+                />
+                <Image src={usaFlag} alt="USA" width={20} height={20} />
+              </div>
+              <p className="mt-3 text-sm">
+                8 The Green, STE R, Dover, DE 19901, USA
+              </p>
+            </div>
+
+            {/* INDIA CARD */}
+            <div
+              onMouseEnter={() => setActiveLocation("INDIA")}
+              onMouseLeave={() => setActiveLocation(null)}
+              className={`rounded-2xl p-5 transition ${
+                activeLocation === "INDIA"
+                  ? "bg-[#D0F601] text-black"
+                  : "bg-[#04230F] text-white"
+              }`}
+            >
+              <div className="flex items-center justify-between">
+                <Heading
+                  headingTag="p"
+                  content={[{ text: "Moonstack Pvt. Ltd" }]}
+                />
+                <Image src={indiaFlag} alt="India" width={20} height={20} />
+              </div>
+              <p className="mt-3 text-sm">
+                E6, Vaishali Nagar, Jaipur, Rajasthan 302021
+              </p>
             </div>
           </div>
-
-          <WorldMap />
         </div>
       </div>
     </section>

@@ -6,6 +6,10 @@ import AboutStepper from "./aboutStepper";
 import MissionSection from "./missionSection";
 import WorkflowSection from "./workflow";
 import { steps } from "../../constants/about";
+import TeamSection from "./teamSection";
+import LocationSection from "../contact-us/locationSection";
+import BackedByBestSlider from "@/components/BestSlider";
+import OurValuesSection from "./valueSection";
 
 const AboutUs = (): React.JSX.Element => {
   return (
@@ -14,42 +18,8 @@ const AboutUs = (): React.JSX.Element => {
       <Layout>
         <HeroSection />
         <AboutGallery />
-        <AboutStepper
-          title="Journey of Moonstack Teams"
-          highlight=""
-          subtitle="Onboard is designed to make hiring easier, faster, and more transparent for everyone. Whether you’re a freelancer, full-time employee, or a company, the platform helps you connect."
-          steps={[
-            {
-              number: "01",
-              title: "Discovery & Research",
-              description:
-                "Research user needs, market trends, and business goals through interviews, surveys, and analysis to define the product vision and scope.",
-              position: "right",
-            },
-            {
-              number: "02",
-              title: "Concept & Structure",
-              description:
-                "Create wireframes to outline the product’s structure, functionality, and user flows, forming the foundation for the experience.",
-              position: "left",
-            },
-            {
-              number: "03",
-              title: "Design & Systems",
-              description:
-                "Design intuitive, visually appealing UI/UX and build scalable design systems to ensure consistency and strong brand alignment.",
-              position: "right",
-            },
-            {
-              number: "04",
-              title: "Prototyping & Validation",
-              description:
-                "Develop interactive prototypes and conduct usability testing with real users to validate concepts and identify improvements.",
-              position: "left",
-            },
-          ]}
-        />
-
+        <AboutStepper />
+        <TeamSection />
         <MissionSection
           title="Flawless UI and UX Design in USA:"
           highlight="Artistry with Accurateness"
@@ -68,11 +38,24 @@ const AboutUs = (): React.JSX.Element => {
                 "We at Moonstack deliver innovative UI and UX design services to mobilize clients across industries to create new designs that better suit the target users and improve on their engagement. Great attention is paid to the fact that our team’s goal is to create digital products that are efficient and visually appealing but also oriented to the USA cultural context and consumer values.",
             },
           ]}
+        />{" "}
+        <LocationSection
+          heading={[
+            { text: "Let`s create ", color: "text-white" },
+            {
+              text: "‍amazing ",
+              color: "text-gradient",
+            },
+            {
+              text: "‍digital experiences together",
+              color: "text-white",
+            },
+          ]}
+          buttonText="Schedule a call"
+          buttonLink="/contact-us"
         />
-        <WorkflowSection
-          heading="Our Proven Workflow for Process"
-          steps={steps}
-        />
+        <OurValuesSection />
+        <BackedByBestSlider />
       </Layout>
     </>
   );

@@ -1,43 +1,6 @@
 @import "tailwindcss";
 
-/* @font-face {
-  font-family: "StyreneA";
-  src: url("/fonts/StyreneA-Light.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 
-@font-face {
-  font-family: "StyreneA";
-  src: url("/fonts/StyreneA-Regular.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "StyreneA";
-  src: url("/fonts/StyreneA-Medium.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "StyreneA";
-  src: url("/fonts/StyreneA-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "StyreneA";
-  src: url("/fonts/StyreneA-Bold.woff2") format("woff2");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-} */
 
 :root {
   --background: #ffffff;
@@ -65,6 +28,7 @@
   --color-white: #ffff;
   --text-green-gradient: linear-gradient(to right, #25e8b1, #60f90d);
   --font-display: "StyreneA", sans-serif;
+  --color-yellow-100: #D0F601;
 }
 
 @layer utilities {
@@ -1290,4 +1254,8 @@ h6 {
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   opacity: 1;
+}
+
+.team_bg_gradient{
+  background: var(--Cards-BG-Light-Violet-Gradient, linear-gradient(294deg, 0b4e00  -14.71%, #FFF 88.49%));
 }

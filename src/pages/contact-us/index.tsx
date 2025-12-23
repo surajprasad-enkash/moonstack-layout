@@ -8,6 +8,8 @@ import GetQuoteBanner from "@/components/GetQuoteBanner/GetQuoteBanner";
 
 //utils
 import bannerImg from "../../../public/assets/website-development-images/crm-banner.webp";
+import FAQSection from "@/components/Sections/FaqSection/FaqSection";
+import { accordionData } from "@/constants/contact";
 
 const contactUs = (): React.JSX.Element => {
   //
@@ -15,23 +17,20 @@ const contactUs = (): React.JSX.Element => {
     <>
       <Layout>
         <HeroSection />
-        <LocationSection />
-        <GetQuoteBanner
-          headingContent={[
-            {
-              text: "Scale Your Business with E-Commerce Experts",
-              color: "text-white",
-            },
+        <LocationSection
+          heading={[
+            { text: "Let`s discuss", color: "text-white block" },
+            { text: "‍your next project", color: "text-white" },
           ]}
-          subHeadingContent={[
-            {
-              text: "Android app development goes through different stages of work. As the premier Android app development agency in India",
-              color: "text-white",
-            },
-          ]}
-          buttonText="Connect with us"
-          image={bannerImg}
-          containerClassName="mt-20 "
+          buttonText="Schedule a call"
+          buttonLink="/contact-us"
+        />
+
+        <FAQSection
+          title="Frequently Asked"
+          highlight="Questions."
+          description="To decide means to choose a direction with clarity and confidence. It’s the process of thinking through different possibilities, understanding what truly matters, and then taking a stand. Every decision."
+          faqs={accordionData}
         />
       </Layout>
     </>
