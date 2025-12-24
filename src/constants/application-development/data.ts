@@ -58,6 +58,13 @@ import androidTabFour from "../../../public/assets/app-development-images/androi
 import androidTabFive from "../../../public/assets/app-development-images/android-tab-img-five.webp";
 import androidTabSix from "../../../public/assets/app-development-images/android-tab-img-six.webp";
 
+import iosTabOne from "../../../public/assets/app-development-images/ios-tab-img-one.webp";
+import iosTabTwo from "../../../public/assets/app-development-images/ios-tab-img-two.webp";
+import iosTabThree from "../../../public/assets/app-development-images/ios-tab-img-three.webp";
+import iosTabFour from "../../../public/assets/app-development-images/ios-tab-img-four.webp";
+import iosTabFive from "../../../public/assets/app-development-images/ios-tab-img-five.webp";
+import iosTabSix from "../../../public/assets/app-development-images/ios-tab-img-six.webp";
+
 import { IAccordionItem } from "@/components/Homepage/FAQ";
 import { StaticImageData } from "next/image";
 
@@ -517,31 +524,31 @@ export const pagesData: Record<
           title: "450+ Real World Project Experience:",
           description:
             "We’ve developed over 450 projects in the span of 15 years as the top iOS app development company in India.",
-          image: androidIcon,
+          image: iosTabOne,
         },
         {
           title: "Truly Custom App Builds:",
           description:
             "We create apps from scratch for our clients that are suited to their requirements. No templates, no starter packs.",
-          image: figmaIcon,
+          image: iosTabTwo,
         },
         {
           title: "User Experience Centric Design: ",
           description:
             " We always ensure you’re a part of the team when you work with Moonstack. Our developers use clean code to guarantee the codebase is accessible, and we provide regular updates so you’re always up-to-date with developments.",
-          image: reactIcon,
+          image: iosTabThree,
         },
         {
           title: "Transparent Building:  ",
           description:
             "  We always ensure you’re a part of the team when you work with Moonstack. Our developers use clean code to guarantee the codebase is accessible, and we provide regular updates so you’re always up-to-date with developments.",
-          image: reactIcon,
+          image: iosTabFour,
         },
         {
           title: "Scalable Builds For Growing Businesses: ",
           description:
             "We create scalable apps that can adapt to the growing needs of a successful business. And we always offer ongoing support for builds to all our clients.",
-          image: reactIcon,
+          image: iosTabFive,
         },
       ],
     },

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import teams from "../../../public/assets/about-us/teams.jpg";
+import teams from "../../../public/assets/about-us/moonstack-teams.png";
 
 const AboutGallery = () => {
   return (

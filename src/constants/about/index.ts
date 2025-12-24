@@ -107,7 +107,7 @@ export const steps = [
   },
 ];
 export type ValueCard = {
-  title: string;
+  title?: string;
   description?: string;
   image?: string;
   icon?: string;
@@ -117,17 +117,16 @@ export type ValueCard = {
 
 export const valuesData: ValueCard[] = [
   {
-    title: "Growth",
-    image: "/assets/about-us/neetaMam.webp",
-    className: "row-span-2",
+    image: "/assets/about-us/neetaMan2.JPG",
+    className: "",
   },
   {
     title: "Growth",
     description:
       "Constantly working on improving our skills and knowledge base, so that we can continue to provide the best service to our clients, with the best quality end results.",
-    className: "bg-[#cfd7ff] text-black flex flex-col justify-between",
+    className: "bg-primary-grey text-black flex flex-col justify-between",
   },
-  { title: "Growth", image: "/assets/about-us/neetaMam.webp" },
+  { image: "/assets/about-us/dheerajSirHoldingMIc.png" },
   {
     title: "People",
     description:
@@ -135,8 +134,7 @@ export const valuesData: ValueCard[] = [
     className: "bg-[#0b0b0b] text-white",
   },
   {
-    title: "Growth",
-    image: "/assets/about-us/neetaMam.webp",
+    image: "/assets/about-us/teams2.JPG",
     ctaText: "Send your CV to join",
     className: "relative",
   },

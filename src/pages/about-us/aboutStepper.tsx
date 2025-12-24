@@ -35,12 +35,12 @@ const AboutStepper = () => {
       <div className="container mx-auto">
         <Heading
           headingTag="p"
-          className="font-24 w-2/3 py-4 text-left text-white"
+          className="font-24 w-full py-4 text-left text-white"
           content="Let`s get to know each other"
         />
 
         <motion.h2
-          className="w-2/3 py-4 text-left text-[32px] leading-relaxed"
+          className="font-36 w-full py-4 text-left leading-relaxed"
           variants={container}
           initial="hidden"
           whileInView="show"

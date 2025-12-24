@@ -39,7 +39,7 @@ const SolutionsComponent: React.FC<SolutionsProps> = ({
   cardClassName,
 }) => {
   return (
-    <section className="bg-black">
+    <section>
       <div
         className={`relative container mx-auto px-4 py-12 text-white sm:px-10 md:py-20 ${titleClassName}`}
       >

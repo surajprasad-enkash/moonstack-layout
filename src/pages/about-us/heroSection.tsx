@@ -1,5 +1,4 @@
 import React from "react";
-import backgroundImg from "../../../public/assets/about-us/backgroundImg.webp";
 import Heading from "@/components/Heading/Heading";
 import CustomButton from "@/components/CommanButton/CommanButton";
 import MarqueeComponent from "@/components/Homepage/Marquee";
@@ -7,11 +6,9 @@ import MarqueeComponent from "@/components/Homepage/Marquee";
 const HeroSection = (): React.JSX.Element => {
   return (
     <section
-      className="bg-black"
       style={{
-        backgroundImage: `url(${backgroundImg.src})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        background:
+          "linear-gradient(108.83deg, rgb(21 108 52) 13.09%, #000000 80.01%)",
       }}
     >
       <div className="container mx-auto px-4 py-12 text-center sm:px-8 md:pt-32 md:pb-20 lg:grid-cols-2">
@@ -22,11 +19,11 @@ const HeroSection = (): React.JSX.Element => {
             content={[
               {
                 text: "Building Digital Products ",
-                color: "text-white  text-center block",
+                color: "text-white block",
               },
               {
-                text: " That Scale Businesses  ",
-                color: " text-gradient text-center ",
+                text: " That Scale Businesses ",
+                color: "text-gradient",
               },
             ]}
           />
@@ -40,6 +37,7 @@ const HeroSection = (): React.JSX.Element => {
           <CustomButton text="Connect with us" variant="primary" />
         </div>
       </div>
+
       <MarqueeComponent />
     </section>
   );

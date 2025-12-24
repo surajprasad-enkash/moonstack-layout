@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function OurValuesSection() {
   return (
-    <section className="relative bg-gradient-to-br from-[#2b2e8f] to-[#3c2fa3] py-24">
+    <section className="relative rounded-4xl bg-gradient-to-br from-[#2a4536] to-[#072911] py-24">
       {/* Heading */}
       <div className="mb-16 text-center">
         <h2 className="text-4xl font-semibold text-white">Our values</h2>
@@ -43,9 +43,11 @@ export default function OurValuesSection() {
                 </div>
 
                 {card.ctaText && (
-                  <button className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-[#d0f601] px-4 py-2 text-sm font-medium text-black transition hover:scale-105">
-                    {card.ctaText}
-                  </button>
+                  <div className="flex">
+                    <button className="mt-4 w-fit items-center gap-2 rounded-full bg-[#d0f601] px-4 py-2 text-sm font-medium text-black transition hover:scale-105">
+                      {card.ctaText}
+                    </button>
+                  </div>
                 )}
               </div>
             )}

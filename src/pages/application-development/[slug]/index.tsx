@@ -6,7 +6,6 @@ import AppCategoryBanner from "@/components/AppDevelopment/AppCategoryBanner";
 import SolutionsComponent from "@/components/Sections/SolutionSection/SolutionsComponent";
 import ChooseUsTabSection from "@/components/Sections/ChooseUsTab/ChooseUsTab";
 import CloudTimeline from "@/components/Sections/CloudServices/CloudTimeline/CloudTimeline";
-import ReusableTechnologySection from "@/components/Sections/TechnologySection/TechnologySection";
 import ReusableSliderSection from "@/components/Sections/SliderSection/SliderSection";
 import FAQ from "@/components/Homepage/FAQ";
 import ImportanceSection from "@/components/AppDevelopment/ImportanceComponent";
@@ -74,19 +73,6 @@ export default function ApplicationPage() {
           tabs={page.tabs.tabs}
         />{" "}
         <TechMarqueeComponent />
-        <ReusableTechnologySection
-          headingLines={[
-            { text: "We Use Technology to " },
-            { text: "Build What Matters", color: "text-primary" },
-          ]}
-          subHeadingLines={[
-            {
-              text: "We leverage cutting-edge tech stacks to craft seamless experiences.",
-            },
-          ]}
-          filteredItems={page.utilisArr}
-          bgColor="bg-[radial-gradient(99.15%_99.15%_at_50.87%_0.85%,_#0F592A_0%,_#000000_31%)]"
-        />
         <HireNowBanner
           headingContent={page.banner?.headingText ?? []}
           subHeadingContent={page.banner?.subHeadingText ?? []}

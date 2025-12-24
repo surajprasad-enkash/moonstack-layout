@@ -30,7 +30,7 @@ export default function MissionSection({ services }: MissionSectionProps) {
     >
       <div className="container mx-auto px-[20px] py-10 text-white md:px-[80px]">
         <div className="row"></div>
-        {/* Service Cards */}
+       
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <>
             <div className="rounded-xl bg-[#006223] p-15 text-left shadow-xl">

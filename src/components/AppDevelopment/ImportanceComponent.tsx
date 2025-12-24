@@ -31,7 +31,7 @@ const ImportanceSection: React.FC<ImportanceSectionProps> = ({
 }) => {
   return (
     <section
-      className="w-full bg-black bg-cover bg-center"
+      className="w-full bg-cover bg-center"
       style={{
         backgroundImage: bgImg
           ? `url(${typeof bgImg === "string" ? bgImg : bgImg.src})`

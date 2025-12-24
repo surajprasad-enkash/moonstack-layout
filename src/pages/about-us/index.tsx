@@ -10,6 +10,7 @@ import TeamSection from "./teamSection";
 import LocationSection from "../contact-us/locationSection";
 import BackedByBestSlider from "@/components/BestSlider";
 import OurValuesSection from "./valueSection";
+import LeadingSection from "./leadingSection";
 
 const AboutUs = (): React.JSX.Element => {
   return (
@@ -18,6 +19,7 @@ const AboutUs = (): React.JSX.Element => {
       <Layout>
         <HeroSection />
         <AboutGallery />
+        {/* <LeadingSection /> */}
         <AboutStepper />
         <TeamSection />
         <MissionSection

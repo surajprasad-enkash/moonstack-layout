@@ -30,7 +30,7 @@ const ChooseUsTabSection: React.FC<ChooseUsTabSectionProps> = ({
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="bg-black text-white">
+    <section className="text-white">
       <div className="container mx-auto px-4 py-12 md:px-8 md:py-20">
         <div
           className={`w-full ${

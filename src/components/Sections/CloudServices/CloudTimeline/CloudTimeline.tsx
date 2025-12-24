@@ -89,7 +89,7 @@ export default function CloudTimeline({
   }, [steps]);
 
   return (
-    <section className="w-full bg-[#000] px-[20px] py-20 text-white md:px-[80px]">
+    <section className="w-full px-[20px] py-20 text-white md:px-[80px]">
       <div className="container mx-auto max-w-5xl">
         <div className="mb-12 text-center">
           <Heading
