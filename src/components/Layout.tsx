@@ -4,6 +4,7 @@ import BodyClass from "./BodyClass/BodyClass"; // Ensure this path is correct
 import NewHeader from "@/components/Header/Header";
 import BackgroundLines from "./Homepage/BackgroundLines";
  
+
 interface IHeaderRefs {
   home: React.RefObject<HTMLDivElement>;
   service: React.RefObject<HTMLDivElement>;
@@ -34,6 +35,7 @@ const Layout: React.FC<{
     <>
       <BodyClass />
      
+      
       {/* <Header refs={refs} /> */}
       <NewHeader />
       <main className="relative bg-black">

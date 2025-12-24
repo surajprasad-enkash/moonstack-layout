@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Heading from "@/components/Heading/Heading";
 import Link from "next/link";
 import Image from "next/image";
@@ -15,33 +15,34 @@ import banner from "../../../../public/assets/home/app-web/banner.webp";
 
 /* =========================
    COUNTER COMPONENT
-   Supports: 150+, 98%, 10+, 07+
+   Viewport based animation
 ========================= */
-function Counter({ value }: { value: string }) {
+function Counter({ value, start }: { value: string; start: boolean }) {
   const hasPlus = value.includes("+");
   const hasPercent = value.includes("%");
-
   const endValue = parseInt(value.replace(/[^\d]/g, ""), 10);
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    let start = 0;
+    if (!start) return;
+
+    let startNum = 0;
     const duration = 2000;
     const increment = endValue / (duration / 16);
 
     const counter = setInterval(() => {
-      start += increment;
+      startNum += increment;
 
-      if (start >= endValue) {
-        start = endValue;
+      if (startNum >= endValue) {
+        startNum = endValue;
         clearInterval(counter);
       }
 
-      setCount(Math.floor(start));
+      setCount(Math.floor(startNum));
     }, 16);
 
     return () => clearInterval(counter);
-  }, [endValue]);
+  }, [start, endValue]);
 
   return (
     <>
@@ -53,30 +54,52 @@ function Counter({ value }: { value: string }) {
 }
 
 export default function AppWebDevelopment() {
+  const counterRef = useRef<HTMLDivElement | null>(null);
+  const [startCounter, setStartCounter] = useState(false);
+
+  /* ================= VIEWPORT OBSERVER ================= */
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStartCounter(true);
+          observer.disconnect(); // run only once
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (counterRef.current) {
+      observer.observe(counterRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section
-      className="relative overflow-hidden  text-white px-[80px] py-[80px] bg-cover"
+      className="relative overflow-hidden text-white px-[80px] py-[80px] bg-cover"
       // style={{ backgroundImage: `url(${banner.src})` }}
     >
       <div className="container relative">
         {/* ================= TOP SECTION ================= */}
         <div className="flex flex-col items-start gap-6 lg:flex-row lg:items-center lg:justify-between">
-          <div className="left_box w-[50%]">
+          <div className="left_box w-[55%]">
             <Heading
               headingTag="h2"
               content={[
-                { text: "Custom ", color: "text-white", className: "" },
-                { text: "App & Web", color: "", className: "highlight-text" },
+                { text: "Custom ", color: "text-white" },
+                { text: "App & Web", className: "highlight-text" },
                 {
-                  text: "Development in India & USA",
+                  text: "Development Company in India & USA",
                   color: "text-white",
-                  className: "block",
+                  className: "",
                 },
               ]}
             />
           </div>
 
-          <div className="right_box flex items-end gap-5 w-[50%] justify-end">
+          <div className="right_box flex items-end gap-5 w-[45%] justify-end">
             <Image src={appWebIcon} alt="app web icon" />
             <Link
               href="/about-us"
@@ -88,7 +111,10 @@ export default function AppWebDevelopment() {
         </div>
 
         {/* ================= STATS ================= */}
-        <div className="mt-[60px] mb-[60px] flex bg-[#299E6B]/14 p-[40px] backdrop-blur gap-[60px] rounded-[10px] counterSectionRightDesign">
+        <div
+          ref={counterRef}
+          className="mt-[60px] mb-[60px] flex bg-[#299E6B]/14 p-[40px] backdrop-blur gap-[60px] rounded-[10px] counterSectionRightDesign"
+        >
           {[
             { value: "150+", label: "Project we have complete" },
             { value: "98%", label: "Customer satisfaction" },
@@ -100,7 +126,7 @@ export default function AppWebDevelopment() {
               className="w-[25%] p-[10px] border-r border-[#00531D] last:border-r-0"
             >
               <h2>
-                <Counter value={item.value} />
+                <Counter value={item.value} start={startCounter} />
               </h2>
               <p className="mt-[12px] md:max-w-[180px]">{item.label}</p>
             </div>
@@ -109,7 +135,6 @@ export default function AppWebDevelopment() {
 
         {/* ================= CONTENT ================= */}
         <div className="mt-16 flex gap-[60px] items-center">
-          {/* LEFT IMAGE */}
           <div className="cricleLeftSideOuter relative flex items-center justify-center max-w-[400px]">
             <span className="cricleLeftSide"></span>
             <Image
@@ -119,7 +144,6 @@ export default function AppWebDevelopment() {
             />
           </div>
 
-          {/* RIGHT CARDS */}
           <div className="grid gap-[20px] md:grid-cols-2 flex-1 w-full">
             {features.map((item, i) => (
               <div
@@ -133,7 +157,6 @@ export default function AppWebDevelopment() {
                     className="w-[40px] h-[40px]"
                   />
                 </div>
-
                 <h5 className="mb-[20px]">{item.title}</h5>
                 <p className="text-white mb-0">{item.desc}</p>
               </div>

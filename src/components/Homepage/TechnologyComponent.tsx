@@ -1,111 +1,172 @@
+"use client";
+
 import React from "react";
-// import video1 from '../../../public/assets/video1.mp4'
 import Video from "next-video";
 import getStarted from "../../../videos/get-started.mp4";
+import Heading from "../Heading/Heading";
+import { Button, Link } from "@mui/material";
+import Image from "next/image";
+import pickright from '../../../public/assets/home/slider-logo/pickright.svg'
+import coralogix from '../../../public/assets/home/slider-logo/coralogix.svg'
+import hydrocan from '../../../public/assets/home/slider-logo/hydrocan.svg'
+import enkash from '../../../public/assets/home/slider-logo/enkash.svg'
+import nuvama from '../../../public/assets/home/slider-logo/nuvama.svg'
+import pickrightImg from '../../../public/assets/home/caseStudy/pickright.png'
+import coralogixImg from '../../../public/assets/home/caseStudy/coralogix.png'
+import hydrocanImg from '../../../public/assets/home/caseStudy/hydrocan.png'
+import enkashImg from '../../../public/assets/home/caseStudy/enkash.png'
+import nuvamaImg from '../../../public/assets/home/caseStudy/nuvama.png'
+
+
+const cardsData = [
+  {
+    id: "card-1",
+    title: "Hydrocan",
+    logo:hydrocan,
+    description:
+      "Moonstack designed and developed a modern, fast, and user-friendly website for Hydrocan Water, enhancing brand presence, performance, and product visibility.",
+    tags: [
+      { label: "React", link: "/" },
+      { label: "tailwind", link: "/" },
+    ],
+    image:hydrocanImg,
+    link:'https://www.hydrocanwater.com/',
+  },
+  {
+    id: "card-2",
+    title: "Enkash",
+    logo:enkash,
+    description:
+      "Moonstack crafted a sleek, high-performance website for EnKash, a leading fintech spend-management and payment platform, enhancing brand presence and UX.",
+    tags: [
+      { label: "Next Js", link: "/" },
+      { label: "Bootstrap", link: "/" },
+      { label: "wordpress", link: "/" },
+    ],
+    image:enkashImg,
+    link:'https://www.enkash.com/',
+  },
+  {
+    id: "card-3",
+    title: "Pickright",
+    logo:pickright,
+    description:
+      "Moonstack developed a fast, intuitive Fintech website for Pickright, improving product discovery, UX, and performance to boost conversions and brand appeal",
+    tags: [
+      { label: "Angular", link: "/" },
+      { label: "tailwind", link: "/" },
+    ],
+    image:pickrightImg,
+    link:'https://pickright.in/',
+  },
+  {
+    id: "card-4",
+    title: "Coralogix",
+    logo:coralogix,
+    description:
+      "Moonstack built a high-performance website for Coralogix, a real-time observability and analytics platform, enhancing UX, speed, and global brand presence.",
+    tags: [
+      { label: "PHP", link: "/" },
+      { label: "Python", link: "/" },
+    ],
+    image:coralogixImg,
+    link:'https://coralogix.com/',
+  },
+  {
+    id: "card-5",
+    title: "Nuvama",
+    logo:nuvama,
+    description:
+      "Moonstack delivered a scalable, high-performance website for Nuvama Wealth, enhancing digital presence, UX, and trust for a leading wealth management brand.",
+    tags: [
+      { label: "React Native", link: "/" },
+      { label: "React JS", link: "/" },
+    ],
+    image:nuvamaImg,
+    link:'https://coralogix.com/',
+  },
+];
 
 const TechnologyComponent = () => {
   return (
-    <section className="techonologyhomePageSection relative z-1 px-[80px] pt-[00px] text-white">
+    <section className="techonologyhomePageSection relative z-1 px-[80px] pt-[0px] text-white">
       <div className="container">
-        <div className="techonologyhomePageSectionRight mb-10 flex flex-col justify-between mix-blend-difference md:flex-row">
-          <div className="poppins-semibold font-36 w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
-            Our Best Technology we have used in{" "}
-            <span className="via=[#60F90D] bg-gradient-to-r from-[#25E8B1] to-[#60F90D] bg-clip-text text-transparent">
-              our projects
-            </span>
+
+        {/* ===== HEADER ===== */}
+        <div className="techonologyhomePageSectionRight mb-[80px] flex flex-wrap">
+          <div className="w-full md:w-[60%]">
+            <Heading
+              headingTag="h2"
+              content={[
+                { text: "Case Studies That Highlight Smart,", color: "text-white" },
+                { text: "Scalable Solutions", className: "highlight-text" },
+              ]}
+            />
           </div>
-          <div className="poppins-medium font-16 w-full leading-[200%] md:w-[40%] lg:w-[40%] xl:w-[40%]">
-            We focus on scalability, security, and user-centric design, ensuring
-            that every project is future-ready and tailored to client needs.
+
+          <div className="flex w-full items-end justify-end md:w-[40%]">
+            <Link
+              href="/services"
+              className="primary-btn inline-flex cursor-pointer rounded-full !px-[40px] !py-[14px] text-[16px] font-[600] tracking-[0.8px] !text-black transition"
+            >
+              Explore Now
+            </Link>
           </div>
         </div>
 
-        <div id="cards" className="mix-blend-difference">
-          <div className="card" id="card-1">
-            <div className="to-black-500 border-primary-300 flex flex-col items-center justify-between gap-y-6 rounded-4xl border-t-2 bg-gradient-to-br from-[#177634] via-black p-10 md:flex-row">
-              <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
-                <div className="poppins-semibold font-36">NovaWorks</div>
-                <div className="poppins-medium font-16 mt-4 leading-[200%]">
-                  Earney is a financial solution to energize and empower Small
-                  and Medium Enterprises (SMEs) and freelancers by providing
-                  them with a seamless and efficient financial platform
-                </div>
-              </div>
-              <div className="w-full rounded-l md:w-[40%] lg:w-[40%] xl:w-[40%]">
-                {/* <Image src={img1} alt="" className="w-[100%] h-auto rounded-l" /> */}
-                {/* <Video src={video1} /> */}
-                <Video src={getStarted} autoPlay controls={false} muted />
-              </div>
-            </div>
-          </div>
+        {/* ===== CARDS ===== */}
+        <div id="cards" className="mix-blend-difference m-auto max-w-[1068px]">
+          {cardsData.map((card) => (
+            <div className="card" id={card.id} key={card.id}>
+              <div className="flex flex-col items-center justify-between gap-y-[20px] rounded-[20px] border-t-5 border-[#0A662A] p-10 pr-0 md:flex-row" style={{background: `linear-gradient(180deg, #000000 0%, #0C401E 100%)`}}
+>
 
-          <div className="card" id="card-2">
-            <div className="to-black-500 border-primary-300 flex flex-col items-center justify-between gap-y-6 rounded-4xl border-t-2 bg-gradient-to-br from-[#177634] via-black p-10 md:flex-row">
-              <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
-                <div className="poppins-semibold font-36">PixelEdge</div>
-                <div className="poppins-medium font-16 mt-4 leading-[200%]">
-                  Earney is a financial solution to energize and empower Small
-                  and Medium Enterprises (SMEs) and freelancers by providing
-                  them with a seamless and efficient financial platform
-                </div>
-              </div>
-              <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
-                {/* <Image src={img2} alt="" className="w-[100%] h-auto rounded-l" /> */}
-                <Video src={getStarted} autoPlay controls={false} muted />
-              </div>
-            </div>
-          </div>
+                {/* LEFT CONTENT */}
+                <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[50%]">
+                  <div className="mb-[20px]">
+                    <Image src={card.logo} alt={card.title} className="max-w-[150px]"/>
+                   
+                  </div>
 
-          <div className="card" id="card-3">
-            <div className="to-black-500 border-primary-300 flex flex-col items-center justify-between gap-y-6 rounded-4xl border-t-2 bg-gradient-to-br from-[#177634] via-black p-10 md:flex-row">
-              <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
-                <div className="poppins-semibold font-36">Visionary Labs</div>
-                <div className="poppins-medium font-16 mt-4 leading-[200%]">
-                  Earney is a financial solution to energize and empower Small
-                  and Medium Enterprises (SMEs) and freelancers by providing
-                  them with a seamless and efficient financial platform
-                </div>
-              </div>
-              <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
-                {/* <Image src={img3} alt="" className="w-[100%] h-auto rounded-l" /> */}
-                <Video src={getStarted} autoPlay controls={false} muted />
-              </div>
-            </div>
-          </div>
+                  <div>
+                    <p  className="mt-[20px]">
+                    {card.description}
+                    </p>
+                  </div>
 
-          <div className="card" id="card-4">
-            <div className="to-black-500 border-primary-300 flex flex-col items-center justify-between gap-y-6 rounded-4xl border-t-2 bg-gradient-to-br from-[#177634] via-black p-10 md:flex-row">
-              <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
-                <div className="poppins-semibold font-36">NextPhase</div>
-                <div className="poppins-medium font-16 mt-4 leading-[200%]">
-                  Earney is a financial solution to energize and empower Small
-                  and Medium Enterprises (SMEs) and freelancers by providing
-                  them with a seamless and efficient financial platform
+                  {/* TAGS */}
+                  <div className="mt-6 flex flex-wrap gap-[12px] mb-[60px]">
+                    {card.tags.map((tag, index) => (
+                      <span className="rounded-full border leading-[16px] flex border-[#0A662A] px-[14px] pt-[6px] pb-[10px] text-[16px] text-[#fff] transition"> {tag.label}</span>
+                     
+                    ))}
+                  </div>
+                  <div>
+                   <Link href="#"
+                        className="inline-flex rounded-[10px] font-[500] !no-underline border border-[#fff] px-4 py-[6px] text-[16px]  !text-[#fff] transition"
+                      >
+                        Explore Now
+                      </Link>
+                  </div>
+                </div>
+
+                {/* RIGHT VIDEO */}
+                <div className="w-full rounded-l md:w-[40%]">
+                  <Image src={card.image} alt={card.title} />
+                  {/* <Video
+                    src={getStarted}
+                    autoPlay
+                    muted
+                    controls={false}
+                    loop
+                    playsInline
+                  /> */}
                 </div>
               </div>
-              <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
-                {/* <Image src={img4} alt="" className="w-[100%] h-auto rounded-l" /> */}
-                <Video src={getStarted} autoPlay controls={false} muted />
-              </div>
             </div>
-          </div>
-          <div className="card" id="card-5">
-            <div className="to-black-500 border-primary-300 flex flex-col items-center justify-between gap-y-6 rounded-4xl border-t-2 bg-gradient-to-br from-[#177634] via-black p-10 md:flex-row">
-              <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
-                <div className="poppins-semibold font-36">NextPhase</div>
-                <div className="poppins-medium font-16 mt-4 leading-[200%]">
-                  Earney is a financial solution to energize and empower Small
-                  and Medium Enterprises (SMEs) and freelancers by providing
-                  them with a seamless and efficient financial platform
-                </div>
-              </div>
-              <div className="w-full md:w-[40%] lg:w-[40%] xl:w-[40%]">
-                {/* <Image src={img4} alt="" className="w-[100%] h-auto rounded-l" /> */}
-                <Video src={getStarted} autoPlay controls={false} muted />
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
+
       </div>
     </section>
   );

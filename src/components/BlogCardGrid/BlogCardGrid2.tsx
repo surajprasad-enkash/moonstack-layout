@@ -4,14 +4,15 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import blogBg from "../../../public/assets/home/blogBg.webp";
 import { FaClock } from "react-icons/fa";
 
 import Heading from "../Heading/Heading";
-import Loader from "../Loader/Loader";
-
+import Loader from "../Loader";
 
 interface PostItem {
   category: {
+    slug: any;
     name: string;
     link: string;
   };
@@ -19,6 +20,7 @@ interface PostItem {
   post_link: string;
   description: string;
   image: string;
+  slug:string;
   author: {
     name: string;
     avatar: string;
@@ -26,7 +28,7 @@ interface PostItem {
   date: string;
 }
 
-export default function BlogCardGrid() {
+export default function BlogCardGrid({ showHeading = true }: { showHeading?: boolean }) {
   const [posts, setPosts] = useState<PostItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -89,16 +91,17 @@ export default function BlogCardGrid() {
   /* ---------------- UI ---------------- */
 
   return (
-    <section className="w-full blogSectionHomePage px-5 py-20 md:px-20">
+    <section className="w-full blogSectionHomePage px-5 pb-20 md:px-20">
       <div className="container">
         {/* HEADING */}
+        {showHeading && (
         <div className="pb-20 text-center">
           <Heading
             headingTag="h2"
             className="mb-3"
             content={[
               { text: "Blogs ", color: "text-white", className: "" },
-              { text: "& Insights", color: "", className: "text-gradient" },
+              { text: "& Insights", color: "", className: "highlight-text" },
             ]}
           />
           <Heading
@@ -111,6 +114,7 @@ export default function BlogCardGrid() {
             ]}
           />
         </div>
+        )}
 
         {/* GRID */}
         <div className="flex gap-5">
@@ -130,18 +134,18 @@ export default function BlogCardGrid() {
               <div className="relative z-10 space-y-4 p-6">
                 {/* CATEGORY BADGE */}
                 <Link
-                  href={firstPost.category.link}
+                  href={`/category/${firstPost.category.slug}`}
                   className="inline-block text-[#0CE859] mb-2"
                 >
                   {firstPost.category.name}
                 </Link>
 
                 <h6 className="text-[18px] font-[500] text-white transition hover:text-[#0CE859]">
-                  <Link href={firstPost.post_link}>{firstPost.title}</Link>
+                  <Link href={`/blogs/${firstPost.slug}`}>{firstPost.title}</Link>
                 </h6>
 
                 <Link
-                  href={firstPost.post_link}
+                  href={`/blogs/${firstPost.slug}`}
                   className="relative inline-flex items-center gap-2 font-medium text-white after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-0 after:bg-[#0CE859] after:transition-all after:duration-300 after:content-[''] hover:text-[#0CE859] hover:after:w-full"
                 >
                   ▶ Read More
@@ -170,7 +174,8 @@ export default function BlogCardGrid() {
                 <div className="flex flex-col gap-2">
                   {/* CATEGORY BADGE */}
                   <Link
-                    href={post.category.link}
+                  
+                    href={`/category/${post.category.slug}`}
                     className="w-fit text-[#0CE859]"
                   >
                     {post.category.name}
@@ -179,7 +184,7 @@ export default function BlogCardGrid() {
                   <h6 className=" leading-snug font-semibold text-white">
                     <Link
                       className="transition hover:text-[#0CE859]"
-                      href={post.post_link}
+                      href={`/blogs/${post.slug}`}
                     >
                       {post.title}
                     </Link>
@@ -192,7 +197,7 @@ export default function BlogCardGrid() {
                 </div>
 
                 <Link
-                  href={post.post_link}
+                  href={`/blogs/${post.slug}`}
                   className="ml-auto text-xl text-white hover:text-[#0CE859]"
                 >
                   {/* → */}

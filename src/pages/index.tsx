@@ -16,6 +16,11 @@ import TechAssistanceSection from "@/components/Homepage/TechAssistanceSection";
 import AppWebDevelopment from "@/components/Homepage/AppWebDevelopment/AppWebDevelopment";
 import SmartSolutions from "@/components/Homepage/SmartSolutions/SmartSolutions";
 import BackgroundLines from "@/components/Homepage/BackgroundLines";
+import LovedByTeamsSlider from "@/components/LovedByTeamsSlider/LovedByTeamsSlider";
+import ContactUs from "./contact-us";
+
+// import BlogCardGrid from "@/components/BlogCardGrid/BlogCardGrid";
+
 
 export default function Home() {
   return (
@@ -29,7 +34,7 @@ export default function Home() {
       />
 
       <Layout>
-        <BackgroundLines />
+     
         <HeroSection
           reviews={[
             { platform: "Upwork", reviews: 94, icon: upwork },
@@ -37,19 +42,19 @@ export default function Home() {
             { platform: "Clutch", reviews: 10, icon: clutch },
           ]}
           buttonText="Get Started"
-          buttonLink="/contact"
+          buttonLink="/contact-us"
         />
+        
         <AppWebDevelopment />
         <TechAssistanceSection />
         <SmartSolutions />
 
+        <BlogCardGrid2 />
         <TechnologyComponent />
         <CaseStudies />
-        <BackedByBestSlider />
-        {/* <InsightsIdeas /> */}
-        {/* <BlogCardGrid /> */}
-        {/* <InsightsIdeas /> */}
-        <BlogCardGrid2 />
+      
+        {/* <LovedByTeamsSlider /> */}
+        {/* <BackedByBestSlider /> */}
         <FAQSection
           title=""
           highlight="FAQs"

@@ -23,11 +23,11 @@ import footerBg from "../../public/assets/footer/footer-bg.webp";
 
 const Footer = () => {
   return (
-    <footer className="footer z-2 relative">
+    <footer className="footer">
       <div className="pageFooter">
         {/* TOP SECTION */}
         <div
-          className="footerTop bg-cover bg-center px-20 py-10"
+          className="footerTop bg-cover bg-center px-20 py-20"
           style={{ backgroundImage: `url(${footerBg.src})` }}
         >
           <div className="container">

@@ -8,6 +8,7 @@ import img2 from "../../../public/assets/home/our-tech/img2.png";
 import img3 from "../../../public/assets/home/our-tech/img3.png";
 import img4 from "../../../public/assets/home/our-tech/img4.png";
 import Heading from "../Heading/Heading";
+import Link from "next/link";
 
 export default function TechAssistanceSection() {
   return (
@@ -46,9 +47,9 @@ export default function TechAssistanceSection() {
               ]}
             />
 
-            <button className="primary-btn cursor-.01pointer inline-flex rounded-full !px-[40px] !py-[14px] text-[16px] font-[600] tracking-[0.8px] text-black transition">
-              Get a quote
-            </button>
+            <Link href="/contact-us" className="primary-btn cursor-.01pointer inline-flex rounded-full !px-[40px] !py-[14px] text-[16px] font-[600] tracking-[0.8px] text-black transition">
+              Connect With us
+            </Link>
           </div>
           <div className="right_box flex w-[50%] justify-center relative">
             <div className="needAssistanceBgCircle">
