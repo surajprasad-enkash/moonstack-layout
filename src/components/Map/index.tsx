@@ -52,7 +52,16 @@ export default function WorldMap({
     <div className="mx-auto h-[500px] w-2/3">
       <ComposableMap projectionConfig={{ scale: 160 }}>
         <Geographies geography={geoUrl}>
-          {({ geographies }) =>
+          {({
+            geographies,
+          }: {
+            geographies: {
+              rsmKey: string;
+              properties: {
+                NAME: string;
+              };
+            }[];
+          }) =>
             geographies.map((geo) => {
               const isIndia = geo.properties.NAME === "India";
               const isUSA = geo.properties.NAME === "United States of America";

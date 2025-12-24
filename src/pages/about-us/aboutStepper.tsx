@@ -1,13 +1,13 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Heading from "@/components/Heading/Heading";
 
 const text =
-  "As for the working principles of Moonstack, the latter is known for bringing ideas to life. We are a team of enthusiastic developers, designers, and strategists who work towards creating the best digital solutions . ";
+  "As for the working principles of Moonstack, the latter is known for bringing ideas to life. We are a team of enthusiastic developers, designers, and strategists who work towards creating the best digital solutions.";
 
-const container = {
+const container: Variants = {
   hidden: {},
   show: {
     transition: {
@@ -16,7 +16,7 @@ const container = {
   },
 };
 
-const wordAnimation = {
+const wordAnimation: Variants = {
   hidden: {
     color: "#9ca3af",
   },
@@ -24,7 +24,7 @@ const wordAnimation = {
     color: "#ffffff",
     transition: {
       duration: 0.4,
-      ease: "easeInOut",
+      ease: [0.4, 0, 0.2, 1], // ✅ FIX
     },
   },
 };
@@ -38,6 +38,7 @@ const AboutStepper = () => {
           className="font-24 w-2/3 py-4 text-left text-white"
           content="Let`s get to know each other"
         />
+
         <motion.h2
           className="w-2/3 py-4 text-left text-[32px] leading-relaxed"
           variants={container}
