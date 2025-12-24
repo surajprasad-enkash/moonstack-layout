@@ -1556,3 +1556,67 @@ margin-top: 20px;
 .blogPageCategoryOuter .blogPageCategoryInner .blogPageCategoryArticle:nth-child(6) a{
 margin-top: 40px;
 }
+
+
+.singleBlogPost .blogLeftSection img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.singleBlogPost .blogLeftSection *{
+  text-decoration: none;
+}
+.singleBlogPost .blogLeftSection h2,.singleBlogPost .blogLeftSection h3{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+.singleBlogPost .blogLeftSection strong{
+  font-weight: 600;
+}
+.singleBlogPost .blogLeftSection p,.singleBlogPost .blogLeftSection li{
+  font-weight: 300;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+.singleBlogPost .blogLeftSection p strong{
+  font-weight: 500;
+}
+.singleBlogPost .blogLeftSection a{
+  color:#00ea52
+}
+
+.categoryPageSection{
+  position: relative;
+  z-index: 1;
+  /* background-color: #00ea523f; */
+}
+
+.categoryPageSection::after{
+ content: "";
+  z-index: -1;
+  position: absolute;
+  right: -14%;
+  box-shadow: 0 0 220px 160px #00ea52;
+  top: 40%; 
+}
+.categoryPageSection::before{
+ content: "";
+  z-index: -1;
+  position: absolute;
+  left: -14%;
+  box-shadow: 0 0 220px 160px #00ea52;
+  top: 250px; 
+}
+.categoryPageSection .container{
+  position: relative;
+}
+.categoryPageSection .container::before{
+ content: "";
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  box-shadow: 0 0 220px 160px #00ea52;
+  top: 50%; 
+}

@@ -51,28 +51,32 @@ export default function Header() {
     const [openMenu, setOpenMenu] = useState(null);
     const [activeCategory, setActiveCategory] = useState("Application Development");
 
-    // CHECK SINGLE PAGE
-    const isActive = (path) => pathname === path;
 
     // CHECK IF SERVICES ANY INNER PAGE ACTIVE
+    const isActive = (path) => pathname === path;
+
     const isServicesActive = () =>
-        pathname.startsWith("/application-development") ||
-        pathname.startsWith("/website-development-service") ||
-        pathname.startsWith("/frontend-development") ||
-        pathname.startsWith("/backend-developer") ||
-        pathname.startsWith("/seo") ||
-        pathname.startsWith("/product-designing-service") ||
-        pathname.startsWith("/ui-ux-designing-service") ||
-        pathname.startsWith("/cloud-services") ||
-        pathname.startsWith("/industries");
+        pathname &&
+        (
+            pathname.startsWith("/application-development") ||
+            pathname.startsWith("/website-development-service") ||
+            pathname.startsWith("/frontend-development") ||
+            pathname.startsWith("/backend-developer") ||
+            pathname.startsWith("/seo") ||
+            pathname.startsWith("/product-designing-service") ||
+            pathname.startsWith("/ui-ux-designing-service") ||
+            pathname.startsWith("/cloud-services") ||
+            pathname.startsWith("/industries")
+        );
 
-    // CHECK IF COMPANY ANY INNER PAGE ACTIVE
     const isCompanyActive = () =>
-        pathname.startsWith("/about-us") ||
-        pathname.startsWith("/career") ||
-        pathname.startsWith("/blogs") ||
-        pathname.includes("company");
-
+        pathname &&
+        (
+            pathname.startsWith("/about-us") ||
+            pathname.startsWith("/career") ||
+            pathname.startsWith("/blogs") ||
+            pathname.includes("company")
+        );
     // MENU DATA
     const menuData = {
         "Application Development": [

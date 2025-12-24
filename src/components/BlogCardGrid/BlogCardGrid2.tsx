@@ -12,6 +12,7 @@ import Loader from "../Loader";
 
 interface PostItem {
   category: {
+    slug: any;
     name: string;
     link: string;
   };
@@ -133,7 +134,7 @@ export default function BlogCardGrid({ showHeading = true }: { showHeading?: boo
               <div className="relative z-10 space-y-4 p-6">
                 {/* CATEGORY BADGE */}
                 <Link
-                  href={firstPost.category.link}
+                  href={`/category/${firstPost.category.slug}`}
                   className="inline-block text-[#0CE859] mb-2"
                 >
                   {firstPost.category.name}
@@ -173,7 +174,8 @@ export default function BlogCardGrid({ showHeading = true }: { showHeading?: boo
                 <div className="flex flex-col gap-2">
                   {/* CATEGORY BADGE */}
                   <Link
-                    href={post.category.link}
+                  
+                    href={`/category/${post.category.slug}`}
                     className="w-fit text-[#0CE859]"
                   >
                     {post.category.name}
@@ -182,7 +184,7 @@ export default function BlogCardGrid({ showHeading = true }: { showHeading?: boo
                   <h6 className=" leading-snug font-semibold text-white">
                     <Link
                       className="transition hover:text-[#0CE859]"
-                      href={`/blogs/${firstPost.slug}`}
+                      href={`/blogs/${post.slug}`}
                     >
                       {post.title}
                     </Link>
@@ -195,7 +197,7 @@ export default function BlogCardGrid({ showHeading = true }: { showHeading?: boo
                 </div>
 
                 <Link
-                  href={`/blogs/${firstPost.slug}`}
+                  href={`/blogs/${post.slug}`}
                   className="ml-auto text-xl text-white hover:text-[#0CE859]"
                 >
                   {/* → */}
