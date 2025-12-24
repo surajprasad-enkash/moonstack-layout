@@ -4,13 +4,10 @@ import HeroSection from "./heroSection";
 import AboutGallery from "./aboutGallerySection";
 import AboutStepper from "./aboutStepper";
 import MissionSection from "./missionSection";
-import WorkflowSection from "./workflow";
-import { steps } from "../../constants/about";
 import TeamSection from "./teamSection";
 import LocationSection from "../contact-us/locationSection";
-import BackedByBestSlider from "@/components/BestSlider";
 import OurValuesSection from "./valueSection";
-import LeadingSection from "./leadingSection";
+import LovedByTeamsSlider from "@/components/LovedByTeamsSlider/LovedByTeamsSlider";
 
 const AboutUs = (): React.JSX.Element => {
   return (
@@ -19,7 +16,6 @@ const AboutUs = (): React.JSX.Element => {
       <Layout>
         <HeroSection />
         <AboutGallery />
-        {/* <LeadingSection /> */}
         <AboutStepper />
         <TeamSection />
         <MissionSection
@@ -57,7 +53,7 @@ const AboutUs = (): React.JSX.Element => {
           buttonLink="/contact-us"
         />
         <OurValuesSection />
-        <BackedByBestSlider />
+        <LovedByTeamsSlider />
       </Layout>
     </>
   );
