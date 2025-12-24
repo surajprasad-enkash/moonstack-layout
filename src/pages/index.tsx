@@ -17,6 +17,8 @@ import AppWebDevelopment from "@/components/Homepage/AppWebDevelopment/AppWebDev
 import SmartSolutions from "@/components/Homepage/SmartSolutions/SmartSolutions";
 import BackgroundLines from "@/components/Homepage/BackgroundLines";
 import LovedByTeamsSlider from "@/components/LovedByTeamsSlider/LovedByTeamsSlider";
+import ContactUs from "./contact-us";
+
 // import BlogCardGrid from "@/components/BlogCardGrid/BlogCardGrid";
 
 
@@ -40,7 +42,7 @@ export default function Home() {
             { platform: "Clutch", reviews: 10, icon: clutch },
           ]}
           buttonText="Get Started"
-          buttonLink="/contact"
+          buttonLink="/contact-us"
         />
         
         <AppWebDevelopment />
@@ -50,7 +52,8 @@ export default function Home() {
         <BlogCardGrid2 />
         <TechnologyComponent />
         <CaseStudies />
-        <LovedByTeamsSlider />
+      
+        {/* <LovedByTeamsSlider /> */}
         {/* <BackedByBestSlider /> */}
         <FAQSection
           title=""

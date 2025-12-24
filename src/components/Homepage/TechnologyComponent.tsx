@@ -4,12 +4,19 @@ import React from "react";
 import Video from "next-video";
 import getStarted from "../../../videos/get-started.mp4";
 import Heading from "../Heading/Heading";
-import { Link } from "@mui/material";
+import { Button, Link } from "@mui/material";
 import Image from "next/image";
 import pickright from '../../../public/assets/home/slider-logo/pickright.svg'
 import coralogix from '../../../public/assets/home/slider-logo/coralogix.svg'
 import hydrocan from '../../../public/assets/home/slider-logo/hydrocan.svg'
 import enkash from '../../../public/assets/home/slider-logo/enkash.svg'
+import nuvama from '../../../public/assets/home/slider-logo/nuvama.svg'
+import pickrightImg from '../../../public/assets/home/caseStudy/pickright.png'
+import coralogixImg from '../../../public/assets/home/caseStudy/coralogix.png'
+import hydrocanImg from '../../../public/assets/home/caseStudy/hydrocan.png'
+import enkashImg from '../../../public/assets/home/caseStudy/enkash.png'
+import nuvamaImg from '../../../public/assets/home/caseStudy/nuvama.png'
+
 
 const cardsData = [
   {
@@ -17,13 +24,12 @@ const cardsData = [
     title: "Hydrocan",
     logo:hydrocan,
     description:
-      "Work with a team that brings your ideas to life on your terms. Moonstack is one of the most experienced...",
+      "Moonstack designed and developed a modern, fast, and user-friendly website for Hydrocan Water, enhancing brand presence, performance, and product visibility.",
     tags: [
-      { label: "Technology", link: "/technology" },
-      { label: "Fintech", link: "/fintech" },
-      { label: "SaaS", link: "/saas" },
-      { label: "Startup", link: "/startup" },
+      { label: "React", link: "/" },
+      { label: "tailwind", link: "/" },
     ],
+    image:hydrocanImg,
     link:'https://www.hydrocanwater.com/',
   },
   {
@@ -31,13 +37,13 @@ const cardsData = [
     title: "Enkash",
     logo:enkash,
     description:
-      "Work with a team that brings your ideas to life on your terms. Moonstack is one of the most experienced...",
+      "Moonstack crafted a sleek, high-performance website for EnKash, a leading fintech spend-management and payment platform, enhancing brand presence and UX.",
     tags: [
-      { label: "Technology", link: "/technology" },
-      { label: "Payments", link: "/payments" },
-      { label: "Enterprise", link: "/enterprise" },
-      { label: "SaaS", link: "/saas" },
+      { label: "Next Js", link: "/" },
+      { label: "Bootstrap", link: "/" },
+      { label: "wordpress", link: "/" },
     ],
+    image:enkashImg,
     link:'https://www.enkash.com/',
   },
   {
@@ -45,13 +51,12 @@ const cardsData = [
     title: "Pickright",
     logo:pickright,
     description:
-      "Work with a team that brings your ideas to life on your terms. Moonstack is one of the most experienced...",
+      "Moonstack developed a fast, intuitive Fintech website for Pickright, improving product discovery, UX, and performance to boost conversions and brand appeal",
     tags: [
-      { label: "Technology", link: "/technology" },
-      { label: "E-commerce", link: "/ecommerce" },
-      { label: "Marketplace", link: "/marketplace" },
-      { label: "SaaS", link: "/saas" },
+      { label: "Angular", link: "/" },
+      { label: "tailwind", link: "/" },
     ],
+    image:pickrightImg,
     link:'https://pickright.in/',
   },
   {
@@ -59,13 +64,25 @@ const cardsData = [
     title: "Coralogix",
     logo:coralogix,
     description:
-      "Work with a team that brings your ideas to life on your terms. Moonstack is one of the most experienced...",
+      "Moonstack built a high-performance website for Coralogix, a real-time observability and analytics platform, enhancing UX, speed, and global brand presence.",
     tags: [
-      { label: "Technology", link: "/technology" },
-      { label: "DevOps", link: "/devops" },
-      { label: "Analytics", link: "/analytics" },
-      { label: "Cloud", link: "/cloud" },
+      { label: "PHP", link: "/" },
+      { label: "Python", link: "/" },
     ],
+    image:coralogixImg,
+    link:'https://coralogix.com/',
+  },
+  {
+    id: "card-5",
+    title: "Nuvama",
+    logo:nuvama,
+    description:
+      "Moonstack delivered a scalable, high-performance website for Nuvama Wealth, enhancing digital presence, UX, and trust for a leading wealth management brand.",
+    tags: [
+      { label: "React Native", link: "/" },
+      { label: "React JS", link: "/" },
+    ],
+    image:nuvamaImg,
     link:'https://coralogix.com/',
   },
 ];
@@ -89,7 +106,7 @@ const TechnologyComponent = () => {
 
           <div className="flex w-full items-end justify-end md:w-[40%]">
             <Link
-              href="#"
+              href="/services"
               className="primary-btn inline-flex cursor-pointer rounded-full !px-[40px] !py-[14px] text-[16px] font-[600] tracking-[0.8px] !text-black transition"
             >
               Explore Now
@@ -125,8 +142,7 @@ const TechnologyComponent = () => {
                     ))}
                   </div>
                   <div>
-                   <Link
-                        href={card.link} target="_blank"
+                   <Link href="#"
                         className="inline-flex rounded-[10px] font-[500] !no-underline border border-[#fff] px-4 py-[6px] text-[16px]  !text-[#fff] transition"
                       >
                         Explore Now
@@ -136,14 +152,15 @@ const TechnologyComponent = () => {
 
                 {/* RIGHT VIDEO */}
                 <div className="w-full rounded-l md:w-[40%]">
-                  <Video
+                  <Image src={card.image} alt={card.title} />
+                  {/* <Video
                     src={getStarted}
                     autoPlay
                     muted
                     controls={false}
                     loop
                     playsInline
-                  />
+                  /> */}
                 </div>
               </div>
             </div>

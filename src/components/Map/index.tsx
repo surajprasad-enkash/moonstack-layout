@@ -1,11 +1,11 @@
 "use client";
 
-import {
-  ComposableMap,
-  Geographies,
-  Geography,
-  Marker,
-} from "react-simple-maps";
+// import {
+//   ComposableMap,
+//   Geographies,
+//   Geography,
+//   Marker,
+// } from "react-simple-maps";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
@@ -35,7 +35,7 @@ export default function WorldMap() {
         padding: "12px",
       }}
     >
-      <ComposableMap projectionConfig={{ scale: 160 }}>
+      {/* <ComposableMap projectionConfig={{ scale: 160 }}>
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
             geographies.map((geo) => (
@@ -50,7 +50,7 @@ export default function WorldMap() {
           }
         </Geographies>
 
-        {/* Markers */}
+  
         {locations.map((loc) => (
           <Marker key={loc.name} coordinates={loc.coordinates}>
             <g
@@ -71,7 +71,7 @@ export default function WorldMap() {
             </g>
           </Marker>
         ))}
-      </ComposableMap>
+      </ComposableMap> */}
     </div>
   );
 }

@@ -19,6 +19,86 @@ import meta from "../../../public/assets/meta.svg";
 import vs from "../../../public/assets/vs.png";
 import Heading from "../Heading/Heading";
 
+// frontend images
+import front1 from '../../../public/assets/home/tacknologyIcon/frontend/anguler.svg';
+import front2 from '../../../public/assets/home/tacknologyIcon/frontend/css.svg';
+import front3 from '../../../public/assets/home/tacknologyIcon/frontend/ember.svg';
+import front4 from '../../../public/assets/home/tacknologyIcon/frontend/html.svg';
+import front5 from '../../../public/assets/home/tacknologyIcon/frontend/js.svg';
+import front6 from '../../../public/assets/home/tacknologyIcon/frontend/meteor.svg';
+import front7 from '../../../public/assets/home/tacknologyIcon/frontend/nextjs.svg';
+import front8 from '../../../public/assets/home/tacknologyIcon/frontend/react.svg';
+import front9 from '../../../public/assets/home/tacknologyIcon/frontend/vue.svg';
+
+// Backend Images
+import back1 from '../../../public/assets/home/tacknologyIcon/backend/c-plus-plus.svg';
+import back2 from '../../../public/assets/home/tacknologyIcon/backend/dotnet.svg';
+import back3 from '../../../public/assets/home/tacknologyIcon/backend/go.svg';
+import back4 from '../../../public/assets/home/tacknologyIcon/backend/java.svg';
+import back5 from '../../../public/assets/home/tacknologyIcon/backend/node-js.svg';
+import back6 from '../../../public/assets/home/tacknologyIcon/backend/php.svg';
+import back7 from '../../../public/assets/home/tacknologyIcon/backend/python.svg';
+
+// ai Images
+import ai1 from '../../../public/assets/home/tacknologyIcon/ai/google.svg'
+import ai2 from '../../../public/assets/home/tacknologyIcon/ai/grok.svg'
+import ai3 from '../../../public/assets/home/tacknologyIcon/ai/hugging-face.svg'
+import ai4 from '../../../public/assets/home/tacknologyIcon/ai/meta-tech.svg'
+import ai5 from '../../../public/assets/home/tacknologyIcon/ai/mistral-color.svg'
+import ai6 from '../../../public/assets/home/tacknologyIcon/ai/openai.svg'
+
+// cloud-db Images
+import cloud1 from '../../../public/assets/home/tacknologyIcon/cloud-db/azure-blob-storage-.svg'
+import cloud2 from '../../../public/assets/home/tacknologyIcon/cloud-db/azure-svgrepo-com.svg'
+import cloud3 from '../../../public/assets/home/tacknologyIcon/cloud-db/azuredataexplorer.svg'
+import cloud4 from '../../../public/assets/home/tacknologyIcon/cloud-db/digitalocean.svg'
+import cloud5 from '../../../public/assets/home/tacknologyIcon/cloud-db/google-cloud-functions.svg'
+import cloud6 from '../../../public/assets/home/tacknologyIcon/cloud-db/google-cloud-run.svg'
+import cloud7 from '../../../public/assets/home/tacknologyIcon/cloud-db/rackspace-svgrepo-com.svg'
+
+// data Base Images
+import data1 from '../../../public/assets/home/tacknologyIcon/data-base/apachecassandra.svg'
+import data2 from '../../../public/assets/home/tacknologyIcon/data-base/aws-dynamodb.svg'
+import data3 from '../../../public/assets/home/tacknologyIcon/data-base/hive.svg'
+import data4 from '../../../public/assets/home/tacknologyIcon/data-base/microsoftsqlserver.svg'
+import data5 from '../../../public/assets/home/tacknologyIcon/data-base/mongo.svg'
+import data6 from '../../../public/assets/home/tacknologyIcon/data-base/mysql.svg'
+import data7 from '../../../public/assets/home/tacknologyIcon/data-base/oracle.svg'
+import data8 from '../../../public/assets/home/tacknologyIcon/data-base/pgsql.svg'
+
+// dev ops Images
+import dev1 from '../../../public/assets/home/tacknologyIcon/dev-ops/azure-devops.svg'
+import dev2 from '../../../public/assets/home/tacknologyIcon/dev-ops/ci-cd.svg'
+import dev3 from '../../../public/assets/home/tacknologyIcon/dev-ops/grafana.svg'
+import dev4 from '../../../public/assets/home/tacknologyIcon/dev-ops/openshift.svg'
+import dev5 from '../../../public/assets/home/tacknologyIcon/dev-ops/packer.svg'
+import dev6 from '../../../public/assets/home/tacknologyIcon/dev-ops/saltstack.svg'
+import dev7 from '../../../public/assets/home/tacknologyIcon/dev-ops/terraform.svg'
+
+// tool
+import tool1 from '../../../public/assets/home/tacknologyIcon/dev-ops/appium.svg'
+import tool2 from '../../../public/assets/home/tacknologyIcon/dev-ops/protractor.svg'
+import tool3 from '../../../public/assets/home/tacknologyIcon/dev-ops/apachejmeter.svg'
+import tool4 from '../../../public/assets/home/tacknologyIcon/dev-ops/postman-icon.png'
+
+// mobile Images
+import mobile1 from '../../../public/assets/home/tacknologyIcon/mobile/android.svg'
+import mobile2 from '../../../public/assets/home/tacknologyIcon/mobile/cordova.svg'
+import mobile3 from '../../../public/assets/home/tacknologyIcon/mobile/flutter.svg'
+import mobile4 from '../../../public/assets/home/tacknologyIcon/mobile/ionic.svg'
+import mobile5 from '../../../public/assets/home/tacknologyIcon/mobile/os-ios.svg'
+import mobile6 from '../../../public/assets/home/tacknologyIcon/mobile/pwa.svg'
+import mobile7 from '../../../public/assets/home/tacknologyIcon/mobile/xamarin.svg'
+
+// product design
+import product1 from '../../../public/assets/home/tacknologyIcon/product-design/adobe-illustrator.svg'
+import product2 from '../../../public/assets/home/tacknologyIcon/product-design/adobe-xd.svg'
+import product3 from '../../../public/assets/home/tacknologyIcon/product-design/figma.svg'
+import product4 from '../../../public/assets/home/tacknologyIcon/product-design/photoshop.svg'
+import product5 from '../../../public/assets/home/tacknologyIcon/product-design/sketch.svg'
+
+
+
 interface IData {
   title: string;
   images: any[];
@@ -48,27 +128,55 @@ const CaseStudies = () => {
 
   const dataArr: IData[] = [
     {
-      title: "Frontend Developer",
-      images: [
-        figma, meta, figma, vs, red, discord, py, html,
-        figma, meta, figma, vs, red, discord, py, html, figma,
+      title: "Frontend Development",
+      images: [front1,front2,front3,front4,front5,front6,front7,front8,front9
       ],
-      users: [customer, customer, customer, customer, customer],
+      users: [customer],
     },
     {
-      title: "UI/UX Designer",
-      images: [figma, meta, figma, vs, red, discord, py, html],
-      users: [customer, customer, customer, customer, customer],
+      title: "Backend Development",
+      images: [back1,back2,back3,back4,back5,back6,back7],
+      users: [customer],
     },
     {
-      title: "Product Designer",
-      images: [figma, meta, figma, vs, red, discord, py, html],
-      users: [customer, customer, customer, customer, customer],
+      title: "Product Design",
+      images: [product1,product2,product3,product4,product5],
+      users: [customer],
     },
     {
       title: "Cloud Service",
-      images: [figma, meta, figma, vs, red, discord, py, html],
-      users: [customer, customer, customer, customer, customer],
+      images: [cloud1,cloud2,cloud3,cloud4,cloud5,cloud6,cloud7],
+      users: [customer],
+    },
+    {
+      title: "Mobile App",
+      images: [mobile1,mobile2,mobile3,mobile4,mobile5,mobile6,mobile7],
+      users: [customer],
+    },
+    {
+      title: "Ai",
+      images: [ai1,ai2,ai3,ai4,ai5,ai6],
+      users: [customer],
+    },
+    {
+      title: "Data Base",
+      images: [data1,data2,data3,data4,data5,data6,data7,data8],
+      users: [customer],
+    },
+    {
+      title: "Cloud DB",
+      images: [cloud1,cloud2,cloud3,cloud4,cloud5,cloud6,cloud7],
+      users: [customer],
+    },
+    {
+      title: "Dev Ops",
+      images: [dev1,dev2,dev3,dev4,dev5,dev6,dev7],
+      users: [customer],
+    },
+    {
+      title: "Test Automation Tools",
+      images: [tool1,tool2,tool3,tool4],
+      users: [customer],
     },
   ];
 
@@ -130,7 +238,7 @@ const CaseStudies = () => {
   }, [currentSlide, totalSlides]);
 
   return (
-    <section className="caseStudySliderHomePageSection relative z-1 px-[0px] pt-[80px]">
+    <section className="caseStudySliderHomePageSection relative z-1 px-[0px] pb-[80px] pt-[80px]">
       <div className="container">
         <div className="flex flex-col justify-between mix-blend-difference md:flex-row">
           <div className="w-full md:max-w-[700px] m-auto">
@@ -194,7 +302,9 @@ const CaseStudies = () => {
               <div className="sliderInnerCard flex h-[500] w-[500] flex-col items-center justify-center rounded-[100%] p-10">
                 <div className="flex flex-wrap justify-center gap-6">
                   {review.images.map((img, i) => (
-                    <Image alt="" key={i} src={img} className="h-auto w-[54]" />
+                    <span  key={i} className="sliderInnerCardImageOuter">
+                    <Image alt="" src={img} className="h-auto w-[54]" />
+                    </span>
                   ))}
                 </div>
               </div>

@@ -101,11 +101,13 @@ p {
 h1 {
   font-size: 60px;
   font-weight: 600;
+  line-height: 120%;
 }
 
 h2 {
   font-size: 48px;
   font-weight: 600;
+  line-height: 120%;
 }
 
 h3 {
@@ -1509,4 +1511,48 @@ h6 {
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   opacity: 1;
+}
+
+
+.sliderInnerCard .sliderInnerCardImageOuter{
+  background: #fff;
+  display: block;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.popupFileIcon{
+  background: #EDEDED;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  color: #858585;
+}
+.popupFileText{
+  background: #EDEDED;
+  border-radius: 50px;
+  display: flex;
+  color: #858585;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 150px;
+}
+
+.blogPageCategoryOuter .blogPageCategoryInner .blogPageCategoryArticle:nth-child(2) a{
+margin-top: 20px;
+}
+.blogPageCategoryOuter .blogPageCategoryInner .blogPageCategoryArticle:nth-child(3) a{
+margin-top: 40px;
+}
+.blogPageCategoryOuter .blogPageCategoryInner .blogPageCategoryArticle:nth-child(5) a{
+margin-top: 20px;
+}
+.blogPageCategoryOuter .blogPageCategoryInner .blogPageCategoryArticle:nth-child(6) a{
+margin-top: 40px;
 }

@@ -8,7 +8,6 @@ import img2 from "../../../../public/assets/home/SmartSolutions/img2.svg";
 import img3 from "../../../../public/assets/home/SmartSolutions/img3.svg";
 import img4 from "../../../../public/assets/home/SmartSolutions/img4.svg";
 import arrowIcon from "../../../../public/assets/home/SmartSolutions/arrow_icon.svg";
-import banner from "../../../../public/assets/home/SmartSolutions/banner.webp";
 
 export default function SmartSolutions() {
   return (
@@ -19,10 +18,11 @@ export default function SmartSolutions() {
 
       <div className="relative container">
         {/* HEADING */}
-        <div className="mb-[80px] text-center">
+        <div className="mb-[80px] flex">
+          <div className="w-[50%]">
           <Heading
             headingTag="h2"
-            className="mx-[auto] max-w-[700px]"
+            className=""
             content={[
               {
                 text: "Smart Solutions That Scale With ",
@@ -32,6 +32,15 @@ export default function SmartSolutions() {
               { text: "Your Business", color: "", className: "highlight-text" },
             ]}
           />
+          </div>
+          <div className="flex w-full items-end justify-end md:w-[50%]">
+            <Link
+              href="/services"
+              className="primary-btn inline-flex cursor-pointer rounded-full !px-[40px] !py-[14px] text-[16px] font-[600] tracking-[0.8px] !text-black transition"
+            >
+              Explore Now
+            </Link>
+          </div>
         </div>
 
         {/* GRID */}
@@ -61,7 +70,7 @@ export default function SmartSolutions() {
                 </div>
                 <div className="bottom_link">
                   <Link
-                    href="#"
+                    href={item.link}
                     className="inline-flex items-center gap-2 text-[16px] font-[400] text-white"
                   >
                     Explore now{" "}
@@ -100,20 +109,24 @@ const cards = [
     title: "Product Design",
     desc: "Work with a team that brings your ideas to life on your terms.",
     image: img1.src,
+    link:'/product-designing-service'
   },
   {
     title: "Web Development",
     desc: "Work with a team that brings your ideas to life on your terms.",
     image: img2.src,
+    link:'/website-development-service'
   },
   {
     title: "Application Development",
     desc: "Work with a team that brings your ideas to life on your terms.",
     image: img3.src,
+    link:'/application-development'
   },
   {
     title: "Cloud Solutions",
     desc: "Work with a team that brings your ideas to life on your terms.",
     image: img4.src,
+    link:'/cloud-services'
   },
 ];

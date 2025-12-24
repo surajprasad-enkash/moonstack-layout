@@ -2,6 +2,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
+import ProjectInquiryModal from "@/components/ProjectInquiryModal/ProjectInquiryModal";
+
+
 import webDev from "../../../public/assets/header/web-dev.svg";
 import logo from "../../../public/assets/logo-white.png";
 import magaMenuBg from '../../../public/assets/header/magamenu-bg.svg'
@@ -129,23 +133,23 @@ export default function Header() {
         ],
         "Search Engine Optimization": [
             { title: "SEO", icon: webDev.src, url: '/seo' },
-           
+
         ],
         "Product Designing": [
             { title: "Product Designing", icon: webDev.src, url: '/product-designing-service' },
-          
+
         ],
         "Ui/Ux Designing": [
             { title: "Ui/Ux Designing", icon: webDev.src, url: '/ui-ux-designing-service' },
-           
+
         ],
         "Cloud Service": [
             { title: "Cloud Service", icon: webDev.src, url: '/cloud-services' },
-           
+
         ],
         "Industries": [
             { title: "Industries", icon: webDev.src, url: '/industries' },
-           
+
         ],
     };
 
@@ -160,135 +164,143 @@ export default function Header() {
         "Cloud Service": "/cloud-service",
         "Industries": "/industries"
     };
+    const [openPopup, setOpenPopup] = useState(false);
 
     return (
-        <header className="w-full bg-black/90 backdrop-blur-md text-white fixed top-0 left-0 z-50 border-b border-white/10">
-            <div className="container mx-auto flex items-center justify-between py-4 px-4">
+        <>
+            <header className="w-full bg-black/90 backdrop-blur-md text-white fixed top-0 left-0 z-50 border-b border-white/10">
 
-                {/* LOGO */}
-                <Link href="/" className="flex items-center">
-                    <img src={logo.src} className="w-32" alt="Moonstack" />
-                </Link>
+                <div className="container mx-auto flex items-center justify-between py-4 px-4">
 
-                {/* NAV */}
-                <nav className="hidden md:flex items-center gap-10 text-sm font-medium relative">
-                    <ul className="menu-list flex items-center gap-10">
+                    {/* LOGO */}
+                    <Link href="/" className="flex items-center">
+                        <img src={logo.src} className="w-32" alt="Moonstack" />
+                    </Link>
 
-                        {/* HOME */}
-                        <li>
-                            <Link
-                                href="/"
-                                className={`menu-item transition ${isActive("/") ? "isActive current" : "hover:text-green-400"}`}
+                    {/* NAV */}
+                    <nav className="hidden md:flex items-center gap-10 text-sm font-medium relative">
+                        <ul className="menu-list flex items-center gap-10">
+
+                            {/* HOME */}
+                            <li>
+                                <Link
+                                    href="/"
+                                    className={`menu-item transition ${isActive("/") ? "isActive current" : "hover:text-green-400"}`}
+                                >
+                                    Home
+                                </Link>
+                            </li>
+
+                            {/* SERVICES MENU */}
+                            <li
+                                className={`menu-item relative megaMenuItem ${isServicesActive() ? "isActive current" : "hover:text-green-400"
+                                    }`}
+                                onMouseEnter={() => setOpenMenu("services")}
+                                onMouseLeave={() => setOpenMenu(null)}
                             >
-                                Home
-                            </Link>
-                        </li>
+                                <button
+                                    className={`transition cursor-pointer `}
+                                >
+                                    Services
+                                </button>
 
-                        {/* SERVICES MENU */}
-                        <li
-                            className={`menu-item relative megaMenuItem ${isServicesActive() ? "isActive current" : "hover:text-green-400"
-                                }`}
-                            onMouseEnter={() => setOpenMenu("services")}
-                            onMouseLeave={() => setOpenMenu(null)}
-                        >
-                            <button
-                                className={`transition cursor-pointer `}
-                            >
-                                Services
-                            </button>
+                                {openMenu === "services" && (
+                                    <div className="subMenu absolute left-[50%] translate-x-[-40%] top-5 w-[calc(100vw-40px)]">
+                                        <div
+                                            className="subMenuInner flex gap-6 z-50"
+                                            style={{ backgroundImage: `url(${magaMenuBg.src})` }}
+                                        >
+                                            {/* LEFT MENU */}
+                                            <ul className="submenu-list md:w-[270px] md:min-w-[320px] bg-gradient-to-b from-green-800/40 to-green-600/20 rounded-lg p-4 space-y-2">
+                                                {Object.keys(menuData).map((name) => (
+                                                    <li
+                                                        key={name}
+                                                        onMouseEnter={() => setActiveCategory(name)}
+                                                        className={`submenu-item px-4 py-2 rounded-lg cursor-pointer ${activeCategory === name ? "isActive current" : "text-white/80"
+                                                            }`}
+                                                    >
+                                                        <Link href={leftMenuLinks[name]} className="block w-full h-full">
+                                                            {name}
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
 
-                            {openMenu === "services" && (
-                                <div className="subMenu absolute left-[50%] translate-x-[-40%] top-5 w-[calc(100vw-40px)]">
-                                    <div
-                                        className="subMenuInner flex gap-6 z-50"
-                                        style={{ backgroundImage: `url(${magaMenuBg.src})` }}
-                                    >
-                                        {/* LEFT MENU */}
-                                        <ul className="submenu-list md:w-[270px] md:min-w-[320px] bg-gradient-to-b from-green-800/40 to-green-600/20 rounded-lg p-4 space-y-2">
-                                            {Object.keys(menuData).map((name) => (
-                                                <li
-                                                    key={name}
-                                                    onMouseEnter={() => setActiveCategory(name)}
-                                                    className={`submenu-item px-4 py-2 rounded-lg cursor-pointer ${activeCategory === name ? "isActive current" : "text-white/80"
-                                                        }`}
-                                                >
-                                                    <Link href={leftMenuLinks[name]} className="block w-full h-full">
-                                                        {name}
-                                                    </Link>
-                                                </li>
-                                            ))}
-                                        </ul>
-
-                                        {/* RIGHT ITEMS */}
-                                        <div className="flex gap-4 flex-wrap h-[max-content] w-[100%] ps-5">
-                                            {menuData[activeCategory].map((item, i) => (
-                                                <div key={i} className="text-center submenuList w-[calc(25%-12px)] h-[150px]">
-                                                    <Link href={item.url}>
-                                                        <img src={item.icon} className="w-10 mx-auto mb-2" />
-                                                        <span className="text-white text-sm">{item.title}</span>
-                                                    </Link>
-                                                </div>
-                                            ))}
+                                            {/* RIGHT ITEMS */}
+                                            <div className="flex gap-4 flex-wrap h-[max-content] w-[100%] ps-5">
+                                                {menuData[activeCategory].map((item, i) => (
+                                                    <div key={i} className="text-center submenuList w-[calc(25%-12px)] h-[150px]">
+                                                        <Link href={item.url}>
+                                                            <img src={item.icon} className="w-10 mx-auto mb-2" />
+                                                            <span className="text-white text-sm">{item.title}</span>
+                                                        </Link>
+                                                    </div>
+                                                ))}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            )}
-                        </li>
+                                )}
+                            </li>
 
-                        {/* COMPANY */}
-                        <li
-                            className={`menu-item relative megaMenuItem ${isCompanyActive() ? "isActive current" : "hover:text-green-400"
+                            {/* COMPANY */}
+                            <li
+                                className={`menu-item relative megaMenuItem ${isCompanyActive() ? "isActive current" : "hover:text-green-400"
                                     }`}
-                            onMouseEnter={() => setOpenMenu("company")}
-                            onMouseLeave={() => setOpenMenu(null)}
-                        >
-                            <button
-                                className={`transition cursor-pointer `}
+                                onMouseEnter={() => setOpenMenu("company")}
+                                onMouseLeave={() => setOpenMenu(null)}
                             >
-                                Company
-                            </button>
+                                <button
+                                    className={`transition cursor-pointer `}
+                                >
+                                    Company
+                                </button>
 
-                            {openMenu === "company" && (
-                                <div className="submenu absolute top-5 left-0 w-40 pt-[28px]">
-                                    <ul
-                                        className="space-y-2 z-50 sub-menu-list"
-                                        style={{ backgroundImage: `url(${submenuBg.src})` }}
-                                    >
-                                        <li><Link href="/about-us" className={`sub-menu-item transition ${isActive("/about-us") ? "!text-[#00ea52] underline underline-offset-8" : "hover:underline hover:underline-offset-8 hover:!text-[#00ea52]"
-                                    }`}>About us</Link></li>
-                                        <li><Link href="/blogs" className={`sub-menu-item transition ${isActive("/blogs") ? "!text-[#00ea52] underline underline-offset-8" : "hover:underline hover:underline-offset-8 hover:!text-[#00ea52]"
-                                    }`}>Blogs</Link></li>
-                                        <li><Link href="/careers" className={`sub-menu-item transition ${isActive("/careers") ? "!text-[#00ea52] underline underline-offset-8" : "hover:underline hover:underline-offset-8 hover:!text-[#00ea52]"
-                                    }`}>Careers</Link></li>
-                                    </ul>
-                                </div>
-                            )}
-                        </li>
+                                {openMenu === "company" && (
+                                    <div className="submenu absolute top-5 left-0 w-40 pt-[28px]">
+                                        <ul
+                                            className="space-y-2 z-50 sub-menu-list"
+                                            style={{ backgroundImage: `url(${submenuBg.src})` }}
+                                        >
+                                            <li><Link href="/about-us" className={`sub-menu-item transition ${isActive("/about-us") ? "!text-[#00ea52] underline underline-offset-8" : "hover:underline hover:underline-offset-8 hover:!text-[#00ea52]"
+                                                }`}>About us</Link></li>
+                                            <li><Link href="/blogs" className={`sub-menu-item transition ${isActive("/blogs") ? "!text-[#00ea52] underline underline-offset-8" : "hover:underline hover:underline-offset-8 hover:!text-[#00ea52]"
+                                                }`}>Blogs</Link></li>
+                                            <li><Link href="/careers" className={`sub-menu-item transition ${isActive("/careers") ? "!text-[#00ea52] underline underline-offset-8" : "hover:underline hover:underline-offset-8 hover:!text-[#00ea52]"
+                                                }`}>Careers</Link></li>
+                                        </ul>
+                                    </div>
+                                )}
+                            </li>
 
-                        {/* CONTACT */}
-                        <li>
-                            <Link
-                                href="/contact-us"
-                                className={`menu-item transition ${isActive("/contact") ? "text-green-400 underline underline-offset-8" : "hover:text-green-400"
-                                    }`}
-                            >
-                                Contact us
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
+                            {/* CONTACT */}
+                            <li>
+                                <Link
+                                    href="/contact-us"
+                                    className={`menu-item transition ${isActive("/contact") ? "text-green-400 underline underline-offset-8" : "hover:text-green-400"
+                                        }`}
+                                >
+                                    Contact us
+                                </Link>
+                            </li>
+                        </ul>
+                    </nav>
 
-                {/* RIGHT BUTTONS */}
-                <div className="flex items-center gap-3">
-                    <Link href="/hire-developer" className="border border-white/30 px-4 py-2 rounded-full text-sm hover:bg-white/10 transition">
-                        Hire Developer
-                    </Link>
-                    <Link href="/connect" className="headerbtn btn primary-btn text-black px-5 py-2 rounded-full text-sm font-semibold  transition">
-                        Connect Now
-                    </Link>
+                    {/* RIGHT BUTTONS */}
+                    <div className="flex items-center gap-3">
+                        <Link href="/hire-developer" className="border border-white/30 px-4 py-2 rounded-full text-sm hover:bg-white/10 transition">
+                            Hire Developer
+                        </Link>
+                        <button className="cursor-pointer headerbtn btn primary-btn text-black px-5 py-2 rounded-full text-sm font-semibold  transition" onClick={() => setOpenPopup(true)}>
+                            Get a quota
+                        </button>
+                    </div>
+
                 </div>
-
-            </div>
-        </header>
+            </header>
+            <ProjectInquiryModal
+                isOpen={openPopup}
+                onClose={() => setOpenPopup(false)}
+            />
+        </>
     );
 }

@@ -33,10 +33,12 @@ const Layout: React.FC<{
   return (
     <>
       <BodyClass />
+      
       {/* <Header refs={refs} /> */}
       <NewHeader />
       <main className="relative bg-black">
         <BackgroundLines />
+          {/* <ProjectInquiryModal /> */}
         <div className="z-3 relative">
         {children}
         </div>

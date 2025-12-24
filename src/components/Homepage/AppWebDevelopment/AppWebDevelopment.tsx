@@ -84,22 +84,22 @@ export default function AppWebDevelopment() {
       <div className="container relative">
         {/* ================= TOP SECTION ================= */}
         <div className="flex flex-col items-start gap-6 lg:flex-row lg:items-center lg:justify-between">
-          <div className="left_box w-[50%]">
+          <div className="left_box w-[55%]">
             <Heading
               headingTag="h2"
               content={[
                 { text: "Custom ", color: "text-white" },
                 { text: "App & Web", className: "highlight-text" },
                 {
-                  text: "Development in India & USA",
+                  text: "Development Company in India & USA",
                   color: "text-white",
-                  className: "block",
+                  className: "",
                 },
               ]}
             />
           </div>
 
-          <div className="right_box flex items-end gap-5 w-[50%] justify-end">
+          <div className="right_box flex items-end gap-5 w-[45%] justify-end">
             <Image src={appWebIcon} alt="app web icon" />
             <Link
               href="/about-us"

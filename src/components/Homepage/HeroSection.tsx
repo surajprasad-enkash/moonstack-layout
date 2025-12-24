@@ -17,7 +17,7 @@ export default function HeroSection({
   description = "Work with a team that brings your ideas to life on your terms. Moonstack is one of the most experienced and reliable app and web development agencies in India. Skyrocket your business growth with Moonstack today!",
   reviews = [] as Review[],
   buttonText = "Get Started",
-  buttonLink = "#",
+  buttonLink = "/content-us",
 }) {
   return (
     <section
@@ -31,9 +31,10 @@ export default function HeroSection({
         </p>
 
         {/* Heading */}
-        <h1 className="text-[60px] leading-[125%] font-[500]">
+
+        <h1 className="">
           <span className="flex justify-center">{title}<Image src={headingIcon} width={60} height={60} alt={""}></Image></span>
-          <span className="text-gradient">{highlight}</span>
+          <span className="highlight-text">{highlight}</span>
         </h1>
 
         {/* Description */}
