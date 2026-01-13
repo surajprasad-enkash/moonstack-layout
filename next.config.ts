@@ -1,8 +1,6 @@
 import type { NextConfig } from "next";
 
-
-
-const nextConfig = {
+const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
@@ -10,14 +8,15 @@ const nextConfig = {
         hostname: "moonstack.co",
         pathname: "/wp-content/uploads/**",
       },
-       {
+      {
         protocol: "https",
         hostname: "secure.gravatar.com",
         pathname: "/avatar/**",
       },
     ],
   },
-   reactCompiler: true,
+  output: "export",
+  distDir: "dist",
 };
 
 module.exports = nextConfig;

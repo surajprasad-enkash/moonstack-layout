@@ -25,6 +25,8 @@ interface Props {
 export default function CaseStudyCard({ item, index }: Props) {
   const router = useRouter();
 
+  const points = item.subTitlePoint?.points ?? [];
+
   const gradientClass =
     index % 3 === 2
       ? "bg-[linear-gradient(299deg,_#F2FFBD_43.88%,_#A4CE00_160.15%)]"
@@ -34,7 +36,7 @@ export default function CaseStudyCard({ item, index }: Props) {
 
   return (
     <div
-      className={`relative overflow-hidden rounded-[28px] rounded-tl-none p-[72px] pb-0 ${gradientClass} w-full`}
+      className={`relative w-full overflow-hidden rounded-[28px] rounded-tl-none p-[72px] pb-0 ${gradientClass}`}
     >
       <div className="flex gap-16">
         {/* LEFT */}
@@ -50,7 +52,7 @@ export default function CaseStudyCard({ item, index }: Props) {
           )}
 
           <p
-            className="mb-8 max-w-[520px] !text-[26px] leading-relaxed !font-semibold text-[#1e1e1e]"
+            className="mb-8 max-w-[520px] !text-[26px] !font-semibold leading-relaxed text-[#1e1e1e]"
             dangerouslySetInnerHTML={{ __html: item.excerpt }}
           />
 
@@ -75,9 +77,9 @@ export default function CaseStudyCard({ item, index }: Props) {
               }}
             />
 
-            {item.subTitlePoint?.points?.length > 0 && (
+            {points.length > 0 && (
               <ul className="space-y-5">
-                {item.subTitlePoint.points.map((p, i) => (
+                {points.map((p, i) => (
                   <li key={i} className="flex items-center gap-3">
                     <Image src={icon} alt="" width={20} height={20} />
                     <span className="!text-[22px] !font-semibold">
@@ -90,15 +92,13 @@ export default function CaseStudyCard({ item, index }: Props) {
           </div>
 
           <div>
-            {" "}
             <button
               onClick={() => router.push(`/case-study/${item.slug}`)}
-              className="inline-flex cursor-pointer items-center gap-2 rounded-[10px] bg-black px-6 py-3 text-[15px] font-medium text-white transition hover:bg-[#d0f601] hover:text-[var(--global--text-black)]"
+              className="inline-flex items-center gap-2 rounded-[10px] bg-black px-6 py-3 text-[15px] font-medium text-white transition hover:bg-[#d0f601] hover:text-[var(--global--text-black)]"
             >
-              {" "}
-              View case study{" "}
-              <IoIosArrowRoundForward className="h-[24px] w-[24px]" />{" "}
-            </button>{" "}
+              View case study
+              <IoIosArrowRoundForward className="h-[24px] w-[24px]" />
+            </button>
           </div>
         </div>
       </div>
