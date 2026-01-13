@@ -16,7 +16,17 @@ import industryicon2 from "@/assets/industries/ai/icon/b_i2.png";
 import industryicon3 from "@/assets/industries/ai/icon/b_i4.png";
 import industryicon4 from "@/assets/industries/ai/icon/_i5.png";
 import Space from "@/components/Space";
+import { Metadata } from "next";
+import { buildMetadata } from "@/helper/generateMetadata ";
 
+export const generateMetadata = (): Metadata => {
+  return buildMetadata({
+    title: " About Moonstack | Client Oriented Development Company in India",
+    description:
+      "Want to know who is behind Moonstack? Learn how our India‑based Development team helps startups and businesses ship reliable apps, websites, and digital products.",
+    canonical: "https://www.moonstack.com/about-us",
+  });
+};
 const AboutUs = (): React.JSX.Element => {
   return (
     <>
