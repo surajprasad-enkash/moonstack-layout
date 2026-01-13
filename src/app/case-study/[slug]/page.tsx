@@ -1,23 +1,31 @@
 import Layout from "@/components/Layout";
 import CaseStudyPages from "@/components/CaseStudy/CaseStudySingle/CaseStudyPage";
 
+/* ===================== CONSTANTS ===================== */
+/**
+ * IMPORTANT:
+ * All slugs MUST be known at build time.
+ * Move this to a constants file if you prefer.
+ */
+const CASE_STUDY_SLUGS = [
+  "accord",
+  "avila-restaurants",
+  "avila-bbq-grills",
+  "rueil-formation-routiere",
+];
+
+/* ===================== STATIC PARAMS ===================== */
+export function generateStaticParams() {
+  return CASE_STUDY_SLUGS.map((slug) => ({
+    slug,
+  }));
+}
+
+/* ===================== PAGE ===================== */
 interface PageProps {
   params: {
     slug: string;
   };
-}
-
-export const CASE_STUDY_SLUGS = [
-  "google-core-update-june-2025",
-  "seo-growth-strategy",
-  "brand-redesign-case-study",
-  "saas-marketing-success",
-];
-
-export async function generateStaticParams() {
-  return CASE_STUDY_SLUGS.map((slug) => ({
-    slug,
-  }));
 }
 
 export default function CaseStudyPage({ params }: PageProps) {

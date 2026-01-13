@@ -5,10 +5,11 @@ import Image from "next/image";
 import Heading from "../Heading/Heading";
 import CategoryList from "../CategoryList/CategoryList";
 import RelatedPosts from "../RelatedPosts/RelatedPosts";
-import Loader from "../Loader/Loader";
+
 import bgImage from "@/assets/blogs/singleBlogBanner.png";
 import Breadcrumb from "../Breadcrumb";
 import Link from "next/link";
+import Loader from "../Loader/Loader";
 
 /* ✅ ADDED: Category interface */
 interface Category {

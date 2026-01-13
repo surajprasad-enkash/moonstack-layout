@@ -74,7 +74,7 @@ export default function BlogInsightsSection({
         const json: ApiResponse = await res.json();
 
         if (json.status) {
-          setPosts(prev =>
+          setPosts((prev) =>
             page === 1 ? json.data : [...prev, ...json.data]
           );
 
@@ -101,7 +101,7 @@ export default function BlogInsightsSection({
     }
 
     const interval = setInterval(() => {
-      setLoadingDots(prev => (prev === 3 ? 1 : prev + 1));
+      setLoadingDots((prev) => (prev === 3 ? 1 : prev + 1));
     }, 500);
 
     return () => clearInterval(interval);
@@ -132,8 +132,8 @@ export default function BlogInsightsSection({
         )}
 
         {loading && page === 1 ? (
-          <div className="flex h-[100vh] items-center justify-center">
-            {/* <Loader /> */}
+          <div className="flex h-[40vh] items-center justify-center">
+            <Loader />
           </div>
         ) : (
           <>
@@ -199,7 +199,7 @@ export default function BlogInsightsSection({
                   }
                   onClick={() => {
                     setLoadingMore(true);
-                    setPage(prev => prev + 1);
+                    setPage((prev) => prev + 1);
                   }}
                 />
               </div>
