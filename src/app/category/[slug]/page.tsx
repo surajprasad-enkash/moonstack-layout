@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import CategoryPosts from "@/components/CategoryPosts/CategoryPosts";
 import bgImage from "@/assets/blogs/blogPageNewBg.svg";
+// import bgImage2 from "@/assets/dy-to-scale-bg.svg";
 import Image from "next/image";
 import ProjectCTA from "@/components/ProjectCTA/ProjectCTA";
 import Link from "next/link";
@@ -8,50 +9,16 @@ import { HiArrowRight } from "react-icons/hi";
 import CategoryList from "@/components/CategoryList/CategoryList";
 import Breadcrumb from "@/components/Breadcrumb";
 
-/* ===================== CONSTANTS ===================== */
 /**
- * IMPORTANT:
- * All category slugs MUST be known at build time
- * because output: "export" does NOT support runtime routes
- */
-export const BLOG_CATEGORIES = [
-  "app-development",
-  "development",
-  "digital-marketing",
-] as const;
-
-/* ===================== STATIC PARAMS (REQUIRED) ===================== */
-export function generateStaticParams() {
-  return BLOG_CATEGORIES.map((slug) => ({
-    slug,
-  }));
-}
-
-/* ===================== UTILS ===================== */
-/**
+ * Utility: slug → Human readable
  * digital-marketing → Digital Marketing
  */
 const formatCategoryName = (slug: string) => {
   return slug.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
 };
 
-interface PageProps {
-  params: { slug: string };
-}
-
-/* ===================== PAGE ===================== */
-export default function CategoryPage({ params }: PageProps) {
+export default function CategoryPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
-
-  // Safety guard for invalid slug
-  if (!BLOG_CATEGORIES.includes(slug as any)) {
-    return (
-      <Layout>
-        <p className="p-10 text-center">Category not found</p>
-      </Layout>
-    );
-  }
-
   const categoryName = formatCategoryName(slug);
 
   const breadcrumbs = [

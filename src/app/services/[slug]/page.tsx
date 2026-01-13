@@ -51,13 +51,6 @@ import award7 from "@/assets/newHomePage/awards/good-firms.svg";
 import award8 from "@/assets/newHomePage/awards/upwork.svg";
 import icon from "@/assets/newHomePage/awards/icon.svg";
 
-/* ===================== STATIC PARAMS (REQUIRED) ===================== */
-export function generateStaticParams() {
-  return Object.keys(pagesKeys).map((slug) => ({
-    slug,
-  }));
-}
-
 /* ===================== DATA ===================== */
 const awards: AwardItem[] = [
   {
@@ -81,9 +74,9 @@ interface PageProps {
 
 /* ===================== PAGE ===================== */
 export default function ApplicationPage({ params }: PageProps) {
-  const slug = params.slug as TPageKeys;
+  const slug = params.slug;
 
-  const page = pagesData[pagesKeys[slug]];
+  const page = pagesData[pagesKeys[slug as TPageKeys] as TPageKeys];
 
   if (!page) {
     return <p className="p-10 text-center">Page not found</p>;
@@ -120,7 +113,7 @@ export default function ApplicationPage({ params }: PageProps) {
         features={page.featuresData}
       />
 
-      {page.processSteps && (
+      {page?.processSteps && (
         <ProcessStages
           heading={page.processSteps.headingText}
           description={page.processSteps.subHeadingText}
@@ -151,9 +144,15 @@ export default function ApplicationPage({ params }: PageProps) {
         label=""
         heading={[
           { text: "While the growth " },
-          { text: "of our clients ", className: "libreItalic highlight-text" },
+          {
+            text: "of our clients ",
+            className: "libreItalic font-[400] highlight-text",
+          },
           { text: "is what " },
-          { text: "matters ", className: "libreItalic highlight-text" },
+          {
+            text: "matters ",
+            className: "libreItalic font-[400] highlight-text",
+          },
           { text: "most, it’s nice to get awards" },
         ]}
         awards={awards}
@@ -164,7 +163,7 @@ export default function ApplicationPage({ params }: PageProps) {
           { text: "Investing in your ", color: "text-white" },
           {
             text: "own mobile app is a ",
-            color: "text-white libreItalic highlight-text",
+            color: "text-white libreItalic font-[400] highlight-text",
           },
           { text: "competitive advantage", color: "text-white" },
         ]}
@@ -208,7 +207,7 @@ export default function ApplicationPage({ params }: PageProps) {
           { text: "Our mobile app design ", color: "text-white" },
           {
             text: "works prove themselves",
-            color: "text-white libreItalic highlight-text",
+            color: "text-white libreItalic font-[400] highlight-text",
           },
         ]}
         description="We've helped many startups and companies design high-quality mobile applications."
@@ -247,9 +246,44 @@ export default function ApplicationPage({ params }: PageProps) {
         testimonials={[
           {
             quote:
-              "They understood our idea and gave us more feedback than expected.",
+              "They understood our idea and gave us more feedback than expected. Around produces excellent quality work.",
             name: "Kristen Cheng",
             role: "Founder & CEO, BehindTitles",
+            avatar: bccKristenCheng.src,
+          },
+          {
+            quote:
+              "Their expertise and guidance were instrumental. They demonstrated commitment to creating a product that resonated.",
+            name: "Aetienne Sardon",
+            role: "Founder, MYSO Finance",
+            avatar: bccKristenCheng.src,
+          },
+          {
+            quote:
+              "The process was something to be admired. They would also make immediate improvements when mentioned.",
+            name: "Mohamed Shegow",
+            role: "CEO, Sinta",
+            avatar: bccKristenCheng.src,
+          },
+          {
+            quote:
+              "Arounda is not just a contractor but part of our startup company. Communication was excellent.",
+            name: "Kirill Onasenko",
+            role: "CEO, VOXE",
+            avatar: bccKristenCheng.src,
+          },
+          {
+            quote:
+              "Their UI/UX design skills were impressive. Modern, creative, and intuitive without hand-holding.",
+            name: "Esme Guevara",
+            role: "CMO & Head of Product, QTalent",
+            avatar: bccKristenCheng.src,
+          },
+          {
+            quote:
+              "Throughout the project all I saw was sheer will to keep pushing forward and adapting to requests.",
+            name: "Ola Olusoga",
+            role: "Vice President, WordPress",
             avatar: bccKristenCheng.src,
           },
         ]}
@@ -260,7 +294,7 @@ export default function ApplicationPage({ params }: PageProps) {
           { text: "Qualified mobile developer  ", color: "text-white" },
           {
             text: "who know their business",
-            color: "text-white libreItalic highlight-text",
+            color: "text-white libreItalic font-[400] highlight-text",
           },
         ]}
         autoplaySpeed={2000}
