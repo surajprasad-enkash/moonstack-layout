@@ -227,7 +227,11 @@ export default function ApplicationPage({ params }: PageProps) {
 
       <QualitySection
         features={[
-          { id: 1, title: "Adaptable collaboration approach", icon: collaboration },
+          {
+            id: 1,
+            title: "Adaptable collaboration approach",
+            icon: collaboration,
+          },
           { id: 2, title: "Commitment to deadlines", icon: delivery },
           { id: 3, title: "Quick onboarding", icon: hiring },
           { id: 4, title: "Work directly with the team", icon: designer },
@@ -241,9 +245,45 @@ export default function ApplicationPage({ params }: PageProps) {
         ]}
         testimonials={[
           {
-            quote: "They understood our idea and gave us more feedback than expected.",
+            quote:
+              "They understood our idea and gave us more feedback than expected. Around produces excellent quality work.",
             name: "Kristen Cheng",
             role: "Founder & CEO, BehindTitles",
+            avatar: bccKristenCheng.src,
+          },
+          {
+            quote:
+              "Their expertise and guidance were instrumental. They demonstrated commitment to creating a product that resonated.",
+            name: "Aetienne Sardon",
+            role: "Founder, MYSO Finance",
+            avatar: bccKristenCheng.src,
+          },
+          {
+            quote:
+              "The process was something to be admired. They would also make immediate improvements when mentioned.",
+            name: "Mohamed Shegow",
+            role: "CEO, Sinta",
+            avatar: bccKristenCheng.src,
+          },
+          {
+            quote:
+              "Arounda is not just a contractor but part of our startup company. Communication was excellent.",
+            name: "Kirill Onasenko",
+            role: "CEO, VOXE",
+            avatar: bccKristenCheng.src,
+          },
+          {
+            quote:
+              "Their UI/UX design skills were impressive. Modern, creative, and intuitive without hand-holding.",
+            name: "Esme Guevara",
+            role: "CMO & Head of Product, QTalent",
+            avatar: bccKristenCheng.src,
+          },
+          {
+            quote:
+              "Throughout the project all I saw was sheer will to keep pushing forward and adapting to requests.",
+            name: "Ola Olusoga",
+            role: "Vice President, WordPress",
             avatar: bccKristenCheng.src,
           },
         ]}

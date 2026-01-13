@@ -51,12 +51,12 @@ export default function TestimonialCard({
         <div
           className={cn(
             "rounded-3xl rounded-tl-none bg-white px-6 py-16 text-center shadow-lg md:px-16",
-            className,
+            className
           )}
         >
           <div className="mb-6 text-4xl font-bold text-black">“</div>
 
-          <p className="font-40 mx-auto max-w-5xl text-xl leading-relaxed !font-medium text-black md:text-2xl">
+          <p className="!text-[40px] mx-auto max-w-5xl text-xl leading-relaxed !font-medium text-black md:text-2xl">
             {renderQuote()}
           </p>
 

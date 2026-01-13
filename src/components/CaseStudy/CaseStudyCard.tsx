@@ -74,19 +74,19 @@ export default function CaseStudyCard({ item, index }: Props) {
                 __html: `What we did for ${item.title}`,
               }}
             />
-
-            {item.subTitlePoint?.points?.length > 0 && (
-              <ul className="space-y-5">
-                {item.subTitlePoint.points.map((p, i) => (
-                  <li key={i} className="flex items-center gap-3">
-                    <Image src={icon} alt="" width={20} height={20} />
-                    <span className="!text-[22px] !font-semibold">
-                      {p.point}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            )}
+            {Array.isArray(item.subTitlePoint?.points) &&
+              item.subTitlePoint.points.length > 0 && (
+                <ul className="space-y-5">
+                  {item.subTitlePoint.points.map((p, i) => (
+                    <li key={i} className="flex items-center gap-3">
+                      <Image src={icon} alt="" width={20} height={20} />
+                      <span className="!text-[22px] !font-semibold">
+                        {p.point}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
           </div>
 
           <div>
