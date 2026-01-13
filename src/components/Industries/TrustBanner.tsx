@@ -20,7 +20,7 @@ export default function TrustBanner({ title, highlight }: TrustBannerProps) {
         />
       )}
       {/* subtle dots / noise overlay (optional) */}
-      <div className="relative z-[2] container">
+      <div className="relative z-[2] ">
         <div className="relative z-10 px-4 text-center max-w-[640px] m-[auto]">
           <Heading
             headingTag="h2"
