@@ -26,7 +26,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="pageFooter">
         {/* TOP SECTION */}
-        <div className="footerTop relative z-5 bg-black bg-cover bg-center px-5 py-20">
+        <div className="footerTop mt-[-2px] relative z-5 bg-black bg-cover bg-center px-5 py-20">
           {footerBg && (
             <Image
               src={footerBg.src}

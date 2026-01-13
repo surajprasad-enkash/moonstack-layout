@@ -20,31 +20,44 @@ export default function CaseStudySection({
   loadMoreBtn = true,
 }: Props) {
   const [loadingDots, setLoadingDots] = useState(1);
-  const [loading, setLoading] = useState(false); // track loading from API provider
+
+  /* 🔹 Dots animation driven by API loading */
+  const useDotsAnimation = (loading: boolean) => {
+    useEffect(() => {
+      if (!loading) {
+        setLoadingDots(1);
+        return;
+      }
+
+      const interval = setInterval(() => {
+        setLoadingDots((prev) => (prev === 3 ? 1 : prev + 1));
+      }, 500);
+
+      return () => clearInterval(interval);
+    }, [loading]);
+  };
 
   return (
     <section className="relative z-2 px-[20px] pt-[20px] pb-[80px]">
-      {loadMoreBtn && bannerBg.src && (
+      {loadMoreBtn && (
         <Image
-          src={bannerBg.src}
+          src={bannerBg}
           alt="Background"
-          width={100}
-          height={100}
-          className="absolute right-[0] bottom-[0px] left-[0] z-[1] h-[auto] w-[100%]"
+          className="absolute bottom-0 left-0 right-0 z-[1] w-full"
+          priority
         />
       )}
 
       <div className="relative z-[2] container">
         <div className="caseStudyContentCardOuterRow flex flex-wrap gap-[50px]">
           <CaseStudyApiProvider apiKey={apiKey} perPage={perPage}>
-            {({ items, loading: apiLoading, error, loadMore, hasMore }) => {
-              // ✅ Sync API loading with local state
-              if (loading !== apiLoading) setLoading(apiLoading);
+            {({ items, loading, error, loadMore, hasMore }) => {
+              useDotsAnimation(loading);
 
               return (
                 <>
-                  {/* FULL PAGE LOADER (Initial Load Only) */}
-                  {apiLoading && items.length === 0 && (
+                  {/* INITIAL FULL PAGE LOADER */}
+                  {loading && items.length === 0 && (
                     <div className="flex h-[100vh] w-full items-center justify-center">
                       <Loader />
                     </div>
@@ -53,27 +66,30 @@ export default function CaseStudySection({
                   {/* CASE STUDY CARDS */}
                   {items.map((item, index) => (
                     <CaseStudyCard
-                      key={`${item.id ?? index}`}
+                     key={`${item.id}-${index}`}
                       item={item}
-                      index={item.id}
+                      index={index}
                     />
                   ))}
 
                   {/* ERROR */}
                   {error && (
-                    <p className="w-full text-center text-red-600">{error}</p>
+                    <p className="w-full text-center text-red-600">
+                      {error}
+                    </p>
                   )}
 
-                  {/* LOAD MORE */}
+                  {/* LOAD MORE BUTTON */}
                   {loadMoreBtn && hasMore && (
                     <div className="flex w-full justify-center">
                       <CommanButton
                         text={
-                          apiLoading
+                          loading
                             ? `Loading${".".repeat(loadingDots)}`
                             : "Load More"
                         }
                         onClick={loadMore}
+                        // disabled={loading}
                       />
                     </div>
                   )}
@@ -83,20 +99,6 @@ export default function CaseStudySection({
           </CaseStudyApiProvider>
         </div>
       </div>
-
-      {/* 🔹 DOTS ANIMATION EFFECT */}
-      {useEffect(() => {
-        if (!loading) {
-          setLoadingDots(1);
-          return;
-        }
-
-        const interval = setInterval(() => {
-          setLoadingDots((prev) => (prev === 3 ? 1 : prev + 1));
-        }, 500);
-
-        return () => clearInterval(interval);
-      }, [loading])}
     </section>
   );
 }

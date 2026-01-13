@@ -1,21 +1,29 @@
+
+import revenue1 from  "@/assets/revenue.svg";
+import neeta from  "@/assets/about-us/neetaMan2.webp";
+import dheeraj from  "@/assets/about-us/dheerajSirHoldingMIc.webp";
+import gallary from  "@/assets/about-us/gallary.webp";
+import team from  "@/assets/about-us/teams2.webp";
+
+
 export const featuresData = [
   {
-    imgSrc: "@/assets/revenue.svg",
+    imgSrc: revenue1.src,
     title: "115+",
     description: "Project we have complete",
   },
   {
-    imgSrc: "@/assets/revenue.svg",
+    imgSrc: revenue1.src,
     title: "98%",
     description: "Project success rate",
   },
   {
-    imgSrc: "@/assets/revenue.svg",
+    imgSrc: revenue1.src,
     title: "10 mins",
     description: "Avg reply time",
   },
   {
-    imgSrc: "@/assets/revenue.svg",
+    imgSrc: revenue1.src,
     title: "13 years",
     description: "Experience",
   },
@@ -28,7 +36,7 @@ export const timelineData = [
       "Onboard is designed to make hiring easier, faster, and more transparent for everyone.",
     day: "SAT",
     date: "24",
-    image: "@/assets/about-us/gallary.png",
+    image: gallary.src,
   },
   {
     title: "2017 - Expansion",
@@ -36,7 +44,7 @@ export const timelineData = [
       "Onboard introduced new features and improved filtering options.",
     day: "SAT",
     date: "24",
-    image: "@/assets/about-us/gallary.png",
+    image: gallary.src,
   },
   {
     title: "2018 - Growth",
@@ -44,7 +52,7 @@ export const timelineData = [
       "Our platform grew rapidly, enabling more freelancers and companies to work together.",
     day: "SAT",
     date: "24",
-    image: "@/assets/about-us/gallary.png",
+    image: gallary.src,
   },
   {
     title: "2020 - Innovation",
@@ -52,7 +60,7 @@ export const timelineData = [
       "We launched AI-powered intelligent matching and advanced hiring tools.",
     day: "SAT",
     date: "24",
-    image: "@/assets/about-us/gallary.png",
+    image: gallary.src,
   },
 ];
 
@@ -115,9 +123,10 @@ export type ValueCard = {
   className?: string;
 };
 
+
 export const valuesData: ValueCard[] = [
   {
-    image: "@/assets/about-us/neetaMan2.webp",
+    image: neeta.src,
     className: "",
   },
   {
@@ -126,7 +135,7 @@ export const valuesData: ValueCard[] = [
       "Constantly working on improving our skills and knowledge base, so that we can continue to provide the best service to our clients, with the best quality end results.",
     className: "aboutValueSectionBoxBg1 text-black",
   },
-  { image: "@/assets/about-us/dheerajSirHoldingMIc.webp" },
+  { image: dheeraj.src },
   {
     title: "People",
     description:
@@ -134,7 +143,7 @@ export const valuesData: ValueCard[] = [
     className: "aboutValueSectionBoxBg2 text-white",
   },
   {
-    image: "@/assets/about-us/teams2.webp",
+    image: team.src,
     ctaText: "Send your CV to join",
     className: "relative",
   },
