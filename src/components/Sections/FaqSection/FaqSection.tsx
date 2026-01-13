@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Heading from "@/components/Heading/Heading";
 import Image from "next/image";
-import icon from "public/assets/faq-icon.svg";
+import icon from "@/assets/faq-icon.svg";
 interface FAQItem {
   question: string;
   answer: string;

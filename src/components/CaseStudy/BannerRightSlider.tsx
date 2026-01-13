@@ -4,10 +4,10 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
-import sliderimg1 from "public/assets/newHomePage/caseStudy/nuwamaScreen2.webp";
-import sliderimg2 from "public/assets/newHomePage/caseStudy/pickrightScreen3.webp";
-import sliderimg3 from "public/assets/newHomePage/caseStudy/EnkashScreen2.webp";
-import sliderimg4 from "public/assets/newHomePage/caseStudy/EnkashScreen3.webp";
+import sliderimg1 from "@/assets/newHomePage/caseStudy/nuwamaScreen2.webp";
+import sliderimg2 from "@/assets/newHomePage/caseStudy/pickrightScreen3.webp";
+import sliderimg3 from "@/assets/newHomePage/caseStudy/EnkashScreen2.webp";
+import sliderimg4 from "@/assets/newHomePage/caseStudy/EnkashScreen3.webp";
 
 const slides = [
   {
@@ -87,10 +87,6 @@ export default function WorksImageSlider() {
                   {item.title}
                 </h6>
 
-                {/* Progress bar (static for now) */}
-                {/* <div className="mt-3 h-1 w-full overflow-hidden rounded-full bg-gray-200">
-                  <div className="h-full w-1/3 rounded-full bg-indigo-600" />
-                </div> */}
               </div>
             </div>
           </div>

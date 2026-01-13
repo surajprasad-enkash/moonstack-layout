@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Heading, { HeadingSegment } from "@/components/Heading/Heading";
 import { FiArrowRight } from "react-icons/fi";
-import bgImage from "public/assets/industries/ai/icon/review-bg.svg";
+import bgImage from "@/assets/industries/ai/icon/review-bg.svg";
 
 interface IndustryCard {
   title: string;

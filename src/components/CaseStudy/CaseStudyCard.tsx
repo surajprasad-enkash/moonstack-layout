@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import icon from "public/assets/case-study/banner/case-list-star.svg";
+import icon from "@/assets/case-study/banner/case-list-star.svg";
 
 interface Props {
   item: {
@@ -29,8 +29,8 @@ export default function CaseStudyCard({ item, index }: Props) {
     index % 3 === 2
       ? "bg-[linear-gradient(299deg,_#F2FFBD_43.88%,_#A4CE00_160.15%)]"
       : index % 3 === 1
-      ? "bg-[linear-gradient(299deg,_#D1F0E2_43.89%,_#A4B8FE_182.34%)]"
-      : "bg-[linear-gradient(285deg,_#351BFF_-13.81%,_#FFF_135%)]";
+        ? "bg-[linear-gradient(299deg,_#D1F0E2_43.89%,_#A4B8FE_182.34%)]"
+        : "bg-[linear-gradient(285deg,_#351BFF_-13.81%,_#FFF_135%)]";
 
   return (
     <div
@@ -68,11 +68,14 @@ export default function CaseStudyCard({ item, index }: Props) {
         {/* RIGHT */}
         <div className="flex w-1/2 flex-col gap-10">
           <div>
-            <h4 className="mb-6 !text-[26px] !font-bold text-[#0b0b0b]">
-              {item.subTitlePoint?.subtitle || `What we did for ${item.title}:`}
-            </h4>
+            <h4
+              className="mb-6 !text-[26px] !font-bold text-[#0b0b0b]"
+              dangerouslySetInnerHTML={{
+                __html: `What we did for ${item.title}`,
+              }}
+            />
 
-            {item.subTitlePoint?.points?.length && (
+            {item.subTitlePoint?.points?.length > 0 && (
               <ul className="space-y-5">
                 {item.subTitlePoint.points.map((p, i) => (
                   <li key={i} className="flex items-center gap-3">

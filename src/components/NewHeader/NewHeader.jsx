@@ -7,53 +7,53 @@ import CustomButton from "../CommanButton/CommanButton";
 import ProjectInquiryModal from "@/components/ProjectInquiryModal/ProjectInquiryModal";
 import { IoIosArrowDown } from "react-icons/io";
 
-import about from "public/assets/header/about-us.svg";
-import logo from "public/assets/logo-white.png";
-import blog from "public/assets/header/blog.svg";
-import case_study from "public/assets/header/case-studies.svg";
-import career from "public/assets/header/carrer.svg";
+import about from "@/assets/header/about-us.svg";
+import logo from "@/assets/logo-white.png";
+import blog from "@/assets/header/blog.svg";
+import case_study from "@/assets/header/case-studies.svg";
+import career from "@/assets/header/carrer.svg";
 
-import appDevIcon1 from "public/assets/header/mobile-application-development.svg";
-import appDevIcon2 from "public/assets/header/Ios.svg";
-import appDevIcon3 from "public/assets/header/pwa.svg";
-import appDevIcon4 from "public/assets/header/react-svgrepo-com.svg";
-import appDevIcon5 from "public/assets/header/andriod-development.svg";
-import appDevIcon6 from "public/assets/header/mobile-app-developing.svg";
+import appDevIcon1 from "@/assets/header/mobile-application-development.svg";
+import appDevIcon2 from "@/assets/header/Ios.svg";
+import appDevIcon3 from "@/assets/header/pwa.svg";
+import appDevIcon4 from "@/assets/header/react-svgrepo-com.svg";
+import appDevIcon5 from "@/assets/header/andriod-development.svg";
+import appDevIcon6 from "@/assets/header/mobile-app-developing.svg";
 
 // web development icon
-import webDevIcon1 from "public/assets/header/web-development-svgrepo-com (2).svg";
-import webDevIcon2 from "public/assets/header/shopify-svgrepo-com.svg";
-import webDevIcon3 from "public/assets/header/Frame 427324601.svg";
-import webDevIcon4 from "public/assets/header/e-commerce.svg";
-import webDevIcon5 from "public/assets/header/web-designer.svg";
-import webDevIcon6 from "public/assets/header/wordpress-svgrepo-com.svg";
-import webDevIcon7 from "public/assets/header/crm-development.svg";
-import webDevIcon8 from "public/assets/header/fullstack-development.svg";
+import webDevIcon1 from "@/assets/header/web-development-svgrepo-com (2).svg";
+import webDevIcon2 from "@/assets/header/shopify-svgrepo-com.svg";
+import webDevIcon3 from "@/assets/header/Frame 427324601.svg";
+import webDevIcon4 from "@/assets/header/e-commerce.svg";
+import webDevIcon5 from "@/assets/header/web-designer.svg";
+import webDevIcon6 from "@/assets/header/wordpress-svgrepo-com.svg";
+import webDevIcon7 from "@/assets/header/crm-development.svg";
+import webDevIcon8 from "@/assets/header/fullstack-development.svg";
 
 // frontend development icon
-import frontDevIcon1 from "public/assets/header/frontendIcon/angularjs.svg";
-import frontDevIcon2 from "public/assets/header/frontendIcon/css3-svgrepo-com.svg";
-import frontDevIcon3 from "public/assets/header/frontendIcon/vue-js-svgrepo-com.svg";
-import frontDevIcon4 from "public/assets/header/frontendIcon/html-124-svgrepo-com.svg";
-import frontDevIcon5 from "public/assets/header/frontendIcon/javascript-fill-svgrepo-com.svg";
-import frontDevIcon6 from "public/assets/header/frontendIcon/react-svgrepo-com.svg";
+import frontDevIcon1 from "@/assets/header/frontendIcon/angularjs.svg";
+import frontDevIcon2 from "@/assets/header/frontendIcon/css3-svgrepo-com.svg";
+import frontDevIcon3 from "@/assets/header/frontendIcon/vue-js-svgrepo-com.svg";
+import frontDevIcon4 from "@/assets/header/frontendIcon/html-124-svgrepo-com.svg";
+import frontDevIcon5 from "@/assets/header/frontendIcon/javascript-fill-svgrepo-com.svg";
+import frontDevIcon6 from "@/assets/header/frontendIcon/react-svgrepo-com.svg";
 
 // Backend development icon
-import backendicon1 from "public/assets/header/backend/dotnet.svg";
-import backendicon2 from "public/assets/header/backend/nodejs.svg";
-import backendicon3 from "public/assets/header/backend/laravel.svg";
-import backendicon4 from "public/assets/header/backend/cakephp.svg";
-import backendicon5 from "public/assets/header/backend/codeigniter.svg";
-import backendicon6 from "public/assets/header/backend/python.svg";
-import backendicon7 from "public/assets/header/backend/java-filled.svg";
-import backendicon8 from "public/assets/header/backend/php.svg";
+import backendicon1 from "@/assets/header/backend/dotnet.svg";
+import backendicon2 from "@/assets/header/backend/nodejs.svg";
+import backendicon3 from "@/assets/header/backend/laravel.svg";
+import backendicon4 from "@/assets/header/backend/cakephp.svg";
+import backendicon5 from "@/assets/header/backend/codeigniter.svg";
+import backendicon6 from "@/assets/header/backend/python.svg";
+import backendicon7 from "@/assets/header/backend/java-filled.svg";
+import backendicon8 from "@/assets/header/backend/php.svg";
 
 //other
-import Uiux from "public/assets/header/uiux.svg";
-import seo from "public/assets/header/seo.svg";
-import product from "public/assets/header/product.svg";
-import cloud from "public/assets/header/cloud.svg";
-import industry from "public/assets/header/cloud.svg";
+import Uiux from "@/assets/header/uiux.svg";
+import seo from "@/assets/header/seo.svg";
+import product from "@/assets/header/product.svg";
+import cloud from "@/assets/header/cloud.svg";
+import industry from "@/assets/header/cloud.svg";
 import HoverSlideText from "../HoverSlideText";
 
 export default function NewHeader() {
@@ -336,13 +336,13 @@ export default function NewHeader() {
                                   <img src={item.icon} className="w-8" />
 
                                   <div className="w-full">
-                                    <p className="font-14 flex w-full items-center !font-semibold uppercase">
+                                    <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">
                                       {item.title}
 
                                       <IoIosArrowRoundForward className="ml-auto h-[24px] w-[24px] opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
                                     </p>
 
-                                    <p className="font-12 mt-1 leading-[1.5] text-gray-600">
+                                    <p className="!text-[12px] mt-1 leading-[1.5] text-gray-600">
                                       {item.subtitle}
                                     </p>
                                   </div>
@@ -368,13 +368,13 @@ export default function NewHeader() {
                                   <img src={item.icon} className="w-8" />
 
                                   <div className="w-full">
-                                    <p className="font-14 flex w-full items-center !font-semibold uppercase">
+                                    <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">
                                       {item.title}
 
                                       <IoIosArrowRoundForward className="ml-auto h-[24px] w-[24px] opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
                                     </p>
 
-                                    <p className="font-12 mt-1 leading-[1.5] text-gray-600">
+                                    <p className="!text-[12px] mt-1 leading-[1.5] text-gray-600">
                                       {item.subtitle}
                                     </p>
                                   </div>
@@ -400,13 +400,13 @@ export default function NewHeader() {
                                   <img src={item.icon} className="w-8" />
 
                                   <div className="w-full">
-                                    <p className="font-14 flex w-full items-center !font-semibold uppercase">
+                                    <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">
                                       {item.title}
 
                                       <IoIosArrowRoundForward className="ml-auto h-[24px] w-[24px] opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
                                     </p>
 
-                                    <p className="font-12 mt-1 leading-[1.5] text-gray-600">
+                                    <p className="!text-[12px] mt-1 leading-[1.5] text-gray-600">
                                       {item.subtitle}
                                     </p>
                                   </div>
@@ -436,13 +436,13 @@ export default function NewHeader() {
                                 <img src={item.icon} className="w-8" />
 
                                 <div className="w-full">
-                                  <p className="font-14 flex w-full items-center !font-semibold uppercase">
+                                  <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">
                                     {item.title}
 
                                     <IoIosArrowRoundForward className="ml-auto h-[24px] w-[24px] opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
                                   </p>
 
-                                  <p className="font-12 mt-1 leading-[1.5] text-gray-600">
+                                  <p className="!text-[12px] mt-1 leading-[1.5] text-gray-600">
                                     {item.subtitle}
                                   </p>
                                 </div>
@@ -478,13 +478,13 @@ export default function NewHeader() {
                             <img src={item.icon} className="w-8" />
 
                             <div className="w-full">
-                              <p className="font-14 flex w-full items-center !font-semibold uppercase">
+                              <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">
                                 {item.title}
 
                                 <IoIosArrowRoundForward className="ml-auto h-[24px] w-[24px] opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
                               </p>
 
-                              <p className="font-12 mt-1 leading-[1.5] text-gray-600">
+                              <p className="!text-[12px] mt-1 leading-[1.5] text-gray-600">
                                 {item.subtitle}
                               </p>
                             </div>

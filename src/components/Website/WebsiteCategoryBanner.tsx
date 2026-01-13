@@ -3,7 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import CustomButton from "../CommanButton/CommanButton";
 import Heading from "../Heading/Heading";
 import Tag from "../Tag/Tag";
-import circleIcon from "public/assets/green-circle-icon.svg";
+import circleIcon from "@/assets/green-circle-icon.svg";
 import MarqueeComponent from "../Homepage/Marquee";
 
 interface BannerContent {

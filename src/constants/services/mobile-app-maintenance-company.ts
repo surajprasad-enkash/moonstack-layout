@@ -1,14 +1,14 @@
 import { PageData } from "@/types/web-development-data-type";
-import androidBannerImg from "public/assets/app-development-images/android-banner.webp";
+import androidBannerImg from "@/assets/app-development-images/android-banner.webp";
 
-import managementImg from "public/assets/app-development-images/mantainance-hero-img.webp";
+import managementImg from "@/assets/app-development-images/mantainance-hero-img.webp";
 
 import appMaintenanceLottie from "../../../public/lottie/app-maintenance.json";
-import mobAppBanner from "public/assets/app-development-images/mob-design-banner.webp";
-import mainIconOne from "public/assets/app-development-images/main-icon-one.webp";
-import mainIconTwo from "public/assets/app-development-images/main-icon-two.webp";
-import mainIconThree from "public/assets/app-development-images/main-icon-three.webp";
-import maintenanceContactbannerImg from "public/assets/app-development-images/maintanance-contact-img.webp";
+import mobAppBanner from "@/assets/app-development-images/mob-design-banner.webp";
+import mainIconOne from "@/assets/app-development-images/main-icon-one.webp";
+import mainIconTwo from "@/assets/app-development-images/main-icon-two.webp";
+import mainIconThree from "@/assets/app-development-images/main-icon-three.webp";
+import maintenanceContactbannerImg from "@/assets/app-development-images/maintanance-contact-img.webp";
 
 export const app_maintenance: PageData = {
   hero: {

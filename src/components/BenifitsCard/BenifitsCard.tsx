@@ -3,7 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import Heading from "../../components/Heading/Heading";
 
-import arrowUp from "public/assets/arrow-up.svg";
+import arrowUp from "@/assets/arrow-up.svg";
 
 interface BenifitsCardProps {
   imgSrc: StaticImageData | string;

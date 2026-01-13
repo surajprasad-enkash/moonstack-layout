@@ -1,7 +1,7 @@
 import StatsParallaxCard from "@/components/StatsParallaxCard";
 import Image from "next/image";
 import React from "react";
-import projectImg from "public/assets/about-us/projectImg.webp";
+import projectImg from "@/assets/about-us/projectImg.webp";
 
 const LeadingSection = () => {
   return (

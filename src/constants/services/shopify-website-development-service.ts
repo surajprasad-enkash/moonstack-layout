@@ -1,23 +1,23 @@
 import { PageData } from "@/types/web-development-data-type";
 
-import reactIcon from "public/assets/react-icon.svg";
+import reactIcon from "@/assets/react-icon.svg";
 
-import managmentIconOne from "public/assets/app-development-images/managment-icon-one.svg";
-import managmentIconTwo from "public/assets/app-development-images/managment-icon-two.svg";
-import managmentIconThree from "public/assets/app-development-images/managment-icon-three.svg";
-import managmentIconFour from "public/assets/app-development-images/managment-icon-four.svg";
-import managmentIconFive from "public/assets/app-development-images/managment-icon-five.svg";
-import managmentIconSix from "public/assets/app-development-images/managment-icon-six.svg";
-import appleIcon from "public/assets/app-development-images/apple-icon.svg";
-import mobileIconcon from "public/assets/app-development-images/mobile-icon.svg";
-import developmentIcon from "public/assets/app-development-images/development-icon.svg";
-import integrationIcon from "public/assets/app-development-images/integration-icon.svg";
-import debbugingIcon from "public/assets/app-development-images/debbuging-icon.svg";
-import appStoreIcon from "public/assets/app-development-images/app-store.svg";
-import figmaIcon from "public/assets/figma-icon.svg";
-import bannerImg from "public/assets/figma-icon.svg";
+import managmentIconOne from "@/assets/app-development-images/managment-icon-one.svg";
+import managmentIconTwo from "@/assets/app-development-images/managment-icon-two.svg";
+import managmentIconThree from "@/assets/app-development-images/managment-icon-three.svg";
+import managmentIconFour from "@/assets/app-development-images/managment-icon-four.svg";
+import managmentIconFive from "@/assets/app-development-images/managment-icon-five.svg";
+import managmentIconSix from "@/assets/app-development-images/managment-icon-six.svg";
+import appleIcon from "@/assets/app-development-images/apple-icon.svg";
+import mobileIconcon from "@/assets/app-development-images/mobile-icon.svg";
+import developmentIcon from "@/assets/app-development-images/development-icon.svg";
+import integrationIcon from "@/assets/app-development-images/integration-icon.svg";
+import debbugingIcon from "@/assets/app-development-images/debbuging-icon.svg";
+import appStoreIcon from "@/assets/app-development-images/app-store.svg";
+import figmaIcon from "@/assets/figma-icon.svg";
+import bannerImg from "@/assets/figma-icon.svg";
 import androidLottie from "../../../public/lottie/shopify.json";
-import nativeBannerImg from "public/assets/app-development-images/native-banner-img.webp";
+import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp";
 
 export const shopify: PageData = {
   hero: {

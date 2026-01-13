@@ -10,7 +10,7 @@ export default function TeamSection() {
         {/* LEFT – BIG CARD */}
         <div className="relative min-h-[600px] overflow-hidden rounded-2xl bg-[linear-gradient(294deg,#0b4e00_-14.71%,#FFF_88.49%)] p-6">
           <Image
-            src="/assets/about-us/dheerajSir.webp"
+            src="@/assets/about-us/dheerajSir.webp"
             alt="Dheeraj Sharma"
             width={357}
             height={536}
@@ -37,7 +37,7 @@ export default function TeamSection() {
           {/* TOP – WIDE CARD */}
           <div className="relative min-h-[280px] overflow-hidden rounded-2xl bg-[linear-gradient(294deg,_#092c04_26.29%,_#fff_146.49%)] p-6">
             <Image
-              src="/assets/about-us/neetaMam.webp"
+              src="@/assets/about-us/neetaMam.webp"
               alt="Neeta Agarwal"
               width={200}
               height={400}
@@ -65,7 +65,7 @@ export default function TeamSection() {
             {/* Devender */}
             <div className="relative min-h-[250px] flex-1 overflow-hidden rounded-2xl bg-[linear-gradient(294deg,_#092c04_26.29%,_#fff_146.49%)] p-6">
               <Image
-                src="/assets/about-us/devenderSir.webp"
+                src="@/assets/about-us/devenderSir.webp"
                 alt="Devender Sharma"
                 width={170}
                 height={170}
@@ -93,7 +93,7 @@ export default function TeamSection() {
             {/* Sunil */}
             <div className="relative min-h-[250px] flex-1 overflow-hidden rounded-2xl bg-[linear-gradient(294deg,_#092c04_26.29%,_#fff_146.49%)] p-6">
               <Image
-                src="/assets/about-us/sunilSir.webp"
+                src="@/assets/about-us/sunilSir.webp"
                 alt="Sunil Kumar"
                 width={200}
                 height={250}

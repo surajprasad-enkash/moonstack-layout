@@ -2,7 +2,7 @@
 
 import Heading from "@/components/Heading/Heading";
 import React from "react";
-import secondBanner from "public/assets/case-study/single-case-study/secondBanner.svg";
+import secondBanner from "@/assets/case-study/single-case-study/secondBanner.svg";
 
 const CaseStudyHighlight = () => {
   return (

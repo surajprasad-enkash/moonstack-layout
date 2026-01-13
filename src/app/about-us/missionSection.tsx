@@ -1,6 +1,6 @@
 import Heading from "@/components/Heading/Heading";
 import React from "react";
-import backgroundImg from "public/assets/about-us/missionBg.webp";
+import backgroundImg from "@/assets/about-us/missionBg.webp";
 
 interface MissionSectionProps {
   title: string;

@@ -1,33 +1,33 @@
 import LottieData from "../../../public/lottie/services/banner.json";
-import bgImagehero from "public/assets/industries/ai/hero-bg.svg";
+import bgImagehero from "@/assets/industries/ai/hero-bg.svg";
 import Layout from "@/components/Layout";
 import AppCategoryBanner from "@/components/Sections/ServicesSection/AppDevelopment/AppCategoryBanner";
 import ServicesSection from "@/components/NewHomePage/ServicesSection";
 import Space from "@/components/Space";
 import CaseStudyHighlight from "@/components/NewHomePage/CaseStudyHighlight";
-import screen1 from "public/assets/newHomePage/caseStudy/screen1.avif";
-import screen2 from "public/assets/newHomePage/caseStudy/screen2.avif";
-import screen3 from "public/assets/newHomePage/caseStudy/screen3.avif";
-import clientImage from "public/assets/newHomePage/caseStudy/clientimage.png";
-import clutch from "public/assets/newHomePage/caseStudy/clutch.svg";
+import screen1 from "@/assets/newHomePage/caseStudy/screen1.avif";
+import screen2 from "@/assets/newHomePage/caseStudy/screen2.avif";
+import screen3 from "@/assets/newHomePage/caseStudy/screen3.avif";
+import clientImage from "@/assets/newHomePage/caseStudy/clientimage.png";
+import clutch from "@/assets/newHomePage/caseStudy/clutch.svg";
 import TestimonialsTabs from "@/components/NewHomePage/TestimonialsTabs";
 
-import tastimonial1 from "public/assets/newHomePage/awards/tastimonial/tastimonial1.avif";
-import tastimonial2 from "public/assets/newHomePage/awards/tastimonial/tastimonial2.svg";
-import tastimonial3 from "public/assets/newHomePage/awards/tastimonial/tastimonial3.svg";
-import tastimonial4 from "public/assets/newHomePage/awards/tastimonial/tastimonial4.svg";
+import tastimonial1 from "@/assets/newHomePage/awards/tastimonial/tastimonial1.avif";
+import tastimonial2 from "@/assets/newHomePage/awards/tastimonial/tastimonial2.svg";
+import tastimonial3 from "@/assets/newHomePage/awards/tastimonial/tastimonial3.svg";
+import tastimonial4 from "@/assets/newHomePage/awards/tastimonial/tastimonial4.svg";
 
-import clientLogo from "public/assets/newHomePage/awards/tastimonial/client_logo.png";
-import clutchLogo from "public/assets/newHomePage/awards/tastimonial/clutchLogo.svg";
-import clutchLogoBlack from "public/assets/newHomePage/awards/tastimonial/clutchBloack.svg";
+import clientLogo from "@/assets/newHomePage/awards/tastimonial/client_logo.png";
+import clutchLogo from "@/assets/newHomePage/awards/tastimonial/clutchLogo.svg";
+import clutchLogoBlack from "@/assets/newHomePage/awards/tastimonial/clutchBloack.svg";
 import BlogInsightsSection from "@/components/NewHomePage/BlogInsightsSection";
 import ProjectCTA from "@/components/ProjectCTA/ProjectCTA";
 import TrustBadges from "@/components/NewHomePage/TrustBadges";
 
-import clutchBadges from "public/assets/newHomePage/TrustBadges/clutch.avif";
-import upwork from "public/assets/newHomePage/TrustBadges/upwork.avif";
-import dribbble from "public/assets/newHomePage/TrustBadges/dribble.avif";
-import behance from "public/assets/newHomePage/TrustBadges/behance.avif";
+import clutchBadges from "@/assets/newHomePage/TrustBadges/clutch.avif";
+import upwork from "@/assets/newHomePage/TrustBadges/upwork.avif";
+import dribbble from "@/assets/newHomePage/TrustBadges/dribble.avif";
+import behance from "@/assets/newHomePage/TrustBadges/behance.avif";
 const tabs = [
   {
     id: "mojo",

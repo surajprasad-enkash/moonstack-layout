@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 
-import checkIcon from "public/assets/contact-us/check icon.svg";
-// import logo from "public/assets/logo/popup_logo.svg";
-import logo from "public/assets/logo-white.png";
+import checkIcon from "@/assets/contact-us/check icon.svg";
+// import logo from "@/assets/logo/popup_logo.svg";
+import logo from "@/assets/logo-white.png";
 
 interface ContactInfoCardProps {
   className?: string;

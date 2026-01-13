@@ -2,15 +2,15 @@
 
 import Image, { StaticImageData } from "next/image";
 
-import wordPress from "public/assets/newHomePage/ImpactStatsSection/icon/wordpress.avif";
-import galaxy from "public/assets/newHomePage/ImpactStatsSection/icon/galaxy.avif";
-import flair from "public/assets/newHomePage/ImpactStatsSection/icon/flair.png";
-import gtprotocol from "public/assets/newHomePage/ImpactStatsSection/icon/gtprotocol.avif";
-import mojo from "public/assets/newHomePage/ImpactStatsSection/icon/mojo-tag.avif";
-import myso from "public/assets/newHomePage/ImpactStatsSection/icon/myso-tag.avif";
-import preformance from "public/assets/newHomePage/ImpactStatsSection/icon/preformance.png";
-import save from "public/assets/newHomePage/ImpactStatsSection/icon/save.avif";
-import bgImage from "public/assets/newHomePage/ImpactStatsSection/bgImage.avif";
+import wordPress from "@/assets/newHomePage/ImpactStatsSection/icon/wordpress.avif";
+import galaxy from "@/assets/newHomePage/ImpactStatsSection/icon/galaxy.avif";
+import flair from "@/assets/newHomePage/ImpactStatsSection/icon/flair.png";
+import gtprotocol from "@/assets/newHomePage/ImpactStatsSection/icon/gtprotocol.avif";
+import mojo from "@/assets/newHomePage/ImpactStatsSection/icon/mojo-tag.avif";
+import myso from "@/assets/newHomePage/ImpactStatsSection/icon/myso-tag.avif";
+import preformance from "@/assets/newHomePage/ImpactStatsSection/icon/preformance.png";
+import save from "@/assets/newHomePage/ImpactStatsSection/icon/save.avif";
+import bgImage from "@/assets/newHomePage/ImpactStatsSection/bgImage.avif";
 
 interface StatItem {
   value: string;

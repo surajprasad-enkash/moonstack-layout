@@ -7,8 +7,8 @@ import {
   Marker,
 } from "react-simple-maps";
 import Image from "next/image";
-import usaFlag from "public/assets/contact-us/usa-flag.png";
-import indiaFlag from "public/assets/contact-us/india-flag.png";
+import usaFlag from "@/assets/contact-us/usa-flag.png";
+import indiaFlag from "@/assets/contact-us/india-flag.png";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 

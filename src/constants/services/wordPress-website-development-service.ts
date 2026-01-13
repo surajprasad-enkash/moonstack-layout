@@ -1,23 +1,23 @@
 import { PageData } from "@/types/web-development-data-type";
 
-import androidIcon from "public/assets/android-icon.svg";
-import iosIcon from "public/assets/ios-icon.svg";
-import reactIcon from "public/assets/react-icon.svg";
-import pwaIcon from "public/assets/pwa-icon.svg";
-import flutterIcon from "public/assets/flutter-icon.svg";
-import swiftIcon from "public/assets/swift-icon.svg";
-import managementImg from "public/assets/app-development-images/contact-app-img.webp";
+import androidIcon from "@/assets/android-icon.svg";
+import iosIcon from "@/assets/ios-icon.svg";
+import reactIcon from "@/assets/react-icon.svg";
+import pwaIcon from "@/assets/pwa-icon.svg";
+import flutterIcon from "@/assets/flutter-icon.svg";
+import swiftIcon from "@/assets/swift-icon.svg";
+import managementImg from "@/assets/app-development-images/contact-app-img.webp";
 
-import figmaIcon from "public/assets/figma-icon.svg";
-import managmentIconOne from "public/assets/app-development-images/managment-icon-one.svg";
-import managmentIconTwo from "public/assets/app-development-images/managment-icon-two.svg";
-import managmentIconThree from "public/assets/app-development-images/managment-icon-three.svg";
-import managmentIconFour from "public/assets/app-development-images/managment-icon-four.svg";
-import managmentIconFive from "public/assets/app-development-images/managment-icon-five.svg";
-import managmentIconSix from "public/assets/app-development-images/managment-icon-six.svg";
+import figmaIcon from "@/assets/figma-icon.svg";
+import managmentIconOne from "@/assets/app-development-images/managment-icon-one.svg";
+import managmentIconTwo from "@/assets/app-development-images/managment-icon-two.svg";
+import managmentIconThree from "@/assets/app-development-images/managment-icon-three.svg";
+import managmentIconFour from "@/assets/app-development-images/managment-icon-four.svg";
+import managmentIconFive from "@/assets/app-development-images/managment-icon-five.svg";
+import managmentIconSix from "@/assets/app-development-images/managment-icon-six.svg";
 
 import androidLottie from "../../../public/lottie/wordpress.json";
-import nativeBannerImg from "public/assets/app-development-images/native-banner-img.webp";
+import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp";
 
 export const wordPress: PageData = {
   hero: {

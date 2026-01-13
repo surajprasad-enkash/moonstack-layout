@@ -1,14 +1,14 @@
 import { PageData } from "@/types/web-development-data-type";
 
 import androidLottie from "../../../public/lottie/android.json";
-import nativeBannerImg from "public/assets/app-development-images/native-banner-img.webp";
-import androidImg from "public/assets/app-development-images/android-hero-img.webp";
-import androidContactbannerImg from "public/assets/app-development-images/contact-app-img.webp";
-import androidBannerImg from "public/assets/app-development-images/android-banner.webp";
+import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp";
+import androidImg from "@/assets/app-development-images/android-hero-img.webp";
+import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp";
+import androidBannerImg from "@/assets/app-development-images/android-banner.webp";
 
-import intuitiveIcon from "public/assets/app-development-images/featureImgOne.webp";
-import engagingIcon from "public/assets/app-development-images/featureImgTwo.webp";
-import brandingIcon from "public/assets/app-development-images/featureImgThree.webp";
+import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp";
+import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp";
+import brandingIcon from "@/assets/app-development-images/featureImgThree.webp";
 
 export const it_support: PageData = {
   hero: {

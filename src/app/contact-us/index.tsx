@@ -11,26 +11,26 @@ import AwardsSection, {
   AwardItem,
 } from "@/components/NewHomePage/AwardsSection";
 
-import award1 from "public/assets/newHomePage/awards/clutch.svg";
-import award2 from "public/assets/newHomePage/awards/Top_Design_company_2025.png";
-import award3 from "public/assets/newHomePage/awards/Top_Digital_Design_Company_2025.png";
-import award4 from "public/assets/newHomePage/awards/clutch-badge-6.svg";
-import award5 from "public/assets/newHomePage/awards/clutch-badge.svg";
-import award6 from "public/assets/newHomePage/awards/dribbble.svg";
-import award7 from "public/assets/newHomePage/awards/good-firms.svg";
-import award8 from "public/assets/newHomePage/awards/upwork.svg";
-import icon from "public/assets/newHomePage/awards/icon.svg";
+import award1 from "@/assets/newHomePage/awards/clutch.svg";
+import award2 from "@/assets/newHomePage/awards/Top_Design_company_2025.png";
+import award3 from "@/assets/newHomePage/awards/Top_Digital_Design_Company_2025.png";
+import award4 from "@/assets/newHomePage/awards/clutch-badge-6.svg";
+import award5 from "@/assets/newHomePage/awards/clutch-badge.svg";
+import award6 from "@/assets/newHomePage/awards/dribbble.svg";
+import award7 from "@/assets/newHomePage/awards/good-firms.svg";
+import award8 from "@/assets/newHomePage/awards/upwork.svg";
+import icon from "@/assets/newHomePage/awards/icon.svg";
 import NextStepsSection from "@/components/ContactPage/NextStepsSection/NextStepsSection";
 
-import step1 from "public/assets/contact-us/NextStepsSection/step1Icon.avif";
-import step2 from "public/assets/contact-us/NextStepsSection/step2Icon.avif";
-import step3 from "public/assets/contact-us/NextStepsSection/step3Icon.avif";
-import step4 from "public/assets/contact-us/NextStepsSection/step4Icon.avif";
-import stepdes from "public/assets/contact-us/NextStepsSection/process-desktop-line.svg";
-import step4Tab from "public/assets/contact-us/NextStepsSection/process-line-tablet.svg";
+import step1 from "@/assets/contact-us/NextStepsSection/step1Icon.avif";
+import step2 from "@/assets/contact-us/NextStepsSection/step2Icon.avif";
+import step3 from "@/assets/contact-us/NextStepsSection/step3Icon.avif";
+import step4 from "@/assets/contact-us/NextStepsSection/step4Icon.avif";
+import stepdes from "@/assets/contact-us/NextStepsSection/process-desktop-line.svg";
+import step4Tab from "@/assets/contact-us/NextStepsSection/process-line-tablet.svg";
 import TestimonialCard from "@/components/Sections/ServicesSection/ReviewCardSection";
 
-import userImage from "public/assets/app-development-images/autorImg.webp";
+import userImage from "@/assets/app-development-images/autorImg.webp";
 
 const points = [
   "Throughout the entire project all I saw was sheer will to keep pushing forward and adapting to whatever  the next request was.  Terrific job  and we couldn't have done it without you.",

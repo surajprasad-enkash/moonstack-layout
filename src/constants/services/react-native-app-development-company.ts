@@ -1,13 +1,13 @@
 import { PageData } from "@/types/web-development-data-type";
 
-import mobIosBanner from "public/assets/app-development-images/ux-audit-banner.webp";
-import iosBannerImg from "public/assets/app-development-images/ios-hire-img.webp";
-import iosContactbannerBg from "public/assets/app-development-images/ios-contact-img.webp";
-import reactNativeImg from "public/assets/app-development-images/native-hero-img.webp";
+import mobIosBanner from "@/assets/app-development-images/ux-audit-banner.webp";
+import iosBannerImg from "@/assets/app-development-images/ios-hire-img.webp";
+import iosContactbannerBg from "@/assets/app-development-images/ios-contact-img.webp";
+import reactNativeImg from "@/assets/app-development-images/native-hero-img.webp";
 import nativeLottie from "../../../public/lottie/react-native.json";
-import nativeIconOne from "public/assets/app-development-images/native-icon-one.webp";
-import nativeIconTwo from "public/assets/app-development-images/native-icon-two.webp";
-import nativeIconThree from "public/assets/app-development-images/native-icon-three.webp";
+import nativeIconOne from "@/assets/app-development-images/native-icon-one.webp";
+import nativeIconTwo from "@/assets/app-development-images/native-icon-two.webp";
+import nativeIconThree from "@/assets/app-development-images/native-icon-three.webp";
 
 export const react_native: PageData = {
   hero: {

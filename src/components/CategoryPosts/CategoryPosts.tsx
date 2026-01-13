@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Loader from "@/components/Loader/Loader";
-import bannerBg from "public/assets/case-study/banner/bannerBg.svg";
+import bannerBg from "@/assets/case-study/banner/bannerBg.svg";
 import CommanButton from "../CommanButton/CommanButton";
 
 interface Post {

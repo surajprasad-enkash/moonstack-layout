@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import React from "react";
-// import teams from "public/assets/about-us/moonstack-teams.png";
-import teams from "public/assets/about-us/moonstack-teams.webp";
+// import teams from "@/assets/about-us/moonstack-teams.png";
+import teams from "@/assets/about-us/moonstack-teams.webp";
 
 const AboutGallery = () => {
   return (

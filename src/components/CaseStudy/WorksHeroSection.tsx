@@ -3,8 +3,8 @@
 import Image from "next/image";
 import WorksImageSlider from "./BannerRightSlider";
 import Heading from "../Heading/Heading";
-import growthIcon from "public/assets/case-study/banner/works-hero-done.avif";
-import bannerBg from "public/assets/case-study/banner/bannerBg.svg";
+import growthIcon from "@/assets/case-study/banner/works-hero-done.avif";
+import bannerBg from "@/assets/case-study/banner/bannerBg.svg";
 
 import CommanButton from "../CommanButton/CommanButton";
 import Link from "next/link";

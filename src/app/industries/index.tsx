@@ -1,52 +1,52 @@
 import AppCategoryBanner from "@/components/Sections/ServicesSection/AppDevelopment/AppCategoryBanner";
 import Layout from "@/components/Layout";
-import bgImagehero from "public/assets/industries/ai/hero-bg.svg";
+import bgImagehero from "@/assets/industries/ai/hero-bg.svg";
 import LottieData from "../../../public/lottie/industries.json";
 import TestimonialCard from "@/components/Sections/ServicesSection/ReviewCardSection";
-import userImage from "public/assets/app-development-images/autorImg.webp";
-import tastimonialBg from "public/assets/industries/ai/review-under-hero-bg.svg";
-import mobDesignBanner from "public/assets/app-development-images/mob-design-banner.webp";
+import userImage from "@/assets/app-development-images/autorImg.webp";
+import tastimonialBg from "@/assets/industries/ai/review-under-hero-bg.svg";
+import mobDesignBanner from "@/assets/app-development-images/mob-design-banner.webp";
 import AndroidCaseStudySection from "@/components/Sections/ServicesSection/AndroidCaseStudySection";
 import Space from "@/components/Space";
 import NewBanner from "@/components/Sections/NewBanner";
 import DesignPrinciplesSection from "@/components/Industries/DesignPrinciplesSection";
 import AIExperienceSection from "@/components/Industries/AIExperienceSection";
 
-import img1 from "public/assets/industries/ai/xp-1-p-500.webp";
-import img2 from "public/assets/industries/ai/xp-2.webp";
-import img3 from "public/assets/industries/ai/xp-3-p-500.webp";
-import img4 from "public/assets/industries/ai/xp-4-p-500.webp";
+import img1 from "@/assets/industries/ai/xp-1-p-500.webp";
+import img2 from "@/assets/industries/ai/xp-2.webp";
+import img3 from "@/assets/industries/ai/xp-3-p-500.webp";
+import img4 from "@/assets/industries/ai/xp-4-p-500.webp";
 import AIProductsGrid from "@/components/Industries/AIProductsGrid";
 
-import icon from "public/assets/industries/ai/icon/ai-p-icon.webp";
+import icon from "@/assets/industries/ai/icon/ai-p-icon.webp";
 
-import bndicon1 from "public/assets/industries/ai/icon/bndicon1.webp";
-import bndicon2 from "public/assets/industries/ai/icon/bndicon2.webp";
-import bndicon3 from "public/assets/industries/ai/icon/bndicon3.webp";
-import bndicon4 from "public/assets/industries/ai/icon/bndicon4.webp";
-import bndimage1 from "public/assets/industries/ai/icon/bndImage1.webp";
-import bndimage2 from "public/assets/industries/ai/icon/bndImage2.webp";
-import bndimage3 from "public/assets/industries/ai/icon/bndImage3.webp";
-import bndimage4 from "public/assets/industries/ai/icon/bndImage4.webp";
+import bndicon1 from "@/assets/industries/ai/icon/bndicon1.webp";
+import bndicon2 from "@/assets/industries/ai/icon/bndicon2.webp";
+import bndicon3 from "@/assets/industries/ai/icon/bndicon3.webp";
+import bndicon4 from "@/assets/industries/ai/icon/bndicon4.webp";
+import bndimage1 from "@/assets/industries/ai/icon/bndImage1.webp";
+import bndimage2 from "@/assets/industries/ai/icon/bndImage2.webp";
+import bndimage3 from "@/assets/industries/ai/icon/bndImage3.webp";
+import bndimage4 from "@/assets/industries/ai/icon/bndImage4.webp";
 
 import BusinessNeedsDesignSection from "@/components/Industries/BusinessNeedsDesignSection";
 import TrustBanner from "@/components/Industries/TrustBanner";
 import FeatureSection from "@/components/Sections/ServicesSection/FeatureSection";
 
-import intuitiveIcon from "public/assets/industries/ai/icon/work1.webp";
-import engagingIcon from "public/assets/industries/ai/icon/work2.webp";
-import brandingIcon from "public/assets/industries/ai/icon/work3.webp";
-import brandingIcon4 from "public/assets/industries/ai/icon/work4.webp";
+import intuitiveIcon from "@/assets/industries/ai/icon/work1.webp";
+import engagingIcon from "@/assets/industries/ai/icon/work2.webp";
+import brandingIcon from "@/assets/industries/ai/icon/work3.webp";
+import brandingIcon4 from "@/assets/industries/ai/icon/work4.webp";
 
-import bccKristenCheng from "public/assets/industries/ai/icon/bcc_kristen-cheng.avif";
+import bccKristenCheng from "@/assets/industries/ai/icon/bcc_kristen-cheng.avif";
 import TestimonialsSection from "@/components/Industries/TestimonialsSection";
 import IndustryExperienceSection from "@/components/Industries/IndustryExperienceSection";
 
-import industryicon1 from "public/assets/industries/ai/icon/dbd2_i1.png";
-import industryicon2 from "public/assets/industries/ai/icon/b_i2.png";
-import industryicon3 from "public/assets/industries/ai/icon/b_i4.png";
-import industryicon4 from "public/assets/industries/ai/icon/_i5.png";
-import projectCtaBg from "public/assets/industries/ai/projectCtaBg.svg";
+import industryicon1 from "@/assets/industries/ai/icon/dbd2_i1.png";
+import industryicon2 from "@/assets/industries/ai/icon/b_i2.png";
+import industryicon3 from "@/assets/industries/ai/icon/b_i4.png";
+import industryicon4 from "@/assets/industries/ai/icon/_i5.png";
+import projectCtaBg from "@/assets/industries/ai/projectCtaBg.svg";
 
 import ProjectCTA from "@/components/ProjectCTA/ProjectCTA";
 import FAQSection from "@/components/Sections/FaqSection/FaqSection";

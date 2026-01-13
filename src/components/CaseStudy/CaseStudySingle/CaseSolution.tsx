@@ -1,5 +1,5 @@
 import Image from "next/image";
-import icon from "public/assets/case-study/single-case-study/artificial-intelligence.svg";
+import icon from "@/assets/case-study/single-case-study/artificial-intelligence.svg";
 import Heading from "@/components/Heading/Heading";
 import { motion } from "framer-motion";
 

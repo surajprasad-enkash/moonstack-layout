@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import check_icon from "public/assets/app-development-images/checkmark-green-v2.svg";
+import check_icon from "@/assets/app-development-images/checkmark-green-v2.svg";
 interface TeamBottomInfoProps {
   text: string;
   bgImage: string;

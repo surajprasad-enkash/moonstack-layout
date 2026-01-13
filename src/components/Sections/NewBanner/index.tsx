@@ -3,7 +3,7 @@
 import Image, { StaticImageData } from "next/image";
 import Heading from "@/components/Heading/Heading";
 import CommanButton from "@/components/CommanButton/CommanButton";
-import BgImg from "public/assets/app-development-images/banner-underrr-cases-bg-1440.svg";
+import BgImg from "@/assets/app-development-images/banner-underrr-cases-bg-1440.svg";
 import { cn } from "@/lib/utils";
 
 interface NewBannerProps {

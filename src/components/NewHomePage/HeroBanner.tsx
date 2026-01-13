@@ -5,23 +5,23 @@ import CommanButton from "@/components/CommanButton/CommanButton";
 import Image from "next/image";
 import Marquee from "@/components/Homepage/Marquee";
 
-import brand1 from "public/assets/newHomePage/banner/icon/brand_tag_icon1.svg";
-import brand2 from "public/assets/newHomePage/banner/icon/brand_tag_icon2.svg";
-import brand3 from "public/assets/newHomePage/banner/icon/brand_tag_icon3.svg";
+import brand1 from "@/assets/newHomePage/banner/icon/brand_tag_icon1.svg";
+import brand2 from "@/assets/newHomePage/banner/icon/brand_tag_icon2.svg";
+import brand3 from "@/assets/newHomePage/banner/icon/brand_tag_icon3.svg";
 
-import website1 from "public/assets/newHomePage/banner/icon/website_tag_icon1.svg";
-import website2 from "public/assets/newHomePage/banner/icon/website_tag_icon2.svg";
-import website3 from "public/assets/newHomePage/banner/icon/website_tag_icon3.svg";
+import website1 from "@/assets/newHomePage/banner/icon/website_tag_icon1.svg";
+import website2 from "@/assets/newHomePage/banner/icon/website_tag_icon2.svg";
+import website3 from "@/assets/newHomePage/banner/icon/website_tag_icon3.svg";
 
-import design1 from "public/assets/newHomePage/banner/icon/design_tag_icon1.svg";
-import design2 from "public/assets/newHomePage/banner/icon/design_tag_icon2.svg";
-import design3 from "public/assets/newHomePage/banner/icon/design_tag_icon3.svg";
+import design1 from "@/assets/newHomePage/banner/icon/design_tag_icon1.svg";
+import design2 from "@/assets/newHomePage/banner/icon/design_tag_icon2.svg";
+import design3 from "@/assets/newHomePage/banner/icon/design_tag_icon3.svg";
 
-import heroVideoPlay from "public/assets/newHomePage/banner/icon/hero-video-play.avif";
-import homeHeroTitleDecorPlay from "public/assets/newHomePage/banner/icon/home-hero-title-decor-play.avif";
+import heroVideoPlay from "@/assets/newHomePage/banner/icon/hero-video-play.avif";
+import homeHeroTitleDecorPlay from "@/assets/newHomePage/banner/icon/home-hero-title-decor-play.avif";
 
-import bgImage from "public/assets/newHomePage/banner/bg-hero-updated.png";
-import bgImage2 from "public/assets/newHomePage/banner/baimage2.svg";
+import bgImage from "@/assets/newHomePage/banner/bg-hero-updated.png";
+import bgImage2 from "@/assets/newHomePage/banner/baimage2.svg";
 
 import Link from "next/link";
 import Space from "../Space";

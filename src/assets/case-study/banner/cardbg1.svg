@@ -1,0 +1,36 @@
+<svg width="1280" height="478" viewBox="0 0 1280 478" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_4163_30214)">
+<rect width="1280" height="478" rx="20" fill="#171717"/>
+<g filter="url(#filter0_n_4163_30214)">
+<rect x="-61.3516" y="-50.5488" width="1373.91" height="543.211" fill="black"/>
+</g>
+<path d="M1349.82 0C1246.97 63.9417 1217.98 305.605 980.264 323.507C802.121 336.923 809.964 172.964 816.658 122.568C831.862 8.09017 1022.02 13.9412 1058.22 129.156C1117.94 319.201 343.28 300.211 269.27 576.869" stroke="url(#paint0_linear_4163_30214)" stroke-width="68.64"/>
+</g>
+<defs>
+<filter id="filter0_n_4163_30214" x="-61.3516" y="-50.5488" width="1373.91" height="543.211" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.3333333432674408 0.3333333432674408" stitchTiles="stitch" numOctaves="3" result="noise" seed="6322" />
+<feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+<feComponentTransfer in="alphaNoise" result="coloredNoise1">
+<feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+</feComponentTransfer>
+<feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+<feFlood flood-color="#0B2A15" result="color1Flood" />
+<feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+<feMerge result="effect1_noise_4163_30214">
+<feMergeNode in="shape" />
+<feMergeNode in="color1" />
+</feMerge>
+</filter>
+<linearGradient id="paint0_linear_4163_30214" x1="1424.76" y1="-35.3203" x2="573.418" y2="520.757" gradientUnits="userSpaceOnUse">
+<stop stop-color="#006825"/>
+<stop offset="0.450763" stop-color="#00E550"/>
+<stop offset="0.874189" stop-color="#00E550"/>
+<stop offset="1" stop-color="#006825"/>
+</linearGradient>
+<clipPath id="clip0_4163_30214">
+<rect width="1280" height="478" rx="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>

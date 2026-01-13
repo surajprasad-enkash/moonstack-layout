@@ -2216,7 +2216,7 @@ h1 .highlight-text {
 }
 
 .aboutValueSectionBoxBg2 {
-  background: url("public/assets/about-us/aboutValueSectionBoxBg2.svg");
+  background: url("@/assets/about-us/aboutValueSectionBoxBg2.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Heading, { HeadingSegment } from "@/components/Heading/Heading";
-import vector from "public/assets/app-development-images/processVector.svg";
+import vector from "@/assets/app-development-images/processVector.svg";
 import { cn } from "@/lib/utils";
 
 interface StageItem {

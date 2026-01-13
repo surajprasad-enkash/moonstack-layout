@@ -1,7 +1,7 @@
 "use client";
 
 import Heading from "../Heading/Heading";
-import bgImage from "public/assets/about-us/DnaSection/bgImage.svg";
+import bgImage from "@/assets/about-us/DnaSection/bgImage.svg";
 import Image from "next/image";
 interface DnaSectionProps {
   title: {

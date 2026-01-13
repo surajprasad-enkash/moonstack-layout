@@ -1,14 +1,14 @@
-import { useRouter } from "next/router";
 import SinglePostData from "@/components/SingleBlog/SingleBlogApi";
 import Layout from "@/components/Layout";
 
-export default function BlogPage() {
-  const router = useRouter();
-  const { slug } = router.query;
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
 
-  if (!slug || typeof slug !== "string") {
-    return <p className="text-[black]">Loading...</p>;
-  }
+export default function BlogDetailsPage({ params }: PageProps) {
+  const { slug } = params;
 
   return (
     <Layout>

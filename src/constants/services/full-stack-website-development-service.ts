@@ -1,24 +1,24 @@
 import { PageData } from "@/types/web-development-data-type";
-import managmentIconOne from "public/assets/app-development-images/managment-icon-one.svg";
-import androidIcon from "public/assets/android-icon.svg";
-import iosIcon from "public/assets/next-icon.svg";
-import reactIcon from "public/assets/react-icon.svg";
-import nodeIcon from "public/assets/node-icon.svg";
-import pwaIcon from "public/assets/docker-icon.svg";
+import managmentIconOne from "@/assets/app-development-images/managment-icon-one.svg";
+import androidIcon from "@/assets/android-icon.svg";
+import iosIcon from "@/assets/next-icon.svg";
+import reactIcon from "@/assets/react-icon.svg";
+import nodeIcon from "@/assets/node-icon.svg";
+import pwaIcon from "@/assets/docker-icon.svg";
 
-import flutterIcon from "public/assets/python-icon.svg";
-import swiftIcon from "public/assets/aws-icon.svg";
-import nativeIconOne from "public/assets/app-development-images/native-icon-one.webp";
-import nativeIconTwo from "public/assets/app-development-images/native-icon-two.webp";
-import nativeIconThree from "public/assets/app-development-images/native-icon-three.webp";
-import nativeIconFour from "public/assets/app-development-images/native-icon-four.svg";
-import nativeIconFive from "public/assets/app-development-images/native-icon-five.svg";
-import nativeIconSix from "public/assets/app-development-images/native-icon-six.svg";
-import figmaIcon from "public/assets/figma-icon.svg";
+import flutterIcon from "@/assets/python-icon.svg";
+import swiftIcon from "@/assets/aws-icon.svg";
+import nativeIconOne from "@/assets/app-development-images/native-icon-one.webp";
+import nativeIconTwo from "@/assets/app-development-images/native-icon-two.webp";
+import nativeIconThree from "@/assets/app-development-images/native-icon-three.webp";
+import nativeIconFour from "@/assets/app-development-images/native-icon-four.svg";
+import nativeIconFive from "@/assets/app-development-images/native-icon-five.svg";
+import nativeIconSix from "@/assets/app-development-images/native-icon-six.svg";
+import figmaIcon from "@/assets/figma-icon.svg";
 
-import bannerImg from "public/assets/app-development-images/native-banner-img.webp";
+import bannerImg from "@/assets/app-development-images/native-banner-img.webp";
 
-import nativeBannerImg from "public/assets/app-development-images/native-banner-img.webp";
+import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp";
 
 import androidLottie from "../../../public/lottie/full-stack.json";
 

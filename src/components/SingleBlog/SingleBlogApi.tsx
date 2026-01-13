@@ -6,7 +6,7 @@ import Heading from "../Heading/Heading";
 import CategoryList from "../CategoryList/CategoryList";
 import RelatedPosts from "../RelatedPosts/RelatedPosts";
 import Loader from "../Loader/Loader";
-import bgImage from "public/assets/blogs/singleBlogBanner.png";
+import bgImage from "@/assets/blogs/singleBlogBanner.png";
 import Breadcrumb from "../Breadcrumb";
 import Link from "next/link";
 

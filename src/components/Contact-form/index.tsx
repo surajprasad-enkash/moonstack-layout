@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { FiArrowUpRight, FiPaperclip } from "react-icons/fi";
-import gmail from "public/assets/contact-us/gmail-icon.webp";
+import gmail from "@/assets/contact-us/gmail-icon.webp";
 import Heading from "../Heading/Heading";
 
 export default function ContactForm() {

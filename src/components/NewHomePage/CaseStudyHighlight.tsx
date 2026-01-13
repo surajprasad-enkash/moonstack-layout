@@ -1,7 +1,7 @@
 "use client";
 
 import Image, { StaticImageData } from "next/image";
-import bgImage from "public/assets/newHomePage/caseStudy/banner.svg";
+import bgImage from "@/assets/newHomePage/caseStudy/banner.svg";
 
 /* ---------------- TYPES ---------------- */
 

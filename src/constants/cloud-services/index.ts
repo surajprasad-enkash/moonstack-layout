@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
-import importanceImg from "public/assets/cloud-services/cloud-importance-1.png";
-import importanceImg3 from "public/assets/cloud-services/cloud-importance-3.png";
-import importanceImg2 from "public/assets/cloud-services/backend-importance-2.png";
+import importanceImg from "@/assets/cloud-services/cloud-importance-1.png";
+import importanceImg3 from "@/assets/cloud-services/cloud-importance-3.png";
+import importanceImg2 from "@/assets/cloud-services/backend-importance-2.png";
 
 interface ServicesContentArray {
   image: string | StaticImageData;

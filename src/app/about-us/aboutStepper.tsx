@@ -3,7 +3,7 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import Heading from "@/components/Heading/Heading";
-import bgImage from "public/assets/about-us/AboutStepper/bgImage.svg";
+import bgImage from "@/assets/about-us/AboutStepper/bgImage.svg";
 import Image from "next/image";
 const text =
   "As for the working principles of Moonstack, the latter is known for bringing ideas to life. We are a team of enthusiastic developers, designers, and strategists who work towards creating the best digital solutions.";

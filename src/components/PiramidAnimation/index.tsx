@@ -3,20 +3,20 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-import coneImg from "public/assets/carreers/piramidImg.svg";
-import logo from "public/assets/carreers/MOONSTACK.svg";
+import coneImg from "@/assets/carreers/piramidImg.svg";
+import logo from "@/assets/carreers/MOONSTACK.svg";
 
 const avatars = [
-  "/assets/carreers/avatar_1.png",
-  "/assets/carreers/avatar_2.png",
-  "/assets/carreers/avatar_3.png",
-  "/assets/carreers/avatar_4.png",
-  "/assets/carreers/avatar_5.png",
-  "/assets/carreers/avatar_6.png",
-  "/assets/carreers/avatar_7.png",
-  "/assets/carreers/avatar_8.png",
-  "/assets/carreers/avatar_9.png",
-  "/assets/carreers/avatar_10.png",
+  "@/assets/carreers/avatar_1.png",
+  "@/assets/carreers/avatar_2.png",
+  "@/assets/carreers/avatar_3.png",
+  "@/assets/carreers/avatar_4.png",
+  "@/assets/carreers/avatar_5.png",
+  "@/assets/carreers/avatar_6.png",
+  "@/assets/carreers/avatar_7.png",
+  "@/assets/carreers/avatar_8.png",
+  "@/assets/carreers/avatar_9.png",
+  "@/assets/carreers/avatar_10.png",
 ];
 
 const PiramidAnimation = () => {

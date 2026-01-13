@@ -3,8 +3,8 @@
 import Image from "next/image";
 import Heading, { HeadingSegment } from "@/components/Heading/Heading";
 import { cn } from "@/lib/utils";
-import clutchReviews from "public/assets/industries/ai/icon/clutch-reviews.svg";
-import bgImage from "public/assets/industries/ai/icon/review-bg.svg";
+import clutchReviews from "@/assets/industries/ai/icon/clutch-reviews.svg";
+import bgImage from "@/assets/industries/ai/icon/review-bg.svg";
 
 interface Testimonial {
   quote: string;

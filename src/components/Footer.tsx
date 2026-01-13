@@ -5,18 +5,20 @@ import moment from "moment";
 import Link from "next/link";
 
 /* Assets */
-import logo from "public/assets/logo-white.png";
-import upwork from "public/assets/home/upwork.svg";
-import clutch from "public/assets/home/clutch.svg";
-import facebook from "public/assets/footer/Facebook.svg";
-import linkedin from "public/assets/footer/linkdin.svg";
-import twitter from "public/assets/footer/twitter.svg";
-import instagram from "public/assets/footer/instagram.svg";
+import logo from "@/assets/logo-white.png";
+import upwork from "@/assets/home/upwork.svg";
+import clutch from "@/assets/home/clutch.svg";
+import facebook from "@/assets/footer/Facebook.svg";
+import linkedin from "@/assets/footer/linkdin.svg";
+import twitter from "@/assets/footer/twitter.svg";
+import instagram from "@/assets/footer/instagram.svg";
+
+
 
 // BIG moonstack image
-import moonstackText from "public/assets/footer/moonstack.svg";
+import moonstackText from "@/assets/footer/moonstack.svg";
 
-import footerBg from "public/assets/footer/newbg.svg";
+import footerBg from "@/assets/footer/newbg.svg";
 import HoverSlideText from "./HoverSlideText";
 
 const Footer = () => {
@@ -35,9 +37,9 @@ const Footer = () => {
             />
           )}
           <div className="container">
-            <div className="row flex flex-wrap">
+            <div className="row flex flex-wrap gap-[60px]">
               {/* LEFT */}
-              <div className="footerLeft w-[100%] md:w-[40%]">
+              <div className="footerLeft w-[100%] md:w-[calc(40%-60px)]">
                 <div className="max-w-[500]">
                   <div className="footer_logo mb-[24px]">
                     <Link href="/">

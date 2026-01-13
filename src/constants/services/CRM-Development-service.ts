@@ -1,25 +1,25 @@
 import { PageData } from "@/types/web-development-data-type";
-import androidIcon from "public/assets/android-icon.svg";
-import angularIcon from "public/assets/angular-icon.svg";
-import reactIcon from "public/assets/react-icon.svg";
-import nodeIcon from "public/assets/node-icon.svg";
-import mysqlIcon from "public/assets/pwa-icon.svg";
+import androidIcon from "@/assets/android-icon.svg";
+import angularIcon from "@/assets/angular-icon.svg";
+import reactIcon from "@/assets/react-icon.svg";
+import nodeIcon from "@/assets/node-icon.svg";
+import mysqlIcon from "@/assets/pwa-icon.svg";
 
-import phpIcon from "public/assets/php-icon.svg";
-import mongodbIcon from "public/assets/moz-icon.svg";
-import managmentIconOne from "public/assets/app-development-images/managment-icon-one.svg";
-import pwaIconOne from "public/assets/app-development-images/pwa-icon-one.svg";
-import pwaIconTwo from "public/assets/app-development-images/pwa-icon-two.svg";
-import pwaIconThree from "public/assets/app-development-images/pwa-icon-three.svg";
-import pwaIconFour from "public/assets/app-development-images/pwa-icon-four.svg";
-import pwaIconFive from "public/assets/app-development-images/pwa-icon-five.svg";
-import pwaIconSix from "public/assets/app-development-images/pwa-icon-six.svg";
-import figmaIcon from "public/assets/figma-icon.svg";
+import phpIcon from "@/assets/php-icon.svg";
+import mongodbIcon from "@/assets/moz-icon.svg";
+import managmentIconOne from "@/assets/app-development-images/managment-icon-one.svg";
+import pwaIconOne from "@/assets/app-development-images/pwa-icon-one.svg";
+import pwaIconTwo from "@/assets/app-development-images/pwa-icon-two.svg";
+import pwaIconThree from "@/assets/app-development-images/pwa-icon-three.svg";
+import pwaIconFour from "@/assets/app-development-images/pwa-icon-four.svg";
+import pwaIconFive from "@/assets/app-development-images/pwa-icon-five.svg";
+import pwaIconSix from "@/assets/app-development-images/pwa-icon-six.svg";
+import figmaIcon from "@/assets/figma-icon.svg";
 
-import androidContactbannerImg from "public/assets/app-development-images/contact-app-img.webp";
+import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp";
 
 import androidLottie from "../../../public/lottie/crm.json";
-import nativeBannerImg from "public/assets/app-development-images/native-banner-img.webp";
+import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp";
 
 export const crm: PageData = {
   hero: {

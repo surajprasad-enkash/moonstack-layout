@@ -1,13 +1,13 @@
 import { PageData } from "@/types/web-development-data-type";
 
-import iosImg from "public/assets/app-development-images/ios-hero-img.webp";
+import iosImg from "@/assets/app-development-images/ios-hero-img.webp";
 import iosLottie from "../../../public/lottie/ios.json";
-import mobIosBanner from "public/assets/app-development-images/ux-audit-banner.webp";
-import iosBannerImg from "public/assets/app-development-images/ios-hire-img.webp";
-import iosContactbannerBg from "public/assets/app-development-images/ios-contact-img.webp";
-import satisfaction from "public/assets/app-development-images/satisfaction.webp";
-import frontendDevelopment from "public/assets/app-development-images/frontend-development.webp";
-import consultancy from "public/assets/app-development-images/consultancy.webp";
+import mobIosBanner from "@/assets/app-development-images/ux-audit-banner.webp";
+import iosBannerImg from "@/assets/app-development-images/ios-hire-img.webp";
+import iosContactbannerBg from "@/assets/app-development-images/ios-contact-img.webp";
+import satisfaction from "@/assets/app-development-images/satisfaction.webp";
+import frontendDevelopment from "@/assets/app-development-images/frontend-development.webp";
+import consultancy from "@/assets/app-development-images/consultancy.webp";
 
 export const ios: PageData = {
   hero: {

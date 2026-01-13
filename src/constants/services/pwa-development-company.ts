@@ -1,14 +1,14 @@
 import { PageData } from "@/types/web-development-data-type";
 
-import pwaImg from "public/assets/app-development-images/pwa-hero-img.webp";
+import pwaImg from "@/assets/app-development-images/pwa-hero-img.webp";
 import pwaLottie from "../../../public/lottie/pwa.json";
-import mobAppBanner from "public/assets/app-development-images/mob-design-banner.webp";
-import pwaBannerImg from "public/assets/app-development-images/pwa-banner-img.webp";
-import iosContactbannerBg from "public/assets/app-development-images/ios-contact-img.webp";
+import mobAppBanner from "@/assets/app-development-images/mob-design-banner.webp";
+import pwaBannerImg from "@/assets/app-development-images/pwa-banner-img.webp";
+import iosContactbannerBg from "@/assets/app-development-images/ios-contact-img.webp";
 
-import intuitiveIcon from "public/assets/app-development-images/featureImgOne.webp";
-import engagingIcon from "public/assets/app-development-images/featureImgTwo.webp";
-import brandingIcon from "public/assets/app-development-images/featureImgThree.webp";
+import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp";
+import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp";
+import brandingIcon from "@/assets/app-development-images/featureImgThree.webp";
 
 export const pwa: PageData = {
   hero: {

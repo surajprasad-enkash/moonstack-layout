@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { HiArrowRight } from "react-icons/hi";
-import bgImg from "public/assets/header/magamenu-bg.svg";
+import bgImg from "@/assets/header/magamenu-bg.svg";
 
 interface Post {
   author: any;

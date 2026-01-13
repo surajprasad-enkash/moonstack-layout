@@ -3,7 +3,7 @@ import Heading from "@/components/Heading/Heading";
 import CustomButton from "@/components/CommanButton/CommanButton";
 import MarqueeComponent from "@/components/Homepage/Marquee";
 
-import bgImage from "public/assets/about-us/banner/hero-bg.svg";
+import bgImage from "@/assets/about-us/banner/hero-bg.svg";
 import Image from "next/image";
 import Breadcrumb from "@/components/Breadcrumb";
 

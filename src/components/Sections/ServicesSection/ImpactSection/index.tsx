@@ -3,7 +3,7 @@
 import Image from "next/image";
 import clsx from "clsx";
 import { ImpactSectionProps } from "@/types/impact";
-import gradientBorder from "public/assets/app-development-images/gradient-middle-border.svg";
+import gradientBorder from "@/assets/app-development-images/gradient-middle-border.svg";
 import Heading from "@/components/Heading/Heading";
 
 const cardVariants = {

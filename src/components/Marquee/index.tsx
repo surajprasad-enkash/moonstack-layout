@@ -4,15 +4,15 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 // Logos
-import figma from "public/assets/figma.svg";
-import React from "public/assets/react-icon.svg";
-import node from "public/assets/node-icon.svg";
-import php from "public/assets/php-icon.svg";
-import Mobile from "public/assets/js-icon.svg";
-import ios from "public/assets/ios-icon.svg";
-import adobe from "public/assets/adobe-xd.svg";
-import flutter from "public/assets/flutter-icon.svg";
-import swift from "public/assets/swift-icon.svg";
+import figma from "@/assets/figma.svg";
+import React from "@/assets/react-icon.svg";
+import node from "@/assets/node-icon.svg";
+import php from "@/assets/php-icon.svg";
+import Mobile from "@/assets/js-icon.svg";
+import ios from "@/assets/ios-icon.svg";
+import adobe from "@/assets/adobe-xd.svg";
+import flutter from "@/assets/flutter-icon.svg";
+import swift from "@/assets/swift-icon.svg";
 
 /* ---------------- TYPES ---------------- */
 

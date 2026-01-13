@@ -5,7 +5,7 @@ import CommanButton from "@/components/CommanButton/CommanButton";
 import Loader from "@/components/Loader/Loader";
 import CaseStudyApiProvider from "./CaseStudyApiProvider";
 import CaseStudyCard from "./CaseStudyCard";
-import bannerBg from "public/assets/case-study/banner/bannerBg.svg";
+import bannerBg from "@/assets/case-study/banner/bannerBg.svg";
 import Image from "next/image";
 
 interface Props {

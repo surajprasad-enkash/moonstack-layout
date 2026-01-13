@@ -8,11 +8,11 @@ import { motion } from "framer-motion";
 import { slides } from "./data";
 import TeamBottomInfo from "@/components/TeamBottomInfo";
 import CommanButton from "@/components/CommanButton/CommanButton";
-import TeamBottomInfoImg1 from "public/assets/app-development-images/team-bottom-cards-1.svg";
-import TeamBottomInfoImg2 from "../pubpublic/assets/opment-images/team-bottom-cards-2.svg";
-import TeamBottomInfoImg3 from "../pubpublic/assets/opment-images/team-bottom-cards-3.svg";
-import TeamBottomInfoImg4 from "../pubpublic/assets/opment-images/team-bottom-cards-4.svg";
-import bgImageGradient from "../pubpublic/assets/opment-images/team-bg-1440.svg";
+import TeamBottomInfoImg1 from "@/assets/app-development-images/team-bottom-cards-1.svg";
+import TeamBottomInfoImg2 from "../pub@/assets/opment-images/team-bottom-cards-2.svg";
+import TeamBottomInfoImg3 from "../pub@/assets/opment-images/team-bottom-cards-3.svg";
+import TeamBottomInfoImg4 from "../pub@/assets/opment-images/team-bottom-cards-4.svg";
+import bgImageGradient from "../pub@/assets/opment-images/team-bg-1440.svg";
 
 interface TeamSliderSectionProps {
   headingLines: { text: string; color?: string }[];

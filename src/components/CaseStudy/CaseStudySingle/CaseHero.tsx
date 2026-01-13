@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bgImage from "public/assets/case-study/single-case-study/banner.svg";
+import bgImage from "@/assets/case-study/single-case-study/banner.svg";
 import Marquee from "@/components/Homepage/Marquee";
 import Breadcrumb from "@/components/Breadcrumb";
 

@@ -11,10 +11,10 @@ import { impactStatsData } from "@/components/about-page/data/impactStats";
 import DnaSection from "@/components/about-page/DnaSection";
 import IndustryExperienceSection from "@/components/Industries/IndustryExperienceSection";
 
-import industryicon1 from "public/assets/industries/ai/icon/dbd2_i1.png";
-import industryicon2 from "public/assets/industries/ai/icon/b_i2.png";
-import industryicon3 from "public/assets/industries/ai/icon/b_i4.png";
-import industryicon4 from "public/assets/industries/ai/icon/_i5.png";
+import industryicon1 from "@/assets/industries/ai/icon/dbd2_i1.png";
+import industryicon2 from "@/assets/industries/ai/icon/b_i2.png";
+import industryicon3 from "@/assets/industries/ai/icon/b_i4.png";
+import industryicon4 from "@/assets/industries/ai/icon/_i5.png";
 import Space from "@/components/Space";
 
 const AboutUs = (): React.JSX.Element => {

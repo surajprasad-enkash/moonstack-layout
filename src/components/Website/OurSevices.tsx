@@ -3,7 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import Tag from "../Tag/Tag";
 import Heading from "../Heading/Heading";
-import arrowUp from "public/assets/arrow-up.svg";
+import arrowUp from "@/assets/arrow-up.svg";
 import { motion } from "framer-motion";
 
 interface IServiceItem {

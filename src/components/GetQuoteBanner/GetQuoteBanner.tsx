@@ -3,8 +3,8 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import Heading from "@/components/Heading/Heading";
 import CustomButton from "@/components/CommanButton/CommanButton";
-import topEllips from "public/assets/Quote_Ellips_One.svg";
-import bottomEllips from "public/assets/Quote_Ellips_Two.svg";
+import topEllips from "@/assets/Quote_Ellips_One.svg";
+import bottomEllips from "@/assets/Quote_Ellips_Two.svg";
 
 interface GetQuoteBannerProps {
   headingContent: { text: string; color?: string }[];

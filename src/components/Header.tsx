@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "public/assets/logo-white.png";
+import logo from "@/assets/logo-white.png";
 import Image from "next/image";
 import Link from "next/link";
 import CustomButton from "./CommanButton/CommanButton";

@@ -11,7 +11,7 @@ import LatestOpportunity from "./latestOpp";
 import { benefitsData } from "./data";
 
 //utils
-import bannerImg from "public/assets/android-app-bg.webp";
+import bannerImg from "@/assets/android-app-bg.webp";
 import ProcessSection from "./process";
 
 const carreers = (): React.JSX.Element => {

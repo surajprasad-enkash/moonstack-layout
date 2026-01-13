@@ -3,15 +3,15 @@
 import Image, { StaticImageData } from "next/image";
 import MarqueeComponent from "../Homepage/Marquee";
 import Heading from "../Heading/Heading";
-import bgImage from "public/assets/newHomePage/about/banner.png";
+import bgImage from "@/assets/newHomePage/about/banner.png";
 
-import dnwe from "public/assets/home/slider-logo/dnwe.svg";
-import enetworks from "public/assets/home/slider-logo/enetworks.svg";
-import enkash from "public/assets/home/slider-logo/enkash.svg";
-import hydrocan from "public/assets/home/slider-logo/hydrocan.svg";
-import pickright from "public/assets/home/slider-logo/pickright.svg";
-import sabc from "public/assets/home/slider-logo/sabc.svg";
-import barinmate from "public/assets/home/slider-logo/brainmate.svg";
+import dnwe from "@/assets/home/slider-logo/dnwe.svg";
+import enetworks from "@/assets/home/slider-logo/enetworks.svg";
+import enkash from "@/assets/home/slider-logo/enkash.svg";
+import hydrocan from "@/assets/home/slider-logo/hydrocan.svg";
+import pickright from "@/assets/home/slider-logo/pickright.svg";
+import sabc from "@/assets/home/slider-logo/sabc.svg";
+import barinmate from "@/assets/home/slider-logo/brainmate.svg";
 
 /* ---------------- TYPES ---------------- */
 

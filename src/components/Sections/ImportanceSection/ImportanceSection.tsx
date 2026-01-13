@@ -92,7 +92,7 @@ const ImportanceSection: React.FC<IImportanceSectionProps> = ({
               {points.map((text, index) => (
                 <li key={index} className="flex items-start gap-4 pb-3">
                   <Image
-                    src="/assets/green-tick-icon.svg"
+                    src="@/assets/green-tick-icon.svg"
                     alt="tick"
                     width={20}
                     height={20}

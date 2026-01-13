@@ -6,7 +6,7 @@ import Marquee from "@/components/Homepage/Marquee";
 import Form from "@/components/Form/Form";
 import ContactInfoCard from "@/components/ProjectInquiryModal/ContactInfoCard";
 
-import bgImage from "public/assets/blogs/blogPageNewBg.svg";
+import bgImage from "@/assets/blogs/blogPageNewBg.svg";
 import Breadcrumb from "@/components/Breadcrumb";
 const breadcrumbs = [
   {

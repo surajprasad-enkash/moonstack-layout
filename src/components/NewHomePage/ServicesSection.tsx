@@ -4,7 +4,7 @@ import Link from "next/link";
 import CommanButton from "../CommanButton/CommanButton";
 import Heading from "../Heading/Heading";
 import Image from "next/image";
-import clientImg from "public/assets/newHomePage/ImpactStatsSection/client_logo.png";
+import clientImg from "@/assets/newHomePage/ImpactStatsSection/client_logo.png";
 
 interface ServiceItem {
   label: string;

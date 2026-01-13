@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import LottiePlayer from "../LottieAnimation";
-import bgImageFunding from "public/assets/about-us/ImpactStatsSection/funding-bg.svg";
-import bgImageProject from "public/assets/about-us/project-card-bg.webp";
+import bgImageFunding from "@/assets/about-us/ImpactStatsSection/funding-bg.svg";
+import bgImageProject from "@/assets/about-us/project-card-bg.webp";
 interface ImpactStatsSectionProps {
   data: any;
 }

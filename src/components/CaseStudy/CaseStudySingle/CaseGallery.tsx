@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bannerBg from "../pubpublic/assets/y/banner/bannerBg.svg";
+import bannerBg from "../pub@/assets/y/banner/bannerBg.svg";
 
 export default function CaseGallery({ images }: any) {
   return (

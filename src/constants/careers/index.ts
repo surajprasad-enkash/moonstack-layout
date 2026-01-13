@@ -1,4 +1,4 @@
-import jobOppImg from "public/assets/carreers/opportunity-icon.svg";
+import jobOppImg from "@/assets/carreers/opportunity-icon.svg";
 
 export const jobsData = [
   {

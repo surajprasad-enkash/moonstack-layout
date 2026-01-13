@@ -28,30 +28,30 @@ import AwardsSection, {
 import Space from "@/components/Space";
 
 /* ===================== ASSETS ===================== */
-import gradientBg from "public/assets/app-development-images/bannerGradientBg.svg";
-import userImage from "public/assets/app-development-images/autorImg.webp";
-import infinityIcon from "public/assets/app-development-images/infinityLogo.svg";
-import playerIcon from "public/assets/app-development-images/playerIcon.svg";
-import voxeIcon from "public/assets/app-development-images/voxeIcon.svg";
-import designer from "public/assets/app-development-images/work-directly.webp";
-import hiring from "public/assets/app-development-images/hiring.webp";
-import delivery from "public/assets/app-development-images/guarante.webp";
-import collaboration from "public/assets/app-development-images/flexible.webp";
-import androidBgImg from "public/assets/app-development-images/hero-bg-1440.svg";
-import projectCtaBgImg from "public/assets/app-development-images/af_match-bg-1440.svg";
-import reviewBgImg from "public/assets/app-development-images/review-under-hero-bg-1440.svg";
-import bccKristenCheng from "public/assets/industries/ai/icon/bcc_kristen-cheng.avif";
+import gradientBg from "@/assets/app-development-images/bannerGradientBg.svg";
+import userImage from "@/assets/app-development-images/autorImg.webp";
+import infinityIcon from "@/assets/app-development-images/infinityLogo.svg";
+import playerIcon from "@/assets/app-development-images/playerIcon.svg";
+import voxeIcon from "@/assets/app-development-images/voxeIcon.svg";
+import designer from "@/assets/app-development-images/work-directly.webp";
+import hiring from "@/assets/app-development-images/hiring.webp";
+import delivery from "@/assets/app-development-images/guarante.webp";
+import collaboration from "@/assets/app-development-images/flexible.webp";
+import androidBgImg from "@/assets/app-development-images/hero-bg-1440.svg";
+import projectCtaBgImg from "@/assets/app-development-images/af_match-bg-1440.svg";
+import reviewBgImg from "@/assets/app-development-images/review-under-hero-bg-1440.svg";
+import bccKristenCheng from "@/assets/industries/ai/icon/bcc_kristen-cheng.avif";
 
 /* ===================== AWARDS ===================== */
-import award1 from "public/assets/newHomePage/awards/clutch.svg";
-import award2 from "public/assets/newHomePage/awards/Top_Design_company_2025.png";
-import award3 from "public/assets/newHomePage/awards/Top_Digital_Design_Company_2025.png";
-import award4 from "public/assets/newHomePage/awards/clutch-badge-6.svg";
-import award5 from "public/assets/newHomePage/awards/clutch-badge.svg";
-import award6 from "public/assets/newHomePage/awards/dribbble.svg";
-import award7 from "public/assets/newHomePage/awards/good-firms.svg";
-import award8 from "public/assets/newHomePage/awards/upwork.svg";
-import icon from "public/assets/newHomePage/awards/icon.svg";
+import award1 from "@/assets/newHomePage/awards/clutch.svg";
+import award2 from "@/assets/newHomePage/awards/Top_Design_company_2025.png";
+import award3 from "@/assets/newHomePage/awards/Top_Digital_Design_Company_2025.png";
+import award4 from "@/assets/newHomePage/awards/clutch-badge-6.svg";
+import award5 from "@/assets/newHomePage/awards/clutch-badge.svg";
+import award6 from "@/assets/newHomePage/awards/dribbble.svg";
+import award7 from "@/assets/newHomePage/awards/good-firms.svg";
+import award8 from "@/assets/newHomePage/awards/upwork.svg";
+import icon from "@/assets/newHomePage/awards/icon.svg";
 
 /* ===================== DATA ===================== */
 const awards: AwardItem[] = [

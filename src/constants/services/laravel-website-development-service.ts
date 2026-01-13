@@ -1,30 +1,30 @@
 import { PageData } from "@/types/web-development-data-type";
-import laravelImg from "public/assets/laravel-hero-img.webp";
-import laravelBgImg from "public/assets/laravel-bg.webp";
-import android from "public/assets/app-development-images/android-icon.svg";
-import apiIcon from "public/assets/app-development-images/api-icon.svg";
-import testingIcon from "public/assets/app-development-images/testing-icon.svg";
-import playstoreIcon from "public/assets/app-development-images/playstore-icon.svg";
-import settingIcon from "public/assets/app-development-images/setting-icon.svg";
-import codeIcon from "public/assets/app-development-images/code-icon.svg";
-import androidTabImgOne from "public/assets/app-development-images/android-tab-img-one.webp";
-import androidTabImgTwo from "public/assets/app-development-images/android-tab-img-two.webp";
-import androidTabImgThree from "public/assets/app-development-images/android-tab-img-three.webp";
-import androidTabImgFour from "public/assets/app-development-images/android-tab-img-four.webp";
-import androidTabImgFive from "public/assets/app-development-images/android-tab-img-five.webp";
-import androidTabImgSix from "public/assets/app-development-images/android-tab-img-six.webp";
-import managmentIconOne from "public/assets/app-development-images/managment-icon-one.svg";
-import androidIcon from "public/assets/android-icon.svg";
-import iosIcon from "public/assets/ios-icon.svg";
-import reactIcon from "public/assets/react-icon.svg";
-import pwaIcon from "public/assets/pwa-icon.svg";
+import laravelImg from "@/assets/laravel-hero-img.webp";
+import laravelBgImg from "@/assets/laravel-bg.webp";
+import android from "@/assets/app-development-images/android-icon.svg";
+import apiIcon from "@/assets/app-development-images/api-icon.svg";
+import testingIcon from "@/assets/app-development-images/testing-icon.svg";
+import playstoreIcon from "@/assets/app-development-images/playstore-icon.svg";
+import settingIcon from "@/assets/app-development-images/setting-icon.svg";
+import codeIcon from "@/assets/app-development-images/code-icon.svg";
+import androidTabImgOne from "@/assets/app-development-images/android-tab-img-one.webp";
+import androidTabImgTwo from "@/assets/app-development-images/android-tab-img-two.webp";
+import androidTabImgThree from "@/assets/app-development-images/android-tab-img-three.webp";
+import androidTabImgFour from "@/assets/app-development-images/android-tab-img-four.webp";
+import androidTabImgFive from "@/assets/app-development-images/android-tab-img-five.webp";
+import androidTabImgSix from "@/assets/app-development-images/android-tab-img-six.webp";
+import managmentIconOne from "@/assets/app-development-images/managment-icon-one.svg";
+import androidIcon from "@/assets/android-icon.svg";
+import iosIcon from "@/assets/ios-icon.svg";
+import reactIcon from "@/assets/react-icon.svg";
+import pwaIcon from "@/assets/pwa-icon.svg";
 
-import flutterIcon from "public/assets/flutter-icon.svg";
-import swiftIcon from "public/assets/swift-icon.svg";
-import bannerImg from "public/assets/app-development-images/native-banner-img.webp";
+import flutterIcon from "@/assets/flutter-icon.svg";
+import swiftIcon from "@/assets/swift-icon.svg";
+import bannerImg from "@/assets/app-development-images/native-banner-img.webp";
 
 import androidLottie from "../../../public/lottie/laravel.json";
-import nativeBannerImg from "public/assets/app-development-images/native-banner-img.webp";
+import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp";
 
 export const laravel: PageData = {
   hero: {

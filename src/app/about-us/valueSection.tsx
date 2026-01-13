@@ -2,7 +2,7 @@
 
 import { valuesData } from "@/constants/about";
 import Image from "next/image";
-import bgImage from "public/assets/about-us/OurValuesSection/bgImage.svg";
+import bgImage from "@/assets/about-us/OurValuesSection/bgImage.svg";
 import Heading from "@/components/Heading/Heading";
 
 export default function OurValuesSection() {
