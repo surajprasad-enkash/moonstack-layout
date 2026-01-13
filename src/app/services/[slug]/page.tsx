@@ -51,6 +51,49 @@ import award7 from "@/assets/newHomePage/awards/good-firms.svg";
 import award8 from "@/assets/newHomePage/awards/upwork.svg";
 import icon from "@/assets/newHomePage/awards/icon.svg";
 
+import type { Metadata } from "next";
+
+interface PageProps {
+  params: { slug: string };
+}
+
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const page = pagesData[pagesKeys[params.slug as TPageKeys] as TPageKeys];
+
+  if (!page?.seo) {
+    return {
+      title: "Services | Moonstack",
+      description: "Moonstack services",
+    };
+  }
+
+  return {
+    title: page.seo.title,
+    description: page.seo.description,
+    keywords: page.seo.keywords,
+    alternates: {
+      canonical: page.seo.canonical,
+    },
+    openGraph: {
+      title: page.seo.title,
+      description: page.seo.description,
+      url: page.seo.canonical,
+      siteName: "Moonstack",
+      type: "website",
+      images: page.seo.ogImage ? [{ url: page.seo.ogImage }] : [],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: page.seo.title,
+      description: page.seo.description,
+      images: page.seo.ogImage ? [page.seo.ogImage] : [],
+    },
+  };
+}
+
 /* ===================== DATA ===================== */
 const awards: AwardItem[] = [
   {
@@ -83,233 +126,235 @@ export default function ApplicationPage({ params }: PageProps) {
   }
 
   return (
-    <Layout>
-      <AppCategoryBanner
-        title={page.hero.title}
-        description={page.hero.description}
-        mediaType="lottie"
-        lottieData={page.hero.lottieData}
-        buttonText="Talk to our experts"
-        bgColor="bg-black"
-        bgImage={androidBgImg}
-        breadcrumbs={page.hero.breadcrumbs}
-      />
-
-      <Space />
-
-      <TestimonialCard
-        quote={page.points}
-        highlightText={page.highlightText}
-        authorName="Aetienne Sardon"
-        authorRole="Founder at MYSO Finance"
-        authorImage={userImage}
-        bgImage={reviewBgImg}
-      />
-
-      <Space size={160} />
-
-      <FeatureSection
-        heading={page.solutions.headingContent}
-        features={page.featuresData}
-      />
-
-      {page?.processSteps && (
-        <ProcessStages
-          heading={page.processSteps.headingText}
-          description={page.processSteps.subHeadingText}
+    <>
+      <Layout>
+        <AppCategoryBanner
+          title={page.hero.title}
+          description={page.hero.description}
+          mediaType="lottie"
+          lottieData={page.hero.lottieData}
+          buttonText="Talk to our experts"
+          bgColor="bg-black"
+          bgImage={androidBgImg}
+          breadcrumbs={page.hero.breadcrumbs}
         />
-      )}
 
-      <OutcomeBanner
-        heading={[
-          { text: "Business outcomes", color: "text-white" },
-          {
-            text: " you will get:",
-            color: "text-white libreItalic font-[400]",
-          },
-        ]}
-        checklist={[
-          "Boosted engagement",
-          "Improved brand recognition",
-          "High app downloads",
-          "Maximize user satisfaction",
-        ]}
-        bgImage={gradientBg}
-        buttonText="Get a quote"
-      />
+        <Space />
 
-      <Space size={160} />
+        <TestimonialCard
+          quote={page.points}
+          highlightText={page.highlightText}
+          authorName="Aetienne Sardon"
+          authorRole="Founder at MYSO Finance"
+          authorImage={userImage}
+          bgImage={reviewBgImg}
+        />
 
-      <AwardsSection
-        label=""
-        heading={[
-          { text: "While the growth " },
-          {
-            text: "of our clients ",
-            className: "libreItalic font-[400] highlight-text",
-          },
-          { text: "is what " },
-          {
-            text: "matters ",
-            className: "libreItalic font-[400] highlight-text",
-          },
-          { text: "most, it’s nice to get awards" },
-        ]}
-        awards={awards}
-      />
+        <Space size={160} />
 
-      <ImpactSection
-        heading={[
-          { text: "Investing in your ", color: "text-white" },
-          {
-            text: "own mobile app is a ",
-            color: "text-white libreItalic font-[400] highlight-text",
-          },
-          { text: "competitive advantage", color: "text-white" },
-        ]}
-        description="Our mobile design services and approach are result-driven..."
-        cards={[
-          {
-            id: "infinity",
-            logo: infinityIcon,
-            title: "Infinity",
-            value: "x5",
-            label: "Retention rate boost",
-            description:
-              "Our experts delivered a top-notch mobile app for Infinity Web3 platform.",
-            variant: "dark",
-          },
-          {
-            id: "voxe",
-            title: "VOXE",
-            logo: voxeIcon,
-            value: "7.1M",
-            label: "Audience reach",
-            description:
-              "Outstanding mobile app design helped VOXE reach a wider audience.",
-            variant: "light",
-          },
-          {
-            id: "players",
-            logo: playerIcon,
-            title: "Players Health",
-            value: "85%",
-            label: "User satisfaction rate",
-            description:
-              "Players Health users’ needs are covered with intuitive design.",
-            variant: "accent",
-          },
-        ]}
-      />
+        <FeatureSection
+          heading={page.solutions.headingContent}
+          features={page.featuresData}
+        />
 
-      <AndroidCaseStudySection
-        title={[
-          { text: "Our mobile app design ", color: "text-white" },
-          {
-            text: "works prove themselves",
-            color: "text-white libreItalic font-[400] highlight-text",
-          },
-        ]}
-        description="We've helped many startups and companies design high-quality mobile applications."
-      />
+        {page?.processSteps && (
+          <ProcessStages
+            heading={page.processSteps.headingText}
+            description={page.processSteps.subHeadingText}
+          />
+        )}
 
-      <NewBanner
-        headingLines={[
-          { text: "Strengthen your user" },
-          { text: "connection with an" },
-          { text: "intuitive mobile app" },
-        ]}
-        imageSrc={page.mobDesignBanner}
-        buttonText="Contact us"
-      />
+        <OutcomeBanner
+          heading={[
+            { text: "Business outcomes", color: "text-white" },
+            {
+              text: " you will get:",
+              color: "text-white libreItalic font-[400]",
+            },
+          ]}
+          checklist={[
+            "Boosted engagement",
+            "Improved brand recognition",
+            "High app downloads",
+            "Maximize user satisfaction",
+          ]}
+          bgImage={gradientBg}
+          buttonText="Get a quote"
+        />
 
-      <TechMarqueeComponent />
+        <Space size={160} />
 
-      <QualitySection
-        features={[
-          {
-            id: 1,
-            title: "Adaptable collaboration approach",
-            icon: collaboration,
-          },
-          { id: 2, title: "Commitment to deadlines", icon: delivery },
-          { id: 3, title: "Quick onboarding", icon: hiring },
-          { id: 4, title: "Work directly with the team", icon: designer },
-        ]}
-      />
+        <AwardsSection
+          label=""
+          heading={[
+            { text: "While the growth " },
+            {
+              text: "of our clients ",
+              className: "libreItalic font-[400] highlight-text",
+            },
+            { text: "is what " },
+            {
+              text: "matters ",
+              className: "libreItalic font-[400] highlight-text",
+            },
+            { text: "most, it’s nice to get awards" },
+          ]}
+          awards={awards}
+        />
 
-      <TestimonialsSection
-        heading={[
-          { text: "Our partners ", className: "highlight-text libreItalic" },
-          { text: "find numerous reasons to love us", color: "text-white" },
-        ]}
-        testimonials={[
-          {
-            quote:
-              "They understood our idea and gave us more feedback than expected. Around produces excellent quality work.",
-            name: "Kristen Cheng",
-            role: "Founder & CEO, BehindTitles",
-            avatar: bccKristenCheng.src,
-          },
-          {
-            quote:
-              "Their expertise and guidance were instrumental. They demonstrated commitment to creating a product that resonated.",
-            name: "Aetienne Sardon",
-            role: "Founder, MYSO Finance",
-            avatar: bccKristenCheng.src,
-          },
-          {
-            quote:
-              "The process was something to be admired. They would also make immediate improvements when mentioned.",
-            name: "Mohamed Shegow",
-            role: "CEO, Sinta",
-            avatar: bccKristenCheng.src,
-          },
-          {
-            quote:
-              "Arounda is not just a contractor but part of our startup company. Communication was excellent.",
-            name: "Kirill Onasenko",
-            role: "CEO, VOXE",
-            avatar: bccKristenCheng.src,
-          },
-          {
-            quote:
-              "Their UI/UX design skills were impressive. Modern, creative, and intuitive without hand-holding.",
-            name: "Esme Guevara",
-            role: "CMO & Head of Product, QTalent",
-            avatar: bccKristenCheng.src,
-          },
-          {
-            quote:
-              "Throughout the project all I saw was sheer will to keep pushing forward and adapting to requests.",
-            name: "Ola Olusoga",
-            role: "Vice President, WordPress",
-            avatar: bccKristenCheng.src,
-          },
-        ]}
-      />
+        <ImpactSection
+          heading={[
+            { text: "Investing in your ", color: "text-white" },
+            {
+              text: "own mobile app is a ",
+              color: "text-white libreItalic font-[400] highlight-text",
+            },
+            { text: "competitive advantage", color: "text-white" },
+          ]}
+          description="Our mobile design services and approach are result-driven..."
+          cards={[
+            {
+              id: "infinity",
+              logo: infinityIcon,
+              title: "Infinity",
+              value: "x5",
+              label: "Retention rate boost",
+              description:
+                "Our experts delivered a top-notch mobile app for Infinity Web3 platform.",
+              variant: "dark",
+            },
+            {
+              id: "voxe",
+              title: "VOXE",
+              logo: voxeIcon,
+              value: "7.1M",
+              label: "Audience reach",
+              description:
+                "Outstanding mobile app design helped VOXE reach a wider audience.",
+              variant: "light",
+            },
+            {
+              id: "players",
+              logo: playerIcon,
+              title: "Players Health",
+              value: "85%",
+              label: "User satisfaction rate",
+              description:
+                "Players Health users’ needs are covered with intuitive design.",
+              variant: "accent",
+            },
+          ]}
+        />
 
-      <TeamSliderSection
-        headingLines={[
-          { text: "Qualified mobile developer  ", color: "text-white" },
-          {
-            text: "who know their business",
-            color: "text-white libreItalic font-[400] highlight-text",
-          },
-        ]}
-        autoplaySpeed={2000}
-      />
+        <AndroidCaseStudySection
+          title={[
+            { text: "Our mobile app design ", color: "text-white" },
+            {
+              text: "works prove themselves",
+              color: "text-white libreItalic font-[400] highlight-text",
+            },
+          ]}
+          description="We've helped many startups and companies design high-quality mobile applications."
+        />
 
-      <FAQSection
-        title="Frequently Asked "
-        highlight="Questions."
-        description="To decide means to choose a direction with clarity and confidence."
-        faqs={page.accordionData}
-      />
+        <NewBanner
+          headingLines={[
+            { text: "Strengthen your user" },
+            { text: "connection with an" },
+            { text: "intuitive mobile app" },
+          ]}
+          imageSrc={page.mobDesignBanner}
+          buttonText="Contact us"
+        />
 
-      <ProjectCTA bgImage={projectCtaBgImg} />
+        <TechMarqueeComponent />
 
-      <Space />
-    </Layout>
+        <QualitySection
+          features={[
+            {
+              id: 1,
+              title: "Adaptable collaboration approach",
+              icon: collaboration,
+            },
+            { id: 2, title: "Commitment to deadlines", icon: delivery },
+            { id: 3, title: "Quick onboarding", icon: hiring },
+            { id: 4, title: "Work directly with the team", icon: designer },
+          ]}
+        />
+
+        <TestimonialsSection
+          heading={[
+            { text: "Our partners ", className: "highlight-text libreItalic" },
+            { text: "find numerous reasons to love us", color: "text-white" },
+          ]}
+          testimonials={[
+            {
+              quote:
+                "They understood our idea and gave us more feedback than expected. Around produces excellent quality work.",
+              name: "Kristen Cheng",
+              role: "Founder & CEO, BehindTitles",
+              avatar: bccKristenCheng.src,
+            },
+            {
+              quote:
+                "Their expertise and guidance were instrumental. They demonstrated commitment to creating a product that resonated.",
+              name: "Aetienne Sardon",
+              role: "Founder, MYSO Finance",
+              avatar: bccKristenCheng.src,
+            },
+            {
+              quote:
+                "The process was something to be admired. They would also make immediate improvements when mentioned.",
+              name: "Mohamed Shegow",
+              role: "CEO, Sinta",
+              avatar: bccKristenCheng.src,
+            },
+            {
+              quote:
+                "Arounda is not just a contractor but part of our startup company. Communication was excellent.",
+              name: "Kirill Onasenko",
+              role: "CEO, VOXE",
+              avatar: bccKristenCheng.src,
+            },
+            {
+              quote:
+                "Their UI/UX design skills were impressive. Modern, creative, and intuitive without hand-holding.",
+              name: "Esme Guevara",
+              role: "CMO & Head of Product, QTalent",
+              avatar: bccKristenCheng.src,
+            },
+            {
+              quote:
+                "Throughout the project all I saw was sheer will to keep pushing forward and adapting to requests.",
+              name: "Ola Olusoga",
+              role: "Vice President, WordPress",
+              avatar: bccKristenCheng.src,
+            },
+          ]}
+        />
+
+        <TeamSliderSection
+          headingLines={[
+            { text: "Qualified mobile developer  ", color: "text-white" },
+            {
+              text: "who know their business",
+              color: "text-white libreItalic font-[400] highlight-text",
+            },
+          ]}
+          autoplaySpeed={2000}
+        />
+
+        <FAQSection
+          title="Frequently Asked "
+          highlight="Questions."
+          description="To decide means to choose a direction with clarity and confidence."
+          faqs={page.accordionData}
+        />
+
+        <ProjectCTA bgImage={projectCtaBgImg} />
+
+        <Space />
+      </Layout>
+    </>
   );
 }

@@ -31,6 +31,17 @@ import step4Tab from "@/assets/contact-us/NextStepsSection/process-line-tablet.s
 import TestimonialCard from "@/components/Sections/ServicesSection/ReviewCardSection";
 
 import userImage from "@/assets/app-development-images/autorImg.webp";
+import { Metadata } from "next";
+import { buildMetadata } from "@/helper/generateMetadata ";
+
+export const generateMetadata = (): Metadata => {
+  return buildMetadata({
+    title: "Contact Moonstack | Start Your Project Now",
+    description:
+      "Ready to discuss your app, website, or product idea? Share your project details and our Moonstack team will get back with a clear plan and timeline. Call Now!",
+    canonical: "https://www.moonstack.com/contact-us",
+  });
+};
 
 const points = [
   "Throughout the entire project all I saw was sheer will to keep pushing forward and adapting to whatever  the next request was.  Terrific job  and we couldn't have done it without you.",

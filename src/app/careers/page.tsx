@@ -13,6 +13,17 @@ import { benefitsData } from "./data";
 //utils
 import bannerImg from "@/assets/android-app-bg.webp";
 import ProcessSection from "./process";
+import { Metadata } from "next";
+import { buildMetadata } from "@/helper/generateMetadata ";
+
+export const generateMetadata = (): Metadata => {
+  return buildMetadata({
+    title: " Check Careers at Moonstack | Join Our Innovative Team",
+    description:
+      "Discover career opportunities at Moonstack. Join our product-focused teams and grow your future building innovative digital products. Apply Now!",
+    canonical: "https://www.moonstack.com/careeers",
+  });
+};
 
 const carreers = (): React.JSX.Element => {
   //

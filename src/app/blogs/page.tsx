@@ -9,6 +9,17 @@ import { HiArrowRight } from "react-icons/hi";
 import Breadcrumb from "@/components/Breadcrumb";
 import Heading from "@/components/Heading/Heading";
 import ProjectCTA from "@/components/ProjectCTA/ProjectCTA";
+import { Metadata } from "next";
+import { buildMetadata } from "@/helper/generateMetadata ";
+
+export const generateMetadata = (): Metadata => {
+  return buildMetadata({
+    title: " Moonstack Blog | AI, App & Web Development New & Blogs",
+    description:
+      "Explore the latest AI or tech insights, news, and blog posts on web and mobile app development from the Moonstack team. Read now!",
+    canonical: "https://www.moonstack.com/blog",
+  });
+};
 const breadcrumbs = [
   {
     label: "Home",

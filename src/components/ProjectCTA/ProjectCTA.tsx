@@ -73,7 +73,7 @@ export default function ProjectCTA({
         >
           <Heading
             headingTag="h2"
-            className={`${marginBottom} ${fontSize}`}
+            className={`${marginBottom} ${fontSize} !leading-[100px]`}
             content={[
               {
                 title,
