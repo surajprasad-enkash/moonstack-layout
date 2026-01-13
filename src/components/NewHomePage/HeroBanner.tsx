@@ -20,6 +20,7 @@ import design3 from "@/assets/newHomePage/banner/icon/design_tag_icon3.svg";
 import heroVideoPlay from "@/assets/newHomePage/banner/icon/hero-video-play.avif";
 import homeHeroTitleDecorPlay from "@/assets/newHomePage/banner/icon/home-hero-title-decor-play.avif";
 
+// import bgImage from "@/assets/newHomePage/banner/bg-hero-updated.png";
 import bgImage from "@/assets/newHomePage/banner/bg-hero-updated.png";
 import bgImage2 from "@/assets/newHomePage/banner/baimage2.svg";
 
@@ -58,15 +59,19 @@ export default function HeroSection({
       {/* Background glow */}
       {bgImage && (
         <Image
-          src={bgImage}
+          src={bgImage.src}
           alt="Background"
+          width={1200}
+          height={1200}
           className="absolute  h-[auto] w-[140%] right-[0] left-[-26%]  z-[1]"
         />
       )}
       {bgImage2 && (
         <Image
-          src={bgImage2}
+          src={bgImage2.src}
           alt="Background"
+          width={1200}
+          height={1500}
           className="absolute bottom-[-90%] h-[auto] w-[100%] right-[0] left-[0%] z-[1]"
         />
       )}

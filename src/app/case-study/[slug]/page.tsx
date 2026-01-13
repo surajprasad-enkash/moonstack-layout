@@ -7,6 +7,19 @@ interface PageProps {
   };
 }
 
+export const CASE_STUDY_SLUGS = [
+  "google-core-update-june-2025",
+  "seo-growth-strategy",
+  "brand-redesign-case-study",
+  "saas-marketing-success",
+];
+
+export async function generateStaticParams() {
+  return CASE_STUDY_SLUGS.map((slug) => ({
+    slug,
+  }));
+}
+
 export default function CaseStudyPage({ params }: PageProps) {
   return (
     <Layout>

@@ -51,6 +51,13 @@ import award7 from "@/assets/newHomePage/awards/good-firms.svg";
 import award8 from "@/assets/newHomePage/awards/upwork.svg";
 import icon from "@/assets/newHomePage/awards/icon.svg";
 
+/* ===================== STATIC PARAMS (REQUIRED) ===================== */
+export function generateStaticParams() {
+  return Object.keys(pagesKeys).map((slug) => ({
+    slug,
+  }));
+}
+
 /* ===================== DATA ===================== */
 const awards: AwardItem[] = [
   {
@@ -74,9 +81,9 @@ interface PageProps {
 
 /* ===================== PAGE ===================== */
 export default function ApplicationPage({ params }: PageProps) {
-  const slug = params.slug;
+  const slug = params.slug as TPageKeys;
 
-  const page = pagesData[pagesKeys[slug as TPageKeys] as TPageKeys];
+  const page = pagesData[pagesKeys[slug]];
 
   if (!page) {
     return <p className="p-10 text-center">Page not found</p>;
@@ -113,7 +120,7 @@ export default function ApplicationPage({ params }: PageProps) {
         features={page.featuresData}
       />
 
-      {page?.processSteps && (
+      {page.processSteps && (
         <ProcessStages
           heading={page.processSteps.headingText}
           description={page.processSteps.subHeadingText}
@@ -144,15 +151,9 @@ export default function ApplicationPage({ params }: PageProps) {
         label=""
         heading={[
           { text: "While the growth " },
-          {
-            text: "of our clients ",
-            className: "libreItalic font-[400] highlight-text",
-          },
+          { text: "of our clients ", className: "libreItalic highlight-text" },
           { text: "is what " },
-          {
-            text: "matters ",
-            className: "libreItalic font-[400] highlight-text",
-          },
+          { text: "matters ", className: "libreItalic highlight-text" },
           { text: "most, it’s nice to get awards" },
         ]}
         awards={awards}
@@ -163,7 +164,7 @@ export default function ApplicationPage({ params }: PageProps) {
           { text: "Investing in your ", color: "text-white" },
           {
             text: "own mobile app is a ",
-            color: "text-white libreItalic font-[400] highlight-text",
+            color: "text-white libreItalic highlight-text",
           },
           { text: "competitive advantage", color: "text-white" },
         ]}
@@ -207,7 +208,7 @@ export default function ApplicationPage({ params }: PageProps) {
           { text: "Our mobile app design ", color: "text-white" },
           {
             text: "works prove themselves",
-            color: "text-white libreItalic font-[400] highlight-text",
+            color: "text-white libreItalic highlight-text",
           },
         ]}
         description="We've helped many startups and companies design high-quality mobile applications."
@@ -227,7 +228,11 @@ export default function ApplicationPage({ params }: PageProps) {
 
       <QualitySection
         features={[
-          { id: 1, title: "Adaptable collaboration approach", icon: collaboration },
+          {
+            id: 1,
+            title: "Adaptable collaboration approach",
+            icon: collaboration,
+          },
           { id: 2, title: "Commitment to deadlines", icon: delivery },
           { id: 3, title: "Quick onboarding", icon: hiring },
           { id: 4, title: "Work directly with the team", icon: designer },
@@ -241,7 +246,8 @@ export default function ApplicationPage({ params }: PageProps) {
         ]}
         testimonials={[
           {
-            quote: "They understood our idea and gave us more feedback than expected.",
+            quote:
+              "They understood our idea and gave us more feedback than expected.",
             name: "Kristen Cheng",
             role: "Founder & CEO, BehindTitles",
             avatar: bccKristenCheng.src,
@@ -254,7 +260,7 @@ export default function ApplicationPage({ params }: PageProps) {
           { text: "Qualified mobile developer  ", color: "text-white" },
           {
             text: "who know their business",
-            color: "text-white libreItalic font-[400] highlight-text",
+            color: "text-white libreItalic highlight-text",
           },
         ]}
         autoplaySpeed={2000}

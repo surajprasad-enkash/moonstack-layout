@@ -14,7 +14,9 @@ const nextConfig: NextConfig = {
         pathname: "/avatar/**",
       },
     ],
+    unoptimized: true,
   },
+  output: "export",
 };
 
 module.exports = nextConfig;

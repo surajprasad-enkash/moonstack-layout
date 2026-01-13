@@ -6,17 +6,26 @@ import React, { useEffect, useState } from "react";
 import coneImg from "@/assets/carreers/piramidImg.svg";
 import logo from "@/assets/carreers/MOONSTACK.svg";
 
+import avatar2 from "@/assets/carreers/avatar_2.png";
+import avatar3 from "@/assets/carreers/avatar_3.png";
+import avatar4 from "@/assets/carreers/avatar_4.png";
+import avatar5 from "@/assets/carreers/avatar_5.png";
+import avatar6 from "@/assets/carreers/avatar_6.png";
+import avatar7 from "@/assets/carreers/avatar_7.png";
+import avatar8 from "@/assets/carreers/avatar_8.png";
+import avatar9 from "@/assets/carreers/avatar_9.png";
+import avatar10 from "@/assets/carreers/avatar_10.png";
+
 const avatars = [
-  "@/assets/carreers/avatar_1.png",
-  "@/assets/carreers/avatar_2.png",
-  "@/assets/carreers/avatar_3.png",
-  "@/assets/carreers/avatar_4.png",
-  "@/assets/carreers/avatar_5.png",
-  "@/assets/carreers/avatar_6.png",
-  "@/assets/carreers/avatar_7.png",
-  "@/assets/carreers/avatar_8.png",
-  "@/assets/carreers/avatar_9.png",
-  "@/assets/carreers/avatar_10.png",
+  avatar2,
+  avatar3,
+  avatar4,
+  avatar5,
+  avatar6,
+  avatar7,
+  avatar8,
+  avatar9,
+  avatar10,
 ];
 
 const PiramidAnimation = () => {
@@ -55,21 +64,21 @@ const PiramidAnimation = () => {
   }, []);
 
   return (
-    <div className="pyramid-section relative flex w-full justify-center">
+    <div className="pyramid-section  flex w-full justify-center">
       <div className="pyramid-wrapper relative">
         {/* Pyramid */}
         <Image
           src={coneImg}
           alt="cone"
-          className="pyramid-img"
+          className="pyramid-img relative z-10"
           width={460}
           height={420}
         />{" "}
-        <div className="pyramid-logo">
-          <Image src={logo} alt="cone" className="" width={130} height={120} />
+        <div className="pyramid-logo flex justify-center relative z-10 pt-2">
+          <Image src={logo} alt="cone" className="" width={230} height={160} />
         </div>
         {/* Avatars */}
-        <div className="avatars-layer pointer-events-none absolute top-0 left-1/2 h-full w-full">
+        <div className="avatars-layer pointer-events-none absolute top-0 left-[0%] h-full w-full z-0">
           {avatars.map((src, index) => {
             const radiusInit = 200;
             const offsetInit = 140;
