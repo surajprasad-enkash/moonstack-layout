@@ -13,7 +13,7 @@ interface FormProps {
 
 export default function Form({
   formName,
-  apiUrl = "https://moonstack.co/wp-json/moonstack/v1/submit-form",
+  apiUrl = "https://resources.moonstack.co/wp-json/moonstack/v1/submit-form",
   apiKey = "a9f3c8d4e21b7a0c9f0a1e3d8b7c6f7hyx67",
 }: FormProps) {
   const [fileName, setFileName] = useState<string | null>(null);
@@ -76,14 +76,16 @@ export default function Form({
             placeholder=""
             className="peer w-full  border-b border-[#cecece] py-3 text-sm text-[#000] focus:outline-none focus:!border-[#004619] "
             required
-             autoComplete="name"
+            autoComplete="name"
           />
-          <label htmlFor="fname" className="absolute cursor-text top-3 left-0 text-sm text-[#000] transition-all peer-not-placeholder-shown:-top-[10px] peer-not-placeholder-shown:bg-white peer-not-placeholder-shown:px-0 peer-not-placeholder-shown:text-xs peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-focus:-top-[10px] peer-focus:bg-white peer-focus:px-0 peer-focus:text-xs font-[500]">
+          <label
+            htmlFor="fname"
+            className="absolute cursor-text top-3 left-0 text-sm text-[#000] transition-all peer-not-placeholder-shown:-top-[10px] peer-not-placeholder-shown:bg-white peer-not-placeholder-shown:px-0 peer-not-placeholder-shown:text-xs peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-focus:-top-[10px] peer-focus:bg-white peer-focus:px-0 peer-focus:text-xs font-[500]"
+          >
             Frist Name<span className="text-[red]">*</span>
           </label>
         </div>
-       <div className="formGroup w-[100%] md:w-[50%]">
-          
+        <div className="formGroup w-[100%] md:w-[50%]">
           <input
             name="email"
             type="email"
@@ -93,15 +95,17 @@ export default function Form({
             required
             autoComplete="email"
           />
-            <label htmlFor="email" className="absolute cursor-text top-3 left-0 text-sm text-[#000] transition-all peer-not-placeholder-shown:-top-[10px] peer-not-placeholder-shown:bg-white peer-not-placeholder-shown:px-0 peer-not-placeholder-shown:text-xs peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-focus:-top-[10px] peer-focus:bg-white peer-focus:px-0 peer-focus:text-xs font-[500]">
+          <label
+            htmlFor="email"
+            className="absolute cursor-text top-3 left-0 text-sm text-[#000] transition-all peer-not-placeholder-shown:-top-[10px] peer-not-placeholder-shown:bg-white peer-not-placeholder-shown:px-0 peer-not-placeholder-shown:text-xs peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-focus:-top-[10px] peer-focus:bg-white peer-focus:px-0 peer-focus:text-xs font-[500]"
+          >
             Email Address<span className="text-[red]">*</span>
           </label>
         </div>
       </div>
-    
+
       <div className="formRow">
         <div className="formGroup w-[100%]">
-        
           <textarea
             name="message"
             rows={4}
@@ -110,7 +114,10 @@ export default function Form({
             required
             className="resize-none border-[#cecece] peer w-full  border-b py-3 text-sm text-[#000] focus:outline-none focus:!border-[#004619]"
           />
-            <label htmlFor="message" className="absolute cursor-text top-3 left-0 text-sm text-[#000] transition-all peer-not-placeholder-shown:-top-[10px] peer-not-placeholder-shown:bg-white peer-not-placeholder-shown:px-0 peer-not-placeholder-shown:text-xs peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-focus:-top-[10px] peer-focus:bg-white peer-focus:px-0 peer-focus:text-xs font-[500]">
+          <label
+            htmlFor="message"
+            className="absolute cursor-text top-3 left-0 text-sm text-[#000] transition-all peer-not-placeholder-shown:-top-[10px] peer-not-placeholder-shown:bg-white peer-not-placeholder-shown:px-0 peer-not-placeholder-shown:text-xs peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-focus:-top-[10px] peer-focus:bg-white peer-focus:px-0 peer-focus:text-xs font-[500]"
+          >
             About project<span className="text-[red]">*</span>
           </label>
         </div>

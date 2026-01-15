@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
+import { Libre_Baskerville } from "next/font/google";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import "./globals.css";
 
-import { Libre_Baskerville } from "next/font/google";
 const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -12,10 +12,10 @@ const libreBaskerville = Libre_Baskerville({
   variable: "--font-libre",
   display: "swap",
 });
-// app/layout.tsx
+
 export const metadata: Metadata = {
   title: {
-    default: "Moonstack – Digital Product Studio",
+    default: "Moonstack - Digital Product Studio",
     template: "%s | Moonstack",
   },
   description: "We build scalable digital products.",
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={gordita.variable}>
       <body
-        className={` font-sans antialiased ${libreBaskerville.variable} ${gordita.variable}`}
+        className={`font-sans antialiased ${libreBaskerville.variable} ${gordita.variable}`}
       >
         {children}
       </body>

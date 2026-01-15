@@ -53,7 +53,7 @@ export default function CategoryPosts({ slug }: Props) {
 
       try {
         const res = await fetch(
-          `https://moonstack.co/wp-json/moonstack/v1/posts-by-category-slug?category=${slug}&page=${page}&per_page=9`,
+          `https://resources.moonstack.co/wp-json/moonstack/v1/posts-by-category-slug?category=${slug}&page=${page}&per_page=9`,
           {
             headers: {
               "X-API-KEY": "a9f3c8d4e21b7a0c9f0a1e3d8b7c6f7hyx67",

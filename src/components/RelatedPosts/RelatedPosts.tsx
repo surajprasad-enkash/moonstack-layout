@@ -3,8 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { HiArrowRight } from "react-icons/hi";
-import bgImg from "@/assets/header/magamenu-bg.svg";
 
 interface Post {
   author: any;
@@ -36,7 +34,7 @@ export default function RelatedPosts({ categorySlug, notInPost }: Props) {
     const fetchRelatedPosts = async () => {
       try {
         const res = await fetch(
-          `https://moonstack.co/wp-json/moonstack/v1/posts-by-category-slug?category=${categorySlug}&page=1&per_page=3&notin=${notInPost}`,
+          `https://resources.moonstack.co/wp-json/moonstack/v1/posts-by-category-slug?category=${categorySlug}&page=1&per_page=3&notin=${notInPost}`,
           {
             headers: {
               "X-API-KEY": "a9f3c8d4e21b7a0c9f0a1e3d8b7c6f7hyx67",

@@ -19,7 +19,7 @@ export default function SingleCaseStudy({ slug, apiKey }: Props) {
     const fetchCaseStudy = async () => {
       try {
         const res = await fetch(
-          `https://moonstack.co/wp-json/moonstack/v1/case-study/${slug}`,
+          `https://resources.moonstack.co/wp-json/moonstack/v1/case-study/${slug}`,
           {
             headers: {
               "X-API-KEY": apiKey,

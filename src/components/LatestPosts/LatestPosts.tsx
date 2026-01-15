@@ -29,14 +29,14 @@ export default function LatestPosts() {
     const fetchLatest = async () => {
       try {
         const res = await fetch(
-          "https://moonstack.co/wp-json/moonstack/v1/post-list?per_page=6",
+          "https://resources.moonstack.co/wp-json/moonstack/v1/post-list?per_page=6",
           {
             method: "GET",
             headers: {
               "X-API-KEY": "a9f3c8d4e21b7a0c9f0a1e3d8b7c6f7hyx67",
             },
             cache: "no-store",
-          },
+          }
         );
 
         if (!res.ok) throw new Error("Failed to fetch posts");
@@ -94,13 +94,14 @@ export default function LatestPosts() {
             key={post.id}
             className="group flex gap-[20px] overflow-hidden  transition "
           >
-         
             {/* CONTENT */}
             <div className="flex w-[calc(100%)] text-[#000] flex-col justify-between p-2">
               <div>
                 <span className="mb-1 text-xs text-[#000]">{post.date}</span>
                 <h6 className="mb-4 line-clamp-2 text-sm font-semibold transition hover:text-[#00ea52]">
-                  <Link className="" href={`/blogs/${post.slug}`}>{post.title}</Link>
+                  <Link className="" href={`/blogs/${post.slug}`}>
+                    {post.title}
+                  </Link>
                 </h6>
               </div>
             </div>

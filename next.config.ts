@@ -1,11 +1,11 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "moonstack.co",
+        hostname: "resources.moonstack.co",
         pathname: "/wp-content/uploads/**",
       },
       {
@@ -15,6 +15,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-};
+}
 
-export default nextConfig;
+export default nextConfig

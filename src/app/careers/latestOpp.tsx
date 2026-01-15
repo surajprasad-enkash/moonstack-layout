@@ -32,12 +32,15 @@ const LatestOpportunity: FC<LatestOpportunityProps> = ({
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const res = await fetch("https://moonstack.co/wp-json/jobs/v1/list", {
-          headers: {
-            "x-api-key":
-              "a9f4e2c8d1b73a6f98c0b2e47a5d1f9c6e8b0a2c7f5d4e3b92e4b7a1c8f6d",
-          },
-        });
+        const res = await fetch(
+          "https://resources.moonstack.co/wp-json/jobs/v1/list",
+          {
+            headers: {
+              "x-api-key":
+                "a9f4e2c8d1b73a6f98c0b2e47a5d1f9c6e8b0a2c7f5d4e3b92e4b7a1c8f6d",
+            },
+          }
+        );
         const data = await res.json();
         if (data.status && data.data) {
           // Map API fields to our Job interface

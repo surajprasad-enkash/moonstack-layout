@@ -1,82 +1,26 @@
 "use client";
 
-import { ReactNode, useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+
+// components
 import Heading from "../Heading/Heading";
 import CategoryList from "../CategoryList/CategoryList";
 import RelatedPosts from "../RelatedPosts/RelatedPosts";
-
-import bgImage from "@/assets/blogs/singleBlogBanner.png";
 import Breadcrumb from "../Breadcrumb";
-import Link from "next/link";
-import Loader from "../Loader/Loader";
 
-/* ✅ ADDED: Category interface */
-interface Category {
-  id: number;
-  slug: string;
-  name: string;
-}
-
-interface PostData {
-  updated_date: ReactNode;
-  publish_date: ReactNode;
-  author: any;
-  read_time: any;
-  id: number;
-  slug: string;
-  title: string;
-  image: string;
-  date: string;
-  content: string;
-  excerpt: string;
-  category: Category | null; // ✅ ADDED
-}
+// helpers
+import bgImage from "@/assets/blogs/singleBlogBanner.png";
+import { IPostData } from "@/types/blog";
 
 interface Props {
   slug: string;
+  post?: IPostData;
 }
 
-export default function SinglePostData({ slug }: Props) {
-  const [post, setPost] = useState<PostData | null>(null);
-  const [loading, setLoading] = useState(true);
+function SinglePostData({ slug, post }: Props) {
+  //
 
-  useEffect(() => {
-    if (!slug) return;
-
-    const fetchPost = async () => {
-      try {
-        const res = await fetch(
-          `https://moonstack.co/wp-json/moonstack/v1/post-by-slug?slug=${slug}`,
-          {
-            headers: {
-              "X-API-KEY": "a9f3c8d4e21b7a0c9f0a1e3d8b7c6f7hyx67",
-            },
-          }
-        );
-
-        const json = await res.json();
-
-        if (json?.status) {
-          setPost(json.data);
-        }
-      } catch (error) {
-        console.error("API Error:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchPost();
-  }, [slug]);
-
-  if (loading)
-    return (
-      <div className="flex h-[100vh] text-[#fff] items-center justify-center">
-        {" "}
-        <Loader />
-      </div>
-    );
   if (!post) return <p className="text-white">Post not found</p>;
   const pageUrl =
     typeof window !== "undefined"
@@ -292,52 +236,14 @@ export default function SinglePostData({ slug }: Props) {
                     classNames="px-[20px] pt-[5px] rounded-[10px] bg-[#fff]"
                   />
                 </div>
-                {/* <LatestPosts /> */}
               </div>
             </div>
-            {/* <p
-                className="m-auto max-w-[960px] text-center"
-                dangerouslySetInnerHTML={{ __html: post.excerpt }}
-              /> */}
-
-            {/* {post.image && (
-              <div className="postImage mb-[80px]">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  width={1200}
-                  height={600}
-                  className="mb-6 h-[100%] w-[100%] rounded-xl"
-                />
-              </div>
-            )} */}
-
-            {/* <div className="singleBlogPost flex flex-wrap gap-[40px]">
-              <div className="blogLeftSection">
-                <div
-                  className="prose prose-invert max-w-none"
-                  dangerouslySetInnerHTML={{ __html: post.content }}
-                />
-              </div>
-
-              <div className="blogRightSection w-[calc(34%-40px)]">
-                <CategoryList />
-                <LatestPosts />
-              </div>
-            </div> */}
           </div>
 
           {/* ✅ SAFE CATEGORY PASS (ONLY ADDITION) */}
         </div>
       </section>
       <div className="relative ">
-        {/* {bgImage && (
-          <Image
-            src={bgImage}
-            alt="Background"
-            className="absolute right-[0] bottom-[0px] left-[0] z-[1] h-[auto] w-[100%]"
-          />
-        )} */}
         {post.category && (
           <RelatedPosts categorySlug={post.category.slug} notInPost={post.id} />
         )}
@@ -345,3 +251,5 @@ export default function SinglePostData({ slug }: Props) {
     </>
   );
 }
+
+export default SinglePostData;

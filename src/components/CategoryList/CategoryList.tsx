@@ -39,12 +39,12 @@ export default function CategoryList({
     const fetchCategories = async () => {
       try {
         const res = await fetch(
-          "https://moonstack.co/wp-json/moonstack/v1/categories",
+          "https://resources.moonstack.co/wp-json/moonstack/v1/categories",
           {
             headers: {
               "X-API-KEY": "a9f3c8d4e21b7a0c9f0a1e3d8b7c6f7hyx67",
             },
-          },
+          }
         );
 
         if (!res.ok) {
@@ -97,7 +97,7 @@ export default function CategoryList({
           <li>
             <Link
               href={`/blogs`}
-              className={`mb-[10px] block flex justify-between rounded-[10px] px-4 py-2 text-white text-sm  backdrop-blur-md transition hover:bg-white/20 hover:text-[#00ea52] ` }
+              className={`mb-[10px] block flex justify-between rounded-[10px] px-4 py-2 text-white text-sm  backdrop-blur-md transition hover:bg-white/20 hover:text-[#00ea52] `}
             >
               All Topics
               <span className="CategoryIcon">

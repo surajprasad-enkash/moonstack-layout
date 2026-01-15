@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-const API_URL = "https://moonstack.co/wp-json/moonstack/v1/case-studies";
+const API_URL =
+  "https://resources.moonstack.co/wp-json/moonstack/v1/case-studies";
 
 interface Props {
   perPage?: number;

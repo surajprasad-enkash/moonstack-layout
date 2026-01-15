@@ -32,7 +32,7 @@ export default function CaseStudyPage({ slug, apiKey }: Props) {
         setError(null);
 
         const res = await fetch(
-          `https://moonstack.co/wp-json/moonstack/v1/case-study/${slug}`,
+          `https://resources.moonstack.co/wp-json/moonstack/v1/case-study/${slug}`,
           {
             headers: {
               "X-API-KEY": apiKey,

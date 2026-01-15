@@ -27,14 +27,14 @@ export default function ProjectInquiryModal({ isOpen, onClose }: Props) {
 
     try {
       const res = await fetch(
-        "https://moonstack.co/wp-json/moonstack/v1/submit-form",
+        "https://resources.moonstack.co/wp-json/moonstack/v1/submit-form",
         {
           method: "POST",
           headers: {
             "X-API-KEY": "a9f3c8d4e21b7a0c9f0a1e3d8b7c6f7hyx67",
           },
           body: formData,
-        },
+        }
       );
 
       const data = await res.json();
@@ -64,7 +64,7 @@ export default function ProjectInquiryModal({ isOpen, onClose }: Props) {
       >
         <div className="relative flex w-full max-w-[1040px] overflow-hidden">
           {/* LEFT PANEL */}
-         <ContactInfoCard className="mr-[10px] hidden w-[38%] flex-col justify-between rounded-[60px] rounded-tl-none bg-[#004619] p-[40px] text-white md:flex" />
+          <ContactInfoCard className="mr-[10px] hidden w-[38%] flex-col justify-between rounded-[60px] rounded-tl-none bg-[#004619] p-[40px] text-white md:flex" />
 
           {/* RIGHT FORM */}
           <div className="relative w-full rounded-[60px] rounded-tl-none bg-white p-[40px] md:w-[62%]">

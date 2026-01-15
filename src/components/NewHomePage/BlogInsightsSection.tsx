@@ -61,7 +61,7 @@ export default function BlogInsightsSection({
     const fetchPosts = async () => {
       try {
         const res = await fetch(
-          `https://moonstack.co/wp-json/moonstack/v1/post-list?per_page=${postprePage}&page=${page}`,
+          `https://resources.moonstack.co/wp-json/moonstack/v1/post-list?per_page=${postprePage}&page=${page}`,
           {
             method: "GET",
             headers: {

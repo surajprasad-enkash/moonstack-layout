@@ -1,6 +1,5 @@
 "use client";
 
-import Heading from "@/components/Heading/Heading";
 import CommanButton from "@/components/CommanButton/CommanButton";
 import Image from "next/image";
 import Marquee from "@/components/Homepage/Marquee";
