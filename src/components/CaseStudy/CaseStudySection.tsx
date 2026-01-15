@@ -58,7 +58,7 @@ export default function CaseStudySection({
                 <>
                   {/* INITIAL FULL PAGE LOADER */}
                   {loading && items.length === 0 && (
-                    <div className="flex h-[100vh] w-full items-center justify-center">
+                    <div className="flex h-[100vh] text-[#fff] w-full items-center justify-center">
                       <Loader />
                     </div>
                   )}
@@ -66,7 +66,7 @@ export default function CaseStudySection({
                   {/* CASE STUDY CARDS */}
                   {items.map((item, index) => (
                     <CaseStudyCard
-                     key={`${item.id}-${index}`}
+                      key={`${item.id}-${index}`}
                       item={item}
                       index={index}
                     />
@@ -74,9 +74,7 @@ export default function CaseStudySection({
 
                   {/* ERROR */}
                   {error && (
-                    <p className="w-full text-center text-red-600">
-                      {error}
-                    </p>
+                    <p className="w-full text-center text-red-600">{error}</p>
                   )}
 
                   {/* LOAD MORE BUTTON */}

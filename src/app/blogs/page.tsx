@@ -112,8 +112,8 @@ export default function BlogsPage() {
             title="Ready to scale"
             subtitle="your business?"
             description="Book a free consultation to get clarity, direction, and expert advice you can implement right away."
-            fontSize="!text-[80px]"
-            marginBottom="mb-0"
+            fontSize="!text-[80px] md:!leading-[130%]"
+            marginBottom="mb-0 md:!leading-[130%]"
             whiteBoxClass=""
           />
         </div>

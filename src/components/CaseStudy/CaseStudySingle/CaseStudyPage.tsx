@@ -11,6 +11,7 @@ import ProcessSection from "./ProcessSection";
 import Heading from "@/components/Heading/Heading";
 import CaseStudyHighlight from "./CaseStudyHighlight";
 import CaseStudyMoodboard from "./CaseStudyMoodboard";
+import Loader from "@/components/Loader/Loader";
 
 interface Props {
   slug: string;
@@ -36,7 +37,7 @@ export default function CaseStudyPage({ slug, apiKey }: Props) {
             headers: {
               "X-API-KEY": apiKey,
             },
-          },
+          }
         );
 
         if (!res.ok) {
@@ -68,7 +69,7 @@ export default function CaseStudyPage({ slug, apiKey }: Props) {
   if (loading) {
     return (
       <div className="flex h-screen items-center justify-center">
-        {/* <Loader /> */}
+        <Loader />
       </div>
     );
   }
@@ -92,7 +93,7 @@ export default function CaseStudyPage({ slug, apiKey }: Props) {
 
       <CaseOverview data={data} />
       {/* {data?.acf?.moodboard?.length > 0 && ( */}
-        <CaseStudyMoodboard data={data.acf.moodboard} />
+      <CaseStudyMoodboard data={data.acf.moodboard} />
       {/* )} */}
       {data?.acf?.process?.length > 0 && (
         <ProcessSection process={data.acf.process} />

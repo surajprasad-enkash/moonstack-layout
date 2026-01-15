@@ -72,7 +72,7 @@ export default function SinglePostData({ slug }: Props) {
 
   if (loading)
     return (
-      <div className="flex h-[100vh] items-center justify-center">
+      <div className="flex h-[100vh] text-[#fff] items-center justify-center">
         {" "}
         <Loader />
       </div>

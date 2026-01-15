@@ -60,8 +60,8 @@ export default function CaseHero({ data }: any) {
                 <Image
                   src={data.acf.case_study_profile_image}
                   alt={data.title}
-                  width={100}
-                  height={100}
+                  width={1000}
+                  height={1000}
                   className="w-full"
                 />
               </div>
