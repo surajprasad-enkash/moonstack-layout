@@ -28,6 +28,8 @@ import { javascript } from "./javascript";
 import { nodeJs } from "./node-js";
 import { testing } from "./mobile-app-testing";
 import { flutter } from "./flutter-app-development-company";
+import { php } from "./php";
+import { java } from "./java";
 
 import type { PageData } from "@/types/web-development-data-type";
 
@@ -61,6 +63,8 @@ export type TPageKeys =
   | "reactJs"
   | "testing"
   | "flutter"
+  | "java"
+  | "php"
   | "vueJs";
 
 export const pagesData: Record<TPageKeys, PageData> = {
@@ -93,6 +97,9 @@ export const pagesData: Record<TPageKeys, PageData> = {
   reactJs: reactJs,
   vueJs: vueJs,
   flutter: flutter,
+  java: java,
+  php: php,
+
   testing: testing,
 };
 
@@ -128,4 +135,6 @@ export const pagesKeys: Record<string, TPageKeys> = {
   "css3-development-company": "css",
   "html5-development-company": "html",
   "dotnet-development-company": "dotNet",
+  "java-development-company": "java",
+  "php-development-company": "php",
 };
