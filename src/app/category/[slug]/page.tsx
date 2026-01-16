@@ -24,7 +24,6 @@ export default async function CategoryPage({
     params.slug,
     page
   )) as IPostsByCategoryResponse
-  // console.log(data.category.slug, "hello data")
   const categoryName = data?.category?.name || formatCategoryName(params.slug)
 
   const breadcrumbs = [
@@ -55,7 +54,11 @@ export default async function CategoryPage({
             {/* SIDEBAR */}
             <div className="md:w-[250px]">
               <div className="sticky top-[105px]">
-                <CategoryList ShowAll={true} showLabel={false} />
+                <CategoryList
+                  ShowAll={true}
+                  classNames="p-0 "
+                  showLabel={false}
+                />
 
                 <div className="exploreMore">
                   <span className="block py-[20px] pl-[10px] text-[12px] text-[#fff]/50 uppercase">

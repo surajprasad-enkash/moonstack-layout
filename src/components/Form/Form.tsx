@@ -1,60 +1,83 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import { FiPaperclip } from "react-icons/fi";
-import Link from "next/link";
-import CustomButton from "../CommanButton/CommanButton";
+import { useState } from "react"
+import { FiPaperclip } from "react-icons/fi"
+import Link from "next/link"
+import CustomButton from "../CommanButton/CommanButton"
+import { submitFormAction } from "@/helper"
 
 interface FormProps {
-  formName: string;
-  apiUrl?: string;
-  apiKey?: string;
+  formName: string
 }
 
-export default function Form({
-  formName,
-  apiUrl = "https://resources.moonstack.co/wp-json/moonstack/v1/submit-form",
-  apiKey = "a9f3c8d4e21b7a0c9f0a1e3d8b7c6f7hyx67",
-}: FormProps) {
-  const [fileName, setFileName] = useState<string | null>(null);
-  const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState<string | null>(null);
+interface Errors {
+  fullname?: string
+  email?: string
+  message?: string
+  attachment?: string
+}
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
-    setMessage(null);
+export default function Form({ formName }: FormProps) {
+  const [fileName, setFileName] = useState<string | null>(null)
+  const [loading, setLoading] = useState(false)
+  const [message, setMessage] = useState<string | null>(null)
+  const [errors, setErrors] = useState<Errors>({})
 
-    const form = e.currentTarget;
-    const formData = new FormData(form);
+  /* ---------------- VALIDATION ---------------- */
+  const validateForm = (formData: FormData) => {
+    const newErrors: Errors = {}
 
-    // ✅ dynamic form name
-    formData.set("form_name", formName);
+    const fname = formData.get("fullname") as string
+    const email = formData.get("email") as string
+    const msg = formData.get("message") as string
+    const file = formData.get("attachment") as File
 
-    try {
-      const res = await fetch(apiUrl, {
-        method: "POST",
-        headers: {
-          "X-API-KEY": apiKey,
-        },
-        body: formData,
-      });
+    if (!fname) newErrors.fullname = "First name is required"
 
-      const data = await res.json();
-
-      if (data?.status === "success") {
-        setMessage("Your inquiry has been submitted successfully.");
-        form.reset();
-        setFileName(null);
-      } else {
-        setMessage("Something went wrong. Please try again.");
-      }
-    } catch (err) {
-      setMessage("Server error. Please try again later.");
-    } finally {
-      setLoading(false);
+    if (!email) {
+      newErrors.email = "Email is required"
+    } else if (!/^\S+@\S+\.\S+$/.test(email)) {
+      newErrors.email = "Enter a valid email address"
     }
-  };
+
+    if (!msg) newErrors.message = "Project description is required"
+
+    if (file && file.size > 5 * 1024 * 1024) {
+      newErrors.attachment = "File size must be under 5MB"
+    }
+
+    return newErrors
+  }
+
+  /* ---------------- SUBMIT ---------------- */
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setMessage(null)
+
+    const form = e.currentTarget
+    const formData = new FormData(form)
+
+    const validationErrors = validateForm(formData)
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors)
+      return
+    }
+
+    setErrors({})
+    setLoading(true)
+
+    const result = await submitFormAction(formData, formName)
+
+    if (result.success) {
+      setMessage(result.message)
+      form.reset()
+      setFileName(null)
+    } else {
+      setMessage(result.message)
+    }
+
+    setLoading(false)
+  }
 
   return (
     <form
@@ -65,42 +88,54 @@ export default function Form({
       {/* HIDDEN FIELD */}
       <input type="hidden" name="form_name" value={formName} />
 
-      {/* MESSAGE */}
+      {/* GLOBAL MESSAGE */}
       {message && <p className="text-sm text-green-700">{message}</p>}
+
       <div className="formRow gap-[20px] md:flex">
         <div className="formGroup w-[100%] md:w-[50%]">
           <input
-            name="fname"
-            id="fname"
+            name="fullname"
+            id="fullname"
             type="text"
             placeholder=""
-            className="peer w-full  border-b border-[#cecece] py-3 text-sm text-[#000] focus:outline-none focus:!border-[#004619] "
-            required
+            className="peer w-full border-b border-[#cecece] py-3 text-sm text-[#000] focus:!border-[#004619] focus:outline-none"
             autoComplete="name"
+            onChange={() => setErrors((e) => ({ ...e, fullname: undefined }))}
           />
           <label
-            htmlFor="fname"
-            className="absolute cursor-text top-3 left-0 text-sm text-[#000] transition-all peer-not-placeholder-shown:-top-[10px] peer-not-placeholder-shown:bg-white peer-not-placeholder-shown:px-0 peer-not-placeholder-shown:text-xs peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-focus:-top-[10px] peer-focus:bg-white peer-focus:px-0 peer-focus:text-xs font-[500]"
+            htmlFor="fullname"
+            className="absolute top-3 left-0 cursor-text text-sm font-[500] text-[#000] transition-all peer-not-placeholder-shown:-top-[10px] peer-not-placeholder-shown:bg-white peer-not-placeholder-shown:text-xs peer-focus:-top-[10px] peer-focus:bg-white peer-focus:text-xs"
           >
             Frist Name<span className="text-[red]">*</span>
           </label>
+          {errors.fullname && (
+            <p className="absolute bottom-[-18px] !text-[12px] text-[red]">
+              {errors.fullname}
+            </p>
+          )}
         </div>
+
         <div className="formGroup w-[100%] md:w-[50%]">
           <input
             name="email"
             type="email"
             id="email"
             placeholder=""
-            className="peer w-full border-[#cecece] border-b py-3 text-sm text-[#000] focus:outline-none focus:!border-[#004619]"
-            required
+            className="peer w-full border-b border-[#cecece] py-3 text-sm text-[#000] focus:!border-[#004619] focus:outline-none"
             autoComplete="email"
+            onChange={() => setErrors((e) => ({ ...e, email: undefined }))}
           />
           <label
             htmlFor="email"
-            className="absolute cursor-text top-3 left-0 text-sm text-[#000] transition-all peer-not-placeholder-shown:-top-[10px] peer-not-placeholder-shown:bg-white peer-not-placeholder-shown:px-0 peer-not-placeholder-shown:text-xs peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-focus:-top-[10px] peer-focus:bg-white peer-focus:px-0 peer-focus:text-xs font-[500]"
+            className="absolute top-3 left-0 cursor-text text-sm font-[500] text-[#000] transition-all peer-not-placeholder-shown:-top-[10px] peer-not-placeholder-shown:bg-white peer-not-placeholder-shown:text-xs peer-focus:-top-[10px] peer-focus:bg-white peer-focus:text-xs"
           >
             Email Address<span className="text-[red]">*</span>
           </label>
+          {errors.email && (
+            <p className="absolute bottom-[-18px] !text-[12px] text-[red]">
+              {errors.email}
+            </p>
+          )}
         </div>
       </div>
 
@@ -111,17 +146,23 @@ export default function Form({
             rows={4}
             id="message"
             placeholder=""
-            required
-            className="resize-none border-[#cecece] peer w-full  border-b py-3 text-sm text-[#000] focus:outline-none focus:!border-[#004619]"
+            className="peer w-full resize-none border-b border-[#cecece] py-3 text-sm text-[#000] focus:!border-[#004619] focus:outline-none"
+            onChange={() => setErrors((e) => ({ ...e, message: undefined }))}
           />
           <label
             htmlFor="message"
-            className="absolute cursor-text top-3 left-0 text-sm text-[#000] transition-all peer-not-placeholder-shown:-top-[10px] peer-not-placeholder-shown:bg-white peer-not-placeholder-shown:px-0 peer-not-placeholder-shown:text-xs peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-focus:-top-[10px] peer-focus:bg-white peer-focus:px-0 peer-focus:text-xs font-[500]"
+            className="absolute top-3 left-0 cursor-text text-sm font-[500] text-[#000] transition-all peer-not-placeholder-shown:-top-[10px] peer-not-placeholder-shown:bg-white peer-not-placeholder-shown:text-xs peer-focus:-top-[10px] peer-focus:bg-white peer-focus:text-xs"
           >
             About project<span className="text-[red]">*</span>
           </label>
+          {errors.message && (
+            <p className="absolute bottom-[-18px] !text-[12px] text-[red]">
+              {errors.message}
+            </p>
+          )}
         </div>
       </div>
+
       {/* FILE */}
       <div className="flex items-center gap-3">
         <label className="flex cursor-pointer items-center text-sm text-[#000]">
@@ -134,12 +175,19 @@ export default function Form({
             type="file"
             name="attachment"
             accept=".doc,.pdf,.csv,.xml,.svg,.jpg,.png,.jpeg"
-            onChange={(e) => setFileName(e.target.files?.[0]?.name || null)}
+            onChange={(e) => {
+              setFileName(e.target.files?.[0]?.name || null)
+              setErrors((err) => ({ ...err, attachment: undefined }))
+            }}
           />
         </label>
 
         {fileName && <span className="text-xs text-[#000]">{fileName}</span>}
       </div>
+
+      {errors.attachment && (
+        <p className="!text-[12px] text-[red]">{errors.attachment}</p>
+      )}
 
       <div className="flex gap-[20px]">
         <p className="form_privacy_policy_links w-[50%] max-w-[300px] text-xs text-[#747474]">
@@ -165,5 +213,5 @@ export default function Form({
         </div>
       </div>
     </form>
-  );
+  )
 }

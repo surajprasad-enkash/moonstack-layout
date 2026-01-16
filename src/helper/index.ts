@@ -150,6 +150,36 @@ async function getCaseStudiesServer(
   }
 }
 
+async function submitFormAction(formData: FormData, formName: string) {
+  try {
+    formData.set("form_name", formName)
+
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/submit-form`, {
+      method: "POST",
+      headers: {
+        "X-API-KEY": process.env.NEXT_PUBLIC_X_API_KEY,
+      },
+      body: formData,
+    })
+
+    const data = await res.json()
+
+    if (data?.status === "success") {
+      return {
+        success: true,
+        message: "Your inquiry has been submitted successfully.",
+      }
+    }
+
+    return {
+      success: false,
+      message: "Something went wrong. Please try again.",
+    }
+  } catch (error) {
+    return { success: false, message: "Server error. Please try again later." }
+  }
+}
+
 export {
   getPost,
   getCaseStudy,
@@ -157,4 +187,5 @@ export {
   getCategoryList,
   fetchPostsblogsPage,
   getCaseStudiesServer,
+  submitFormAction,
 }
