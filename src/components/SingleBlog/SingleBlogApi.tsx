@@ -5,13 +5,13 @@ import Link from "next/link"
 
 // components
 import Heading from "../Heading/Heading"
-import CategoryList from "../CategoryList/CategoryList"
 import RelatedPosts from "../RelatedPosts/RelatedPosts"
 import Breadcrumb from "../Breadcrumb"
 
 // helpers
 import bgImage from "@/assets/blogs/singleBlogBanner.png"
 import { IPostData } from "@/types/blog"
+import CategoryListSingle from "../CategoryList/CategoryListSingle"
 
 interface Props {
   post?: IPostData
@@ -228,7 +228,7 @@ function SinglePostData({ post }: Props) {
               </div>
               <div className="rightSideBar w-[100%] max-w-[324px]">
                 <div className="sticky top-[120px]">
-                  <CategoryList
+                  <CategoryListSingle
                     ShowAll={false}
                     listClass="!text-[#000]"
                     classNames="px-[20px] pt-[5px] rounded-[10px] bg-[#fff]"

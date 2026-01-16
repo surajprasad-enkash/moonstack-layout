@@ -1,6 +1,6 @@
 import { IPostData, IPostsByCategoryResponse } from "@/types/blog"
 import { ICaseStudyData } from "@/types/caseStudy"
-import { ICategoryResponse } from "@/types/category"
+import { ApiResponse, Category, ICategoryResponse } from "@/types/category"
 
 async function getPost(slug: string): Promise<IPostData | null> {
   try {
@@ -180,6 +180,27 @@ async function submitFormAction(formData: FormData, formName: string) {
   }
 }
 
+async function getCategories(): Promise<Category[]> {
+  const res = await fetch(`${process.env.API_URL}/categories`, {
+    headers: {
+      "X-API-KEY": process.env.NEXT_PUBLIC_X_API_KEY,
+    },
+    cache: "no-store",
+  })
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch categories")
+  }
+
+  const response: ApiResponse = await res.json()
+
+  if (!response.status) {
+    throw new Error("API returned error")
+  }
+
+  return response.data
+}
+
 export {
   getPost,
   getCaseStudy,
@@ -188,4 +209,5 @@ export {
   fetchPostsblogsPage,
   getCaseStudiesServer,
   submitFormAction,
+  getCategories,
 }

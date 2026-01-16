@@ -236,12 +236,12 @@ export default function NewHeader() {
       href: "/blogs",
       icon: blog.src,
     },
-    {
-      title: "Careers",
-      subtitle: "Grow your career with us",
-      href: "/careers",
-      icon: career.src,
-    },
+    // {
+    //   title: "Careers",
+    //   subtitle: "Grow your career with us",
+    //   href: "/careers",
+    //   icon: career.src,
+    // },
     {
       title: "Case Study",
       subtitle: "Real projects, real results, real impact",
@@ -299,11 +299,10 @@ export default function NewHeader() {
                       active={openMenu === "services"}
                     />
                     <IoIosArrowDown
-                      className={`ml-1 text-sm transition-colors ${
-                        openMenu === "services"
+                      className={`ml-1 text-sm transition-colors ${openMenu === "services"
                           ? "text-[#d6ff00]"
                           : "text-white"
-                      }`}
+                        }`}
                     />
                   </button>
                 </Link>
