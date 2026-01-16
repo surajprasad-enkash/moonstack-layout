@@ -277,7 +277,7 @@ export default function Home() {
         <Space size={160} />
         <TestimonialsTabs tabs={tabs} />
         <Space size={160} />
-        {/* <BlogInsightsSection /> */}
+        <BlogInsightsSection />
         <Space size={50} />
         <ProjectCTA
           title="Ready to scale"

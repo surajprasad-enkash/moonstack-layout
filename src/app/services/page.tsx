@@ -176,7 +176,7 @@ export default function ApplicationPage() {
         <Space />
         <TestimonialsTabs tabs={tabs} />
         <Space />
-        {/* <BlogInsightsSection /> */}
+        <BlogInsightsSection />
         <Space size={50} />
         <ProjectCTA />
         <Space size={24} />
