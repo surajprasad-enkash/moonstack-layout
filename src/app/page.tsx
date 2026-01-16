@@ -1,66 +1,66 @@
-import Layout from "@/components/Layout";
+import Layout from "@/components/Layout"
 
-import Meta from "@/components/MetaData";
+import Meta from "@/components/MetaData"
 
-import HeroSection from "@/components/NewHomePage/HeroBanner";
-import Space from "@/components/Space";
-import ResultsSection from "@/components/NewHomePage/ResultsSection";
-import ImpactStatsSection from "@/components/NewHomePage/ImpactStatsSection";
-import ServicesSection from "@/components/NewHomePage/ServicesSection";
-import CaseStudyHighlight from "@/components/NewHomePage/CaseStudyHighlight";
+import HeroSection from "@/components/NewHomePage/HeroBanner"
+import Space from "@/components/Space"
+import ResultsSection from "@/components/NewHomePage/ResultsSection"
+import ImpactStatsSection from "@/components/NewHomePage/ImpactStatsSection"
+import ServicesSection from "@/components/NewHomePage/ServicesSection"
+import CaseStudyHighlight from "@/components/NewHomePage/CaseStudyHighlight"
 
-import screen1 from "@/assets/newHomePage/caseStudy/screenOne.webp";
-import screen2 from "@/assets/newHomePage/caseStudy/nuwamaScreen1.webp";
-import screen3 from "@/assets/newHomePage/caseStudy/nuwamaScreen2.webp";
+import screen1 from "@/assets/newHomePage/caseStudy/screenOne.webp"
+import screen2 from "@/assets/newHomePage/caseStudy/nuwamaScreen1.webp"
+import screen3 from "@/assets/newHomePage/caseStudy/nuwamaScreen2.webp"
 
-import Pickrightscreen1 from "@/assets/newHomePage/caseStudy/pickrightScreen1.webp";
-import Pickrightscreen2 from "@/assets/newHomePage/caseStudy/pickrightScreen2.webp";
-import Pickrightscreen3 from "@/assets/newHomePage/caseStudy/pickrightScreen3.webp";
+import Pickrightscreen1 from "@/assets/newHomePage/caseStudy/pickrightScreen1.webp"
+import Pickrightscreen2 from "@/assets/newHomePage/caseStudy/pickrightScreen2.webp"
+import Pickrightscreen3 from "@/assets/newHomePage/caseStudy/pickrightScreen3.webp"
 
-import Enkashscreen1 from "@/assets/newHomePage/caseStudy/EnkashScreen1.webp";
-import Enkashscreen2 from "@/assets/newHomePage/caseStudy/EnkashScreen2.webp";
-import Enkashscreen3 from "@/assets/newHomePage/caseStudy/EnkashScreen3.webp";
+import Enkashscreen1 from "@/assets/newHomePage/caseStudy/EnkashScreen1.webp"
+import Enkashscreen2 from "@/assets/newHomePage/caseStudy/EnkashScreen2.webp"
+import Enkashscreen3 from "@/assets/newHomePage/caseStudy/EnkashScreen3.webp"
 
-import clientImage from "@/assets/newHomePage/caseStudy/clientimage.png";
-import clutch from "@/assets/newHomePage/caseStudy/clutch.svg";
-import AboutHeroSection from "@/components/NewHomePage/AboutHeroSection";
+import clientImage from "@/assets/newHomePage/caseStudy/clientimage.png"
+import clutch from "@/assets/newHomePage/caseStudy/clutch.svg"
+import AboutHeroSection from "@/components/NewHomePage/AboutHeroSection"
 
-import person1 from "@/assets/newHomePage/about/team/about.png";
-import person2 from "@/assets/newHomePage/about/team/team2.png";
-import person3 from "@/assets/newHomePage/about/team/team3.png";
-import person4 from "@/assets/newHomePage/about/team/team4.png";
-import person5 from "@/assets/newHomePage/about/team/team5.png";
+import person1 from "@/assets/newHomePage/about/team/about.png"
+import person2 from "@/assets/newHomePage/about/team/team2.png"
+import person3 from "@/assets/newHomePage/about/team/team3.png"
+import person4 from "@/assets/newHomePage/about/team/team4.png"
+import person5 from "@/assets/newHomePage/about/team/team5.png"
 import AwardsSection, {
   AwardItem,
-} from "@/components/NewHomePage/AwardsSection";
+} from "@/components/NewHomePage/AwardsSection"
 
-import award1 from "@/assets/newHomePage/awards/clutch.svg";
-import award2 from "@/assets/newHomePage/awards/Top_Design_company_2025.png";
-import award3 from "@/assets/newHomePage/awards/Top_Digital_Design_Company_2025.png";
-import award4 from "@/assets/newHomePage/awards/clutch-badge-6.svg";
-import award5 from "@/assets/newHomePage/awards/clutch-badge.svg";
-import award6 from "@/assets/newHomePage/awards/dribbble.svg";
-import award7 from "@/assets/newHomePage/awards/good-firms.svg";
-import award8 from "@/assets/newHomePage/awards/upwork.svg";
-import icon from "@/assets/newHomePage/awards/icon.svg";
-import TestimonialsTabs from "@/components/NewHomePage/TestimonialsTabs";
+import award1 from "@/assets/newHomePage/awards/clutch.svg"
+import award2 from "@/assets/newHomePage/awards/Top_Design_company_2025.png"
+import award3 from "@/assets/newHomePage/awards/Top_Digital_Design_Company_2025.png"
+import award4 from "@/assets/newHomePage/awards/clutch-badge-6.svg"
+import award5 from "@/assets/newHomePage/awards/clutch-badge.svg"
+import award6 from "@/assets/newHomePage/awards/dribbble.svg"
+import award7 from "@/assets/newHomePage/awards/good-firms.svg"
+import award8 from "@/assets/newHomePage/awards/upwork.svg"
+import icon from "@/assets/newHomePage/awards/icon.svg"
+import TestimonialsTabs from "@/components/NewHomePage/TestimonialsTabs"
 
-import tastimonial1 from "@/assets/newHomePage/awards/tastimonial/tastimonial1.avif";
-import tastimonial2 from "@/assets/newHomePage/awards/tastimonial/tastimonial2.svg";
-import tastimonial3 from "@/assets/newHomePage/awards/tastimonial/tastimonial3.svg";
-import tastimonial4 from "@/assets/newHomePage/awards/tastimonial/tastimonial4.svg";
+import tastimonial1 from "@/assets/newHomePage/awards/tastimonial/tastimonial1.avif"
+import tastimonial2 from "@/assets/newHomePage/awards/tastimonial/tastimonial2.svg"
+import tastimonial3 from "@/assets/newHomePage/awards/tastimonial/tastimonial3.svg"
+import tastimonial4 from "@/assets/newHomePage/awards/tastimonial/tastimonial4.svg"
 
-import clientLogo from "@/assets/newHomePage/awards/tastimonial/client_logo.png";
-import clutchLogo from "@/assets/newHomePage/awards/tastimonial/clutchLogo.svg";
-import clutchLogoBlack from "@/assets/newHomePage/awards/tastimonial/clutchBloack.svg";
-import ProjectCTA from "@/components/ProjectCTA/ProjectCTA";
-import TrustBadges from "@/components/NewHomePage/TrustBadges";
+import clientLogo from "@/assets/newHomePage/awards/tastimonial/client_logo.png"
+import clutchLogo from "@/assets/newHomePage/awards/tastimonial/clutchLogo.svg"
+import clutchLogoBlack from "@/assets/newHomePage/awards/tastimonial/clutchBloack.svg"
+import ProjectCTA from "@/components/ProjectCTA/ProjectCTA"
+import TrustBadges from "@/components/NewHomePage/TrustBadges"
 
-import clutchBadges from "@/assets/newHomePage/TrustBadges/clutch.avif";
-import upwork from "@/assets/newHomePage/TrustBadges/upwork.avif";
-import dribbble from "@/assets/newHomePage/TrustBadges/dribble.avif";
-import behance from "@/assets/newHomePage/TrustBadges/behance.avif";
-import BlogInsightsSection from "@/components/NewHomePage/BlogInsightsSection";
+import clutchBadges from "@/assets/newHomePage/TrustBadges/clutch.avif"
+import upwork from "@/assets/newHomePage/TrustBadges/upwork.avif"
+import dribbble from "@/assets/newHomePage/TrustBadges/dribble.avif"
+import behance from "@/assets/newHomePage/TrustBadges/behance.avif"
+import BlogInsightsSection from "@/components/NewHomePage/BlogInsightsSection"
 
 const badges = [
   {
@@ -79,7 +79,7 @@ const badges = [
     icon: behance.src,
     subtitle: "Projects are Featured on Behance platform",
   },
-];
+]
 
 const tabs = [
   {
@@ -138,7 +138,7 @@ const tabs = [
     color: "#000",
     clutchLogo: clutchLogoBlack.src,
   },
-];
+]
 const awards: AwardItem[] = [
   {
     title: "89+ REVIEWS ON CLUTCH",
@@ -174,7 +174,7 @@ const awards: AwardItem[] = [
     title: "GLOBAL 100 B2B UI/UX COMPANY",
     image: award8,
   },
-];
+]
 
 export default function Home() {
   return (
@@ -277,7 +277,7 @@ export default function Home() {
         <Space size={160} />
         <TestimonialsTabs tabs={tabs} />
         <Space size={160} />
-        <BlogInsightsSection />
+        {/* <BlogInsightsSection /> */}
         <Space size={50} />
         <ProjectCTA
           title="Ready to scale"
@@ -292,5 +292,5 @@ export default function Home() {
         <Space size={100} />
       </Layout>
     </>
-  );
+  )
 }
