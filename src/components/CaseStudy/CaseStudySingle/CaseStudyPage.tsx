@@ -1,90 +1,23 @@
-"use client";
+"use client"
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
 
-import CaseHero from "./CaseHero";
-import CaseOverview from "./CaseOverview";
-import CaseResults from "./CaseResults";
-import ProjectCTA from "@/components/ProjectCTA/ProjectCTA";
-import Space from "@/components/Space";
-import ProcessSection from "./ProcessSection";
-import Heading from "@/components/Heading/Heading";
-import CaseStudyHighlight from "./CaseStudyHighlight";
-import CaseStudyMoodboard from "./CaseStudyMoodboard";
-import Loader from "@/components/Loader/Loader";
+import CaseHero from "./CaseHero"
+import CaseOverview from "./CaseOverview"
+import CaseResults from "./CaseResults"
+import ProjectCTA from "@/components/ProjectCTA/ProjectCTA"
+import Space from "@/components/Space"
+import ProcessSection from "./ProcessSection"
+import Heading from "@/components/Heading/Heading"
+import CaseStudyHighlight from "./CaseStudyHighlight"
+import CaseStudyMoodboard from "./CaseStudyMoodboard"
 
 interface Props {
-  slug: string;
-  apiKey: string;
+  data?: any
 }
 
-export default function CaseStudyPage({ slug, apiKey }: Props) {
-  const [data, setData] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (!slug) return;
-
-    const fetchCaseStudy = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-
-        const res = await fetch(
-          `https://resources.moonstack.co/wp-json/moonstack/v1/case-study/${slug}`,
-          {
-            headers: {
-              "X-API-KEY": apiKey,
-            },
-          }
-        );
-
-        if (!res.ok) {
-          if (res.status === 404) throw new Error("Case study not found");
-          if (res.status === 401 || res.status === 403)
-            throw new Error("Invalid API key");
-          throw new Error("Something went wrong");
-        }
-
-        const json = await res.json();
-
-        if (json?.success === false) {
-          throw new Error(json.message || "Failed to load case study");
-        }
-
-        setData(json);
-      } catch (err: any) {
-        console.error("Case study fetch error:", err);
-        setError(err.message || "Unexpected error occurred");
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchCaseStudy();
-  }, [slug, apiKey]);
-
-  /* ---------------- LOADING ---------------- */
-  if (loading) {
-    return (
-      <div className="flex h-screen items-center justify-center">
-        <Loader />
-      </div>
-    );
-  }
-
+export default function CaseStudyPage({ data }: Props) {
   /* ---------------- ERROR ---------------- */
-  if (error) {
-    return (
-      <div className="flex h-screen items-center justify-center px-4 text-center">
-        <div>
-          <h2 className="mb-2 text-2xl font-semibold text-red-500">Oops!</h2>
-          <p className="text-gray-400">{error}</p>
-        </div>
-      </div>
-    );
-  }
 
   /* ---------------- PAGE ---------------- */
   return (
@@ -123,5 +56,5 @@ export default function CaseStudyPage({ slug, apiKey }: Props) {
       </div>
       <Space />
     </>
-  );
+  )
 }

@@ -2141,15 +2141,15 @@ h1 .highlight-text {
 .home-blog-card .home-blog-tags-wrapper .code-embed-2.w-embed {
   width: 20px;
   position: absolute;
-  left: -20px;
+  left: -18px;
   top: 0px;
 }
 
 .home-blog-card .home-blog-tags-wrapper .code-embed-2.right-bottom.w-embed {
   width: 20px;
   position: absolute;
-  top: 61px;
-  right: 1px;
+  top: 62px;
+  right: 0px;
   left: inherit;
 }
 

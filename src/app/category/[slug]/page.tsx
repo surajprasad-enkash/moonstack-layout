@@ -1,36 +1,42 @@
-import Layout from "@/components/Layout";
-import CategoryPosts from "@/components/CategoryPosts/CategoryPosts";
-import bgImage from "@/assets/blogs/blogPageNewBg.svg";
-// import bgImage2 from "@/assets/dy-to-scale-bg.svg";
-import Image from "next/image";
-import ProjectCTA from "@/components/ProjectCTA/ProjectCTA";
-import Link from "next/link";
-import { HiArrowRight } from "react-icons/hi";
-import CategoryList from "@/components/CategoryList/CategoryList";
-import Breadcrumb from "@/components/Breadcrumb";
+import Layout from "@/components/Layout"
+import bgImage from "@/assets/blogs/blogPageNewBg.svg"
+import Image from "next/image"
+import ProjectCTA from "@/components/ProjectCTA/ProjectCTA"
+import Link from "next/link"
+import { HiArrowRight } from "react-icons/hi"
+import CategoryList from "@/components/CategoryList/CategoryList"
+import Breadcrumb from "@/components/Breadcrumb"
+import { fetchPostsByCategory } from "@/helper"
+import { IPostsByCategoryResponse } from "@/types/blog"
+import CategoryPostsClient from "@/components/CategoryPosts/CategoryPostsClient"
 
-/**
- * Utility: slug → Human readable
- * digital-marketing → Digital Marketing
- */
-const formatCategoryName = (slug: string) => {
-  return slug.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
-};
+/* Utility */
+const formatCategoryName = (slug: string) =>
+  slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())
 
-export default function CategoryPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
-  const categoryName = formatCategoryName(slug);
+export default async function CategoryPage({
+  params,
+}: {
+  params: { slug: string }
+}) {
+  const page = 1
+  const data = (await fetchPostsByCategory(
+    params.slug,
+    page
+  )) as IPostsByCategoryResponse
+  // console.log(data.category.slug, "hello data")
+  const categoryName = data?.category?.name || formatCategoryName(params.slug)
 
   const breadcrumbs = [
     { label: "Home", href: "/" },
     { label: "Blogs", href: "/blogs" },
     { label: categoryName, href: "" },
-  ];
+  ]
 
   return (
     <Layout>
-      {/* Top Background */}
-      <div className="px-[20px] z-[1] pt-[160px]">
+      {/* Top BG */}
+      <div className="z-[1] px-[20px] pt-[160px]">
         <Image
           src={bgImage}
           alt="Background"
@@ -41,16 +47,15 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
 
       <section className="relative z-[3] px-[20px] pb-[80px]">
         <div className="container">
-          {/* Breadcrumb */}
           <div className="mb-[40px] pl-[15px]">
             <Breadcrumb items={breadcrumbs} />
           </div>
 
           <div className="gap-[20px] md:flex">
-            {/* LEFT SIDEBAR */}
+            {/* SIDEBAR */}
             <div className="md:w-[250px]">
               <div className="sticky top-[105px]">
-                <CategoryList classNames="" ShowAll={true} showLabel={false} />
+                <CategoryList ShowAll={true} showLabel={false} />
 
                 <div className="exploreMore">
                   <span className="block py-[20px] pl-[10px] text-[12px] text-[#fff]/50 uppercase">
@@ -61,20 +66,18 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
                     <li>
                       <Link
                         href="/about-us"
-                        className="mb-[10px] flex justify-between rounded-[10px] px-4 py-2 text-sm text-white backdrop-blur-md transition hover:bg-white/20 hover:text-[#00ea52]"
+                        className="mb-[10px] flex justify-between rounded-[10px] px-4 py-2 text-sm text-white backdrop-blur-md hover:text-[#00ea52]"
                       >
-                        About Us
-                        <HiArrowRight className="text-xl" />
+                        About Us <HiArrowRight className="text-xl" />
                       </Link>
                     </li>
 
                     <li>
                       <Link
                         href="/case-study"
-                        className="mb-[10px] flex justify-between rounded-[10px] px-4 py-2 text-sm text-white backdrop-blur-md transition hover:bg-white/20 hover:text-[#00ea52]"
+                        className="mb-[10px] flex justify-between rounded-[10px] px-4 py-2 text-sm text-white backdrop-blur-md hover:text-[#00ea52]"
                       >
-                        Case Study
-                        <HiArrowRight className="text-xl" />
+                        Case Study <HiArrowRight className="text-xl" />
                       </Link>
                     </li>
                   </ul>
@@ -82,9 +85,14 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
               </div>
             </div>
 
-            {/* RIGHT CONTENT */}
+            {/* CONTENT */}
             <div className="md:w-[calc(100%-250px)]">
-              <CategoryPosts slug={slug} />
+              <CategoryPostsClient
+                initialPosts={data?.data || []}
+                categoryName={data.category.name}
+                slug={data.category.slug}
+                totalPages={data?.pagination?.total_pages || 1}
+              />
             </div>
           </div>
         </div>
@@ -109,5 +117,5 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
         </div>
       </div>
     </Layout>
-  );
+  )
 }

@@ -1,11 +1,10 @@
-import Image from "next/image";
-import bgImage from "@/assets/case-study/single-case-study/banner.svg";
-import Marquee from "@/components/Homepage/Marquee";
-import Breadcrumb from "@/components/Breadcrumb";
+import Image from "next/image"
+import bgImage from "@/assets/case-study/single-case-study/banner.svg"
+import Breadcrumb from "@/components/Breadcrumb"
 
 export default function CaseHero({ data }: any) {
   return (
-    <section className="relative overflow-hidden pb-[40px] min-h-[100vh] px-[20px] pt-[160px] pb-[10px] text-white">
+    <section className="relative min-h-[100vh] overflow-hidden px-[20px] pt-[160px] pb-[10px] pb-[40px] text-white">
       {bgImage.src && (
         <Image
           src={bgImage.src}
@@ -50,7 +49,7 @@ export default function CaseHero({ data }: any) {
             <div className="mt-[40px] flex items-end gap-[60px]">
               <div className="md:w-[34%]">
                 <h2
-                  className="!font-[400] !text-[40px] !leading-[130%]"
+                  className="!text-[40px] !leading-[130%] !font-[400]"
                   dangerouslySetInnerHTML={{
                     __html: data.acf.bannerDescription,
                   }}
@@ -70,5 +69,5 @@ export default function CaseHero({ data }: any) {
         </div>
       </div>
     </section>
-  );
+  )
 }

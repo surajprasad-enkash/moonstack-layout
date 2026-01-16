@@ -1,38 +1,51 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import { useRouter } from "next/navigation";
-import { IoIosArrowRoundForward } from "react-icons/io";
-import icon from "@/assets/case-study/banner/case-list-star.svg";
+import Image from "next/image"
+import { useRouter } from "next/navigation"
+import { IoIosArrowRoundForward } from "react-icons/io"
+import icon from "@/assets/case-study/banner/case-list-star.svg"
 
 interface Props {
   item: {
-    slug: string;
-    title: string;
-    excerpt: string;
-    profile_img?: string;
-    logo?: string;
+    id: number
+    slug: string
+    title: string
+    excerpt: string
+    permalink: string
+
+    background?: string
+    profile_img?: string
+    logo?: string
+    text_color?: string
+
+    links?: {
+      web?: string
+      mobile?: string
+    }
+
     subTitlePoint?: {
-      subtitle?: string;
+      subtitle?: string | null
       points?: {
-        point: string;
-      }[];
-    };
-  };
-  index: number;
+        point: string
+      }[]
+    }
+
+    tags_html?: string
+  }
+  index: number
 }
 
 export default function CaseStudyCard({ item, index }: Props) {
-  const router = useRouter();
+  const router = useRouter()
 
-  const points = item.subTitlePoint?.points ?? [];
+  const points = item.subTitlePoint?.points ?? []
 
   const gradientClass =
     index % 3 === 2
       ? "bg-[linear-gradient(299deg,_#F2FFBD_43.88%,_#A4CE00_160.15%)]"
       : index % 3 === 1
         ? "bg-[linear-gradient(299deg,_#D1F0E2_43.89%,_#A4B8FE_182.34%)]"
-        : "bg-[linear-gradient(285deg,_#351BFF_-13.81%,_#FFF_135%)]";
+        : "bg-[linear-gradient(285deg,_#351BFF_-13.81%,_#FFF_135%)]"
 
   return (
     <div
@@ -52,7 +65,7 @@ export default function CaseStudyCard({ item, index }: Props) {
           )}
 
           <p
-            className="mb-8 max-w-[520px] !text-[26px] !font-semibold leading-relaxed text-[#1e1e1e]"
+            className="mb-8 max-w-[520px] !text-[26px] leading-relaxed !font-semibold text-[#1e1e1e]"
             dangerouslySetInnerHTML={{ __html: item.excerpt }}
           />
 
@@ -103,5 +116,5 @@ export default function CaseStudyCard({ item, index }: Props) {
         </div>
       </div>
     </div>
-  );
+  )
 }

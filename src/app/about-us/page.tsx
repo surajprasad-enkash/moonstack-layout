@@ -1,23 +1,23 @@
-import Layout from "@/components/Layout";
-import React from "react";
-import HeroSection from "./heroSection";
-import AboutGallery from "./aboutGallerySection";
-import AboutStepper from "./aboutStepper";
-import TeamSection from "./teamSection";
-import LocationSection from "../contact-us/locationSection";
-import OurValuesSection from "./valueSection";
-import ImpactStatsSection from "@/components/about-page/ImpactStatsSection";
-import { impactStatsData } from "@/components/about-page/data/impactStats";
-import DnaSection from "@/components/about-page/DnaSection";
-import IndustryExperienceSection from "@/components/Industries/IndustryExperienceSection";
+import Layout from "@/components/Layout"
+import React from "react"
+import HeroSection from "./heroSection"
+import AboutGallery from "./aboutGallerySection"
+import AboutStepper from "./aboutStepper"
+import TeamSection from "./teamSection"
+import LocationSection from "../contact-us/locationSection"
+import OurValuesSection from "./valueSection"
+import ImpactStatsSection from "@/components/about-page/ImpactStatsSection"
+import { impactStatsData } from "@/components/about-page/data/impactStats"
+import DnaSection from "@/components/about-page/DnaSection"
+import IndustryExperienceSection from "@/components/Industries/IndustryExperienceSection"
 
-import industryicon1 from "@/assets/industries/ai/icon/dbd2_i1.png";
-import industryicon2 from "@/assets/industries/ai/icon/b_i2.png";
-import industryicon3 from "@/assets/industries/ai/icon/b_i4.png";
-import industryicon4 from "@/assets/industries/ai/icon/_i5.png";
-import Space from "@/components/Space";
-import { Metadata } from "next";
-import { buildMetadata } from "@/helper/generateMetadata ";
+import industryicon1 from "@/assets/industries/ai/icon/dbd2_i1.png"
+import industryicon2 from "@/assets/industries/ai/icon/b_i2.png"
+import industryicon3 from "@/assets/industries/ai/icon/b_i4.png"
+import industryicon4 from "@/assets/industries/ai/icon/_i5.png"
+import Space from "@/components/Space"
+import { Metadata } from "next"
+import { buildMetadata } from "@/helper/generateMetadata "
 
 export const generateMetadata = (): Metadata => {
   return buildMetadata({
@@ -25,8 +25,8 @@ export const generateMetadata = (): Metadata => {
     description:
       "Want to know who is behind Moonstack? Learn how our India‑based Development team helps startups and businesses ship reliable apps, websites, and digital products.",
     canonical: "https://www.moonstack.com/about-us",
-  });
-};
+  })
+}
 const AboutUs = (): React.JSX.Element => {
   return (
     <>
@@ -107,7 +107,7 @@ const AboutUs = (): React.JSX.Element => {
         <Space />
       </Layout>
     </>
-  );
-};
+  )
+}
 
-export default AboutUs;
+export default AboutUs

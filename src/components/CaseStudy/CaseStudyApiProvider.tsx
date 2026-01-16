@@ -1,83 +1,67 @@
-"use client";
+// "use client"
 
-import { useEffect, useState } from "react";
+// import { getCaseStudiesServer } from "@/helper"
+// import { useEffect, useState } from "react"
 
-const API_URL =
-  "https://resources.moonstack.co/wp-json/moonstack/v1/case-studies";
+// interface ProviderProps {
+//   perPage: number
+//   children: (props: {
+//     items: any[]
+//     loading: boolean
+//     error: string | null
+//     hasMore: boolean
+//     loadMore: () => void
+//   }) => React.ReactNode
+// }
 
-interface Props {
-  perPage?: number;
-  apiKey: string;
-  children: (props: {
-    items: any[];
-    loading: boolean;
-    error: string | null;
-    loadMore: () => void;
-    hasMore: boolean;
-  }) => React.ReactNode;
-}
+// export default function CaseStudyApiProvider({
+//   perPage,
+//   children,
+// }: ProviderProps) {
+//   const [items, setItems] = useState<any[]>([])
+//   const [page, setPage] = useState(1)
+//   const [totalPages, setTotalPages] = useState(1)
+//   const [loading, setLoading] = useState(false)
+//   const [error, setError] = useState<string | null>(null)
 
-export default function CaseStudyApiProvider({
-  perPage = 10,
-  apiKey,
-  children,
-}: Props) {
-  const [items, setItems] = useState<any[]>([]);
-  const [page, setPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+//   const fetchData = async (pageNo: number) => {
+//     try {
+//       setLoading(true)
+//       setError(null)
 
-  const fetchCaseStudies = async (pageNum: number) => {
-    try {
-      setLoading(true);
-      setError(null);
+//       const data = await getCaseStudiesServer(pageNo, perPage)
 
-      const res = await fetch(
-        `${API_URL}?page=${pageNum}&per_page=${perPage}`,
-        {
-          headers: {
-            "X-API-KEY": apiKey,
-          },
-        }
-      );
+//       setItems((prev) => (pageNo === 1 ? data.items : [...prev, ...data.items]))
+//       setTotalPages(data.totalPages)
+//     } catch (err: any) {
+//       setError(err.message)
+//     } finally {
+//       setLoading(false)
+//     }
+//   }
 
-      if (!res.ok) {
-        throw new Error("Failed to fetch case studies");
-      }
+//   useEffect(() => {
+//     setPage(1)
+//     fetchData(1)
+//   }, [perPage])
 
-      const data = await res.json();
+//   const loadMore = () => {
+//     if (page < totalPages && !loading) {
+//       const nextPage = page + 1
+//       setPage(nextPage)
+//       fetchData(nextPage)
+//     }
+//   }
 
-      setItems((prev) => [...prev, ...data.items]);
-      setTotalPages(data.totalPages);
-    } catch (err: any) {
-      setError(err.message || "Something went wrong");
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchCaseStudies(1);
-  }, []);
-
-  const loadMore = () => {
-    if (page < totalPages && !loading) {
-      const nextPage = page + 1;
-      setPage(nextPage);
-      fetchCaseStudies(nextPage);
-    }
-  };
-
-  return (
-    <>
-      {children({
-        items,
-        loading,
-        error,
-        loadMore,
-        hasMore: page < totalPages,
-      })}
-    </>
-  );
-}
+//   return (
+//     <>
+//       {children({
+//         items,
+//         loading,
+//         error,
+//         hasMore: page < totalPages,
+//         loadMore,
+//       })}
+//     </>
+//   )
+// }

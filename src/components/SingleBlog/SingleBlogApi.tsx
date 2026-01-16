@@ -1,35 +1,32 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 
 // components
-import Heading from "../Heading/Heading";
-import CategoryList from "../CategoryList/CategoryList";
-import RelatedPosts from "../RelatedPosts/RelatedPosts";
-import Breadcrumb from "../Breadcrumb";
+import Heading from "../Heading/Heading"
+import CategoryList from "../CategoryList/CategoryList"
+import RelatedPosts from "../RelatedPosts/RelatedPosts"
+import Breadcrumb from "../Breadcrumb"
 
 // helpers
-import bgImage from "@/assets/blogs/singleBlogBanner.png";
-import { IPostData } from "@/types/blog";
+import bgImage from "@/assets/blogs/singleBlogBanner.png"
+import { IPostData } from "@/types/blog"
 
 interface Props {
-  slug: string;
-  post?: IPostData;
+  post?: IPostData
 }
 
-function SinglePostData({ slug, post }: Props) {
-  //
-
-  if (!post) return <p className="text-white">Post not found</p>;
+function SinglePostData({ post }: Props) {
+  if (!post) return <p className="text-white">Post not found</p>
   const pageUrl =
     typeof window !== "undefined"
       ? encodeURIComponent(`${window.location.origin}/blogs/${post.slug}`)
-      : "";
+      : ""
 
-  const pageTitle = encodeURIComponent(post.title);
+  const pageTitle = encodeURIComponent(post.title)
   function fallbackCopy(url: string): any {
-    throw new Error("Function not implemented.");
+    throw new Error("Function not implemented.")
   }
 
   return (
@@ -86,7 +83,7 @@ function SinglePostData({ slug, post }: Props) {
       <section className="relative bg-[#fff] px-[20px] pt-[80px] pb-[80px]">
         <div className="singlePostBanner">
           <div className="relative z-[2] container">
-            <div className="flex gap-[60px] md:mx-[60px]">
+            <div className="flex gap-[60px]">
               <div className="leftSideBar w-[100%] max-w-[50px]">
                 <div className="sticky top-[130px]">
                   <p className="mb-[20px] text-[12px] font-[500] text-[#000] uppercase">
@@ -232,8 +229,10 @@ function SinglePostData({ slug, post }: Props) {
               <div className="rightSideBar w-[100%] max-w-[324px]">
                 <div className="sticky top-[120px]">
                   <CategoryList
+                    ShowAll={false}
                     listClass="!text-[#000]"
                     classNames="px-[20px] pt-[5px] rounded-[10px] bg-[#fff]"
+                    showLabel={true}
                   />
                 </div>
               </div>
@@ -243,13 +242,13 @@ function SinglePostData({ slug, post }: Props) {
           {/* ✅ SAFE CATEGORY PASS (ONLY ADDITION) */}
         </div>
       </section>
-      <div className="relative ">
+      <div className="relative">
         {post.category && (
           <RelatedPosts categorySlug={post.category.slug} notInPost={post.id} />
         )}
       </div>
     </>
-  );
+  )
 }
 
-export default SinglePostData;
+export default SinglePostData

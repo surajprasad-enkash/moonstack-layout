@@ -1,20 +1,20 @@
-import React from "react";
+import React from "react"
 
 //components
-import Layout from "@/components/Layout";
-import HeroSection from "./heroSection";
-import GetQuoteBanner from "@/components/GetQuoteBanner/GetQuoteBanner";
-import WhyJoinSection from "./whyJoin";
-import LatestOpportunity from "./latestOpp";
+import Layout from "@/components/Layout"
+import HeroSection from "./heroSection"
+import GetQuoteBanner from "@/components/GetQuoteBanner/GetQuoteBanner"
+import WhyJoinSection from "./whyJoin"
+import LatestOpportunity from "./latestOpp"
 
 //data
-import { benefitsData } from "./data";
+import { benefitsData } from "./data"
 
 //utils
-import bannerImg from "@/assets/android-app-bg.webp";
-import ProcessSection from "./process";
-import { Metadata } from "next";
-import { buildMetadata } from "@/helper/generateMetadata ";
+import bannerImg from "@/assets/android-app-bg.webp"
+import ProcessSection from "./process"
+import { Metadata } from "next"
+import { buildMetadata } from "@/helper/generateMetadata "
 
 export const generateMetadata = (): Metadata => {
   return buildMetadata({
@@ -22,8 +22,8 @@ export const generateMetadata = (): Metadata => {
     description:
       "Discover career opportunities at Moonstack. Join our product-focused teams and grow your future building innovative digital products. Apply Now!",
     canonical: "https://www.moonstack.com/careeers",
-  });
-};
+  })
+}
 
 const carreers = (): React.JSX.Element => {
   //
@@ -95,7 +95,7 @@ const carreers = (): React.JSX.Element => {
         />
       </Layout>
     </>
-  );
-};
+  )
+}
 
-export default carreers;
+export default carreers

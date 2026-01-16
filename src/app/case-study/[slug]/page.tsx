@@ -1,19 +1,20 @@
-import Layout from "@/components/Layout";
-import CaseStudyPages from "@/components/CaseStudy/CaseStudySingle/CaseStudyPage";
+import Layout from "@/components/Layout"
+import CaseStudyPages from "@/components/CaseStudy/CaseStudySingle/CaseStudyPage"
+import { getCaseStudy } from "@/helper"
 
 interface PageProps {
   params: {
-    slug: string;
-  };
+    slug: string
+  }
 }
 
-export default function CaseStudyPage({ params }: PageProps) {
+async function CaseStudyPage({ params }: PageProps) {
+  const { slug } = params
+  const data = await getCaseStudy(slug)
   return (
     <Layout>
-      <CaseStudyPages
-        slug={params.slug}
-        apiKey="a9f3c8d4e21b7a0c9f0a1e3d8b7c6f7hyx67"
-      />
+      <CaseStudyPages data={data} />
     </Layout>
-  );
+  )
 }
+export default CaseStudyPage
