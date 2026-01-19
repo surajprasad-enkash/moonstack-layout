@@ -300,8 +300,8 @@ export default function NewHeader() {
                     />
                     <IoIosArrowDown
                       className={`ml-1 text-sm transition-colors ${openMenu === "services"
-                          ? "text-[#d6ff00]"
-                          : "text-white"
+                        ? "text-[#d6ff00]"
+                        : "text-white"
                         }`}
                     />
                   </button>
@@ -487,15 +487,7 @@ export default function NewHeader() {
                 )}
               </li>
 
-              {/* CONTACT */}
-              <li className={`menu-item megaMenuItem relative`}>
-                <Link href="/contact-us">
-                  <HoverSlideText
-                    text="Contact us"
-                    active={isActive("/contact-us")}
-                  />
-                </Link>
-              </li>
+
               <li className={`menu-item megaMenuItem relative`}>
                 <Link href="/services/ai-agent-development-company">
                   <HoverSlideText
@@ -509,6 +501,15 @@ export default function NewHeader() {
                   <HoverSlideText
                     text="Industries"
                     active={isActive("/industries")}
+                  />
+                </Link>
+              </li>
+              {/* CONTACT */}
+              <li className={`menu-item megaMenuItem relative`}>
+                <Link href="/contact-us">
+                  <HoverSlideText
+                    text="Contact us"
+                    active={isActive("/contact-us")}
                   />
                 </Link>
               </li>
