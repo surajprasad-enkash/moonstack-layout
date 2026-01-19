@@ -103,7 +103,7 @@ export default function BlogsPage() {
                 postprePage={12}
                 title={false}
                 loadMore={true}
-                imageHeight="h-[200px]"
+                imageHeight="h-[220px]"
               />
             </div>
           </div>

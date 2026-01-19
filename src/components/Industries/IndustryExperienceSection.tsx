@@ -1,22 +1,22 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import Link from "next/link";
-import Heading, { HeadingSegment } from "@/components/Heading/Heading";
-import { FiArrowRight } from "react-icons/fi";
-import bgImage from "@/assets/industries/ai/icon/review-bg.svg";
+import Image from "next/image"
+import Link from "next/link"
+import Heading, { HeadingSegment } from "@/components/Heading/Heading"
+import { FiArrowRight } from "react-icons/fi"
+import bgImage from "@/assets/industries/ai/icon/review-bg.svg"
 
 interface IndustryCard {
-  title: string;
-  href?: string;
-  icon: string;
-  tags: string[];
+  title: string
+  href?: string
+  icon: string
+  tags: string[]
 }
 
 interface IndustryExperienceSectionProps {
-  heading: HeadingSegment[];
-  description: string;
-  industries: IndustryCard[];
+  heading: HeadingSegment[]
+  description: string
+  industries: IndustryCard[]
 }
 
 export default function IndustryExperienceSection({
@@ -26,7 +26,7 @@ export default function IndustryExperienceSection({
 }: IndustryExperienceSectionProps) {
   return (
     <section className="relative px-[20px]">
-      <div className="container relative z-10 mx-auto px-4">
+      <div className="relative z-10 container mx-auto px-4">
         {/* HEADING */}
         <div className="mx-auto mb-[72px] max-w-[820px] text-center">
           <Heading headingTag="h2" content={heading} className="text-white" />
@@ -41,8 +41,8 @@ export default function IndustryExperienceSection({
           {industries.map((item, index) => (
             <Link
               key={index}
-              href={item.href || "#"}
-              className="group relative rounded-[20px] bg-[#EEF2FF] p-[32px] transition"
+              href={item.href || ""}
+              className="group relative cursor-text rounded-[20px] bg-[#EEF2FF] p-[32px] transition"
             >
               {/* TOP */}
               <div className="mb-[18px] flex items-center justify-between">
@@ -58,7 +58,7 @@ export default function IndustryExperienceSection({
                   </h3>
                 </div>
 
-                <FiArrowRight className="text-black transition " />
+                <FiArrowRight className="text-black transition" />
               </div>
 
               {/* TAGS */}
@@ -77,5 +77,5 @@ export default function IndustryExperienceSection({
         </div>
       </div>
     </section>
-  );
+  )
 }

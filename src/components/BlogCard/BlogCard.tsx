@@ -25,7 +25,7 @@ interface Props {
   imageHeight?: string
 }
 
-export default function BlogCard({ post }: Props) {
+export default function BlogCard({ post, imageHeight = "h-[200px]" }: Props) {
   return (
     <article className="group home-blog-card relative flex flex-col overflow-hidden transition">
       {/* IMAGE */}
@@ -37,7 +37,7 @@ export default function BlogCard({ post }: Props) {
               alt={post.title}
               width={500}
               height={350}
-              className="h-[200px] w-full object-cover transition group-hover:scale-102"
+              className={`${imageHeight} w-full object-cover transition group-hover:scale-102`}
             />
           </div>
         </div>

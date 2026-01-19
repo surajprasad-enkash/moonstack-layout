@@ -1,10 +1,8 @@
-
-import revenue1 from  "@/assets/revenue.svg";
-import neeta from  "@/assets/about-us/neetaMan2.webp";
-import dheeraj from  "@/assets/about-us/dheerajSirHoldingMIc.webp";
-import gallary from  "@/assets/about-us/gallary.webp";
-import team from  "@/assets/about-us/teams2.webp";
-
+import revenue1 from "@/assets/revenue.svg"
+import neeta from "@/assets/about-us/neetaMan2.webp"
+import dheeraj from "@/assets/about-us/dheerajSirHoldingMIc.webp"
+import gallary from "@/assets/about-us/gallary.webp"
+import team from "@/assets/about-us/teams2.webp"
 
 export const featuresData = [
   {
@@ -27,7 +25,7 @@ export const featuresData = [
     title: "13 years",
     description: "Experience",
   },
-];
+]
 
 export const timelineData = [
   {
@@ -62,7 +60,7 @@ export const timelineData = [
     date: "24",
     image: gallary.src,
   },
-];
+]
 
 export const steps = [
   {
@@ -113,16 +111,15 @@ export const steps = [
     description:
       "Define project goals, gather requirements, and outline timelines to set a clear path for development",
   },
-];
+]
 export type ValueCard = {
-  title?: string;
-  description?: string;
-  image?: string;
-  icon?: string;
-  ctaText?: string;
-  className?: string;
-};
-
+  title?: string
+  description?: string
+  image?: string
+  icon?: string
+  ctaText?: string
+  className?: string
+}
 
 export const valuesData: ValueCard[] = [
   {
@@ -130,16 +127,16 @@ export const valuesData: ValueCard[] = [
     className: "",
   },
   {
-    title: "Growth",
+    title: "Innovative Solutions",
     description:
-      "Constantly working on improving our skills and knowledge base, so that we can continue to provide the best service to our clients, with the best quality end results.",
+      "Our team is always on the lookout for the latest technologies and methodologies to provide clients with the freshest solutions we can think of. Whether it’s a new mobile application for a company or a complicated cloud project, we will not stop at what is currently possible.",
     className: "aboutValueSectionBoxBg1 text-black",
   },
   { image: dheeraj.src },
   {
-    title: "People",
+    title: "Expert Team",
     description:
-      "Creating honest, trustworthy and mutually beneficial relationships with our clients. Truly caring for all our team members.",
+      "Our team consists of experienced administrators, engineers, designers, and developers across diverse technologies. We combine deep web development expertise with passion for every project, valuing collaboration to create outstanding products.",
     className: "aboutValueSectionBoxBg2 text-white",
   },
   {
@@ -148,11 +145,11 @@ export const valuesData: ValueCard[] = [
     className: "relative",
   },
   {
-    title: "Awareness",
+    title: "Proven Track Record",
     description:
-      "Always remain purposeful when it comes to tasks and their completion. Being aware helps to stay fully involved in the process.",
+      "With years of experience and proven accomplishments, Moonstack is a reliable partner across industries. We deliver high-quality solutions and take pride in building strong, lasting relationships with our clients.",
     className: "aboutValueSectionBoxBg2 text-white",
   },
-];
+]
 
-export default {};
+export default {}

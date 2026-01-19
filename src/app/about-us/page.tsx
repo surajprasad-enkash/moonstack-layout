@@ -45,11 +45,11 @@ const AboutUs = (): React.JSX.Element => {
           }}
           mission={{
             label: "Mission",
-            text: "We are a caring partner that provides innovative Design & Development solutions for funded startups, technology SMEs and Fortune 500 companies.",
+            text: "To help businesses worldwide turn ideas into impactful digital products through innovation-driven design, robust engineering, and performance-focused technology.",
           }}
           vision={{
             label: "Vision",
-            text: "We are a full-cycle Digital Product Agency that builds and transforms amazing projects with human-centric design for the world's top companies.",
+            text: "To shape the future of digital experiences by building scalable, intelligent, and human-centric solutions for the world’s most forward-thinking companies.",
           }}
         />
         <OurValuesSection />

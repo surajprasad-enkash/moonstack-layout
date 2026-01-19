@@ -44,7 +44,7 @@ export const generateMetadata = (): Metadata => {
 }
 
 const points = [
-  "Throughout the entire project all I saw was sheer will to keep pushing forward and adapting to whatever  the next request was.  Terrific job  and we couldn't have done it without you.",
+  "Moonstack showed exceptional commitment, adaptability, and technical expertise, delivering quality results through true partnership and proactive collaboration.",
 ]
 const awards: AwardItem[] = [
   {
@@ -92,12 +92,12 @@ const contactUs = (): React.JSX.Element => {
         <AwardsSection
           showLabel={false}
           heading={[
-            { text: "Industry", className: "" },
+            { text: "Trusted and recognized", className: "" },
             {
-              text: "recognitions ",
+              text: " across top industry",
               className: "libreItalic highlight-text font-[400]",
             },
-            { text: "from leading review platforms ", className: "" },
+            { text: " review platforms", className: "" },
           ]}
           awards={awards}
         />
@@ -105,7 +105,7 @@ const contactUs = (): React.JSX.Element => {
           steps={[
             {
               step: "STEP 1",
-              description: "Our representative contacts you within 24 hours.",
+              description: "Our team connects with you within 24 hours.",
               icon: step1.src,
             },
             {
@@ -115,7 +115,7 @@ const contactUs = (): React.JSX.Element => {
             {
               step: "STEP 2",
               description:
-                "We clarify project details and necessary requirements from you.",
+                "We discuss your goals, clarify requirements, and understand project expectations.",
               icon: step2.src,
             },
             {
@@ -125,7 +125,7 @@ const contactUs = (): React.JSX.Element => {
             {
               step: "STEP 3",
               description:
-                "We analyze and review collected requirements and form up the brief.",
+                "Our experts analyze the inputs and craft a clear, actionable project brief.",
               icon: step3.src,
             },
             {
@@ -135,16 +135,16 @@ const contactUs = (): React.JSX.Element => {
             {
               step: "STEP 4",
               description:
-                "We form up the estimates and present you the proposal.",
+                "We prepare detailed estimates and present a tailored proposal.",
               icon: step4.src,
             },
           ]}
         />
         <TestimonialCard
           quote={points.join(" ")}
-          highlightText="Terrific job"
+          highlightText="partnership and proactive"
           authorName="Aetienne Sardon"
-          authorRole="Founder at MYSO Finance"
+          authorRole="Founder at Enkash"
           authorImage={userImage}
         />
         <LocationSection

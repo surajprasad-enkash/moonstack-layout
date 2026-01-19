@@ -1,20 +1,21 @@
 // data/impactStats.ts
-import lottieFile from "../../../../public/lottie/about-page/businessYear.json";
+import lottieFile from "../../../../public/lottie/about-page/businessYear.json"
 // import clientImg from "@/assets/ImpactStatsSection/clientimg.png";
-import clientImg from "@/assets/newHomePage/ImpactStatsSection/client_logo.png";
+import clientImg from "@/assets/newHomePage/ImpactStatsSection/client_logo.png"
 
 // import MYSO from "@/assets/newHomePage/ImpactStatsSection/myso.png";
-import MYSO from "@/assets/newHomePage/ImpactStatsSection/myso.png";
-import paradigm from "@/assets/newHomePage/ImpactStatsSection/paradigm.png";
-import players from "@/assets/newHomePage/ImpactStatsSection/players.png";
-import voxe from "@/assets/newHomePage/ImpactStatsSection/voxe.png";
-import teamMember from "@/assets/newHomePage/ImpactStatsSection/teamMember.webp";
-import globalRemote from "@/assets/newHomePage/ImpactStatsSection/icon/globalRemote.svg";
+import MYSO from "@/assets/newHomePage/ImpactStatsSection/myso.png"
+import paradigm from "@/assets/newHomePage/ImpactStatsSection/paradigm.png"
+import players from "@/assets/newHomePage/ImpactStatsSection/players.png"
+import voxe from "@/assets/newHomePage/ImpactStatsSection/voxe.png"
+import teamMember from "@/assets/newHomePage/ImpactStatsSection/teamMember.webp"
+import globalRemote from "@/assets/newHomePage/ImpactStatsSection/icon/globalRemote.svg"
 export const impactStatsData = {
   heading: {
-    prefix: "Today",
+    prefix: "Today, ",
     highlight: "Moonstack",
-    suffix: "stands on market-leading positions and is recognized globally",
+    suffix:
+      "holds a trusted, market-leading position as a global technology partner.",
   },
 
   cards: [
@@ -30,10 +31,10 @@ export const impactStatsData = {
       title: "40+ successfully designed",
       subtitle: "Angel / Seed startups",
       quote:
-        "We had a feeling that Moonstack is not just a contract outsourcing team but part of our startup. We had super close communication.",
+        "Moonstack brought clarity, technical expertise, and a collaborative mindset. Their close communication and ownership mindset made a real difference to our product journey.",
       author: {
         name: "Kirill Onasenko",
-        role: "CEO, VOXE",
+        role: "CEO",
         avatar: clientImg.src,
       },
     },
@@ -66,4 +67,4 @@ export const impactStatsData = {
       globalRemote: globalRemote.src,
     },
   ],
-};
+}

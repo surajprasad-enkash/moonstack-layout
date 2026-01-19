@@ -3,6 +3,10 @@ import bgImage from "@/assets/case-study/single-case-study/banner.svg"
 import Breadcrumb from "@/components/Breadcrumb"
 
 export default function CaseHero({ data }: any) {
+  let featured_image = data.featured_image
+  if (featured_image == "") {
+    featured_image = data.acf.case_study_profile_image
+  }
   return (
     <section className="relative min-h-[100vh] overflow-hidden px-[20px] pt-[160px] pb-[10px] pb-[40px] text-white">
       {bgImage.src && (
@@ -41,10 +45,10 @@ export default function CaseHero({ data }: any) {
                 dangerouslySetInnerHTML={{ __html: data.title }}
               />
             </div>
-            <div
+            {/* <div
               className="caseStudySingleTag"
               dangerouslySetInnerHTML={{ __html: data.acf.case_study_tag_list }}
-            />
+            /> */}
 
             <div className="mt-[40px] flex items-end gap-[60px]">
               <div className="md:w-[34%]">
@@ -57,7 +61,7 @@ export default function CaseHero({ data }: any) {
               </div>
               <div className="md:w-[66%]">
                 <Image
-                  src={data.acf.case_study_profile_image}
+                  src={featured_image}
                   alt={data.title}
                   width={1000}
                   height={1000}

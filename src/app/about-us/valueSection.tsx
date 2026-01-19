@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
-import { valuesData } from "@/constants/about";
-import Image from "next/image";
-import bgImage from "@/assets/about-us/OurValuesSection/bgImage.svg";
-import Heading from "@/components/Heading/Heading";
+import { valuesData } from "@/constants/about"
+import Image from "next/image"
+import bgImage from "@/assets/about-us/OurValuesSection/bgImage.svg"
+import Heading from "@/components/Heading/Heading"
 
 export default function OurValuesSection() {
   return (
@@ -27,8 +27,9 @@ export default function OurValuesSection() {
             ]}
           />
           <p className="mx-auto mt-4 max-w-xl text-sm text-white/80">
-            People, awareness and growth. Our people, being the main value of
-            the company, come to effective growth while remaining purposeful.
+            People, purpose, and growth define our value system. By nurturing
+            awareness and ownership, we enable our teams to grow effectively
+            while staying aligned with a clear mission.
           </p>
         </div>
 
@@ -78,5 +79,5 @@ export default function OurValuesSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

@@ -1567,14 +1567,8 @@ h1 .highlight-text {
   line-height: 40px !important;
 }
 
-.singleBlogPost .blogLeftSection h2 {
-  font-size: 28px !important;
-  line-height: 40px !important;
-}
 
-.singleBlogPost .blogLeftSection strong {
-  font-weight: 600;
-}
+
 
 .singleBlogPost .blogLeftSection p,
 .singleBlogPost .blogLeftSection li {
@@ -1585,6 +1579,15 @@ h1 .highlight-text {
   line-height: 150%;
 }
 
+.singleBlogPost .blogLeftSection ul,
+.singleBlogPost .blogLeftSection ol {
+  margin-bottom: 18px;
+}
+
+.singleBlogPost .blogLeftSection p {
+  margin-bottom: 18px;
+}
+
 .singleBlogPost .blogLeftSection p em {
   font-family: "Libre Baskerville";
 }
@@ -1593,8 +1596,10 @@ h1 .highlight-text {
   font-weight: 500;
 }
 
+
+
 .singleBlogPost .blogLeftSection a {
-  color: #0ce859;
+  color: #000000;
 }
 
 .singleBlogPost .blogLeftSection pre {

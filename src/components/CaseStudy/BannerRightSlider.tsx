@@ -1,27 +1,26 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import dynamic from "next/dynamic";
+import Image from "next/image"
+import dynamic from "next/dynamic"
 
-const Slider = dynamic(() => import("react-slick"), { ssr: false });
-import sliderimg1 from "@/assets/newHomePage/caseStudy/nuwamaScreen2.webp";
-import sliderimg2 from "@/assets/newHomePage/caseStudy/pickrightScreen3.webp";
-import sliderimg3 from "@/assets/newHomePage/caseStudy/EnkashScreen2.webp";
-import sliderimg4 from "@/assets/newHomePage/caseStudy/EnkashScreen3.webp";
+const Slider = dynamic(() => import("react-slick"), { ssr: false })
+import sliderimg1 from "@/assets/newHomePage/caseStudy/nuwamaScreen2.webp"
+import sliderimg2 from "@/assets/newHomePage/caseStudy/pickrightScreen3.webp"
+import sliderimg3 from "@/assets/newHomePage/caseStudy/EnkashScreen2.webp"
+import sliderimg4 from "@/assets/newHomePage/caseStudy/brainmates.webp"
 
 const slides = [
   {
     image: sliderimg1,
-    tag: "AI",
-    category: "Digital Voice Analysing Tool",
-    title:
-      "MOJO-CX transforms the contact centre experience for customers and agents alike",
+    tag: "Wealth Management",
+    category: "Finance Platform",
+    title: "Enterprise-grade wealth management platform",
   },
   {
     image: sliderimg2,
-    tag: "SaaS",
-    category: "Customer Analytics Platform",
-    title: "Advanced analytics platform improving customer engagement globally",
+    tag: "Trading",
+    category: "Consumer Platform",
+    title: "Smart product discovery & comparison platform",
   },
   {
     image: sliderimg3,
@@ -31,11 +30,11 @@ const slides = [
   },
   {
     image: sliderimg4,
-    tag: "Fintech",
-    category: "Finance Dashboard",
-    title: "Modern fintech dashboard with real-time reporting",
+    tag: "Product Strategy",
+    category: "SaaS Growth Platform",
+    title: "Strategic product management platform for growth",
   },
-];
+]
 
 export default function WorksImageSlider() {
   const settings = {
@@ -50,7 +49,7 @@ export default function WorksImageSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     pauseOnHover: true,
-  };
+  }
 
   return (
     <div className="caseStudyRightSection relative">
@@ -86,12 +85,11 @@ export default function WorksImageSlider() {
                 <h6 className="text-sm font-semibold md:text-base">
                   {item.title}
                 </h6>
-
               </div>
             </div>
           </div>
         ))}
       </Slider>
     </div>
-  );
+  )
 }

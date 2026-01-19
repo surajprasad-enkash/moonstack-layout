@@ -1,14 +1,14 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 import dheeraj from "@/assets/about-us/dheerajSir.webp"
-import devender from "@/assets/about-us/devenderSir.webp"
+import devender from "@/assets/members/depender.webp"
 import neeta from "@/assets/about-us/neetaMam.webp"
 import sunil from "@/assets/about-us/sunilSir.webp"
 export default function TeamSection() {
   return (
-    <section className="relative z-[2] py-[80px] px-[20px]">
+    <section className="relative z-[2] px-[20px] py-[80px]">
       <div className="container mx-auto grid grid-cols-1 gap-6 lg:grid-cols-2">
         {/* LEFT – BIG CARD */}
         <div className="relative min-h-[600px] overflow-hidden rounded-2xl bg-[linear-gradient(294deg,#0b4e00_-14.71%,#FFF_88.49%)] p-6">
@@ -122,5 +122,5 @@ export default function TeamSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

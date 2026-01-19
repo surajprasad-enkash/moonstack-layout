@@ -60,7 +60,7 @@ export default function CaseStudyCard({ item, index }: Props) {
               alt={item.title}
               width={299}
               height={100}
-              className="mb-6 h-[80px] w-auto rounded-[14px] p-2"
+              className="mb-6 h-[60px] w-auto rounded-[14px] p-2"
             />
           )}
 
@@ -75,13 +75,13 @@ export default function CaseStudyCard({ item, index }: Props) {
               alt={item.title}
               width={720}
               height={420}
-              className="rounded-[16px]"
+              className="w-[100%] rounded-[0px]"
             />
           )}
         </div>
 
         {/* RIGHT */}
-        <div className="flex w-1/2 flex-col gap-10">
+        <div className="flex w-1/2 flex-col gap-10 md:pt-[82px]">
           <div>
             <h4
               className="mb-6 !text-[26px] !font-bold text-[#0b0b0b]"

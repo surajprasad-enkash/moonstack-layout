@@ -1,19 +1,19 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import LottiePlayer from "../LottieAnimation";
-import bgImageFunding from "@/assets/about-us/ImpactStatsSection/funding-bg.svg";
-import bgImageProject from "@/assets/about-us/project-card-bg.webp";
+import Image from "next/image"
+import LottiePlayer from "../LottieAnimation"
+import bgImageFunding from "@/assets/about-us/ImpactStatsSection/funding-bg.svg"
+import bgImageProject from "@/assets/about-us/project-card-bg.webp"
 interface ImpactStatsSectionProps {
-  data: any;
+  data: any
 }
 
 export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
   return (
-    <section className="relative  py-[80px] z-[1] px-[20px] text-white">
+    <section className="relative z-[1] px-[20px] py-[80px] text-white">
       <div className="container mx-auto px-4">
         {/* HEADING */}
-        <h2 className="mx-auto mb-16 max-w-3xl text-center ">
+        <h2 className="mx-auto mb-16 max-w-[840px] text-center">
           {data.heading.prefix}{" "}
           <span className="highlight-text libreItalic">
             {data.heading.highlight}
@@ -47,7 +47,7 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
                     />
                   </div>
                 </div>
-              );
+              )
             }
 
             /* ---------------- TESTIMONIAL ---------------- */
@@ -86,7 +86,7 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
                     </div>
                   </div>
                 </div>
-              );
+              )
             }
 
             /* ---------------- FUNDING ---------------- */
@@ -115,13 +115,13 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
                           alt={company.amount}
                           width={100}
                           height={100}
-                          className="h-[auto] w-[60%]"
+                          className="h-[auto] w-[60%] object-contain"
                         />
                       </div>
                     ))}
                   </div>
                 </div>
-              );
+              )
             }
 
             /* ---------------- PROJECTS ---------------- */
@@ -129,10 +129,10 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
               return (
                 <div
                   key={index}
-                  className="relative rounded-2xl bg-cover px-10 pt-8 pb-0 text-black md:w-[40%]"
+                  className="relative rounded-2xl !bg-cover px-10 pt-8 pb-0 text-black md:w-[40%]"
                   style={{
                     background: `url(${bgImageProject.src})`,
-                    backgroundPosition: `bottom center`,
+                    backgroundPosition: `bottom right`,
                   }}
                 >
                   <h3 className="!text-[80px] font-[500]">{card.value}</h3>
@@ -140,7 +140,7 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
                     {card.label}
                   </p>
                 </div>
-              );
+              )
             }
             /* ---------------- Team Member ---------------- */
             if (card.type === "teamMembers") {
@@ -164,7 +164,7 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
                     <p className="!text-[32px] !font-[500]">{card.label}</p>
                   </div>
                 </div>
-              );
+              )
             }
             /* ---------------- globalRemote ---------------- */
             if (card.type === "globalRemote") {
@@ -181,12 +181,12 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
                 >
                   <p className="!text-[32px] !font-[500]">{card.label}</p>
                 </div>
-              );
+              )
             }
-            return null;
+            return null
           })}
         </div>
       </div>
     </section>
-  );
+  )
 }
