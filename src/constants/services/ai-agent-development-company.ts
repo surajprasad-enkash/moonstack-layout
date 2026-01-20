@@ -100,38 +100,38 @@ export const ai: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon,
+      imgSrc: intuitiveIcon.src,
       title: "AI Consulting & Strategy",
       description:
         "Cut through the AI hype and build a clear and execution-ready AI roadmap aligned to your real business needs. Our AI consulting and strategy services for SMEs help identify high-ROI AI agent use cases in your business, select the right LLM, recommend architecture, assess your data readiness, outline success metrics, and draft a plan so your AI investment delivers results.",
     },
     {
-      imgSrc: engagingIcon,
+      imgSrc: engagingIcon.src,
       title: "Custom AI Agent Development",
       description:
         "Build custom AI agents tailored to your business logic, tools, and workflows, turning your challenges into opportunities for success. Hire our AI developers to build highly functional and autonomous AI agents capable of processing data, reasoning, executing tasks, and improving on feedback without any human involvement.",
     },
 
     {
-      imgSrc: brandingIcon,
+      imgSrc: brandingIcon.src,
       title: "AI Agent Support and Maintenance",
       description:
         "Maintain the reliability and relevance of your AI agents with our ongoing support and maintenance services. Our team ensures your AI agents stay accurate and aligned to your changing business needs and vision. From performance monitoring and optimization to model tuning, knowledge base updates, error handling, security, and compliance, we take care of everything.",
     },
     {
-      imgSrc: brandingIcon,
+      imgSrc: brandingIcon.src,
       title: "RAG & AI Chatbot Development",
       description:
         "Build a RAG-based AI chatbot on your company's knowledge base to give your employees easy and instant access to accurate data. Our RAG-based AI chatbot development services fine-tune LLM with your documents, databases, and knowledge sources for multiple internal use cases like knowledge base chatbots, PDF chatbots, and Q&A assistants.",
     },
     {
-      imgSrc: brandingIcon,
+      imgSrc: brandingIcon.src,
       title: "Process Automation Development",
       description:
         "Automate and streamline your processes with agentic automations, multi-agent systems, or AI agent workflows for faster processes, lower operational costs, and teams freed to focus on high-value work. Our AI-powered workflow automation for small business solutions combines AI agents with tools and integrations to automate simple to complex and even multi-step workflows. ",
     },
     {
-      imgSrc: brandingIcon,
+      imgSrc: brandingIcon.src,
       title: "Agentic AI Development",
       description:
         "Develop advanced agentic AI systems capable of planning, decision-making, and autonomous execution across complex workflows. We can deploy a set of AI agents, each trained to execute a specific task and capable of collaborating with other agents to collectively execute the target task and deliver intended results. ",

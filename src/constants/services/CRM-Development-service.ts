@@ -1,332 +1,367 @@
-import { PageData } from "@/types/web-development-data-type";
-import androidIcon from "@/assets/android-icon.svg";
-import angularIcon from "@/assets/angular-icon.svg";
-import reactIcon from "@/assets/react-icon.svg";
-import nodeIcon from "@/assets/node-icon.svg";
-import mysqlIcon from "@/assets/pwa-icon.svg";
+import { PageData } from "@/types/web-development-data-type"
 
-import phpIcon from "@/assets/php-icon.svg";
-import mongodbIcon from "@/assets/moz-icon.svg";
-import managmentIconOne from "@/assets/app-development-images/managment-icon-one.svg";
-import pwaIconOne from "@/assets/app-development-images/pwa-icon-one.svg";
-import pwaIconTwo from "@/assets/app-development-images/pwa-icon-two.svg";
-import pwaIconThree from "@/assets/app-development-images/pwa-icon-three.svg";
-import pwaIconFour from "@/assets/app-development-images/pwa-icon-four.svg";
-import pwaIconFive from "@/assets/app-development-images/pwa-icon-five.svg";
-import pwaIconSix from "@/assets/app-development-images/pwa-icon-six.svg";
-import figmaIcon from "@/assets/figma-icon.svg";
+import androidLottie from "../../../public/lottie/android.json"
+import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
+import androidImg from "@/assets/app-development-images/android-hero-img.webp"
+import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
+import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
+import bndimage1 from "@/assets/industries/ai/icon/bndImage1.webp"
+import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
+import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
+import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
 
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp";
-
-import androidLottie from "../../../public/lottie/crm.json";
-import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp";
+import designer from "@/assets/app-development-images/work-directly.webp"
+import hiring from "@/assets/app-development-images/hiring.webp"
+import delivery from "@/assets/app-development-images/guarante.webp"
+import collaboration from "@/assets/app-development-images/flexible.webp"
 
 export const crm: PageData = {
   hero: {
     title: [
       {
-        text: "Affordable CRM Development Service ",
+        text: " AI Development Company for",
+        color: "text-white",
+      },
+      {
+        text: " Agents & Automation",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Develop powerful, intelligent, and fully customised CRM solutions that allow to manage diverse customer communication, support automate workflows, and increase operational processes. Our expert team has integrated modern CRM software for start ups and large enterprises. We focus on building CRM Software that convert insights into action that increases communication and streamline different sales processes. ",
+        text: "Build AI agents, copilots, and intelligent automation systems that turn your business chaos into organization-wide productivity and accuracy. We are here to help SaaS companies, startups, and enterprises leverage AI to enhance their product offerings, customer experience, and operational efficiency. ",
         color: "text-white",
       },
     ],
+    image: androidImg,
 
-    buttonText: "Build your CRM Software now ",
     lottieData: androidLottie,
     breadcrumbs: [
       { label: "Home", href: "/" },
       {
-        label: " Application Development",
-        href: "/application-development",
+        label: " Services",
+        href: "/services",
       },
       {
-        label: "Android App Development",
-        href: "/application-development/android-app",
+        label: "Ai agent development company",
+        href: "/services/ai-agent-development-company",
       },
     ],
   },
   seo: {
-    title: "Custom CRM Development Company India & USA | Moonstack",
+    title: "Android App Development Company India & USA | Moonstack",
     description:
-      "Need a custom CRM For your business in India? Moonstack designs and develops CRM systems that match your workflows and integrate with your existing tools.",
+      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
     keywords:
-      "crm development company India,affordable crm solutions India, custom crm software development India, crm app developers India",
+      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
     canonical:
-      "https://www.moonstack.com/website-development-service/CRM-Development-service",
+      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
     ogImage: "/opengraph-image.png",
   },
-  pointsTitle: [
-    {
-      text: "Leading CRM Development  ",
-      color: "text-white ",
-    },
-    { text: " Company in  India ", color: "text-primary" },
-  ],
   mobDesignBanner: nativeBannerImg,
+
   points:
-    "Moonstack is the leading CRM development company in India. Our team of CRM experts are trusted by small businesses and large enterprises. We build high performance, intelligent, and customised CRM solutions that align with different business needs. With our CRM expert team, our aim is to streamline workflows, support customer relationships, and increase leads and sales processes. Along with different feature functionality, we also focus on clean UI/UX codes, security, and other aspects that need to be considered for businesses. We offer open source,  cloud based CRM solutions that allows you to integrate third party software and your team can access customer data, leads, and reports anytime, anywhere. ",
-  highlightText: "Android development service in India",
+    "Moonstack’s AI expertise was a game-changer. They engineered a custom predictive layer that cut our manual processing by 45%. Navigating complex security was seamless, delivering an intelligent system that scales with our users. For AI that impacts the bottom line, Moonstack is the premier partner.",
+  highlightText: "cut our manual processing by 45%",
+
+  leftCardData: [
+    {
+      title: "Why Consider AI for Your Business?",
+      description:
+        "Manual work, inefficiencies, delayed timelines, human errors, lengthy processes, and lack of transparency in business operations are a thing of the past. Welcome to the AI age, powered by AI agents, copilots, multi-agent workflows, and agentic automation systems that breathe in fresh whiffs of high accuracy and efficiency into your operations. From customer support to sales, marketing, finance, business analytics, logistics management, and compliance, AI solutions are transforming how we work by introducing autonomous and intelligent workflows. Results?",
+      stats: [
+        "66% improvement in employee performance",
+        "2.3x higher revenue growth using AI agents",
+        "70% reduction in repetitive tasks",
+        "30% lower operational costs with AI automation",
+      ],
+      // description2:
+      //   "So, looking to make your business future-ready and get a competitive edge? It's time to think the AI way. We are a leading custom AI development company in India, helping businesses of all sizes build custom AI solutions aligned to their needs. Whether you are looking to build an AI assistant, AI agent, or AI app, we can get you cutting-edge solutions to turn your business into an AI-powered success story.",
+      image: bndimage1.src,
+    },
+  ],
   solutions: {
     headingContent: [
       {
-        text: "  Discover how efficient ",
+        text: "Our",
         color: "text-white",
       },
       {
-        text: "  Android App Developer  ",
+        text: " AI Agent Development ",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: " company can affect your product",
+        text: " Services",
         color: "text-white",
       },
     ],
     subHeadingText:
-      "We offer end to end CRM development  services in India. We offer custom CRM solutions, integration, automation, cloud based access, and many more CRM based functionalities that ensure to improve business efficiency, improve customer relationship, and boost sales. Our CRM services in India includes - ",
+      "At Moonstack, a credible AI agent development company for business, we are dedicated to delivering sophisticated end-to-end AI product development services to power your business ambitions. Design, build, and deploy AI agent solutions that are robust, scalable, and adaptable to your business needs, industry trends, market sentiment, and customer demands. ",
+  },
+  featuresData: [
+    {
+      imgSrc: intuitiveIcon.src,
+      title: "AI Consulting & Strategy",
+      description:
+        "Cut through the AI hype and build a clear and execution-ready AI roadmap aligned to your real business needs. Our AI consulting and strategy services for SMEs help identify high-ROI AI agent use cases in your business, select the right LLM, recommend architecture, assess your data readiness, outline success metrics, and draft a plan so your AI investment delivers results.",
+    },
+    {
+      imgSrc: engagingIcon.src,
+      title: "Custom AI Agent Development",
+      description:
+        "Build custom AI agents tailored to your business logic, tools, and workflows, turning your challenges into opportunities for success. Hire our AI developers to build highly functional and autonomous AI agents capable of processing data, reasoning, executing tasks, and improving on feedback without any human involvement.",
+    },
+
+    {
+      imgSrc: brandingIcon.src,
+      title: "AI Agent Support and Maintenance",
+      description:
+        "Maintain the reliability and relevance of your AI agents with our ongoing support and maintenance services. Our team ensures your AI agents stay accurate and aligned to your changing business needs and vision. From performance monitoring and optimization to model tuning, knowledge base updates, error handling, security, and compliance, we take care of everything.",
+    },
+    {
+      imgSrc: brandingIcon.src,
+      title: "RAG & AI Chatbot Development",
+      description:
+        "Build a RAG-based AI chatbot on your company's knowledge base to give your employees easy and instant access to accurate data. Our RAG-based AI chatbot development services fine-tune LLM with your documents, databases, and knowledge sources for multiple internal use cases like knowledge base chatbots, PDF chatbots, and Q&A assistants.",
+    },
+    {
+      imgSrc: brandingIcon.src,
+      title: "Process Automation Development",
+      description:
+        "Automate and streamline your processes with agentic automations, multi-agent systems, or AI agent workflows for faster processes, lower operational costs, and teams freed to focus on high-value work. Our AI-powered workflow automation for small business solutions combines AI agents with tools and integrations to automate simple to complex and even multi-step workflows. ",
+    },
+    {
+      imgSrc: brandingIcon.src,
+      title: "Agentic AI Development",
+      description:
+        "Develop advanced agentic AI systems capable of planning, decision-making, and autonomous execution across complex workflows. We can deploy a set of AI agents, each trained to execute a specific task and capable of collaborating with other agents to collectively execute the target task and deliver intended results. ",
+    },
+  ],
+  qualitySectionData: [
+    {
+      id: 1,
+      title: "Improved Decision Making",
+      icon: collaboration.src,
+      description:
+        "We help you turn your raw business data into valuable insights for accurate, faster, and smarter business decision-making.",
+    },
+    {
+      id: 2,
+      title: "High Efficiency & Accuracy",
+      icon: delivery.src,
+      description:
+        "Our AI solutions and AI agents will enable you to intelligently automate complex processes effortlessly to reduce manual work, delays, and errors, delivering high efficiency and precision.",
+    },
+    {
+      id: 3,
+      title: "Lower Operational Costs",
+      icon: hiring.src,
+      description:
+        "By automating processes and implementing AI agents for multiple tasks, we bring down the workload on your employees and save you from hiring more staff.",
+    },
+    {
+      id: 4,
+      title: "Better Customer Experience",
+      icon: designer.src,
+      description:
+        "Moonstack’s AI developers can boost your customer experience by building AI solutions that offer insight into customer preferences by analyzing their data, recommending products, and instantly resolving customer queries.",
+    },
+  ],
+  CloudTimelineData: {
+    title: "Insight into Our AI ",
+    highlight: "Development Process",
+    subtitle:
+      "We take an agile, client-centric, and result-driven approach to building AI solutions that resonate with excellence. Focusing on speed, adaptability, and continuous improvement, we move from idea to impact without unnecessary delays or endless revisions.",
+    steps: [
+      {
+        number: 1,
+        title: "Discovery & Strategic Insights",
+        description:
+          "We start by deeply understanding your business, which includes your goals, challenges, and existing systems. Our team evaluates where AI can deliver the most value and reviews your current data and infrastructure. The result is a clear, practical roadmap aligned with your business objectives.",
+        position: "left",
+      },
+      {
+        number: 2,
+        title: "Data Collection & Preparation",
+        description:
+          "AI is only as good as the data behind it. We gather relevant data from internal and external sources, clean and structure it, and optimize it for performance. Using proven tools and frameworks, we ensure your data is accurate, reliable, and ready to power intelligent models.",
+        position: "right",
+      },
+      {
+        number: 3,
+        title: "Model Design & Experimentation",
+        description:
+          "At this stage, we design and test AI models tailored to your specific use case. Whether the solution requires supervised learning, unsupervised learning, or deep learning techniques, we experiment with multiple approaches to identify the most effective model for your needs.",
+        position: "left",
+      },
+      {
+        number: 4,
+        title: "Training & Model Optimization",
+        description:
+          "We train models using real business data and fine-tune them for accuracy, speed, and scalability. Through continuous testing and refinement, we build robust AI systems that can handle complexity and perform reliably in real-world scenarios.",
+        position: "right",
+      },
+      {
+        number: 5,
+        title: "Deployment & System Integration",
+        description:
+          "Once the model is ready, we deploy it seamlessly into your existing environment. Whether on cloud platforms or custom infrastructure, we ensure smooth integration, rigorous testing, and a stable launch, so your AI solution works flawlessly from day one.",
+        position: "left",
+      },
+      {
+        number: 6,
+        title: "Monitoring, Support & Continuous Improvement",
+        description:
+          "After deployment, we continuously monitor performance, track system behavior, and retrain models as new data becomes available. This ensures your AI solution keeps improving and stays aligned with your business as it grows.",
+        position: "right",
+      },
+    ],
   },
 
-  quoteBanner: {
+  impactSection: {
+    heading: [
+      { text: "Building AI Solutions," },
+      {
+        text: " Transforming Industries,",
+        className: "libreItalic font-[400] highlight-text",
+      },
+      { text: " Creating Real Impact" },
+    ],
+    description:
+      "Hire our AI developers to build state-of-the-art AI solutions aligned to your industry and supporting your business operations, processes, and strategies. From healthcare to fintech, e-commerce, energy, manufacturing, education, travel, and logistics, we are proficient in helping you realize what artificial intelligence can do for your business and achieve your annual targets like before.",
+    cards: [
+      {
+        id: "Healthcare",
+        label: "Healthcare",
+        description:
+          "We offer AI development services for healthcare and clinics, enabling automated administrative processes, quality patient care, faster diagnosis, and better patient outcomes. Our team is adept at developing a wide array of solutions like telemedicine apps, smart real-time monitoring solutions, medical imaging analysis software, AI agents for appointment booking, follow-ups, and patient support, patient data analytics platforms, predictive diagnostic tools, and more.",
+        variant: "light",
+      },
+      {
+        id: "Fintech",
+
+        label: "Fintech",
+        description:
+          "As a trusted AI development company for fintech and banking, we equip organizations to offer secure, faster, and smarter banking experiences to users. Our expertise lies in developing AI-powered systems that cater to your business challenges and open new revenue opportunities. This includes fraud detection systems, personalized banking experiences, AI agents for financial advisory & customer support, risk assessment tools, data analytics tools for trading, AI agents for portfolio management, compliance management solutions, credit scoring tools, and AI assistants for loan processing.",
+        variant: "accent",
+      },
+      {
+        id: "e-Commerce",
+
+        label: "e-Commerce",
+        description:
+          "At Moonstack, we offer cutting-edge AI solutions for e-commerce companies, helping them enhance customer experience, engage users, run campaigns, manage inventories, and get valuable data insights for strategic business decision-making. This is possible by integrating AI solutions like virtual shopping assistants, AI custom support solutions, inventory forecasting solutions, dynamic pricing solutions, data analytics tools, AI sales agents, and more such smart solutions with our help.",
+        variant: "dark",
+      },
+      {
+        id: "Travel",
+
+        label: "Travel",
+        description:
+          "Moonstack AI developers are experienced in developing intelligent solutions for the travel and hospitality industry, enabling them to offer memorable guest experiences and achieve operational excellence. We can build AI tools and AI agents for room booking, personalized travel support, itinerary creation, predictive maintenance, dynamic pricing, and business analytics.",
+        variant: "dark",
+      },
+      {
+        id: "Education",
+
+        label: "Education",
+        description:
+          "Our AI developers bring in their technical expertise and years of experience in building robust smart solutions for the education sector, enhancing overall learning experience, quality, and process. Be it AI teaching assistants, student performance analytics tools, scoring tools, mock exam platforms, AI assistants for admission help, or AI agents to automate administrative tasks, we can do all.",
+        variant: "light",
+      },
+      {
+        id: "Logistics",
+
+        label: "Logistics",
+        description:
+          "Our AI development services are here to make your logistics processes streamlined, automated, seamless, and on time. What our developers can do for your logistics company can transform it from a chaotic business to a system of effortless workflows. With route optimization solutions, real-time fleet tracking systems, analytics tools, AI agents for vendor management, and demand forecasting tools, we are here to help you welcome AI-backed logistics where there is no space for delays, manual work, human errors, or missed consignments, just high efficiency. ",
+        variant: "accent",
+      },
+    ],
+  },
+  // processSteps: {
+  //   headingText: [
+  //     {
+  //       text: " Our Application development ",
+  //       color: "text-white",
+  //     },
+  //     {
+  //       text: "   process wraps around ",
+  //       color: "text-white libreItalic font-[400] highlight-text",
+  //     },
+  //     {
+  //       text: " your unique business needs",
+  //       color: "text-white",
+  //     },
+  //   ],
+  //   subHeadingText:
+  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
+  // },
+
+  accordionData: [
+    {
+      question: "How much does Android app development cost in India?",
+      answer:
+        "The actual development cost of an Android app depends on the app’s purpose, technology stack, features, and scale. For a quick quotation, feel free to reach out to our team at Moonstack.",
+    },
+    {
+      question: "Will AI replace Android developers in India?",
+      answer:
+        "No, while AI is gradually becoming a good tool that can assist developers, it is not advanced enough to replace Android developers in India.",
+    },
+    {
+      question: "Which is the best Android app development company in India?",
+      answer:
+        "Moonstack. We pride ourselves on being the best Android app development company in India, thanks to our years of experience developing popular Android apps that are downloaded and loved by millions of users.",
+    },
+    {
+      question: "Can Moonstack develop Android e-commerce applications?",
+      answer:
+        "Yes, we can help you build completely custom e-commerce Android applications, complete with payment gateway integration and even chat support.",
+    },
+    {
+      question: "How long does it take to develop an Android app?",
+      answer:
+        "The timeline for app development depends on various factors; however, the development process can generally take between a few weeks to a few months, based on underlying factors.",
+    },
+  ],
+
+  banner: {
     headingText: [
       {
-        text: "Want CRM development services in India ",
+        text: "Opt for your custom Android app development services now",
         color: "text-white",
       },
     ],
     subHeadingText: [
       {
-        text: "Let’s talk about your business ",
+        text: "Android app development goes through different stages of work.",
+        color: "text-white",
+      },
+    ],
+    image: androidBannerImg,
+  },
+  quoteBanner: {
+    headingText: [
+      {
+        text: "Looking To Hire Android Developers in India? ",
+        color: "text-white",
+      },
+    ],
+    subHeadingText: [
+      {
+        text: "We offer top-rated Android e-commerce app development in India. ",
         color: "text-white",
       },
     ],
     image: androidContactbannerImg,
+
     buttonText: "Connect with us",
   },
-
-  featuresData: [
-    {
-      imgSrc: pwaIconOne,
-      title: "Custom CRM Development",
-      description:
-        "We build fully customised CRM solutions tailored to your business needs. Our CRM experts develop software integrated with modern features, modules, and workflows that improve efficiency, boost productivity, and support long-term growth. We also ensure the CRM design reflects your brand identity and aligns perfectly with your business goals.",
-    },
-    {
-      imgSrc: pwaIconTwo,
-      title: "CRM Integration Services",
-      description:
-        "Integrate powerful CRM services to streamline and automate your business processes. From WhatsApp, ERP, HRMS to secure payment gateways, we identify key features your business needs to reduce time, improve accuracy, and respond faster to customers. Our secure API-driven CRM integrations enable real-time syncing and deliver smarter, faster experiences.",
-    },
-    {
-      imgSrc: pwaIconThree,
-      title: "CRM Mobile Applications",
-      description:
-        "Build fast, secure, and intuitive CRM mobile apps for Android and iOS. Our CRM mobile apps bring your business infrastructure to users’ fingertips—helping track leads, manage follow-ups, and streamline communication. The apps ensure seamless access to data anytime, anywhere, enabling productivity on the go.",
-    },
-    {
-      imgSrc: pwaIconFour,
-      title: "Cloud-Based CRM Services",
-      description:
-        "Moonstack delivers powerful cloud-based CRM solutions designed for speed, security, and reliability. Our cloud CRM offers automatic backups, real-time syncing, and smooth performance without worrying about servers or maintenance. It empowers teams to access and manage data instantly from anywhere.",
-    },
-    {
-      imgSrc: pwaIconFive,
-      title: "CRM Migration & Upgradation",
-      description:
-        "Our CRM development services in India include complete CRM migration and upgrade solutions. We ensure smooth data transfer, feature optimisation, performance improvements, and seamless support throughout the migration process. We also provide system upgrades to enhance performance and add new functionalities.",
-    },
-    {
-      imgSrc: pwaIconSix,
-      title: "CRM Ongoing Support & Maintenance",
-      description:
-        "As a leading CRM development company in India, we offer full-time support and maintenance services covering bug fixes, feature enhancements, troubleshooting, and continuous monitoring. Our end-to-end support ensures your CRM performs smoothly while meeting all technical and business standards.",
-    },
-  ],
-
-  tabs: {
-    headingText: "Our CRM Solutions that takes your Business to next level ",
-    subHeadingText:
-      "As the leading CRM service provider in India, we have designed different CRM solutions for our clients to streamline different operations, improve customer interactions, and boost team productivity. We have ready to use CRM solutions that are easy to integrate in the workflow process that automate your internal operations and deliver faster responses  that are designed for all business needs. ",
-    tabs: [
-      {
-        id: 1,
-        title: "Personalised AI Solutions",
-        description:
-          "Our CRM app developers in India have designed the best CRM AI solution for businesses that provide personalized customer experiences to users. With CRM-based functionalities, our solutions offer personalized recommendations, offers, and content that match all customer satisfaction needs and increase engagement. With our smarter CRM solution, we offer end-to-end automation that boosts engagement, conversion rates, and long-term loyalty.",
-        image: androidIcon,
-      },
-      {
-        id: 2,
-        title: "Data Analysis",
-        description:
-          "With our data analysis CRM solution, you can analyse large sets of customer data collected from social media, email integrations, websites, and many other platforms. Our AI and ML-powered CRM system identifies patterns and trends to help you make smart, data-driven decisions. This automation reduces repetitive tasks, eliminates manual efforts, and saves a significant amount of time.",
-        image: figmaIcon,
-      },
-      {
-        id: 3,
-        title: "Chatbots and Virtual Assistants",
-        description:
-          "We integrate intelligent chatbots and advanced virtual assistants into CRM systems to improve customer engagement and reduce human dependency. Our bots are designed and trained to offer instant responses and resolve customer queries without delay. We have implemented a wide range of bots and virtual assistants capable of handling routine customer inquiries efficiently.",
-        image: reactIcon,
-      },
-      {
-        id: 4,
-        title: "Automated CRM Based Marketing Campaigns",
-        description:
-          "With our extensive CRM experience, we integrate AI and modern technologies to automate marketing campaigns. Our advanced CRM systems support content creation, automated email campaigns, and social media scheduling. With AI support, we analyse user behaviour, identify high-retention customer groups, and target relevant campaigns. Our AI predictions help run high-performing marketing campaigns that maximize conversions.",
-        image: androidIcon,
-      },
-      {
-        id: 5,
-        title: "Cloud Based CRM Solution",
-        description:
-          "Our cloud-based CRM solutions allow sales teams to access data anytime and anywhere using simple credentials—with no need for complex server configurations. All enterprise data, interactions, and information are stored securely in the cloud, enabling easy access and real-time updates across multiple devices. This ensures smooth collaboration and uninterrupted productivity.",
-        image: figmaIcon,
-      },
-      {
-        id: 6,
-        title: "Proven Experience Across Industries",
-        description:
-          "We have worked with startups, enterprises, and global brands across multiple industries. Our proven experience allows us to deliver high-performing, scalable, and reliable CRM solutions tailored to unique business needs. This industry exposure helps us build CRM systems that are future-ready and aligned with modern digital transformation demands.",
-        image: reactIcon,
-      },
-    ],
-  },
-  utilisArr: [
-    {
-      image: reactIcon,
-      category: "Mobile App",
-      title: "React.js",
-      desc: "At Moonstack, we believe in building technology.",
-    },
-    {
-      image: angularIcon,
-      category: "Mobile App",
-      title: "Angular",
-      desc: "At Moonstack, we believe in building technology.",
-    },
-    {
-      image: nodeIcon,
-      category: "Mobile App",
-      title: " Node.js",
-      desc: "At Moonstack, we believe in building technology.",
-    },
-    {
-      image: phpIcon,
-      category: " PHP",
-      title: " PHP",
-      desc: "At Moonstack, we believe in building technology.",
-    },
-    {
-      image: mysqlIcon,
-      category: "Mobile App",
-      title: "MySQL",
-      desc: "At Moonstack, we believe in building technology.",
-    },
-    {
-      image: mongodbIcon,
-      category: "Mobile App",
-      title: "Mongo Db",
-      desc: "At Moonstack, we believe in building technology.",
-    },
-  ],
-  processSteps: {
-    headingText: [
-      {
-        text: " Our Application development ",
-        color: "text-white",
-      },
-      {
-        text: "   process wraps around ",
-        color: "text-white libreItalic font-[400] highlight-text",
-      },
-      {
-        text: " your unique business needs",
-        color: "text-white",
-      },
-    ],
-    subHeadingText:
-      "At Moonstack, we have a defined and structured approach that delivers the best CRM solutions to our clients with the right strategy. We have delivered a wide range of CRM solutions and have hands-on experience with the delivery process and know the exact method to implement in the CRM delivery process. We have opted for the agile methodology and include best CRM development experts in India who focus on timely delivery and ensure to solve last minute complex challenges. ",
+  whyChooseData: {
+    headingText: "",
+    subHeadingText: "",
+    steps: [],
   },
   slides: [],
-  whyChooseData: {
-    headingText:
-      "Why choose us for your CRM software development services in India?  ",
-    subHeadingText:
-      "We are the best CRM Software development company in India. Our CRM team offers end to end services from small to large enterprises. At Moonstack, we have delivered a wide range of CRM solutions to different industries as per the latest technological advancements and market trends. With tech expertise, we also focus on timely delivery and strong communication processes.  ",
-    steps: [
-      {
-        icon: managmentIconOne,
-        title: "Experienced Team",
-        description:
-          "We have a team of CRM developers with decades of experience delivering a wide range of CRM solutions across industries like real estate, healthcare, education, fintech, and more. At Moonstack, we handle last-minute complex challenges with ease and deliver CRM solutions that align with your business needs and the latest market innovations.",
-      },
-      {
-        icon: managmentIconOne,
-        title: "Updated with Latest Tech Trends",
-        description:
-          "Our CRM professionals stay updated with the latest technological trends and frameworks to meet modern market standards. While we have hands-on experience with a variety of tools and technologies, we continuously upgrade our skills to adopt new innovations. At Moonstack, we avoid outdated strategies and always prioritize modern advancements.",
-      },
-      {
-        icon: managmentIconOne,
-        title: "On Time Delivery",
-        description:
-          "We strongly believe in on-time delivery. Our focus is to deliver CRM projects within the promised timeline without compromising quality. At Moonstack, we plan, execute, and review each aspect thoroughly to ensure timely delivery, eliminate delays, and maintain complete professionalism. Punctuality is our priority.",
-      },
-      {
-        icon: managmentIconOne,
-        title: "Strong Communication",
-        description:
-          "We maintain strong, transparent communication throughout the entire development process. Our team ensures clients stay informed at every stage with clear, structured, and professional updates. This helps eliminate confusion and keeps the entire development journey aligned with expectations.",
-      },
-      {
-        icon: managmentIconOne,
-        title: "Seamless Integrations",
-        description:
-          "At Moonstack, we offer seamless CRM integration with tools like WhatsApp, ERP, HRMS, email platforms, and payment gateways. Our CRM development team ensures real-time data flow, improved accuracy, fast operations, and reduced manual work for maximum efficiency.",
-      },
-      {
-        icon: managmentIconOne,
-        title: "Dedicated Support and Maintenance",
-        description:
-          "We offer end-to-end dedicated support and maintenance to our clients. For us, it doesn’t end at deployment — we stay committed throughout the journey. Our long-term support ensures smooth performance, continuous updates, issue resolution, and the ability to leverage modern technologies without disruptions.",
-      },
-    ],
-  },
-  accordionData: [
-    {
-      question: "What is CRM software and why should we opt in our business?",
-      answer:
-        "CRM software refers to Customer Relationship Management. It helps businesses manage leads, customer sales, and communication in one place. CRM improves efficiency, reduces manual tasks, and enhances team visibility, helping businesses make smarter decisions.",
-    },
-    {
-      question: "How much time would you take to deliver CRM solutions?",
-      answer:
-        "There is no fixed time for delivering CRM solutions. The duration depends on several factors such as project complexity, features required, integrations, and overall business needs.",
-    },
-    {
-      question:
-        "Can you help me with the integration of the CRM tool with the existing enterprise tools?",
-      answer:
-        "Yes, we can integrate custom CRM software with your existing enterprise tools to ensure smooth and connected business operations.",
-    },
-    {
-      question: "Is Cloud based infrastructure secure with CRM?",
-      answer:
-        "Yes, cloud-based CRM solutions are secure and use encrypted storage, secure servers, and advanced access controls. Cloud infrastructure also enables automatic backups and safe accessibility from anywhere.",
-    },
-    {
-      question: "Will you provide training to our staff after CRM integration?",
-      answer:
-        "Yes, we provide complete end-to-end training after CRM installation so your team can fully leverage all the features of the modern CRM system.",
-    },
-    {
-      question: "Can I upgrade CRM software as my business grows?",
-      answer:
-        "Yes, you can upgrade your CRM software as your business scales. With CRM experts in India, you can integrate advanced technologies and add new functionalities to streamline the next phase of your operations.",
-    },
-  ],
-};
+}

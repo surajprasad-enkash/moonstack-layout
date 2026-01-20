@@ -1,357 +1,367 @@
-import { PageData } from "@/types/web-development-data-type";
+import { PageData } from "@/types/web-development-data-type"
 
-import reactIcon from "@/assets/react-icon.svg";
+import androidLottie from "../../../public/lottie/android.json"
+import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
+import androidImg from "@/assets/app-development-images/android-hero-img.webp"
+import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
+import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
+import bndimage1 from "@/assets/industries/ai/icon/bndImage1.webp"
+import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
+import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
+import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
 
-import managmentIconOne from "@/assets/app-development-images/managment-icon-one.svg";
-import managmentIconTwo from "@/assets/app-development-images/managment-icon-two.svg";
-import managmentIconThree from "@/assets/app-development-images/managment-icon-three.svg";
-import managmentIconFour from "@/assets/app-development-images/managment-icon-four.svg";
-import managmentIconFive from "@/assets/app-development-images/managment-icon-five.svg";
-import managmentIconSix from "@/assets/app-development-images/managment-icon-six.svg";
-import appleIcon from "@/assets/app-development-images/apple-icon.svg";
-import mobileIconcon from "@/assets/app-development-images/mobile-icon.svg";
-import developmentIcon from "@/assets/app-development-images/development-icon.svg";
-import integrationIcon from "@/assets/app-development-images/integration-icon.svg";
-import debbugingIcon from "@/assets/app-development-images/debbuging-icon.svg";
-import appStoreIcon from "@/assets/app-development-images/app-store.svg";
-import figmaIcon from "@/assets/figma-icon.svg";
-import bannerImg from "@/assets/figma-icon.svg";
-import androidLottie from "../../../public/lottie/shopify.json";
-import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp";
+import designer from "@/assets/app-development-images/work-directly.webp"
+import hiring from "@/assets/app-development-images/hiring.webp"
+import delivery from "@/assets/app-development-images/guarante.webp"
+import collaboration from "@/assets/app-development-images/flexible.webp"
 
 export const shopify: PageData = {
   hero: {
     title: [
       {
-        text: "Shopify Website Design ",
+        text: " AI Development Company for",
         color: "text-white",
       },
       {
-        text: " Services in  India",
-        color: "text-primary",
+        text: " Agents & Automation",
+        color: "text-white",
       },
     ],
     description: [
       {
-        text: "Introduce your highly functional, powerful, and interactive Shopify  online store for your customers. Make their shopping easier and deliver a next generation shopping experience to them. ",
+        text: "Build AI agents, copilots, and intelligent automation systems that turn your business chaos into organization-wide productivity and accuracy. We are here to help SaaS companies, startups, and enterprises leverage AI to enhance their product offerings, customer experience, and operational efficiency. ",
         color: "text-white",
       },
     ],
+    image: androidImg,
+
     lottieData: androidLottie,
     breadcrumbs: [
       { label: "Home", href: "/" },
       {
-        label: " Application Development",
-        href: "/application-development",
+        label: " Services",
+        href: "/services",
       },
       {
-        label: "Android App Development",
-        href: "/application-development/android-app",
+        label: "Ai agent development company",
+        href: "/services/ai-agent-development-company",
       },
     ],
-
-    buttonText: "Launch your Shopify store now",
   },
   seo: {
-    title: "Shopify Website Development Company India & USA | Moonstack",
+    title: "Android App Development Company India & USA | Moonstack",
     description:
-      "Looking to build and scale a Shopify store? Moonstack develops custom Shopify themes, apps, and optimized funnels to increase your online sales. Call Now!",
+      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
     keywords:
-      "shopify website development company India, affordable shopify website developers India, shopify website design services India, shopify website experts India",
+      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
     canonical:
-      "https://www.moonstack.com/website-development-service/shopify-website-development-service",
+      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
     ogImage: "/opengraph-image.png",
   },
-  pointsTitle: [
+  mobDesignBanner: nativeBannerImg,
+
+  points:
+    "Moonstack’s AI expertise was a game-changer. They engineered a custom predictive layer that cut our manual processing by 45%. Navigating complex security was seamless, delivering an intelligent system that scales with our users. For AI that impacts the bottom line, Moonstack is the premier partner.",
+  highlightText: "cut our manual processing by 45%",
+
+  leftCardData: [
     {
-      text: "Shopify Website Development Company in India  ",
-      color: "text-white ",
+      title: "Why Consider AI for Your Business?",
+      description:
+        "Manual work, inefficiencies, delayed timelines, human errors, lengthy processes, and lack of transparency in business operations are a thing of the past. Welcome to the AI age, powered by AI agents, copilots, multi-agent workflows, and agentic automation systems that breathe in fresh whiffs of high accuracy and efficiency into your operations. From customer support to sales, marketing, finance, business analytics, logistics management, and compliance, AI solutions are transforming how we work by introducing autonomous and intelligent workflows. Results?",
+      stats: [
+        "66% improvement in employee performance",
+        "2.3x higher revenue growth using AI agents",
+        "70% reduction in repetitive tasks",
+        "30% lower operational costs with AI automation",
+      ],
+      // description2:
+      //   "So, looking to make your business future-ready and get a competitive edge? It's time to think the AI way. We are a leading custom AI development company in India, helping businesses of all sizes build custom AI solutions aligned to their needs. Whether you are looking to build an AI assistant, AI agent, or AI app, we can get you cutting-edge solutions to turn your business into an AI-powered success story.",
+      image: bndimage1.src,
     },
   ],
-  points:
-    "Moonstack is the leading Shopify development company in India. We have delivered a wide range of IT solutions to different industries and among them, Shopify is our core e-commerce development services. At Moonstack, we offer end to end customised Shopify development services in India that allows us to develop high performing innovative solutions. We have a blend of professional designers and developers who have hands-on experience on Shopify and Shopify plus. ",
-  highlightText: "Android development service in India",
   solutions: {
     headingContent: [
       {
-        text: "  Discover how efficient ",
+        text: "Our",
         color: "text-white",
       },
       {
-        text: "  Android App Developer  ",
+        text: " AI Agent Development ",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: " company can affect your product",
+        text: " Services",
         color: "text-white",
       },
     ],
     subHeadingText:
-      "We offer end to end Shopify development services in India that meet all our clients needs that ensure to run their business smoothly. ",
+      "At Moonstack, a credible AI agent development company for business, we are dedicated to delivering sophisticated end-to-end AI product development services to power your business ambitions. Design, build, and deploy AI agent solutions that are robust, scalable, and adaptable to your business needs, industry trends, market sentiment, and customer demands. ",
   },
   featuresData: [
     {
-      imgSrc: managmentIconOne,
-      title: "Shopify Consulting Services",
+      imgSrc: intuitiveIcon.src,
+      title: "AI Consulting & Strategy",
       description:
-        "Discuss all your Shopify-related project needs with top tech experts. Our Shopify consulting services help businesses set up, optimise, and grow their Shopify store with theme customisation and conversion-focused strategies that align with modern tech guidelines and market standards.",
+        "Cut through the AI hype and build a clear and execution-ready AI roadmap aligned to your real business needs. Our AI consulting and strategy services for SMEs help identify high-ROI AI agent use cases in your business, select the right LLM, recommend architecture, assess your data readiness, outline success metrics, and draft a plan so your AI investment delivers results.",
     },
     {
-      imgSrc: managmentIconTwo,
-      title: "Shopify Setup & Product Import",
+      imgSrc: engagingIcon.src,
+      title: "Custom AI Agent Development",
       description:
-        "We assist in complete Shopify store setup with a professional and appealing interface. Our experts ensure seamless product import with accurate details such as descriptions, pricing, variants, and more to build an error-free, high-converting online store.",
+        "Build custom AI agents tailored to your business logic, tools, and workflows, turning your challenges into opportunities for success. Hire our AI developers to build highly functional and autonomous AI agents capable of processing data, reasoning, executing tasks, and improving on feedback without any human involvement.",
+    },
+
+    {
+      imgSrc: brandingIcon.src,
+      title: "AI Agent Support and Maintenance",
+      description:
+        "Maintain the reliability and relevance of your AI agents with our ongoing support and maintenance services. Our team ensures your AI agents stay accurate and aligned to your changing business needs and vision. From performance monitoring and optimization to model tuning, knowledge base updates, error handling, security, and compliance, we take care of everything.",
     },
     {
-      imgSrc: managmentIconThree,
-      title: "Shopify Designing Services",
+      imgSrc: brandingIcon.src,
+      title: "RAG & AI Chatbot Development",
       description:
-        "Grow your online store with modern, mobile-friendly, and user-centric Shopify designs. Our expert designers create interfaces that elevate brand identity, enhance user experience, and boost conversion rates with next-generation shopping experiences.",
+        "Build a RAG-based AI chatbot on your company's knowledge base to give your employees easy and instant access to accurate data. Our RAG-based AI chatbot development services fine-tune LLM with your documents, databases, and knowledge sources for multiple internal use cases like knowledge base chatbots, PDF chatbots, and Q&A assistants.",
     },
     {
-      imgSrc: managmentIconFour,
-      title: "Shopify Third-Party Integrations",
+      imgSrc: brandingIcon.src,
+      title: "Process Automation Development",
       description:
-        "Extend your Shopify store’s functionality with seamless third-party integrations. Our Shopify experts connect CRM, ERP, payment gateways, marketing tools, and more via APIs to automate processes, improve efficiency, and save development time.",
+        "Automate and streamline your processes with agentic automations, multi-agent systems, or AI agent workflows for faster processes, lower operational costs, and teams freed to focus on high-value work. Our AI-powered workflow automation for small business solutions combines AI agents with tools and integrations to automate simple to complex and even multi-step workflows. ",
     },
     {
-      imgSrc: managmentIconFive,
-      title: "Shopify Testing Services",
+      imgSrc: brandingIcon.src,
+      title: "Agentic AI Development",
       description:
-        "We deliver bug-free Shopify stores with comprehensive manual and automated testing. Our testing includes functionality checks, UI/UX review, speed optimisation, and payment gateway testing to ensure smooth and error-free shopping experiences.",
-    },
-    {
-      imgSrc: managmentIconSix,
-      title: "Shopify Support & Maintenance",
-      description:
-        "We provide end-to-end Shopify support and maintenance, ensuring peak performance and security. Our 24×7 team manages updates, backups, monitoring, and issue resolution so your Shopify store stays fast, responsive, and fully optimised.",
+        "Develop advanced agentic AI systems capable of planning, decision-making, and autonomous execution across complex workflows. We can deploy a set of AI agents, each trained to execute a specific task and capable of collaborating with other agents to collectively execute the target task and deliver intended results. ",
     },
   ],
-  featureDataContent: {
-    headingContent: [
-      {
-        text: "Our Engagement Models for Shopify development -  ",
-        color: "",
-      },
-    ],
-    subHeadingText:
-      "Moonstack's main aim is to meet our clients needs. With our top Shopify experts, we offer flexible engagement models that meet project requirements, budgets, and timelines. We allow our clients to hire Shopify developers, build their own team with full control that ensure smooth communication and high quality delivery.  ",
-
-    featuresData: [
-      {
-        imgSrc: appleIcon,
-        title: "Hire Shopify Developers",
-        description:
-          "Hire best Shopify developers for your project on hourly, full time, and part time basis. Our professional Shopify team specializes in custom themes, app integrations, and advanced functionalities that help brands grow effortlessly.",
-      },
-      {
-        imgSrc: mobileIconcon,
-        title: "Dedicated Team Model",
-        description:
-          "We offer a complete team of Shopify developers, designers, and testers. Our experts build high-performing Shopify stores with continuous development, updates, and ongoing support. Choose a dedicated team that works exclusively on your project.",
-      },
-      {
-        imgSrc: developmentIcon,
-        title: "Time and Material Model",
-        description:
-          "Our Time and Material hiring model gives clients full control over the resources they use. You only pay for the time and resources consumed, making it ideal for flexible, dynamic Shopify development needs.",
-      },
-      {
-        imgSrc: integrationIcon,
-        title: "Monthly Retainer Model",
-        description:
-          "Hire Shopify developers on a monthly basis for consistent updates, bug fixes, performance improvements, and full-time support. This model is perfect for long-term Shopify maintenance and ongoing enhancements.",
-      },
-      {
-        imgSrc: debbugingIcon,
-        title: "Project Based Model",
-        description:
-          "Hire expert Shopify coders for specific, one-time, or short-term Shopify tasks. Ideal for brands that need focused work on a fixed-scope Shopify project within a defined timeline.",
-      },
-      {
-        imgSrc: appStoreIcon,
-        title: "Hybrid Based Shopify Model",
-        description:
-          "Our hybrid model blends fixed-price and time-based engagement. You can request developer availability beforehand, making it ideal for flexible Shopify development based on changing market needs.",
-      },
-    ],
-  },
-  whyChooseData: {
-    headingText: "Why Choose Moonstack for your Shopify platform? ",
-    subHeadingText:
-      "As a leading Shopify development company, we offer end to end Shopify development services that offer high performance, increase conversion rates, and long term support in business. Our team only only delivers solutions but become your Shopify tech partner that meets tech demands as well as business goals. From custom development to maintenance we are always with our clients for all their needs. ",
+  qualitySectionData: [
+    {
+      id: 1,
+      title: "Improved Decision Making",
+      icon: collaboration.src,
+      description:
+        "We help you turn your raw business data into valuable insights for accurate, faster, and smarter business decision-making.",
+    },
+    {
+      id: 2,
+      title: "High Efficiency & Accuracy",
+      icon: delivery.src,
+      description:
+        "Our AI solutions and AI agents will enable you to intelligently automate complex processes effortlessly to reduce manual work, delays, and errors, delivering high efficiency and precision.",
+    },
+    {
+      id: 3,
+      title: "Lower Operational Costs",
+      icon: hiring.src,
+      description:
+        "By automating processes and implementing AI agents for multiple tasks, we bring down the workload on your employees and save you from hiring more staff.",
+    },
+    {
+      id: 4,
+      title: "Better Customer Experience",
+      icon: designer.src,
+      description:
+        "Moonstack’s AI developers can boost your customer experience by building AI solutions that offer insight into customer preferences by analyzing their data, recommending products, and instantly resolving customer queries.",
+    },
+  ],
+  CloudTimelineData: {
+    title: "Insight into Our AI ",
+    highlight: "Development Process",
+    subtitle:
+      "We take an agile, client-centric, and result-driven approach to building AI solutions that resonate with excellence. Focusing on speed, adaptability, and continuous improvement, we move from idea to impact without unnecessary delays or endless revisions.",
     steps: [
       {
-        title: "Certified Shopify Experts",
-        icon: managmentIconOne,
+        number: 1,
+        title: "Discovery & Strategic Insights",
         description:
-          "We have a team of certified Shopify experts with hands-on experience in custom themes, business systems, and end-to-end Shopify development. Our developers handle everything from planning to execution and resolve all last-minute complex challenges.",
+          "We start by deeply understanding your business, which includes your goals, challenges, and existing systems. Our team evaluates where AI can deliver the most value and reviews your current data and infrastructure. The result is a clear, practical roadmap aligned with your business objectives.",
+        position: "left",
       },
       {
-        title: "Custom Brand Focused",
-        icon: managmentIconOne,
+        number: 2,
+        title: "Data Collection & Preparation",
         description:
-          "Our Shopify designers build stores that truly reflect your brand identity. Beyond development, we ensure smooth navigation, clear structure, and visually aligned layouts to help enhance conversions and improve user experience.",
+          "AI is only as good as the data behind it. We gather relevant data from internal and external sources, clean and structure it, and optimize it for performance. Using proven tools and frameworks, we ensure your data is accurate, reliable, and ready to power intelligent models.",
+        position: "right",
       },
       {
-        title: "Transparent Process",
-        icon: managmentIconOne,
+        number: 3,
+        title: "Model Design & Experimentation",
         description:
-          "We work as a tech partner with complete transparency. From strategy creation to resource involvement and future roadmaps, everything is openly communicated to clients with zero hidden surprises.",
+          "At this stage, we design and test AI models tailored to your specific use case. Whether the solution requires supervised learning, unsupervised learning, or deep learning techniques, we experiment with multiple approaches to identify the most effective model for your needs.",
+        position: "left",
       },
       {
-        title: "On-Time Delivery",
-        icon: managmentIconOne,
+        number: 4,
+        title: "Training & Model Optimization",
         description:
-          "With our Shopify developers in India, we follow strict timelines and ensure every task is delivered on time. Our internal planning allows us to commit to deadlines confidently without compromising quality.",
+          "We train models using real business data and fine-tune them for accuracy, speed, and scalability. Through continuous testing and refinement, we build robust AI systems that can handle complexity and perform reliably in real-world scenarios.",
+        position: "right",
       },
       {
-        title: "Client-Centric Approach",
-        icon: managmentIconOne,
+        number: 5,
+        title: "Deployment & System Integration",
         description:
-          "We follow a client-first approach — listening to your requirements, maintaining open communication, and ensuring the final output exceeds expectations. All functionalities are aligned with your standards to deliver next-generation experiences.",
+          "Once the model is ready, we deploy it seamlessly into your existing environment. Whether on cloud platforms or custom infrastructure, we ensure smooth integration, rigorous testing, and a stable launch, so your AI solution works flawlessly from day one.",
+        position: "left",
       },
       {
-        title: "Long-Term Partnership",
-        icon: managmentIconOne,
+        number: 6,
+        title: "Monitoring, Support & Continuous Improvement",
         description:
-          "At Moonstack, we aim for long-term relationships — not just one-time development. We support our clients through every decision-making stage and help them grow their Shopify store with ongoing assistance and reliable post-launch support.",
+          "After deployment, we continuously monitor performance, track system behavior, and retrain models as new data becomes available. This ensures your AI solution keeps improving and stays aligned with your business as it grows.",
+        position: "right",
       },
     ],
   },
-  mobDesignBanner: nativeBannerImg,
-  tabs: {
-    headingText: "Why are our Shopify Solutions different? ",
-    subHeadingText:
-      "As the leading Shopify development company in India. We offer complete set of Shopify development services that match all your market needs - ",
-    tabs: [
+
+  impactSection: {
+    heading: [
+      { text: "Building AI Solutions," },
       {
-        id: 1,
-        title: "Simplify Shopify Setup",
+        text: " Transforming Industries,",
+        className: "libreItalic font-[400] highlight-text",
+      },
+      { text: " Creating Real Impact" },
+    ],
+    description:
+      "Hire our AI developers to build state-of-the-art AI solutions aligned to your industry and supporting your business operations, processes, and strategies. From healthcare to fintech, e-commerce, energy, manufacturing, education, travel, and logistics, we are proficient in helping you realize what artificial intelligence can do for your business and achieve your annual targets like before.",
+    cards: [
+      {
+        id: "Healthcare",
+        label: "Healthcare",
         description:
-          "We simplify the entire Shopify setup process to ensure complete store optimisation. From account creation to product uploads and design alignment, our developers handle everything from start to finish, ensuring your store reflects your brand identity perfectly.",
-        image: figmaIcon,
+          "We offer AI development services for healthcare and clinics, enabling automated administrative processes, quality patient care, faster diagnosis, and better patient outcomes. Our team is adept at developing a wide array of solutions like telemedicine apps, smart real-time monitoring solutions, medical imaging analysis software, AI agents for appointment booking, follow-ups, and patient support, patient data analytics platforms, predictive diagnostic tools, and more.",
+        variant: "light",
       },
       {
-        id: 2,
-        title: "Shopify Brand Theme",
+        id: "Fintech",
+
+        label: "Fintech",
         description:
-          "At Moonstack, we create Shopify stores that match your brand standards. From logo and colour palette to typography and UI elements, we craft visually appealing designs that deliver the same feel as your offline business and deeply connect with your audience.",
-        image: reactIcon,
+          "As a trusted AI development company for fintech and banking, we equip organizations to offer secure, faster, and smarter banking experiences to users. Our expertise lies in developing AI-powered systems that cater to your business challenges and open new revenue opportunities. This includes fraud detection systems, personalized banking experiences, AI agents for financial advisory & customer support, risk assessment tools, data analytics tools for trading, AI agents for portfolio management, compliance management solutions, credit scoring tools, and AI assistants for loan processing.",
+        variant: "accent",
       },
       {
-        id: 3,
-        title: "Shopify Website Development",
+        id: "e-Commerce",
+
+        label: "e-Commerce",
         description:
-          "Our Shopify developers build powerful, secure, and fully responsive websites with customised designs and essential functionalities. From homepage to product pages, we create seamless user experiences that enhance shopping journeys and maximise conversions.",
-        image: reactIcon,
+          "At Moonstack, we offer cutting-edge AI solutions for e-commerce companies, helping them enhance customer experience, engage users, run campaigns, manage inventories, and get valuable data insights for strategic business decision-making. This is possible by integrating AI solutions like virtual shopping assistants, AI custom support solutions, inventory forecasting solutions, dynamic pricing solutions, data analytics tools, AI sales agents, and more such smart solutions with our help.",
+        variant: "dark",
       },
       {
-        id: 4,
-        title: "Shopify Mobile Apps",
+        id: "Travel",
+
+        label: "Travel",
         description:
-          "We create interactive and user-friendly Shopify mobile apps for Android and iOS. With intuitive design, smooth navigation, and responsive layouts, we help businesses deliver effortless mobile shopping experiences for their customers.",
-        image: reactIcon,
+          "Moonstack AI developers are experienced in developing intelligent solutions for the travel and hospitality industry, enabling them to offer memorable guest experiences and achieve operational excellence. We can build AI tools and AI agents for room booking, personalized travel support, itinerary creation, predictive maintenance, dynamic pricing, and business analytics.",
+        variant: "dark",
       },
       {
-        id: 5,
-        title: "Integration Services",
+        id: "Education",
+
+        label: "Education",
         description:
-          "Our team enhances your Shopify store with robust third-party integrations using secure APIs. From CRM and ERP to payment gateways and marketing tools, our developers seamlessly integrate functionalities to improve user experience and business automation.",
-        image: reactIcon,
+          "Our AI developers bring in their technical expertise and years of experience in building robust smart solutions for the education sector, enhancing overall learning experience, quality, and process. Be it AI teaching assistants, student performance analytics tools, scoring tools, mock exam platforms, AI assistants for admission help, or AI agents to automate administrative tasks, we can do all.",
+        variant: "light",
       },
       {
-        id: 6,
-        title: "Advanced Functionalities",
+        id: "Logistics",
+
+        label: "Logistics",
         description:
-          "Make your Shopify platform modern and future-ready with advanced features like AI-driven recommendations, real-time analytics, and automated workflows. These next-gen functionalities enhance user experience, boost conversions, and streamline operations.",
-        image: reactIcon,
+          "Our AI development services are here to make your logistics processes streamlined, automated, seamless, and on time. What our developers can do for your logistics company can transform it from a chaotic business to a system of effortless workflows. With route optimization solutions, real-time fleet tracking systems, analytics tools, AI agents for vendor management, and demand forecasting tools, we are here to help you welcome AI-backed logistics where there is no space for delays, manual work, human errors, or missed consignments, just high efficiency. ",
+        variant: "accent",
       },
     ],
   },
+  // processSteps: {
+  //   headingText: [
+  //     {
+  //       text: " Our Application development ",
+  //       color: "text-white",
+  //     },
+  //     {
+  //       text: "   process wraps around ",
+  //       color: "text-white libreItalic font-[400] highlight-text",
+  //     },
+  //     {
+  //       text: " your unique business needs",
+  //       color: "text-white",
+  //     },
+  //   ],
+  //   subHeadingText:
+  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
+  // },
+
+  accordionData: [
+    {
+      question: "How much does Android app development cost in India?",
+      answer:
+        "The actual development cost of an Android app depends on the app’s purpose, technology stack, features, and scale. For a quick quotation, feel free to reach out to our team at Moonstack.",
+    },
+    {
+      question: "Will AI replace Android developers in India?",
+      answer:
+        "No, while AI is gradually becoming a good tool that can assist developers, it is not advanced enough to replace Android developers in India.",
+    },
+    {
+      question: "Which is the best Android app development company in India?",
+      answer:
+        "Moonstack. We pride ourselves on being the best Android app development company in India, thanks to our years of experience developing popular Android apps that are downloaded and loved by millions of users.",
+    },
+    {
+      question: "Can Moonstack develop Android e-commerce applications?",
+      answer:
+        "Yes, we can help you build completely custom e-commerce Android applications, complete with payment gateway integration and even chat support.",
+    },
+    {
+      question: "How long does it take to develop an Android app?",
+      answer:
+        "The timeline for app development depends on various factors; however, the development process can generally take between a few weeks to a few months, based on underlying factors.",
+    },
+  ],
 
   banner: {
     headingText: [
       {
-        text: "So? Start your Shopify development process now ",
+        text: "Opt for your custom Android app development services now",
         color: "text-white",
       },
     ],
     subHeadingText: [
       {
-        text: "Shopify services goes through different stages of work.",
+        text: "Android app development goes through different stages of work.",
         color: "text-white",
       },
     ],
-    imageHeight: "md:w-[490px]",
-    image: bannerImg,
+    image: androidBannerImg,
   },
   quoteBanner: {
     headingText: [
       {
-        text: "Choose your Shopify hiring model - Hire your Shopify developer now ",
+        text: "Looking To Hire Android Developers in India? ",
         color: "text-white",
       },
     ],
     subHeadingText: [
       {
-        text: "Shopify services goes through different stages of work.",
+        text: "We offer top-rated Android e-commerce app development in India. ",
         color: "text-white",
       },
     ],
-    image: bannerImg,
+    image: androidContactbannerImg,
+
     buttonText: "Connect with us",
   },
-
-  processSteps: {
-    headingText: [
-      {
-        text: " Our Application development ",
-        color: "text-white",
-      },
-      {
-        text: "   process wraps around ",
-        color: "text-white libreItalic font-[400] highlight-text",
-      },
-      {
-        text: " your unique business needs",
-        color: "text-white",
-      },
-    ],
-    subHeadingText:
-      "We follow a structured pattern and quality focus process that allows us to deliver high performance and optimised Shopify stores in the market. With our experience, our Shopify experts have defined a proper process that delivers seamless development, smooth functionalities that lead to maximum conversion for businesses.",
+  whyChooseData: {
+    headingText: "",
+    subHeadingText: "",
+    steps: [],
   },
   slides: [],
-  accordionData: [
-    {
-      question: "What services do you offer for Shopify development?",
-      answer:
-        "We provide end-to-end Shopify development services from consulting to launch and maintenance. Our services include custom theme development, store setup, app integration, UI/UX design, advanced functionalities, performance optimization, and ongoing support.",
-    },
-    {
-      question: "How long will it take to build a Shopify store?",
-      answer:
-        "It typically takes around 2 weeks to set up a Shopify store. However, the timeline may vary depending on project requirements, hiring model, and the complexity of features needed.",
-    },
-    {
-      question: "Will my Shopify store be mobile friendly?",
-      answer:
-        "Yes, your Shopify store will be fully mobile-friendly and responsive across all devices, ensuring the best user experience.",
-    },
-    {
-      question: "Will you offer post launch support?",
-      answer:
-        "Yes, we provide ongoing support and maintenance after launch. As your long-term partner, we ensure continuous updates, improvements, and assistance whenever needed.",
-    },
-    {
-      question: "Can you integrate third-party services in Shopify solutions?",
-      answer:
-        "Yes, we can integrate third-party services in Shopify stores and mobile apps using secure APIs, ensuring seamless functionality and performance.",
-    },
-    {
-      question: "Will you be able to do Shopify migration?",
-      answer:
-        "Yes, our team is proficient in Shopify migration. We ensure 100% secure migration without data loss by following best industry practices throughout the process.",
-    },
-  ],
-};
+}

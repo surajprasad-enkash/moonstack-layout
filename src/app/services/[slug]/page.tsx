@@ -8,7 +8,6 @@ import AppCategoryBanner from "@/components/Sections/ServicesSection/AppDevelopm
 import FeatureSection from "@/components/Sections/ServicesSection/FeatureSection"
 import OutcomeBanner from "@/components/Sections/ServicesSection/OutcomeBanner"
 import ImpactSection from "@/components/Sections/ServicesSection/ImpactSection"
-import AndroidCaseStudySection from "@/components/Sections/ServicesSection/AndroidCaseStudySection"
 import TechMarqueeComponent from "@/components/Sections/TechMarquee"
 import QualitySection from "@/components/Sections/QualitySection"
 import ProcessStages from "@/components/Sections/ServicesSection/AgencyWorkFlowSection"
@@ -153,11 +152,13 @@ export default function ApplicationPage({ params }: PageProps) {
 
         <Space size={160} />
 
-        <FeatureSection
-          heading={page.solutions.headingContent}
-          subHeadingText={page.solutions.subHeadingText}
-          features={page.featuresData}
-        />
+        {page.solutions && (
+          <FeatureSection
+            heading={page.solutions.headingContent}
+            subHeadingText={page.solutions.subHeadingText}
+            features={page.featuresData}
+          />
+        )}
         <OutcomeBanner
           heading={[
             { text: "Exploring AI, ", color: "text-white" },

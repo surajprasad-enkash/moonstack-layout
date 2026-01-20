@@ -1,394 +1,367 @@
-import { PageData } from "@/types/web-development-data-type";
+import { PageData } from "@/types/web-development-data-type"
 
-import managmentIconOne from "@/assets/app-development-images/managment-icon-one.svg";
-import androidIcon from "@/assets/android-icon.svg";
-import iosIcon from "@/assets/ios-icon.svg";
-import reactIcon from "@/assets/react-icon.svg";
+import androidLottie from "../../../public/lottie/android.json"
+import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
+import androidImg from "@/assets/app-development-images/android-hero-img.webp"
+import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
+import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
+import bndimage1 from "@/assets/industries/ai/icon/bndImage1.webp"
+import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
+import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
+import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
 
-import appleIcon from "@/assets/app-development-images/apple-icon.svg";
-import mobileIconcon from "@/assets/app-development-images/mobile-icon.svg";
-import developmentIcon from "@/assets/app-development-images/development-icon.svg";
-import integrationIcon from "@/assets/app-development-images/integration-icon.svg";
-import debbugingIcon from "@/assets/app-development-images/debbuging-icon.svg";
-import appStoreIcon from "@/assets/app-development-images/app-store.svg";
-import bannerImg from "@/assets/e-commerce-hire.webp";
-import androidLottie from "../../../public/lottie/e-commerce.json";
-import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp";
+import designer from "@/assets/app-development-images/work-directly.webp"
+import hiring from "@/assets/app-development-images/hiring.webp"
+import delivery from "@/assets/app-development-images/guarante.webp"
+import collaboration from "@/assets/app-development-images/flexible.webp"
 
 export const ecommerce: PageData = {
   hero: {
     title: [
       {
-        text: "E-commerce Website Development Services ",
+        text: " AI Development Company for",
+        color: "text-white",
+      },
+      {
+        text: " Agents & Automation",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Launch your advanced functionalities integrated based  online powerful  portal that allows your customers to check in anytime via their devices - web and app. Partner with  Moonstack for your e-commerce web development services that leads to enhancing your brand presence as well as increases conversion rates. ",
+        text: "Build AI agents, copilots, and intelligent automation systems that turn your business chaos into organization-wide productivity and accuracy. We are here to help SaaS companies, startups, and enterprises leverage AI to enhance their product offerings, customer experience, and operational efficiency. ",
         color: "text-white",
       },
     ],
+    image: androidImg,
 
-    buttonText: "Build your online store now ",
     lottieData: androidLottie,
     breadcrumbs: [
       { label: "Home", href: "/" },
       {
-        label: " Application Development",
-        href: "/application-development",
+        label: " Services",
+        href: "/services",
       },
       {
-        label: "Android App Development",
-        href: "/application-development/android-app",
+        label: "Ai agent development company",
+        href: "/services/ai-agent-development-company",
       },
     ],
   },
   seo: {
-    title: "Ecommerce Website Development Company India & USA | Moonstack",
+    title: "Android App Development Company India & USA | Moonstack",
     description:
-      "Need an ecommerce site that increase sells? We designs and develops conversion‑focused online stores with secure payments and mobile‑first UX. Get Quote Now!",
+      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
     keywords:
-      "ecommerce website development company India,custom ecommerce website design India,affordable ecommerce web development India,ecommerce website development for small business",
+      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
     canonical:
-      "https://www.moonstack.com/website-development-service/e-commerce-website-development-service",
+      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
     ogImage: "/opengraph-image.png",
   },
-  pointsTitle: [
+  mobDesignBanner: nativeBannerImg,
+
+  points:
+    "Moonstack’s AI expertise was a game-changer. They engineered a custom predictive layer that cut our manual processing by 45%. Navigating complex security was seamless, delivering an intelligent system that scales with our users. For AI that impacts the bottom line, Moonstack is the premier partner.",
+  highlightText: "cut our manual processing by 45%",
+
+  leftCardData: [
     {
-      text: "Trusted E-commerce Development Company  ",
-      color: "text-white ",
+      title: "Why Consider AI for Your Business?",
+      description:
+        "Manual work, inefficiencies, delayed timelines, human errors, lengthy processes, and lack of transparency in business operations are a thing of the past. Welcome to the AI age, powered by AI agents, copilots, multi-agent workflows, and agentic automation systems that breathe in fresh whiffs of high accuracy and efficiency into your operations. From customer support to sales, marketing, finance, business analytics, logistics management, and compliance, AI solutions are transforming how we work by introducing autonomous and intelligent workflows. Results?",
+      stats: [
+        "66% improvement in employee performance",
+        "2.3x higher revenue growth using AI agents",
+        "70% reduction in repetitive tasks",
+        "30% lower operational costs with AI automation",
+      ],
+      // description2:
+      //   "So, looking to make your business future-ready and get a competitive edge? It's time to think the AI way. We are a leading custom AI development company in India, helping businesses of all sizes build custom AI solutions aligned to their needs. Whether you are looking to build an AI assistant, AI agent, or AI app, we can get you cutting-edge solutions to turn your business into an AI-powered success story.",
+      image: bndimage1.src,
     },
-    { text: " to maximize digital sales  ", color: "text-[#0CE859]" },
   ],
-  banner: {
-    headingText: [
+  solutions: {
+    headingContent: [
       {
-        text: "Launch your online store now ",
+        text: "Our",
+        color: "text-white",
+      },
+      {
+        text: " AI Agent Development ",
+        color: "text-white libreItalic font-[400] highlight-text",
+      },
+      {
+        text: " Services",
         color: "text-white",
       },
     ],
-
-    image: bannerImg,
+    subHeadingText:
+      "At Moonstack, a credible AI agent development company for business, we are dedicated to delivering sophisticated end-to-end AI product development services to power your business ambitions. Design, build, and deploy AI agent solutions that are robust, scalable, and adaptable to your business needs, industry trends, market sentiment, and customer demands. ",
   },
-  quoteBanner: {
+  featuresData: [
+    {
+      imgSrc: intuitiveIcon.src,
+      title: "AI Consulting & Strategy",
+      description:
+        "Cut through the AI hype and build a clear and execution-ready AI roadmap aligned to your real business needs. Our AI consulting and strategy services for SMEs help identify high-ROI AI agent use cases in your business, select the right LLM, recommend architecture, assess your data readiness, outline success metrics, and draft a plan so your AI investment delivers results.",
+    },
+    {
+      imgSrc: engagingIcon.src,
+      title: "Custom AI Agent Development",
+      description:
+        "Build custom AI agents tailored to your business logic, tools, and workflows, turning your challenges into opportunities for success. Hire our AI developers to build highly functional and autonomous AI agents capable of processing data, reasoning, executing tasks, and improving on feedback without any human involvement.",
+    },
+
+    {
+      imgSrc: brandingIcon.src,
+      title: "AI Agent Support and Maintenance",
+      description:
+        "Maintain the reliability and relevance of your AI agents with our ongoing support and maintenance services. Our team ensures your AI agents stay accurate and aligned to your changing business needs and vision. From performance monitoring and optimization to model tuning, knowledge base updates, error handling, security, and compliance, we take care of everything.",
+    },
+    {
+      imgSrc: brandingIcon.src,
+      title: "RAG & AI Chatbot Development",
+      description:
+        "Build a RAG-based AI chatbot on your company's knowledge base to give your employees easy and instant access to accurate data. Our RAG-based AI chatbot development services fine-tune LLM with your documents, databases, and knowledge sources for multiple internal use cases like knowledge base chatbots, PDF chatbots, and Q&A assistants.",
+    },
+    {
+      imgSrc: brandingIcon.src,
+      title: "Process Automation Development",
+      description:
+        "Automate and streamline your processes with agentic automations, multi-agent systems, or AI agent workflows for faster processes, lower operational costs, and teams freed to focus on high-value work. Our AI-powered workflow automation for small business solutions combines AI agents with tools and integrations to automate simple to complex and even multi-step workflows. ",
+    },
+    {
+      imgSrc: brandingIcon.src,
+      title: "Agentic AI Development",
+      description:
+        "Develop advanced agentic AI systems capable of planning, decision-making, and autonomous execution across complex workflows. We can deploy a set of AI agents, each trained to execute a specific task and capable of collaborating with other agents to collectively execute the target task and deliver intended results. ",
+    },
+  ],
+  qualitySectionData: [
+    {
+      id: 1,
+      title: "Improved Decision Making",
+      icon: collaboration.src,
+      description:
+        "We help you turn your raw business data into valuable insights for accurate, faster, and smarter business decision-making.",
+    },
+    {
+      id: 2,
+      title: "High Efficiency & Accuracy",
+      icon: delivery.src,
+      description:
+        "Our AI solutions and AI agents will enable you to intelligently automate complex processes effortlessly to reduce manual work, delays, and errors, delivering high efficiency and precision.",
+    },
+    {
+      id: 3,
+      title: "Lower Operational Costs",
+      icon: hiring.src,
+      description:
+        "By automating processes and implementing AI agents for multiple tasks, we bring down the workload on your employees and save you from hiring more staff.",
+    },
+    {
+      id: 4,
+      title: "Better Customer Experience",
+      icon: designer.src,
+      description:
+        "Moonstack’s AI developers can boost your customer experience by building AI solutions that offer insight into customer preferences by analyzing their data, recommending products, and instantly resolving customer queries.",
+    },
+  ],
+  CloudTimelineData: {
+    title: "Insight into Our AI ",
+    highlight: "Development Process",
+    subtitle:
+      "We take an agile, client-centric, and result-driven approach to building AI solutions that resonate with excellence. Focusing on speed, adaptability, and continuous improvement, we move from idea to impact without unnecessary delays or endless revisions.",
+    steps: [
+      {
+        number: 1,
+        title: "Discovery & Strategic Insights",
+        description:
+          "We start by deeply understanding your business, which includes your goals, challenges, and existing systems. Our team evaluates where AI can deliver the most value and reviews your current data and infrastructure. The result is a clear, practical roadmap aligned with your business objectives.",
+        position: "left",
+      },
+      {
+        number: 2,
+        title: "Data Collection & Preparation",
+        description:
+          "AI is only as good as the data behind it. We gather relevant data from internal and external sources, clean and structure it, and optimize it for performance. Using proven tools and frameworks, we ensure your data is accurate, reliable, and ready to power intelligent models.",
+        position: "right",
+      },
+      {
+        number: 3,
+        title: "Model Design & Experimentation",
+        description:
+          "At this stage, we design and test AI models tailored to your specific use case. Whether the solution requires supervised learning, unsupervised learning, or deep learning techniques, we experiment with multiple approaches to identify the most effective model for your needs.",
+        position: "left",
+      },
+      {
+        number: 4,
+        title: "Training & Model Optimization",
+        description:
+          "We train models using real business data and fine-tune them for accuracy, speed, and scalability. Through continuous testing and refinement, we build robust AI systems that can handle complexity and perform reliably in real-world scenarios.",
+        position: "right",
+      },
+      {
+        number: 5,
+        title: "Deployment & System Integration",
+        description:
+          "Once the model is ready, we deploy it seamlessly into your existing environment. Whether on cloud platforms or custom infrastructure, we ensure smooth integration, rigorous testing, and a stable launch, so your AI solution works flawlessly from day one.",
+        position: "left",
+      },
+      {
+        number: 6,
+        title: "Monitoring, Support & Continuous Improvement",
+        description:
+          "After deployment, we continuously monitor performance, track system behavior, and retrain models as new data becomes available. This ensures your AI solution keeps improving and stays aligned with your business as it grows.",
+        position: "right",
+      },
+    ],
+  },
+
+  impactSection: {
+    heading: [
+      { text: "Building AI Solutions," },
+      {
+        text: " Transforming Industries,",
+        className: "libreItalic font-[400] highlight-text",
+      },
+      { text: " Creating Real Impact" },
+    ],
+    description:
+      "Hire our AI developers to build state-of-the-art AI solutions aligned to your industry and supporting your business operations, processes, and strategies. From healthcare to fintech, e-commerce, energy, manufacturing, education, travel, and logistics, we are proficient in helping you realize what artificial intelligence can do for your business and achieve your annual targets like before.",
+    cards: [
+      {
+        id: "Healthcare",
+        label: "Healthcare",
+        description:
+          "We offer AI development services for healthcare and clinics, enabling automated administrative processes, quality patient care, faster diagnosis, and better patient outcomes. Our team is adept at developing a wide array of solutions like telemedicine apps, smart real-time monitoring solutions, medical imaging analysis software, AI agents for appointment booking, follow-ups, and patient support, patient data analytics platforms, predictive diagnostic tools, and more.",
+        variant: "light",
+      },
+      {
+        id: "Fintech",
+
+        label: "Fintech",
+        description:
+          "As a trusted AI development company for fintech and banking, we equip organizations to offer secure, faster, and smarter banking experiences to users. Our expertise lies in developing AI-powered systems that cater to your business challenges and open new revenue opportunities. This includes fraud detection systems, personalized banking experiences, AI agents for financial advisory & customer support, risk assessment tools, data analytics tools for trading, AI agents for portfolio management, compliance management solutions, credit scoring tools, and AI assistants for loan processing.",
+        variant: "accent",
+      },
+      {
+        id: "e-Commerce",
+
+        label: "e-Commerce",
+        description:
+          "At Moonstack, we offer cutting-edge AI solutions for e-commerce companies, helping them enhance customer experience, engage users, run campaigns, manage inventories, and get valuable data insights for strategic business decision-making. This is possible by integrating AI solutions like virtual shopping assistants, AI custom support solutions, inventory forecasting solutions, dynamic pricing solutions, data analytics tools, AI sales agents, and more such smart solutions with our help.",
+        variant: "dark",
+      },
+      {
+        id: "Travel",
+
+        label: "Travel",
+        description:
+          "Moonstack AI developers are experienced in developing intelligent solutions for the travel and hospitality industry, enabling them to offer memorable guest experiences and achieve operational excellence. We can build AI tools and AI agents for room booking, personalized travel support, itinerary creation, predictive maintenance, dynamic pricing, and business analytics.",
+        variant: "dark",
+      },
+      {
+        id: "Education",
+
+        label: "Education",
+        description:
+          "Our AI developers bring in their technical expertise and years of experience in building robust smart solutions for the education sector, enhancing overall learning experience, quality, and process. Be it AI teaching assistants, student performance analytics tools, scoring tools, mock exam platforms, AI assistants for admission help, or AI agents to automate administrative tasks, we can do all.",
+        variant: "light",
+      },
+      {
+        id: "Logistics",
+
+        label: "Logistics",
+        description:
+          "Our AI development services are here to make your logistics processes streamlined, automated, seamless, and on time. What our developers can do for your logistics company can transform it from a chaotic business to a system of effortless workflows. With route optimization solutions, real-time fleet tracking systems, analytics tools, AI agents for vendor management, and demand forecasting tools, we are here to help you welcome AI-backed logistics where there is no space for delays, manual work, human errors, or missed consignments, just high efficiency. ",
+        variant: "accent",
+      },
+    ],
+  },
+  // processSteps: {
+  //   headingText: [
+  //     {
+  //       text: " Our Application development ",
+  //       color: "text-white",
+  //     },
+  //     {
+  //       text: "   process wraps around ",
+  //       color: "text-white libreItalic font-[400] highlight-text",
+  //     },
+  //     {
+  //       text: " your unique business needs",
+  //       color: "text-white",
+  //     },
+  //   ],
+  //   subHeadingText:
+  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
+  // },
+
+  accordionData: [
+    {
+      question: "How much does Android app development cost in India?",
+      answer:
+        "The actual development cost of an Android app depends on the app’s purpose, technology stack, features, and scale. For a quick quotation, feel free to reach out to our team at Moonstack.",
+    },
+    {
+      question: "Will AI replace Android developers in India?",
+      answer:
+        "No, while AI is gradually becoming a good tool that can assist developers, it is not advanced enough to replace Android developers in India.",
+    },
+    {
+      question: "Which is the best Android app development company in India?",
+      answer:
+        "Moonstack. We pride ourselves on being the best Android app development company in India, thanks to our years of experience developing popular Android apps that are downloaded and loved by millions of users.",
+    },
+    {
+      question: "Can Moonstack develop Android e-commerce applications?",
+      answer:
+        "Yes, we can help you build completely custom e-commerce Android applications, complete with payment gateway integration and even chat support.",
+    },
+    {
+      question: "How long does it take to develop an Android app?",
+      answer:
+        "The timeline for app development depends on various factors; however, the development process can generally take between a few weeks to a few months, based on underlying factors.",
+    },
+  ],
+
+  banner: {
     headingText: [
       {
-        text: "Get your e-commerce development services now  ",
+        text: "Opt for your custom Android app development services now",
         color: "text-white",
       },
     ],
     subHeadingText: [
       {
-        text: "E-commerce services goes through different stages of work.",
+        text: "Android app development goes through different stages of work.",
         color: "text-white",
       },
     ],
-    image: bannerImg,
-    buttonText: "Connect with us",
+    image: androidBannerImg,
   },
-  solutionTitle: [
-    {
-      text: "Our E-Commerce Solutions -  ",
-      color: "text-white ",
-    },
-  ],
-  mobDesignBanner: nativeBannerImg,
-  points:
-    "Moonstack is the leading e-commerce development company. With our ecommerce website developers in India, we have built powerful and user centric  online stores that align with brand identity and increase conversion rates. We integrate modern functionalities powered by advanced technologies such as secure payment gateways, mobile responsive, and create interactive user interfaces for users that are easy to use. Our main aim is to deliver a seamless shopping experience to your customers that 2X sales. ",
-
-  highlightText: "Android development service in India",
-  solutionPoints: [
-    "B2C E-Commerce Development (Business to Consumer)",
-    "B2B E-Commerce Development (Business to Business) ",
-    "C2C Marketplace Development (Customer to Customer)",
-    "Multi-Vendor Marketplace Development",
-    "Mobile Commerce (M-Commerce) Development",
-    "Headless E-Commerce Solutions ",
-  ],
-
-  featureDataContent: {
-    headingContent: [
-      {
-        text: "Moonstack Ready to use E-commerce Solutions ",
-        color: "",
-      },
-    ],
-    subHeadingText:
-      "We offer a wide range of e-commerce web solutions to our customers that align with their business model. Our e-commerce coders build high performance, modern, secure online based solutions for different businesses.  ",
-
-    featuresData: [
-      {
-        imgSrc: appleIcon,
-        title: "E-commerce Portals",
-        description:
-          "We provide ready-to-use e-commerce portals that help businesses streamline purchasing and internal operational processes. Our portals support bulk orders, volume-based pricing systems, and can be delivered as apps, marketplaces, multi-vendor platforms, and more.",
-      },
-      {
-        imgSrc: mobileIconcon,
-        title: "Mobile E-commerce Apps",
-        description:
-          "Moonstack is known as the best mobile e-commerce website development company in India. We deliver user-friendly mobile e-commerce apps integrated with advanced technologies, offering fast loading, smooth navigation, and modern shopping-like experiences.",
-      },
-      {
-        imgSrc: developmentIcon,
-        title: "Marketplaces",
-        description:
-          "We build B2B and B2C e-commerce marketplaces with features like inventory management, CRM, and payment processing powered by modern technologies. As a leading marketplace development company in India, we build scalable solutions connecting brands with their audiences.",
-      },
-      {
-        imgSrc: integrationIcon,
-        title: "Multi-Vendor Marketplaces",
-        description:
-          "Our multi-vendor marketplace solutions allow multiple sellers to list and manage products from a single platform. Designed with powerful dashboards and seamless navigation, our solutions deliver smooth, scalable, and high-performance shopping experiences.",
-      },
-      {
-        imgSrc: debbugingIcon,
-        title: "Subscription-Based E-commerce",
-        description:
-          "We build subscription-based e-commerce portals that help brands generate recurring revenue. Our platforms offer automated billing, customized subscription plans, and retention-focused systems that keep customers engaged and renewing.",
-      },
-      {
-        imgSrc: appStoreIcon,
-        title: "E-Commerce Analytics & Automation",
-        description:
-          "Our analytics and automation solutions help optimize operations with real-time data, automated workflows, and intelligent decision-making capabilities that streamline processes and maximize revenue output.",
-      },
-    ],
-  },
-  solutions: {
-    headingContent: [
-      {
-        text: "  Discover how efficient ",
-        color: "text-white",
-      },
-      {
-        text: "  Android App Developer  ",
-        color: "text-white libreItalic font-[400] highlight-text",
-      },
-      {
-        text: " company can affect your product",
-        color: "text-white",
-      },
-    ],
-    subHeadingText:
-      "We have different end to end e-commerce development services to our customers from designing - development - deployment with the aim to deliver seamless user experience. Make your brand smarter, faster, and popular at global level with best E-commerce developers service providers. ",
-  },
-  featuresData: [
-    {
-      imgSrc: appleIcon,
-      title: "Custom E-commerce Website Development Services",
-      description:
-        "We build e-commerce solutions for small businesses and large enterprises that are fully customised and aligned with your brand identity. Our high-performance websites deliver a seamless shopping experience for users. In our e-commerce web development process, we integrate advanced functionalities to offer next-generation shopping experiences that drive conversions and customer satisfaction.",
-    },
-    {
-      imgSrc: mobileIconcon,
-      title: "E-commerce Designing Services",
-      description:
-        "Moonstack creates user-friendly, interactive, and engaging e-commerce solutions that reflect your brand identity while increasing sales conversions. As a professional e-commerce design company in India, we focus on delivering impressive designs featuring 2D and 3D animations with intuitive usability to make your store stand out.",
-    },
-    {
-      imgSrc: developmentIcon,
-      title: "E-commerce API and Integration Services",
-      description:
-        "Enhance your e-commerce website functionality with our robust API integration services. Our developers integrate third-party tools via APIs to give customers access to diverse features — from CRM and real-time synchronization to secure payment gateways — ensuring a connected and efficient shopping ecosystem.",
-    },
-    {
-      imgSrc: integrationIcon,
-      title: "E-commerce Testing Services",
-      description:
-        "Before launching your e-commerce solution, our expert developers conduct comprehensive manual and unit testing to ensure your online store is fully secure and bug-free. We focus on eliminating risks and guaranteeing smooth performance, helping your brand meet client expectations and maintain reliability.",
-    },
-    {
-      imgSrc: debbugingIcon,
-      title: "E-commerce Migration Services",
-      description:
-        "Effortlessly transfer all your data from one platform to another without technical complications. Our migration experts ensure complete data integrity, retaining confidential information, records, and SEO rankings. With a well-defined migration process, we make platform transitions seamless and hassle-free.",
-    },
-    {
-      imgSrc: appStoreIcon,
-      title: "E-commerce Support and Maintenance Services",
-      description:
-        "Our dedicated e-commerce coders provide 24/7 support and maintenance services to keep your store running smoothly. We detect and resolve issues in real time, continuously updating your platform with the latest technologies so you can focus on growth while we handle the technical side.",
-    },
-  ],
-
-  tabs: {
-    headingText:
-      "Advanced Features that our e-commerce portal integrated with ",
-    subHeadingText:
-      "We integrated modern  functionalities that are powered by next generation technologies. With our B2B & B2C ecommerce website development services we integrate advanced features such as real time analytics and deliver seamless inventory management to enhance customer experience- ",
-    tabs: [
-      {
-        id: 1,
-        title: "AI Powered Product Recommendation",
-        description:
-          "Offering personalized shopping experiences with smart suggestions that meet customer expectations.",
-        image: reactIcon,
-        imgHeight: "600px",
-      },
-      {
-        id: 2,
-        title: "Advanced Search & Filters",
-        description:
-          "Users can search their preferred items quickly and choose categories they prefer, saving time and improving navigation.",
-        image: reactIcon,
-      },
-      {
-        id: 3,
-        title: "Real-Time Inventory Management",
-        description:
-          "Track and manage inventory in real time. Users have complete visibility of product data at their fingertips for smooth operations.",
-        image: reactIcon,
-      },
-      {
-        id: 4,
-        title: "Payment Gateway Integration",
-        description:
-          "Integrate secure and trusted payment gateways, allowing users to pay seamlessly through their preferred third-party tools.",
-        image: reactIcon,
-      },
-      {
-        id: 5,
-        title: "Order Tracking and Notifications",
-        description:
-          "Keep customers informed about their orders and provide real-time updates through push and pop-up notifications.",
-        image: reactIcon,
-      },
-      {
-        id: 6,
-        title: "Data Analytics & Reporting Dashboard",
-        description:
-          "Empower users with actionable insights through performance metrics, sales trends, and customer behavior tracking.",
-        image: reactIcon,
-      },
-    ],
-  },
-  utilisArr: [
-    {
-      image: androidIcon,
-      category: "E-Commerce Development",
-      title: "WooCommerce",
-      desc: "At Moonstack, we believe in building technology.",
-    },
-    {
-      image: iosIcon,
-      category: "E-Commerce Development",
-      title: "UPI / Wallet Integrations",
-      desc: "At Moonstack, we believe in building technology.",
-    },
-    {
-      image: reactIcon,
-      category: "E-Commerce Development",
-      title: "Next.js / React",
-      desc: "At Moonstack, we believe in building technology.",
-    },
-    {
-      image: iosIcon,
-      category: "E-Commerce Development",
-      title: "Snipcart",
-      desc: "At Moonstack, we believe in building technology.",
-    },
-    {
-      image: reactIcon,
-      category: "E-Commerce Development",
-      title: "ERP Integrations (Zoho, Odoo, SAP)",
-      desc: "At Moonstack, we believe in building technology.",
-    },
-  ],
-  processSteps: {
+  quoteBanner: {
     headingText: [
       {
-        text: " Our Application development ",
-        color: "text-white",
-      },
-      {
-        text: "   process wraps around ",
-        color: "text-white libreItalic font-[400] highlight-text",
-      },
-      {
-        text: " your unique business needs",
+        text: "Looking To Hire Android Developers in India? ",
         color: "text-white",
       },
     ],
-    subHeadingText:
-      "At Moonstack, we have a defined and structured approach that delivers the best CRM solutions to our clients with the right strategy. We have delivered a wide range of CRM solutions and have hands-on experience with the delivery process and know the exact method to implement in the CRM delivery process. We have opted for the agile methodology and include best CRM development experts in India who focus on timely delivery and ensure to solve last minute complex challenges. ",
+    subHeadingText: [
+      {
+        text: "We offer top-rated Android e-commerce app development in India. ",
+        color: "text-white",
+      },
+    ],
+    image: androidContactbannerImg,
+
+    buttonText: "Connect with us",
+  },
+  whyChooseData: {
+    headingText: "",
+    subHeadingText: "",
+    steps: [],
   },
   slides: [],
-  whyChooseData: {
-    headingText: "Why choose us for ecommerce portal development in India?",
-    subHeadingText:
-      "We are the leading e-commerce development company in India. Our team has delivered a wide range of online portals in the market from that blend of creativity, tech stack, and powerful strategy that deliver next generation customer experiences.  ",
-    steps: [
-      {
-        icon: managmentIconOne,
-        title: "Experts E-commerce Developers",
-        description:
-          "Being the leading e-commerce development company in India, we have skilled e-commerce developers who build customized, high performance, and scalable e-commerce solutions. With our highly skilled team, we meet the latest development standards and deliver seamless shopping experiences.",
-      },
-      {
-        icon: managmentIconOne,
-        title: "Customized E-commerce Business Solutions",
-        description:
-          "We develop customized e-commerce business solutions that match your business needs. Our secure e-commerce developers in India create personalized strategies aligned with brand identity and customer expectations.",
-      },
-      {
-        icon: managmentIconOne,
-        title: "User Centric Designs",
-        description:
-          "Our e-commerce design team focuses on conversion-driven UI/UX that not only looks appealing but is user friendly. We develop interactive designs that help convert visitors into loyal customers while maintaining next-generation UI standards.",
-      },
-      {
-        icon: managmentIconOne,
-        title: "Hire E-Commerce Developers",
-        description:
-          "With our advanced e-commerce development services in India, you can hire dedicated e-commerce developers on a full-time, part-time, or hourly basis. This allows you to expand your development team with experienced professionals.",
-      },
-      {
-        icon: managmentIconOne,
-        title: "Transparent Process",
-        description:
-          "We believe in transparency. Our team shares every update, detail, and progress report with clients without hiding anything. We collaborate openly to ensure trust and long-term relationships.",
-      },
-      {
-        icon: managmentIconOne,
-        title: "Seamless Integration",
-        description:
-          "At Moonstack, we provide seamless API integration to extend functionalities with modern third-party services. Our team has strong expertise in integrating advanced features quickly and effectively.",
-      },
-    ],
-  },
-  accordionData: [
-    {
-      question:
-        "Do you provide custom e-commerce development services in India or ready-to-use e-commerce solutions?",
-      answer:
-        "Yes, we provide custom e-commerce development solutions where our e-commerce developers build powerful online portals as per your business needs. Moreover, if you need ready-to-use e-commerce solutions, we offer a wide range of portals including custom websites, marketplaces, API-based solutions, and more.",
-    },
-    {
-      question: "What services are included in e-commerce web solutions?",
-      answer:
-        "We offer a comprehensive range of e-commerce services that include custom e-commerce web portals, e-commerce designing services, API integration, B2B and B2C e-commerce web development, and many more tailored solutions to meet your business requirements.",
-    },
-    {
-      question: "Can you integrate payment gateways and shipping partners?",
-      answer:
-        "Yes, our e-commerce development team in Jaipur has extensive hands-on experience with integrating payment gateways and shipping partners to ensure smooth and secure online transactions.",
-    },
-    {
-      question: "Do you provide e-commerce business source code to customers?",
-      answer:
-        "Yes, we provide the complete e-commerce business source code to our customers, enabling them to add, edit, and delete components as per their evolving business requirements.",
-    },
-    {
-      question: "Will the e-commerce websites be user-friendly?",
-      answer:
-        "Absolutely. We deliver user-friendly and highly responsive e-commerce portals that function seamlessly across all devices — web and mobile — ensuring a smooth user experience.",
-    },
-    {
-      question: "How long does it take to deliver an e-commerce web portal?",
-      answer:
-        "There is no fixed timeline for delivering e-commerce web solutions as it depends on several factors such as hiring model, portal complexity, and API integrations. However, if you require a faster solution, you can opt for our ready-to-use portal options with minor or major modifications or consult directly with our e-commerce experts.",
-    },
-  ],
-};
+}

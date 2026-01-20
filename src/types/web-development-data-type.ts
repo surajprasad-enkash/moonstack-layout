@@ -1,14 +1,20 @@
 import { StaticImageData } from "next/image"
 
+/* ================= Accordion ================= */
 export interface IAccordionItem {
   question: string
   answer: string
 }
-interface BreadcrumbItem {
+
+/* ================= Breadcrumb ================= */
+export interface BreadcrumbItem {
   label: string
   href: string
 }
-interface leftCardData {
+
+/* ================= Left Card ================= */
+/* 🔧 FIX: export interface (was unexported) */
+export interface leftCardData {
   title?: string
   description?: string
   stats?: string[]
@@ -17,6 +23,7 @@ interface leftCardData {
   image?: string
 }
 
+/* ================= Impact Section ================= */
 export interface ImpactHeadingItem {
   text: string
   color?: string
@@ -31,17 +38,21 @@ export interface ImpactCardProps {
 }
 
 export interface ImpactSectionProps {
-  heading: ImpactHeadingItem[]
+  /* 🔧 FIX: heading must be optional (you already use empty arrays / undefined) */
+  heading?: ImpactHeadingItem[]
   description?: string
   cards: ImpactCardProps[]
 }
-interface qualitySectionProps {
+
+/* ================= Quality Section ================= */
+export interface qualitySectionProps {
   id: number
   title: string
   icon: string | StaticImageData
   description?: string
 }
 
+/* ================= Cloud Timeline ================= */
 export interface CloudTimelineDataSteps {
   number: string | number
   title: string
@@ -55,11 +66,21 @@ export interface CloudTimelineDataProps {
   subtitle?: string
   steps: CloudTimelineDataSteps[]
 }
+
+/* ================= Page Data ================= */
 export interface PageData {
+  /* 🔧 FIX: object (not array) — matches usage */
   CloudTimelineData: CloudTimelineDataProps
-  qualitySectionData: qualitySectionProps
+
+  /* 🔧 FIX: array (you map over it) */
+  qualitySectionData: qualitySectionProps[]
+
+  /* 🔧 FIX: object (not array) */
   impactSection: ImpactSectionProps
-  leftCardData: leftCardData
+
+  /* 🔧 FIX: array (used as leftCards[]) */
+  leftCardData: leftCardData[]
+
   hero: {
     title: { text: string; color: string }[]
     description: { text: string; color: string }[]
@@ -69,20 +90,25 @@ export interface PageData {
     lottieData: object
     breadcrumbs?: BreadcrumbItem[]
   }
+
   solutions: {
     headingContent: { text: string; color: string }[]
     subHeadingText: string
   }
+
   pointsTitle?: { text: string; color: string }[]
   solutionTitle?: { text: string; color: string }[]
   solutionPoints?: string[]
+
   points: string
   highlightText: string
+
   featuresData: {
     imgSrc: StaticImageData | string
     title: string
     description: string
   }[]
+
   tabs?: {
     headingText: string
     subHeadingText: string
@@ -94,12 +120,14 @@ export interface PageData {
       imgHeight?: string
     }[]
   }
+
   utilisArr?: {
     image: StaticImageData | string
     category: string
     title: string
     desc: string
   }[]
+
   processSteps?: {
     headingText: { text: string; color: string }[]
     subHeadingText: string
@@ -109,7 +137,9 @@ export interface PageData {
       description: string
     }[]
   }
+
   mobDesignBanner: StaticImageData | string
+
   whyChooseData: {
     headingText: string
     subHeadingText: string
@@ -119,11 +149,13 @@ export interface PageData {
       description: string
     }[]
   }
+
   slides: {
     image: StaticImageData | string
     title: string
     desc: string
   }[]
+
   banner?: {
     headingText: { text: string; color?: string }[]
     subHeadingText?: { text: string; color?: string }[]
@@ -147,6 +179,7 @@ export interface PageData {
   }
 
   accordionData: IAccordionItem[]
+
   featureDataContent?: {
     headingContent: { text: string; color: string }[]
     subHeadingText: string
