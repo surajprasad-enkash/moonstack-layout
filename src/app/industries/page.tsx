@@ -1,55 +1,46 @@
-import AppCategoryBanner from "@/components/Sections/ServicesSection/AppDevelopment/AppCategoryBanner";
-import Layout from "@/components/Layout";
-import bgImagehero from "@/assets/industries/ai/hero-bg.svg";
-import LottieData from "../../../public/lottie/industries.json";
-import TestimonialCard from "@/components/Sections/ServicesSection/ReviewCardSection";
-import userImage from "@/assets/app-development-images/autorImg.webp";
-import tastimonialBg from "@/assets/industries/ai/review-under-hero-bg.svg";
-import mobDesignBanner from "@/assets/app-development-images/mob-design-banner.webp";
-import AndroidCaseStudySection from "@/components/Sections/ServicesSection/AndroidCaseStudySection";
-import Space from "@/components/Space";
-import NewBanner from "@/components/Sections/NewBanner";
-import DesignPrinciplesSection from "@/components/Industries/DesignPrinciplesSection";
-import AIExperienceSection from "@/components/Industries/AIExperienceSection";
+import AppCategoryBanner from "@/components/Sections/ServicesSection/AppDevelopment/AppCategoryBanner"
+import Layout from "@/components/Layout"
+import bgImagehero from "@/assets/industries/ai/hero-bg.svg"
+import LottieData from "../../../public/lottie/industries.json"
+import TestimonialCard from "@/components/Sections/ServicesSection/ReviewCardSection"
+import userImage from "@/assets/app-development-images/autorImg.webp"
+import tastimonialBg from "@/assets/industries/ai/review-under-hero-bg.svg"
+import mobDesignBanner from "@/assets/app-development-images/mob-design-banner.webp"
+import AndroidCaseStudySection from "@/components/Sections/ServicesSection/AndroidCaseStudySection"
+import Space from "@/components/Space"
+import NewBanner from "@/components/Sections/NewBanner"
+import DesignPrinciplesSection from "@/components/Industries/DesignPrinciplesSection"
+import AIExperienceSection from "@/components/Industries/AIExperienceSection"
 
-import img1 from "@/assets/industries/ai/xp-1-p-500.webp";
-import img2 from "@/assets/industries/ai/xp-2.webp";
-import img3 from "@/assets/industries/ai/xp-3-p-500.webp";
-import img4 from "@/assets/industries/ai/xp-4-p-500.webp";
-import AIProductsGrid from "@/components/Industries/AIProductsGrid";
+import img1 from "@/assets/industries/ai/xp-1-p-500.webp"
+import img2 from "@/assets/industries/ai/xp-2.webp"
+import img3 from "@/assets/industries/ai/xp-3-p-500.webp"
+import img4 from "@/assets/industries/ai/xp-4-p-500.webp"
+import AIProductsGrid from "@/components/Industries/AIProductsGrid"
 
-import icon from "@/assets/industries/ai/icon/ai-p-icon.webp";
+import icon from "@/assets/industries/ai/icon/ai-p-icon.webp"
 
-import bndicon1 from "@/assets/industries/ai/icon/bndicon1.webp";
-import bndicon2 from "@/assets/industries/ai/icon/bndicon2.webp";
-import bndicon3 from "@/assets/industries/ai/icon/bndicon3.webp";
-import bndicon4 from "@/assets/industries/ai/icon/bndicon4.webp";
-import bndimage1 from "@/assets/industries/ai/icon/bndImage1.webp";
-import bndimage2 from "@/assets/industries/ai/icon/bndImage2.webp";
-import bndimage3 from "@/assets/industries/ai/icon/bndImage3.webp";
-import bndimage4 from "@/assets/industries/ai/icon/bndImage4.webp";
+import BusinessNeedsDesignSection from "@/components/Industries/BusinessNeedsDesignSection"
+import TrustBanner from "@/components/Industries/TrustBanner"
+import FeatureSection from "@/components/Sections/ServicesSection/FeatureSection"
 
-import BusinessNeedsDesignSection from "@/components/Industries/BusinessNeedsDesignSection";
-import TrustBanner from "@/components/Industries/TrustBanner";
-import FeatureSection from "@/components/Sections/ServicesSection/FeatureSection";
+import intuitiveIcon from "@/assets/industries/ai/icon/work1.webp"
+import engagingIcon from "@/assets/industries/ai/icon/work2.webp"
+import brandingIcon from "@/assets/industries/ai/icon/work3.webp"
+import brandingIcon4 from "@/assets/industries/ai/icon/work4.webp"
 
-import intuitiveIcon from "@/assets/industries/ai/icon/work1.webp";
-import engagingIcon from "@/assets/industries/ai/icon/work2.webp";
-import brandingIcon from "@/assets/industries/ai/icon/work3.webp";
-import brandingIcon4 from "@/assets/industries/ai/icon/work4.webp";
+import bccKristenCheng from "@/assets/industries/ai/icon/bcc_kristen-cheng.avif"
+import TestimonialsSection from "@/components/Industries/TestimonialsSection"
+import IndustryExperienceSection from "@/components/Industries/IndustryExperienceSection"
 
-import bccKristenCheng from "@/assets/industries/ai/icon/bcc_kristen-cheng.avif";
-import TestimonialsSection from "@/components/Industries/TestimonialsSection";
-import IndustryExperienceSection from "@/components/Industries/IndustryExperienceSection";
+import industryicon1 from "@/assets/industries/ai/icon/dbd2_i1.png"
+import industryicon2 from "@/assets/industries/ai/icon/b_i2.png"
+import industryicon3 from "@/assets/industries/ai/icon/b_i4.png"
+import industryicon4 from "@/assets/industries/ai/icon/_i5.png"
+import projectCtaBg from "@/assets/industries/ai/projectCtaBg.svg"
 
-import industryicon1 from "@/assets/industries/ai/icon/dbd2_i1.png";
-import industryicon2 from "@/assets/industries/ai/icon/b_i2.png";
-import industryicon3 from "@/assets/industries/ai/icon/b_i4.png";
-import industryicon4 from "@/assets/industries/ai/icon/_i5.png";
-import projectCtaBg from "@/assets/industries/ai/projectCtaBg.svg";
-
-import ProjectCTA from "@/components/ProjectCTA/ProjectCTA";
-import FAQSection from "@/components/Sections/FaqSection/FaqSection";
+import ProjectCTA from "@/components/ProjectCTA/ProjectCTA"
+import FAQSection from "@/components/Sections/FaqSection/FaqSection"
 const mobileDesignFeatures = [
   {
     imgSrc: intuitiveIcon.src,
@@ -67,7 +58,7 @@ const mobileDesignFeatures = [
     imgSrc: brandingIcon4.src,
     title: "Close cooperation,flexibility, and comfort",
   },
-];
+]
 
 const accordionData = [
   {
@@ -95,7 +86,7 @@ const accordionData = [
     answer:
       "The timeline for app development depends on various factors; however, the development process can generally take between a few weeks to a few months, based on underlying factors.",
   },
-];
+]
 const Industries = () => {
   return (
     <>
@@ -103,18 +94,18 @@ const Industries = () => {
         <AppCategoryBanner
           title={[
             {
-              text: " Experienced designers for",
+              text: "Empowering Businesses Across Industries with",
               color: "text-white",
             },
             {
-              text: " AI products",
+              text: " Digital Excellence",
               color: "",
               className: "highlight-text libreItalic",
             },
           ]}
           highlight={"AI products"}
           description={
-            "We deliver design solutions that turn your complex AI product into intuitive, easy to use, transparent and trustworthy digital experience."
+            "Moonstack partners with businesses across industries, delivering digital solutions that drive growth, streamline operations, and enhance user experiences."
           }
           mediaType="lottie"
           lottieData={LottieData}
@@ -125,15 +116,15 @@ const Industries = () => {
           logoSlider={true}
         />
         <TestimonialCard
-          quote="Android is the most popular mobile phone operating system in the world, with an estimated 4.5 billion users worldwide. Our native Android development service in India can help your business develop applications that allow you to reach that humongous audience. Every day, over 250 million Android apps are downloaded globally. "
-          highlightText="Android development service"
-          authorName="Aetienne Sardon"
-          authorRole="Founder at MYSO Finance"
+          quote="The Moonstack team is highly professional, responsive, and reliable. From planning to execution, everything was handled smoothly. Their ability to meet deadlines while maintaining high-quality standards makes them a trusted long-term partner for us."
+          highlightText="high-quality standards"
+          authorName="Naman Bhatia"
+          authorRole="CEO"
           authorImage={userImage}
           bgImage={tastimonialBg}
         />
         <Space size={160} />
-        <AndroidCaseStudySection
+        {/* <AndroidCaseStudySection
           title={[
             {
               text: "Our mobile",
@@ -150,53 +141,185 @@ const Industries = () => {
             },
           ]}
           description="We've helped many startups and companies design high-quality mobile applications that drive conversions and meet users' needs. Check the success stories of our clients below."
+        /> */}
+        <AIProductsGrid
+          heading={[
+            {
+              text: "Elevating Brands ",
+              className: "libreItalic highlight-text md:block",
+              color: "",
+            },
+            {
+              text: "Across Multiple Sectors",
+              color: "",
+              className: "",
+            },
+          ]}
+          items={[
+            {
+              title: "AI Chatbots",
+              description:
+                "Ensuring your chatbot engages users and provides meaningful assistance.",
+              icon: icon.src,
+              href: "/contact-us",
+              gradient: "linear-gradient(91deg, #ACB4FF -61.77%, #FFF 87.06%)",
+            },
+            {
+              title: "Education",
+              description:
+                "Learning platforms, e-learning tools, and student management software.",
+              icon: icon.src,
+              href: "/contact-us",
+              gradient:
+                "linear-gradient(91deg, #ACE1FF -61.77%, #FFF 87.06%), #1C1C1C",
+            },
+            {
+              title: "E-commerce",
+              description:
+                "Online platforms for buying and selling products with seamless UX.",
+              icon: icon.src,
+              href: "/contact-us",
+              gradient: "linear-gradient(91deg, #ACB4FF -61.77%, #FFF 87.06%)",
+            },
+            {
+              title: "Healthcare",
+              description:
+                "Patient care solutions, telemedicine, and hospital management systems.",
+              icon: icon.src,
+              href: "/contact-us",
+              gradient:
+                "linear-gradient(91deg, #ACE1FF -61.77%, #FFF 87.06%), #1C1C1C",
+            },
+            {
+              title: "Finance",
+              description:
+                "Banking apps, investment tools, and financial management software.",
+              icon: icon.src,
+              href: "/contact-us",
+              gradient: "linear-gradient(91deg, #ACB4FF -61.77%, #FFF 87.06%)",
+            },
+            {
+              title: "Travel & Hospitality",
+              description:
+                "Booking platforms, travel planning apps, and hotel management solutions.",
+              icon: icon.src,
+              href: "/contact-us",
+              gradient:
+                "linear-gradient(91deg, #ACE1FF -61.77%, #FFF 87.06%), #1C1C1C",
+            },
+            {
+              title: "Retail",
+              description:
+                "Store management, POS solutions, and omnichannel experiences.",
+              icon: icon.src,
+              href: "/contact-us",
+              gradient: "linear-gradient(91deg, #ACB4FF -61.77%, #FFF 87.06%)",
+            },
+            {
+              title: "Real Estate",
+              description:
+                "Property listing platforms, virtual tours, and real estate management tools.",
+              icon: icon.src,
+              href: "/contact-us",
+              gradient:
+                "linear-gradient(91deg, #ACE1FF -61.77%, #FFF 87.06%), #1C1C1C",
+            },
+            {
+              title: "Logistics & Supply Chain",
+              description:
+                "Shipping automation, route optimization, and inventory tracking.",
+              icon: icon.src,
+              href: "/contact-us",
+              gradient: "linear-gradient(91deg, #ACB4FF -61.77%, #FFF 87.06%)",
+            },
+            {
+              title: "Media & Entertainment",
+              description:
+                "Streaming platforms, content management, and recommendation engines.",
+              icon: icon.src,
+              href: "/contact-us",
+              gradient:
+                "linear-gradient(91deg, #ACE1FF -61.77%, #FFF 87.06%), #1C1C1C",
+            },
+            {
+              title: "Legal & Compliance",
+              description:
+                "Case management, document automation, and compliance tracking tools.",
+              icon: icon.src,
+              href: "/contact-us",
+              gradient: "linear-gradient(91deg, #ACB4FF -61.77%, #FFF 87.06%)",
+            },
+            {
+              title: "Event and Planner",
+              description:
+                "Powering high-performance websites for the creators of unforgettable experiences.",
+              icon: icon.src,
+              href: "/contact-us",
+              gradient:
+                "linear-gradient(91deg, #ACE1FF -61.77%, #FFF 87.06%), #1C1C1C",
+            },
+          ]}
         />
         {/* <Space size={160} /> */}
+        {/* <Space size={160} /> */}
+        <Space size={160} />
+        <BusinessNeedsDesignSection
+          heading={[
+            { text: "Why Choose " },
+            { text: "Moonstack", className: "libreItalic highlight-text" },
+            { text: " for Your Industry Needs?" },
+          ]}
+          subheading="Moonstack is a leader in app development services providers, offering customized mobile applications and websites that cater to the specific needs of your industries. Our applications are designed to enhance operational efficiency, improve customer engagement, and drive business growth across various sectors."
+          leftCards={[]}
+        />
         <NewBanner
           headingLines={[
-            { text: "Strengthen your user" },
+            { text: "Scale Your Reach" },
             {
-              text: "connection with ",
+              text: " with a World-Class",
               className: "highlight-text libreItalic",
             },
-            { text: "an intuitive mobile app" },
+            { text: " Development solution " },
           ]}
           imageSrc={mobDesignBanner}
-          buttonText="Contact us"
+          buttonText="Start Your Project"
         />{" "}
         <DesignPrinciplesSection
           heading={[
-            { text: "How we create designs for " },
-            { text: "AI products", className: "highlight-text libreItalic" },
-            { text: "that respond to user needs" },
+            { text: "How Our " },
+            {
+              text: "Design Principles ",
+              className: "highlight-text libreItalic",
+            },
+            { text: "Work Across Every Industry" },
           ]}
           principles={[
             {
               id: "01",
-              title: "Prioritizing the accessibility and ease of learning",
+              title: "Clarity Over Cleverness",
               description:
-                "We pay high attention on familiarizing users with your product and making the interaction easy. It is crucial to reduce uncertainties.",
+                "We design for understanding first. Clear communication beats visual tricks. Users should never guess what to do next.",
               gradient: "bg-gradient-to-br from-[#7FD3FF] to-[#f3c5d1]",
             },
             {
               id: "02",
-              title: "Ensure data privacy & transparency",
+              title: "Consistency Builds Trust",
               description:
-                "Communicating how data is collected, used and protected so that users could own control over their personal information.",
+                "Familiar patterns reduce friction. When interfaces behave predictably, users feel confident and work faster with less errors.",
               gradient: "bg-gradient-to-br from-[#A6AEFF] to-[#83ffb3]",
             },
             {
               id: "03",
-              title: "Building trust with users through design",
+              title: "Speed Without Sacrifice",
               description:
-                "AI technologies can still be considered as something mysterious. We add explanations and visualizations to build trust with your users.",
+                "Performance is a feature, not an afterthought. Fast experiences keep users engaged while maintaining quality and accessibility.",
               gradient: "bg-gradient-to-br from-[#D7B8FF] to-[#70bb79]",
             },
             {
               id: "04",
-              title: "Improvements are made based on user’s insights",
+              title: "Design That Evolves With Users",
               description:
-                "We improve and redesign AI products based on the information and valuable insights provided by users.",
+                "Great design adapts based on real feedback and behavior. We continuously refine experiences to match how people actually work and learn.",
               gradient: "bg-gradient-to-br from-[#6EE7D8] to-[#f3c5d1]",
             },
           ]}
@@ -204,14 +327,14 @@ const Industries = () => {
         <Space size={160} />
         <AIExperienceSection
           title={[
-            { text: "You hire a" },
+            { text: "Partner with " },
             {
-              text: "professional designer",
+              text: "Moonstack ",
               className: "highlight-text libreItalic",
             },
-            { text: "with suitable AI experience" },
+            { text: "for Industry-Leading Solutions" },
           ]}
-          description="When it comes to artificial intelligence design, it is crucial to be responsive to user needs and prioritize the accessibility of every feature. Our designers can offer you relevant expertise that would be a perfect match for your AI-powered product."
+          description="Our expert team combines industry knowledge with innovative technology to deliver solutions that drive business growth and enhance customer satisfaction. Contact us today to learn how our innovative solutions can transform your business operations and help you stay ahead in a competitive market."
           items={[
             {
               image: img1,
@@ -228,163 +351,60 @@ const Industries = () => {
           ]}
         />
         <Space size={160} />
-        <AIProductsGrid
-          heading={[
-            {
-              text: "AI products",
-              className: "libreItalic highlight-text",
-              color: "",
-            },
-            {
-              text: "that we can create together",
-              color: "",
-              className: "",
-            },
-          ]}
-          items={[
-            {
-              title: "AI Chatbots",
-              description:
-                "Ensuring your chatbot engages users and provides meaningful assistance.",
-              icon: icon.src,
-              href: "/contact-us",
-              gradient: "linear-gradient(91deg, #ACB4FF -61.77%, #FFF 87.06%)",
-            },
-            {
-              title: "AI Marketing",
-              description:
-                "Content optimization tools and SEO assistants with strong UX.",
-              icon: icon.src,
-              href: "/contact-us",
-              gradient:
-                "linear-gradient(91deg, #ACE1FF -61.77%, #FFF 87.06%), #1C1C1C",
-            },
-            {
-              title: "Crypto AI",
-              description:
-                "AI solutions tailored for the crypto and blockchain industry.",
-              icon: icon.src,
-              href: "/contact-us",
-              gradient: "linear-gradient(91deg, #ACB4FF -61.77%, #FFF 87.06%)",
-            },
-            {
-              title: "Education AI",
-              description: "Remote learning tools and language learning apps.",
-              icon: icon.src,
-              href: "/contact-us",
-              gradient:
-                "linear-gradient(91deg, #ACE1FF -61.77%, #FFF 87.06%), #1C1C1C",
-            },
-            {
-              title: "Healthcare AI",
-              description:
-                "Design solutions improving diagnosis and patient outcomes.",
-              icon: icon.src,
-              href: "/contact-us",
-              gradient: "linear-gradient(91deg, #ACB4FF -61.77%, #FFF 87.06%)",
-            },
-            {
-              title: "AI-powered HR",
-              description:
-                "Recruitment automation with intuitive and consistent UI/UX.",
-              icon: icon.src,
-              href: "/contact-us",
-              gradient:
-                "linear-gradient(91deg, #ACE1FF -61.77%, #FFF 87.06%), #1C1C1C",
-            },
-          ]}
-        />
-        <Space size={160} />
-        <BusinessNeedsDesignSection
-          heading={[
-            { text: "We have a special approach to" },
-            { text: "AI design", className: "libreItalic highlight-text" },
-            { text: "that wraps around your business needs" },
-          ]}
-          subheading="Our designers unite Business-Driven + User-Centered UX approach while creating AI design to cover business goals and user’s needs."
-          leftCards={[
-            {
-              title: "Holding a user research",
-              description:
-                "We conduct thorough user research to understand motivations, pain points, and behavior patterns. This helps us identify workable solutions and high-demand features.",
-              icon: bndicon1.src,
-              image: bndimage1.src,
-            },
-            {
-              title: "Thoughtful user flow",
-              description:
-                "Our experts map intuitive, goal-oriented user flows that make it easy to accomplish tasks, discover value, and stay engaged.",
-              icon: bndicon2.src,
-              image: bndimage2.src,
-            },
-            {
-              title: "Thoughtful user flow",
-              description:
-                "Our experts map intuitive, goal-oriented user flows that make it easy to accomplish tasks, discover value, and stay engaged.",
-              icon: bndicon3.src,
-              image: bndimage3.src,
-            },
-            {
-              title: "Thoughtful user flow",
-              description:
-                "Our experts map intuitive, goal-oriented user flows that make it easy to accomplish tasks, discover value, and stay engaged.",
-              icon: bndicon4.src,
-              image: bndimage4.src,
-            },
-          ]}
-        />
-        <Space size={160} />
         <TrustBanner
-          highlight="Turning projects"
-          title="into trusting partnerships"
+          highlight="Elevating project "
+          title="success into trusted collaborations"
         />
         <TestimonialsSection
           heading={[
-            { text: "Our partners ", className: "highlight-text libreItalic" },
-            { text: "find numerous reasons to love us", color: "text-white" },
+            {
+              text: "Expertise you’ll appreciate.",
+              className: "highlight-text libreItalic",
+            },
+            { text: " Collaboration you’ll love.", color: "text-white" },
           ]}
           className="pt-[80px]"
           testimonials={[
             {
               quote:
-                "They understood our idea and gave us more feedback than expected. Around produces excellent quality work.",
+                "Moonstack turned our complex vision into an intuitive experience. Their design-first approach significantly boosted our user retention from day one.",
               name: "Kristen Cheng",
-              role: "Founder & CEO, BehindTitles",
+              role: " CEO, USA",
               avatar: bccKristenCheng.src,
             },
             {
               quote:
-                "Their expertise and guidance were instrumental. They demonstrated commitment to creating a product that resonated.",
+                "They are more than developers—they are technical consultants. Moonstack solved our toughest backend hurdles with scalable, future-proof architecture.",
               name: "Aetienne Sardon",
-              role: "Founder, MYSO Finance",
+              role: " CEO, UK",
               avatar: bccKristenCheng.src,
             },
             {
               quote:
-                "The process was something to be admired. They would also make immediate improvements when mentioned.",
+                "Working with Moonstack feels like having an in-house team. Their transparent communication and on-time delivery set a new standard for us.",
               name: "Mohamed Shegow",
-              role: "CEO, Sinta",
+              role: "CEO, Australia",
               avatar: bccKristenCheng.src,
             },
             {
               quote:
-                "Arounda is not just a contractor but part of our startup company. Communication was excellent.",
+                "They truly turn projects into partnerships. Moonstack stayed involved post-launch, using real data to help us iterate and grow.",
               name: "Kirill Onasenko",
-              role: "CEO, VOXE",
+              role: "CEO, South Africa",
               avatar: bccKristenCheng.src,
             },
             {
               quote:
-                "Their UI/UX design skills were impressive. Modern, creative, and intuitive without hand-holding.",
+                "Moonstack helped us launch in record time. They knew exactly which features to prioritize to get our MVP to market without sacrificing quality",
               name: "Esme Guevara",
-              role: "CMO & Head of Product, QTalent",
+              role: "CMO & Head of Product, UK",
               avatar: bccKristenCheng.src,
             },
             {
               quote:
-                "Throughout the project all I saw was sheer will to keep pushing forward and adapting to requests.",
+                "The best ROI we've seen this year. Their efficiency and high-quality code led to a 30% spike in engagement immediately after launch.",
               name: "Ola Olusoga",
-              role: "Vice President, WordPress",
+              role: "Vice President, Canada",
               avatar: bccKristenCheng.src,
             },
           ]}
@@ -392,20 +412,20 @@ const Industries = () => {
         <Space size={160} />
         <IndustryExperienceSection
           heading={[
-            { text: "We have ", color: "text-white" },
-            { text: "extensive ", color: "text-lime-400" },
+            { text: "Proven ", color: "text-white" },
+            { text: "Experience, ", color: "text-lime-400" },
             {
-              text: "industry experiences",
+              text: " Multi-Niche Expertise",
               color: "text-white",
               className: "highlight-text libreItalic block",
             },
           ]}
-          description="Our product designers have completed projects in different niches. They know how to add business value and provide personalized design solutions for your digital product."
+          description="Having launched successful products across various sectors, our team knows how to drive ROI through design. We combine industry-best practices with tailored strategies to ensure your digital product stands out in its market."
           industries={[
             {
-              title: "Web 3, Blockchain",
+              title: "Artificial Intelligence",
               icon: industryicon1.src,
-              tags: ["Apps", "DeFi", "IPFS", "Exchanges", "Play2Earn"],
+              tags: ["Apps", "Web", "Chat Bot", "Automation", "Use Cases"],
             },
             {
               title: "SaaS",
@@ -437,6 +457,6 @@ const Industries = () => {
         <Space />
       </Layout>
     </>
-  );
-};
-export default Industries;
+  )
+}
+export default Industries

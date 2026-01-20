@@ -1,25 +1,25 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import Image from "next/image";
-import { FiArrowRight } from "react-icons/fi";
-import Heading from "@/components/Heading/Heading";
+import Link from "next/link"
+import Image from "next/image"
+import { FiArrowRight } from "react-icons/fi"
+import Heading from "@/components/Heading/Heading"
 
 interface AIProductItem {
-  title: string;
-  description: string;
-  href?: string;
-  icon?: string;
-  gradient: string;
+  title: string
+  description: string
+  href?: string
+  icon?: string
+  gradient: string
 }
-interface HeadingItem{
-  text:string;
-  color:string;
-  className:string;
+interface HeadingItem {
+  text: string
+  color: string
+  className: string
 }
 interface AIProductsGridProps {
-  heading: HeadingItem[];
-  items: AIProductItem[];
+  heading: HeadingItem[]
+  items: AIProductItem[]
 }
 
 export default function AIProductsGrid({
@@ -32,7 +32,7 @@ export default function AIProductsGrid({
         {/* HEADING */}
         <Heading
           headingTag="h2"
-          className="mx-auto mb-[72px] max-w-[500px] text-center text-white"
+          className="mx-auto mb-[72px] max-w-[700px] text-center text-white"
           content={heading}
         />
 
@@ -41,7 +41,7 @@ export default function AIProductsGrid({
           {items.map((item, index) => (
             <div
               key={index}
-              className="relative flex flex-col justify-between rounded-[18px] p-[28px] transition overflow-hidden"
+              className="relative flex flex-col justify-between overflow-hidden rounded-[18px] p-[28px] transition"
               style={item.gradient ? { background: item.gradient } : undefined}
             >
               {/* ICON */}
@@ -70,7 +70,7 @@ export default function AIProductsGrid({
               {/* CTA */}
               <Link
                 href={item.href || "#"}
-                className="inline-flex rounded-[50px] items-center gap-2 bg-black px-[24px] py-[10px] text-[16px] text-white transition max-w-[max-content]"
+                className="inline-flex max-w-[max-content] items-center gap-2 rounded-[50px] bg-black px-[24px] py-[10px] text-[16px] text-white transition"
               >
                 Learn More <FiArrowRight size={18} />
               </Link>
@@ -79,5 +79,5 @@ export default function AIProductsGrid({
         </div>
       </div>
     </section>
-  );
+  )
 }

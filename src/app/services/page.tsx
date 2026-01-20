@@ -5,9 +5,7 @@ import AppCategoryBanner from "@/components/Sections/ServicesSection/AppDevelopm
 import ServicesSection from "@/components/NewHomePage/ServicesSection"
 import Space from "@/components/Space"
 import CaseStudyHighlight from "@/components/NewHomePage/CaseStudyHighlight"
-import screen1 from "@/assets/newHomePage/caseStudy/screen1.avif"
-import screen2 from "@/assets/newHomePage/caseStudy/screen2.avif"
-import screen3 from "@/assets/newHomePage/caseStudy/screen3.avif"
+
 import clientImage from "@/assets/newHomePage/caseStudy/clientimage.png"
 import clutch from "@/assets/newHomePage/caseStudy/clutch.svg"
 import TestimonialsTabs from "@/components/NewHomePage/TestimonialsTabs"
@@ -28,6 +26,14 @@ import clutchBadges from "@/assets/newHomePage/TrustBadges/clutch.avif"
 import upwork from "@/assets/newHomePage/TrustBadges/upwork.avif"
 import dribbble from "@/assets/newHomePage/TrustBadges/dribble.avif"
 import behance from "@/assets/newHomePage/TrustBadges/behance.avif"
+
+import screen1 from "@/assets/newHomePage/caseStudy/screenOne.webp"
+import screen2 from "@/assets/newHomePage/caseStudy/nuwamaScreen1.webp"
+import screen3 from "@/assets/newHomePage/caseStudy/nuwamaScreen2.webp"
+
+import Pickrightscreen1 from "@/assets/newHomePage/caseStudy/pickrightScreen1.webp"
+import Pickrightscreen2 from "@/assets/newHomePage/caseStudy/pickrightScreen2.webp"
+import Pickrightscreen3 from "@/assets/newHomePage/caseStudy/pickrightScreen3.webp"
 const tabs = [
   {
     id: "mojo",
@@ -142,11 +148,11 @@ export default function ApplicationPage() {
         <Space />
         <CaseStudyHighlight
           tag="CASE STUDY"
-          showTag={true}
+          showTag={false}
           badges={[{ label: "Web 3.0" }, { label: "$2.4M raised" }]}
           clutchLogo={clutch}
-          title="MYSO Finance raised $2.4M and reached 85% user engagement with our design"
-          description="Arounda excels with meticulous attention to detail, creative problem-solving, and clear communication. Their innovative solutions significantly enhanced usability and engagement."
+          title="Stock Trading Ideas - Advisory Services for Stock Market | Pickright"
+          description="Explore top-notch trading ideas with Pickrights advisory services for the stock market. Make confident investment decisions based on ideas."
           testimonial={{
             name: "Artemine Sarden",
             role: "Founder, MYSO Finance",
@@ -154,7 +160,7 @@ export default function ApplicationPage() {
             rating: 5,
             text: "Arounda excels with meticulous attention to detail and creative problem-solving.",
           }}
-          images={[screen1, screen2, screen3]}
+          images={[Pickrightscreen1, Pickrightscreen2, Pickrightscreen3]}
         />
         <Space size={240} />
         <CaseStudyHighlight
@@ -162,8 +168,8 @@ export default function ApplicationPage() {
           showTag={false}
           badges={[{ label: "Web 3.0" }, { label: "$2.4M raised" }]}
           clutchLogo={clutch}
-          title="MYSO Finance raised $2.4M and reached 85% user engagement with our design"
-          description="Arounda excels with meticulous attention to detail, creative problem-solving, and clear communication. Their innovative solutions significantly enhanced usability and engagement."
+          title="Nuvama Wealth: Wealth Management Done Right"
+          description="Shaping the future of your financial journey"
           testimonial={{
             name: "Artemine Sarden",
             role: "Founder, MYSO Finance",
@@ -171,7 +177,7 @@ export default function ApplicationPage() {
             rating: 5,
             text: "Arounda excels with meticulous attention to detail and creative problem-solving.",
           }}
-          images={[screen1, screen2, screen3]}
+          images={[screen2, screen1, screen3]}
         />
         <Space />
         <TestimonialsTabs tabs={tabs} />

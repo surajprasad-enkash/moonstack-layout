@@ -1,73 +1,69 @@
-import Layout from "@/components/Layout";
+import Layout from "@/components/Layout"
 
 /* ===================== CONSTANTS ===================== */
-import { pagesData, pagesKeys, TPageKeys } from "@/constants/services";
+import { pagesData, pagesKeys, TPageKeys } from "@/constants/services"
 
 /* ===================== SECTIONS ===================== */
-import AppCategoryBanner from "@/components/Sections/ServicesSection/AppDevelopment/AppCategoryBanner";
-import FeatureSection from "@/components/Sections/ServicesSection/FeatureSection";
-import OutcomeBanner from "@/components/Sections/ServicesSection/OutcomeBanner";
-import ImpactSection from "@/components/Sections/ServicesSection/ImpactSection";
-import AndroidCaseStudySection from "@/components/Sections/ServicesSection/AndroidCaseStudySection";
-import TechMarqueeComponent from "@/components/Sections/TechMarquee";
-import QualitySection from "@/components/Sections/QualitySection";
-import ProcessStages from "@/components/Sections/ServicesSection/AgencyWorkFlowSection";
-import TestimonialsSection from "@/components/Industries/TestimonialsSection";
-import TeamSliderSection from "@/components/Sections/TeamSliderSection/SliderSection";
-import FAQSection from "@/components/Sections/FaqSection/FaqSection";
-import ProjectCTA from "@/components/ProjectCTA/ProjectCTA";
-import TestimonialCard from "@/components/Sections/ServicesSection/ReviewCardSection";
-import NewBanner from "@/components/Sections/NewBanner";
+import AppCategoryBanner from "@/components/Sections/ServicesSection/AppDevelopment/AppCategoryBanner"
+import FeatureSection from "@/components/Sections/ServicesSection/FeatureSection"
+import OutcomeBanner from "@/components/Sections/ServicesSection/OutcomeBanner"
+import ImpactSection from "@/components/Sections/ServicesSection/ImpactSection"
+import AndroidCaseStudySection from "@/components/Sections/ServicesSection/AndroidCaseStudySection"
+import TechMarqueeComponent from "@/components/Sections/TechMarquee"
+import QualitySection from "@/components/Sections/QualitySection"
+import ProcessStages from "@/components/Sections/ServicesSection/AgencyWorkFlowSection"
+import TestimonialsSection from "@/components/Industries/TestimonialsSection"
+import TeamSliderSection from "@/components/Sections/TeamSliderSection/SliderSection"
+import FAQSection from "@/components/Sections/FaqSection/FaqSection"
+import ProjectCTA from "@/components/ProjectCTA/ProjectCTA"
+import TestimonialCard from "@/components/Sections/ServicesSection/ReviewCardSection"
+import NewBanner from "@/components/Sections/NewBanner"
 import AwardsSection, {
   AwardItem,
-} from "@/components/NewHomePage/AwardsSection";
+} from "@/components/NewHomePage/AwardsSection"
 
 /* ===================== UI ===================== */
-import Space from "@/components/Space";
+import Space from "@/components/Space"
 
 /* ===================== ASSETS ===================== */
-import gradientBg from "@/assets/app-development-images/bannerGradientBg.svg";
-import userImage from "@/assets/app-development-images/autorImg.webp";
-import infinityIcon from "@/assets/app-development-images/infinityLogo.svg";
-import playerIcon from "@/assets/app-development-images/playerIcon.svg";
-import voxeIcon from "@/assets/app-development-images/voxeIcon.svg";
-import designer from "@/assets/app-development-images/work-directly.webp";
-import hiring from "@/assets/app-development-images/hiring.webp";
-import delivery from "@/assets/app-development-images/guarante.webp";
-import collaboration from "@/assets/app-development-images/flexible.webp";
-import androidBgImg from "@/assets/app-development-images/hero-bg-1440.svg";
-import projectCtaBgImg from "@/assets/app-development-images/af_match-bg-1440.svg";
-import reviewBgImg from "@/assets/app-development-images/review-under-hero-bg-1440.svg";
-import bccKristenCheng from "@/assets/industries/ai/icon/bcc_kristen-cheng.avif";
+import gradientBg from "@/assets/app-development-images/bannerGradientBg.svg"
+import userImage from "@/assets/app-development-images/autorImg.webp"
 
+import androidBgImg from "@/assets/app-development-images/hero-bg-1440.svg"
+import projectCtaBgImg from "@/assets/app-development-images/af_match-bg-1440.svg"
+import reviewBgImg from "@/assets/app-development-images/review-under-hero-bg-1440.svg"
+import bccKristenCheng from "@/assets/industries/ai/icon/bcc_kristen-cheng.avif"
+import bndimage1 from "@/assets/industries/ai/icon/bndImage1.webp"
+import bndicon1 from "@/assets/industries/ai/icon/bndicon1.webp"
 /* ===================== AWARDS ===================== */
-import award1 from "@/assets/newHomePage/awards/clutch.svg";
-import award2 from "@/assets/newHomePage/awards/Top_Design_company_2025.png";
-import award3 from "@/assets/newHomePage/awards/Top_Digital_Design_Company_2025.png";
-import award4 from "@/assets/newHomePage/awards/clutch-badge-6.svg";
-import award5 from "@/assets/newHomePage/awards/clutch-badge.svg";
-import award6 from "@/assets/newHomePage/awards/dribbble.svg";
-import award7 from "@/assets/newHomePage/awards/good-firms.svg";
-import award8 from "@/assets/newHomePage/awards/upwork.svg";
-import icon from "@/assets/newHomePage/awards/icon.svg";
+import award1 from "@/assets/newHomePage/awards/clutch.svg"
+import award2 from "@/assets/newHomePage/awards/Top_Design_company_2025.png"
+import award3 from "@/assets/newHomePage/awards/Top_Digital_Design_Company_2025.png"
+import award4 from "@/assets/newHomePage/awards/clutch-badge-6.svg"
+import award5 from "@/assets/newHomePage/awards/clutch-badge.svg"
+import award6 from "@/assets/newHomePage/awards/dribbble.svg"
+import award7 from "@/assets/newHomePage/awards/good-firms.svg"
+import award8 from "@/assets/newHomePage/awards/upwork.svg"
+import icon from "@/assets/newHomePage/awards/icon.svg"
 
-import type { Metadata } from "next";
+import type { Metadata } from "next"
+import BusinessNeedsDesignSection from "@/components/Industries/BusinessNeedsDesignSection"
+import CloudTimeline from "@/components/Sections/CloudServices/CloudTimeline/CloudTimeline"
 
 interface PageProps {
-  params: { slug: string };
+  params: { slug: string }
 }
-
 
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const page = pagesData[pagesKeys[params.slug as TPageKeys] as TPageKeys];
+  const page = pagesData[pagesKeys[params.slug as TPageKeys] as TPageKeys]
 
   if (!page?.seo) {
     return {
       title: "Services | Moonstack",
       description: "Moonstack services",
-    };
+    }
   }
 
   return {
@@ -91,7 +87,7 @@ export async function generateMetadata({
       description: page.seo.description,
       images: page.seo.ogImage ? [page.seo.ogImage] : [],
     },
-  };
+  }
 }
 
 /* ===================== DATA ===================== */
@@ -109,20 +105,20 @@ const awards: AwardItem[] = [
   { title: "GLOBAL 100 B2B UI/UX COMPANY", image: award6 },
   { title: "GLOBAL 100 B2B UI/UX COMPANY", image: award7 },
   { title: "GLOBAL 100 B2B UI/UX COMPANY", image: award8 },
-];
+]
 
 interface PageProps {
-  params: { slug: string };
+  params: { slug: string }
 }
 
 /* ===================== PAGE ===================== */
 export default function ApplicationPage({ params }: PageProps) {
-  const slug = params.slug;
+  const slug = params.slug
 
-  const page = pagesData[pagesKeys[slug as TPageKeys] as TPageKeys];
+  const page = pagesData[pagesKeys[slug as TPageKeys] as TPageKeys]
 
   if (!page) {
-    return <p className="p-10 text-center">Page not found</p>;
+    return <p className="p-10 text-center">Page not found</p>
   }
 
   return (
@@ -145,18 +141,40 @@ export default function ApplicationPage({ params }: PageProps) {
           quote={page.points}
           highlightText={page.highlightText}
           authorName="Aetienne Sardon"
-          authorRole="Founder at MYSO Finance"
+          authorRole="CEO"
           authorImage={userImage}
           bgImage={reviewBgImg}
         />
 
         <Space size={160} />
+        {page.leftCardData && (
+          <BusinessNeedsDesignSection leftCards={page.leftCardData} />
+        )}
+
+        <Space size={160} />
 
         <FeatureSection
           heading={page.solutions.headingContent}
+          subHeadingText={page.solutions.subHeadingText}
           features={page.featuresData}
         />
-
+        <OutcomeBanner
+          heading={[
+            { text: "Exploring AI, ", color: "text-white" },
+            {
+              text: "but Don’t Know Where to Start?",
+              color: "text-white libreItalic font-[400]",
+            },
+          ]}
+          checklist={[
+            "Generative AI & LLM Integration",
+            "Intelligent Business Process Automation",
+            "Predictive Analytics & Forecasting",
+            "Custom Computer Vision & NLP Solutions",
+          ]}
+          bgImage={gradientBg}
+          buttonText="Talk To Us"
+        />
         {page?.processSteps && (
           <ProcessStages
             heading={page.processSteps.headingText}
@@ -164,89 +182,17 @@ export default function ApplicationPage({ params }: PageProps) {
           />
         )}
 
-        <OutcomeBanner
-          heading={[
-            { text: "Business outcomes", color: "text-white" },
-            {
-              text: " you will get:",
-              color: "text-white libreItalic font-[400]",
-            },
-          ]}
-          checklist={[
-            "Boosted engagement",
-            "Improved brand recognition",
-            "High app downloads",
-            "Maximize user satisfaction",
-          ]}
-          bgImage={gradientBg}
-          buttonText="Get a quote"
-        />
-
         <Space size={160} />
 
-        <AwardsSection
-          label=""
-          heading={[
-            { text: "While the growth " },
-            {
-              text: "of our clients ",
-              className: "libreItalic font-[400] highlight-text",
-            },
-            { text: "is what " },
-            {
-              text: "matters ",
-              className: "libreItalic font-[400] highlight-text",
-            },
-            { text: "most, it’s nice to get awards" },
-          ]}
-          awards={awards}
-        />
+        {page.impactSection && (
+          <ImpactSection
+            heading={page.impactSection.heading}
+            description={page.impactSection.description}
+            cards={page.impactSection.cards}
+          />
+        )}
 
-        <ImpactSection
-          heading={[
-            { text: "Investing in your ", color: "text-white" },
-            {
-              text: "own mobile app is a ",
-              color: "text-white libreItalic font-[400] highlight-text",
-            },
-            { text: "competitive advantage", color: "text-white" },
-          ]}
-          description="Our mobile design services and approach are result-driven..."
-          cards={[
-            {
-              id: "infinity",
-              logo: infinityIcon,
-              title: "Infinity",
-              value: "x5",
-              label: "Retention rate boost",
-              description:
-                "Our experts delivered a top-notch mobile app for Infinity Web3 platform.",
-              variant: "dark",
-            },
-            {
-              id: "voxe",
-              title: "VOXE",
-              logo: voxeIcon,
-              value: "7.1M",
-              label: "Audience reach",
-              description:
-                "Outstanding mobile app design helped VOXE reach a wider audience.",
-              variant: "light",
-            },
-            {
-              id: "players",
-              logo: playerIcon,
-              title: "Players Health",
-              value: "85%",
-              label: "User satisfaction rate",
-              description:
-                "Players Health users’ needs are covered with intuitive design.",
-              variant: "accent",
-            },
-          ]}
-        />
-
-        <AndroidCaseStudySection
+        {/* <AndroidCaseStudySection
           title={[
             { text: "Our mobile app design ", color: "text-white" },
             {
@@ -255,83 +201,30 @@ export default function ApplicationPage({ params }: PageProps) {
             },
           ]}
           description="We've helped many startups and companies design high-quality mobile applications."
-        />
+        /> */}
 
         <NewBanner
           headingLines={[
-            { text: "Strengthen your user" },
-            { text: "connection with an" },
-            { text: "intuitive mobile app" },
+            { text: "Want AI that Delivers " },
+            { text: "Measurable ROI, Not Just Experiments?" },
           ]}
           imageSrc={page.mobDesignBanner}
-          buttonText="Contact us"
+          buttonText="Book a meeting"
         />
 
         <TechMarqueeComponent />
+        {page.qualitySectionData && (
+          <QualitySection features={page.qualitySectionData} />
+        )}
 
-        <QualitySection
-          features={[
-            {
-              id: 1,
-              title: "Adaptable collaboration approach",
-              icon: collaboration,
-            },
-            { id: 2, title: "Commitment to deadlines", icon: delivery },
-            { id: 3, title: "Quick onboarding", icon: hiring },
-            { id: 4, title: "Work directly with the team", icon: designer },
-          ]}
-        />
-
-        <TestimonialsSection
-          heading={[
-            { text: "Our partners ", className: "highlight-text libreItalic" },
-            { text: "find numerous reasons to love us", color: "text-white" },
-          ]}
-          testimonials={[
-            {
-              quote:
-                "They understood our idea and gave us more feedback than expected. Around produces excellent quality work.",
-              name: "Kristen Cheng",
-              role: "Founder & CEO, BehindTitles",
-              avatar: bccKristenCheng.src,
-            },
-            {
-              quote:
-                "Their expertise and guidance were instrumental. They demonstrated commitment to creating a product that resonated.",
-              name: "Aetienne Sardon",
-              role: "Founder, MYSO Finance",
-              avatar: bccKristenCheng.src,
-            },
-            {
-              quote:
-                "The process was something to be admired. They would also make immediate improvements when mentioned.",
-              name: "Mohamed Shegow",
-              role: "CEO, Sinta",
-              avatar: bccKristenCheng.src,
-            },
-            {
-              quote:
-                "Arounda is not just a contractor but part of our startup company. Communication was excellent.",
-              name: "Kirill Onasenko",
-              role: "CEO, VOXE",
-              avatar: bccKristenCheng.src,
-            },
-            {
-              quote:
-                "Their UI/UX design skills were impressive. Modern, creative, and intuitive without hand-holding.",
-              name: "Esme Guevara",
-              role: "CMO & Head of Product, QTalent",
-              avatar: bccKristenCheng.src,
-            },
-            {
-              quote:
-                "Throughout the project all I saw was sheer will to keep pushing forward and adapting to requests.",
-              name: "Ola Olusoga",
-              role: "Vice President, WordPress",
-              avatar: bccKristenCheng.src,
-            },
-          ]}
-        />
+        {page.CloudTimelineData && (
+          <CloudTimeline
+            title={page.CloudTimelineData.title}
+            highlight={page.CloudTimelineData.highlight}
+            subtitle={page.CloudTimelineData.subtitle}
+            steps={page.CloudTimelineData.steps}
+          />
+        )}
 
         <TeamSliderSection
           headingLines={[
@@ -343,7 +236,61 @@ export default function ApplicationPage({ params }: PageProps) {
           ]}
           autoplaySpeed={2000}
         />
-
+        <TestimonialsSection
+          heading={[
+            {
+              text: "Expertise you’ll appreciate.",
+              className: "highlight-text libreItalic",
+            },
+            { text: " Collaboration you’ll love.", color: "text-white" },
+          ]}
+          className="pt-[80px]"
+          testimonials={[
+            {
+              quote:
+                "Moonstack turned our complex vision into an intuitive experience. Their design-first approach significantly boosted our user retention from day one.",
+              name: "Kristen Cheng",
+              role: " CEO, USA",
+              avatar: bccKristenCheng.src,
+            },
+            {
+              quote:
+                "They are more than developers—they are technical consultants. Moonstack solved our toughest backend hurdles with scalable, future-proof architecture.",
+              name: "Aetienne Sardon",
+              role: " CEO, UK",
+              avatar: bccKristenCheng.src,
+            },
+            {
+              quote:
+                "Working with Moonstack feels like having an in-house team. Their transparent communication and on-time delivery set a new standard for us.",
+              name: "Mohamed Shegow",
+              role: "CEO, Australia",
+              avatar: bccKristenCheng.src,
+            },
+            {
+              quote:
+                "They truly turn projects into partnerships. Moonstack stayed involved post-launch, using real data to help us iterate and grow.",
+              name: "Kirill Onasenko",
+              role: "CEO, South Africa",
+              avatar: bccKristenCheng.src,
+            },
+            {
+              quote:
+                "Moonstack helped us launch in record time. They knew exactly which features to prioritize to get our MVP to market without sacrificing quality",
+              name: "Esme Guevara",
+              role: "CMO & Head of Product, UK",
+              avatar: bccKristenCheng.src,
+            },
+            {
+              quote:
+                "The best ROI we've seen this year. Their efficiency and high-quality code led to a 30% spike in engagement immediately after launch.",
+              name: "Ola Olusoga",
+              role: "Vice President, Canada",
+              avatar: bccKristenCheng.src,
+            },
+          ]}
+        />
+        <Space />
         <FAQSection
           title="Frequently Asked "
           highlight="Questions."
@@ -356,5 +303,5 @@ export default function ApplicationPage({ params }: PageProps) {
         <Space />
       </Layout>
     </>
-  );
+  )
 }

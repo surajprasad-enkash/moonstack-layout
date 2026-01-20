@@ -1,63 +1,66 @@
-"use client";
+"use client"
 
-import Heading from "../Heading/Heading";
+import Heading from "../Heading/Heading"
 
 interface ResultItem {
-  text: string;
+  text: string
 }
 
 interface ResultsSectionProps {
-  label?: string;
-  brandName?: string;
-  heading?: string;
-  items?: ResultItem[];
+  label?: string
+  brandName?: string
+  heading?: string
+  items?: ResultItem[]
 }
 
 export default function ResultsSection({
   label = "RESULTS",
-  brandName = "Moonstack",
-  heading = "is your perfect choice in terms of",
+  brandName = "Why businesses choose",
+  heading = " Moonstack",
   items = [
-    { text: "Hiring system with immediate start" },
-    { text: "Guaranteed on-time deliverables" },
-    { text: "Flexible collaboration & fixed monthly rate" },
+    { text: "Ready-to-deploy hiring systems for immediate start" },
+    { text: "On-time delivery, always guaranteed" },
+    { text: "Flexible engagement models with predictable monthly costs" },
   ],
 }: ResultsSectionProps) {
   return (
-    <section className="relative text-white px-[20px]">
+    <section className="relative px-[20px] text-white">
       <div className="relative z-10 container">
         {/* Label */}
         <div className="gap-[40px] md:flex">
           <div className="md:w-[40%]">
-            <span className="mb-6 block font-[500] text-xs tracking-widest text-white/70 uppercase">
+            <span className="mb-6 block text-xs font-[500] tracking-widest text-white/70 uppercase">
               {label}
             </span>
           </div>
           <div className="md:w-[60%]">
             <Heading
               headingTag="h2"
-              className="mb-[50px] md:ml-[82px] text-white"
+              className="mb-[50px] text-white md:ml-[82px]"
               content={[
-                { text: brandName, className: "italic LibreBaskervilleFont highlight-text" },
-                { text: heading, className: "" },
+                { text: brandName, className: "" },
+                {
+                  text: heading,
+                  className: "italic LibreBaskervilleFont highlight-text",
+                },
               ]}
             />
             <div>
               {items.map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-[110px] border-b last:border-b-0 border-white/10 py-[16px]"
+                  className="flex items-center gap-[110px] border-b border-white/10 py-[16px] last:border-b-0"
                 >
-                  <span className="text-[#fff6] !text-[20px]">{`{/}`}</span>
-                  <p className="text-[#fff] !text-[20px] !font-[500]">{item.text}</p>
+                  <span className="!text-[20px] text-[#fff6]">{`{/}`}</span>
+                  <p className="!text-[20px] !font-[500] text-[#fff]">
+                    {item.text}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
         </div>
-
-      
       </div>
     </section>
-  );
+  )
 }

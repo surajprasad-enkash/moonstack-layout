@@ -1,36 +1,36 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import CommanButton from "../CommanButton/CommanButton";
-import Heading from "../Heading/Heading";
-import Image from "next/image";
-import clientImg from "@/assets/newHomePage/ImpactStatsSection/client_logo.png";
+import Link from "next/link"
+import CommanButton from "../CommanButton/CommanButton"
+import Heading from "../Heading/Heading"
+import Image from "next/image"
+import clientImg from "@/assets/newHomePage/ImpactStatsSection/client_logo.png"
 
 interface ServiceItem {
-  label: string;
-  href?: string;
+  label: string
+  href?: string
 }
 
 interface ServiceColumn {
-  title: string;
-  items: ServiceItem[];
+  title: string
+  items: ServiceItem[]
 }
 interface Headingpros {
-  text: string;
-  className?: string;
-  color?: string;
+  text: string
+  className?: string
+  color?: string
 }
 
 interface ServicesSectionProps {
-  heading?: Headingpros[];
-  columns?: ServiceColumn[];
-  showLabel?: boolean;
+  heading?: Headingpros[]
+  columns?: ServiceColumn[]
+  showLabel?: boolean
 }
 
 export default function ServicesSection({
   heading = [
-    { text: "Digital Product Design & Development" },
-    { text: "Services We Offer", className: "highlight-text libreItalic" },
+    { text: "Our Digital Product Design & Development" },
+    { text: "Services", className: "highlight-text libreItalic" },
   ],
   showLabel = true,
   columns = [
@@ -191,8 +191,8 @@ export default function ServicesSection({
           <div className="items-center gap-4 md:flex">
             <Image src={clientImg} alt={"client logo"} width={70} height={70} />
             <p className="max-w-[520px] text-white md:!text-[24px]">
-              Grow revenue and maximize ROI with our product design and
-              development services.
+              Drive revenue growth and maximize ROI through strategic product
+              design and development.
             </p>
           </div>
 
@@ -200,5 +200,5 @@ export default function ServicesSection({
         </div>
       </div>
     </section>
-  );
+  )
 }

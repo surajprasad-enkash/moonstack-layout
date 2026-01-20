@@ -1,53 +1,55 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import Image from "next/image";
-import { cn } from "@/lib/utils";
-import Heading from "../Heading/Heading";
+import { useState } from "react"
+import Image from "next/image"
+import { cn } from "@/lib/utils"
+import Heading from "../Heading/Heading"
 
 interface TabItem {
-  id: string;
-  logo: string;
-  company: string;
-  quote: string;
-  author: string;
-  role: string;
-  avatar: string;
-  rating?: number;
-  rightBg?: string;
-  color?: string;
-  clutchLogo?: string;
+  id: string
+  logo: string
+  company: string
+  quote: string
+  author: string
+  role: string
+  avatar: string
+  rating?: number
+  rightBg?: string
+  color?: string
+  clutchLogo?: string
 }
 
 interface TestimonialsTabsProps {
-  tabs: TabItem[];
-  className?: string;
+  tabs: TabItem[]
+  className?: string
 }
 
 export default function TestimonialsTabs({
   tabs,
   className,
 }: TestimonialsTabsProps) {
-  const [activeId, setActiveId] = useState(tabs[0]?.id);
+  const [activeId, setActiveId] = useState(tabs[0]?.id)
 
-  const activeTab = tabs.find((tab) => tab.id === activeId);
-  if (!activeTab) return null;
+  const activeTab = tabs.find((tab) => tab.id === activeId)
+  if (!activeTab) return null
 
   return (
     <section className={cn("relative z-[1] px-[20px] text-white", className)}>
       <div className="container mx-auto">
         {/* Heading */}
-        <span className="font-[500] block text-xs tracking-widest text-white/60 uppercase mb-[20px] md:mb-[0]">Verified reviews</span>
+        <span className="mb-[20px] block text-xs font-[500] tracking-widest text-white/60 uppercase md:mb-[0]">
+          Verified reviews
+        </span>
         <div className="mx-auto mb-[72px] max-w-[680px] text-center">
           <Heading
             headingTag="h2"
             content={[
-              { text: "Join 250+ companies" },
+              { text: "Trusted by 250+ companies" },
               {
-                text: "who’ve built and scaled",
+                text: "to build and scale",
                 className: "libreItalic font-[400] highlight-text",
               },
-              { text: "with our Arounda team" },
+              { text: "their products by moonstack team" },
             ]}
           />
         </div>
@@ -56,18 +58,18 @@ export default function TestimonialsTabs({
         <div className="grid grid-cols-1 gap-[10px] lg:grid-cols-[260px_1fr]">
           {/* LEFT TABS */}
           <div className="flex flex-col gap-[10px]">
-            {tabs.map((tab,index) => {
-              const isActive = tab.id === activeId;
+            {tabs.map((tab, index) => {
+              const isActive = tab.id === activeId
 
               return (
                 <button
                   key={index}
                   onClick={() => setActiveId(tab.id)}
                   className={cn(
-                    "flex  cursor-pointer items-center py-[40px] justify-center rounded-xl transition-all duration-300",
+                    "flex cursor-pointer items-center justify-center rounded-xl py-[40px] transition-all duration-300",
                     isActive
                       ? "tastimonials_button"
-                      : "bg-white/10 hover:bg-white/20",
+                      : "bg-white/10 hover:bg-white/20"
                   )}
                 >
                   <Image
@@ -78,21 +80,19 @@ export default function TestimonialsTabs({
                     className={`object-cover transition duration-300 ${activeId}`}
                   />
                 </button>
-              );
+              )
             })}
           </div>
 
           {/* RIGHT CONTENT */}
           <div
-            className={`relative rounded-[20px] flex justify-between flex-col  p-[48px]`}
+            className={`relative flex flex-col justify-between rounded-[20px] p-[48px]`}
             style={{
               background: activeTab.rightBg,
               color: activeTab.color || "#000",
             }}
           >
-            <p className=" md:!text-[36px] !text-[20px]">
-              “{activeTab.quote}”
-            </p>
+            <p className="!text-[20px] md:!text-[36px]">“{activeTab.quote}”</p>
 
             <div className="flex items-center justify-between border-t border-[#5e5e5e1f] pt-6">
               <div className="flex items-center gap-4">
@@ -104,8 +104,10 @@ export default function TestimonialsTabs({
                   className="rounded-full"
                 />
                 <div>
-                  <p className="md:!text-[20px] !text-[16px] libreItalic">{activeTab.author}</p>
-                  <p className="!text-[14px] ">{activeTab.role}</p>
+                  <p className="libreItalic !text-[16px] md:!text-[20px]">
+                    {activeTab.author}
+                  </p>
+                  <p className="!text-[14px]">{activeTab.role}</p>
                 </div>
               </div>
 
@@ -124,5 +126,5 @@ export default function TestimonialsTabs({
         </div>
       </div>
     </section>
-  );
+  )
 }

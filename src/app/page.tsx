@@ -45,7 +45,7 @@ import award8 from "@/assets/newHomePage/awards/upwork.svg"
 import icon from "@/assets/newHomePage/awards/icon.svg"
 import TestimonialsTabs from "@/components/NewHomePage/TestimonialsTabs"
 
-import tastimonial1 from "@/assets/newHomePage/awards/tastimonial/tastimonial1.avif"
+import tastimonial1 from "@/assets/newHomePage/awards/tastimonial/tastimonial1.svg"
 import tastimonial2 from "@/assets/newHomePage/awards/tastimonial/tastimonial2.svg"
 import tastimonial3 from "@/assets/newHomePage/awards/tastimonial/tastimonial3.svg"
 import tastimonial4 from "@/assets/newHomePage/awards/tastimonial/tastimonial4.svg"
@@ -87,7 +87,7 @@ const tabs = [
     company: "MojoCX",
     logo: tastimonial1.src,
     quote:
-      "I was impressed with the high levels of detail and polish for all the features.",
+      "Moonstack’s communication was clear and proactive throughout the project. The team was easy to work with and delivered exactly what we needed.",
     author: "Jimmy Hosang",
     role: "Founder & CEO",
     avatar: clientLogo.src,
@@ -101,7 +101,7 @@ const tabs = [
     company: "Tixbase",
     logo: tastimonial2.src,
     quote:
-      "Their professionalism, dedication, responsiveness, and determination are commendable.",
+      "The Moonstack team moved fast without compromising on quality. From concept to delivery, everything was handled efficiently.",
     author: "John Smith",
     role: "CTO",
     avatar: clientLogo.src,
@@ -115,7 +115,7 @@ const tabs = [
     company: "myso",
     logo: tastimonial3.src,
     quote:
-      "Their expertise and guidance were instrumental. They demonstrated their commitment to creating a product that resonated with our target audience, which led to improved user satisfaction",
+      "Moonstack perfectly balanced design and development. The final product looks great and performs even better.",
     author: "John Smith",
     role: "CTO",
     avatar: clientLogo.src,
@@ -129,7 +129,7 @@ const tabs = [
     company: "enzyme",
     logo: tastimonial4.src,
     quote:
-      "Working with Moonstack is really smooth in terms of communication and workflow",
+      "We see Moonstack as a reliable long-term partner. Their expertise and commitment made the entire process smooth and successful.",
     author: "John Smith",
     role: "CTO",
     avatar: clientLogo.src,
@@ -202,10 +202,10 @@ export default function Home() {
           badges={[{ label: "Web 3.0" }, { label: "$2.4M raised" }]}
           clutchLogo={clutch}
           title="EnKash: Best Expense Management & Payment Solutions for Businesses."
-          description="Unlock growth with the best payments and spend management platform with products across corporate cards, vouchers, loyalty and more"
+          description="Working with Moonstack was a smooth experience. The team understood our needs well and delivered high-quality work on time, exceeding our expectations."
           testimonial={{
-            name: "Artemine Sarden",
-            role: "Founder, MYSO Finance",
+            name: "Mansi Bhatia",
+            role: "Project Menager",
             clientImage: clientImage,
             rating: 5,
             text: "Arounda excels with meticulous attention to detail and creative problem-solving.",
@@ -219,10 +219,10 @@ export default function Home() {
           badges={[{ label: "Web 3.0" }, { label: "$2.4M raised" }]}
           clutchLogo={clutch}
           title="Nuvama Wealth: Wealth Management Done Right"
-          description="Shaping the future of your financial journey"
+          description="Moonstack helped improve our product design and development, leading to better user engagement and strong business results."
           testimonial={{
-            name: "Artemine Sarden",
-            role: "Founder, MYSO Finance",
+            name: "Amit Ahuja",
+            role: "CEO",
             clientImage: clientImage,
             rating: 5,
             text: "Arounda excels with meticulous attention to detail and creative problem-solving.",
@@ -236,10 +236,10 @@ export default function Home() {
           badges={[{ label: "Web 3.0" }, { label: "$2.4M raised" }]}
           clutchLogo={clutch}
           title="Stock Trading Ideas - Advisory Services for Stock Market | Pickright"
-          description="Explore top-notch trading ideas with Pickrights advisory services for the stock market. Make confident investment decisions based on ideas."
+          description="Professional, responsive, and reliable — Moonstack delivered exactly what they promised while maintaining excellent quality."
           testimonial={{
-            name: "Artemine Sarden",
-            role: "Founder, MYSO Finance",
+            name: "Naman Bhatia",
+            role: "CEO",
             clientImage: clientImage,
             rating: 5,
             text: "Arounda excels with meticulous attention to detail and creative problem-solving.",
@@ -260,17 +260,17 @@ export default function Home() {
         <AwardsSection
           label="Awards & Achievements"
           heading={[
-            { text: "While the growth " },
+            { text: "Growth" },
             {
               text: "of our clients ",
               className: "libreItalic highlight-text font-[400]",
             },
-            { text: "is what " },
+            { text: " is the goal:" },
             {
-              text: "matters ",
+              text: "awards ",
               className: "libreItalic highlight-text font-[400]",
             },
-            { text: "most, it’s nice to get awards" },
+            { text: "are just the a plus" },
           ]}
           awards={awards}
         />
@@ -282,7 +282,7 @@ export default function Home() {
         <ProjectCTA
           title="Ready to scale"
           subtitle="your business?"
-          description="Book a free consultation to get clarity, direction, and expert advice you can implement right away."
+          description="Book a free strategy call and get clear, actionable guidance for your next move."
           fontSize="!text-[80px]"
           marginBottom="mb-0"
           whiteBoxClass=""

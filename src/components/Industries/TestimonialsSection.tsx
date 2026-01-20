@@ -1,23 +1,23 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import Heading, { HeadingSegment } from "@/components/Heading/Heading";
-import { cn } from "@/lib/utils";
-import clutchReviews from "@/assets/industries/ai/icon/clutch-reviews.svg";
-import bgImage from "@/assets/industries/ai/icon/review-bg.svg";
+import Image from "next/image"
+import Heading, { HeadingSegment } from "@/components/Heading/Heading"
+import { cn } from "@/lib/utils"
+import clutchReviews from "@/assets/industries/ai/icon/clutch-reviews.svg"
+import bgImage from "@/assets/industries/ai/icon/review-bg.svg"
 
 interface Testimonial {
-  quote: string;
-  name: string;
-  role: string;
-  avatar: string;
-  rating?: number;
+  quote: string
+  name: string
+  role: string
+  avatar: string
+  rating?: number
 }
 
 interface TestimonialsSectionProps {
-  heading: HeadingSegment[];
-  testimonials: Testimonial[];
-  className?: string;
+  heading: HeadingSegment[]
+  testimonials: Testimonial[]
+  className?: string
 }
 
 export default function TestimonialsSection({
@@ -26,7 +26,7 @@ export default function TestimonialsSection({
   className,
 }: TestimonialsSectionProps) {
   return (
-    <section className={cn("relative text-white px-[20px] ", className)}>
+    <section className={cn("relative px-[20px] text-white", className)}>
       {bgImage && (
         <Image
           src={bgImage}
@@ -38,7 +38,7 @@ export default function TestimonialsSection({
       <div className="relative z-[2] container">
         {/* HEADER */}
         <div className="mb-[64px] flex flex-col gap-[24px] lg:flex-row lg:items-start lg:justify-between">
-          <div className="max-w-[620px]">
+          <div className="max-w-[700px]">
             <Heading headingTag="h2" content={heading} className="text-white" />
           </div>
 
@@ -103,5 +103,5 @@ export default function TestimonialsSection({
         </div>
       </div>
     </section>
-  );
+  )
 }

@@ -1,23 +1,23 @@
-import Heading from "../Heading/Heading";
-import Space from "../Space";
-import bgImage from "@/assets/industries/ai/products-bg.svg";
-import Image from "next/image";
+import Heading from "../Heading/Heading"
+import Space from "../Space"
+import bgImage from "@/assets/industries/ai/products-bg.svg"
+import Image from "next/image"
 
 interface Principle {
-  id: string;
-  title: string;
-  description: string;
-  gradient: string;
+  id: string
+  title: string
+  description: string
+  gradient: string
 }
 interface headingPros {
-  text?: string;
-  color?: string;
-  className?: string;
+  text?: string
+  color?: string
+  className?: string
 }
 
 interface DesignPrinciplesSectionProps {
-  heading: headingPros[];
-  principles: Principle[];
+  heading: headingPros[]
+  principles: Principle[]
 }
 
 export default function DesignPrinciplesSection({
@@ -37,13 +37,13 @@ export default function DesignPrinciplesSection({
         {/* HEADING */}
         <Heading
           headingTag="h2"
-          className="m-[auto] max-w-[700px] text-center text-white"
+          className="m-[auto] max-w-[750px] text-center text-white"
           content={heading}
         />
         <Space size={40} />
 
         {/* GRID */}
-        <div className="max-w-[1024px] m-[auto]">
+        <div className="m-[auto] max-w-[1024px]">
           <div className="grid grid-cols-1 gap-[5px] md:grid-cols-2">
             {principles.map((item) => (
               <div
@@ -73,5 +73,5 @@ export default function DesignPrinciplesSection({
         </div>
       </div>
     </section>
-  );
+  )
 }

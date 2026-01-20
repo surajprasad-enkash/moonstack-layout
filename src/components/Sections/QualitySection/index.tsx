@@ -1,19 +1,20 @@
-"use client";
+"use client"
 
-import Image, { StaticImageData } from "next/image";
-import Heading from "@/components/Heading/Heading";
-import { cn } from "@/lib/utils";
+import Image, { StaticImageData } from "next/image"
+import Heading from "@/components/Heading/Heading"
+import { cn } from "@/lib/utils"
 
 interface FeatureItem {
-  id: number;
-  title: string;
-  icon: string | StaticImageData;
+  id: number
+  title: string
+  icon: string | StaticImageData
+  description?: string
 }
 
 interface QualitySectionProps {
-  heading?: string;
-  features: FeatureItem[];
-  className?: string;
+  heading?: string
+  features: FeatureItem[]
+  className?: string
 }
 
 export default function QualitySection({
@@ -42,12 +43,9 @@ export default function QualitySection({
           />
         </div>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((item) => (
-            <div
-              key={item.id}
-              className="flex flex-col items-center text-center"
-            >
+            <div key={item.id} className="flex flex-col items-center">
               <div className="relative h-[130px] w-[130px]">
                 <Image
                   src={item.icon}
@@ -57,13 +55,16 @@ export default function QualitySection({
                 />
               </div>
 
-              <h4 className="mt-[64px] leading-relaxed text-white/90">
+              <h4 className="mt-[64px] w-full leading-relaxed text-white/90">
                 {item.title}
               </h4>
+              {item.description && (
+                <p className="mt-[20px] text-white/80">{item.description}</p>
+              )}
             </div>
           ))}
         </div>
       </div>
     </section>
-  );
+  )
 }

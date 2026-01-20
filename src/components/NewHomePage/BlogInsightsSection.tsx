@@ -35,12 +35,12 @@ export default async function BlogInsightsSection({
               headingTag="h2"
               className="max-w-[650px]"
               content={[
-                { text: "Get real" },
+                { text: "Get " },
                 {
                   text: "growth insights",
                   className: "libreItalic highlight-text font-[400]",
                 },
-                { text: "and proven tactics for digital success" },
+                { text: "and proven strategies for digital success" },
               ]}
             />
           </div>

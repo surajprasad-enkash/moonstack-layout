@@ -1,22 +1,22 @@
-"use client";
+"use client"
 
-import Image, { StaticImageData } from "next/image";
-import Heading from "@/components/Heading/Heading";
-import CommanButton from "@/components/CommanButton/CommanButton";
-import BgImg from "@/assets/app-development-images/banner-underrr-cases-bg-1440.svg";
-import { cn } from "@/lib/utils";
+import Image, { StaticImageData } from "next/image"
+import Heading from "@/components/Heading/Heading"
+import CommanButton from "@/components/CommanButton/CommanButton"
+import BgImg from "@/assets/app-development-images/banner-underrr-cases-bg-1440.svg"
+import { cn } from "@/lib/utils"
 
 interface NewBannerProps {
   headingLines: {
-    text: string;
-    color?: string;
-    className?: string;
-  }[];
-  buttonText?: string;
-  onButtonClick?: () => void;
-  imageSrc: string | StaticImageData;
-  imageAlt?: string;
-  className?: string;
+    text: string
+    color?: string
+    className?: string
+  }[]
+  buttonText?: string
+  onButtonClick?: () => void
+  imageSrc: string | StaticImageData
+  imageAlt?: string
+  className?: string
 }
 
 export default function NewBanner({
@@ -37,8 +37,8 @@ export default function NewBanner({
         />
       )}
       <div className="relative z-[2] container mx-auto">
-        <div className="grid grid-cols-1 items-center gap-10 rounded-[32px] rounded-tl-none bg-white px-6 py-10 md:grid-cols-2 md:px-12 md:py-14">
-          <div className="max-w-xl">
+        <div className="items-center gap-10 rounded-[32px] rounded-tl-none bg-white px-6 py-10 md:flex md:px-12 md:py-14">
+          <div className="w-[100%] md:w-[45%]">
             <Heading
               headingTag="h2"
               content={headingLines}
@@ -53,7 +53,7 @@ export default function NewBanner({
             />
           </div>
 
-          <div className="flex justify-center md:justify-end">
+          <div className="flex justify-center md:w-[55%] md:justify-end">
             <div className="relative h-[260px] w-[260px] md:h-[340px] md:w-[340px]">
               <Image
                 src={imageSrc}
@@ -67,5 +67,5 @@ export default function NewBanner({
         </div>
       </div>
     </section>
-  );
+  )
 }

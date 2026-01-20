@@ -1,60 +1,60 @@
-"use client";
+"use client"
 
-import CommanButton from "@/components/CommanButton/CommanButton";
-import Image from "next/image";
-import Marquee from "@/components/Homepage/Marquee";
+import CommanButton from "@/components/CommanButton/CommanButton"
+import Image from "next/image"
+import Marquee from "@/components/Homepage/Marquee"
 
-import brand1 from "@/assets/newHomePage/banner/icon/brand_tag_icon1.svg";
-import brand2 from "@/assets/newHomePage/banner/icon/brand_tag_icon2.svg";
-import brand3 from "@/assets/newHomePage/banner/icon/brand_tag_icon3.svg";
+import brand1 from "@/assets/newHomePage/banner/icon/brand_tag_icon1.svg"
+import brand2 from "@/assets/newHomePage/banner/icon/brand_tag_icon2.svg"
+import brand3 from "@/assets/newHomePage/banner/icon/brand_tag_icon3.svg"
 
-import website1 from "@/assets/newHomePage/banner/icon/website_tag_icon1.svg";
-import website2 from "@/assets/newHomePage/banner/icon/website_tag_icon2.svg";
-import website3 from "@/assets/newHomePage/banner/icon/website_tag_icon3.svg";
+import website1 from "@/assets/newHomePage/banner/icon/website_tag_icon1.svg"
+import website2 from "@/assets/newHomePage/banner/icon/website_tag_icon2.svg"
+import website3 from "@/assets/newHomePage/banner/icon/website_tag_icon3.svg"
 
-import design1 from "@/assets/newHomePage/banner/icon/design_tag_icon1.svg";
-import design2 from "@/assets/newHomePage/banner/icon/design_tag_icon2.svg";
-import design3 from "@/assets/newHomePage/banner/icon/design_tag_icon3.svg";
+import design1 from "@/assets/newHomePage/banner/icon/design_tag_icon1.svg"
+import design2 from "@/assets/newHomePage/banner/icon/design_tag_icon2.svg"
+import design3 from "@/assets/newHomePage/banner/icon/design_tag_icon3.svg"
 
-import heroVideoPlay from "@/assets/newHomePage/banner/icon/hero-video-play.avif";
-import homeHeroTitleDecorPlay from "@/assets/newHomePage/banner/icon/home-hero-title-decor-play.avif";
+import heroVideoPlay from "@/assets/newHomePage/banner/icon/hero-video-play.avif"
+import homeHeroTitleDecorPlay from "@/assets/newHomePage/banner/icon/home-hero-title-decor-play.avif"
 
 // import bgImage from "@/assets/newHomePage/banner/bg-hero-updated.png";
-import bgImage from "@/assets/newHomePage/banner/bg-hero-updated.png";
-import bgImage2 from "@/assets/newHomePage/banner/baimage2.svg";
+import bgImage from "@/assets/newHomePage/banner/bg-hero-updated.png"
+import bgImage2 from "@/assets/newHomePage/banner/baimage2.svg"
 
-import Link from "next/link";
-import Space from "../Space";
+import Link from "next/link"
+import Space from "../Space"
 
 interface HeroTag {
-  label: string;
+  label: string
 }
 
 interface HeroSectionProps {
-  eyebrowText?: string;
-  title?: string;
-  highlightedItems?: string[];
-  subtitle?: string;
-  descriptionLeft?: string;
-  descriptionRight?: string;
-  tags?: HeroTag[];
-  buttonText?: string;
-  onButtonClick?: () => void;
+  eyebrowText?: string
+  title?: string
+  highlightedItems?: string[]
+  subtitle?: string
+  descriptionLeft?: string
+  descriptionRight?: string
+  tags?: HeroTag[]
+  buttonText?: string
+  onButtonClick?: () => void
 }
 
 export default function HeroSection({
   eyebrowText = "Digital Product Design And Development Company",
-  title = "Your design & dev partner that unites",
-  highlightedItems = ["brand", "website", "ux/ui design"],
-  subtitle = "into a holistic product",
-  descriptionLeft = "Works closely with reputable brands, businesses and fortune 500 companies",
-  descriptionRight = "Since 2016, we've helped to achieve business goals and deliver results that inspire",
+  title = "Your technology partner uniting",
+  highlightedItems = ["App", "website", "UX/UI design"],
+  subtitle = "into one powerful",
+  descriptionLeft = "We work closely with reputable brands, growing businesses, and Fortune companies.",
+  descriptionRight = "Helping organizations achieve impactful results since 2014.",
   tags = [{ label: "SaaS" }, { label: "AI" }, { label: "Web 3.0" }],
   buttonText = "Book a Call",
   onButtonClick,
 }: HeroSectionProps) {
   return (
-    <section className="relative  pt-[160px] text-white px-[20px]">
+    <section className="relative px-[20px] pt-[160px] text-white">
       {/* Background glow */}
       {bgImage && (
         <Image
@@ -62,7 +62,7 @@ export default function HeroSection({
           alt="Background"
           width={1200}
           height={1200}
-          className="absolute  h-[auto] w-[140%] right-[0] left-[-26%]  z-[1]"
+          className="absolute right-[0] left-[-26%] z-[1] h-[auto] w-[140%]"
         />
       )}
       {bgImage2 && (
@@ -71,7 +71,7 @@ export default function HeroSection({
           alt="Background"
           width={1200}
           height={1500}
-          className="absolute bottom-[-90%] h-[auto] w-[100%] right-[0] left-[0%] z-[1]"
+          className="absolute right-[0] bottom-[-90%] left-[0%] z-[1] h-[auto] w-[100%]"
         />
       )}
       <div className="relative z-10 container">
@@ -81,13 +81,13 @@ export default function HeroSection({
         </p>
 
         {/* Heading */}
-        <h1 className="home-hero-title text-center max-w-[1240px] m-auto  md:!leading-[130%] !leading-[150%]">
-          <span>Your design & dev partner that unites</span>
+        <h1 className="home-hero-title m-auto max-w-[1240px] text-center !leading-[150%] md:!leading-[130%]">
+          <span>Your Fixed technology partner uniting</span>
           <Link
             href=""
             className="headingBrand home-hero-title-word-bg LibreBaskervilleFont !font-[400] italic"
           >
-            brand{" "}
+            App{" "}
             <span className="brand1 homeHeroTitleIcon top-[-47px] left-[-84px] inline-block rounded-[50%] rounded-tl-none bg-[#ffffff14] backdrop-blur">
               <Image src={brand1} alt="" width={75} height={75} className="" />
             </span>
@@ -137,7 +137,7 @@ export default function HeroSection({
             </span>
           </Link>
           <span className="headingtext"> into </span>
-          <span className="mt-2 md:!flex  items-center !justify-center gap-5">
+          <span className="mt-2 items-center !justify-center gap-5 md:!flex">
             <span className="home-hero-title-decor-play relative inline-block cursor-pointer">
               <Image
                 src={homeHeroTitleDecorPlay}
@@ -155,7 +155,7 @@ export default function HeroSection({
               />
             </span>
             <span>
-              <span> a holistic </span>
+              <span> one powerful digital </span>
               <span className="home-hero-title-word-purple LibreBaskervilleFont italic">
                 {" "}
                 product{" "}
@@ -167,13 +167,13 @@ export default function HeroSection({
         <div className="home-hero-quotes mb-[22px] flex gap-[46px] md:w-[60%]">
           <div className="home-hero-quote md:w-[50%]">
             <p className="home-hero-quote_decor text-white/60">{"{/}"}</p>
-            <p className="home-hero-quote_text mt-2 !font-[500] home-hero-quote_text-1  first-letter:pl-[30px]">
+            <p className="home-hero-quote_text home-hero-quote_text-1 mt-2 !font-[500] first-letter:pl-[30px]">
               {descriptionLeft}
             </p>
           </div>
           <div className="home-hero-quote md:w-[50%]">
             <p className="home-hero-quote_decor text-white/60">{"{/}"}</p>
-            <p className="!font-[500] mt-2 home-hero-quote_text home-hero-quote_text-2 first-letter:pl-[30px]">
+            <p className="home-hero-quote_text home-hero-quote_text-2 mt-2 !font-[500] first-letter:pl-[30px]">
               {descriptionRight}
             </p>
           </div>
@@ -200,5 +200,5 @@ export default function HeroSection({
         </div>
       </div>
     </section>
-  );
+  )
 }
