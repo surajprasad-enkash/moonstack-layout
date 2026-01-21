@@ -14,22 +14,23 @@ import designer from "@/assets/app-development-images/work-directly.webp"
 import hiring from "@/assets/app-development-images/hiring.webp"
 import delivery from "@/assets/app-development-images/guarante.webp"
 import collaboration from "@/assets/app-development-images/flexible.webp"
+import { color } from "framer-motion"
 
 export const ios: PageData = {
   hero: {
     title: [
       {
-        text: " AI Development Company for",
+        text: "Powerful Apps development for ",
         color: "text-white",
       },
       {
-        text: " Agents & Automation",
+        text: " the Apple Ecosystem",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Build AI agents, copilots, and intelligent automation systems that turn your business chaos into organization-wide productivity and accuracy. We are here to help SaaS companies, startups, and enterprises leverage AI to enhance their product offerings, customer experience, and operational efficiency. ",
+        text: "Elite iOS development tailored for global reach. We combine Apple’s stringent security standards with industry-leading UI/UX design to build apps that stand out on the App Store.",
         color: "text-white",
       },
     ],
@@ -43,8 +44,8 @@ export const ios: PageData = {
         href: "/services",
       },
       {
-        label: "Ai agent development company",
-        href: "/services/ai-agent-development-company",
+        label: "ISO App development company",
+        href: "/services/iso-app-development-company",
       },
     ],
   },
@@ -61,33 +62,30 @@ export const ios: PageData = {
   mobDesignBanner: nativeBannerImg,
 
   points:
-    "Moonstack’s AI expertise was a game-changer. They engineered a custom predictive layer that cut our manual processing by 45%. Navigating complex security was seamless, delivering an intelligent system that scales with our users. For AI that impacts the bottom line, Moonstack is the premier partner.",
-  highlightText: "cut our manual processing by 45%",
+    "Moonstack’s IOS Development mastery was a game-changer. They engineered a high-performance architecture that boosted our app’s fluidity by 45%. From navigating strict App Store security to delivering a premium, native feel, Moonstack is the premier partner for high-converting iOS solutions.",
+  highlightText: "boosted our app’s fluidity by 45%",
 
   leftCardData: [
     {
-      title: "Why Consider AI for Your Business?",
+      title: "IOS App Development Services",
       description:
-        "Manual work, inefficiencies, delayed timelines, human errors, lengthy processes, and lack of transparency in business operations are a thing of the past. Welcome to the AI age, powered by AI agents, copilots, multi-agent workflows, and agentic automation systems that breathe in fresh whiffs of high accuracy and efficiency into your operations. From customer support to sales, marketing, finance, business analytics, logistics management, and compliance, AI solutions are transforming how we work by introducing autonomous and intelligent workflows. Results?",
+        " With Moonstack, you can build iOS apps that seamlessly function across every Apple device responsively. As the top iOS app development agency in India, we ensure multi-device compatibility for our iOS apps, including Macs, iPhones, iPads, and even Apple Watches. The Apple device ecosystem is vast, with new products added to it every few years. This is why our custom iOS application development service in India allows businesses to stay on top of the newest iOS and Apple trends and scale their businesses exponentially.",
       stats: [
-        "66% improvement in employee performance",
-        "2.3x higher revenue growth using AI agents",
-        "70% reduction in repetitive tasks",
-        "30% lower operational costs with AI automation",
+        "The number of Apple users is growing rapidly in India rapidly with most users choosing iPhones over Android devices for a premium mobile experience. Brands that have taken note of this trend and invested in iPhone application development services in India have benefited exponentially. As the premier iOS app development company in India, choosing Moonstack can help you develop a truly custom, secure, responsive, and scalable iOS app that suits your every business goal.",
       ],
-      // description2:
-      //   "So, looking to make your business future-ready and get a competitive edge? It's time to think the AI way. We are a leading custom AI development company in India, helping businesses of all sizes build custom AI solutions aligned to their needs. Whether you are looking to build an AI assistant, AI agent, or AI app, we can get you cutting-edge solutions to turn your business into an AI-powered success story.",
+      description2:
+        "With over 15 years of experience and 450+ completed projects, we have worked with a range of businesses right from startups to enterprises. Our iOS application consulting services in India are highly specialised and built to suit your needs. Contact us, and we can help you build your dream app starting today.",
       image: bndimage1.src,
     },
   ],
   solutions: {
     headingContent: [
       {
-        text: "Our",
+        text: "Our Specialities in ",
         color: "text-white",
       },
       {
-        text: " AI Agent Development ",
+        text: "IOS development",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
@@ -96,123 +94,109 @@ export const ios: PageData = {
       },
     ],
     subHeadingText:
-      "At Moonstack, a credible AI agent development company for business, we are dedicated to delivering sophisticated end-to-end AI product development services to power your business ambitions. Design, build, and deploy AI agent solutions that are robust, scalable, and adaptable to your business needs, industry trends, market sentiment, and customer demands. ",
+      "We are proud to work with the best iOS app developers in India, and here’s a selection of what we offer to help you understand our team's strength and expertise.",
   },
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
-      title: "AI Consulting & Strategy",
+      title: "iOS App Consultation & Strategy",
       description:
-        "Cut through the AI hype and build a clear and execution-ready AI roadmap aligned to your real business needs. Our AI consulting and strategy services for SMEs help identify high-ROI AI agent use cases in your business, select the right LLM, recommend architecture, assess your data readiness, outline success metrics, and draft a plan so your AI investment delivers results.",
+        "Building an iOS application is a long process, which involves first understanding your business goals and formulating how to create an application that fits your needs. Luckily, when you choose Moonstack, the best iOS app development service in India, you don’t have to make these decisions alone. Our team of highly qualified developers helps you create a framework that helps you visualise exactly how the app functionality will work, as well as the entire development structure. This attention to detail helps us rank as the top iOS app development firm in India.",
     },
     {
       imgSrc: engagingIcon.src,
-      title: "Custom AI Agent Development",
+      title: "Custom iOS App Development",
       description:
-        "Build custom AI agents tailored to your business logic, tools, and workflows, turning your challenges into opportunities for success. Hire our AI developers to build highly functional and autonomous AI agents capable of processing data, reasoning, executing tasks, and improving on feedback without any human involvement.",
+        "Our iOS mobile app development services in India at Moonstack are always keeping in mind the stringent quality standards of Apple. We not only follow these standards, but also ensure your application performs seamlessly across different iOS devices. Our native iOS app development service in India focuses on complete custom iOS app development for our clients, including developing the entire codebase from scratch using clean code.",
     },
 
     {
       imgSrc: brandingIcon.src,
-      title: "AI Agent Support and Maintenance",
+      title: "Front-end Development With Intuitive UI/UX Design",
       description:
-        "Maintain the reliability and relevance of your AI agents with our ongoing support and maintenance services. Our team ensures your AI agents stay accurate and aligned to your changing business needs and vision. From performance monitoring and optimization to model tuning, knowledge base updates, error handling, security, and compliance, we take care of everything.",
+        "An intuitive UI and UX design is crucial for an iOS application’s success in 2025. We at Moonstack ensure our iOS app designing service in India is focused on designing clean interfaces that are easy to navigate and visually soft. We try to develop unique design languages for each app based on our client’s branding and market positioning. We also integrate accessibility in our designs to make the apps convenient for all users.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "RAG & AI Chatbot Development",
+      title: "iOS App Integrations & 3rd Party API Deployment",
       description:
-        "Build a RAG-based AI chatbot on your company's knowledge base to give your employees easy and instant access to accurate data. Our RAG-based AI chatbot development services fine-tune LLM with your documents, databases, and knowledge sources for multiple internal use cases like knowledge base chatbots, PDF chatbots, and Q&A assistants.",
+        "When you hire iOS app developers in India through Moonstack, we always take care of two things in the backend of every app. First, we ensure the app is connected to third-party platforms for monitoring of analytics and user request fulfilment. Secondly, we guarantee there’s secure connectivity with APIs to ensure a smooth and seamless application user experience. Our API calls are adequately marked in code to ensure it's easy to recheck or debug later if required.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Process Automation Development",
+      title: "iOS App Testing & Debugging",
       description:
-        "Automate and streamline your processes with agentic automations, multi-agent systems, or AI agent workflows for faster processes, lower operational costs, and teams freed to focus on high-value work. Our AI-powered workflow automation for small business solutions combines AI agents with tools and integrations to automate simple to complex and even multi-step workflows. ",
+        "Once the developmental phase is complete, our QA engineers at Moonstack ensure there are no bugs or glitches in the app’s code or functioning. We ensure the app runs smoothly across Apple devices and it's able to perform fast, have proper user data security, and be responsive across different screen sizes. This is the testament to our service and what makes us the best iOS app testing company in India.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Agentic AI Development",
+      title: "App Store Deployment & Post-launch Support",
       description:
-        "Develop advanced agentic AI systems capable of planning, decision-making, and autonomous execution across complex workflows. We can deploy a set of AI agents, each trained to execute a specific task and capable of collaborating with other agents to collectively execute the target task and deliver intended results. ",
+        "Most agencies that offer iOS app development skim on the post-launch support and app maintenance parts, but not us. At Moonstack, we pride ourselves on our iOS app support and maintenance services in India. We provide iOS app migration services in India to ensure your application is compatible with the latest iOS releases. This, along with our App Store deployment and optimisation of your listing, guarantees you get end-to-end iOS app development service when you choose Moonstack.",
     },
   ],
-  qualitySectionData: [
-    {
-      id: 1,
-      title: "Improved Decision Making",
-      icon: collaboration.src,
-      description:
-        "We help you turn your raw business data into valuable insights for accurate, faster, and smarter business decision-making.",
-    },
-    {
-      id: 2,
-      title: "High Efficiency & Accuracy",
-      icon: delivery.src,
-      description:
-        "Our AI solutions and AI agents will enable you to intelligently automate complex processes effortlessly to reduce manual work, delays, and errors, delivering high efficiency and precision.",
-    },
-    {
-      id: 3,
-      title: "Lower Operational Costs",
-      icon: hiring.src,
-      description:
-        "By automating processes and implementing AI agents for multiple tasks, we bring down the workload on your employees and save you from hiring more staff.",
-    },
-    {
-      id: 4,
-      title: "Better Customer Experience",
-      icon: designer.src,
-      description:
-        "Moonstack’s AI developers can boost your customer experience by building AI solutions that offer insight into customer preferences by analyzing their data, recommending products, and instantly resolving customer queries.",
-    },
-  ],
+  qualitySectionData: {
+    heading: [],
+    description: "",
+    columsClass: "",
+    list: [],
+  },
+  NewBanner: {
+    headingLines: [
+      { text: "Develop an Optimised Proof " },
+      { text: "of Concept With Our iOS App Developers" },
+    ],
+  },
+  OutcomeBanner: {
+    heading: [
+      { text: "Ready to Launch ", color: "text-white", className: "" },
+      {
+        text: " Your Premium iOS App?",
+        className: "text-white libreItalic font-[400]",
+        color: "",
+      },
+    ],
+    checklist: [
+      "Privacy-First Security Framework",
+      "Seamless Ecosystem Integration",
+      "Apple Intelligence & CoreML",
+      "App Store Excellence",
+    ],
+    buttonText: "Talk To Us",
+  },
+
   CloudTimelineData: {
-    title: "Insight into Our AI ",
-    highlight: "Development Process",
+    title: "Our Process for ",
+    highlight: "Apple app development",
     subtitle:
-      "We take an agile, client-centric, and result-driven approach to building AI solutions that resonate with excellence. Focusing on speed, adaptability, and continuous improvement, we move from idea to impact without unnecessary delays or endless revisions.",
+      "At Moonstack, we value transparency and confidentiality for our enterprise iOS app development services in India. Our team manages this dichotomy with a stringent set of guidelines and a working structure. Here’s an overview of our collaborative process for iOS app development at Moonstack.",
     steps: [
       {
         number: 1,
-        title: "Discovery & Strategic Insights",
+        title: "Strategy Discussion & Frameworking",
         description:
-          "We start by deeply understanding your business, which includes your goals, challenges, and existing systems. Our team evaluates where AI can deliver the most value and reviews your current data and infrastructure. The result is a clear, practical roadmap aligned with your business objectives.",
+          "Our initial discussions with you start productively with a clear understanding of your requirements. We sign an NDA upfront to ensure you have confidence in our professionalism. This also ensures your app idea is safe with Moonstack. Next, we ask you relevant questions to better understand the functionality and purpose of the app. Once that’s done, our team begins work from day one, and we start creating a framework for your app.",
         position: "left",
       },
       {
         number: 2,
-        title: "Data Collection & Preparation",
+        title: "Design Flow & Prototyping",
         description:
-          "AI is only as good as the data behind it. We gather relevant data from internal and external sources, clean and structure it, and optimize it for performance. Using proven tools and frameworks, we ensure your data is accurate, reliable, and ready to power intelligent models.",
+          "After the framework is approved, we create a design flow to logically lay out the navigation of the application. This is also done to optimize the UX of the application, ensuring the application is easy to navigate and accessible to all users. Each design prototype is approved by your team to ensure you’re always up-to-date with the production process.",
         position: "right",
       },
       {
         number: 3,
-        title: "Model Design & Experimentation",
+        title: "Customisation, Development, & Testing",
         description:
-          "At this stage, we design and test AI models tailored to your specific use case. Whether the solution requires supervised learning, unsupervised learning, or deep learning techniques, we experiment with multiple approaches to identify the most effective model for your needs.",
+          "The development process involves completing the design and connecting your applications to relevant external platforms and APIs to complete their functionality. We ensure each app is coded from scratch and there’s clean code in the codebase to ensure it's accessible to the client team on demand.",
         position: "left",
       },
       {
         number: 4,
-        title: "Training & Model Optimization",
+        title: "Launch & Future Maintenance",
         description:
-          "We train models using real business data and fine-tune them for accuracy, speed, and scalability. Through continuous testing and refinement, we build robust AI systems that can handle complexity and perform reliably in real-world scenarios.",
-        position: "right",
-      },
-      {
-        number: 5,
-        title: "Deployment & System Integration",
-        description:
-          "Once the model is ready, we deploy it seamlessly into your existing environment. Whether on cloud platforms or custom infrastructure, we ensure smooth integration, rigorous testing, and a stable launch, so your AI solution works flawlessly from day one.",
-        position: "left",
-      },
-      {
-        number: 6,
-        title: "Monitoring, Support & Continuous Improvement",
-        description:
-          "After deployment, we continuously monitor performance, track system behavior, and retrain models as new data becomes available. This ensures your AI solution keeps improving and stays aligned with your business as it grows.",
+          "At Moonstack, our affordable iOS app development services in India include complete launch support and future maintenance of your application. We ensure your app is easy to find on the App Store, along with maintenance support for future iOS upgrades. For any future feature upgrades, clients can always avail our iOS app upgrade services in India as well.",
         position: "right",
       },
     ],
@@ -220,62 +204,54 @@ export const ios: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Building AI Solutions," },
+      { text: "Why Choose moonstack for your " },
       {
-        text: " Transforming Industries,",
+        text: "IOS app ",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: " Creating Real Impact" },
+      { text: "service?" },
     ],
     description:
-      "Hire our AI developers to build state-of-the-art AI solutions aligned to your industry and supporting your business operations, processes, and strategies. From healthcare to fintech, e-commerce, energy, manufacturing, education, travel, and logistics, we are proficient in helping you realize what artificial intelligence can do for your business and achieve your annual targets like before.",
+      "If you wanted to know what sets our iPad app development service in India apart, here are six reasons to help you get started.",
     cards: [
       {
-        id: "Healthcare",
-        label: "Healthcare",
+        id: "450+ Real World Project Experience",
+        label: "450+ Real World Project Experience",
         description:
-          "We offer AI development services for healthcare and clinics, enabling automated administrative processes, quality patient care, faster diagnosis, and better patient outcomes. Our team is adept at developing a wide array of solutions like telemedicine apps, smart real-time monitoring solutions, medical imaging analysis software, AI agents for appointment booking, follow-ups, and patient support, patient data analytics platforms, predictive diagnostic tools, and more.",
+          "We’ve developed over 450 projects in the span of 15 years as the top iOS app development company in India.",
         variant: "light",
       },
       {
-        id: "Fintech",
+        id: "Truly Custom App Builds",
 
-        label: "Fintech",
+        label: "Truly Custom App Builds",
         description:
-          "As a trusted AI development company for fintech and banking, we equip organizations to offer secure, faster, and smarter banking experiences to users. Our expertise lies in developing AI-powered systems that cater to your business challenges and open new revenue opportunities. This includes fraud detection systems, personalized banking experiences, AI agents for financial advisory & customer support, risk assessment tools, data analytics tools for trading, AI agents for portfolio management, compliance management solutions, credit scoring tools, and AI assistants for loan processing.",
+          "We create apps from scratch for our clients that are suited to their requirements. No templates, no starter packs.",
         variant: "accent",
       },
       {
-        id: "e-Commerce",
+        id: "User Experience Centric Design",
 
-        label: "e-Commerce",
+        label: "User Experience Centric Design",
         description:
-          "At Moonstack, we offer cutting-edge AI solutions for e-commerce companies, helping them enhance customer experience, engage users, run campaigns, manage inventories, and get valuable data insights for strategic business decision-making. This is possible by integrating AI solutions like virtual shopping assistants, AI custom support solutions, inventory forecasting solutions, dynamic pricing solutions, data analytics tools, AI sales agents, and more such smart solutions with our help.",
+          "An app that’s easy to use is one that users come back to. We ensure our app designs are intuitive, clean, and offer functionality with convenience to users.",
         variant: "dark",
       },
       {
-        id: "Travel",
+        id: "Transparent Building",
 
-        label: "Travel",
+        label: "Transparent Building",
         description:
-          "Moonstack AI developers are experienced in developing intelligent solutions for the travel and hospitality industry, enabling them to offer memorable guest experiences and achieve operational excellence. We can build AI tools and AI agents for room booking, personalized travel support, itinerary creation, predictive maintenance, dynamic pricing, and business analytics.",
+          "We always ensure you’re a part of the team when you work with Moonstack. Our developers use clean code to guarantee the codebase is accessible, and we provide regular updates so you’re always up-to-date with developments.",
         variant: "dark",
       },
       {
-        id: "Education",
+        id: "Scalable Builds For Growing Businesses",
 
-        label: "Education",
+        label: "Scalable Builds For Growing Businesses",
         description:
-          "Our AI developers bring in their technical expertise and years of experience in building robust smart solutions for the education sector, enhancing overall learning experience, quality, and process. Be it AI teaching assistants, student performance analytics tools, scoring tools, mock exam platforms, AI assistants for admission help, or AI agents to automate administrative tasks, we can do all.",
+          "We create scalable apps that can adapt to the growing needs of a successful business. And we always offer ongoing support for builds to all our clients.",
         variant: "light",
-      },
-      {
-        id: "Logistics",
-
-        label: "Logistics",
-        description:
-          "Our AI development services are here to make your logistics processes streamlined, automated, seamless, and on time. What our developers can do for your logistics company can transform it from a chaotic business to a system of effortless workflows. With route optimization solutions, real-time fleet tracking systems, analytics tools, AI agents for vendor management, and demand forecasting tools, we are here to help you welcome AI-backed logistics where there is no space for delays, manual work, human errors, or missed consignments, just high efficiency. ",
-        variant: "accent",
       },
     ],
   },
@@ -300,29 +276,29 @@ export const ios: PageData = {
 
   accordionData: [
     {
-      question: "How much does Android app development cost in India?",
+      question: "How much does it cost to develop an iOS app in India?",
       answer:
-        "The actual development cost of an Android app depends on the app’s purpose, technology stack, features, and scale. For a quick quotation, feel free to reach out to our team at Moonstack.",
+        "The development cost is determined based on multiple factors such as the build platform and app purpose, and functionality. If you want a detailed quote, you can contact our team at Moonstack, and we can offer a free quotation to you for your iOS app build.",
     },
     {
-      question: "Will AI replace Android developers in India?",
+      question: "Who is the best iOS app developer in India?",
       answer:
-        "No, while AI is gradually becoming a good tool that can assist developers, it is not advanced enough to replace Android developers in India.",
+        "If you’re going by the iOS app developer that provides the most value to their clients as part of their affordable iOS app development services in India? It's Moonstack.",
     },
     {
-      question: "Which is the best Android app development company in India?",
+      question: "Are iOS devs in demand?",
       answer:
-        "Moonstack. We pride ourselves on being the best Android app development company in India, thanks to our years of experience developing popular Android apps that are downloaded and loved by millions of users.",
+        "Yes, as Apple users are exponentially growing in India with the launch of every new iPhone, iOS devs are more in demand now than ever before. This is because most apps want to capitalise on the growing premium mobile user base in India that uses Apple products with their premium apps and services.",
     },
     {
-      question: "Can Moonstack develop Android e-commerce applications?",
+      question: "Which language is best for iOS development?",
       answer:
-        "Yes, we can help you build completely custom e-commerce Android applications, complete with payment gateway integration and even chat support.",
+        "iOS app development is best done using Swift and Swift UI platforms that are specifically built for iOS app development. We use both Swift as well as other specialised iOS build platforms at Moonstack to develop specialised and responsive iOS applications.",
     },
     {
-      question: "How long does it take to develop an Android app?",
+      question: "Can Moonstack help us upgrade an existing iOS application?",
       answer:
-        "The timeline for app development depends on various factors; however, the development process can generally take between a few weeks to a few months, based on underlying factors.",
+        "Yes, you can easily avail of our iOS app upgrade services in India. Simply contact us through our website, and we will help you get started as soon as possible.",
     },
   ],
 

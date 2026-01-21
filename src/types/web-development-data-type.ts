@@ -51,7 +51,17 @@ export interface qualitySectionProps {
   icon: string | StaticImageData
   description?: string
 }
-
+export interface qualitySectionHeading {
+  text: string
+  color?: string
+  className?: string
+}
+export interface qualitySectionPropsData {
+  heading?: qualitySectionHeading[]
+  description?: string
+  columsClass?: string
+  list: qualitySectionProps[]
+}
 /* ================= Cloud Timeline ================= */
 export interface CloudTimelineDataSteps {
   number: string | number
@@ -66,14 +76,24 @@ export interface CloudTimelineDataProps {
   subtitle?: string
   steps: CloudTimelineDataSteps[]
 }
-
+export interface OutcomeBannerProps {
+  heading: ImpactHeadingItem[]
+  checklist: string[]
+  buttonText: string
+}
+export interface NewBannerProps {
+  headingLines: ImpactHeadingItem[]
+}
 /* ================= Page Data ================= */
 export interface PageData {
+  NewBanner: NewBannerProps
+  OutcomeBanner: OutcomeBannerProps
+
   /* 🔧 FIX: object (not array) — matches usage */
   CloudTimelineData: CloudTimelineDataProps
 
   /* 🔧 FIX: array (you map over it) */
-  qualitySectionData: qualitySectionProps[]
+  qualitySectionData: qualitySectionPropsData
 
   /* 🔧 FIX: object (not array) */
   impactSection: ImpactSectionProps

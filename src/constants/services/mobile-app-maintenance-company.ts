@@ -19,17 +19,17 @@ export const app_maintenance: PageData = {
   hero: {
     title: [
       {
-        text: " AI Development Company for",
+        text: "Future-Proof Your App: Expert App Maintenance",
         color: "text-white",
       },
       {
-        text: " Agents & Automation",
+        text: " Service",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Build AI agents, copilots, and intelligent automation systems that turn your business chaos into organization-wide productivity and accuracy. We are here to help SaaS companies, startups, and enterprises leverage AI to enhance their product offerings, customer experience, and operational efficiency. ",
+        text: "Keep your digital product at peak performance. Our maintenance services go beyond bug fixes; we provide proactive monitoring, security patching, and OS compatibility updates to ensure your app remains fast and reliable. Partner with Moonstack to eliminate downtime and provide your users with a flawless experience, 24/7",
         color: "text-white",
       },
     ],
@@ -43,8 +43,8 @@ export const app_maintenance: PageData = {
         href: "/services",
       },
       {
-        label: "Ai agent development company",
-        href: "/services/ai-agent-development-company",
+        label: "Mobile App Maintenance Company",
+        href: "/services/mobile-app-maintenance-company",
       },
     ],
   },
@@ -60,159 +60,129 @@ export const app_maintenance: PageData = {
   },
   mobDesignBanner: nativeBannerImg,
 
-  points:
-    "Moonstack’s AI expertise was a game-changer. They engineered a custom predictive layer that cut our manual processing by 45%. Navigating complex security was seamless, delivering an intelligent system that scales with our users. For AI that impacts the bottom line, Moonstack is the premier partner.",
-  highlightText: "cut our manual processing by 45%",
+  points: "",
+  highlightText: "",
 
   leftCardData: [
     {
-      title: "Why Consider AI for Your Business?",
+      title: "Reliable Mobile App Maintenance Services for Peak Performance",
       description:
-        "Manual work, inefficiencies, delayed timelines, human errors, lengthy processes, and lack of transparency in business operations are a thing of the past. Welcome to the AI age, powered by AI agents, copilots, multi-agent workflows, and agentic automation systems that breathe in fresh whiffs of high accuracy and efficiency into your operations. From customer support to sales, marketing, finance, business analytics, logistics management, and compliance, AI solutions are transforming how we work by introducing autonomous and intelligent workflows. Results?",
-      stats: [
-        "66% improvement in employee performance",
-        "2.3x higher revenue growth using AI agents",
-        "70% reduction in repetitive tasks",
-        "30% lower operational costs with AI automation",
-      ],
-      // description2:
-      //   "So, looking to make your business future-ready and get a competitive edge? It's time to think the AI way. We are a leading custom AI development company in India, helping businesses of all sizes build custom AI solutions aligned to their needs. Whether you are looking to build an AI assistant, AI agent, or AI app, we can get you cutting-edge solutions to turn your business into an AI-powered success story.",
+        "Mobile applications require periodic maintenance and updates to function optimally. That’s why Moonstack offers the best mobile app maintenance services in India. Whether you’ve availed of our development services or not, we can help you maintain your app to the highest standards of security, stability, future-proof compatibility, and user experience. We even help apps fix bugs, optimise performance issues, and monitor analytics as a part of our app performance monitoring services in India.",
+      stats: [],
+      description2:
+        "As the premier mobile app maintenance company in India, we pride ourselves on offering bespoke maintenance solutions to our clients. Our team is led by dedicated maintenance and QA specialists who ensure your app’s code is routinely tested and updated to meet the highest standards of latest OS compatibility. We offer both Android and iOS app maintenance services in India, and if you’re interested, we can offer a mobile app AMC (annual maintenance contract) in India too for our clients. So, hurry and contact us today.",
       image: bndimage1.src,
     },
   ],
   solutions: {
     headingContent: [
       {
-        text: "Our",
+        text: "Our Specialities In",
         color: "text-white",
       },
       {
-        text: " AI Agent Development ",
+        text: "app maintenance",
         color: "text-white libreItalic font-[400] highlight-text",
-      },
-      {
-        text: " Services",
-        color: "text-white",
       },
     ],
     subHeadingText:
-      "At Moonstack, a credible AI agent development company for business, we are dedicated to delivering sophisticated end-to-end AI product development services to power your business ambitions. Design, build, and deploy AI agent solutions that are robust, scalable, and adaptable to your business needs, industry trends, market sentiment, and customer demands. ",
+      "After 15+ years in the industry and 450+ projects completed, Moonstack has specialised expertise in providing services for app support and maintenance in India.",
   },
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
-      title: "AI Consulting & Strategy",
+      title: "Performance Optimisation",
       description:
-        "Cut through the AI hype and build a clear and execution-ready AI roadmap aligned to your real business needs. Our AI consulting and strategy services for SMEs help identify high-ROI AI agent use cases in your business, select the right LLM, recommend architecture, assess your data readiness, outline success metrics, and draft a plan so your AI investment delivers results.",
+        "As a part of our Android app maintenance service in India and our mobile app troubleshooting service in India, we offer complete performance optimisation for the mobile apps we maintain. This includes removing bottlenecks and optimising backend processes.",
     },
     {
       imgSrc: engagingIcon.src,
-      title: "Custom AI Agent Development",
+      title: "Feature Improvements",
       description:
-        "Build custom AI agents tailored to your business logic, tools, and workflows, turning your challenges into opportunities for success. Hire our AI developers to build highly functional and autonomous AI agents capable of processing data, reasoning, executing tasks, and improving on feedback without any human involvement.",
+        "Moonstack offers the most thorough app updates and upgrades service in India. Our mobile app enhancement service in India can be used to refine design elements, improve usability, and enhance features based on user feedback.",
     },
 
     {
       imgSrc: brandingIcon.src,
-      title: "AI Agent Support and Maintenance",
+      title: "Security Improvements & Compliance",
       description:
-        "Maintain the reliability and relevance of your AI agents with our ongoing support and maintenance services. Our team ensures your AI agents stay accurate and aligned to your changing business needs and vision. From performance monitoring and optimization to model tuning, knowledge base updates, error handling, security, and compliance, we take care of everything.",
+        "Afraid of data breaches or corruption of user data? Avail of Moonstack’s app security maintenance services in India. We offer complete assistance in monitoring and fixing code vulnerabilities while ensuring OS and app store compatibility.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "RAG & AI Chatbot Development",
+      title: "Bug Fixes",
       description:
-        "Build a RAG-based AI chatbot on your company's knowledge base to give your employees easy and instant access to accurate data. Our RAG-based AI chatbot development services fine-tune LLM with your documents, databases, and knowledge sources for multiple internal use cases like knowledge base chatbots, PDF chatbots, and Q&A assistants.",
+        "Bugs can ruin the user experience of your app; that’s why you should try our mobile app bug fixing services in India. We offer quick debugging and issue-based resolution to minimise your app’s downtime during maintenance.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Process Automation Development",
+      title: "OS Update Compatibility",
       description:
-        "Automate and streamline your processes with agentic automations, multi-agent systems, or AI agent workflows for faster processes, lower operational costs, and teams freed to focus on high-value work. Our AI-powered workflow automation for small business solutions combines AI agents with tools and integrations to automate simple to complex and even multi-step workflows. ",
+        "We offer a proactive mobile app support service in India at Moonstack. This includes UI adjustments and API changes to match the latest OS updates and optimise app compatibility across devices.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Agentic AI Development",
+      title: "Analytics & Reporting",
       description:
-        "Develop advanced agentic AI systems capable of planning, decision-making, and autonomous execution across complex workflows. We can deploy a set of AI agents, each trained to execute a specific task and capable of collaborating with other agents to collectively execute the target task and deliver intended results. ",
+        "As a leading app maintenance agency, we help businesses with third-party mobile app maintenance services in India that are tailored to their needs. Our analytics and reporting services offer crucial insights on app performance and user behaviour, which can be used to optimise the app further.",
     },
   ],
-  qualitySectionData: [
-    {
-      id: 1,
-      title: "Improved Decision Making",
-      icon: collaboration.src,
-      description:
-        "We help you turn your raw business data into valuable insights for accurate, faster, and smarter business decision-making.",
-    },
-    {
-      id: 2,
-      title: "High Efficiency & Accuracy",
-      icon: delivery.src,
-      description:
-        "Our AI solutions and AI agents will enable you to intelligently automate complex processes effortlessly to reduce manual work, delays, and errors, delivering high efficiency and precision.",
-    },
-    {
-      id: 3,
-      title: "Lower Operational Costs",
-      icon: hiring.src,
-      description:
-        "By automating processes and implementing AI agents for multiple tasks, we bring down the workload on your employees and save you from hiring more staff.",
-    },
-    {
-      id: 4,
-      title: "Better Customer Experience",
-      icon: designer.src,
-      description:
-        "Moonstack’s AI developers can boost your customer experience by building AI solutions that offer insight into customer preferences by analyzing their data, recommending products, and instantly resolving customer queries.",
-    },
-  ],
+  OutcomeBanner: {
+    heading: [
+      { text: "Keep Your ", color: "text-white", className: "" },
+      {
+        text: "Android App Running ",
+        className: "text-white libreItalic font-[400]",
+        color: "",
+      },
+      { text: "at Peak Performance", color: "text-white", className: "" },
+    ],
+    checklist: [
+      "24/7 Performance Monitoring",
+      "Regular Security Updates & Bug Fixes",
+      "OS Compatibility Maintenance",
+      "Proactive Issue Resolution",
+    ],
+    buttonText: "Talk To Us",
+  },
+  qualitySectionData: {
+    heading: [],
+    description: "",
+    columsClass: "",
+    list: [],
+  },
   CloudTimelineData: {
-    title: "Insight into Our AI ",
-    highlight: "Development Process",
+    title: "Our Process to assist you in ",
+    highlight: "App maintenance",
     subtitle:
-      "We take an agile, client-centric, and result-driven approach to building AI solutions that resonate with excellence. Focusing on speed, adaptability, and continuous improvement, we move from idea to impact without unnecessary delays or endless revisions.",
+      "Moonstack is the leading provider of app optimisation services in India. So, if you want to know what makes us the best, here’s an overview of how we provide tangible results to our clients.",
     steps: [
       {
         number: 1,
-        title: "Discovery & Strategic Insights",
+        title: "App Audit",
         description:
-          "We start by deeply understanding your business, which includes your goals, challenges, and existing systems. Our team evaluates where AI can deliver the most value and reviews your current data and infrastructure. The result is a clear, practical roadmap aligned with your business objectives.",
+          "As a part of our ongoing app support service in India, we get to work from the first call itself. We gather crucial data regarding the app’s bugs and user reports, and based on that, we start studying the codebase as a part of our audit process.",
         position: "left",
       },
       {
         number: 2,
-        title: "Data Collection & Preparation",
+        title: "Maintenance Strategy",
         description:
-          "AI is only as good as the data behind it. We gather relevant data from internal and external sources, clean and structure it, and optimize it for performance. Using proven tools and frameworks, we ensure your data is accurate, reliable, and ready to power intelligent models.",
+          "Based on user reports, backend performance bottlenecks, and compatibility issues, we create a maintenance plan strategy that helps fix the problems with the least possible downtime. However, we always first recommend our clients to use our app data backup services in India to protect their codebase against any malfunctions.",
         position: "right",
       },
       {
         number: 3,
-        title: "Model Design & Experimentation",
+        title: "Upgrade Implementation",
         description:
-          "At this stage, we design and test AI models tailored to your specific use case. Whether the solution requires supervised learning, unsupervised learning, or deep learning techniques, we experiment with multiple approaches to identify the most effective model for your needs.",
+          "Once the strategy is in place, we quickly implement the necessary changes in the code to fix the pertinent issues. We monitor our changes and also keep an eye out for any new bugs at all times. This helps us ensure the changes are functional and align with your user experience requirements.",
         position: "left",
       },
       {
         number: 4,
-        title: "Training & Model Optimization",
+        title: "Continuous Improvement",
         description:
-          "We train models using real business data and fine-tune them for accuracy, speed, and scalability. Through continuous testing and refinement, we build robust AI systems that can handle complexity and perform reliably in real-world scenarios.",
-        position: "right",
-      },
-      {
-        number: 5,
-        title: "Deployment & System Integration",
-        description:
-          "Once the model is ready, we deploy it seamlessly into your existing environment. Whether on cloud platforms or custom infrastructure, we ensure smooth integration, rigorous testing, and a stable launch, so your AI solution works flawlessly from day one.",
-        position: "left",
-      },
-      {
-        number: 6,
-        title: "Monitoring, Support & Continuous Improvement",
-        description:
-          "After deployment, we continuously monitor performance, track system behavior, and retrain models as new data becomes available. This ensures your AI solution keeps improving and stays aligned with your business as it grows.",
+          "We work tirelessly to continuously improve our maintenance efforts. We also include our clients in the process of our application troubleshooting support service in India by sending them regular updates and reports of key analytical metrics.",
         position: "right",
       },
     ],
@@ -220,63 +190,71 @@ export const app_maintenance: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Building AI Solutions," },
+      { text: "Why Choose Us for maintaining Your " },
       {
-        text: " Transforming Industries,",
+        text: "App to run ",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: " Creating Real Impact" },
+      { text: "smoothly?" },
     ],
     description:
-      "Hire our AI developers to build state-of-the-art AI solutions aligned to your industry and supporting your business operations, processes, and strategies. From healthcare to fintech, e-commerce, energy, manufacturing, education, travel, and logistics, we are proficient in helping you realize what artificial intelligence can do for your business and achieve your annual targets like before.",
+      "Our emergency app support services in India have helped many businesses across industries. Apart from our stellar records and highly appreciative clientele, here are some more reasons why you should work with Moonstack.",
     cards: [
       {
-        id: "Healthcare",
-        label: "Healthcare",
+        id: "Dedicated Team",
+        label: "Dedicated Team",
         description:
-          "We offer AI development services for healthcare and clinics, enabling automated administrative processes, quality patient care, faster diagnosis, and better patient outcomes. Our team is adept at developing a wide array of solutions like telemedicine apps, smart real-time monitoring solutions, medical imaging analysis software, AI agents for appointment booking, follow-ups, and patient support, patient data analytics platforms, predictive diagnostic tools, and more.",
+          "We are proud to work with a dedicated team of QA specialists, developers, and maintenance engineers who handle all our maintenance services.",
         variant: "light",
       },
       {
-        id: "Fintech",
+        id: "Platform Independent Expertise",
 
-        label: "Fintech",
+        label: "Platform Independent Expertise",
         description:
-          "As a trusted AI development company for fintech and banking, we equip organizations to offer secure, faster, and smarter banking experiences to users. Our expertise lies in developing AI-powered systems that cater to your business challenges and open new revenue opportunities. This includes fraud detection systems, personalized banking experiences, AI agents for financial advisory & customer support, risk assessment tools, data analytics tools for trading, AI agents for portfolio management, compliance management solutions, credit scoring tools, and AI assistants for loan processing.",
+          "Our team is experienced in offering maintenance services for apps built across platforms such as Android, iOS, and even hybrid frameworks.",
         variant: "accent",
       },
       {
-        id: "e-Commerce",
+        id: "Security First Approach",
 
-        label: "e-Commerce",
+        label: "Security First Approach",
         description:
-          "At Moonstack, we offer cutting-edge AI solutions for e-commerce companies, helping them enhance customer experience, engage users, run campaigns, manage inventories, and get valuable data insights for strategic business decision-making. This is possible by integrating AI solutions like virtual shopping assistants, AI custom support solutions, inventory forecasting solutions, dynamic pricing solutions, data analytics tools, AI sales agents, and more such smart solutions with our help.",
+          "When you choose Moonstack, you can rest assured that the security standards and OS policies will always be followed, ensuring app compliance across platforms and app stores.",
         variant: "dark",
       },
       {
-        id: "Travel",
+        id: "Proactive Maintenance",
 
-        label: "Travel",
+        label: "Proactive Maintenance",
         description:
-          "Moonstack AI developers are experienced in developing intelligent solutions for the travel and hospitality industry, enabling them to offer memorable guest experiences and achieve operational excellence. We can build AI tools and AI agents for room booking, personalized travel support, itinerary creation, predictive maintenance, dynamic pricing, and business analytics.",
+          "We create failsafes in the code that prevent major outages or problems with the core function of the app. This helps us prevent problems in the first place and offer a seamless user experience to users.",
         variant: "dark",
       },
       {
-        id: "Education",
+        id: "Tailored Maintenance",
 
-        label: "Education",
+        label: "Tailored Maintenance",
         description:
-          "Our AI developers bring in their technical expertise and years of experience in building robust smart solutions for the education sector, enhancing overall learning experience, quality, and process. Be it AI teaching assistants, student performance analytics tools, scoring tools, mock exam platforms, AI assistants for admission help, or AI agents to automate administrative tasks, we can do all.",
+          "Not only do we offer tailored maintenance for your apps, but we also offer tailored pricing for every project and do not overcharge or oversell our clients, services that they wouldn’t need.",
         variant: "light",
       },
       {
-        id: "Logistics",
+        id: "Transparency Always",
 
-        label: "Logistics",
+        label: "Transparency Always",
         description:
-          "Our AI development services are here to make your logistics processes streamlined, automated, seamless, and on time. What our developers can do for your logistics company can transform it from a chaotic business to a system of effortless workflows. With route optimization solutions, real-time fleet tracking systems, analytics tools, AI agents for vendor management, and demand forecasting tools, we are here to help you welcome AI-backed logistics where there is no space for delays, manual work, human errors, or missed consignments, just high efficiency. ",
+          " When you choose Moonstack, you will always be a part of the loop with regular updates and reports delivered to you at every stage of our mobile app SLA support service in India.",
         variant: "accent",
       },
+    ],
+  },
+  NewBanner: {
+    headingLines: [
+      {
+        text: "Need Reliable Mobile App Maintenance That Keeps Your Users Happy?",
+      },
+      { text: "" },
     ],
   },
   // processSteps: {
@@ -300,29 +278,31 @@ export const app_maintenance: PageData = {
 
   accordionData: [
     {
-      question: "How much does Android app development cost in India?",
+      question: "What is mobile app maintenance?",
       answer:
-        "The actual development cost of an Android app depends on the app’s purpose, technology stack, features, and scale. For a quick quotation, feel free to reach out to our team at Moonstack.",
+        "Mobile app maintenance refers to the continuous updates to the app that are required to optimise an app’s performance, compatibility, and responsiveness across devices and platforms. This process also includes fixing bugs and performance issues of mobile apps.",
     },
     {
-      question: "Will AI replace Android developers in India?",
+      question: "How much does mobile app maintenance cost?",
       answer:
-        "No, while AI is gradually becoming a good tool that can assist developers, it is not advanced enough to replace Android developers in India.",
+        "Mobile app maintenance is generally a fixed cost, and annual contracts can range anywhere from 10 to 20% of the app’s build cost. However, this cost can change based on the level of maintenance and upkeep required to optimize your app’s performance.",
     },
     {
-      question: "Which is the best Android app development company in India?",
+      question: "How long does mobile app maintenance take?",
       answer:
-        "Moonstack. We pride ourselves on being the best Android app development company in India, thanks to our years of experience developing popular Android apps that are downloaded and loved by millions of users.",
+        "Mobile app maintenance is an ongoing work that involves studying analytics and reading user bug reports to continually update the app’s codebase. It helps prevent user experience failures in the app and creates a cohesive experience for all users.",
     },
     {
-      question: "Can Moonstack develop Android e-commerce applications?",
+      question:
+        "Does Moonstack offer a yearly mobile app maintenance contract?",
       answer:
-        "Yes, we can help you build completely custom e-commerce Android applications, complete with payment gateway integration and even chat support.",
+        "Yes, Moonstack offers yearly mobile app maintenance (AMC) contracts. You can contact our team to learn more about them and to get a free AMC quotation for your app.",
     },
     {
-      question: "How long does it take to develop an Android app?",
+      question:
+        "Can Moonstack help me fix performance issues and bugs as a part of app maintenance?",
       answer:
-        "The timeline for app development depends on various factors; however, the development process can generally take between a few weeks to a few months, based on underlying factors.",
+        "Yes, we provide complete app optimisation services that include fixing performance issues and bugs as part of our maintenance services.",
     },
   ],
 

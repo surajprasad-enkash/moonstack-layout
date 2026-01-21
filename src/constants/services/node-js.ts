@@ -14,22 +14,19 @@ import designer from "@/assets/app-development-images/work-directly.webp"
 import hiring from "@/assets/app-development-images/hiring.webp"
 import delivery from "@/assets/app-development-images/guarante.webp"
 import collaboration from "@/assets/app-development-images/flexible.webp"
+import { color } from "framer-motion"
 
 export const nodeJs: PageData = {
   hero: {
     title: [
       {
-        text: " AI Development Company for",
-        color: "text-white",
-      },
-      {
-        text: " Agents & Automation",
+        text: "Laravel Website Development Service Provider",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Build AI agents, copilots, and intelligent automation systems that turn your business chaos into organization-wide productivity and accuracy. We are here to help SaaS companies, startups, and enterprises leverage AI to enhance their product offerings, customer experience, and operational efficiency. ",
+        text: "Need a fast, secure, and scalable web solution? Our Laravel development services deliver enterprise-grade applications with clean code, optimal performance, and seamless functionality.",
         color: "text-white",
       },
     ],
@@ -43,8 +40,8 @@ export const nodeJs: PageData = {
         href: "/services",
       },
       {
-        label: "Ai agent development company",
-        href: "/services/ai-agent-development-company",
+        label: "Laravel",
+        href: "/services/laravel-website-development-company",
       },
     ],
   },
@@ -61,221 +58,221 @@ export const nodeJs: PageData = {
   mobDesignBanner: nativeBannerImg,
 
   points:
-    "Moonstack’s AI expertise was a game-changer. They engineered a custom predictive layer that cut our manual processing by 45%. Navigating complex security was seamless, delivering an intelligent system that scales with our users. For AI that impacts the bottom line, Moonstack is the premier partner.",
-  highlightText: "cut our manual processing by 45%",
+    "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
+  highlightText: "The application is scalable",
 
   leftCardData: [
     {
-      title: "Why Consider AI for Your Business?",
+      title: "Transform Your Business with Custom Laravel Solutions",
       description:
-        "Manual work, inefficiencies, delayed timelines, human errors, lengthy processes, and lack of transparency in business operations are a thing of the past. Welcome to the AI age, powered by AI agents, copilots, multi-agent workflows, and agentic automation systems that breathe in fresh whiffs of high accuracy and efficiency into your operations. From customer support to sales, marketing, finance, business analytics, logistics management, and compliance, AI solutions are transforming how we work by introducing autonomous and intelligent workflows. Results?",
-      stats: [
-        "66% improvement in employee performance",
-        "2.3x higher revenue growth using AI agents",
-        "70% reduction in repetitive tasks",
-        "30% lower operational costs with AI automation",
-      ],
-      // description2:
-      //   "So, looking to make your business future-ready and get a competitive edge? It's time to think the AI way. We are a leading custom AI development company in India, helping businesses of all sizes build custom AI solutions aligned to their needs. Whether you are looking to build an AI assistant, AI agent, or AI app, we can get you cutting-edge solutions to turn your business into an AI-powered success story.",
+        "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",
+      stats: [],
+      description2:
+        "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
       image: bndimage1.src,
     },
   ],
   solutions: {
     headingContent: [
       {
-        text: "Our",
+        text: "Our ",
         color: "text-white",
       },
       {
-        text: " AI Agent Development ",
+        text: "Laravel web Development",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: " Services",
+        text: "Services Includes",
         color: "text-white",
       },
     ],
     subHeadingText:
-      "At Moonstack, a credible AI agent development company for business, we are dedicated to delivering sophisticated end-to-end AI product development services to power your business ambitions. Design, build, and deploy AI agent solutions that are robust, scalable, and adaptable to your business needs, industry trends, market sentiment, and customer demands. ",
+      "We have best Laravel web developers and with them we offer affordable laravel development service in India - from consultation to migration all your needs will fulfill at one stop ",
   },
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
-      title: "AI Consulting & Strategy",
+      title: "Laravel Consulting Services",
       description:
-        "Cut through the AI hype and build a clear and execution-ready AI roadmap aligned to your real business needs. Our AI consulting and strategy services for SMEs help identify high-ROI AI agent use cases in your business, select the right LLM, recommend architecture, assess your data readiness, outline success metrics, and draft a plan so your AI investment delivers results.",
+        "Bring your idea into reality with the right strategy and roadmap with Laravel web experts. Our Moonstack’s expert Laravel consulting professionals will understand your business needs and provide you with the right development strategy to deliver secure and scalable Laravel solutions in the market.",
     },
     {
       imgSrc: engagingIcon.src,
-      title: "Custom AI Agent Development",
+      title: "Custom Laravel Website Development Service",
       description:
-        "Build custom AI agents tailored to your business logic, tools, and workflows, turning your challenges into opportunities for success. Hire our AI developers to build highly functional and autonomous AI agents capable of processing data, reasoning, executing tasks, and improving on feedback without any human involvement.",
+        "We build high performance, secure, and functional custom Laravel web apps in India. We develop custom  Laravel websites for clients as per their business requirements. Our Laravel web development experts understand the gap in your operational process  and integrate modern features to meet latest business demands. ",
     },
 
     {
       imgSrc: brandingIcon.src,
-      title: "AI Agent Support and Maintenance",
+      title: "Laravel Custom  E-Commerce Development Services ",
       description:
-        "Maintain the reliability and relevance of your AI agents with our ongoing support and maintenance services. Our team ensures your AI agents stay accurate and aligned to your changing business needs and vision. From performance monitoring and optimization to model tuning, knowledge base updates, error handling, security, and compliance, we take care of everything.",
+        "Grow your online presence with Laravel ecommerce development service in India. We build high performance and secure custom e-commerce solutions integrated with advanced functionalities and deliver smooth shopping experiences to customers. Our team's main aim is to increase website conversions on your websites.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "RAG & AI Chatbot Development",
+      title: "Laravel UI/UX Designing Services ",
       description:
-        "Build a RAG-based AI chatbot on your company's knowledge base to give your employees easy and instant access to accurate data. Our RAG-based AI chatbot development services fine-tune LLM with your documents, databases, and knowledge sources for multiple internal use cases like knowledge base chatbots, PDF chatbots, and Q&A assistants.",
+        "Our architect designers create interactive and engaging designs for our customers. We hold expertise with custom designing in which we bring your business brand identity to the real world and connect with customers. At Moonstack, our designers create interactive designs with easy to use aspects.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Process Automation Development",
+      title: "Laravel API Integration Services",
       description:
-        "Automate and streamline your processes with agentic automations, multi-agent systems, or AI agent workflows for faster processes, lower operational costs, and teams freed to focus on high-value work. Our AI-powered workflow automation for small business solutions combines AI agents with tools and integrations to automate simple to complex and even multi-step workflows. ",
+        "Extend your web and mobile app functionalities with seamless laravel REST API development service in India by partnering with the best Laravel development agency. We integrate Laravel web solutions with third party services via API such as secure payment gateway, internal systems, and many more. ",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Agentic AI Development",
+      title: "Laravel Maintenance and Support Services ",
       description:
-        "Develop advanced agentic AI systems capable of planning, decision-making, and autonomous execution across complex workflows. We can deploy a set of AI agents, each trained to execute a specific task and capable of collaborating with other agents to collectively execute the target task and deliver intended results. ",
+        "We offer end to end Laravel maintenance and support services. With our expert Laravel team, we run Laravel web solutions smoothly without any errors. We provide constant updates, optimize performance, and fix bugs to run solutions smoothly and deliver long term business commitment. ",
     },
   ],
-  qualitySectionData: [
-    {
-      id: 1,
-      title: "Improved Decision Making",
-      icon: collaboration.src,
-      description:
-        "We help you turn your raw business data into valuable insights for accurate, faster, and smarter business decision-making.",
-    },
-    {
-      id: 2,
-      title: "High Efficiency & Accuracy",
-      icon: delivery.src,
-      description:
-        "Our AI solutions and AI agents will enable you to intelligently automate complex processes effortlessly to reduce manual work, delays, and errors, delivering high efficiency and precision.",
-    },
-    {
-      id: 3,
-      title: "Lower Operational Costs",
-      icon: hiring.src,
-      description:
-        "By automating processes and implementing AI agents for multiple tasks, we bring down the workload on your employees and save you from hiring more staff.",
-    },
-    {
-      id: 4,
-      title: "Better Customer Experience",
-      icon: designer.src,
-      description:
-        "Moonstack’s AI developers can boost your customer experience by building AI solutions that offer insight into customer preferences by analyzing their data, recommending products, and instantly resolving customer queries.",
-    },
-  ],
+
+  NewBanner: {
+    headingLines: [
+      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+    ],
+  },
+  OutcomeBanner: {
+    heading: [
+      {
+        text: "Build Once, Scale Forever: Your ",
+        color: "text-white",
+        className: "",
+      },
+      {
+        text: "Expert Laravel Development Partner",
+        className: "text-white libreItalic font-[400]",
+        color: "",
+      },
+    ],
+    checklist: [
+      "Robust & Secure Architecture",
+      "Rapid Development & Deployment",
+      "High-Performance & Scalable Code",
+      "Easy Maintenance & Updates",
+    ],
+    buttonText: "Start Your Project Today",
+  },
+
   CloudTimelineData: {
-    title: "Insight into Our AI ",
-    highlight: "Development Process",
+    title: "Our Process of ",
+    highlight: "Laravel website Development Service",
     subtitle:
-      "We take an agile, client-centric, and result-driven approach to building AI solutions that resonate with excellence. Focusing on speed, adaptability, and continuous improvement, we move from idea to impact without unnecessary delays or endless revisions.",
+      "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges.",
     steps: [
       {
         number: 1,
-        title: "Discovery & Strategic Insights",
+        title: "Gather Requirements",
         description:
-          "We start by deeply understanding your business, which includes your goals, challenges, and existing systems. Our team evaluates where AI can deliver the most value and reviews your current data and infrastructure. The result is a clear, practical roadmap aligned with your business objectives.",
+          "We collect all the information about the project to understand what our client actually needs that allow us to align with the project.",
         position: "left",
       },
       {
         number: 2,
-        title: "Data Collection & Preparation",
+        title: "Client Discussion",
         description:
-          "AI is only as good as the data behind it. We gather relevant data from internal and external sources, clean and structure it, and optimize it for performance. Using proven tools and frameworks, we ensure your data is accurate, reliable, and ready to power intelligent models.",
+          "Once we have proper requirements then our Laravel team experts conduct a formal client discussion to solve all queries.",
         position: "right",
       },
       {
         number: 3,
-        title: "Model Design & Experimentation",
+        title: "Internal Strategy Discussion",
         description:
-          "At this stage, we design and test AI models tailored to your specific use case. Whether the solution requires supervised learning, unsupervised learning, or deep learning techniques, we experiment with multiple approaches to identify the most effective model for your needs.",
+          "After that we have an internal strategy discussion in which we have our tech brainstorming to deliver the best outcome.",
         position: "left",
       },
       {
         number: 4,
-        title: "Training & Model Optimization",
+        title: "Designing - UI/UX Services",
         description:
-          "We train models using real business data and fine-tune them for accuracy, speed, and scalability. Through continuous testing and refinement, we build robust AI systems that can handle complexity and perform reliably in real-world scenarios.",
+          "Designers start the designing process in which they focus on interactive user interface and easy to use for the users.",
         position: "right",
       },
       {
         number: 5,
-        title: "Deployment & System Integration",
+        title: "Development",
         description:
-          "Once the model is ready, we deploy it seamlessly into your existing environment. Whether on cloud platforms or custom infrastructure, we ensure smooth integration, rigorous testing, and a stable launch, so your AI solution works flawlessly from day one.",
+          "Tech team start the development process in which frontend developers and backend coders work together.",
         position: "left",
       },
       {
         number: 6,
-        title: "Monitoring, Support & Continuous Improvement",
+        title: "Deployment and Testing",
         description:
-          "After deployment, we continuously monitor performance, track system behavior, and retrain models as new data becomes available. This ensures your AI solution keeps improving and stays aligned with your business as it grows.",
+          "We deploy and test the Laravel software with automated and manual processes that allow us to deliver bug free solutions. ",
         position: "right",
+      },
+      {
+        number: 7,
+        title: "Delivery and Post Support ",
+        description:
+          "After testing, we deliver Laravel based solutions in the market with post support that ensure our team is always there.",
+        position: "left",
       },
     ],
   },
 
   impactSection: {
     heading: [
-      { text: "Building AI Solutions," },
+      { text: "Our Scalable " },
       {
-        text: " Transforming Industries,",
+        text: "Laravel Web development",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: " Creating Real Impact" },
+      { text: "Solutions" },
     ],
     description:
-      "Hire our AI developers to build state-of-the-art AI solutions aligned to your industry and supporting your business operations, processes, and strategies. From healthcare to fintech, e-commerce, energy, manufacturing, education, travel, and logistics, we are proficient in helping you realize what artificial intelligence can do for your business and achieve your annual targets like before.",
+      "For decades MoonStack has been creating a wide range of Laravel web solutions for our clients for different industries that are ready to use as per different business with minor and major customisation processes. ",
     cards: [
       {
-        id: "Healthcare",
-        label: "Healthcare",
+        id: "Laravel Web Apps",
+        label: "Laravel Web Apps",
         description:
-          "We offer AI development services for healthcare and clinics, enabling automated administrative processes, quality patient care, faster diagnosis, and better patient outcomes. Our team is adept at developing a wide array of solutions like telemedicine apps, smart real-time monitoring solutions, medical imaging analysis software, AI agents for appointment booking, follow-ups, and patient support, patient data analytics platforms, predictive diagnostic tools, and more.",
+          "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
         variant: "light",
       },
       {
-        id: "Fintech",
+        id: "Laravel E-commerce Solutions",
 
-        label: "Fintech",
+        label: "Laravel E-commerce Solutions",
         description:
-          "As a trusted AI development company for fintech and banking, we equip organizations to offer secure, faster, and smarter banking experiences to users. Our expertise lies in developing AI-powered systems that cater to your business challenges and open new revenue opportunities. This includes fraud detection systems, personalized banking experiences, AI agents for financial advisory & customer support, risk assessment tools, data analytics tools for trading, AI agents for portfolio management, compliance management solutions, credit scoring tools, and AI assistants for loan processing.",
+          "The best ecommerce website developers in India build innovative and highly functional Laravel online stores. We have integrated essential functionalities such as product catalog, shopping carts, order tracking, and secure payment gateways that increase conversion rates and user experience.",
         variant: "accent",
       },
       {
-        id: "e-Commerce",
+        id: "Laravel CRM Solutions ",
 
-        label: "e-Commerce",
+        label: "Laravel CRM Solutions ",
         description:
-          "At Moonstack, we offer cutting-edge AI solutions for e-commerce companies, helping them enhance customer experience, engage users, run campaigns, manage inventories, and get valuable data insights for strategic business decision-making. This is possible by integrating AI solutions like virtual shopping assistants, AI custom support solutions, inventory forecasting solutions, dynamic pricing solutions, data analytics tools, AI sales agents, and more such smart solutions with our help.",
+          "Moonstack builds Laravel based CRM solutions that improve customer relationship management processes in companies. We design custom CRM solutions that allow us to track leads and automate conversions that lead to data driven decisions and streamline client communication processes.",
         variant: "dark",
       },
       {
-        id: "Travel",
+        id: "Laravel CMS Solutions",
 
-        label: "Travel",
+        label: "Laravel CMS Solutions",
         description:
-          "Moonstack AI developers are experienced in developing intelligent solutions for the travel and hospitality industry, enabling them to offer memorable guest experiences and achieve operational excellence. We can build AI tools and AI agents for room booking, personalized travel support, itinerary creation, predictive maintenance, dynamic pricing, and business analytics.",
+          "Professional Laravel experts offer robust Laravel based CMS development in India. We have built the best Laravel CMS solutions that allow businesses to easily update, publish, and manage content effortlessly on their websites. We deliver CMS solutions to businesses that  have full control on content management systems. ",
         variant: "dark",
       },
       {
-        id: "Education",
+        id: "POS Systems",
 
-        label: "Education",
+        label: "POS Systems",
         description:
-          "Our AI developers bring in their technical expertise and years of experience in building robust smart solutions for the education sector, enhancing overall learning experience, quality, and process. Be it AI teaching assistants, student performance analytics tools, scoring tools, mock exam platforms, AI assistants for admission help, or AI agents to automate administrative tasks, we can do all.",
+          "Integrate modern Laravel powered POS systems that are developed by Laravel experts in India. Our POS systems help to streamline different operational processes, allow retailers to manage multiple outlets, and deliver best outcomes for customers. We have delivered a wide range of POS (Point of Sale solutions) to our retail businesses.",
         variant: "light",
       },
       {
-        id: "Logistics",
+        id: "Video Streaming and Media Apps",
 
-        label: "Logistics",
+        label: "Video Streaming and Media Apps",
         description:
-          "Our AI development services are here to make your logistics processes streamlined, automated, seamless, and on time. What our developers can do for your logistics company can transform it from a chaotic business to a system of effortless workflows. With route optimization solutions, real-time fleet tracking systems, analytics tools, AI agents for vendor management, and demand forecasting tools, we are here to help you welcome AI-backed logistics where there is no space for delays, manual work, human errors, or missed consignments, just high efficiency. ",
-        variant: "accent",
+          "Develop your Laravel based video streaming and media apps with  expert laravel web developers in India. We designed video streaming and media apps that support secure content delivery and content management. We develop video streaming and media apps in such a way that offer seamless streaming and integrated with user authentication and support multiple platforms. ",
+        variant: "dark",
       },
     ],
   },
@@ -297,32 +294,101 @@ export const nodeJs: PageData = {
   //   subHeadingText:
   //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
   // },
-
+  qualitySectionData: {
+    heading: [
+      {
+        text: " Why Choose us for your ",
+        color: "text-white",
+      },
+      {
+        text: "Laravel  Web Development",
+        className: "libreItalic font-[400] highlight-text",
+      },
+      {
+        text: " Services?",
+        color: "text-white",
+      },
+    ],
+    description:
+      "Laravel is known for the best Laravel framework development in India. At Moonstack, we have delivered a wide range of custom Laravel web development services to our customers. Our professional Laravel experts have delivered secure, high performance, and future ready web apps.",
+    columsClass: "lg:grid-cols-3",
+    list: [
+      {
+        id: 1,
+        title: "Decade of Experience",
+        icon: collaboration.src,
+        description:
+          "Our Laravel experts have decades of experience that allows them to meet all clients' needs. Laravel coders have delivered scalable, secure, and high performance web apps with advanced integrated functionalities.",
+      },
+      {
+        id: 2,
+        title: "Custom Solutions for Every Business",
+        icon: collaboration.src,
+        description:
+          "We have delivered 450+ custom web development solutions across the world. Our professional Laravel experts have built high performance, scalable different solutions specifically designed for different business needs.",
+      },
+      {
+        id: 3,
+        title: "End to End Laravel Development Services",
+        icon: collaboration.src,
+        description:
+          "Delivering end to end Laravel development services to our clients. From consultation to development to migration - Moonstack is known as a one stop solution for all our client’s Laravel web development needs.",
+      },
+      {
+        id: 4,
+        title: "Transparent Communication",
+        icon: collaboration.src,
+        description:
+          "At Moonstack, we maintain open communication with our clients with constant updates, demos, and progress reports that ensure us to stay connected with our customers. Moreover, that also allows us to understand each other's mindset in a better way.",
+      },
+      {
+        id: 5,
+        title: "Confidential Details",
+        icon: collaboration.src,
+        description:
+          "Every project idea is unique - we understand the importance of your business module. We keep all your information fully secure and confidential with us. Our team keeps all details to them, and in any case we don’t leak any of your project ideas to third parties.",
+      },
+      {
+        id: 6,
+        title: "Creative and Business oriented solutions",
+        icon: collaboration.src,
+        description:
+          "We just don’t build Laravel solutions only for the web development purpose. At Moonstack, we build business oriented solutions that align with your business needs and attract users with advanced based next generation features.",
+      },
+    ],
+  },
   accordionData: [
     {
-      question: "How much does Android app development cost in India?",
+      question:
+        "Will you be able to work long term for my Laravel project requirements?",
       answer:
-        "The actual development cost of an Android app depends on the app’s purpose, technology stack, features, and scale. For a quick quotation, feel free to reach out to our team at Moonstack.",
+        "Yes, our Laravel web developers are always available and they are proficient with all types of Laravel web development requirements. Our team offers professional Laravel web development services to our customers. ",
     },
     {
-      question: "Will AI replace Android developers in India?",
+      question: "How long will you take to build my Laravel website?",
       answer:
-        "No, while AI is gradually becoming a good tool that can assist developers, it is not advanced enough to replace Android developers in India.",
+        "There is no fixed time - the completion of Laravel websites are fully dependent on different factors - time, no of Laravel developers, complexity of app. But, we make sure we will put our high efforts and deliver your solutions with all essential features.",
     },
     {
-      question: "Which is the best Android app development company in India?",
+      question: "Will you provide Laravel migration services in India?",
       answer:
-        "Moonstack. We pride ourselves on being the best Android app development company in India, thanks to our years of experience developing popular Android apps that are downloaded and loved by millions of users.",
+        "Yes, we will provide Laravel migration services in India. Our Laravel expert team specializes in migrating solutions from other technologies to Laravel without affecting design, performance, and even your data.",
     },
     {
-      question: "Can Moonstack develop Android e-commerce applications?",
+      question: "Can I hire Laravel web developers from your team?",
       answer:
-        "Yes, we can help you build completely custom e-commerce Android applications, complete with payment gateway integration and even chat support.",
+        "Yes, of course you can hire the best Laravel developers from our team on full time, part time, and hourly basis. We have a pool of dedicated Laravel developers.",
     },
     {
-      question: "How long does it take to develop an Android app?",
+      question:
+        "Can you integrate API or third party services into my Laravel solutions?",
       answer:
-        "The timeline for app development depends on various factors; however, the development process can generally take between a few weeks to a few months, based on underlying factors.",
+        "Yes, we can extend functionalities in Laravel solutions with third party services via API. Our experts have hands-on experience in third party integration services. ",
+    },
+    {
+      question: "How much does it cost for Laravel web development services? ",
+      answer:
+        "There is no fixed cost for Laravel web development services. The Laravel web development factors are based on several factors such as features, design, hiring model, third party integration requirement.",
     },
   ],
 

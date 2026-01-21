@@ -1,37 +1,39 @@
-import { laravel } from "./laravel-website-development-service";
-import { crm } from "./CRM-Development-service";
-import { ecommerce } from "./e-commerce-website-development-service";
-import { fullstack } from "./full-stack-website-development-service";
-import { shopify } from "./shopify-website-development-service";
-import { webDesigning } from "./web-designing-service";
-import { wordPress } from "./wordPress-website-development-service";
-import { android } from "./android-app-development-company";
-import { ios } from "./ios-app-development-company";
-import { react_native } from "./react-native-app-development-company";
-import { app_maintenance } from "./mobile-app-maintenance-company";
-import { pwa } from "./pwa-development-company";
-import { ai } from "./ai-agent-development-company";
-import { cloud } from "./cloud-company";
-import { product } from "./product-designing-company";
-import { ui_ux } from "./ui-ux-designing-company";
-import { it_support } from "./it-support-company";
-import { seo } from "./search-engine-optimization-company";
-import { vueJs } from "./vue-js";
-import { reactJs } from "./react-js";
-import { cakePhp } from "./cake-php";
-import { angularJs } from "./angular-js";
-import { codeigniter } from "./codeigniter";
-import { html } from "./html";
-import { css } from "./css";
-import { dotNet } from "./dot-net";
-import { javascript } from "./javascript";
-import { nodeJs } from "./node-js";
-import { testing } from "./mobile-app-testing";
-import { flutter } from "./flutter-app-development-company";
-import { php } from "./php";
-import { java } from "./java";
+import { laravel } from "./laravel-website-development-service"
+import { crm } from "./CRM-Development-service"
+import { ecommerce } from "./e-commerce-website-development-service"
+import { fullstack } from "./full-stack-website-development-service"
+import { shopify } from "./shopify-website-development-service"
+import { webDesigning } from "./web-designing-service"
+import { wordPress } from "./wordPress-website-development-service"
+import { android } from "./android-app-development-company"
+import { ios } from "./ios-app-development-company"
+import { react_native } from "./react-native-app-development-company"
+import { app_maintenance } from "./mobile-app-maintenance-company"
+import { pwa } from "./pwa-development-company"
+import { ai } from "./ai-agent-development-company"
+import { cloud } from "./cloud-company"
+import { product } from "./product-designing-company"
+import { ui_ux } from "./ui-ux-designing-company"
+import { it_support } from "./it-support-company"
+import { seo } from "./search-engine-optimization-company"
+import { vueJs } from "./vue-js"
+import { reactJs } from "./react-js"
+import { cakePhp } from "./cake-php"
+import { angularJs } from "./angular-js"
+import { codeigniter } from "./codeigniter"
+import { html } from "./html"
+import { css } from "./css"
+import { dotNet } from "./dot-net"
+import { javascript } from "./javascript"
+import { nodeJs } from "./node-js"
+import { testing } from "./mobile-app-testing"
+import { flutter } from "./flutter-app-development-company"
+import { php } from "./php"
+import { java } from "./java"
+import { mobileAppDev } from "./mobile-app-development-company"
 
-import type { PageData } from "@/types/web-development-data-type";
+import type { PageData } from "@/types/web-development-data-type"
+import { websiteDevelopment } from "./website-development-company"
 
 export type TPageKeys =
   | "ecommerce"
@@ -65,7 +67,9 @@ export type TPageKeys =
   | "flutter"
   | "java"
   | "php"
-  | "vueJs";
+  | "vueJs"
+  | "websiteDevelopment"
+  | "mobileAppDev"
 
 export const pagesData: Record<TPageKeys, PageData> = {
   ecommerce: ecommerce,
@@ -99,9 +103,10 @@ export const pagesData: Record<TPageKeys, PageData> = {
   flutter: flutter,
   java: java,
   php: php,
-
   testing: testing,
-};
+  mobileAppDev: mobileAppDev,
+  websiteDevelopment: websiteDevelopment,
+}
 
 export const pagesKeys: Record<string, TPageKeys> = {
   "laravel-website-development-company": "laravel",
@@ -137,4 +142,6 @@ export const pagesKeys: Record<string, TPageKeys> = {
   "dotnet-development-company": "dotNet",
   "java-development-company": "java",
   "php-development-company": "php",
-};
+  "mobile-app-development-company": "mobileAppDev",
+  "website-development-company": "websiteDevelopment",
+}

@@ -135,17 +135,20 @@ export default function ApplicationPage({ params }: PageProps) {
         />
 
         <Space />
+        {page.points && (
+          <>
+            <TestimonialCard
+              quote={page.points}
+              highlightText={page.highlightText}
+              authorName="Aetienne Sardon"
+              authorRole="CEO"
+              authorImage={userImage}
+              bgImage={reviewBgImg}
+            />
+            <Space size={160} />
+          </>
+        )}
 
-        <TestimonialCard
-          quote={page.points}
-          highlightText={page.highlightText}
-          authorName="Aetienne Sardon"
-          authorRole="CEO"
-          authorImage={userImage}
-          bgImage={reviewBgImg}
-        />
-
-        <Space size={160} />
         {page.leftCardData && (
           <BusinessNeedsDesignSection leftCards={page.leftCardData} />
         )}
@@ -159,23 +162,15 @@ export default function ApplicationPage({ params }: PageProps) {
             features={page.featuresData}
           />
         )}
-        <OutcomeBanner
-          heading={[
-            { text: "Exploring AI, ", color: "text-white" },
-            {
-              text: "but Don’t Know Where to Start?",
-              color: "text-white libreItalic font-[400]",
-            },
-          ]}
-          checklist={[
-            "Generative AI & LLM Integration",
-            "Intelligent Business Process Automation",
-            "Predictive Analytics & Forecasting",
-            "Custom Computer Vision & NLP Solutions",
-          ]}
-          bgImage={gradientBg}
-          buttonText="Talk To Us"
-        />
+        {page.OutcomeBanner && (
+          <OutcomeBanner
+            heading={page.OutcomeBanner.heading}
+            checklist={page.OutcomeBanner.checklist}
+            buttonText={page.OutcomeBanner.buttonText}
+            bgImage={gradientBg}
+          />
+        )}
+
         {page?.processSteps && (
           <ProcessStages
             heading={page.processSteps.headingText}
@@ -204,18 +199,22 @@ export default function ApplicationPage({ params }: PageProps) {
           description="We've helped many startups and companies design high-quality mobile applications."
         /> */}
 
-        <NewBanner
-          headingLines={[
-            { text: "Want AI that Delivers " },
-            { text: "Measurable ROI, Not Just Experiments?" },
-          ]}
-          imageSrc={page.mobDesignBanner}
-          buttonText="Book a meeting"
-        />
+        {page.NewBanner && (
+          <NewBanner
+            headingLines={page.NewBanner.headingLines}
+            imageSrc={page.mobDesignBanner}
+            buttonText="Book a meeting"
+          />
+        )}
 
         <TechMarqueeComponent />
         {page.qualitySectionData && (
-          <QualitySection features={page.qualitySectionData} />
+          <QualitySection
+            heading={page.qualitySectionData.heading}
+            description={page.qualitySectionData.description}
+            features={page.qualitySectionData.list}
+            columsClass={page.qualitySectionData.columsClass}
+          />
         )}
 
         {page.CloudTimelineData && (

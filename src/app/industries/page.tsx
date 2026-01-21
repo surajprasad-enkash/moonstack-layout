@@ -277,7 +277,7 @@ const Industries = () => {
             { text: "Scale Your Reach" },
             {
               text: " with a World-Class",
-              className: "highlight-text libreItalic",
+              className: " libreItalic",
             },
             { text: " Development solution " },
           ]}

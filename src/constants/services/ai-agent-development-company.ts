@@ -14,6 +14,7 @@ import designer from "@/assets/app-development-images/work-directly.webp"
 import hiring from "@/assets/app-development-images/hiring.webp"
 import delivery from "@/assets/app-development-images/guarante.webp"
 import collaboration from "@/assets/app-development-images/flexible.webp"
+import { color } from "framer-motion"
 
 export const ai: PageData = {
   hero: {
@@ -137,36 +138,66 @@ export const ai: PageData = {
         "Develop advanced agentic AI systems capable of planning, decision-making, and autonomous execution across complex workflows. We can deploy a set of AI agents, each trained to execute a specific task and capable of collaborating with other agents to collectively execute the target task and deliver intended results. ",
     },
   ],
-  qualitySectionData: [
-    {
-      id: 1,
-      title: "Improved Decision Making",
-      icon: collaboration.src,
-      description:
-        "We help you turn your raw business data into valuable insights for accurate, faster, and smarter business decision-making.",
-    },
-    {
-      id: 2,
-      title: "High Efficiency & Accuracy",
-      icon: delivery.src,
-      description:
-        "Our AI solutions and AI agents will enable you to intelligently automate complex processes effortlessly to reduce manual work, delays, and errors, delivering high efficiency and precision.",
-    },
-    {
-      id: 3,
-      title: "Lower Operational Costs",
-      icon: hiring.src,
-      description:
-        "By automating processes and implementing AI agents for multiple tasks, we bring down the workload on your employees and save you from hiring more staff.",
-    },
-    {
-      id: 4,
-      title: "Better Customer Experience",
-      icon: designer.src,
-      description:
-        "Moonstack’s AI developers can boost your customer experience by building AI solutions that offer insight into customer preferences by analyzing their data, recommending products, and instantly resolving customer queries.",
-    },
-  ],
+  qualitySectionData: {
+    heading: [],
+    description: "",
+    columsClass: "",
+    list: [
+      {
+        id: 1,
+        title: "Improved Decision Making",
+        icon: collaboration.src,
+        description:
+          "We help you turn your raw business data into valuable insights for accurate, faster, and smarter business decision-making.",
+      },
+      {
+        id: 2,
+        title: "High Efficiency & Accuracy",
+        icon: delivery.src,
+        description:
+          "Our AI solutions and AI agents will enable you to intelligently automate complex processes effortlessly to reduce manual work, delays, and errors, delivering high efficiency and precision.",
+      },
+      {
+        id: 3,
+        title: "Lower Operational Costs",
+        icon: hiring.src,
+        description:
+          "By automating processes and implementing AI agents for multiple tasks, we bring down the workload on your employees and save you from hiring more staff.",
+      },
+      {
+        id: 4,
+        title: "Better Customer Experience",
+        icon: designer.src,
+        description:
+          "Moonstack’s AI developers can boost your customer experience by building AI solutions that offer insight into customer preferences by analyzing their data, recommending products, and instantly resolving customer queries.",
+      },
+    ],
+  },
+
+  NewBanner: {
+    headingLines: [
+      { text: "Want AI that Delivers " },
+      { text: "Measurable ROI, Not Just Experiments?" },
+    ],
+  },
+  OutcomeBanner: {
+    heading: [
+      { text: "Exploring AI, ", color: "text-white", className: "" },
+      {
+        text: "but Don’t Know Where to Start?",
+        className: "text-white libreItalic font-[400]",
+        color: "",
+      },
+    ],
+    checklist: [
+      "Generative AI & LLM Integration",
+      "Intelligent Business Process Automation",
+      "Predictive Analytics & Forecasting",
+      "Custom Computer Vision & NLP Solutions",
+    ],
+    buttonText: "Talk To Us",
+  },
+
   CloudTimelineData: {
     title: "Insight into Our AI ",
     highlight: "Development Process",

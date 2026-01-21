@@ -19,17 +19,13 @@ export const pwa: PageData = {
   hero: {
     title: [
       {
-        text: " AI Development Company for",
-        color: "text-white",
-      },
-      {
-        text: " Agents & Automation",
+        text: "Create Dynamic PWAs & Custom PWA Development Service",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Build AI agents, copilots, and intelligent automation systems that turn your business chaos into organization-wide productivity and accuracy. We are here to help SaaS companies, startups, and enterprises leverage AI to enhance their product offerings, customer experience, and operational efficiency. ",
+        text: "Transform your web presence with progressive web apps that deliver native app experiences. Our custom PWA development combines speed, reliability, and offline functionality to engage users across all devices.",
         color: "text-white",
       },
     ],
@@ -43,8 +39,8 @@ export const pwa: PageData = {
         href: "/services",
       },
       {
-        label: "Ai agent development company",
-        href: "/services/ai-agent-development-company",
+        label: "PWA Development Company",
+        href: "/services/pwa-development-company",
       },
     ],
   },
@@ -60,159 +56,133 @@ export const pwa: PageData = {
   },
   mobDesignBanner: nativeBannerImg,
 
-  points:
-    "Moonstack’s AI expertise was a game-changer. They engineered a custom predictive layer that cut our manual processing by 45%. Navigating complex security was seamless, delivering an intelligent system that scales with our users. For AI that impacts the bottom line, Moonstack is the premier partner.",
-  highlightText: "cut our manual processing by 45%",
+  points: "",
+  highlightText: "",
 
   leftCardData: [
     {
-      title: "Why Consider AI for Your Business?",
+      title: "Custom Progressive Web App Development Services",
       description:
-        "Manual work, inefficiencies, delayed timelines, human errors, lengthy processes, and lack of transparency in business operations are a thing of the past. Welcome to the AI age, powered by AI agents, copilots, multi-agent workflows, and agentic automation systems that breathe in fresh whiffs of high accuracy and efficiency into your operations. From customer support to sales, marketing, finance, business analytics, logistics management, and compliance, AI solutions are transforming how we work by introducing autonomous and intelligent workflows. Results?",
-      stats: [
-        "66% improvement in employee performance",
-        "2.3x higher revenue growth using AI agents",
-        "70% reduction in repetitive tasks",
-        "30% lower operational costs with AI automation",
-      ],
-      // description2:
-      //   "So, looking to make your business future-ready and get a competitive edge? It's time to think the AI way. We are a leading custom AI development company in India, helping businesses of all sizes build custom AI solutions aligned to their needs. Whether you are looking to build an AI assistant, AI agent, or AI app, we can get you cutting-edge solutions to turn your business into an AI-powered success story.",
+        "Moonstack offers highly advanced PWA solutions in India. Progressive Web Apps provide the benefits of app-like cross-platform performance and responsiveness to any device right from the user’s web browser. This is what makes them the hottest development asset in the market today. At Moonstack, we have the best PWA developers in India who can help you build consistent, functional, and reliable web apps.",
+      stats: [],
+      description2:
+        "The best part about web apps? They do not require any additional downloads or app store visits. As a part of our custom PWA development service in India, we help clients learn how to protect revenue and scale businesses using PWAs. So, if you’re new to PWAs and want an agency with over 15 years of experience to help you develop highly scalable PWAs, be sure to choose our progressive web app development services in India. Contact our team and we can get started on your project stat",
       image: bndimage1.src,
     },
   ],
   solutions: {
     headingContent: [
       {
-        text: "Our",
+        text: "Our Specialities in ",
         color: "text-white",
       },
       {
-        text: " AI Agent Development ",
+        text: "PWS Development",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: " Services",
+        text: "Services ",
         color: "text-white",
       },
     ],
     subHeadingText:
-      "At Moonstack, a credible AI agent development company for business, we are dedicated to delivering sophisticated end-to-end AI product development services to power your business ambitions. Design, build, and deploy AI agent solutions that are robust, scalable, and adaptable to your business needs, industry trends, market sentiment, and customer demands. ",
+      "As the top PWA development company in India, Moonstack has significant experience with PWA development, design, deployment, and maintenance. Here’s an overview of the different speciality services that make up our PWA development service in India.",
   },
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
-      title: "AI Consulting & Strategy",
+      title: "Custom PWA Development",
       description:
-        "Cut through the AI hype and build a clear and execution-ready AI roadmap aligned to your real business needs. Our AI consulting and strategy services for SMEs help identify high-ROI AI agent use cases in your business, select the right LLM, recommend architecture, assess your data readiness, outline success metrics, and draft a plan so your AI investment delivers results.",
+        "Our custom PWA development services are some of the most affordable PWA development services in India. We ensure each aspect of your PWA is optimised for speed and performance across devices with custom code that’s built as per your business requirements and not templates.",
     },
     {
       imgSrc: engagingIcon.src,
-      title: "Custom AI Agent Development",
+      title: "PWA Migration",
       description:
-        "Build custom AI agents tailored to your business logic, tools, and workflows, turning your challenges into opportunities for success. Hire our AI developers to build highly functional and autonomous AI agents capable of processing data, reasoning, executing tasks, and improving on feedback without any human involvement.",
+        "Our PWA migration services in India are curated to help businesses transform existing applications into full-featured PWAs. We ensure each application has its unique set of features, while being perfectly compliant across devices and platforms. Best of all? Our service retains the existing design and data seamlessly.",
     },
 
     {
       imgSrc: brandingIcon.src,
-      title: "AI Agent Support and Maintenance",
+      title: "Secure PWA Development",
       description:
-        "Maintain the reliability and relevance of your AI agents with our ongoing support and maintenance services. Our team ensures your AI agents stay accurate and aligned to your changing business needs and vision. From performance monitoring and optimization to model tuning, knowledge base updates, error handling, security, and compliance, we take care of everything.",
+        "Backend security is one of the most crucial aspects of PWA development. That’s why we offer the most trusted secure PWA development service in India at Moonstack. We ensure your code is secure, and specifically, user information and backend data are safe against breaches.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "RAG & AI Chatbot Development",
+      title: "Fast Loading PWA Development",
       description:
-        "Build a RAG-based AI chatbot on your company's knowledge base to give your employees easy and instant access to accurate data. Our RAG-based AI chatbot development services fine-tune LLM with your documents, databases, and knowledge sources for multiple internal use cases like knowledge base chatbots, PDF chatbots, and Q&A assistants.",
+        "Fine-tuning the performance of a PWA we’re developing is a major part of our backend process. That’s why we’re the premier provider of fast-loading PWA development service in India. We take loading time very seriously while ensuring that our responsive PWA development service in India is able to offer a holistic solution to our clients.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Process Automation Development",
+      title: "UI/UX Design for PWAs",
       description:
-        "Automate and streamline your processes with agentic automations, multi-agent systems, or AI agent workflows for faster processes, lower operational costs, and teams freed to focus on high-value work. Our AI-powered workflow automation for small business solutions combines AI agents with tools and integrations to automate simple to complex and even multi-step workflows. ",
+        "Creating a web app with an immaculate user experience is at the cornerstone of our PWA design and development services in India at Moonstack. We ensure clean navigation and accessibility in all apps we develop across devices, ensuring perfect harmony with our cross-platform PWA development services in India.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Agentic AI Development",
+      title: "QA & Deployment",
       description:
-        "Develop advanced agentic AI systems capable of planning, decision-making, and autonomous execution across complex workflows. We can deploy a set of AI agents, each trained to execute a specific task and capable of collaborating with other agents to collectively execute the target task and deliver intended results. ",
+        "Whether it is deployment assistance and rigorous testing, if you’re looking to hire PWA developers in India, Moonstack can be your help. We handle the entire PWA lifecycle to ensure your app is performing optimally at all times.",
     },
   ],
-  qualitySectionData: [
-    {
-      id: 1,
-      title: "Improved Decision Making",
-      icon: collaboration.src,
-      description:
-        "We help you turn your raw business data into valuable insights for accurate, faster, and smarter business decision-making.",
-    },
-    {
-      id: 2,
-      title: "High Efficiency & Accuracy",
-      icon: delivery.src,
-      description:
-        "Our AI solutions and AI agents will enable you to intelligently automate complex processes effortlessly to reduce manual work, delays, and errors, delivering high efficiency and precision.",
-    },
-    {
-      id: 3,
-      title: "Lower Operational Costs",
-      icon: hiring.src,
-      description:
-        "By automating processes and implementing AI agents for multiple tasks, we bring down the workload on your employees and save you from hiring more staff.",
-    },
-    {
-      id: 4,
-      title: "Better Customer Experience",
-      icon: designer.src,
-      description:
-        "Moonstack’s AI developers can boost your customer experience by building AI solutions that offer insight into customer preferences by analyzing their data, recommending products, and instantly resolving customer queries.",
-    },
-  ],
+  OutcomeBanner: {
+    heading: [
+      { text: "Get Progressive ", color: "text-white", className: "" },
+      {
+        text: "Web App That Delivers ",
+        className: "text-white libreItalic font-[400]",
+        color: "",
+      },
+      { text: " Native Experiences", color: "text-white", className: "" },
+    ],
+    checklist: [
+      "Cross-Platform Compatibility",
+      "Offline Functionality & Fast Loading",
+      "App-Like Features Without Downloads",
+      "Cost-Effective Development",
+    ],
+    buttonText: "Talk To Us",
+  },
+  qualitySectionData: {
+    heading: [],
+    description: "",
+    columsClass: "",
+    list: [],
+  },
   CloudTimelineData: {
-    title: "Insight into Our AI ",
-    highlight: "Development Process",
+    title: "Our Process for Progressive ",
+    highlight: "Web App Development",
     subtitle:
-      "We take an agile, client-centric, and result-driven approach to building AI solutions that resonate with excellence. Focusing on speed, adaptability, and continuous improvement, we move from idea to impact without unnecessary delays or endless revisions.",
+      "As the top PWA development agency in India, our working process relies on transparency. We ensure our production process hinges on personalised and tailored solutions rather than cookie-cutter designs and development. Here’s a brief overview of our working process.",
     steps: [
       {
         number: 1,
-        title: "Discovery & Strategic Insights",
+        title: "Confidentiality Agreement",
         description:
-          "We start by deeply understanding your business, which includes your goals, challenges, and existing systems. Our team evaluates where AI can deliver the most value and reviews your current data and infrastructure. The result is a clear, practical roadmap aligned with your business objectives.",
+          "We provide a promise of confidentiality to all our clients with a signed NDA, ensuring their app idea and development process is safe with our team. We also hit the ground running with a detailed and robust working architecture that involves getting started with our work from the first call itself. This is why we’re the top PWA consulting service in India.",
         position: "left",
       },
       {
         number: 2,
-        title: "Data Collection & Preparation",
+        title: "Development & Prototyping",
         description:
-          "AI is only as good as the data behind it. We gather relevant data from internal and external sources, clean and structure it, and optimize it for performance. Using proven tools and frameworks, we ensure your data is accurate, reliable, and ready to power intelligent models.",
+          "The development process starts with designing the UI and creating the different functions of the app over a scalable architecture and framework. There’s a lot of focus on user experience, which includes ensuring the design is accessible across devices. Ensuring design translation across devices is a big part of our enterprise PWA development service in India at Moonstack.",
         position: "right",
       },
       {
         number: 3,
-        title: "Model Design & Experimentation",
+        title: "Quality Assurance",
         description:
-          "At this stage, we design and test AI models tailored to your specific use case. Whether the solution requires supervised learning, unsupervised learning, or deep learning techniques, we experiment with multiple approaches to identify the most effective model for your needs.",
+          "Moonstack puts every app we build through rigorous quality assurance. This helps us ensure the app’s functionality is not compromised in any situation, especially for core services to create a seamless user experience. Our quality assurance makes us the best agency for PWA development for small businesses in India.",
         position: "left",
       },
       {
         number: 4,
-        title: "Training & Model Optimization",
+        title: "Deployment & Support",
         description:
-          "We train models using real business data and fine-tune them for accuracy, speed, and scalability. Through continuous testing and refinement, we build robust AI systems that can handle complexity and perform reliably in real-world scenarios.",
-        position: "right",
-      },
-      {
-        number: 5,
-        title: "Deployment & System Integration",
-        description:
-          "Once the model is ready, we deploy it seamlessly into your existing environment. Whether on cloud platforms or custom infrastructure, we ensure smooth integration, rigorous testing, and a stable launch, so your AI solution works flawlessly from day one.",
-        position: "left",
-      },
-      {
-        number: 6,
-        title: "Monitoring, Support & Continuous Improvement",
-        description:
-          "After deployment, we continuously monitor performance, track system behavior, and retrain models as new data becomes available. This ensures your AI solution keeps improving and stays aligned with your business as it grows.",
+          "Once the development process is complete, we offer complete deployment support for PWA for e-commerce services in India. This allows businesses to streamline online operations and increase their reach among customers with our PWA deployment and maintenance services.",
         position: "right",
       },
     ],
@@ -220,63 +190,70 @@ export const pwa: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Building AI Solutions," },
+      { text: "Why Choose Us for" },
       {
-        text: " Transforming Industries,",
+        text: " PWA Development?",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: " Creating Real Impact" },
     ],
     description:
-      "Hire our AI developers to build state-of-the-art AI solutions aligned to your industry and supporting your business operations, processes, and strategies. From healthcare to fintech, e-commerce, energy, manufacturing, education, travel, and logistics, we are proficient in helping you realize what artificial intelligence can do for your business and achieve your annual targets like before.",
+      "From offering PWA development for startups in India to developing enterprise PWA solutions, Moonstack has done it all. If you’re still not convinced, here are six reasons why you must choose Moonstack for all your PWA development requirements.",
     cards: [
       {
-        id: "Healthcare",
-        label: "Healthcare",
+        id: "Custom Business Solutions",
+        label: "Custom Business Solutions",
         description:
-          "We offer AI development services for healthcare and clinics, enabling automated administrative processes, quality patient care, faster diagnosis, and better patient outcomes. Our team is adept at developing a wide array of solutions like telemedicine apps, smart real-time monitoring solutions, medical imaging analysis software, AI agents for appointment booking, follow-ups, and patient support, patient data analytics platforms, predictive diagnostic tools, and more.",
+          "We provide tailored services that are custom-built for your business, keeping your requirements in mind. Everything is custom-built from scratch, just for you.",
         variant: "light",
       },
       {
-        id: "Fintech",
+        id: "Performance Focused Architecture",
 
-        label: "Fintech",
+        label: "Performance Focused Architecture",
         description:
-          "As a trusted AI development company for fintech and banking, we equip organizations to offer secure, faster, and smarter banking experiences to users. Our expertise lies in developing AI-powered systems that cater to your business challenges and open new revenue opportunities. This includes fraud detection systems, personalized banking experiences, AI agents for financial advisory & customer support, risk assessment tools, data analytics tools for trading, AI agents for portfolio management, compliance management solutions, credit scoring tools, and AI assistants for loan processing.",
+          "Our development process at Moonstack focuses on optimising code to ensure the app is fast and offers smooth navigation across devices.",
         variant: "accent",
       },
       {
-        id: "e-Commerce",
+        id: "Ensemble Developers",
 
-        label: "e-Commerce",
+        label: "Ensemble Developers",
         description:
-          "At Moonstack, we offer cutting-edge AI solutions for e-commerce companies, helping them enhance customer experience, engage users, run campaigns, manage inventories, and get valuable data insights for strategic business decision-making. This is possible by integrating AI solutions like virtual shopping assistants, AI custom support solutions, inventory forecasting solutions, dynamic pricing solutions, data analytics tools, AI sales agents, and more such smart solutions with our help.",
+          "We work with a team of the most experienced and talented developers with multi-platform development experience. Our experienced team always delivers native app-like performance for PWAs.",
         variant: "dark",
       },
       {
-        id: "Travel",
+        id: "Scalable Solutions",
 
-        label: "Travel",
+        label: "Scalable Solutions",
         description:
-          "Moonstack AI developers are experienced in developing intelligent solutions for the travel and hospitality industry, enabling them to offer memorable guest experiences and achieve operational excellence. We can build AI tools and AI agents for room booking, personalized travel support, itinerary creation, predictive maintenance, dynamic pricing, and business analytics.",
+          "Scalability is a factor that limits many PWAs. This is why we always build our PWAs on scalable platforms, which allow future expansion without complete redevelopment.",
         variant: "dark",
       },
       {
-        id: "Education",
+        id: "24/7 Support",
 
-        label: "Education",
+        label: "24/7 Support",
         description:
-          "Our AI developers bring in their technical expertise and years of experience in building robust smart solutions for the education sector, enhancing overall learning experience, quality, and process. Be it AI teaching assistants, student performance analytics tools, scoring tools, mock exam platforms, AI assistants for admission help, or AI agents to automate administrative tasks, we can do all.",
+          "Need to discuss updates regarding your project? Our team is always available to discuss and talk to you. Never be in the dark when you choose Moonstack.",
         variant: "light",
       },
       {
-        id: "Logistics",
+        id: "Proven Experience Across Industries",
 
-        label: "Logistics",
+        label: "Proven Experience Across Industries",
         description:
-          "Our AI development services are here to make your logistics processes streamlined, automated, seamless, and on time. What our developers can do for your logistics company can transform it from a chaotic business to a system of effortless workflows. With route optimization solutions, real-time fleet tracking systems, analytics tools, AI agents for vendor management, and demand forecasting tools, we are here to help you welcome AI-backed logistics where there is no space for delays, manual work, human errors, or missed consignments, just high efficiency. ",
+          "We have worked with businesses like startups, MNCs, and everything in between across industries. Our proven track record allows us to be the best PWA development agency in India.",
         variant: "accent",
       },
+    ],
+  },
+  NewBanner: {
+    headingLines: [
+      {
+        text: "Build Scalable PWAs For Your Business: Hire our professional developers now",
+      },
+      { text: "" },
     ],
   },
   // processSteps: {
@@ -300,29 +277,29 @@ export const pwa: PageData = {
 
   accordionData: [
     {
-      question: "How much does Android app development cost in India?",
+      question: "What is the cost of PWA development in India?",
       answer:
-        "The actual development cost of an Android app depends on the app’s purpose, technology stack, features, and scale. For a quick quotation, feel free to reach out to our team at Moonstack.",
+        "The cost of PWA development in India depends on your requirements and whether you have an existing app or not. Migration projects are less costly compared to full-fledged development projects. You can get a free quote from Moonstack for your PWA requirements. So feel free to contact us today.",
     },
     {
-      question: "Will AI replace Android developers in India?",
+      question: "How long does it take to develop PWAs?",
       answer:
-        "No, while AI is gradually becoming a good tool that can assist developers, it is not advanced enough to replace Android developers in India.",
+        "A full PWA development takes one or two months when building from scratch. Migration projects can take less time than that, depending on your requirements. However, no matter your requirement, if you have a timeline, Moonstack can try its best to meet your deadlines.",
     },
     {
-      question: "Which is the best Android app development company in India?",
+      question: "Can Moonstack migrate my existing app into a PWA?",
       answer:
-        "Moonstack. We pride ourselves on being the best Android app development company in India, thanks to our years of experience developing popular Android apps that are downloaded and loved by millions of users.",
+        "Yes, it is called migrating the application, and Moonstack offers dedicated PWA migration services in India. We can help you transform your existing application into a fully-functioning PWA without changing its design or functionalities.",
     },
     {
-      question: "Can Moonstack develop Android e-commerce applications?",
+      question: "Are PWAs accessible across devices?",
       answer:
-        "Yes, we can help you build completely custom e-commerce Android applications, complete with payment gateway integration and even chat support.",
+        "Yes, PWAs are accessible across devices and even feature offline functionality right from your web browser. For more information about PWAs, feel free to reach out to our team at Moonstack.",
     },
     {
-      question: "How long does it take to develop an Android app?",
+      question: "What is the best platform for PWA development?",
       answer:
-        "The timeline for app development depends on various factors; however, the development process can generally take between a few weeks to a few months, based on underlying factors.",
+        "Most PWAs are developed using strong and capable platforms like React, Vue.js, or Angular. The build platform is decided based on the type of PWA you require. The best part is that all of the popular PWA development platforms allow businesses to build scalable PWAs.",
     },
   ],
 

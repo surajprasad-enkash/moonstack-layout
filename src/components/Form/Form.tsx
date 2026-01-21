@@ -106,7 +106,7 @@ export default function Form({ formName }: FormProps) {
             htmlFor="fullname"
             className="absolute top-3 left-0 cursor-text text-sm font-[500] text-[#000] transition-all peer-not-placeholder-shown:-top-[10px] peer-not-placeholder-shown:bg-white peer-not-placeholder-shown:text-xs peer-focus:-top-[10px] peer-focus:bg-white peer-focus:text-xs"
           >
-            Frist Name<span className="text-[red]">*</span>
+            Full Name<span className="text-[red]">*</span>
           </label>
           {errors.fullname && (
             <p className="absolute bottom-[-18px] !text-[12px] text-[red]">

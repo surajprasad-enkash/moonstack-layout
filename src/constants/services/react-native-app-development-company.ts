@@ -14,22 +14,19 @@ import designer from "@/assets/app-development-images/work-directly.webp"
 import hiring from "@/assets/app-development-images/hiring.webp"
 import delivery from "@/assets/app-development-images/guarante.webp"
 import collaboration from "@/assets/app-development-images/flexible.webp"
+import { color } from "framer-motion"
 
 export const react_native: PageData = {
   hero: {
     title: [
       {
-        text: " AI Development Company for",
-        color: "text-white",
-      },
-      {
-        text: " Agents & Automation",
+        text: "Expert React Native app  Development Service Provider",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Build AI agents, copilots, and intelligent automation systems that turn your business chaos into organization-wide productivity and accuracy. We are here to help SaaS companies, startups, and enterprises leverage AI to enhance their product offerings, customer experience, and operational efficiency. ",
+        text: "Modern Mobile Engineering for the Cross-Platform Era. We provide end-to-end React Native services designed to maximize ROI and user engagement.",
         color: "text-white",
       },
     ],
@@ -43,8 +40,8 @@ export const react_native: PageData = {
         href: "/services",
       },
       {
-        label: "Ai agent development company",
-        href: "/services/ai-agent-development-company",
+        label: "React Native  App  development  company",
+        href: "/services/react-native-app-development-company",
       },
     ],
   },
@@ -61,158 +58,142 @@ export const react_native: PageData = {
   mobDesignBanner: nativeBannerImg,
 
   points:
-    "Moonstack’s AI expertise was a game-changer. They engineered a custom predictive layer that cut our manual processing by 45%. Navigating complex security was seamless, delivering an intelligent system that scales with our users. For AI that impacts the bottom line, Moonstack is the premier partner.",
-  highlightText: "cut our manual processing by 45%",
+    "15 years of experience really shows. Moonstack transformed our complex app idea into a sleek React Native reality. By using a single codebase, they made our long-term maintenance easier and significantly more affordable. Secure, scalable, and beautifully designed—Moonstack is easily the top React Native agency in India.",
+  highlightText: "single codebase",
 
   leftCardData: [
     {
-      title: "Why Consider AI for Your Business?",
+      title: "Globally Leading React Native Development Partner",
       description:
-        "Manual work, inefficiencies, delayed timelines, human errors, lengthy processes, and lack of transparency in business operations are a thing of the past. Welcome to the AI age, powered by AI agents, copilots, multi-agent workflows, and agentic automation systems that breathe in fresh whiffs of high accuracy and efficiency into your operations. From customer support to sales, marketing, finance, business analytics, logistics management, and compliance, AI solutions are transforming how we work by introducing autonomous and intelligent workflows. Results?",
-      stats: [
-        "66% improvement in employee performance",
-        "2.3x higher revenue growth using AI agents",
-        "70% reduction in repetitive tasks",
-        "30% lower operational costs with AI automation",
-      ],
-      // description2:
-      //   "So, looking to make your business future-ready and get a competitive edge? It's time to think the AI way. We are a leading custom AI development company in India, helping businesses of all sizes build custom AI solutions aligned to their needs. Whether you are looking to build an AI assistant, AI agent, or AI app, we can get you cutting-edge solutions to turn your business into an AI-powered success story.",
+        "In 2025, we recommend our cross-platform app development service in India to all our clients. Dedicated and separate native development of both platforms can be excessively time-consuming, expensive, and offer a different user experience to users across different platforms. That’s why we develop custom React Native applications in India that function seamlessly across Android and iOS devices as they feature the same codebase.",
+      stats: [],
+      description2:
+        "With over 15 years of experience and 450+ completed projects, Moonstack shines as the top React Native app development company in India. We thrive in building highly functional apps that feature an intuitive design, a UX-focused front-end, secure user data storage, and a scalable framework. Armed with the best React Native app developers in India, Moonstack is ready to help your business build multi-platform apps on a budget. Contact us today, and we can help you get started.",
       image: bndimage1.src,
     },
   ],
   solutions: {
     headingContent: [
       {
-        text: "Our",
+        text: "Our Specialities In",
         color: "text-white",
       },
       {
-        text: " AI Agent Development ",
+        text: " React Native",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: " Services",
+        text: " Service",
         color: "text-white",
       },
     ],
     subHeadingText:
-      "At Moonstack, a credible AI agent development company for business, we are dedicated to delivering sophisticated end-to-end AI product development services to power your business ambitions. Design, build, and deploy AI agent solutions that are robust, scalable, and adaptable to your business needs, industry trends, market sentiment, and customer demands. ",
+      "What makes Moonstack the top React Native development agency in India? It is our focus on specialised services that are built to offer maximum value to our clients. Here’s a peek at what we offer as part of our services for React Native mobile solutions in India.",
   },
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
-      title: "AI Consulting & Strategy",
+      title: "Cross-Platform App Development",
       description:
-        "Cut through the AI hype and build a clear and execution-ready AI roadmap aligned to your real business needs. Our AI consulting and strategy services for SMEs help identify high-ROI AI agent use cases in your business, select the right LLM, recommend architecture, assess your data readiness, outline success metrics, and draft a plan so your AI investment delivers results.",
+        "The most important part of React Native app development is working on cross-platform compatibility. That’s why we at Moonstack hire the top React Native developers in India who have real-world experience in React Native building. This allows us to create apps that offer seamless access to users across platforms like Web, Android, and iOS.",
     },
     {
       imgSrc: engagingIcon.src,
-      title: "Custom AI Agent Development",
+      title: "Custom App Design & Development",
       description:
-        "Build custom AI agents tailored to your business logic, tools, and workflows, turning your challenges into opportunities for success. Hire our AI developers to build highly functional and autonomous AI agents capable of processing data, reasoning, executing tasks, and improving on feedback without any human involvement.",
+        "At Moonstack, we take custom development very seriously. As the best affordable React Native development service in India, we provide more value than any other agency by creating entire codebases from scratch. This helps our applications have fewer bugs or glitches because our team is familiar with the entire codebase. So, if you want to hire React Native developers in India, choose Moonstack to build with confidence.",
     },
 
     {
       imgSrc: brandingIcon.src,
-      title: "AI Agent Support and Maintenance",
+      title: "Cross-Platform UX Design",
       description:
-        "Maintain the reliability and relevance of your AI agents with our ongoing support and maintenance services. Our team ensures your AI agents stay accurate and aligned to your changing business needs and vision. From performance monitoring and optimization to model tuning, knowledge base updates, error handling, security, and compliance, we take care of everything.",
+        "When applications are built natively and independently of each other, they can have vastly different UIs and UX for users. This is not good for brand consistency, and that’s why always prioritise cross-platform UX while building apps. Our key design strategy as the top company for React Native UI/UX design in India is to build apps that are accessible, easily navigable, and suit our clients’ brand image across platforms. This focus on cross-platform accessibility is the reason we’re the top React Native developers in India.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "RAG & AI Chatbot Development",
+      title: "Clean Backend Code & API Integrations",
       description:
-        "Build a RAG-based AI chatbot on your company's knowledge base to give your employees easy and instant access to accurate data. Our RAG-based AI chatbot development services fine-tune LLM with your documents, databases, and knowledge sources for multiple internal use cases like knowledge base chatbots, PDF chatbots, and Q&A assistants.",
+        "Cross-platform builds come with their significant challenges of maintaining the privacy, security, and quality standards of every platform. So, it is crucial to have clean backend code in cross-platform apps for added security and a lower risk of data breach. This is something we always follow as the top agency with React Native developers for startups in India.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Process Automation Development",
+      title: "Launch Support & Future Maintenance",
       description:
-        "Automate and streamline your processes with agentic automations, multi-agent systems, or AI agent workflows for faster processes, lower operational costs, and teams freed to focus on high-value work. Our AI-powered workflow automation for small business solutions combines AI agents with tools and integrations to automate simple to complex and even multi-step workflows. ",
+        "Our React Native maintenance services in India are robust and offer complete launch support for every app we build. We ensure your apps are deployed in the respective Play Store and App Store with optimised listing pages for search engine performance. Our services also include future maintenance and compatibility coverage for future Android and iOS versions.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Agentic AI Development",
+      title: "React Native Migration",
       description:
-        "Develop advanced agentic AI systems capable of planning, decision-making, and autonomous execution across complex workflows. We can deploy a set of AI agents, each trained to execute a specific task and capable of collaborating with other agents to collectively execute the target task and deliver intended results. ",
+        "We offer a full-fledged React Native migration service in India as well for businesses that have existing applications and just want to migrate them to React Native for seamless cross-platform functionality and accessibility. Our services improve the app’s performance and ensure the applications are scalable for future expansions. It also helps reduce long-term costs associated with Native app development, maintenance, and updates.",
     },
   ],
-  qualitySectionData: [
-    {
-      id: 1,
-      title: "Improved Decision Making",
-      icon: collaboration.src,
-      description:
-        "We help you turn your raw business data into valuable insights for accurate, faster, and smarter business decision-making.",
-    },
-    {
-      id: 2,
-      title: "High Efficiency & Accuracy",
-      icon: delivery.src,
-      description:
-        "Our AI solutions and AI agents will enable you to intelligently automate complex processes effortlessly to reduce manual work, delays, and errors, delivering high efficiency and precision.",
-    },
-    {
-      id: 3,
-      title: "Lower Operational Costs",
-      icon: hiring.src,
-      description:
-        "By automating processes and implementing AI agents for multiple tasks, we bring down the workload on your employees and save you from hiring more staff.",
-    },
-    {
-      id: 4,
-      title: "Better Customer Experience",
-      icon: designer.src,
-      description:
-        "Moonstack’s AI developers can boost your customer experience by building AI solutions that offer insight into customer preferences by analyzing their data, recommending products, and instantly resolving customer queries.",
-    },
-  ],
+  qualitySectionData: {
+    heading: [],
+    description: "",
+    columsClass: "",
+    list: [],
+  },
+  NewBanner: {
+    headingLines: [
+      { text: "Scale Your Business With Our React Native Apps Developers " },
+    ],
+  },
+  OutcomeBanner: {
+    heading: [
+      {
+        text: "Build Once, Reach Everyone: Your",
+        color: "text-white",
+        className: "",
+      },
+      {
+        text: " Expert React Native Partner",
+        className: "text-white libreItalic font-[400]",
+        color: "",
+      },
+    ],
+    checklist: [
+      "Cross-Platform Mastery",
+      "Rapid Development Cycles",
+      "Native-Like UI & Performance",
+      "Cost-Efficiency & Scalability",
+    ],
+    buttonText: "Start Your Project Today",
+  },
+
   CloudTimelineData: {
-    title: "Insight into Our AI ",
-    highlight: "Development Process",
+    title: "Our Process in providing",
+    highlight: " React Native Development Service",
     subtitle:
-      "We take an agile, client-centric, and result-driven approach to building AI solutions that resonate with excellence. Focusing on speed, adaptability, and continuous improvement, we move from idea to impact without unnecessary delays or endless revisions.",
+      "Moonstack is the trusted partner for React Native enterprise app development in India across industries. Our success can be attributed to our working process, which is built around transparency and confidentiality. What sets us apart? Find out here.",
     steps: [
       {
         number: 1,
-        title: "Discovery & Strategic Insights",
+        title: "Crucial Pre-Work Formalities",
         description:
-          "We start by deeply understanding your business, which includes your goals, challenges, and existing systems. Our team evaluates where AI can deliver the most value and reviews your current data and infrastructure. The result is a clear, practical roadmap aligned with your business objectives.",
+          "When you choose Moonstack, we want to build a relationship with our clients that’s built around mutual trust. So, along with our project contract, we also provide a signed NDA from our side to the client, offering complete secrecy for their app idea when and after they’re working with us. This is the most crucial part of our working partnership with every client.",
         position: "left",
       },
       {
         number: 2,
-        title: "Data Collection & Preparation",
+        title: "Idea Discussion & Scope of Work",
         description:
-          "AI is only as good as the data behind it. We gather relevant data from internal and external sources, clean and structure it, and optimize it for performance. Using proven tools and frameworks, we ensure your data is accurate, reliable, and ready to power intelligent models.",
+          "Once the formalities are complete, we extensively discuss the app idea with our clients, trying to understand their requirements, the app’s goal and functionality. We also create a visual framework for the app’s navigation and functioning that will allow the client to clearly see their idea laid out and green signal for final production.",
         position: "right",
       },
       {
         number: 3,
-        title: "Model Design & Experimentation",
+        title: "App Design & Development",
         description:
-          "At this stage, we design and test AI models tailored to your specific use case. Whether the solution requires supervised learning, unsupervised learning, or deep learning techniques, we experiment with multiple approaches to identify the most effective model for your needs.",
+          "During production as a part of our service for React Native prototype development in India, we create a proof of concept or Minimum Viable Product for our clients. It helps them stay up-to-date with our production process. This also helps us make changes and add features on a regular basis without disrupting the workflow or causing errors in the code.",
         position: "left",
       },
       {
         number: 4,
-        title: "Training & Model Optimization",
+        title: "Launch and Post-launch Support",
         description:
-          "We train models using real business data and fine-tune them for accuracy, speed, and scalability. Through continuous testing and refinement, we build robust AI systems that can handle complexity and perform reliably in real-world scenarios.",
-        position: "right",
-      },
-      {
-        number: 5,
-        title: "Deployment & System Integration",
-        description:
-          "Once the model is ready, we deploy it seamlessly into your existing environment. Whether on cloud platforms or custom infrastructure, we ensure smooth integration, rigorous testing, and a stable launch, so your AI solution works flawlessly from day one.",
-        position: "left",
-      },
-      {
-        number: 6,
-        title: "Monitoring, Support & Continuous Improvement",
-        description:
-          "After deployment, we continuously monitor performance, track system behavior, and retrain models as new data becomes available. This ensures your AI solution keeps improving and stays aligned with your business as it grows.",
+          "After the development and testing, we complete our React Native app performance optimisation in India to the gleaming approval of our clients. Post development, it's just about deploying the application on relevant app stores and optimising the listing for better search engine indexing. We also offer detailed post-launch support and app maintenance services.",
         position: "right",
       },
     ],
@@ -220,62 +201,62 @@ export const react_native: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Building AI Solutions," },
+      { text: "Why Choose Moonstack for your" },
       {
-        text: " Transforming Industries,",
+        text: " React Native",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: " Creating Real Impact" },
+      { text: " Project?" },
     ],
     description:
-      "Hire our AI developers to build state-of-the-art AI solutions aligned to your industry and supporting your business operations, processes, and strategies. From healthcare to fintech, e-commerce, energy, manufacturing, education, travel, and logistics, we are proficient in helping you realize what artificial intelligence can do for your business and achieve your annual targets like before.",
+      "Moonstack is the premier React Native development agency in India, and here are six ways we offer more value to our clients than the competition.",
     cards: [
       {
-        id: "Healthcare",
-        label: "Healthcare",
+        id: "15 Years of Industry Experience",
+        label: "15 Years of Industry Experience",
         description:
-          "We offer AI development services for healthcare and clinics, enabling automated administrative processes, quality patient care, faster diagnosis, and better patient outcomes. Our team is adept at developing a wide array of solutions like telemedicine apps, smart real-time monitoring solutions, medical imaging analysis software, AI agents for appointment booking, follow-ups, and patient support, patient data analytics platforms, predictive diagnostic tools, and more.",
+          "We have 15+ years of hands-on experience at Moonstack. Our expertise ranges across industries with a solid track record of helping businesses scale with our app development services.",
         variant: "light",
       },
       {
-        id: "Fintech",
+        id: "Truly Custom App Builds",
 
-        label: "Fintech",
+        label: "Truly Custom App Builds",
         description:
-          "As a trusted AI development company for fintech and banking, we equip organizations to offer secure, faster, and smarter banking experiences to users. Our expertise lies in developing AI-powered systems that cater to your business challenges and open new revenue opportunities. This includes fraud detection systems, personalized banking experiences, AI agents for financial advisory & customer support, risk assessment tools, data analytics tools for trading, AI agents for portfolio management, compliance management solutions, credit scoring tools, and AI assistants for loan processing.",
+          "Moonstack delivers completely custom app builds made from scratch by our experienced React Native developers. We never use templates or shortcuts when it comes to client projects.",
         variant: "accent",
       },
       {
-        id: "e-Commerce",
+        id: "End-to-end Service",
 
-        label: "e-Commerce",
+        label: "End-to-end Service",
         description:
-          "At Moonstack, we offer cutting-edge AI solutions for e-commerce companies, helping them enhance customer experience, engage users, run campaigns, manage inventories, and get valuable data insights for strategic business decision-making. This is possible by integrating AI solutions like virtual shopping assistants, AI custom support solutions, inventory forecasting solutions, dynamic pricing solutions, data analytics tools, AI sales agents, and more such smart solutions with our help.",
+          "An app that’s easy to use is one that users come back to. We ensure our app designs are intuitive, clean, and offer functionality with convenience to users.We provide complete development solutions for startups and enterprises, from developing a proof-of-concept to deploying complete cross-platform React Native applications to app stores.",
         variant: "dark",
       },
       {
-        id: "Travel",
+        id: "Experienced Team",
 
-        label: "Travel",
+        label: "Experienced Team",
         description:
-          "Moonstack AI developers are experienced in developing intelligent solutions for the travel and hospitality industry, enabling them to offer memorable guest experiences and achieve operational excellence. We can build AI tools and AI agents for room booking, personalized travel support, itinerary creation, predictive maintenance, dynamic pricing, and business analytics.",
+          "We work with the top React Native developers in India. Our team functions as one with industry-leading experts from each field collaborating to build top-tier React Native applications.",
         variant: "dark",
       },
       {
-        id: "Education",
+        id: "Client-Centric Approach",
 
-        label: "Education",
+        label: "Client-Centric Approach",
         description:
-          "Our AI developers bring in their technical expertise and years of experience in building robust smart solutions for the education sector, enhancing overall learning experience, quality, and process. Be it AI teaching assistants, student performance analytics tools, scoring tools, mock exam platforms, AI assistants for admission help, or AI agents to automate administrative tasks, we can do all.",
+          "Our focus on every project is to create applications that fit our client’s business goals without fail.",
         variant: "light",
       },
       {
-        id: "Logistics",
+        id: "Quick Development Timeline",
 
-        label: "Logistics",
+        label: "Quick Development Timeline",
         description:
-          "Our AI development services are here to make your logistics processes streamlined, automated, seamless, and on time. What our developers can do for your logistics company can transform it from a chaotic business to a system of effortless workflows. With route optimization solutions, real-time fleet tracking systems, analytics tools, AI agents for vendor management, and demand forecasting tools, we are here to help you welcome AI-backed logistics where there is no space for delays, manual work, human errors, or missed consignments, just high efficiency. ",
-        variant: "accent",
+          "Our React Native app development services in India offer a quick development timeline thanks to our team’s experience and React Native’s multi-platform building capabilities.",
+        variant: "dark",
       },
     ],
   },
@@ -300,29 +281,31 @@ export const react_native: PageData = {
 
   accordionData: [
     {
-      question: "How much does Android app development cost in India?",
+      question:
+        "Which is the best React Native app development company in India?",
       answer:
-        "The actual development cost of an Android app depends on the app’s purpose, technology stack, features, and scale. For a quick quotation, feel free to reach out to our team at Moonstack.",
+        "Moonstack is the best React Native app development company in India. We have 15 years of experience and have completed 450+ app development projects. We have thorough experience in React Native development and offer affordable React Native development services in India.",
     },
     {
-      question: "Will AI replace Android developers in India?",
+      question: "Which popular apps have been built using React Native?",
       answer:
-        "No, while AI is gradually becoming a good tool that can assist developers, it is not advanced enough to replace Android developers in India.",
+        "Many of the popular apps that you use on a daily basis have been developed using React Native, starting with the biggest names such as Facebook, Instagram, Twitter, and Netflix.",
     },
     {
-      question: "Which is the best Android app development company in India?",
+      question: "Which is better, React Native or Flutter?",
       answer:
-        "Moonstack. We pride ourselves on being the best Android app development company in India, thanks to our years of experience developing popular Android apps that are downloaded and loved by millions of users.",
+        "Both platforms are very strong and offer excellent cross-platform development access. The one you choose depends largely on your requirements and preferences.",
     },
     {
-      question: "Can Moonstack develop Android e-commerce applications?",
+      question: "Are React Native apps secure and bug-free?",
       answer:
-        "Yes, we can help you build completely custom e-commerce Android applications, complete with payment gateway integration and even chat support.",
+        "Yes, as the platform that was used to build multi-billion dollar applications like Facebook, Instagram, and Twitter, it is safe to say React Native apps can be safe and bug-free. Especially when you work with the right agency like Moonstack.",
     },
     {
-      question: "How long does it take to develop an Android app?",
+      question:
+        "Is it better to choose Native app development or React Native app development?",
       answer:
-        "The timeline for app development depends on various factors; however, the development process can generally take between a few weeks to a few months, based on underlying factors.",
+        "Native app development offers more system-specific development features, while React Native focuses on cross-platform compatibility. Each has its pros and cons; the better option depends solely on your requirements.",
     },
   ],
 
