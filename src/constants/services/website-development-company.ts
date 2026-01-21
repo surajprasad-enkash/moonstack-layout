@@ -40,8 +40,8 @@ export const websiteDevelopment: PageData = {
         href: "/services",
       },
       {
-        label: "React Native  App  development  company",
-        href: "/services/react-native-app-development-company",
+        label: "Website Development",
+        href: "/services/website-development-company",
       },
     ],
   },

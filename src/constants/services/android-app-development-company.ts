@@ -43,8 +43,8 @@ export const android: PageData = {
         href: "/services",
       },
       {
-        label: "Ai agent development company",
-        href: "/services/ai-agent-development-company",
+        label: "Android Application Development",
+        href: "/services/android-app-development-company",
       },
     ],
   },
