@@ -34,6 +34,7 @@ import { mobileAppDev } from "./mobile-app-development-company"
 
 import type { PageData } from "@/types/web-development-data-type"
 import { websiteDevelopment } from "./website-development-company"
+import { python } from "./python-development-company"
 
 export type TPageKeys =
   | "ecommerce"
@@ -70,6 +71,7 @@ export type TPageKeys =
   | "vueJs"
   | "websiteDevelopment"
   | "mobileAppDev"
+  | "python"
 
 export const pagesData: Record<TPageKeys, PageData> = {
   ecommerce: ecommerce,
@@ -106,6 +108,7 @@ export const pagesData: Record<TPageKeys, PageData> = {
   testing: testing,
   mobileAppDev: mobileAppDev,
   websiteDevelopment: websiteDevelopment,
+  python: python,
 }
 
 export const pagesKeys: Record<string, TPageKeys> = {
@@ -144,4 +147,5 @@ export const pagesKeys: Record<string, TPageKeys> = {
   "php-development-company": "php",
   "mobile-app-development-company": "mobileAppDev",
   "website-development-company": "websiteDevelopment",
+  "python-development-company": "python",
 }

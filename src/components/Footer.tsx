@@ -1,32 +1,30 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import moment from "moment";
-import Link from "next/link";
+"use client"
+import React from "react"
+import Image from "next/image"
+import moment from "moment"
+import Link from "next/link"
 
 /* Assets */
-import logo from "@/assets/logo-white.png";
-import upwork from "@/assets/home/upwork.svg";
-import clutch from "@/assets/home/clutch.svg";
-import facebook from "@/assets/footer/Facebook.svg";
-import linkedin from "@/assets/footer/linkdin.svg";
-import twitter from "@/assets/footer/twitter.svg";
-import instagram from "@/assets/footer/instagram.svg";
-
-
+import logo from "@/assets/logo-white.png"
+import upwork from "@/assets/home/upwork.svg"
+import clutch from "@/assets/home/clutch.svg"
+import facebook from "@/assets/footer/Facebook.svg"
+import linkedin from "@/assets/footer/linkdin.svg"
+import twitter from "@/assets/footer/twitter.svg"
+import instagram from "@/assets/footer/instagram.svg"
 
 // BIG moonstack image
-import moonstackText from "@/assets/footer/moonstack.svg";
+import moonstackText from "@/assets/footer/moonstack.svg"
 
-import footerBg from "@/assets/footer/newbg.svg";
-import HoverSlideText from "./HoverSlideText";
+import footerBg from "@/assets/footer/newbg.svg"
+import HoverSlideText from "./HoverSlideText"
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="pageFooter">
         {/* TOP SECTION */}
-        <div className="footerTop mt-[-2px] relative z-5 bg-black bg-cover bg-center px-5 py-20">
+        <div className="footerTop relative z-5 mt-[-2px] bg-black bg-cover bg-center px-5 py-20">
           {footerBg && (
             <Image
               src={footerBg.src}
@@ -83,20 +81,26 @@ const Footer = () => {
                     </h4>
                     <ul className="footerMenu text-[#fff]">
                       <li>
-                        <Link href="/services/angular" className="inline-block">
+                        <Link
+                          href="services/angularjs-development-company"
+                          className="inline-block"
+                        >
                           <HoverSlideText text="Angular" />
                         </Link>
                       </li>
 
                       <li>
-                        <Link href="/services/vue-js" className="inline-block">
+                        <Link
+                          href="/services/vuejs-development-company"
+                          className="inline-block"
+                        >
                           <HoverSlideText text="Vue.JS" />
                         </Link>
                       </li>
 
                       <li>
                         <Link
-                          href="/services/react-js"
+                          href="/services/reactjs-development-company"
                           className="inline-block"
                         >
                           <HoverSlideText text="ReactJs" />
@@ -105,20 +109,23 @@ const Footer = () => {
 
                       <li>
                         <Link
-                          href="/services/Wordpress"
+                          href="/services/wordpress-website-development-company"
                           className="inline-block"
                         >
                           <HoverSlideText text="Wordpress" />
                         </Link>
                       </li>
                       <li>
-                        <Link href="/services/shopify" className="inline-block">
+                        <Link
+                          href="/services/shopify-website-development-company"
+                          className="inline-block"
+                        >
                           <HoverSlideText text="Shopify" />
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/services/web-designing"
+                          href="/services/web-designing-company"
                           className="inline-block"
                         >
                           <HoverSlideText text="Web Designing" />
@@ -126,7 +133,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          href="/services/e-commerce"
+                          href="/services/ecommerce-website-development-company"
                           className="inline-block"
                         >
                           <HoverSlideText text="E-Commerce" />
@@ -141,42 +148,60 @@ const Footer = () => {
                     </h4>
                     <ul className="footerMenu text-[#fff]">
                       <li>
-                        <Link href="/services/dotnet" className="inline-block">
+                        <Link
+                          href="/services/dotnet-development-company"
+                          className="inline-block"
+                        >
                           <HoverSlideText text=".NET" />
                         </Link>
                       </li>
 
                       <li>
-                        <Link href="/services/nodejs" className="inline-block">
+                        <Link
+                          href="/services/nodejs-development-company"
+                          className="inline-block"
+                        >
                           <HoverSlideText text="Node Js" />
                         </Link>
                       </li>
 
                       <li>
-                        <Link href="/setvices/php" className="inline-block">
+                        <Link
+                          href="/setvices/php-development-company"
+                          className="inline-block"
+                        >
                           <HoverSlideText text="PHP" />
                         </Link>
                       </li>
                       <li>
-                        <Link href="/setvices/laravel" className="inline-block">
+                        <Link
+                          href="/setvices/laravel-website-development-company"
+                          className="inline-block"
+                        >
                           <HoverSlideText text="Laravel" />
                         </Link>
                       </li>
                       <li>
-                        <Link href="/setvices/python" className="inline-block">
+                        <Link
+                          href="/setvices/python-development-company"
+                          className="inline-block"
+                        >
                           <HoverSlideText text="Python" />
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/setvices/codeigniter"
+                          href="/setvices/codeigniter-development-company"
                           className="inline-block"
                         >
                           <HoverSlideText text="CodeIgniter" />
                         </Link>
                       </li>
                       <li>
-                        <Link href="/setvices/java" className="inline-block">
+                        <Link
+                          href="/setvices/java-development-company"
+                          className="inline-block"
+                        >
                           <HoverSlideText text="Java" />
                         </Link>
                       </li>
@@ -198,12 +223,12 @@ const Footer = () => {
                           <HoverSlideText text="Contact Us" />
                         </Link>
                       </li>
-
+                      {/* 
                       <li>
                         <Link href="/careers" className="inline-block">
                           <HoverSlideText text="Careers" />
                         </Link>
-                      </li>
+                      </li> */}
 
                       <li>
                         <Link href="/blogs" className="inline-block">
@@ -306,7 +331,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

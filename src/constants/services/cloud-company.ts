@@ -20,13 +20,13 @@ export const cloud: PageData = {
   hero: {
     title: [
       {
-        text: "Laravel Website Development Service Provider",
+        text: "Moonstack: Trusted Cloud Service Providers in India and USA",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Need a fast, secure, and scalable web solution? Our Laravel development services deliver enterprise-grade applications with clean code, optimal performance, and seamless functionality.",
+        text: "",
         color: "text-white",
       },
     ],
@@ -40,8 +40,8 @@ export const cloud: PageData = {
         href: "/services",
       },
       {
-        label: "Laravel",
-        href: "/services/laravel-website-development-company",
+        label: "Cloud",
+        href: "/services/cloud-company",
       },
     ],
   },
@@ -61,17 +61,7 @@ export const cloud: PageData = {
     "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
   highlightText: "The application is scalable",
 
-  leftCardData: [
-    {
-      title: "Transform Your Business with Custom Laravel Solutions",
-      description:
-        "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",
-      stats: [],
-      description2:
-        "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
-      image: bndimage1.src,
-    },
-  ],
+  leftCardData: [],
   solutions: {
     headingContent: [
       {
@@ -93,40 +83,22 @@ export const cloud: PageData = {
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
-      title: "Laravel Consulting Services",
+      title: "We will maintain your website by our extensive cloud service",
       description:
-        "Bring your idea into reality with the right strategy and roadmap with Laravel web experts. Our Moonstack’s expert Laravel consulting professionals will understand your business needs and provide you with the right development strategy to deliver secure and scalable Laravel solutions in the market.",
+        "Cloud services have already had a great impact on the digital transformation worldwide. However, businesses face new hurdles, questions, and considerations when they want to adopt cloud services, compared to traditional IT services.",
     },
     {
       imgSrc: engagingIcon.src,
-      title: "Custom Laravel Website Development Service",
+      title: "Cloud-Based Services in India and USA",
       description:
-        "We build high performance, secure, and functional custom Laravel web apps in India. We develop custom  Laravel websites for clients as per their business requirements. Our Laravel web development experts understand the gap in your operational process  and integrate modern features to meet latest business demands. ",
+        "We are one of the most reliable and top cloud service providers in India, aiming to optimize your business processes. Moonstack, a trusted cloud server service provider, delivers pioneering and efficient solutions for you to be able to handle your data and applications well. Our team is proficient in offering you various cloud-based services to help you transform your business. Moonstack, one of the leading cloud service providers in USA, has several cloud server solutions for efficient and high performing servers. It’s vital to note that our cloud servers are optimized for demanding applications; they offer all the possibilities your business wants for development.",
     },
 
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Custom  E-Commerce Development Services ",
+      title: "Streamline Your Business with DBaaS and PaaS Solutions",
       description:
-        "Grow your online presence with Laravel ecommerce development service in India. We build high performance and secure custom e-commerce solutions integrated with advanced functionalities and deliver smooth shopping experiences to customers. Our team's main aim is to increase website conversions on your websites.",
-    },
-    {
-      imgSrc: brandingIcon.src,
-      title: "Laravel UI/UX Designing Services ",
-      description:
-        "Our architect designers create interactive and engaging designs for our customers. We hold expertise with custom designing in which we bring your business brand identity to the real world and connect with customers. At Moonstack, our designers create interactive designs with easy to use aspects.",
-    },
-    {
-      imgSrc: brandingIcon.src,
-      title: "Laravel API Integration Services",
-      description:
-        "Extend your web and mobile app functionalities with seamless laravel REST API development service in India by partnering with the best Laravel development agency. We integrate Laravel web solutions with third party services via API such as secure payment gateway, internal systems, and many more. ",
-    },
-    {
-      imgSrc: brandingIcon.src,
-      title: "Laravel Maintenance and Support Services ",
-      description:
-        "We offer end to end Laravel maintenance and support services. With our expert Laravel team, we run Laravel web solutions smoothly without any errors. We provide constant updates, optimize performance, and fix bugs to run solutions smoothly and deliver long term business commitment. ",
+        "Let me tell you, there are countless benefits to adopting the cloud hosting services offered by Moonstack for your business. You don’t have to invest time and money into hardware and software systems that are tedious and problematic to implement cloud-based solutions. We deliver DBaaS services in India to give you flexible and elastic computing resource solutions that can help you get only the best hosting platforms at reasonable prices. Our PaaS services solution in India can help you build, run, and manage your applications while sparing you the trouble of constructing the base infrastructure.",
     },
   ],
 
@@ -158,121 +130,91 @@ export const cloud: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Our Process of ",
-    highlight: "Laravel website Development Service",
-    subtitle:
-      "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges.",
+    title: "Bringing the best ",
+    highlight: "cloud solution Agency To You.",
+    subtitle: "",
     steps: [
       {
         number: 1,
-        title: "Gather Requirements",
+        title: " Client Consultation",
         description:
-          "We collect all the information about the project to understand what our client actually needs that allow us to align with the project.",
+          "Understand client needs, cloud goals, and business processes to tailor a cloud solution that aligns with their objectives.",
         position: "left",
       },
       {
         number: 2,
-        title: "Client Discussion",
+        title: " Strategy Development",
         description:
-          "Once we have proper requirements then our Laravel team experts conduct a formal client discussion to solve all queries.",
+          "Create a detailed cloud adoption plan, including migration, integration, and scalability strategies to meet specific business requirements.",
         position: "right",
       },
       {
         number: 3,
-        title: "Internal Strategy Discussion",
+        title: " Market Research",
         description:
-          "After that we have an internal strategy discussion in which we have our tech brainstorming to deliver the best outcome.",
+          "Analyze industry trends, competitor cloud solutions, and customer preferences to ensure the cloud strategy is competitive and effective.",
         position: "left",
       },
       {
         number: 4,
-        title: "Designing - UI/UX Services",
+        title: " Campaign Planning",
         description:
-          "Designers start the designing process in which they focus on interactive user interface and easy to use for the users.",
+          "Design a marketing and adoption strategy to promote cloud services internally and externally, ensuring seamless integration and user engagement.",
         position: "right",
-      },
-      {
-        number: 5,
-        title: "Development",
-        description:
-          "Tech team start the development process in which frontend developers and backend coders work together.",
-        position: "left",
-      },
-      {
-        number: 6,
-        title: "Deployment and Testing",
-        description:
-          "We deploy and test the Laravel software with automated and manual processes that allow us to deliver bug free solutions. ",
-        position: "right",
-      },
-      {
-        number: 7,
-        title: "Delivery and Post Support ",
-        description:
-          "After testing, we deliver Laravel based solutions in the market with post support that ensure our team is always there.",
-        position: "left",
       },
     ],
   },
 
   impactSection: {
     heading: [
-      { text: "Our Scalable " },
+      { text: "Edge tools ." },
       {
-        text: "Laravel Web development",
+        text: "Drive That ",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: "Solutions" },
+      { text: "performance" },
     ],
     description:
-      "For decades MoonStack has been creating a wide range of Laravel web solutions for our clients for different industries that are ready to use as per different business with minor and major customisation processes. ",
+      "Feel free adapt this based on the specific managed services, features, and unique selling points your IT service company provides.",
     cards: [
       {
-        id: "Laravel Web Apps",
-        label: "Laravel Web Apps",
+        id: "Technical Implementation",
+        label: "Technical Implementation",
         description:
-          "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
+          "Plan, design, and deploy cloud systems, ensuring seamless integration, functionality, and alignment with business goals.",
         variant: "light",
       },
       {
-        id: "Laravel E-commerce Solutions",
+        id: "IT Helpdesk Support",
 
-        label: "Laravel E-commerce Solutions",
+        label: "IT Helpdesk Support",
         description:
-          "The best ecommerce website developers in India build innovative and highly functional Laravel online stores. We have integrated essential functionalities such as product catalog, shopping carts, order tracking, and secure payment gateways that increase conversion rates and user experience.",
+          "Provide timely technical assistance, troubleshoot cloud-related issues, and resolve user problems to ensure smooth operations and minimal downtime.",
         variant: "accent",
       },
       {
-        id: "Laravel CRM Solutions ",
+        id: "Managed IT Services",
 
-        label: "Laravel CRM Solutions ",
+        label: "Managed IT Services",
         description:
-          "Moonstack builds Laravel based CRM solutions that improve customer relationship management processes in companies. We design custom CRM solutions that allow us to track leads and automate conversions that lead to data driven decisions and streamline client communication processes.",
+          "Proactively monitor, maintain, and optimize cloud infrastructure to enhance performance, security, and scalability for business growth.",
         variant: "dark",
       },
       {
-        id: "Laravel CMS Solutions",
+        id: "IT Consulting",
 
-        label: "Laravel CMS Solutions",
+        label: "IT Consulting",
         description:
-          "Professional Laravel experts offer robust Laravel based CMS development in India. We have built the best Laravel CMS solutions that allow businesses to easily update, publish, and manage content effortlessly on their websites. We deliver CMS solutions to businesses that  have full control on content management systems. ",
+          "Analyze business needs, recommend tailored cloud solutions, and guide strategic decisions to improve efficiency and drive innovation.",
         variant: "dark",
       },
       {
-        id: "POS Systems",
+        id: "Network Support",
 
-        label: "POS Systems",
+        label: "Network Support",
         description:
-          "Integrate modern Laravel powered POS systems that are developed by Laravel experts in India. Our POS systems help to streamline different operational processes, allow retailers to manage multiple outlets, and deliver best outcomes for customers. We have delivered a wide range of POS (Point of Sale solutions) to our retail businesses.",
+          "Monitor, maintain, and troubleshoot cloud network systems to ensure reliable connectivity, security, and optimal performance.",
         variant: "light",
-      },
-      {
-        id: "Video Streaming and Media Apps",
-
-        label: "Video Streaming and Media Apps",
-        description:
-          "Develop your Laravel based video streaming and media apps with  expert laravel web developers in India. We designed video streaming and media apps that support secure content delivery and content management. We develop video streaming and media apps in such a way that offer seamless streaming and integrated with user authentication and support multiple platforms. ",
-        variant: "dark",
       },
     ],
   },
@@ -297,100 +239,39 @@ export const cloud: PageData = {
   qualitySectionData: {
     heading: [
       {
-        text: " Why Choose us for your ",
+        text: "Choose Moonstack for ",
         color: "text-white",
       },
       {
-        text: "Laravel  Web Development",
+        text: "healthy cloud ",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: " Services?",
+        text: " Services",
         color: "text-white",
       },
     ],
     description:
-      "Laravel is known for the best Laravel framework development in India. At Moonstack, we have delivered a wide range of custom Laravel web development services to our customers. Our professional Laravel experts have delivered secure, high performance, and future ready web apps.",
+      "As your reliable cloud transformation company, we deliver efficient cloud solutions and composable services that are designed to enhance operational efficiency in multiple ways. Our cloud transformation tactic combines cloud strategy, an industry-oriented cloud marketplace, and an intellectual cloud delivery platform with integrated GenAI.",
     columsClass: "lg:grid-cols-3",
     list: [
       {
         id: 1,
-        title: "Decade of Experience",
+        title: "Benefits of cloud service",
         icon: collaboration.src,
         description:
-          "Our Laravel experts have decades of experience that allows them to meet all clients' needs. Laravel coders have delivered scalable, secure, and high performance web apps with advanced integrated functionalities.",
+          "Our patrons can rest assured that the whole process of storing and protecting their data is entirely transparent and customer driven. While your data is being stored with us, you can have endless access to our friendly, professional, and tremendously knowledgeable team of support staff, equipped to provide help and guidance whenever needed. ",
       },
       {
         id: 2,
-        title: "Custom Solutions for Every Business",
+        title: "How it help businesses",
         icon: collaboration.src,
         description:
-          "We have delivered 450+ custom web development solutions across the world. Our professional Laravel experts have built high performance, scalable different solutions specifically designed for different business needs.",
-      },
-      {
-        id: 3,
-        title: "End to End Laravel Development Services",
-        icon: collaboration.src,
-        description:
-          "Delivering end to end Laravel development services to our clients. From consultation to development to migration - Moonstack is known as a one stop solution for all our client’s Laravel web development needs.",
-      },
-      {
-        id: 4,
-        title: "Transparent Communication",
-        icon: collaboration.src,
-        description:
-          "At Moonstack, we maintain open communication with our clients with constant updates, demos, and progress reports that ensure us to stay connected with our customers. Moreover, that also allows us to understand each other's mindset in a better way.",
-      },
-      {
-        id: 5,
-        title: "Confidential Details",
-        icon: collaboration.src,
-        description:
-          "Every project idea is unique - we understand the importance of your business module. We keep all your information fully secure and confidential with us. Our team keeps all details to them, and in any case we don’t leak any of your project ideas to third parties.",
-      },
-      {
-        id: 6,
-        title: "Creative and Business oriented solutions",
-        icon: collaboration.src,
-        description:
-          "We just don’t build Laravel solutions only for the web development purpose. At Moonstack, we build business oriented solutions that align with your business needs and attract users with advanced based next generation features.",
+          "To help businesses maximize the value and potential of cloud services, Moonstack, the leading cloud service provider in India, intends to offer vast and all-encompassing cloud solutions and support to enhance the overall exploitation of cloud solutions. We have developed a range of cloud based services in USA necessary for the company’s smooth functioning and tailored for your individual requirements ",
       },
     ],
   },
-  accordionData: [
-    {
-      question:
-        "Will you be able to work long term for my Laravel project requirements?",
-      answer:
-        "Yes, our Laravel web developers are always available and they are proficient with all types of Laravel web development requirements. Our team offers professional Laravel web development services to our customers. ",
-    },
-    {
-      question: "How long will you take to build my Laravel website?",
-      answer:
-        "There is no fixed time - the completion of Laravel websites are fully dependent on different factors - time, no of Laravel developers, complexity of app. But, we make sure we will put our high efforts and deliver your solutions with all essential features.",
-    },
-    {
-      question: "Will you provide Laravel migration services in India?",
-      answer:
-        "Yes, we will provide Laravel migration services in India. Our Laravel expert team specializes in migrating solutions from other technologies to Laravel without affecting design, performance, and even your data.",
-    },
-    {
-      question: "Can I hire Laravel web developers from your team?",
-      answer:
-        "Yes, of course you can hire the best Laravel developers from our team on full time, part time, and hourly basis. We have a pool of dedicated Laravel developers.",
-    },
-    {
-      question:
-        "Can you integrate API or third party services into my Laravel solutions?",
-      answer:
-        "Yes, we can extend functionalities in Laravel solutions with third party services via API. Our experts have hands-on experience in third party integration services. ",
-    },
-    {
-      question: "How much does it cost for Laravel web development services? ",
-      answer:
-        "There is no fixed cost for Laravel web development services. The Laravel web development factors are based on several factors such as features, design, hiring model, third party integration requirement.",
-    },
-  ],
+  accordionData: [],
 
   banner: {
     headingText: [

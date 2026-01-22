@@ -20,13 +20,13 @@ export const ecommerce: PageData = {
   hero: {
     title: [
       {
-        text: "Laravel Website Development Service Provider",
+        text: "E-commerce Website Development Services Provider Globally",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Need a fast, secure, and scalable web solution? Our Laravel development services deliver enterprise-grade applications with clean code, optimal performance, and seamless functionality.",
+        text: "Launch your advanced functionalities integrated based  online powerful  portal that allows your customers to check in anytime via their devices - web and app. Partner with  Moonstack for your e-commerce web development services that leads to enhancing your brand presence as well as increases conversion rates.",
         color: "text-white",
       },
     ],
@@ -40,8 +40,8 @@ export const ecommerce: PageData = {
         href: "/services",
       },
       {
-        label: "Laravel",
-        href: "/services/laravel-website-development-company",
+        label: "E-commerce",
+        href: "/services/ecommerce-website-development-company",
       },
     ],
   },
@@ -57,76 +57,75 @@ export const ecommerce: PageData = {
   },
   mobDesignBanner: nativeBannerImg,
 
-  points:
-    "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
-  highlightText: "The application is scalable",
+  points: "",
+  highlightText: "",
 
   leftCardData: [
     {
-      title: "Transform Your Business with Custom Laravel Solutions",
+      title: "Trusted E-commerce Development Company to maximize digital sales",
       description:
-        "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",
+        "Moonstack is the leading e-commerce development company. With our ecommerce website developers in India, we have built powerful and user centric  online stores that align with brand identity and increase conversion rates. We integrate modern functionalities powered by advanced technologies such as secure payment gateways, mobile responsive, and create interactive user interfaces for users that are easy to use. Our main aim is to deliver a seamless shopping experience to your customers that 2X sales.",
       stats: [],
       description2:
-        "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
+        "Our secure e-commerce website developers in India have hands-on experience and are proficient in online store development. We build different types of e-commerce solutions including custom built websites, marketplace integration, and multi channel e-commerce websites. We strategize our development process in such a way that ensures a smooth operational process and meets all our clients' demands. Grow your online business and spread your brand presence world wide that leads to 2x sales.",
       image: bndimage1.src,
     },
   ],
   solutions: {
     headingContent: [
       {
-        text: "Our ",
+        text: "Our",
         color: "text-white",
       },
       {
-        text: "Laravel web Development",
+        text: " E-commerce Development",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: "Services Includes",
+        text: " Services Includes",
         color: "text-white",
       },
     ],
     subHeadingText:
-      "We have best Laravel web developers and with them we offer affordable laravel development service in India - from consultation to migration all your needs will fulfill at one stop ",
+      "We have different end to end e-commerce development services to our customers from designing - development - deployment with the aim to deliver seamless user experience. Make your brand smarter, faster, and popular at global level with best E-commerce developers service providers.",
   },
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
-      title: "Laravel Consulting Services",
+      title: "Custom e-commerce website development  Services ",
       description:
-        "Bring your idea into reality with the right strategy and roadmap with Laravel web experts. Our Moonstack’s expert Laravel consulting professionals will understand your business needs and provide you with the right development strategy to deliver secure and scalable Laravel solutions in the market.",
+        "We build e-commerce solutions for small business and large enterprises that are fully customised and align with the brand identity that deliver high performance and seamless shopping experience to the users. In e-commerce web development, we integrate advanced functionalities that offer next generation shopping experience to the users.",
     },
     {
       imgSrc: engagingIcon.src,
-      title: "Custom Laravel Website Development Service",
+      title: "E-commerce Designing Services ",
       description:
-        "We build high performance, secure, and functional custom Laravel web apps in India. We develop custom  Laravel websites for clients as per their business requirements. Our Laravel web development experts understand the gap in your operational process  and integrate modern features to meet latest business demands. ",
+        "Moonstack creates user friendly, interactive, and engaging e-commerce solutions that reflect the brand identity and increase sales conversion. Professional ecommerce design company in India aim is to focus on delivering impressive designs that are based on 2D and 3D animations as well as easy to use. ",
     },
 
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Custom  E-Commerce Development Services ",
+      title: "E-commerce API and Integration Services",
       description:
-        "Grow your online presence with Laravel ecommerce development service in India. We build high performance and secure custom e-commerce solutions integrated with advanced functionalities and deliver smooth shopping experiences to customers. Our team's main aim is to increase website conversions on your websites.",
+        "Add on the functionalities in your e-commerce solutions with mobile ecommerce website development in India. Our e-commerce developers integrate third party features via API that allow customers to experience a wide range of functionalities. Designers can integrate different tools such as  CRM, real time synchronization, and secure payment gateway platforms.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel UI/UX Designing Services ",
+      title: " E-commerce Testing Services ",
       description:
-        "Our architect designers create interactive and engaging designs for our customers. We hold expertise with custom designing in which we bring your business brand identity to the real world and connect with customers. At Moonstack, our designers create interactive designs with easy to use aspects.",
+        "Before launching your e-commerce web solution in the market, make sure that your online store is fully secure and bug free. With our expert e-commerce web developers opt for manual and unit testing services for your e-commerce solutions that allow you to meet your clients expectations and exclude risk of failure.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel API Integration Services",
+      title: "E-commerce Migration Services",
       description:
-        "Extend your web and mobile app functionalities with seamless laravel REST API development service in India by partnering with the best Laravel development agency. We integrate Laravel web solutions with third party services via API such as secure payment gateway, internal systems, and many more. ",
+        "Transfer all your data from one platform to another without any technical hassle. We allow our clients to migrate all the data from existing platforms to others without losing any confidential internal data or records or even SEO ranking. Our e-commerce experts in Jaipur have defined the approach hassle free migrate the data from one to other.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Maintenance and Support Services ",
+      title: "E-commerce Support and Maintenance Services ",
       description:
-        "We offer end to end Laravel maintenance and support services. With our expert Laravel team, we run Laravel web solutions smoothly without any errors. We provide constant updates, optimize performance, and fix bugs to run solutions smoothly and deliver long term business commitment. ",
+        "Our e-commerce coders offer full time support and maintenance services for our clients. We offer end to end support and maintenance services allowing e-commerce businesses to have tech partners, who detect bugs for 24/7 and resolve them on immediate basis. Along with this, experts keep e-commerce solutions updated with the latest technologies on a constant basis.",
     },
   ],
 
@@ -158,51 +157,51 @@ export const ecommerce: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Our Process of ",
-    highlight: "Laravel website Development Service",
+    title: "Advanced Features that ",
+    highlight: "our e-commerce portal integrated with",
     subtitle:
-      "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges.",
+      "We integrated modern  functionalities that are powered by next generation technologies. With our B2B & B2C ecommerce website development services we integrate advanced features such as real time analytics and deliver seamless inventory management to enhance customer experience",
     steps: [
       {
         number: 1,
-        title: "Gather Requirements",
+        title: "AI Powered Product Recommendation",
         description:
-          "We collect all the information about the project to understand what our client actually needs that allow us to align with the project.",
+          "Offering personalized shopping experiences with smart suggestions that meet customer expectations.",
         position: "left",
       },
       {
         number: 2,
-        title: "Client Discussion",
+        title: "Advanced Search & Filters",
         description:
-          "Once we have proper requirements then our Laravel team experts conduct a formal client discussion to solve all queries.",
+          "Users can search their preferred items fast and opt for the category their prefer for that saves time",
         position: "right",
       },
       {
         number: 3,
-        title: "Internal Strategy Discussion",
+        title: "Real Time Inventory Management ",
         description:
-          "After that we have an internal strategy discussion in which we have our tech brainstorming to deliver the best outcome.",
+          "Track real time inventory management, users can have all data on their fingertips. They have all product related access.",
         position: "left",
       },
       {
         number: 4,
-        title: "Designing - UI/UX Services",
+        title: "Payment Gateway Integration",
         description:
-          "Designers start the designing process in which they focus on interactive user interface and easy to use for the users.",
+          "Integrate Payment gateways secure and allow users to pay their bills from their preferred third party tools.",
         position: "right",
       },
       {
         number: 5,
-        title: "Development",
+        title: "Order Tracking and Notifications",
         description:
-          "Tech team start the development process in which frontend developers and backend coders work together.",
+          "Keep your customers informed about the orders and notify them with pop up notifications.",
         position: "left",
       },
       {
         number: 6,
-        title: "Deployment and Testing",
+        title: "Data Analytics & Reporting Dashboard",
         description:
-          "We deploy and test the Laravel software with automated and manual processes that allow us to deliver bug free solutions. ",
+          "Users have access to actionable insights with performance metrics, sales trends, and also track customer behavior.",
         position: "right",
       },
       {
@@ -217,61 +216,61 @@ export const ecommerce: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Our Scalable " },
+      { text: "Moonstack Ready to use" },
       {
-        text: "Laravel Web development",
+        text: "E-commerce ",
         className: "libreItalic font-[400] highlight-text",
       },
       { text: "Solutions" },
     ],
     description:
-      "For decades MoonStack has been creating a wide range of Laravel web solutions for our clients for different industries that are ready to use as per different business with minor and major customisation processes. ",
+      "We offer a wide range of e-commerce web solutions to our customers that align with their business model. Our e-commerce coders build high performance, modern, secure online based solutions for different businesses.",
     cards: [
       {
-        id: "Laravel Web Apps",
-        label: "Laravel Web Apps",
+        id: "E-commerce Portals",
+        label: "E-commerce Portals",
         description:
-          "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
+          "We provide  ready to use e-commerce portals for our clients that allow e-commerce businesses to integrate solutions that streamline the purchasing and internal operational processes. Moreover, e-commerce portals also manage bulk orders and volume based pricing systems. We deliver all types of e-commerce portals including apps, marketplaces, multi vendor, and many more.",
         variant: "light",
       },
       {
-        id: "Laravel E-commerce Solutions",
+        id: "Mobile E-commerce Apps",
 
-        label: "Laravel E-commerce Solutions",
+        label: "Mobile E-commerce Apps",
         description:
-          "The best ecommerce website developers in India build innovative and highly functional Laravel online stores. We have integrated essential functionalities such as product catalog, shopping carts, order tracking, and secure payment gateways that increase conversion rates and user experience.",
+          "Moonstack is known as the best  mobile ecommerce website development in India. We deliver mobile e-commerce mobile apps that are user friendly and integrated with advanced technologies. We provide ready to use e-commerce mobile apps that offer shopping-like experiences. Our e-commerce mobile app experts have designed apps that provide faster loading times and have easy to navigate user interface.",
         variant: "accent",
       },
       {
-        id: "Laravel CRM Solutions ",
+        id: "Marketplaces ",
 
-        label: "Laravel CRM Solutions ",
+        label: "Marketplaces ",
         description:
-          "Moonstack builds Laravel based CRM solutions that improve customer relationship management processes in companies. We design custom CRM solutions that allow us to track leads and automate conversions that lead to data driven decisions and streamline client communication processes.",
+          "Create and operate your marketplaces and connect you with your target audiences. We build B2B and B2C e-commerce marketplaces that incorporate functionalities like inventory management, payment processing, and CRM based on modern technologies. Our e-commerce marketplace features are powered by modern technologies. As the leading marketplace website development in India, we provide a one stop marketplace that fit all needs. ",
         variant: "dark",
       },
       {
-        id: "Laravel CMS Solutions",
+        id: "Multi-Vendor Marketplaces",
 
-        label: "Laravel CMS Solutions",
+        label: "Multi-Vendor Marketplaces",
         description:
-          "Professional Laravel experts offer robust Laravel based CMS development in India. We have built the best Laravel CMS solutions that allow businesses to easily update, publish, and manage content effortlessly on their websites. We deliver CMS solutions to businesses that  have full control on content management systems. ",
+          "We offer multi vendor marketplace solutions that allow multiple sellers to list, manage, and sell their products at one place. Our multi-vendor marketplace is designed in such a way that is integrated by a powerful dashboard, easy vendor management, and delivers smooth shopping experiences.",
         variant: "dark",
       },
       {
-        id: "POS Systems",
+        id: "Subscription-Based E-Commerce",
 
-        label: "POS Systems",
+        label: "Subscription-Based E-Commerce",
         description:
-          "Integrate modern Laravel powered POS systems that are developed by Laravel experts in India. Our POS systems help to streamline different operational processes, allow retailers to manage multiple outlets, and deliver best outcomes for customers. We have delivered a wide range of POS (Point of Sale solutions) to our retail businesses.",
+          "Opt for subscription based e-commerce portals that keep customers engaged on premium models. We build powerful online stores that offer recurring revenue streams with different custom subscription plans. Our e-commerce developers integrate automated billing to seamless systems that maximize retention. ",
         variant: "light",
       },
       {
-        id: "Video Streaming and Media Apps",
+        id: "E-Commerce Analytics & Automation Solutions",
 
-        label: "Video Streaming and Media Apps",
+        label: "E-Commerce Analytics & Automation Solutions",
         description:
-          "Develop your Laravel based video streaming and media apps with  expert laravel web developers in India. We designed video streaming and media apps that support secure content delivery and content management. We develop video streaming and media apps in such a way that offer seamless streaming and integrated with user authentication and support multiple platforms. ",
+          "With our e-commerce developers we offer analytics and automation ready to use solutions that ensure to optimize operations with real time, automate several workflows, and deliver data driven strategies that streamline workflow process as well as maximise revenue.",
         variant: "dark",
       },
     ],
@@ -297,98 +296,98 @@ export const ecommerce: PageData = {
   qualitySectionData: {
     heading: [
       {
-        text: " Why Choose us for your ",
+        text: "Why choose us for ",
         color: "text-white",
       },
       {
-        text: "Laravel  Web Development",
+        text: "ecommerce portal",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: " Services?",
+        text: "  development in India?",
         color: "text-white",
       },
     ],
     description:
-      "Laravel is known for the best Laravel framework development in India. At Moonstack, we have delivered a wide range of custom Laravel web development services to our customers. Our professional Laravel experts have delivered secure, high performance, and future ready web apps.",
+      "We are the leading e-commerce development company in India. Our team has delivered a wide range of online portals in the market from that blend of creativity, tech stack, and powerful strategy that deliver next generation customer experiences.",
     columsClass: "lg:grid-cols-3",
     list: [
       {
         id: 1,
-        title: "Decade of Experience",
+        title: " Experts E-commerce Developers",
         icon: collaboration.src,
         description:
-          "Our Laravel experts have decades of experience that allows them to meet all clients' needs. Laravel coders have delivered scalable, secure, and high performance web apps with advanced integrated functionalities.",
+          "Being the leading e-commerce development company in India we have skilled e-commerce coders that build customised, high performance, and e-commerce solutions. With our highly skilled team, we guarantee to meet latest development standards as well deliver seamless shopping experiences.",
       },
       {
         id: 2,
-        title: "Custom Solutions for Every Business",
+        title: "Customised e-commerce Business Solution",
         icon: collaboration.src,
         description:
-          "We have delivered 450+ custom web development solutions across the world. Our professional Laravel experts have built high performance, scalable different solutions specifically designed for different business needs.",
+          "We develop customized e-commerce business solutions that match your business needs. Our secure ecommerce website developers in India create personalized e-commerce strategies that match brand identity and customer expectations.",
       },
       {
         id: 3,
-        title: "End to End Laravel Development Services",
+        title: " User Centric Designs",
         icon: collaboration.src,
         description:
-          "Delivering end to end Laravel development services to our clients. From consultation to development to migration - Moonstack is known as a one stop solution for all our client’s Laravel web development needs.",
+          "Our e-commerce developers team focuses on conversion focused design that not only looks appealing but also user centric. We create designs that are interactive and help to convert users to loyal customers. Our e-commerce designing services in India main aim is to meet the latest industry standards and deliver next generation experiences to customers.",
       },
       {
         id: 4,
-        title: "Transparent Communication",
+        title: "Hire E-Commerce Developers",
         icon: collaboration.src,
         description:
-          "At Moonstack, we maintain open communication with our clients with constant updates, demos, and progress reports that ensure us to stay connected with our customers. Moreover, that also allows us to understand each other's mindset in a better way.",
+          "With our advanced ecommerce development in India we offer you an opportunity to hire the best e-commerce developers in India that will allow you to hire part time, full time, and on hourly basis. We allow you to extend your e-commerce development team with the proficient designers and developers for your project.",
       },
       {
         id: 5,
-        title: "Confidential Details",
+        title: "Transparent Process",
         icon: collaboration.src,
         description:
-          "Every project idea is unique - we understand the importance of your business module. We keep all your information fully secure and confidential with us. Our team keeps all details to them, and in any case we don’t leak any of your project ideas to third parties.",
+          "Our e-commerce development team believes in a transparent process. We share all records and information with our clients in a transparent manner. In any case, we don’t hide anything from our customers. All the information is shared without any hiding parameters as we associate with business and believe to sort everything together. ",
       },
       {
         id: 6,
-        title: "Creative and Business oriented solutions",
+        title: "Seamless Integration",
         icon: collaboration.src,
         description:
-          "We just don’t build Laravel solutions only for the web development purpose. At Moonstack, we build business oriented solutions that align with your business needs and attract users with advanced based next generation features.",
+          "At Moonstack, our e-commerce development team supports a seamless integration process. We provide seamless API integration that allows us to extend functionalities with third party advanced functionalities in less time and effort. We hold expertise with advanced seamless feature integration processes via API.",
       },
     ],
   },
   accordionData: [
     {
       question:
-        "Will you be able to work long term for my Laravel project requirements?",
+        "Do you provide custom e-commerce development services in India or are ready to use ecommerce solutions?",
       answer:
-        "Yes, our Laravel web developers are always available and they are proficient with all types of Laravel web development requirements. Our team offers professional Laravel web development services to our customers. ",
+        "Yes, we provide custom e-commerce development solutions in which our e-commerce developers built online powerful portals as per the business needs. Moreover, if you need ready to use e-commerce solutions we provide a wide range of online portals including custom websites, marketplaces, API based solutions and many more.",
     },
     {
-      question: "How long will you take to build my Laravel website?",
+      question: "What services are included in e-commerce web solutions?",
       answer:
-        "There is no fixed time - the completion of Laravel websites are fully dependent on different factors - time, no of Laravel developers, complexity of app. But, we make sure we will put our high efforts and deliver your solutions with all essential features.",
+        "There are a wide range of e-commerce solutions we offer that include - custom e-commerce web portals, e-commerce designing services, e-commerce API integration services, B2B e-commerce web development and B2C e-commerce solutions and many more.",
     },
     {
-      question: "Will you provide Laravel migration services in India?",
+      question: "Can you integrate payment gateway and shipping partners?",
       answer:
-        "Yes, we will provide Laravel migration services in India. Our Laravel expert team specializes in migrating solutions from other technologies to Laravel without affecting design, performance, and even your data.",
+        "Yes,our e-commerce development team in Jaipur has hands-on experience with the payment gateway and shipping partners integration process.",
     },
     {
-      question: "Can I hire Laravel web developers from your team?",
+      question: "Do you provide e-commerce business  source code to customers?",
       answer:
-        "Yes, of course you can hire the best Laravel developers from our team on full time, part time, and hourly basis. We have a pool of dedicated Laravel developers.",
+        "Yes, we provide e-commerce business source code to our customers that they can add, edit, and delete as per the future business needs.",
+    },
+    {
+      question: "Will e-commerce websites be user friendly?",
+      answer:
+        "Yes, we deliver user friendly e-commerce portals that are also responsive on all devices - web and mobile.",
     },
     {
       question:
-        "Can you integrate API or third party services into my Laravel solutions?",
+        "How long does it take you to deliver an e-commerce web portal?",
       answer:
-        "Yes, we can extend functionalities in Laravel solutions with third party services via API. Our experts have hands-on experience in third party integration services. ",
-    },
-    {
-      question: "How much does it cost for Laravel web development services? ",
-      answer:
-        "There is no fixed cost for Laravel web development services. The Laravel web development factors are based on several factors such as features, design, hiring model, third party integration requirement.",
+        "There is no fixed time to deliver e-commerce web solutions. The e-commerce development process is based on several factors such as hiring model, portal complexity, API integration. So, there is no fixed cost and still you require at earliest you can opt for a ready to use portal with minor and major modifications or have discussion with e-commerce experts.",
     },
   ],
 

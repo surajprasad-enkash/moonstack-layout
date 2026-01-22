@@ -20,13 +20,13 @@ export const webDesigning: PageData = {
   hero: {
     title: [
       {
-        text: "Laravel Website Development Service Provider",
+        text: "Website Design Services That Turn Visitors into Customers",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Need a fast, secure, and scalable web solution? Our Laravel development services deliver enterprise-grade applications with clean code, optimal performance, and seamless functionality.",
+        text: "We design websites with one clear purpose: conversion. By combining beautiful aesthetics with strategic UX, persuasive design elements, and clear calls-to-action, we create digital experiences that engage visitors and turn them into paying customers.",
         color: "text-white",
       },
     ],
@@ -40,8 +40,8 @@ export const webDesigning: PageData = {
         href: "/services",
       },
       {
-        label: "Laravel",
-        href: "/services/laravel-website-development-company",
+        label: "Web Designing",
+        href: "/services/web-designing-company",
       },
     ],
   },
@@ -63,70 +63,70 @@ export const webDesigning: PageData = {
 
   leftCardData: [
     {
-      title: "Transform Your Business with Custom Laravel Solutions",
+      title: "Trusted Website Designing Company near you",
       description:
-        "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",
+        "Moonstack is known as a one stop solution for all your IT needs. We specialize in creating stunning and mobile friendly designs that can connect with your audience. Our UI UX web designing services in India are designed in such a way that attracts users with animations, font color, and other latest designing trends. Along with this, experts also focus on delivering easy to navigate designs.",
       stats: [],
       description2:
-        "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
+        "At Moonstack, we blend creativity and technology that ensure to exclude all the gaps between client and businesses. Our web design agency in Jaipur offers affordable designing services for startups, mid sizes, and large enterprises. We not only create designs but make connections with customers across the globe. With our designs you can deliver your brand message as well as offer premium experiences.",
       image: bndimage1.src,
     },
   ],
   solutions: {
     headingContent: [
       {
-        text: "Our ",
+        text: "Here are Our",
         color: "text-white",
       },
       {
-        text: "Laravel web Development",
+        text: " Web Designing ",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: "Services Includes",
+        text: "Services",
         color: "text-white",
       },
     ],
     subHeadingText:
-      "We have best Laravel web developers and with them we offer affordable laravel development service in India - from consultation to migration all your needs will fulfill at one stop ",
+      "We offer end to end website designing services in India with the motive to deliver powerful digital identities. Our focus is to deliver powerful, responsive, and user friendly designs. ",
   },
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
-      title: "Laravel Consulting Services",
+      title: "Website Design  Consulting Services",
       description:
-        "Bring your idea into reality with the right strategy and roadmap with Laravel web experts. Our Moonstack’s expert Laravel consulting professionals will understand your business needs and provide you with the right development strategy to deliver secure and scalable Laravel solutions in the market.",
+        "Discuss about your idea with the professional web design experts. Our web designers understand your business and provide you with the right strategy (technology, colour, and steps)  that you should implement in your user interface that satisfies your customers. We create web designs that transform your brand identity.",
     },
     {
       imgSrc: engagingIcon.src,
-      title: "Custom Laravel Website Development Service",
+      title: "Custom web Design",
       description:
-        "We build high performance, secure, and functional custom Laravel web apps in India. We develop custom  Laravel websites for clients as per their business requirements. Our Laravel web development experts understand the gap in your operational process  and integrate modern features to meet latest business demands. ",
+        "Our professional web designers service in  India is designed in such a way that it offers premium custom tailor made designs that align with brand identity and goals. We create connected user friendly designs that deliver next generation experience to the users. ",
     },
 
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Custom  E-Commerce Development Services ",
+      title: "Responsive Web and App Designs",
       description:
-        "Grow your online presence with Laravel ecommerce development service in India. We build high performance and secure custom e-commerce solutions integrated with advanced functionalities and deliver smooth shopping experiences to customers. Our team's main aim is to increase website conversions on your websites.",
+        "As the creative website designing service in India, our aim is to provide responsive  web designs to our customers. Our web designs are created in such a way that are compatible with all devices on different screens and sizes of devices.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel UI/UX Designing Services ",
+      title: "UI/UX Designing Services",
       description:
-        "Our architect designers create interactive and engaging designs for our customers. We hold expertise with custom designing in which we bring your business brand identity to the real world and connect with customers. At Moonstack, our designers create interactive designs with easy to use aspects.",
+        "We create engaging and interactive user interfaces that deliver seamless user experiences that increase engagement and conversion rates. Our main aim is to offer the same brand experience to users in the digital era that allow us to connect with brands.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel API Integration Services",
+      title: "Website Redesign Services",
       description:
-        "Extend your web and mobile app functionalities with seamless laravel REST API development service in India by partnering with the best Laravel development agency. We integrate Laravel web solutions with third party services via API such as secure payment gateway, internal systems, and many more. ",
+        "Moonstack is known as the top web designers company in India. With custom web designs we offer redesigning services that help to modernise outdated websites with fresh designs and additional next generation functionalities. Our UI UX designers understand and bring innovative designs that match your current brand image.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Maintenance and Support Services ",
+      title: "Landing Page Design",
       description:
-        "We offer end to end Laravel maintenance and support services. With our expert Laravel team, we run Laravel web solutions smoothly without any errors. We provide constant updates, optimize performance, and fix bugs to run solutions smoothly and deliver long term business commitment. ",
+        "Our web designers create highly impactful and creative landing pages for different marketing campaigns and lead generation processes. Our landing page design services strategy is to create emergencies for clients and deliver the same experience that they want in service. Our landing page is fully SEO optimized",
     },
   ],
 
@@ -158,122 +158,67 @@ export const webDesigning: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Our Process of ",
-    highlight: "Laravel website Development Service",
+    title: "Process we opt to deliver successful  ",
+    highlight: "web design services Globally",
     subtitle:
-      "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges.",
+      "We have simplified the web design service  process that allows us to meet our client’s expectations. Our process is defined based on agile methodology and ensures to overcome last minute complex challenges.",
     steps: [
       {
         number: 1,
-        title: "Gather Requirements",
+        title: "Requirement Gathering",
         description:
-          "We collect all the information about the project to understand what our client actually needs that allow us to align with the project.",
+          "Our foremost step is to collect information about the project that gives us proper understanding.",
         position: "left",
       },
       {
         number: 2,
-        title: "Client Discussion",
+        title: "Research and Planning",
         description:
-          "Once we have proper requirements then our Laravel team experts conduct a formal client discussion to solve all queries.",
+          "Analyze market needs and research what competitors are executing and then create a proper plan.",
         position: "right",
       },
       {
         number: 3,
-        title: "Internal Strategy Discussion",
+        title: "Wireframing and Structure",
         description:
-          "After that we have an internal strategy discussion in which we have our tech brainstorming to deliver the best outcome.",
+          "Design layouts and best structure that provides appealing layouts and user friendly interfaces that increase engagement.",
         position: "left",
       },
       {
         number: 4,
-        title: "Designing - UI/UX Services",
+        title: "UI/UX Designing ",
         description:
-          "Designers start the designing process in which they focus on interactive user interface and easy to use for the users.",
+          "We create interactive and engaging designing services that lead to the best user interface that ensures responsive coding and eye catchy designs.",
         position: "right",
       },
       {
         number: 5,
-        title: "Development",
+        title: "Testing and Quality Check",
         description:
-          "Tech team start the development process in which frontend developers and backend coders work together.",
+          "Our web designing team in India rigorously tests different functionalities with the motive to deliver a flawless user experience.",
         position: "left",
       },
       {
         number: 6,
-        title: "Deployment and Testing",
+        title: "Launch and Support",
         description:
-          "We deploy and test the Laravel software with automated and manual processes that allow us to deliver bug free solutions. ",
+          "After deployment we offer constant support and regular modification as per the latest trends to meet latest demands.",
         position: "right",
-      },
-      {
-        number: 7,
-        title: "Delivery and Post Support ",
-        description:
-          "After testing, we deliver Laravel based solutions in the market with post support that ensure our team is always there.",
-        position: "left",
       },
     ],
   },
 
   impactSection: {
-    heading: [
-      { text: "Our Scalable " },
-      {
-        text: "Laravel Web development",
-        className: "libreItalic font-[400] highlight-text",
-      },
-      { text: "Solutions" },
-    ],
-    description:
-      "For decades MoonStack has been creating a wide range of Laravel web solutions for our clients for different industries that are ready to use as per different business with minor and major customisation processes. ",
+    heading: [],
+    description: "",
     cards: [
-      {
-        id: "Laravel Web Apps",
-        label: "Laravel Web Apps",
-        description:
-          "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
-        variant: "light",
-      },
-      {
-        id: "Laravel E-commerce Solutions",
-
-        label: "Laravel E-commerce Solutions",
-        description:
-          "The best ecommerce website developers in India build innovative and highly functional Laravel online stores. We have integrated essential functionalities such as product catalog, shopping carts, order tracking, and secure payment gateways that increase conversion rates and user experience.",
-        variant: "accent",
-      },
-      {
-        id: "Laravel CRM Solutions ",
-
-        label: "Laravel CRM Solutions ",
-        description:
-          "Moonstack builds Laravel based CRM solutions that improve customer relationship management processes in companies. We design custom CRM solutions that allow us to track leads and automate conversions that lead to data driven decisions and streamline client communication processes.",
-        variant: "dark",
-      },
-      {
-        id: "Laravel CMS Solutions",
-
-        label: "Laravel CMS Solutions",
-        description:
-          "Professional Laravel experts offer robust Laravel based CMS development in India. We have built the best Laravel CMS solutions that allow businesses to easily update, publish, and manage content effortlessly on their websites. We deliver CMS solutions to businesses that  have full control on content management systems. ",
-        variant: "dark",
-      },
-      {
-        id: "POS Systems",
-
-        label: "POS Systems",
-        description:
-          "Integrate modern Laravel powered POS systems that are developed by Laravel experts in India. Our POS systems help to streamline different operational processes, allow retailers to manage multiple outlets, and deliver best outcomes for customers. We have delivered a wide range of POS (Point of Sale solutions) to our retail businesses.",
-        variant: "light",
-      },
-      {
-        id: "Video Streaming and Media Apps",
-
-        label: "Video Streaming and Media Apps",
-        description:
-          "Develop your Laravel based video streaming and media apps with  expert laravel web developers in India. We designed video streaming and media apps that support secure content delivery and content management. We develop video streaming and media apps in such a way that offer seamless streaming and integrated with user authentication and support multiple platforms. ",
-        variant: "dark",
-      },
+      // {
+      //   id: "Laravel Web Apps",
+      //   label: "Laravel Web Apps",
+      //   description:
+      //     "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
+      //   variant: "light",
+      // },
     ],
   },
   // processSteps: {
@@ -297,98 +242,96 @@ export const webDesigning: PageData = {
   qualitySectionData: {
     heading: [
       {
-        text: " Why Choose us for your ",
+        text: " Why Choose us for ",
         color: "text-white",
       },
       {
-        text: "Laravel  Web Development",
+        text: "Website Designing",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: " Services?",
+        text: " Services in India?",
         color: "text-white",
       },
     ],
     description:
-      "Laravel is known for the best Laravel framework development in India. At Moonstack, we have delivered a wide range of custom Laravel web development services to our customers. Our professional Laravel experts have delivered secure, high performance, and future ready web apps.",
+      "We are the top notch website designing company in India who blends creativity with strategy and technology that results in the best outcome. At Moonstack, as the professional web designing services in India, we believe in full transparency and timely delivery.",
     columsClass: "lg:grid-cols-3",
     list: [
       {
         id: 1,
-        title: "Decade of Experience",
+        title: "Experienced Professionals",
         icon: collaboration.src,
         description:
-          "Our Laravel experts have decades of experience that allows them to meet all clients' needs. Laravel coders have delivered scalable, secure, and high performance web apps with advanced integrated functionalities.",
+          "We have a team of proficient designing experts, who have hands-on experience on different projects. At Moonstack, we have a team of designers, who not only design creative designs but also build connections between brands and customers.",
       },
       {
         id: 2,
-        title: "Custom Solutions for Every Business",
+        title: "Focus on Both UI/UX",
         icon: collaboration.src,
         description:
-          "We have delivered 450+ custom web development solutions across the world. Our professional Laravel experts have built high performance, scalable different solutions specifically designed for different business needs.",
+          "Our designers focus on both UI and UX in that designers create interactive and engaging designs that are easy to navigate and deliver immersive experiences. At Moonstack, we create design layouts that are mobile friendly,  modern, and deliver next generation experiences to the users.",
       },
       {
         id: 3,
-        title: "End to End Laravel Development Services",
+        title: "SEO and Performance Optimised",
         icon: collaboration.src,
         description:
-          "Delivering end to end Laravel development services to our clients. From consultation to development to migration - Moonstack is known as a one stop solution for all our client’s Laravel web development needs.",
+          "Create designs that are fully SEO optimised and deliver high performance experience to the users. We create designs that load faster, rank better, and deliver best outcomes. Our website designs are strategically SEO driven and light weight that attract more customers and increase conversion rates.",
       },
       {
         id: 4,
-        title: "Transparent Communication",
+        title: "Transparent Process",
         icon: collaboration.src,
         description:
-          "At Moonstack, we maintain open communication with our clients with constant updates, demos, and progress reports that ensure us to stay connected with our customers. Moreover, that also allows us to understand each other's mindset in a better way.",
+          "As the best modern website design company in India, we focus on a fully transparent process. In our web design services, we convey all information transparently to our clients. In any case, we don’t hide any things from our clients as we believe to work or associate together.",
       },
       {
         id: 5,
-        title: "Confidential Details",
+        title: "Ongoing Support and Maintenance",
         icon: collaboration.src,
         description:
-          "Every project idea is unique - we understand the importance of your business module. We keep all your information fully secure and confidential with us. Our team keeps all details to them, and in any case we don’t leak any of your project ideas to third parties.",
+          "We provide full support and maintenance to our clients after deployment also as per the hiring model. Our support and maintenance designing services include constant updates regarding designs and resolve issues immediately so users don’t face any technical error.",
       },
       {
         id: 6,
-        title: "Creative and Business oriented solutions",
+        title: "Responsive Design",
         icon: collaboration.src,
         description:
-          "We just don’t build Laravel solutions only for the web development purpose. At Moonstack, we build business oriented solutions that align with your business needs and attract users with advanced based next generation features.",
+          "At Moonstack, we provide responsive web designs to our clients. Our designs are mobile friendly, deliver seamless performance, and compatible with all devices. Before launching, we make sure that our web designs are compatible with all different devices and users don’t face any challenge to access them.",
       },
     ],
   },
   accordionData: [
     {
-      question:
-        "Will you be able to work long term for my Laravel project requirements?",
+      question: "How much is web design in India?",
       answer:
-        "Yes, our Laravel web developers are always available and they are proficient with all types of Laravel web development requirements. Our team offers professional Laravel web development services to our customers. ",
+        "There is no fixed cost of web design in India. The actual web designing cost depends on several factors that depend on type, functionalities, and complexity of apps for your project. Prices can vary from small, mid, and enterprise level designs.",
     },
     {
-      question: "How long will you take to build my Laravel website?",
+      question: "How long does it take for web design?",
       answer:
-        "There is no fixed time - the completion of Laravel websites are fully dependent on different factors - time, no of Laravel developers, complexity of app. But, we make sure we will put our high efforts and deliver your solutions with all essential features.",
+        "Again, the time of web designing services is dependent on several factors - such as complexity, hiring model, and many more. Typically, a standard website design service takes 2 to 4 weeks. But, this can be discussed.",
     },
     {
-      question: "Will you provide Laravel migration services in India?",
+      question: "Can you redesign my existing websites?",
       answer:
-        "Yes, we will provide Laravel migration services in India. Our Laravel expert team specializes in migrating solutions from other technologies to Laravel without affecting design, performance, and even your data.",
+        "Yes, we can redesign your website as per your business brand identity. With our web designing team in India we can bring fresh, clean layout and modern latest trends web designs.",
     },
     {
-      question: "Can I hire Laravel web developers from your team?",
+      question: "Will my website be mobile friendly? ",
       answer:
-        "Yes, of course you can hire the best Laravel developers from our team on full time, part time, and hourly basis. We have a pool of dedicated Laravel developers.",
+        "Yes, your website will be fully responsive not only on browsers, but also on different devices. We create designs that are engaging and highly interactive and compatible with all devices including desktops, tablets, and smartphones.",
     },
     {
-      question:
-        "Can you integrate API or third party services into my Laravel solutions?",
+      question: "Do you work on customised web designing services?",
       answer:
-        "Yes, we can extend functionalities in Laravel solutions with third party services via API. Our experts have hands-on experience in third party integration services. ",
+        "Yes, we work on customised web designing services in India. We opt for ready to use templates. Along with this, we work on ready to use templates also that saves time. As the top web designing services in India, we offer both customised and ready to use designing services.",
     },
     {
-      question: "How much does it cost for Laravel web development services? ",
+      question: "Will my details be fully secure with you?",
       answer:
-        "There is no fixed cost for Laravel web development services. The Laravel web development factors are based on several factors such as features, design, hiring model, third party integration requirement.",
+        "Yes, your details would be fully confidential and secure within our team. In any case, our team will not share your information, it is only with the team who are working on your project.",
     },
   ],
 

@@ -28,6 +28,7 @@ interface SeoData {
 }
 
 interface BlogPost {
+  post: any
   seo?: SeoData
 }
 
@@ -42,7 +43,6 @@ export async function generateMetadata({
       description: "Moonstack blogs",
     }
   }
-  console.log(page?.seo.title)
 
   const seo = page.seo
 
@@ -51,7 +51,7 @@ export async function generateMetadata({
     description: seo.description,
     keywords: seo.focus_keyword ? seo.focus_keyword.split(",") : [],
     alternates: {
-      canonical: seo.canonical,
+      canonical: `/blogs/${slug}`,
     },
 
     // ✅ Open Graph (Facebook / LinkedIn)

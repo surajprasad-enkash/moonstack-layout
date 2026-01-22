@@ -20,13 +20,13 @@ export const seo: PageData = {
   hero: {
     title: [
       {
-        text: "Laravel Website Development Service Provider",
+        text: "AI-Powered SEO Services for AEO, AIO, GEO & Semantic Search Growth",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Need a fast, secure, and scalable web solution? Our Laravel development services deliver enterprise-grade applications with clean code, optimal performance, and seamless functionality.",
+        text: "At Moonstack, we enable start-ups and large enterprises to increase their brand visibility, improve rankings, and generate 2X leads that optimize as per Google AI's overview, semantic search, and modern user intent.",
         color: "text-white",
       },
     ],
@@ -40,8 +40,8 @@ export const seo: PageData = {
         href: "/services",
       },
       {
-        label: "Laravel",
-        href: "/services/laravel-website-development-company",
+        label: "search engine optimization",
+        href: "/services/search-engine-optimization-company",
       },
     ],
   },
@@ -63,12 +63,12 @@ export const seo: PageData = {
 
   leftCardData: [
     {
-      title: "Transform Your Business with Custom Laravel Solutions",
+      title: "Leading SEO Development Company",
       description:
-        "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",
+        "Moonstack is recognized as one of the top SEO service providers. We have 10+ years of SEO experience in different industries. Our blend of SEO professionals has worked with start-ups, agencies, and global trends. As the leading  SEO consulting services in  India, we have provided proven results with 2x traffic in 30 days with the right strategic manner as per the specific projects. Our certified SEO professionals in India opt for modern SEO practices and have hands-on experience with AI overview optimisation and AEO (Answer Engine Optimisation) that ensure to stay your brand keyword on top of search engines. ",
       stats: [],
       description2:
-        "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
+        "With Moonstack, you are not just shaking hands for SEO services, but it's a growth engine that you are creating the future of your business. From technical SEO to content optimisation, we are delivering the best seo and content services that are based on measurable outcomes, lead-driven growth, and long-term search dominance. We are offering end-to-end SEO services that make us a stop SEO service provider in India.",
       image: bndimage1.src,
     },
   ],

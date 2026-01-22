@@ -20,13 +20,13 @@ export const crm: PageData = {
   hero: {
     title: [
       {
-        text: "Laravel Website Development Service Provider",
+        text: "Custom Affordable CRM Development for your Business",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Need a fast, secure, and scalable web solution? Our Laravel development services deliver enterprise-grade applications with clean code, optimal performance, and seamless functionality.",
+        text: "Develop powerful, intelligent, and fully customised CRM solutions that allow to manage diverse customer communication, support automate workflows, and increase operational processes. Our expert team has integrated modern CRM software for start ups and large enterprises. We focus on building CRM Software that convert insights into action that increases communication and streamline different sales processes.",
         color: "text-white",
       },
     ],
@@ -40,8 +40,8 @@ export const crm: PageData = {
         href: "/services",
       },
       {
-        label: "Laravel",
-        href: "/services/laravel-website-development-company",
+        label: "CRM Development",
+        href: "/services/crm-development-company",
       },
     ],
   },
@@ -63,70 +63,70 @@ export const crm: PageData = {
 
   leftCardData: [
     {
-      title: "Transform Your Business with Custom Laravel Solutions",
+      title: "Leading CRM Development Company in  India",
       description:
-        "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",
+        "Moonstack is the leading CRM development company in India. Our team of CRM experts are trusted by small businesses and large enterprises. We build high performance, intelligent, and customised CRM solutions that align with different business needs. With our CRM expert team, our aim is to streamline workflows, support customer relationships, and increase leads and sales processes. Along with different feature functionality, we also focus on clean UI/UX codes, security, and other aspects that need to be considered for businesses. We offer open source,  cloud based CRM solutions that allows you to integrate third party software and your team can access customer data, leads, and reports anytime, anywhere.",
       stats: [],
       description2:
-        "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
+        "We offer end to end CRM development services in India that includes custom CRM development, module development solutions, integration services, migration services, database integration, and many more. Moreover, with tech expertise, we are also known for strong communication, on time delivery, and constant updates with our team. In order to stay ahead in the market competition, our CRM app developers in India keep themselves updated with the latest technological advancements and sort last minute complex challenges. With CRM development services to meet the latest business needs, we also offer CRM solutions in India that are ready to use such as CRM software, CRM mobile app, Cloud based CRM software, and many more.",
       image: bndimage1.src,
     },
   ],
   solutions: {
     headingContent: [
       {
-        text: "Our ",
+        text: "Our  ",
         color: "text-white",
       },
       {
-        text: "Laravel web Development",
+        text: "CRM Development",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: "Services Includes",
+        text: " Services in India",
         color: "text-white",
       },
     ],
     subHeadingText:
-      "We have best Laravel web developers and with them we offer affordable laravel development service in India - from consultation to migration all your needs will fulfill at one stop ",
+      "We offer end to end CRM development  services in India. We offer custom CRM solutions, integration, automation, cloud based access, and many more CRM based functionalities that ensure to improve business efficiency, improve customer relationship, and boost sales. Our CRM services in India includes",
   },
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
-      title: "Laravel Consulting Services",
+      title: "Custom CRM Development",
       description:
-        "Bring your idea into reality with the right strategy and roadmap with Laravel web experts. Our Moonstack’s expert Laravel consulting professionals will understand your business needs and provide you with the right development strategy to deliver secure and scalable Laravel solutions in the market.",
+        "We build fully customised CRM solutions that are designed as per your business needs. Our CRM experts build software that are integrated with modern features, modules, and several workflows that are with the motive to improve efficiency, boost productivity, and support growth. Moreover, we design CRM software that reflect your brand identity and style that align with your business needs.",
     },
     {
       imgSrc: engagingIcon.src,
-      title: "Custom Laravel Website Development Service",
+      title: "CRM Integration Services",
       description:
-        "We build high performance, secure, and functional custom Laravel web apps in India. We develop custom  Laravel websites for clients as per their business requirements. Our Laravel web development experts understand the gap in your operational process  and integrate modern features to meet latest business demands. ",
+        "Integrate best CRM services that help to grow your business. Extend the functionalities of your CRM software with the integration of WhatsApp, ERP, HRMS, and secure payment gateways. We identify the specific features that are required in your business that ensure to reduce time, improve accuracy, and respond faster to customers. We focus on delivering smart CRM integration services India via a secure API that offers real time syncing and delivers smarter and faster experiences.",
     },
 
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Custom  E-Commerce Development Services ",
+      title: "CRM Mobile Applications",
       description:
-        "Grow your online presence with Laravel ecommerce development service in India. We build high performance and secure custom e-commerce solutions integrated with advanced functionalities and deliver smooth shopping experiences to customers. Our team's main aim is to increase website conversions on your websites.",
+        "Build custom CRM mobile applications for Android and iOS platforms. We build fast, secure, and easy to use CRM mobile apps that bring the entire business infrastructure to the mobility of the users. With our CRM mobile apps our customers can track leads, manage different follow ups, opt for seamless communication processes. Our mobile apps are easy to use and users can access the information from anywhere and at any time.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel UI/UX Designing Services ",
+      title: "Cloud-Based CRM Services",
       description:
-        "Our architect designers create interactive and engaging designs for our customers. We hold expertise with custom designing in which we bring your business brand identity to the real world and connect with customers. At Moonstack, our designers create interactive designs with easy to use aspects.",
+        "Moonstack delivers Cloud based CRM solutions that turn the processings into faster and secure. Our cloud based CRM software offers automatic back ups, real time syncing, and high performance so that the team can work smoothly and don’t have to be hesitant about being connected with server and maintenance processes. Our CRM solution allows users to manage data from anywhere and at any time with instant updates with no delay that helps to connect users and team with each other.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel API Integration Services",
+      title: "CRM Migration & Upgradation",
       description:
-        "Extend your web and mobile app functionalities with seamless laravel REST API development service in India by partnering with the best Laravel development agency. We integrate Laravel web solutions with third party services via API such as secure payment gateway, internal systems, and many more. ",
+        "Our custom CRM software development in  India offers complete CRM migration services in India. We offer data transfer to set up services that guarantee all existing feature optimisation, performance, and constant support to improve performance. Along with this, Moonstack CRM development services in India include updates to increase performance, add new functionalities, and make sure that your CRM solution runs smoothly.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Maintenance and Support Services ",
+      title: "CRM Ongoing Support & Maintenanc",
       description:
-        "We offer end to end Laravel maintenance and support services. With our expert Laravel team, we run Laravel web solutions smoothly without any errors. We provide constant updates, optimize performance, and fix bugs to run solutions smoothly and deliver long term business commitment. ",
+        "As the leading CRM development company in India, we offer full time ongoing support and maintenance services to our clients that offer continuous support, fix bugs immediately, provide feature enhancements for smooth operations, and many more. Our end to end ongoing support and maintenance services. From trouble shooting issues to managing different operations we manage the end to end process with our clients to enhance performance and meet all tech standards",
     },
   ],
 
@@ -158,58 +158,44 @@ export const crm: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Our Process of ",
-    highlight: "Laravel website Development Service",
+    title: "Moonstack process we follow to integrate",
+    highlight: "CRM Solutions in your Business infrastructure",
     subtitle:
-      "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges.",
+      "At Moonstack, we have a defined and structured approach that delivers the best CRM solutions to our clients with the right strategy. We have delivered a wide range of CRM solutions and have hands-on experience with the delivery process and know the exact method to implement in the CRM delivery process. We have opted for the agile methodology and include best CRM development experts in India who focus on timely delivery and ensure to solve last minute complex challenges.",
     steps: [
       {
         number: 1,
-        title: "Gather Requirements",
+        title: "Understand Business",
         description:
-          "We collect all the information about the project to understand what our client actually needs that allow us to align with the project.",
+          "For the right CRM integration services, it is important to understand the business in depth. Our CRM software developers understand your business in depth to identify the gaps and provide you the best CRM solution in India.",
         position: "left",
       },
       {
         number: 2,
-        title: "Client Discussion",
+        title: "Planning and Discussions",
         description:
-          "Once we have proper requirements then our Laravel team experts conduct a formal client discussion to solve all queries.",
+          "Once our CRM development team will get an idea of what your business needs and they will have proper discussions about future strategies and make roadmaps for the same. Proper discussion helps to clear your mind and bring the best strategies.",
         position: "right",
       },
       {
         number: 3,
-        title: "Internal Strategy Discussion",
+        title: "Customisation and Set up",
         description:
-          "After that we have an internal strategy discussion in which we have our tech brainstorming to deliver the best outcome.",
+          "At Moonstack, we configure different modules, automation flows, dashboards, and user roles that match specific business needs. We customised different CRM solutions and conducted proper set up processes for our customers.",
         position: "left",
       },
       {
         number: 4,
-        title: "Designing - UI/UX Services",
+        title: "Integration and Testing",
         description:
-          "Designers start the designing process in which they focus on interactive user interface and easy to use for the users.",
+          "We integrate CRM solutions into your business and conduct an end to end testing process to run the solutions smoothly and without any tech issues. After the CRM integration process, our CRM app development team does end to end testing including manually and automatic testing for our clients",
         position: "right",
       },
       {
         number: 5,
-        title: "Development",
+        title: "Full Time Support",
         description:
-          "Tech team start the development process in which frontend developers and backend coders work together.",
-        position: "left",
-      },
-      {
-        number: 6,
-        title: "Deployment and Testing",
-        description:
-          "We deploy and test the Laravel software with automated and manual processes that allow us to deliver bug free solutions. ",
-        position: "right",
-      },
-      {
-        number: 7,
-        title: "Delivery and Post Support ",
-        description:
-          "After testing, we deliver Laravel based solutions in the market with post support that ensure our team is always there.",
+          "Our CRM team is available for our clients full time. We offer full time support for our clients in which we provide dedicated experts who monitor entire CRM and manage different updates to resolve issues instantly. Moonstack's main aim is to ensure zero downtime, offer smooth operations, and continuous operations with tech experts.",
         position: "left",
       },
     ],
@@ -217,62 +203,54 @@ export const crm: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Our Scalable " },
+      { text: "Our " },
       {
-        text: "Laravel Web development",
+        text: "CRM Solutions ",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: "Solutions" },
+      { text: "that takes your Business to next level " },
     ],
     description:
-      "For decades MoonStack has been creating a wide range of Laravel web solutions for our clients for different industries that are ready to use as per different business with minor and major customisation processes. ",
+      "As the leading CRM service provider in India, we have designed different CRM solutions for our clients to streamline different operations, improve customer interactions, and boost team productivity. We have ready to use CRM solutions that are easy to integrate in the workflow process that automate your internal operations and deliver faster responses  that are designed for all business needs.",
     cards: [
       {
-        id: "Laravel Web Apps",
-        label: "Laravel Web Apps",
+        id: "Personalised AI Solutions",
+        label: "Personalised AI Solutions",
         description:
-          "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
+          "Our CRM app developers in India have designed the best CRM AI solution for businesses that provide personalized customer experiences to the users. With CRM based functionalities, CRM solutions offer personalized recommendations, offers, and content that match all the customer satisfaction needs and increase customer engagement.  With our smarter CRM solution we offer end to end automation that boost engagement, conversion rates, and long term loyalty.",
         variant: "light",
       },
       {
-        id: "Laravel E-commerce Solutions",
+        id: "Data Analysis",
 
-        label: "Laravel E-commerce Solutions",
+        label: "Data Analysis",
         description:
-          "The best ecommerce website developers in India build innovative and highly functional Laravel online stores. We have integrated essential functionalities such as product catalog, shopping carts, order tracking, and secure payment gateways that increase conversion rates and user experience.",
+          "With our Data analysis CRM based solution you can analyse a large set of customer data that is collected via different sources such as social media, email integration platforms, website, and many more different platforms. Our Artificial Intelligence and Machine Learning CRM solutions are enabled to identify patterns and trends that help you to make the right decision for your business with data driven decisions. This also excludes manual tasks that excludes repetitive tasks and saves huge amounts of time.",
         variant: "accent",
       },
       {
-        id: "Laravel CRM Solutions ",
+        id: "Chatbots and Virtual Assistants",
 
-        label: "Laravel CRM Solutions ",
+        label: "Chatbots and Virtual Assistants",
         description:
-          "Moonstack builds Laravel based CRM solutions that improve customer relationship management processes in companies. We design custom CRM solutions that allow us to track leads and automate conversions that lead to data driven decisions and streamline client communication processes.",
+          "We integrate smart chat bots and modern virtual assistants in the CRM solutions that help to increase customer engagement and exclude human dependency. Our bots are designed and trained in such a way that provide instant replies and solve queries of the users instantly without any delay. We have integrated wide range chat bots and virtual assistants in the solutions with the aim to support or manage different routine based customer inquiries. ",
         variant: "dark",
       },
       {
-        id: "Laravel CMS Solutions",
+        id: "Automated CRM based Marketing Campaigns",
 
-        label: "Laravel CMS Solutions",
+        label: "Automated CRM based Marketing Campaigns",
         description:
-          "Professional Laravel experts offer robust Laravel based CMS development in India. We have built the best Laravel CMS solutions that allow businesses to easily update, publish, and manage content effortlessly on their websites. We deliver CMS solutions to businesses that  have full control on content management systems. ",
+          " With our hands-on CRM experience, we integrate the combination of AI and modern tech advancements that automates different marketing campaigns. With our advanced CRM solution, we integrate automated features such as content creation, email campaigns with different tools, and social media scheduling. With the support of AI, we analyze customer behaviour, identify the most retention based customer market, and target relevant campaigns. Our AI prediction helps to run successful marketing campaigns that lead to maximum conversion rates.",
         variant: "dark",
       },
       {
-        id: "POS Systems",
+        id: "Cloud Based CRM Solution ",
 
-        label: "POS Systems",
+        label: "Cloud Based CRM Solution ",
         description:
-          "Integrate modern Laravel powered POS systems that are developed by Laravel experts in India. Our POS systems help to streamline different operational processes, allow retailers to manage multiple outlets, and deliver best outcomes for customers. We have delivered a wide range of POS (Point of Sale solutions) to our retail businesses.",
+          "Our CRM integration services in India offer Cloud based CRM solutions that allow sales people to access data from anywhere and at any time with simple credentials. They don’t require any complicated real time servers. Enterprise all data, interactions, and inclusive all information is stored securely on Cloud that offers easy access to the platform and supports real time updates across several devices.",
         variant: "light",
-      },
-      {
-        id: "Video Streaming and Media Apps",
-
-        label: "Video Streaming and Media Apps",
-        description:
-          "Develop your Laravel based video streaming and media apps with  expert laravel web developers in India. We designed video streaming and media apps that support secure content delivery and content management. We develop video streaming and media apps in such a way that offer seamless streaming and integrated with user authentication and support multiple platforms. ",
-        variant: "dark",
       },
     ],
   },
@@ -297,98 +275,97 @@ export const crm: PageData = {
   qualitySectionData: {
     heading: [
       {
-        text: " Why Choose us for your ",
+        text: "Why choose us for your ",
         color: "text-white",
       },
       {
-        text: "Laravel  Web Development",
+        text: "CRM software development ",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: " Services?",
+        text: "services in India?",
         color: "text-white",
       },
     ],
     description:
-      "Laravel is known for the best Laravel framework development in India. At Moonstack, we have delivered a wide range of custom Laravel web development services to our customers. Our professional Laravel experts have delivered secure, high performance, and future ready web apps.",
+      "We are the best CRM Software development company in India. Our CRM team offers end to end services from small to large enterprises. At Moonstack, we have delivered a wide range of CRM solutions to different industries as per the latest technological advancements and market trends. With tech expertise, we also focus on timely delivery and strong communication processes.",
     columsClass: "lg:grid-cols-3",
     list: [
       {
         id: 1,
-        title: "Decade of Experience",
+        title: "Experience Team",
         icon: collaboration.src,
         description:
-          "Our Laravel experts have decades of experience that allows them to meet all clients' needs. Laravel coders have delivered scalable, secure, and high performance web apps with advanced integrated functionalities.",
+          "We have a team of CRM developers, who have decades of experience in delivering a wide range of CRM solutions to different industries like Real estate, healthcare, education, Fintech, and many more. At Moonstack, we are enabled to sort last minute complex challenges and put our experience in delivering best CRM solutions that align with your business needs and meet latest market innovations.",
       },
       {
         id: 2,
-        title: "Custom Solutions for Every Business",
+        title: "Updated with Latest Tech trends",
         icon: collaboration.src,
         description:
-          "We have delivered 450+ custom web development solutions across the world. Our professional Laravel experts have built high performance, scalable different solutions specifically designed for different business needs.",
+          "Our CRM professionals keep them updated with the latest technological trends and updated frameworks that help us to meet the market trends. We have hands-on experience on different tools and technologies, but it is also important for us to keep ourselves updated with the new innovations and what's going on in the market. At Moonstack, we don’t opt for the outdated strategies but opt for the modern technological advancements.",
       },
       {
         id: 3,
-        title: "End to End Laravel Development Services",
+        title: "On Time Delivery",
         icon: collaboration.src,
         description:
-          "Delivering end to end Laravel development services to our clients. From consultation to development to migration - Moonstack is known as a one stop solution for all our client’s Laravel web development needs.",
+          "We believe in on time delivery. Our focus is to deliver projects on time and without delay and compromising on quality. At Moonstack, we plan, execute, and review all details in detail and provide CRM solutions on a promised timeline. We always focus on being committed to our words and deliver solutions without any delay and you can face no surprises in future. Hence, punctuality is our priority.",
       },
       {
         id: 4,
-        title: "Transparent Communication",
+        title: "Strong Communication",
         icon: collaboration.src,
         description:
-          "At Moonstack, we maintain open communication with our clients with constant updates, demos, and progress reports that ensure us to stay connected with our customers. Moreover, that also allows us to understand each other's mindset in a better way.",
+          "Our team opt for a strong communication process as we understand the value of clear and transparent. We focus on professional communication at every stage that helps our clients to stay informed at every stage of the development and have an idea what's going on in the process. We offer end to end strong communication that ensures clear, structured, and professional communication among clients and with us.",
       },
       {
         id: 5,
-        title: "Confidential Details",
+        title: "Seamless Integrations",
         icon: collaboration.src,
         description:
-          "Every project idea is unique - we understand the importance of your business module. We keep all your information fully secure and confidential with us. Our team keeps all details to them, and in any case we don’t leak any of your project ideas to third parties.",
+          "At Moonstack, we offer seamless integration with CRM tools like WhatsApp, ERP, HRMS, emails, and payment gateways. Our CRM app development team works collaboratively and delivers best performance that matches real time data flow that leads to more accuracy, faster operations, and reduces manual work.",
       },
       {
         id: 6,
-        title: "Creative and Business oriented solutions",
+        title: "Dedicated Support and Maintenance",
         icon: collaboration.src,
         description:
-          "We just don’t build Laravel solutions only for the web development purpose. At Moonstack, we build business oriented solutions that align with your business needs and attract users with advanced based next generation features.",
+          "We offer end to end dedicated support and maintenance to our clients. At Moonstack, if we start with a journey, we will go till the end. For us it's not only to deploy the CRM solutions, we aim to focus on dedicated support and maintenance services that allow clients to leverage the benefits of modern technologies and smooth performance for a long period of time.",
       },
     ],
   },
   accordionData: [
     {
-      question:
-        "Will you be able to work long term for my Laravel project requirements?",
+      question: "What is CRM software and why should we opt in our business?",
       answer:
-        "Yes, our Laravel web developers are always available and they are proficient with all types of Laravel web development requirements. Our team offers professional Laravel web development services to our customers. ",
+        "CRM software refers to Customer Relationship Management. This is the present need of today’s business as it helps to manage leads, customer sales, and communication all in one place. CRM helps to improve efficiency, reduce manual work, and offer better team visibility that leads to smarter decisions.",
     },
     {
-      question: "How long will you take to build my Laravel website?",
+      question: "How much time would you take to deliver CRM solutions?",
       answer:
-        "There is no fixed time - the completion of Laravel websites are fully dependent on different factors - time, no of Laravel developers, complexity of app. But, we make sure we will put our high efforts and deliver your solutions with all essential features.",
-    },
-    {
-      question: "Will you provide Laravel migration services in India?",
-      answer:
-        "Yes, we will provide Laravel migration services in India. Our Laravel expert team specializes in migrating solutions from other technologies to Laravel without affecting design, performance, and even your data.",
-    },
-    {
-      question: "Can I hire Laravel web developers from your team?",
-      answer:
-        "Yes, of course you can hire the best Laravel developers from our team on full time, part time, and hourly basis. We have a pool of dedicated Laravel developers.",
+        "There is not any specific time duration defined to deliver CRM solutions. The CRM development services in India time depends on several factors such as time, complexity, and many more things. ",
     },
     {
       question:
-        "Can you integrate API or third party services into my Laravel solutions?",
+        "Can you help me with the integration of the CRM tool with the existing enterprise tools?",
       answer:
-        "Yes, we can extend functionalities in Laravel solutions with third party services via API. Our experts have hands-on experience in third party integration services. ",
+        "Yes, we can integrate custom CRM software with the existing tools into your business infrastructure.",
     },
     {
-      question: "How much does it cost for Laravel web development services? ",
+      question: "Is Cloud based infrastructure secure with CRM?",
       answer:
-        "There is no fixed cost for Laravel web development services. The Laravel web development factors are based on several factors such as features, design, hiring model, third party integration requirement.",
+        "Yes,  cloud based CRM solutions are secure and use encrypted storage, secure servers, and have access to advanced controls. Cloud also provides access to automatic backups, safe accessibility from anywhere",
+    },
+    {
+      question: "Will you provide training to our staff after CRM integration?",
+      answer:
+        "Yes, we will provide end to end training after installation of CRM integration software so you can leverage all the benefits of the modern tech stack.",
+    },
+    {
+      question: "Can I upgrade CRM software as my business grows?",
+      answer:
+        "Yes, of course with CRM team experts in India, you can upgrade your CRM solutions with advanced technologies and integrate additional functionalities to streamline your next level business operations.",
     },
   ],
 

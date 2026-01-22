@@ -153,14 +153,20 @@ export default function Form({ formName }: FormProps) {
             htmlFor="message"
             className="absolute top-3 left-0 cursor-text text-sm font-[500] text-[#000] transition-all peer-not-placeholder-shown:-top-[10px] peer-not-placeholder-shown:bg-white peer-not-placeholder-shown:text-xs peer-focus:-top-[10px] peer-focus:bg-white peer-focus:text-xs"
           >
-            About project<span className="text-[red]">*</span>
+            About Your Project<span className="text-[red]">*</span>
           </label>
           {errors.message && (
-            <p className="absolute bottom-[-18px] !text-[12px] text-[red]">
+            <p className="bottom-[-18px] !text-[12px] text-[red]">
               {errors.message}
             </p>
           )}
         </div>
+        <p className="!text-[12px] text-[#8f8f8f]">
+          Briefly describe your requirements, goals, and timeline.
+          <br />
+          Example: Website redesign, mobile app development, AI integration,
+          etc.
+        </p>
       </div>
 
       {/* FILE */}

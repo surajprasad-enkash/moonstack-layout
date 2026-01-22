@@ -20,13 +20,13 @@ export const shopify: PageData = {
   hero: {
     title: [
       {
-        text: "Laravel Website Development Service Provider",
+        text: "Build a High-Converting Shopify Store That Scales with Your Business",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Need a fast, secure, and scalable web solution? Our Laravel development services deliver enterprise-grade applications with clean code, optimal performance, and seamless functionality.",
+        text: "In the competitive world of e-commerce, your store design can make or break sales. We create stunning Shopify stores optimized for conversions—combining beautiful design with smart functionality. ",
         color: "text-white",
       },
     ],
@@ -40,8 +40,8 @@ export const shopify: PageData = {
         href: "/services",
       },
       {
-        label: "Laravel",
-        href: "/services/laravel-website-development-company",
+        label: "Shopify",
+        href: "/services/shopify-website-development-company",
       },
     ],
   },
@@ -63,12 +63,12 @@ export const shopify: PageData = {
 
   leftCardData: [
     {
-      title: "Transform Your Business with Custom Laravel Solutions",
+      title: "Famous Shopify Website Development Company Globally",
       description:
-        "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",
+        "Moonstack is the leading Shopify development company in India. We have delivered a wide range of IT solutions to different industries, and among them, Shopify is our core e-commerce development service. At Moonstack, we offer end-to-end customised Shopify development services in India that allow us to develop high-performing, innovative solutions. We have a blend of professional designers and developers who have hands-on experience with Shopify and Shopify Plus.",
       stats: [],
       description2:
-        "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
+        "Our main aim is to launch powerful e-commerce-based Shopify stores for clients. In order to meet all our customers' needs, we offer end-to-end Shopify development services in India that include store setup, custom theme development, responsive designs, third-party API integration services, testing, and many more services. We are considered as a one-stop solution for all our clients' needs. We serve our customers from start ups to large enterprises. Moreover, we believe in effective transparent communication, and deliver things in a timely manner. With technical aspects, our team also focuses on creating appealing and engaging designs for the customers that ensure to meet all market standards.",
       image: bndimage1.src,
     },
   ],
@@ -79,54 +79,54 @@ export const shopify: PageData = {
         color: "text-white",
       },
       {
-        text: "Laravel web Development",
+        text: "Shopify Development",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: "Services Includes",
+        text: " Services in India",
         color: "text-white",
       },
     ],
     subHeadingText:
-      "We have best Laravel web developers and with them we offer affordable laravel development service in India - from consultation to migration all your needs will fulfill at one stop ",
+      "We offer end to end Shopify development services in India that meet all our clients needs that ensure to run their business smoothly.",
   },
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
-      title: "Laravel Consulting Services",
+      title: "Shopify Consulting Services",
       description:
-        "Bring your idea into reality with the right strategy and roadmap with Laravel web experts. Our Moonstack’s expert Laravel consulting professionals will understand your business needs and provide you with the right development strategy to deliver secure and scalable Laravel solutions in the market.",
+        "Discuss all your Shopify related project needs with top tech experts. With our expert Shopify consulting services, we allow businesses to set up, optimize, and grow their shopify business. We also offer theme customisation and conversion focused strategies that meet all modern tech guidelines as well as stay ahead in the market competition. ",
     },
     {
       imgSrc: engagingIcon.src,
-      title: "Custom Laravel Website Development Service",
+      title: "Shopify Set up and Product Import",
       description:
-        "We build high performance, secure, and functional custom Laravel web apps in India. We develop custom  Laravel websites for clients as per their business requirements. Our Laravel web development experts understand the gap in your operational process  and integrate modern features to meet latest business demands. ",
+        "We help you in the complete Shopify store set up that reflects fully professional and with an appealing user interface. With our experts, we also offer seamless product import with accurate information including product description, prices, variants, and many more things. Experts focus is to set up modern error free stores with more conversions and easy navigation.",
     },
 
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Custom  E-Commerce Development Services ",
+      title: "Shopify Designing Services",
       description:
-        "Grow your online presence with Laravel ecommerce development service in India. We build high performance and secure custom e-commerce solutions integrated with advanced functionalities and deliver smooth shopping experiences to customers. Our team's main aim is to increase website conversions on your websites.",
+        "Grow your online store with stunning and engaging user interface. Our expert Shopify team builds modern, mobile friendly, and user centric designs for the users. We focus to reflect on brand identity that can connect with your customers and increase conversion rates. Our designs are easy to use and deliver a next generation shopping experience to the users.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel UI/UX Designing Services ",
+      title: "Shopify Third Party Integrations",
       description:
-        "Our architect designers create interactive and engaging designs for our customers. We hold expertise with custom designing in which we bring your business brand identity to the real world and connect with customers. At Moonstack, our designers create interactive designs with easy to use aspects.",
+        "Extend your Shopify functionalities with third party integration services that will match your business needs. Our Shopify experts connect third party platforms via API that ensure to connect different platforms such as CRM, ERP, payment gateway, marketing tools that allow to automate the processes and improve efficiency. With Shopify API integration services developers can save time and effort as they don’t have to build features from scratch. ",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel API Integration Services",
+      title: "Shopify Testing Services",
       description:
-        "Extend your web and mobile app functionalities with seamless laravel REST API development service in India by partnering with the best Laravel development agency. We integrate Laravel web solutions with third party services via API such as secure payment gateway, internal systems, and many more. ",
+        "Launch your error free Shopify store bug free. We offer comprehensive testing services from manual to automated testing. In our Shopify development services in India we constantly conduct functionality checks, speed optimisation, UI/UX reviews, and payment gateway testing that ensure our clients enjoy seamless shopping experiences.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Maintenance and Support Services ",
+      title: "Shopify Support and Maintenance Services",
       description:
-        "We offer end to end Laravel maintenance and support services. With our expert Laravel team, we run Laravel web solutions smoothly without any errors. We provide constant updates, optimize performance, and fix bugs to run solutions smoothly and deliver long term business commitment. ",
+        "We offer end to end Shopify support and maintenance services to our clients that ensure high performance optimization. Our team of Shopify coders are always available for 24*7 that helps to manage updates, constant back ups, and continuous monitoring. You can get reliable support and instant solutions for all your Shopify related needs that help you maintain your store with full security and maintain responsiveness.",
     },
   ],
 
@@ -158,120 +158,113 @@ export const shopify: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Our Process of ",
-    highlight: "Laravel website Development Service",
+    title: "Process we follow to deliver best ",
+    highlight: "Shopify Development Services",
     subtitle:
-      "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges.",
+      "We follow a structured pattern and quality focus process that allows us to deliver high performance and optimised Shopify stores in the market. With our experience, our Shopify experts have defined a proper process that delivers seamless development, smooth functionalities that lead to maximum conversion for businesses.",
     steps: [
       {
         number: 1,
-        title: "Gather Requirements",
+        title: "Requirement Analysis",
         description:
-          "We collect all the information about the project to understand what our client actually needs that allow us to align with the project.",
+          "We collect all the information about the project with our clients to understand, actually what they require and what is existing data.",
         position: "left",
       },
       {
         number: 2,
-        title: "Client Discussion",
+        title: "Shopify custom design & theme set up",
         description:
-          "Once we have proper requirements then our Laravel team experts conduct a formal client discussion to solve all queries.",
+          "Start with custom UI/UX designing services, we start design for our clients as per their brand identity and connect their audience via designs.",
         position: "right",
       },
       {
         number: 3,
-        title: "Internal Strategy Discussion",
+        title: "Shopify Development",
         description:
-          "After that we have an internal strategy discussion in which we have our tech brainstorming to deliver the best outcome.",
+          "Start development for our clients with appropriate frontend and backend technologies that fit the project needs",
         position: "left",
       },
       {
         number: 4,
-        title: "Designing - UI/UX Services",
+        title: "Integrations ",
         description:
-          "Designers start the designing process in which they focus on interactive user interface and easy to use for the users.",
+          "We opt for integration services that help to add on third party integration services via API. This extends additional functionalities",
         position: "right",
       },
       {
         number: 5,
-        title: "Development",
+        title: "Testing & Optimization",
         description:
-          "Tech team start the development process in which frontend developers and backend coders work together.",
+          "We provide an end to end testing and optimisation process to launch error free and bug free solutions in the market.",
         position: "left",
       },
       {
         number: 6,
-        title: "Deployment and Testing",
+        title: "Launch & Ongoing Support",
         description:
-          "We deploy and test the Laravel software with automated and manual processes that allow us to deliver bug free solutions. ",
+          "At Moonstack, our experts launch your Shopify solution in the market successfully and provide support and maintenance services.",
         position: "right",
-      },
-      {
-        number: 7,
-        title: "Delivery and Post Support ",
-        description:
-          "After testing, we deliver Laravel based solutions in the market with post support that ensure our team is always there.",
-        position: "left",
       },
     ],
   },
 
   impactSection: {
     heading: [
-      { text: "Our Scalable " },
+      { text: "Why are our " },
       {
-        text: "Laravel Web development",
+        text: "Shopify Solutions",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: "Solutions" },
+      { text: " different?" },
     ],
     description:
-      "For decades MoonStack has been creating a wide range of Laravel web solutions for our clients for different industries that are ready to use as per different business with minor and major customisation processes. ",
+      "As the leading Shopify development company in India. We offer complete set of Shopify development services that match all your market needs",
     cards: [
       {
-        id: "Laravel Web Apps",
-        label: "Laravel Web Apps",
+        id: "Simplify Shopify Set up",
+        label: "Simplify Shopify Set up",
         description:
-          "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
+          "We simplify Shopify store set up for our clients that ensure best store optimisation. Our developers manage all processings from start to finish, In store optimization - we set up your account, upload your products, and create stores that match your design needs and reflect the same brand identity. ",
         variant: "light",
       },
       {
-        id: "Laravel E-commerce Solutions",
+        id: "Shopify Brand Theme",
 
-        label: "Laravel E-commerce Solutions",
+        label: "Shopify Brand Theme",
         description:
-          "The best ecommerce website developers in India build innovative and highly functional Laravel online stores. We have integrated essential functionalities such as product catalog, shopping carts, order tracking, and secure payment gateways that increase conversion rates and user experience.",
+          "At Moonstack, we create online stores that match your brand standards and theme. From logo to color palettes, and typography we create a user interface with eye catchy colors and reflect your online store that gives the same feel like your offline business. The user interface will connect with your audience.",
         variant: "accent",
       },
       {
-        id: "Laravel CRM Solutions ",
+        id: "Shopify Website Development",
 
-        label: "Laravel CRM Solutions ",
+        label: "Shopify Website Development",
         description:
-          "Moonstack builds Laravel based CRM solutions that improve customer relationship management processes in companies. We design custom CRM solutions that allow us to track leads and automate conversions that lead to data driven decisions and streamline client communication processes.",
+          "Our Shopify website developers build powerful websites that are integrated with customized designs, responsive layouts, and essential functionalities. We opt for the best backend and frontend development technologies that launch secure websites for customers. From homepage to product pages, we create the best websites that enhance shopping experiences. ",
         variant: "dark",
       },
       {
-        id: "Laravel CMS Solutions",
+        id: "Shopify Mobile Apps",
 
-        label: "Laravel CMS Solutions",
+        label: "Shopify Mobile Apps",
         description:
-          "Professional Laravel experts offer robust Laravel based CMS development in India. We have built the best Laravel CMS solutions that allow businesses to easily update, publish, and manage content effortlessly on their websites. We deliver CMS solutions to businesses that  have full control on content management systems. ",
+          "Create your interactive and user-friendly mobile applications for Android and iOS that help Shopify businesses to grow effortlessly. Our Shopify designing team creates interactive mobile apps with intuitive designs and smooth navigation that allow users to shop at their fingertips. With interactive designs, we focus on responsive layouts that will never turn off the customers.",
         variant: "dark",
       },
       {
-        id: "POS Systems",
+        id: "Integration Services",
 
-        label: "POS Systems",
+        label: "Integration Services",
         description:
-          "Integrate modern Laravel powered POS systems that are developed by Laravel experts in India. Our POS systems help to streamline different operational processes, allow retailers to manage multiple outlets, and deliver best outcomes for customers. We have delivered a wide range of POS (Point of Sale solutions) to our retail businesses.",
+          "Our team makes your Shopify platform advanced and modern with our third party integration services. We integrate third party functionalities easily with API. Our Shopify coders have hands-on experience in integrating third party API services security without any issues that allow your customers to have access to a wide range of functionalities.",
         variant: "light",
       },
       {
-        id: "Video Streaming and Media Apps",
+        id: "Advanced Functionalities",
 
-        label: "Video Streaming and Media Apps",
+        label: "Advanced Functionalities",
         description:
-          "Develop your Laravel based video streaming and media apps with  expert laravel web developers in India. We designed video streaming and media apps that support secure content delivery and content management. We develop video streaming and media apps in such a way that offer seamless streaming and integrated with user authentication and support multiple platforms. ",
+          "Make your Shopify platform modern with advanced integration functionalities. With our advanced features such as AI driven recommendations, real time analytics, and automation processes improve user experiences, create smart workflow, and connect with your customers easily. Moreover, allow your clients to leverage the benefits of modern functionalities powered by next gen technologies.",
         variant: "dark",
       },
     ],
@@ -297,98 +290,96 @@ export const shopify: PageData = {
   qualitySectionData: {
     heading: [
       {
-        text: " Why Choose us for your ",
+        text: "Why Choose Moonstack for ",
         color: "text-white",
       },
       {
-        text: "Laravel  Web Development",
+        text: "your Shopify",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: " Services?",
+        text: " platform?",
         color: "text-white",
       },
     ],
     description:
-      "Laravel is known for the best Laravel framework development in India. At Moonstack, we have delivered a wide range of custom Laravel web development services to our customers. Our professional Laravel experts have delivered secure, high performance, and future ready web apps.",
+      "As a leading Shopify development company, we offer end to end Shopify development services that offer high performance, increase conversion rates, and long term support in business. Our team only only delivers solutions but become your Shopify tech partner that meets tech demands as well as business goals. From custom development to maintenance we are always with our clients for all their needs.",
     columsClass: "lg:grid-cols-3",
     list: [
       {
         id: 1,
-        title: "Decade of Experience",
+        title: "Certified Shopify Experts",
         icon: collaboration.src,
         description:
-          "Our Laravel experts have decades of experience that allows them to meet all clients' needs. Laravel coders have delivered scalable, secure, and high performance web apps with advanced integrated functionalities.",
+          "We have a team of certified Shopify experts who have hands-on experience with who understand custom themes and business systems. Our Shopify developers have managed several projects from planning to execution. They are proficient in delivering to deployment and solving all last minute complex challenges",
       },
       {
         id: 2,
-        title: "Custom Solutions for Every Business",
+        title: "Custom Brand Focused",
         icon: collaboration.src,
         description:
-          "We have delivered 450+ custom web development solutions across the world. Our professional Laravel experts have built high performance, scalable different solutions specifically designed for different business needs.",
+          "Our Shopify designers create the Shopify website that reflects your brand identity. We not only focus on development aspects that our team also put their ideology to truly reflect the brand identity. We make sure that your store stands out with a smooth navigation process that helps in better understanding and helps to increase conversion rates.",
       },
       {
         id: 3,
-        title: "End to End Laravel Development Services",
+        title: "Transparent process",
         icon: collaboration.src,
         description:
-          "Delivering end to end Laravel development services to our clients. From consultation to development to migration - Moonstack is known as a one stop solution for all our client’s Laravel web development needs.",
+          "We believe in keeping transparency with our clients. We work as a tech partner and share information with them. With us, whatever the strategy we create and team involvement and future roadmap everything we clearly discuss with our customers. We have created a process that ensures zero hidden surprises.",
       },
       {
         id: 4,
-        title: "Transparent Communication",
+        title: "On -Time Delivery",
         icon: collaboration.src,
         description:
-          "At Moonstack, we maintain open communication with our clients with constant updates, demos, and progress reports that ensure us to stay connected with our customers. Moreover, that also allows us to understand each other's mindset in a better way.",
+          "With our Shopify developers in India, we make sure that we will deliver all your tasks on time without any delay. Our team discusses internally and then only we provide deadlines to our clients. We believe in delivering all tasks on time or before deadlines. At Moonstack, deadlines are strictly followed without any quality compromise.",
       },
       {
         id: 5,
-        title: "Confidential Details",
+        title: "Client Centric Approach",
         icon: collaboration.src,
         description:
-          "Every project idea is unique - we understand the importance of your business module. We keep all your information fully secure and confidential with us. Our team keeps all details to them, and in any case we don’t leak any of your project ideas to third parties.",
+          "We work as one team and follow a client-centric approach. We listen to all your requirements and deliver all projects as per our clients' expectations. Our team is always available for open communication and we are always open to discuss our ideas and next steps that we will take for the project. All functionalities we decide for our clients will match all your standards and deliver next-generation experiences to clients.",
       },
       {
         id: 6,
-        title: "Creative and Business oriented solutions",
+        title: "Long term Partnership ",
         icon: collaboration.src,
         description:
-          "We just don’t build Laravel solutions only for the web development purpose. At Moonstack, we build business oriented solutions that align with your business needs and attract users with advanced based next generation features.",
+          "At Moonstack, we are here not for limited functionality integration. We are for our clients to offer them long term partnership and stand with them in every thick and thin decision making. We focus on building relationships not only to fulfill technical requirements. We help you to grow your Shopify store for a long term. Our team doesn't deal with clients for a limited period, we offer long term support without any delay to them.",
       },
     ],
   },
   accordionData: [
     {
-      question:
-        "Will you be able to work long term for my Laravel project requirements?",
+      question: "What services do you offer for Shopify development?",
       answer:
-        "Yes, our Laravel web developers are always available and they are proficient with all types of Laravel web development requirements. Our team offers professional Laravel web development services to our customers. ",
+        "We provide end to end Shopify development services to our clients from Shopify consulting services to launching and maintenance.  Our End to end Shopify developments services - custom theme development, store setup, app integration, UI/UX design, advanced functionalities, performance optimization, and ongoing support and maintenance.",
     },
     {
-      question: "How long will you take to build my Laravel website?",
+      question: "How long will it take to build a Shopify store? ",
       answer:
-        "There is no fixed time - the completion of Laravel websites are fully dependent on different factors - time, no of Laravel developers, complexity of app. But, we make sure we will put our high efforts and deliver your solutions with all essential features.",
+        "It will majorly take 2 weeks to set up the Shopify store, but it all depends on the project and different aspects such as hiring model and complex features required.",
     },
     {
-      question: "Will you provide Laravel migration services in India?",
+      question: "Will my Shopify store be mobile-friendly?",
       answer:
-        "Yes, we will provide Laravel migration services in India. Our Laravel expert team specializes in migrating solutions from other technologies to Laravel without affecting design, performance, and even your data.",
+        "Yes, your Shopify store will be fully mobile-friendly and even responsive on all devices.",
     },
     {
-      question: "Can I hire Laravel web developers from your team?",
+      question: "Will you offer post-launch support?",
       answer:
-        "Yes, of course you can hire the best Laravel developers from our team on full time, part time, and hourly basis. We have a pool of dedicated Laravel developers.",
+        "Yes, we provide ongoing maintenance and ongoing support for our clients. As we said we associate as your partner in your project, we are not for limited time or for tasks.",
     },
     {
-      question:
-        "Can you integrate API or third party services into my Laravel solutions?",
+      question: "Can you integrate third-party services in Shopify solutions?",
       answer:
-        "Yes, we can extend functionalities in Laravel solutions with third party services via API. Our experts have hands-on experience in third party integration services. ",
+        "Yes, we can integrate third party services in Shopify mobile apps via secure API.",
     },
     {
-      question: "How much does it cost for Laravel web development services? ",
+      question: "Will you be able to do the Shopify migration?",
       answer:
-        "There is no fixed cost for Laravel web development services. The Laravel web development factors are based on several factors such as features, design, hiring model, third party integration requirement.",
+        "Yes, our team is proficient in the Shopify migration process. In the process we make sure none of your data will be missed or lost. We migrate all your data with best industry practices..",
     },
   ],
 

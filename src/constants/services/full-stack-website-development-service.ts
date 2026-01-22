@@ -20,13 +20,13 @@ export const fullstack: PageData = {
   hero: {
     title: [
       {
-        text: "Laravel Website Development Service Provider",
+        text: "Our Vision, Our Full Stack Expertise: End-to-End Web Solutions",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Need a fast, secure, and scalable web solution? Our Laravel development services deliver enterprise-grade applications with clean code, optimal performance, and seamless functionality.",
+        text: "Partner with developers who see the full picture. Our full stack expertise covers frontend, backend, databases, and deployment—delivering cohesive web solutions that perform flawlessly, scale effortlessly, and exceed expectations every time.",
         color: "text-white",
       },
     ],
@@ -40,8 +40,8 @@ export const fullstack: PageData = {
         href: "/services",
       },
       {
-        label: "Laravel",
-        href: "/services/laravel-website-development-company",
+        label: "Full Stack Development",
+        href: "/services/full-stack-website-development-company",
       },
     ],
   },
@@ -63,12 +63,12 @@ export const fullstack: PageData = {
 
   leftCardData: [
     {
-      title: "Transform Your Business with Custom Laravel Solutions",
+      title: "Leading Full Stack Development Company Globally",
       description:
-        "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",
+        "Moonstack is the leading full stack development company Globally. We build powerful and modern websites that are user friendly and deliver high performance experiences  to the customers. Our team of Full stack coders handles the entire development cycle from start to end that deliver engaging, faster loading, and increase conversation rates. We adopt  the combination of modern technological advancement and have hands-on experience to deliver client centric and modern solutions in the market. ",
       stats: [],
       description2:
-        "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
+        "We are not in the market only to build advanced solutions, but with our full stack team we extend the full digital ecosystem for our customers. Apart from only custom full stack  development solutions in India and U/X designing, we also focus on API and Cloud integration. Moreover, our professional full stack developers in India ensure to opt for the best practices and modern technologies that align with the project goals. We are a one stop solution for all your Full stack development needs from start up to large enterprises - we are considered as the leading full stack development company that holds the power to turn ideas into reality. Our full stack engineers are available for full time, hourly, and freelance basis.",
       image: bndimage1.src,
     },
   ],
@@ -79,54 +79,54 @@ export const fullstack: PageData = {
         color: "text-white",
       },
       {
-        text: "Laravel web Development",
+        text: "Full Stack Development ",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: "Services Includes",
+        text: "Services",
         color: "text-white",
       },
     ],
     subHeadingText:
-      "We have best Laravel web developers and with them we offer affordable laravel development service in India - from consultation to migration all your needs will fulfill at one stop ",
+      "We provide end to end full stack development services in India. From consulting to launching your solutions, you can fully rely on us for all your digital solution needs.",
   },
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
-      title: "Laravel Consulting Services",
+      title: "Front end Development ",
       description:
-        "Bring your idea into reality with the right strategy and roadmap with Laravel web experts. Our Moonstack’s expert Laravel consulting professionals will understand your business needs and provide you with the right development strategy to deliver secure and scalable Laravel solutions in the market.",
+        "Our front end developers create engaging and immersive user interfaces with the right usage of technologies such as HTML, CSS/SCSS, and JavaScript. With high performance our tech experts also focus to deliver interactive and easy to use UI/UX that provides next generation experiences to users.",
     },
     {
       imgSrc: engagingIcon.src,
-      title: "Custom Laravel Website Development Service",
+      title: "Back End Development",
       description:
-        "We build high performance, secure, and functional custom Laravel web apps in India. We develop custom  Laravel websites for clients as per their business requirements. Our Laravel web development experts understand the gap in your operational process  and integrate modern features to meet latest business demands. ",
+        "With our Moonstack engineers in India, we deliver end to end high performance server side solutions to different businesses. We provide secure, scalable, and highly optimized API for seamless database integration. Our experienced back end developers main aim is to write clean codes and offer smooth execution with best industry practices.",
     },
 
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Custom  E-Commerce Development Services ",
+      title: "Full Stack API Integration Services",
       description:
-        "Grow your online presence with Laravel ecommerce development service in India. We build high performance and secure custom e-commerce solutions integrated with advanced functionalities and deliver smooth shopping experiences to customers. Our team's main aim is to increase website conversions on your websites.",
+        "Extend your website functionalities with simple API integration services. Our full stack coders in India offer secure, scalable APIs that support third party platforms that improve features, automate different processes, and develop a unified digital ecosystem that match all your business needs that increase efficiency and improve customer experiences.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel UI/UX Designing Services ",
+      title: "Full Stack Testing Services",
       description:
-        "Our architect designers create interactive and engaging designs for our customers. We hold expertise with custom designing in which we bring your business brand identity to the real world and connect with customers. At Moonstack, our designers create interactive designs with easy to use aspects.",
+        "At Moonstack, our focus is to deliver secure and bug free solutions to our customers. We provide end to end solution testing that offers functional, performance, and integration testing. Our full stack coders provide automated and unit testing that allow us to deliver high performance and bug free solutions in the market.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel API Integration Services",
+      title: "Full Stack Support and Maintenance",
       description:
-        "Extend your web and mobile app functionalities with seamless laravel REST API development service in India by partnering with the best Laravel development agency. We integrate Laravel web solutions with third party services via API such as secure payment gateway, internal systems, and many more. ",
+        "Our Full stack engineers offer end to end support and maintenance services to our customers.By partnering with the leading full stack company - your enterprise's solutions will be fully updated with functionalities and modern trends, issues will be fixed immediately. Moreover, we will offer proactive support on a constant basis that will lead to maintaining stability.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Maintenance and Support Services ",
+      title: "Full Stack Custom Designing Services",
       description:
-        "We offer end to end Laravel maintenance and support services. With our expert Laravel team, we run Laravel web solutions smoothly without any errors. We provide constant updates, optimize performance, and fix bugs to run solutions smoothly and deliver long term business commitment. ",
+        "Launch interactive custom designing services to your users. We create custom designs that reflect your brand identity and deliver next generation experiences to your users. Our focus is to create best front end designs with responsive layouts and modern interfaces that deliver next generation user experiences.",
     },
   ],
 
@@ -158,120 +158,76 @@ export const fullstack: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Our Process of ",
-    highlight: "Laravel website Development Service",
-    subtitle:
-      "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges.",
+    title: "",
+    highlight: "",
+    subtitle: "",
     steps: [
-      {
-        number: 1,
-        title: "Gather Requirements",
-        description:
-          "We collect all the information about the project to understand what our client actually needs that allow us to align with the project.",
-        position: "left",
-      },
-      {
-        number: 2,
-        title: "Client Discussion",
-        description:
-          "Once we have proper requirements then our Laravel team experts conduct a formal client discussion to solve all queries.",
-        position: "right",
-      },
-      {
-        number: 3,
-        title: "Internal Strategy Discussion",
-        description:
-          "After that we have an internal strategy discussion in which we have our tech brainstorming to deliver the best outcome.",
-        position: "left",
-      },
-      {
-        number: 4,
-        title: "Designing - UI/UX Services",
-        description:
-          "Designers start the designing process in which they focus on interactive user interface and easy to use for the users.",
-        position: "right",
-      },
-      {
-        number: 5,
-        title: "Development",
-        description:
-          "Tech team start the development process in which frontend developers and backend coders work together.",
-        position: "left",
-      },
-      {
-        number: 6,
-        title: "Deployment and Testing",
-        description:
-          "We deploy and test the Laravel software with automated and manual processes that allow us to deliver bug free solutions. ",
-        position: "right",
-      },
-      {
-        number: 7,
-        title: "Delivery and Post Support ",
-        description:
-          "After testing, we deliver Laravel based solutions in the market with post support that ensure our team is always there.",
-        position: "left",
-      },
+      // {
+      //   number: "",
+      //   title: "",
+      //   description: "",
+      //   position: "left",
+      // },
     ],
   },
 
   impactSection: {
     heading: [
-      { text: "Our Scalable " },
+      { text: "AI Integration for " },
       {
-        text: "Laravel Web development",
+        text: "Full Stack Development",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: "Solutions" },
+      { text: " Services" },
     ],
     description:
-      "For decades MoonStack has been creating a wide range of Laravel web solutions for our clients for different industries that are ready to use as per different business with minor and major customisation processes. ",
+      "To make the apps more modern and smarter we integrate trending AI services in our solutions. By integrating AI services we allow clients to leverage the benefits of intelligent automation, real time data processings, and offer personalized user experiences that deliver next generation and advanced user experience with our best full stack web development service India.",
     cards: [
       {
-        id: "Laravel Web Apps",
-        label: "Laravel Web Apps",
+        id: "AI driven Automation",
+        label: "AI driven Automation",
         description:
-          "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
+          "With our AI integration in full stack development services, our aim is to streamline different business processes for diverse industries. By integrating AI we reduce manual work, integrate workflows with intelligent triggers, and offer smart decision making for users.",
         variant: "light",
       },
       {
-        id: "Laravel E-commerce Solutions",
+        id: "AI Chatbots and Virtual Assistance",
 
-        label: "Laravel E-commerce Solutions",
+        label: "AI Chatbots and Virtual Assistance",
         description:
-          "The best ecommerce website developers in India build innovative and highly functional Laravel online stores. We have integrated essential functionalities such as product catalog, shopping carts, order tracking, and secure payment gateways that increase conversion rates and user experience.",
+          "We integrate virtual assistance in the form of modern bots that allow us to increase user interaction. Our AI bots offer instant responses, personalized recommendations, and 24/7 assistance to users that reduces work load as well as improve customer satisfaction.",
         variant: "accent",
       },
       {
-        id: "Laravel CRM Solutions ",
+        id: "Predictive Data Analytics",
 
-        label: "Laravel CRM Solutions ",
+        label: "Predictive Data Analytics",
         description:
-          "Moonstack builds Laravel based CRM solutions that improve customer relationship management processes in companies. We design custom CRM solutions that allow us to track leads and automate conversions that lead to data driven decisions and streamline client communication processes.",
+          "We opt for predictive data analytics with smart AI models that help users to get real time information, identify patterns that help to analyze human behaviour. With our full stack experts we integrate best tools that provide actionable insights, boost performance, and help to stay ahead in the market.",
         variant: "dark",
       },
       {
-        id: "Laravel CMS Solutions",
+        id: "AI Enabled API Integration",
 
-        label: "Laravel CMS Solutions",
+        label: "AI Enabled API Integration",
         description:
-          "Professional Laravel experts offer robust Laravel based CMS development in India. We have built the best Laravel CMS solutions that allow businesses to easily update, publish, and manage content effortlessly on their websites. We deliver CMS solutions to businesses that  have full control on content management systems. ",
+          "Integrate modern existing AI based features into your solution by integrating them via API. With our team of full stack experts, we integrate API that ensures to extend functionalities and provide next generation experiences to the users. Our full stack professionals deal in secure integration such as automate operations, backend processes that ensure smooth data exchange and scalable performance",
         variant: "dark",
       },
       {
-        id: "POS Systems",
+        id: "Computer Vision Integration",
 
-        label: "POS Systems",
+        label: "Computer Vision Integration",
         description:
-          "Integrate modern Laravel powered POS systems that are developed by Laravel experts in India. Our POS systems help to streamline different operational processes, allow retailers to manage multiple outlets, and deliver best outcomes for customers. We have delivered a wide range of POS (Point of Sale solutions) to our retail businesses.",
+          "We launch powerful intelligent digital products with image recognition, object detection, and automated scanning.  Our full stack experts integrate full stack architecture that enhance your operational accuracy and allow business to opt for advanced intelligent solutions. We offer smarter and reliable services for our clients that deliver next generation user experiences.",
         variant: "light",
       },
       {
-        id: "Video Streaming and Media Apps",
+        id: "Natural Language Processing (NLP)",
 
-        label: "Video Streaming and Media Apps",
+        label: "Natural Language Processing (NLP)",
         description:
-          "Develop your Laravel based video streaming and media apps with  expert laravel web developers in India. We designed video streaming and media apps that support secure content delivery and content management. We develop video streaming and media apps in such a way that offer seamless streaming and integrated with user authentication and support multiple platforms. ",
+          "Moonstack NLP apps offer apps that help to understand, interpret, and respond to human languages. We provide high performance full stack solutions that automate content processings, voice command, and contextual responses that transform apps into real answers that solve all queries. We build user friendly, intuitive and easy to use platforms.",
         variant: "dark",
       },
     ],
@@ -301,7 +257,7 @@ export const fullstack: PageData = {
         color: "text-white",
       },
       {
-        text: "Laravel  Web Development",
+        text: "Full Stack Development",
         className: "libreItalic font-[400] highlight-text",
       },
       {
@@ -310,85 +266,84 @@ export const fullstack: PageData = {
       },
     ],
     description:
-      "Laravel is known for the best Laravel framework development in India. At Moonstack, we have delivered a wide range of custom Laravel web development services to our customers. Our professional Laravel experts have delivered secure, high performance, and future ready web apps.",
+      "We are the leading full stack development company in India. We have been offering our end to end full stack development services for decades to our customers. Our expert full stack coders have in-depth knowledge and experience related to different types of tech from React full stack development to MERN.",
     columsClass: "lg:grid-cols-3",
     list: [
       {
         id: 1,
-        title: "Decade of Experience",
+        title: "End to End Expertise",
         icon: collaboration.src,
         description:
-          "Our Laravel experts have decades of experience that allows them to meet all clients' needs. Laravel coders have delivered scalable, secure, and high performance web apps with advanced integrated functionalities.",
+          "We offer end to end full stack development services. Our Full Stack coders have hands-on experience from development to launching full time innovative solutions in the market. Along with this, they are proficient with different types of technologies - React, MERN,and many more.",
       },
       {
         id: 2,
-        title: "Custom Solutions for Every Business",
+        title: "Hands on Experience on Different Technologies",
         icon: collaboration.src,
         description:
-          "We have delivered 450+ custom web development solutions across the world. Our professional Laravel experts have built high performance, scalable different solutions specifically designed for different business needs.",
+          "Our team has hands-on experience with a wide range of technologies and frameworks including React development in India to MERN. We have a team that is skilled in Cloud platforms, DevOps, and scalable architectures that ensure smooth performance and integrate modern API for future ready digital solutions for different industries.",
       },
       {
         id: 3,
-        title: "End to End Laravel Development Services",
+        title: "Strong Communication",
         icon: collaboration.src,
         description:
-          "Delivering end to end Laravel development services to our clients. From consultation to development to migration - Moonstack is known as a one stop solution for all our client’s Laravel web development needs.",
+          "At Moonstack, we believe in strong communication with our clients. We keep transparent communication in this we share and convey all information to our clients. We have a structured communication process that ensures us to understand all your goals and bring clarity in the workflow.",
       },
       {
         id: 4,
-        title: "Transparent Communication",
+        title: "On Time Delivery Commitment",
         icon: collaboration.src,
         description:
-          "At Moonstack, we maintain open communication with our clients with constant updates, demos, and progress reports that ensure us to stay connected with our customers. Moreover, that also allows us to understand each other's mindset in a better way.",
+          "As the leading Full stack development company in India, we value time. We stick to different timelines that offer a clear roadmap and ensure to meet all milestones as promised in a particular time frame. With us we guarantee, there are no hidden surprises as we follow all essential industry standard practices.",
       },
       {
         id: 5,
-        title: "Confidential Details",
+        title: "Dedicated Support and Maintenance",
         icon: collaboration.src,
         description:
-          "Every project idea is unique - we understand the importance of your business module. We keep all your information fully secure and confidential with us. Our team keeps all details to them, and in any case we don’t leak any of your project ideas to third parties.",
+          "We provide full stack full support and maintenance services to our clients. Here we just don’t believe in delivery solutions but stay with you from updates to performance improvements. Our team is always with you to solve any tech bug and we do it instantly without any delay.",
       },
       {
         id: 6,
-        title: "Creative and Business oriented solutions",
+        title: "Client Centric Approach",
         icon: collaboration.src,
         description:
-          "We just don’t build Laravel solutions only for the web development purpose. At Moonstack, we build business oriented solutions that align with your business needs and attract users with advanced based next generation features.",
+          "We have a client centric approach. Our team doesn't only build solutions, but we think in the perspective of our clients and then deliver solutions in the market. At Moonstack, we build solutions that meet all our clients' needs and what the customer is looking for. ",
       },
     ],
   },
   accordionData: [
     {
-      question:
-        "Will you be able to work long term for my Laravel project requirements?",
+      question: "What is the full stack development process?",
       answer:
-        "Yes, our Laravel web developers are always available and they are proficient with all types of Laravel web development requirements. Our team offers professional Laravel web development services to our customers. ",
+        "Full stack development process covers both frontend and backend development. The process includes integration of API, designing, and all development and designing parts.",
     },
     {
-      question: "How long will you take to build my Laravel website?",
+      question: "How much will it take to deliver a full stack solution?",
       answer:
-        "There is no fixed time - the completion of Laravel websites are fully dependent on different factors - time, no of Laravel developers, complexity of app. But, we make sure we will put our high efforts and deliver your solutions with all essential features.",
-    },
-    {
-      question: "Will you provide Laravel migration services in India?",
-      answer:
-        "Yes, we will provide Laravel migration services in India. Our Laravel expert team specializes in migrating solutions from other technologies to Laravel without affecting design, performance, and even your data.",
-    },
-    {
-      question: "Can I hire Laravel web developers from your team?",
-      answer:
-        "Yes, of course you can hire the best Laravel developers from our team on full time, part time, and hourly basis. We have a pool of dedicated Laravel developers.",
+        "There is no fixed timeline; it depends fully on the requirement. The timeline depends on several factors including features,complexities, and many more aspects.",
     },
     {
       question:
-        "Can you integrate API or third party services into my Laravel solutions?",
+        "Will you provide us with source code after completion of the project?",
       answer:
-        "Yes, we can extend functionalities in Laravel solutions with third party services via API. Our experts have hands-on experience in third party integration services. ",
+        "Yes, we will provide you the source code as soon as we complete the project, so you can add, edit, and delete as per your project needs.",
     },
     {
-      question: "How much does it cost for Laravel web development services? ",
+      question: "Do you provide post launch support?",
       answer:
-        "There is no fixed cost for Laravel web development services. The Laravel web development factors are based on several factors such as features, design, hiring model, third party integration requirement.",
+        "Yes, our team is always available for our clients. We provide full support with our support and maintenance services.",
+    },
+    {
+      question: "Can you upgrade my existing application?",
+      answer:
+        "Yes, we can upgrade your existing application with the latest functionalities and updated technologies.",
+    },
+    {
+      question: "How do you ensure the quality of the project?",
+      answer:
+        "We believe in delivering the best projects in the market - we review codes, opt for the automated testing, and continuous performance that maintain high standards in the industry.",
     },
   ],
 

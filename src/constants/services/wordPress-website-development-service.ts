@@ -20,13 +20,13 @@ export const wordPress: PageData = {
   hero: {
     title: [
       {
-        text: "Laravel Website Development Service Provider",
+        text: "WordPress Development Services in India",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Need a fast, secure, and scalable web solution? Our Laravel development services deliver enterprise-grade applications with clean code, optimal performance, and seamless functionality.",
+        text: "Launch your powerful, user centric and secure custom wordpress based website that leads to increased traffic and conversion.",
         color: "text-white",
       },
     ],
@@ -40,8 +40,8 @@ export const wordPress: PageData = {
         href: "/services",
       },
       {
-        label: "Laravel",
-        href: "/services/laravel-website-development-company",
+        label: "Wordpress Development",
+        href: "/services/wordpress-website-development-company",
       },
     ],
   },
@@ -63,70 +63,72 @@ export const wordPress: PageData = {
 
   leftCardData: [
     {
-      title: "Transform Your Business with Custom Laravel Solutions",
+      title: "Leading WordPress Development Company in India",
       description:
-        "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",
-      stats: [],
+        "Moonstack is known as the leading IT company in India. We have delivered a wide range of CMS based websites to our clients. Our WordPress experts have a blend of professional and technical expertise that ensure us to deliver best WordPress website development services in India. From start ups, mid sized to large enterprises, we have delivered successful WordPress solutions to different businesses. ",
+      stats: [
+        "We are not limited to only the development company - but consider us your digital WordPress partner in India. At Moonstack, we understand our client’s demand and create strategies that align with specific business needs. From custom development to ready to use templates we offer end to end WordPress development services to our clients. Our focus is to deliver responsive, advanced integrated functionalities with brand design based solutions. In order to stay ahead in the market competition, our WordPress development team keeps them updated with the latest tools and technologies.",
+      ],
       description2:
-        "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
+        "Along with this, our core values that make us different is timely project delivery, transparent communication, and different engagement modules that meet all our clients hiring needs.",
       image: bndimage1.src,
     },
   ],
   solutions: {
     headingContent: [
       {
-        text: "Our ",
+        text: "Our End to End Custom ",
         color: "text-white",
       },
       {
-        text: "Laravel web Development",
+        text: "WordPress Development ",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: "Services Includes",
+        text: "Service in India",
         color: "text-white",
       },
     ],
     subHeadingText:
-      "We have best Laravel web developers and with them we offer affordable laravel development service in India - from consultation to migration all your needs will fulfill at one stop ",
+      "We offer end to end WordPress development services in India. From custom WordPress development to maintenance - Moonstack is your one stop solution for your WordPress development needs.",
   },
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
-      title: "Laravel Consulting Services",
+      title: "Custom WordPress Development Services",
       description:
-        "Bring your idea into reality with the right strategy and roadmap with Laravel web experts. Our Moonstack’s expert Laravel consulting professionals will understand your business needs and provide you with the right development strategy to deliver secure and scalable Laravel solutions in the market.",
+        "We offer custom WordPress development services. Our team builds responsive and powerful WordPress based solutions from scratch that reflect the company brand and integrate functionalities that are aligned with business goals. We focus on building interactive and modern websites that ensure to stay ahead among competitors.",
     },
     {
       imgSrc: engagingIcon.src,
-      title: "Custom Laravel Website Development Service",
+      title: "WordPress Theme Customization",
       description:
-        "We build high performance, secure, and functional custom Laravel web apps in India. We develop custom  Laravel websites for clients as per their business requirements. Our Laravel web development experts understand the gap in your operational process  and integrate modern features to meet latest business demands. ",
+        "Our WordPress development team provides full theme customisation services that allow you to transform your brand into brand focused and reflect your style. We create top notch web designs with the best combination of colors, fonts, and features integrated that match your business and today’s tech design needs.",
     },
 
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Custom  E-Commerce Development Services ",
+      title: "Third Party Integration Services",
       description:
-        "Grow your online presence with Laravel ecommerce development service in India. We build high performance and secure custom e-commerce solutions integrated with advanced functionalities and deliver smooth shopping experiences to customers. Our team's main aim is to increase website conversions on your websites.",
+        "Integrate third party functionalities with API integration services. Our team is proficient in integrating third party features into WordPress development services that allow the access of additional features and can link via API only.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel UI/UX Designing Services ",
+      title: "WordPress Plugin Integration",
       description:
-        "Our architect designers create interactive and engaging designs for our customers. We hold expertise with custom designing in which we bring your business brand identity to the real world and connect with customers. At Moonstack, our designers create interactive designs with easy to use aspects.",
+        "We are proficient with WordPress plugin integration services. Our team of WordPress coders integrate plugins that allow you to enhance website features. At Moonstack - we choose, install, and configure the right plugins as per your tech needs. We integrate plugins for performance improvement and that support your business needs.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel API Integration Services",
+      title: "WordPress Testing Services",
       description:
-        "Extend your web and mobile app functionalities with seamless laravel REST API development service in India by partnering with the best Laravel development agency. We integrate Laravel web solutions with third party services via API such as secure payment gateway, internal systems, and many more. ",
+        "Our WordPress development team offers end to end testing for our clients. We test Wordpress based solutions with automated and manual processes that allow us to deliver bug free websites in the market. Our team has top quality assurance testing coders with us who test all features and deliver successful solutions.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Maintenance and Support Services ",
+      title: "WordPress Maintenance and Support",
       description:
-        "We offer end to end Laravel maintenance and support services. With our expert Laravel team, we run Laravel web solutions smoothly without any errors. We provide constant updates, optimize performance, and fix bugs to run solutions smoothly and deliver long term business commitment. ",
+        "Maintain your full WordPress requirements with us. We offer end to end maintenance and support services that ensure to stay ahead in the market. Our team keeps your website fully secure and updated with the latest trends. Additionally, if we find any gaps we resolve them instantly that helps to grow your business.",
     },
   ],
 
@@ -158,120 +160,63 @@ export const wordPress: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Our Process of ",
-    highlight: "Laravel website Development Service",
-    subtitle:
-      "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges.",
+    title: "",
+    highlight: "",
+    subtitle: "",
     steps: [
-      {
-        number: 1,
-        title: "Gather Requirements",
-        description:
-          "We collect all the information about the project to understand what our client actually needs that allow us to align with the project.",
-        position: "left",
-      },
-      {
-        number: 2,
-        title: "Client Discussion",
-        description:
-          "Once we have proper requirements then our Laravel team experts conduct a formal client discussion to solve all queries.",
-        position: "right",
-      },
-      {
-        number: 3,
-        title: "Internal Strategy Discussion",
-        description:
-          "After that we have an internal strategy discussion in which we have our tech brainstorming to deliver the best outcome.",
-        position: "left",
-      },
-      {
-        number: 4,
-        title: "Designing - UI/UX Services",
-        description:
-          "Designers start the designing process in which they focus on interactive user interface and easy to use for the users.",
-        position: "right",
-      },
-      {
-        number: 5,
-        title: "Development",
-        description:
-          "Tech team start the development process in which frontend developers and backend coders work together.",
-        position: "left",
-      },
-      {
-        number: 6,
-        title: "Deployment and Testing",
-        description:
-          "We deploy and test the Laravel software with automated and manual processes that allow us to deliver bug free solutions. ",
-        position: "right",
-      },
-      {
-        number: 7,
-        title: "Delivery and Post Support ",
-        description:
-          "After testing, we deliver Laravel based solutions in the market with post support that ensure our team is always there.",
-        position: "left",
-      },
+      // {
+      //   number: 1,
+      //   title: "Fixed Model",
+      //   description:
+      //     "We collect all the information about the project to understand what our client actually needs that allow us to align with the project.",
+      //   position: "left",
+      // },
     ],
   },
 
   impactSection: {
     heading: [
-      { text: "Our Scalable " },
       {
-        text: "Laravel Web development",
+        text: "Engagement models to choose the best ",
+      },
+      {
+        text: "WordPress Development ",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: "Solutions" },
+      { text: "Team" },
     ],
     description:
-      "For decades MoonStack has been creating a wide range of Laravel web solutions for our clients for different industries that are ready to use as per different business with minor and major customisation processes. ",
+      "Build your team as per your preference. We offer the best hiring models that ensure to create your own WordPress developer team for your project with right experience and skills who will work according to you. ",
     cards: [
       {
-        id: "Laravel Web Apps",
-        label: "Laravel Web Apps",
+        id: "Fixed Model",
+        label: "Fixed Model",
         description:
-          "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
+          "With a fixed model, outsource your WordPress full project to the dedicated team that will develop and manage the team on our own. In this, we work on Clear scope, defined timelines, and specific costing.",
         variant: "light",
       },
       {
-        id: "Laravel E-commerce Solutions",
+        id: "Hire WordPress Developer",
 
-        label: "Laravel E-commerce Solutions",
+        label: "Hire WordPress Developer",
         description:
-          "The best ecommerce website developers in India build innovative and highly functional Laravel online stores. We have integrated essential functionalities such as product catalog, shopping carts, order tracking, and secure payment gateways that increase conversion rates and user experience.",
+          "Hire WordPress developers on hourly, full time, and part time basis. You can hire the best WordPress resources from us as per their skills and work with them on your hourly model.",
         variant: "accent",
       },
       {
-        id: "Laravel CRM Solutions ",
+        id: "Dedicated Team",
 
-        label: "Laravel CRM Solutions ",
+        label: "Dedicated Team",
         description:
-          "Moonstack builds Laravel based CRM solutions that improve customer relationship management processes in companies. We design custom CRM solutions that allow us to track leads and automate conversions that lead to data driven decisions and streamline client communication processes.",
+          "At Moonstack, we offer a dedicated hire team module in which you build your best WordPress team. In our pool, you can do hiring of designers, coders, testers as per your project needs. The dedicated WordPress team ensures faster delivery, better quality, and you can have full control on resources with direct communication and daily reporting.",
         variant: "dark",
       },
       {
-        id: "Laravel CMS Solutions",
+        id: "Time and Material Model ",
 
-        label: "Laravel CMS Solutions",
+        label: "Time and Material Model ",
         description:
-          "Professional Laravel experts offer robust Laravel based CMS development in India. We have built the best Laravel CMS solutions that allow businesses to easily update, publish, and manage content effortlessly on their websites. We deliver CMS solutions to businesses that  have full control on content management systems. ",
-        variant: "dark",
-      },
-      {
-        id: "POS Systems",
-
-        label: "POS Systems",
-        description:
-          "Integrate modern Laravel powered POS systems that are developed by Laravel experts in India. Our POS systems help to streamline different operational processes, allow retailers to manage multiple outlets, and deliver best outcomes for customers. We have delivered a wide range of POS (Point of Sale solutions) to our retail businesses.",
-        variant: "light",
-      },
-      {
-        id: "Video Streaming and Media Apps",
-
-        label: "Video Streaming and Media Apps",
-        description:
-          "Develop your Laravel based video streaming and media apps with  expert laravel web developers in India. We designed video streaming and media apps that support secure content delivery and content management. We develop video streaming and media apps in such a way that offer seamless streaming and integrated with user authentication and support multiple platforms. ",
+          "Moonstack, known as the professional WordPress development services in  India offers a time and material model in which you can pay for the actual time and resources that are used for the specific WordPress tasks including integrated functionalities and on the basis of priorities. This model is ideal for the companies who have ongoing projects with limited or expertise resources.",
         variant: "dark",
       },
     ],
@@ -297,98 +242,98 @@ export const wordPress: PageData = {
   qualitySectionData: {
     heading: [
       {
-        text: " Why Choose us for your ",
+        text: " Why choose us for your",
         color: "text-white",
       },
       {
-        text: "Laravel  Web Development",
+        text: " WordPress Development ",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: " Services?",
+        text: " Services in India?",
         color: "text-white",
       },
     ],
     description:
-      "Laravel is known for the best Laravel framework development in India. At Moonstack, we have delivered a wide range of custom Laravel web development services to our customers. Our professional Laravel experts have delivered secure, high performance, and future ready web apps.",
+      "Moonstack is the leading WordPress development company. We offer end to end custom WordPress development services. From designing to launching we can be your best WordPress partner who meets with all your tech and business needs. ",
     columsClass: "lg:grid-cols-3",
     list: [
       {
         id: 1,
-        title: "Decade of Experience",
+        title: "End to End custom web development",
         icon: collaboration.src,
         description:
-          "Our Laravel experts have decades of experience that allows them to meet all clients' needs. Laravel coders have delivered scalable, secure, and high performance web apps with advanced integrated functionalities.",
+          "We are proficient in building end to end custom WordPress web development services in which we create solutions from scratch. Our team understands your business needs and launches solutions that ensure to leverage the benefits of modern tech and meet the business needs.",
       },
       {
         id: 2,
-        title: "Custom Solutions for Every Business",
+        title: "Expert WordPress Developers",
         icon: collaboration.src,
         description:
-          "We have delivered 450+ custom web development solutions across the world. Our professional Laravel experts have built high performance, scalable different solutions specifically designed for different business needs.",
+          "Moonstack has a team of professionals who are skilled professionals with deep technical expertise. Our expert WordPress development team focuses on custom development, performance optimisation, advanced integration that ensures to meet high standard and professional services.",
       },
       {
         id: 3,
-        title: "End to End Laravel Development Services",
+        title: "Hire Skilled Developers",
         icon: collaboration.src,
         description:
-          "Delivering end to end Laravel development services to our clients. From consultation to development to migration - Moonstack is known as a one stop solution for all our client’s Laravel web development needs.",
+          "With us you can have access to a pool of WordPress developers. You can hire different types of developers as per their experience level. Our WordPress coders can collaborate as an extension in your team and deliver secure, responsive and high performance based WordPress solutions that meet your project needs.",
       },
       {
         id: 4,
-        title: "Transparent Communication",
+        title: "On Time Delivery",
         icon: collaboration.src,
         description:
-          "At Moonstack, we maintain open communication with our clients with constant updates, demos, and progress reports that ensure us to stay connected with our customers. Moreover, that also allows us to understand each other's mindset in a better way.",
+          "We deliver all your projects on time. Our focus is to be on our commitments.With our experts we follow a structured roadmap that ensures us to deliver all projects on time without any timely delay and compromise in quality.",
       },
       {
         id: 5,
-        title: "Confidential Details",
+        title: "User Centric Design",
         icon: collaboration.src,
         description:
-          "Every project idea is unique - we understand the importance of your business module. We keep all your information fully secure and confidential with us. Our team keeps all details to them, and in any case we don’t leak any of your project ideas to third parties.",
+          "Design is the backbone of any website. We don’t only focus on development aspects but also experience  in custom wordpress designing service in  India. We create interactive and engaging designs that are user centric and innovative that match the latest modern trends.",
       },
       {
         id: 6,
-        title: "Creative and Business oriented solutions",
+        title: "Strong Communication",
         icon: collaboration.src,
         description:
-          "We just don’t build Laravel solutions only for the web development purpose. At Moonstack, we build business oriented solutions that align with your business needs and attract users with advanced based next generation features.",
+          "Strong and clear communication is our core value. We understand communication is important and at every stage we believe to convey our ideas and progress to our clients. At Moonstack, we keep all information and progress transparent with our clients and make collaboration stress free.",
       },
     ],
   },
   accordionData: [
     {
-      question:
-        "Will you be able to work long term for my Laravel project requirements?",
+      question: "How long will you take to deliver WordPress websites?",
       answer:
-        "Yes, our Laravel web developers are always available and they are proficient with all types of Laravel web development requirements. Our team offers professional Laravel web development services to our customers. ",
+        "There is no fixed time to deliver WordPress websites. It all depends on several factors: time, cost, hiring model, and many more development aspects. Majorly, it takes two weeks for custom WordPress development, but again it depends on project needs.",
     },
     {
-      question: "How long will you take to build my Laravel website?",
+      question: "Will you provide source code for WordPress development?",
       answer:
-        "There is no fixed time - the completion of Laravel websites are fully dependent on different factors - time, no of Laravel developers, complexity of app. But, we make sure we will put our high efforts and deliver your solutions with all essential features.",
+        "Yes, we provide source code for WordPress development that your  coders can edit, add, and delete features or modify as per their future needs. As soon as our WordPress development will finish we will handover our source code to you.",
     },
     {
-      question: "Will you provide Laravel migration services in India?",
+      question: "Will my WordPress website be mobile friendly?",
       answer:
-        "Yes, we will provide Laravel migration services in India. Our Laravel expert team specializes in migrating solutions from other technologies to Laravel without affecting design, performance, and even your data.",
-    },
-    {
-      question: "Can I hire Laravel web developers from your team?",
-      answer:
-        "Yes, of course you can hire the best Laravel developers from our team on full time, part time, and hourly basis. We have a pool of dedicated Laravel developers.",
+        "Yes, we will make sure that your Website will be mobile friendly and compatible with all platforms including desktop and tab. Our coders deliver responsive and mobile friendly websites for our clients. ",
     },
     {
       question:
-        "Can you integrate API or third party services into my Laravel solutions?",
+        "Do you offer support and maintenance services after delivering the website?",
       answer:
-        "Yes, we can extend functionalities in Laravel solutions with third party services via API. Our experts have hands-on experience in third party integration services. ",
+        "We are always available for our clients. After completion of the project also we offer end to end support and maintenance WordPress services to our clients. Our experts are available full time for them - detect bugs and update solutions as per the latest market demands.",
     },
     {
-      question: "How much does it cost for Laravel web development services? ",
+      question: "Will my project details be secure with you?",
       answer:
-        "There is no fixed cost for Laravel web development services. The Laravel web development factors are based on several factors such as features, design, hiring model, third party integration requirement.",
+        "Yes, all your personal and project details are fully secure to us. Don’t stress yourself for that as we sign NDA with our clients as well as developers that are associated with us. In any case, we don’t lead any of your project details to any third party.",
+    },
+    {
+      question:
+        "What tips and tricks do you use for WordPress website security?",
+      answer:
+        "First of all our WordPress are experienced as per their experience they opt for the best coding practise. They have an idea how to keep a website fully secure but then also they opt for firewall setups, malware protection, backups, updates, and continuous monitor websites to keep your solution fully safe.",
     },
   ],
 

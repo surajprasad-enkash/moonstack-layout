@@ -149,11 +149,12 @@ export default function ApplicationPage({ params }: PageProps) {
           </>
         )}
 
-        {page.leftCardData && (
-          <BusinessNeedsDesignSection leftCards={page.leftCardData} />
+        {page.leftCardData.length > 0 && (
+          <>
+            <BusinessNeedsDesignSection leftCards={page.leftCardData} />
+            <Space size={160} />
+          </>
         )}
-
-        <Space size={160} />
 
         {page.solutions && (
           <FeatureSection
@@ -180,7 +181,7 @@ export default function ApplicationPage({ params }: PageProps) {
 
         <Space size={160} />
 
-        {page.impactSection && (
+        {page.impactSection && page.impactSection.cards.length > 0 && (
           <ImpactSection
             heading={page.impactSection.heading}
             description={page.impactSection.description}
@@ -217,7 +218,7 @@ export default function ApplicationPage({ params }: PageProps) {
           />
         )}
 
-        {page.CloudTimelineData && (
+        {page.CloudTimelineData && page.CloudTimelineData.steps?.length > 0 && (
           <CloudTimeline
             title={page.CloudTimelineData.title}
             highlight={page.CloudTimelineData.highlight}
@@ -291,13 +292,14 @@ export default function ApplicationPage({ params }: PageProps) {
           ]}
         />
         <Space />
-        <FAQSection
-          title="Frequently Asked "
-          highlight="Questions."
-          description="To decide means to choose a direction with clarity and confidence."
-          faqs={page.accordionData}
-        />
-
+        {page.accordionData.length > 0 && (
+          <FAQSection
+            title="Frequently Asked "
+            highlight="Questions."
+            description="To decide means to choose a direction with clarity and confidence."
+            faqs={page.accordionData}
+          />
+        )}
         <ProjectCTA bgImage={projectCtaBgImg} />
 
         <Space />
