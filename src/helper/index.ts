@@ -122,12 +122,12 @@ async function getCaseStudiesServer(
     `${process.env.NEXT_PUBLIC_API_URL}/case-studies?page=${page}&per_page=${perPage}`,
     {
       headers: {
-        "X-API-KEY": process.env.NEXT_PUBLIC_X_API_KEY as string,
+        "X-API-KEY": process.env.NEXT_PUBLIC_X_API_KEY,
       },
       cache: "no-store",
     }
   )
-
+  console.log(res)
   if (!res.ok) {
     throw new Error("Failed to fetch case studies")
   }

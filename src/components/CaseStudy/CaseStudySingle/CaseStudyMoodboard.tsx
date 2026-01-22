@@ -1,23 +1,22 @@
-"use client";
+"use client"
 
-import Heading from "@/components/Heading/Heading";
-import Image from "next/image";
-
+import Heading from "@/components/Heading/Heading"
+import Image from "next/image"
 
 interface MoodboardData {
-  title: string;
-  description: string;
-  images: string[];
+  title: string
+  description: string
+  images: string[]
 }
 
 const CaseStudyMoodboard = ({ data }: { data: MoodboardData }) => {
-  if (!data || !data.images?.length) return null;
+  if (!data || !data.images?.length) return null
 
   return (
-    <section className="bg-white pt-[150px] px-[20px] ">
+    <section className="bg-white px-[20px] pt-[150px]">
       <div className="container">
         {/* Header */}
-        <div className="mb-14 max-w-xl">
+        <div className="mb-14 justify-between md:flex">
           <Heading
             headingTag="h2"
             content={[
@@ -28,23 +27,26 @@ const CaseStudyMoodboard = ({ data }: { data: MoodboardData }) => {
             ]}
           />
 
-          <div className="description my-[70px] md:ml-[92px]">
-            <p className="text-[#000] !font-[500] max-w-[390px]">
+          <div className="description my-[50px] md:my-[0]">
+            <p className="max-w-[390px] !font-[500] text-[#000]">
               {data.description}
             </p>
           </div>
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 gap-[6px]">
+        <div className="flex flex-wrap gap-[40px]">
           {data.images.map((image, index) => (
-            <div key={index} className="rounded-2xl">
+            <div
+              key={index}
+              className="w-full rounded-2xl md:w-[calc(50%-20px)] md:[&:nth-child(1)]:!w-full"
+            >
               <div className="relative w-full overflow-hidden rounded-xl">
                 <Image
-                  src={image}  
+                  src={image}
                   alt={data.title}
-                  width={1200}
-                  height={800}
+                  width={1500}
+                  height={1500}
                   className="h-auto w-full object-cover"
                 />
               </div>
@@ -53,7 +55,7 @@ const CaseStudyMoodboard = ({ data }: { data: MoodboardData }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default CaseStudyMoodboard;
+export default CaseStudyMoodboard

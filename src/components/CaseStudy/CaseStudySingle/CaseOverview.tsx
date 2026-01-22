@@ -1,45 +1,55 @@
-import { Key } from "react";
-import Image from "next/image";
-import Heading from "@/components/Heading/Heading";
-let comma = ",";
+import { Key } from "react"
+import Image from "next/image"
+import Heading from "@/components/Heading/Heading"
+let comma = ","
 export default function CaseOverview({ data }: any) {
   return (
     <>
       <section className="bg-[#fff] py-[80px]">
         <div className="container">
-          <div className="left_section bg-[#1515150a] rounded-[32px] rounded-rb-none  ">
-            <div className="m-0 mb-[40px] flex flex-wrap  p-0">
+          <div className="left_section rounded-rb-none rounded-[32px] bg-[#1515150a]">
+            <div className="m-0 mb-[40px] flex flex-wrap p-0">
               {data.casestudy_info_list.map((item: any, i: number) => (
-                <div key={i} className="flex-1 p-[40px] font-[300] left_section_info_list">
-                  <p className="mb-[12px] block  uppercase text-[#000]">
+                <div
+                  key={i}
+                  className="left_section_info_list flex-1 p-[40px] font-[300]"
+                >
+                  <p className="mb-[12px] block text-[#000] uppercase">
                     <strong className="text-[12px]">{item.label}</strong>
                   </p>
-                  <span className="block text-[32px] whitespace-nowrap font-[500]">{item.content}</span>
+                  <span className="block text-[32px] font-[500] whitespace-nowrap">
+                    {item.content}
+                  </span>
                 </div>
               ))}
-
-              
             </div>
           </div>
-          <div className="aboutProject md:flex gap-[60px] mt-[120px] mb-[120px]">
+          <div className="aboutProject mt-[120px] mb-[120px] gap-[60px] md:flex">
             <div className="leftSection md:w-[34%]">
-              <p className="!text-[12px] uppercase text-[#000] !font-[500]">About Project</p>
+              <p className="!text-[12px] !font-[500] text-[#000] uppercase">
+                About Project
+              </p>
             </div>
             <div className="rightSection md:w-[66%]">
               <div>
-                <div className="font-[400] leading-[120%] text-[40px]">{data.acf.aboutProject}</div>
+                <div className="text-[40px] leading-[120%] font-[400]">
+                  {data.acf.aboutProject}
+                </div>
               </div>
             </div>
           </div>
           <div className="gallarySection">
-            <div className="items-center gap-[80px] md:flex">
+            <div className="flex-wrap items-center gap-[40px] md:flex">
               {data.acf.product_images.map((img: string, i: number) => (
-                <div key={i} className="w-[calc(50%-40px)]">
+                <div
+                  key={i}
+                  className="w-full md:w-[calc(50%-20px)] md:[&:nth-child(3)]:!w-full"
+                >
                   <Image
                     src={img}
                     alt="Product"
-                    width={400}
-                    height={300}
+                    width={1500}
+                    height={1500}
                     className="h-[auto] w-[100%] object-contain"
                   />
                 </div>
@@ -51,38 +61,44 @@ export default function CaseOverview({ data }: any) {
       <section className="challengesSolutions bg-white pt-[80px]">
         <div className="container">
           <div className="mb-[80px]">
-            <Heading headingTag="h2" className="text-[#000]" content={[
-              {text:'Challenges', className:''},
-              {text:'& Solutions', className:'highlight-text libreItalic'}
-            ]} />
+            <Heading
+              headingTag="h2"
+              className="text-[#000]"
+              content={[
+                { text: "Challenges", className: "" },
+                {
+                  text: "& Solutions",
+                  className: "highlight-text libreItalic",
+                },
+              ]}
+            />
           </div>
-          <div className="max-w-[975px] ml-[auto]">
-            <div className="flex gap-[60px] px-[48px] py-[40px] border border-[#dce5e0] rounded-[24px] rounded-tl-none justify-between">
+          <div className="ml-[auto] max-w-[975px]">
+            <div className="flex justify-between gap-[60px] rounded-[24px] rounded-tl-none border border-[#dce5e0] px-[48px] py-[40px]">
               <div>
-                <p className="!font-[500] !text-[26px]">Problem</p>
+                <p className="!text-[26px] !font-[500]">Problem</p>
               </div>
               <div className="max-w-[448px]">
-                <div className="!font-[500] !text-[20px]">
+                <div className="!text-[20px] !font-[500]">
                   {data.acf.challenges.description}
                 </div>
               </div>
             </div>
           </div>
-          <div className="max-w-[975px] ml-[auto]">
-            <div className="flex gap-[60px] px-[48px] bg-[#f7f7f7] mt-[6px] py-[40px] border border-[#f7f7f7] rounded-[24px] rounded-br-none justify-between">
+          <div className="ml-[auto] max-w-[975px]">
+            <div className="mt-[6px] flex justify-between gap-[60px] rounded-[24px] rounded-br-none border border-[#f7f7f7] bg-[#f7f7f7] px-[48px] py-[40px]">
               <div>
-                <p className="!font-[500] !text-[26px]">Solution</p>
+                <p className="!text-[26px] !font-[500]">Solution</p>
               </div>
               <div className="max-w-[448px]">
-                <div className="!font-[500] !text-[20px]">
-                   {data.acf.solution.description}
+                <div className="!text-[20px] !font-[500]">
+                  {data.acf.solution.description}
                 </div>
               </div>
             </div>
           </div>
-        
         </div>
       </section>
     </>
-  );
+  )
 }

@@ -25,12 +25,21 @@ export default function CaseStudyPage({ data }: Props) {
       <CaseHero data={data} />
 
       <CaseOverview data={data} />
-      {/* {data?.acf?.moodboard?.length > 0 && ( */}
-      <CaseStudyMoodboard data={data.acf.moodboard} />
-      {/* )} */}
       {data?.acf?.process?.length > 0 && (
         <ProcessSection process={data.acf.process} />
       )}
+      {/* {data?.acf?.moodboard?.length > 0 && ( */}
+      <CaseStudyMoodboard data={data.acf.moodboard} />
+      {/* )} */}
+      {/* {data?.acf?.uiLayout?.length > 0 && ( */}
+      <CaseStudyMoodboard data={data.acf.uiLayout} />
+      {/* )}
+      {data?.acf?.responsiveDesign?.length > 0 && ( */}
+      <CaseStudyMoodboard data={data.acf.responsiveDesign} />
+      {/* )} */}
+      <div className="bg-white">
+        <Space />
+      </div>
       <CaseStudyHighlight />
       {data?.acf?.results?.length > 0 && (
         <CaseResults results={data.acf.results} />
