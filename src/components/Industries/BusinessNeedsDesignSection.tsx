@@ -5,6 +5,7 @@ import Heading, { HeadingSegment } from "@/components/Heading/Heading"
 import bgImage from "@/assets/industries/ai/icon/bndBGapproach-bg.svg"
 
 interface InfoCard {
+  bolds: boolean
   title?: string
   description?: string
   stats?: string[]
@@ -17,12 +18,14 @@ interface BusinessNeedsDesignSectionProps {
   heading?: string | HeadingSegment[]
   subheading?: string
   leftCards: InfoCard[]
+  bolds?: boolean
 }
 
 export default function BusinessNeedsDesignSection({
   heading,
   subheading,
   leftCards,
+  bolds = true,
 }: BusinessNeedsDesignSectionProps) {
   return (
     <section className="relative px-[20px]">
@@ -80,7 +83,7 @@ export default function BusinessNeedsDesignSection({
                     <ul className="mb-[16px] space-y-1 text-[18px]">
                       {card.stats.map((stat: string, index: number) => (
                         <li key={index} className="text-white">
-                          <strong>{stat}</strong>
+                          {card.bolds === true ? <strong>{stat}</strong> : stat}
                         </li>
                       ))}
                     </ul>

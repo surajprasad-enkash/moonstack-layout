@@ -45,13 +45,12 @@ export const pwa: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "Progressive Web App (PWA) Development in India & USA | Moonstack",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Build fast, installable PWAs that work offline, feel native, and boost conversions across devices with our expert PWA development team. Request a PWA strategy session.",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "PWA development service USA,PWA development company USA,Progressive web app development service India,Best PWA developers in India,Custom PWA development service India",
+    canonical: "/services/pwa-development-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
@@ -68,6 +67,7 @@ export const pwa: PageData = {
       description2:
         "The best part about web apps? They do not require any additional downloads or app store visits. As a part of our custom PWA development service in India, we help clients learn how to protect revenue and scale businesses using PWAs. So, if you’re new to PWAs and want an agency with over 15 years of experience to help you develop highly scalable PWAs, be sure to choose our progressive web app development services in India. Contact our team and we can get started on your project stat",
       image: bndimage1.src,
+      bolds: false,
     },
   ],
   solutions: {

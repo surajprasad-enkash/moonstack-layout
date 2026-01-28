@@ -199,25 +199,25 @@ export default function NewHeader() {
     "Other Services": [
       {
         title: "Search Engine Optimization",
-        subtitle: "JavaScript (Node.js), Python",
+        subtitle: "Organic Growth, Technical SEO, Content Strategy",
         icon: seo.src,
         url: "/services/search-engine-optimization-company",
       },
       {
         title: "UI/UX",
-        subtitle: "JavaScript (Node.js), Python",
+        subtitle: "Figma, Adobe XD, User Research, Prototyping",
         icon: Uiux.src,
         url: "/services/ui-ux-designing-company",
       },
       {
         title: "Product",
-        subtitle: "JavaScript (Node.js), Python",
+        subtitle: "Concept Ideation, Market Analysis, Rapid MVP",
         icon: product.src,
         url: "/services/product-designing-company",
       },
       {
         title: "Cloud",
-        subtitle: "JavaScript (Node.js), Python",
+        subtitle: "AWS, Azure, Server Security, Scalable Infrastructure",
         icon: cloud.src,
         url: "/services/cloud-company",
       },
@@ -419,7 +419,7 @@ export default function NewHeader() {
 
                         <div className="flex flex-wrap justify-between">
                           {otherServices.map((item, i) => (
-                            <div key={i} className="submenuList h-[75px]">
+                            <div key={i} className="submenuList md:w-[25%] h-[75px]">
                               <Link
                                 href={item.url}
                                 className="submenuLink group flex w-full gap-3"

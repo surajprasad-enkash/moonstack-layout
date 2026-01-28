@@ -50,13 +50,12 @@ export const ai: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "AI Agent Development Services | Expert AI Solutionsk",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Get Professional AI agent development services. We build custom AI agents, chatbots, and intelligent automation solutions that enhance efficiency and drive growth.",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "custom ai development company in USA,ai development services for startups,ai agent development company for businesses,hire ai developers for custom automation,enterprise ai development services for digital transformation",
+    canonical: "/services/ai-agent-development-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
@@ -76,6 +75,7 @@ export const ai: PageData = {
         "70% reduction in repetitive tasks",
         "30% lower operational costs with AI automation",
       ],
+      bolds: false,
       // description2:
       //   "So, looking to make your business future-ready and get a competitive edge? It's time to think the AI way. We are a leading custom AI development company in India, helping businesses of all sizes build custom AI solutions aligned to their needs. Whether you are looking to build an AI assistant, AI agent, or AI app, we can get you cutting-edge solutions to turn your business into an AI-powered success story.",
       image: bndimage1.src,

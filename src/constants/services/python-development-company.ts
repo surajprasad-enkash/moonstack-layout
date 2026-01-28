@@ -46,13 +46,12 @@ export const python: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "Python Development Company in India | Moonstack",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Get custom Python development services for web, AI, and cloud applications. Moonstack delivers secure, scalable, and fast solutions.",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "Python development Service USA,best Python development company India,affordable Python developers India,hire dedicated Python developers USA,custom Python web app development India,scalable Python software solutions USA",
+    canonical: "/services/python-development-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
@@ -66,6 +65,7 @@ export const python: PageData = {
       description:
         "Moonstack is known as the leading Python web development company all over the world. We offer end to end Python web development services in India that includes custom Python website development, API integration, UI and UX designing services, and many more. Our Python website developers have in-depth expertise with the latest technological advancements and frameworks such as Django and Flask. With our team of Python experts, we have an in-depth understanding of clean architectures, cloud infrastructure, and ensure to meet modern tech market standards. Moreover, our professional Python experts can build Python based websites from scratch as well as migrate from one platform to other easily with the third party integration services. ",
       stats: [],
+      bolds: false,
       description2:
         "We don’t only focus on Full-stack Python development but we are committed to the innovation, in providing latest modern technology, and result driven Python development services. At Moonstack, we opt for the Python web development best practices that allow us to offer our clients to  leverage the benefits of modern tech stack and ensure to meet industry standards with an agile methodology process. Our enterprise Python solutions are not developed with only technology mindset but, our dedicated professional Python development team​ deliver products that deliver high performance and are reliable as per the market standards. You can hire Python developers on hourly, full time, and part time basis that ensure to meet all modern tech development needs.",
       image: bndimage1.src,
@@ -131,27 +131,27 @@ export const python: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+      { text: "Grow Faster With Our Professional Python Development Experts" },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Scale Forever: Your ",
+        text: "Build Smart, Scale Faster: Your",
         color: "text-white",
         className: "",
       },
       {
-        text: "Expert Laravel Development Partner",
+        text: "Expert Python Development Partner",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
     ],
     checklist: [
-      "Robust & Secure Architecture",
-      "Rapid Development & Deployment",
-      "High-Performance & Scalable Code",
-      "Easy Maintenance & Updates",
+      "Secure & Reliable Application Architecture",
+      "Fast Development with Clean, Maintainable Code",
+      "High-Performance & Scalable Solutions",
+      "Easy Integration with AI, Data & Cloud Systems",
     ],
     buttonText: "Start Your Project Today",
   },

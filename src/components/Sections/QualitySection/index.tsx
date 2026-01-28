@@ -57,8 +57,8 @@ export default function QualitySection({
         <div
           className={`grid grid-cols-1 gap-10 sm:grid-cols-2 ${columsClass}`}
         >
-          {features.map((item) => (
-            <div key={item.id} className="flex flex-col items-center">
+          {features.map((item, i) => (
+            <div key={i} className="flex flex-col items-center">
               <div className="relative h-[130px] w-[130px]">
                 <Image
                   src={item.icon}

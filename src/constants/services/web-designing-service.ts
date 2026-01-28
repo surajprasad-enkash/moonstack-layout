@@ -46,20 +46,18 @@ export const webDesigning: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "Affordable Website Design Services India & USA | Moonstack",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Want a modern, conversion focused website design service on affordable price, aligns with your brand and improves engagement and leads. Explore our web design services.",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "web development service in India,web development company in India,affordable website development service USA,custom web development service USA,best web development agency USA,website development services for startups",
+    canonical: "/services/web-designing-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
 
-  points:
-    "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
-  highlightText: "The application is scalable",
+  points: "",
+  highlightText: "",
 
   leftCardData: [
     {
@@ -70,6 +68,7 @@ export const webDesigning: PageData = {
       description2:
         "At Moonstack, we blend creativity and technology that ensure to exclude all the gaps between client and businesses. Our web design agency in Jaipur offers affordable designing services for startups, mid sizes, and large enterprises. We not only create designs but make connections with customers across the globe. With our designs you can deliver your brand message as well as offer premium experiences.",
       image: bndimage1.src,
+      bolds: false,
     },
   ],
   solutions: {
@@ -132,27 +131,27 @@ export const webDesigning: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+      { text: "Elevate Your Brand With Our Expert Website Designing Team" },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Scale Forever: Your ",
+        text: "Design Once, Captivate Forever: Your Expert",
         color: "text-white",
         className: "",
       },
       {
-        text: "Expert Laravel Development Partner",
+        text: " Web Design Partner",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
     ],
     checklist: [
-      "Robust & Secure Architecture",
-      "Rapid Development & Deployment",
-      "High-Performance & Scalable Code",
-      "Easy Maintenance & Updates",
+      "User-Centric & Responsive Layouts",
+      "Intuitive UI/UX Design",
+      "High-Impact Visual Branding",
+      "Performance-First Design",
     ],
     buttonText: "Start Your Project Today",
   },

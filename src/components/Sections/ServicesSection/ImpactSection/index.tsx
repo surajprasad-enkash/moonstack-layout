@@ -76,7 +76,7 @@ const ImpactSection: React.FC<ImpactSectionProps> = ({
           {description && (
             <Heading
               headingTag="p"
-              className="mt-4 !font-[500] text-white/80"
+              className="mt-4 text-white/80"
               content={description}
             />
           )}

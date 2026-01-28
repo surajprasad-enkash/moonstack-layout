@@ -26,7 +26,7 @@ export const product: PageData = {
     ],
     description: [
       {
-        text: "",
+        text: "We craft user-focused, innovative, and scalable product designs that turn your ideas into impactful digital experiences, driving growth, engagement, and long-term success.",
         color: "text-white",
       },
     ],
@@ -46,20 +46,18 @@ export const product: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "Digital Product Design Service India & USA | Moonstack",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Validating a new digital product in India? Moonstack’s product design team runs discovery, UX research, and prototyping to de risk development and improve usability.",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "product design company India 2026,affordable product design services USA,best product design firms India,custom product design and development USA,innovative product designing solutions India,user-centered product design agency USA",
+    canonical: "/services/product-designing-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
 
-  points:
-    "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
-  highlightText: "The application is scalable",
+  points: "",
+  highlightText: "",
 
   leftCardData: [
     // {
@@ -75,24 +73,26 @@ export const product: PageData = {
   solutions: {
     headingContent: [
       {
-        text: "Our ",
+        text: "Ignite Your Brand's Potential with ",
         color: "text-white",
       },
       {
-        text: "Laravel web Development",
+        text: "Excellence in Innovation ",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: "Services Includes",
+        text: " Product Design",
         color: "text-white",
       },
     ],
-    subHeadingText: "",
+    subHeadingText:
+      "Transform your boldest ideas into market-leading digital assets with our comprehensive design mastery. We combine logical strategy with high-fidelity prototyping to ensure your product isn't just aesthetically elegant, but also functionally superior.",
   },
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
-      title: "with Moonstack's Design Mastery",
+      title:
+        "Enlighten Your Product's Potential with Moonstack's Design Mastery",
       description:
         "The development of our products is a logical and successful scenario presented from idea to implementation. Our product design and development service begin with an evaluation session to get a clear understanding of the client’s expectations. This is followed by our design team coming up with various ideas that implement the latest trends and unique characteristics. After choosing a concept, we proceed to the prototyping stage, whereby we build a model of the item as a means of implementation and evaluation to ensure that the concept is in line with functional, structural, and aesthetic needs.",
     },
@@ -113,27 +113,27 @@ export const product: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+      { text: "Scale Your Innovation With Our Expert Product Design Team" },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Scale Forever: Your ",
+        text: "Design Once, Innovate Forever: Your ",
         color: "text-white",
         className: "",
       },
       {
-        text: "Expert Laravel Development Partner",
+        text: "Expert Product Design Partner",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
     ],
     checklist: [
-      "Robust & Secure Architecture",
-      "Rapid Development & Deployment",
-      "High-Performance & Scalable Code",
-      "Easy Maintenance & Updates",
+      "End-to-End Product Strategy",
+      "Rapid Prototyping & Iteration",
+      "Scalable & Future-Proof Logic",
+      "User-Centric Visual Identity",
     ],
     buttonText: "Start Your Project Today",
   },
@@ -314,7 +314,14 @@ export const product: PageData = {
           "India is well known for its comparatively tougher terrain and lifestyle, hence, our Product Design Service in India is diverse. We aim our attention at those inventions that will be useful and unique for use in India, being resistant to the physical and climatic conditions in the country. We maintain an approach of proper market analysis and consumer trials, so that each product created can adequately prepare to meet the requirements of India.",
       },
       {
-        id: 1,
+        id: 2,
+        title: "Flawless Product Design USA: The Art of Innovation",
+        icon: collaboration.src,
+        description:
+          "At Moonstack, our product design and development team helps materialize your boldest ideas through unique design and perfect execution. Our staff is always focused on the primary goal: achieving success, whether through the introduction of a brand-new product into the global market or the strategic redesign of an existing one. We bring a world-class perspective to every project, ensuring that your digital assets meet the rigorous standards of the USA market while maintaining a competitive edge.",
+      },
+      {
+        id: 3,
         title: "Let's Create Something Extraordinary",
         icon: collaboration.src,
         description:

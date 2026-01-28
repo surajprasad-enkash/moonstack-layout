@@ -53,9 +53,8 @@ export const android: PageData = {
     description:
       "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "Android app development Service India,Android app development company USA,Best Android app developers India,Custom Android application development USA,Android app development agency UK",
+    canonical: "/services/android-app-development-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
@@ -74,6 +73,7 @@ export const android: PageData = {
       description2:
         "So, whether you need a simple on-demand Android app or one with full e-commerce functionality, Moonstack can help you build your dream concept into a scalable Android app as the most secure Android app development company in USA.",
       image: bndimage1.src,
+      bolds: false,
     },
   ],
   solutions: {

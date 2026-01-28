@@ -50,13 +50,12 @@ export const ios: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "IOS App Development Company in India & USA | Moonstack",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Searching for expert IOS app developers in India? Moonstack designs and builds iPhone and iPad apps with pixel‑perfect UI and App Store–ready performance. Call Now!",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "iOS app development Service India,iOS app development company USA,Best iOS app developers India,Custom iOS application development service USA,iOS app development agency UK",
+    canonical: "/services/iso-app-development-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
@@ -76,6 +75,7 @@ export const ios: PageData = {
       description2:
         "With over 15 years of experience and 450+ completed projects, we have worked with a range of businesses right from startups to enterprises. Our iOS application consulting services in India are highly specialised and built to suit your needs. Contact us, and we can help you build your dream app starting today.",
       image: bndimage1.src,
+      bolds: false,
     },
   ],
   solutions: {

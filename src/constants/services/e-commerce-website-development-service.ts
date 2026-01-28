@@ -20,7 +20,7 @@ export const ecommerce: PageData = {
   hero: {
     title: [
       {
-        text: "E-commerce Website Development Services Provider Globally",
+        text: "E-commerce Website Development Services Provider",
         color: "text-white",
       },
     ],
@@ -46,13 +46,12 @@ export const ecommerce: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "Ecommerce Website Development Company India & USA | Moonstack",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Need an ecommerce site that increase sells? We designs and develops conversion‑focused online stores with secure payments and mobile‑first UX. Get Quote Now!",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "ecommerce SEO services provider USA,SEO for ecommerce websites India,affordable ecommerce SEO service India,ecommerce SEO experts USA,Shopify ecommerce SEO USA",
+    canonical: "/services/ecommerce-website-development-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
@@ -65,7 +64,15 @@ export const ecommerce: PageData = {
       title: "Trusted E-commerce Development Company to maximize digital sales",
       description:
         "Moonstack is the leading e-commerce development company. With our ecommerce website developers in India, we have built powerful and user centric  online stores that align with brand identity and increase conversion rates. We integrate modern functionalities powered by advanced technologies such as secure payment gateways, mobile responsive, and create interactive user interfaces for users that are easy to use. Our main aim is to deliver a seamless shopping experience to your customers that 2X sales.",
-      stats: [],
+      stats: [
+        "B2C E-Commerce Development",
+        "B2B E-Commerce Development",
+        "C2C Marketplace Development",
+        "Multi-Vendor Marketplace Development",
+        "Mobile Commerce (M-Commerce) Development",
+        "Headless E-Commerce Solutions",
+      ],
+      bolds: true,
       description2:
         "Our secure e-commerce website developers in India have hands-on experience and are proficient in online store development. We build different types of e-commerce solutions including custom built websites, marketplace integration, and multi channel e-commerce websites. We strategize our development process in such a way that ensures a smooth operational process and meets all our clients' demands. Grow your online business and spread your brand presence world wide that leads to 2x sales.",
       image: bndimage1.src,
@@ -131,29 +138,29 @@ export const ecommerce: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+      { text: "Scale Your Store With Our Expert E-commerce Development Team" },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Scale Forever: Your ",
+        text: "Build Once, Sell Everywhere: Your Expert",
         color: "text-white",
         className: "",
       },
       {
-        text: "Expert Laravel Development Partner",
+        text: "E-commerce Development Partner",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
     ],
     checklist: [
-      "Robust & Secure Architecture",
-      "Rapid Development & Deployment",
-      "High-Performance & Scalable Code",
-      "Easy Maintenance & Updates",
+      "Secure & PCI-Compliant Architecture",
+      "Conversion-Optimized Checkout",
+      "Seamless Third-Party Integrations",
+      "Mobile-First Performance",
     ],
-    buttonText: "Start Your Project Today",
+    buttonText: "Launch Your Store Today",
   },
 
   CloudTimelineData: {

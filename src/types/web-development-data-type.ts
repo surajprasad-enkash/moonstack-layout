@@ -21,6 +21,7 @@ export interface leftCardData {
   description2?: string
   icon?: string
   image?: string
+  bolds: boolean
 }
 
 /* ================= Impact Section ================= */

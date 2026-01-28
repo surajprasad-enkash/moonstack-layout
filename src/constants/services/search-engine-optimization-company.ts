@@ -46,170 +46,126 @@ export const seo: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "SEO Services | Increase Website Traffc | AEO/GEO/SGE",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Increase traffic and leads with our SEO Service, Our team handles technical SEO and focus on AEO/GEO/SGE with EEAT content and aware with latest Google updates.",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "Search Engine Optimization Service,affordable SEO services provider USA,Professional SEO company in USA,SEO services for small business India,professional SEO agency India,SEO consultant near me USA",
+    canonical: "/services/search-engine-optimization-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
 
-  points:
-    "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
-  highlightText: "The application is scalable",
+  points: "",
+  highlightText: "",
 
   leftCardData: [
     {
-      title: "Leading SEO Development Company",
+      title: "Trusted SEO Service Provider Company",
       description:
-        "Moonstack is recognized as one of the top SEO service providers. We have 10+ years of SEO experience in different industries. Our blend of SEO professionals has worked with start-ups, agencies, and global trends. As the leading  SEO consulting services in  India, we have provided proven results with 2x traffic in 30 days with the right strategic manner as per the specific projects. Our certified SEO professionals in India opt for modern SEO practices and have hands-on experience with AI overview optimisation and AEO (Answer Engine Optimisation) that ensure to stay your brand keyword on top of search engines. ",
+        "Moonstack is recognized as one of the top SEO service providers. We have 10+ years of SEO experience in different industries. Our blend of SEO professionals has worked with start-ups, agencies, and global trends. As the leading  SEO consulting services provider globally, we have provided proven results with 2x traffic in 30 days with the right strategic manner as per the specific projects. Our certified SEO professionals opt for modern SEO practices and have hands-on experience with AI overview optimisation and AEO (Answer Engine Optimisation) that ensure to stay your brand keyword on top of search engines. ",
       stats: [],
       description2:
-        "With Moonstack, you are not just shaking hands for SEO services, but it's a growth engine that you are creating the future of your business. From technical SEO to content optimisation, we are delivering the best seo and content services that are based on measurable outcomes, lead-driven growth, and long-term search dominance. We are offering end-to-end SEO services that make us a stop SEO service provider in India.",
+        "With Moonstack, you are not just shaking hands for SEO services, but it's a growth engine that you are creating the future of your business. From technical SEO to content optimisation, we are delivering the best seo and content services that are based on measurable outcomes, lead-driven growth, and long-term search dominance. We are offering end-to-end SEO services that make us a top SEO service provider Worldwide.",
       image: bndimage1.src,
+      bolds: false,
     },
   ],
   solutions: {
     headingContent: [
-      {
-        text: "Our ",
-        color: "text-white",
-      },
-      {
-        text: "Laravel web Development",
-        color: "text-white libreItalic font-[400] highlight-text",
-      },
-      {
-        text: "Services Includes",
-        color: "text-white",
-      },
+      // {
+      //   text: "Advance SEO ",
+      //   color: "text-white",
+      // },
+      // {
+      //   text: "Built for the AI Era",
+      //   color: "text-white libreItalic font-[400] highlight-text",
+      // },
     ],
-    subHeadingText:
-      "We have best Laravel web developers and with them we offer affordable laravel development service in India - from consultation to migration all your needs will fulfill at one stop ",
+    subHeadingText: "",
   },
   featuresData: [
-    {
-      imgSrc: intuitiveIcon.src,
-      title: "Laravel Consulting Services",
-      description:
-        "Bring your idea into reality with the right strategy and roadmap with Laravel web experts. Our Moonstack’s expert Laravel consulting professionals will understand your business needs and provide you with the right development strategy to deliver secure and scalable Laravel solutions in the market.",
-    },
-    {
-      imgSrc: engagingIcon.src,
-      title: "Custom Laravel Website Development Service",
-      description:
-        "We build high performance, secure, and functional custom Laravel web apps in India. We develop custom  Laravel websites for clients as per their business requirements. Our Laravel web development experts understand the gap in your operational process  and integrate modern features to meet latest business demands. ",
-    },
-
-    {
-      imgSrc: brandingIcon.src,
-      title: "Laravel Custom  E-Commerce Development Services ",
-      description:
-        "Grow your online presence with Laravel ecommerce development service in India. We build high performance and secure custom e-commerce solutions integrated with advanced functionalities and deliver smooth shopping experiences to customers. Our team's main aim is to increase website conversions on your websites.",
-    },
-    {
-      imgSrc: brandingIcon.src,
-      title: "Laravel UI/UX Designing Services ",
-      description:
-        "Our architect designers create interactive and engaging designs for our customers. We hold expertise with custom designing in which we bring your business brand identity to the real world and connect with customers. At Moonstack, our designers create interactive designs with easy to use aspects.",
-    },
-    {
-      imgSrc: brandingIcon.src,
-      title: "Laravel API Integration Services",
-      description:
-        "Extend your web and mobile app functionalities with seamless laravel REST API development service in India by partnering with the best Laravel development agency. We integrate Laravel web solutions with third party services via API such as secure payment gateway, internal systems, and many more. ",
-    },
-    {
-      imgSrc: brandingIcon.src,
-      title: "Laravel Maintenance and Support Services ",
-      description:
-        "We offer end to end Laravel maintenance and support services. With our expert Laravel team, we run Laravel web solutions smoothly without any errors. We provide constant updates, optimize performance, and fix bugs to run solutions smoothly and deliver long term business commitment. ",
-    },
+    // {
+    //   imgSrc: intuitiveIcon.src,
+    //   title: "AI Optimization",
+    //   description:
+    //     "We are a data-driven SEO agency in India that provides accurate content structured for AI comprehension that is not created for the sake of human readers. With our SEO strategy, we create an end-to-end AIO-based strategy that focuses on entity mapping, semantic relationships, and contextual relevance. Our SEO strategy focuses on entity mapping, semantic relationships, and contextual relevance that connect your audience.",
+    // },
   ],
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+      {
+        text: "Scale Your Search Visibility With Our Expert SEO Strategy Team",
+      },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Scale Forever: Your ",
+        text: "Rank Once, Scale Forever: Your ",
         color: "text-white",
         className: "",
       },
       {
-        text: "Expert Laravel Development Partner",
+        text: "Expert SEO Growth Partner",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
     ],
     checklist: [
-      "Robust & Secure Architecture",
-      "Rapid Development & Deployment",
-      "High-Performance & Scalable Code",
-      "Easy Maintenance & Updates",
+      "Comprehensive On-Page Optimization",
+      "High-Authority Link Building",
+      "Technical SEO Excellence",
+      "Continuous Analytics & Reporting",
     ],
-    buttonText: "Start Your Project Today",
+    buttonText: "Start Your Growth Now",
   },
 
   CloudTimelineData: {
-    title: "Our Process of ",
-    highlight: "Laravel website Development Service",
-    subtitle:
-      "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges.",
+    title: "Modern SEO Process that ",
+    highlight: "we follow for your website",
     steps: [
       {
         number: 1,
-        title: "Gather Requirements",
+        title: "SEO Audit & Analysis",
         description:
-          "We collect all the information about the project to understand what our client actually needs that allow us to align with the project.",
+          "Leverage advanced tools to conduct comprehensive website audits, analyzing technical performance, content quality, competitor strategies, and user behavior patterns. We identify opportunities and SEO gaps.",
         position: "left",
       },
       {
         number: 2,
-        title: "Client Discussion",
+        title: "Strategic Keyword Research & Intent Mapping",
         description:
-          "Once we have proper requirements then our Laravel team experts conduct a formal client discussion to solve all queries.",
+          "Utilize AI-powered keyword research tools to discover high-value opportunities aligned with user intent. We go beyond traditional keyword targeting to understand semantic relationships, conversational queries, and AI search patterns (ChatGPT, Bard, Bing AI).",
         position: "right",
       },
       {
         number: 3,
-        title: "Internal Strategy Discussion",
+        title: "AI-Enhanced Content Strategy & Creationg",
         description:
-          "After that we have an internal strategy discussion in which we have our tech brainstorming to deliver the best outcome.",
+          "Develop a data-driven content strategy that combines human expertise with AI assistance. Create high-quality, E-E-A-T focused content optimized for both traditional search engines and AI-powered platforms, ensuring visibility across all search channels.",
         position: "left",
       },
       {
         number: 4,
-        title: "Designing - UI/UX Services",
+        title: "Technical SEO & Performance Optimization",
         description:
-          "Designers start the designing process in which they focus on interactive user interface and easy to use for the users.",
+          "Implement advanced technical optimizations using AI-driven tools to enhance site speed, mobile experience, and crawlability. Ensure your website meets the latest Core Web Vitals standards and is optimized for AI crawler accessibility.",
         position: "right",
       },
       {
         number: 5,
-        title: "Development",
+        title: "Intelligent Link Building & Authority Development",
         description:
-          "Tech team start the development process in which frontend developers and backend coders work together.",
+          "Execute strategic, AI-assisted link building campaigns that focus on quality over quantity. Build domain authority through genuine relationships, high-value content partnerships, and data-driven outreach strategies.",
         position: "left",
       },
       {
         number: 6,
-        title: "Deployment and Testing",
+        title: "Continuous Monitoring, AI Insights & Adaptation",
         description:
-          "We deploy and test the Laravel software with automated and manual processes that allow us to deliver bug free solutions. ",
-        position: "right",
-      },
-      {
-        number: 7,
-        title: "Delivery and Post Support ",
-        description:
-          "After testing, we deliver Laravel based solutions in the market with post support that ensure our team is always there.",
+          "Deploy advanced analytics and AI-powered monitoring systems to track performance, predict trends, and adapt strategies in real-time. Stay ahead of algorithm updates and emerging AI search patterns with proactive optimization.",
         position: "left",
       },
     ],
@@ -217,62 +173,54 @@ export const seo: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Our Scalable " },
+      { text: "Advance SEO Built " },
       {
-        text: "Laravel Web development",
+        text: "for the AI",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: "Solutions" },
+      { text: "Era" },
     ],
     description:
-      "For decades MoonStack has been creating a wide range of Laravel web solutions for our clients for different industries that are ready to use as per different business with minor and major customisation processes. ",
+      "Moonstack, the best digital marketing and SEO agency in India, does not only aim to just optimize for rankings. We create an SEO based strategy that targets rankings primarily. With the best SEO certified professionals, our SEO strategy is to optimize for visibility, trust, and conversion rates that result in AI-driven search platforms. In this competition era, your solution is to partner with the leading Moonstack SEO service provider company, who have a blend of professional and dedicated certified SEO experts in India. We have created end-to-end SEO strategies that are built for the AI era.",
     cards: [
       {
-        id: "Laravel Web Apps",
-        label: "Laravel Web Apps",
+        id: "AI Optimization (AIO)",
+        label: "AI Optimization (AIO)",
         description:
-          "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
+          "We are a data-driven SEO agency in India that provides accurate content structured for AI comprehension that is not created for the sake of human readers. With our SEO strategy, we create an end-to-end AIO-based strategy that focuses on entity mapping, semantic relationships, and contextual relevance. Our SEO strategy focuses on entity mapping, semantic relationships, and contextual relevance that connect your audience. ",
         variant: "light",
       },
       {
-        id: "Laravel E-commerce Solutions",
+        id: "Answer Engine Optimization (AEO)",
 
-        label: "Laravel E-commerce Solutions",
+        label: "Answer Engine Optimization (AEO)",
         description:
-          "The best ecommerce website developers in India build innovative and highly functional Laravel online stores. We have integrated essential functionalities such as product catalog, shopping carts, order tracking, and secure payment gateways that increase conversion rates and user experience.",
+          "At Moonstack, we strategize your content strategy in a way that it appears in AI overviews, and provides direct answers. Our AEO SEO strategy provides impactful, well-defined, structured, and concise responses as per user behaviour. The Answer engine optimization helps users to make their decisions faster and provides clarity to users.",
         variant: "accent",
       },
       {
-        id: "Laravel CRM Solutions ",
+        id: "Generative Engine Optimization (GEO)",
 
-        label: "Laravel CRM Solutions ",
+        label: "Generative Engine Optimization (GEO)",
         description:
-          "Moonstack builds Laravel based CRM solutions that improve customer relationship management processes in companies. We design custom CRM solutions that allow us to track leads and automate conversions that lead to data driven decisions and streamline client communication processes.",
+          "Our transparent SEO services company in India aims to improve brand presence that providing AI-generated summaries and conversational results. Our Generative engine optimisation (Google Search engine) is designed in such a way that delivers the best AI-driven search engine experiences that ensure your brand is referred to when users don’t even click traditional links. It also improves brand visibility appropriately.",
         variant: "dark",
       },
       {
-        id: "Laravel CMS Solutions",
+        id: "Semantic SEO",
 
-        label: "Laravel CMS Solutions",
+        label: "Semantic SEO",
         description:
-          "Professional Laravel experts offer robust Laravel based CMS development in India. We have built the best Laravel CMS solutions that allow businesses to easily update, publish, and manage content effortlessly on their websites. We deliver CMS solutions to businesses that  have full control on content management systems. ",
+          "At Moonstack, we develop topical authority via intent-driven content clusters that reduce reliance on single keywords. Our systematic approach aligns with modern search engines, which is measured with a modern search engine optimisation process, evaluates expertise, and relevance of the target audience that connects with the audience.",
         variant: "dark",
       },
       {
-        id: "POS Systems",
+        id: "Technical SEO & Performance",
 
-        label: "POS Systems",
+        label: "Technical SEO & Performance",
         description:
-          "Integrate modern Laravel powered POS systems that are developed by Laravel experts in India. Our POS systems help to streamline different operational processes, allow retailers to manage multiple outlets, and deliver best outcomes for customers. We have delivered a wide range of POS (Point of Sale solutions) to our retail businesses.",
+          "Our SEO audit and analysis services in India are designed to deliver strong results. With industry-best SEO experts, we optimize core web vitals, crawlability, and indexing that ensure the best search engine results and provide a full AI system that can access, understand, and rank sites in an appropriate manner.",
         variant: "light",
-      },
-      {
-        id: "Video Streaming and Media Apps",
-
-        label: "Video Streaming and Media Apps",
-        description:
-          "Develop your Laravel based video streaming and media apps with  expert laravel web developers in India. We designed video streaming and media apps that support secure content delivery and content management. We develop video streaming and media apps in such a way that offer seamless streaming and integrated with user authentication and support multiple platforms. ",
-        variant: "dark",
       },
     ],
   },
@@ -296,65 +244,65 @@ export const seo: PageData = {
   // },
   qualitySectionData: {
     heading: [
-      {
-        text: " Why Choose us for your ",
-        color: "text-white",
-      },
-      {
-        text: "Laravel  Web Development",
-        className: "libreItalic font-[400] highlight-text",
-      },
-      {
-        text: " Services?",
-        color: "text-white",
-      },
+      // {
+      //   text: " Why Choose us for your ",
+      //   color: "text-white",
+      // },
+      // {
+      //   text: "Laravel  Web Development",
+      //   className: "libreItalic font-[400] highlight-text",
+      // },
+      // {
+      //   text: " Services?",
+      //   color: "text-white",
+      // },
     ],
-    description:
-      "Laravel is known for the best Laravel framework development in India. At Moonstack, we have delivered a wide range of custom Laravel web development services to our customers. Our professional Laravel experts have delivered secure, high performance, and future ready web apps.",
-    columsClass: "lg:grid-cols-3",
+    description: "",
+
+    // columsClass: "lg:grid-cols-3",
     list: [
-      {
-        id: 1,
-        title: "Decade of Experience",
-        icon: collaboration.src,
-        description:
-          "Our Laravel experts have decades of experience that allows them to meet all clients' needs. Laravel coders have delivered scalable, secure, and high performance web apps with advanced integrated functionalities.",
-      },
-      {
-        id: 2,
-        title: "Custom Solutions for Every Business",
-        icon: collaboration.src,
-        description:
-          "We have delivered 450+ custom web development solutions across the world. Our professional Laravel experts have built high performance, scalable different solutions specifically designed for different business needs.",
-      },
-      {
-        id: 3,
-        title: "End to End Laravel Development Services",
-        icon: collaboration.src,
-        description:
-          "Delivering end to end Laravel development services to our clients. From consultation to development to migration - Moonstack is known as a one stop solution for all our client’s Laravel web development needs.",
-      },
-      {
-        id: 4,
-        title: "Transparent Communication",
-        icon: collaboration.src,
-        description:
-          "At Moonstack, we maintain open communication with our clients with constant updates, demos, and progress reports that ensure us to stay connected with our customers. Moreover, that also allows us to understand each other's mindset in a better way.",
-      },
-      {
-        id: 5,
-        title: "Confidential Details",
-        icon: collaboration.src,
-        description:
-          "Every project idea is unique - we understand the importance of your business module. We keep all your information fully secure and confidential with us. Our team keeps all details to them, and in any case we don’t leak any of your project ideas to third parties.",
-      },
-      {
-        id: 6,
-        title: "Creative and Business oriented solutions",
-        icon: collaboration.src,
-        description:
-          "We just don’t build Laravel solutions only for the web development purpose. At Moonstack, we build business oriented solutions that align with your business needs and attract users with advanced based next generation features.",
-      },
+      // {
+      //   id: 1,
+      //   title: "Decade of Experience",
+      //   icon: collaboration.src,
+      //   description:
+      //     "Our Laravel experts have decades of experience that allows them to meet all clients' needs. Laravel coders have delivered scalable, secure, and high performance web apps with advanced integrated functionalities.",
+      // },
+      // {
+      //   id: 2,
+      //   title: "Custom Solutions for Every Business",
+      //   icon: collaboration.src,
+      //   description:
+      //     "We have delivered 450+ custom web development solutions across the world. Our professional Laravel experts have built high performance, scalable different solutions specifically designed for different business needs.",
+      // },
+      // {
+      //   id: 3,
+      //   title: "End to End Laravel Development Services",
+      //   icon: collaboration.src,
+      //   description:
+      //     "Delivering end to end Laravel development services to our clients. From consultation to development to migration - Moonstack is known as a one stop solution for all our client’s Laravel web development needs.",
+      // },
+      // {
+      //   id: 4,
+      //   title: "Transparent Communication",
+      //   icon: collaboration.src,
+      //   description:
+      //     "At Moonstack, we maintain open communication with our clients with constant updates, demos, and progress reports that ensure us to stay connected with our customers. Moreover, that also allows us to understand each other's mindset in a better way.",
+      // },
+      // {
+      //   id: 5,
+      //   title: "Confidential Details",
+      //   icon: collaboration.src,
+      //   description:
+      //     "Every project idea is unique - we understand the importance of your business module. We keep all your information fully secure and confidential with us. Our team keeps all details to them, and in any case we don’t leak any of your project ideas to third parties.",
+      // },
+      // {
+      //   id: 6,
+      //   title: "Creative and Business oriented solutions",
+      //   icon: collaboration.src,
+      //   description:
+      //     "We just don’t build Laravel solutions only for the web development purpose. At Moonstack, we build business oriented solutions that align with your business needs and attract users with advanced based next generation features.",
+      // },
     ],
   },
   accordionData: [

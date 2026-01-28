@@ -46,13 +46,12 @@ export const laravel: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "Laravel Web Development Company in India & USA | Moonstack",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Build secure, scalable Laravel websites and web apps with experienced developers, clean code, and long-term maintainability. Share your Laravel requirements with us today.",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "Laravel development service USA,best Laravel development company USA,affordable Laravel developers India,hire dedicated Laravel developers India,custom Laravel web application development India",
+    canonical: "/services/laravel-website-development-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
@@ -70,6 +69,7 @@ export const laravel: PageData = {
       description2:
         "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
       image: bndimage1.src,
+      bolds: false,
     },
   ],
   solutions: {

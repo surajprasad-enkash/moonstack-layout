@@ -48,8 +48,8 @@ export default function CaseOverview({ data }: any) {
                   <Image
                     src={img}
                     alt="Product"
-                    width={1500}
-                    height={1500}
+                    width={2000}
+                    height={2000}
                     className="h-[auto] w-[100%] object-contain"
                   />
                 </div>

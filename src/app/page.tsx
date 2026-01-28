@@ -180,10 +180,10 @@ export default function Home() {
   return (
     <>
       <Meta
-        title=" Product Focused App & Web Development Company in India & USA"
+        title="Product Focused App & Web Development Company in India & USA"
         description="We're product-focused app and web development company in India. Moonstack’s senior engineers and designers help companies in building World class AI-powered full-stack development, UI/UX, SEO and ongoing support."
         keywords=" Website Development,Mobile app development service India, SEO, Next.js, React, Moonstack,AI solutions for businesses "
-        canonical="https://www.moonstack.com/"
+        canonical="/"
         ogImage="https://www.moonstack.com/og-image.jpg"
       />
 

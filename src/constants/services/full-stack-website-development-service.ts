@@ -46,20 +46,19 @@ export const fullstack: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "Full-Stack Web Development Company India & USA | Moonstack",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Looking for a full stack web development team in India? We handling frontend, backend, APIs, and cloud infrastructure under one roof. Book a product discovery call.",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "full stack development company USA,hire full stack developers India,best full stack web development service India,affordable full stack developers USA,full stack web application development USA",
+    canonical: "/services/full-stack-website-development-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
 
   points:
-    "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
-  highlightText: "The application is scalable",
+    "Moonstack is a game-changer. Their full-stack expertise is unmatched—they delivered a scalable, high-performance ecosystem in record time where others failed. They didn’t just build what we asked; they proactively improved our entire technical strategy. They are our #1 recommended partner for any complex development project.",
+  highlightText: "scalable, high-performance ecosystem",
 
   leftCardData: [
     {
@@ -70,6 +69,7 @@ export const fullstack: PageData = {
       description2:
         "We are not in the market only to build advanced solutions, but with our full stack team we extend the full digital ecosystem for our customers. Apart from only custom full stack  development solutions in India and U/X designing, we also focus on API and Cloud integration. Moreover, our professional full stack developers in India ensure to opt for the best practices and modern technologies that align with the project goals. We are a one stop solution for all your Full stack development needs from start up to large enterprises - we are considered as the leading full stack development company that holds the power to turn ideas into reality. Our full stack engineers are available for full time, hourly, and freelance basis.",
       image: bndimage1.src,
+      bolds: false,
     },
   ],
   solutions: {
@@ -132,29 +132,31 @@ export const fullstack: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+      {
+        text: "Scale Your Business With Our Expert Full-Stack Development Team",
+      },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Scale Forever: Your ",
+        text: "From Vision to Velocity: Your Premier ",
         color: "text-white",
         className: "",
       },
       {
-        text: "Expert Laravel Development Partner",
+        text: "Full-Stack Development Partner",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
     ],
     checklist: [
-      "Robust & Secure Architecture",
-      "Rapid Development & Deployment",
-      "High-Performance & Scalable Code",
-      "Easy Maintenance & Updates",
+      "Future-Ready Tech Stacks",
+      "Agile End-to-End Delivery",
+      "Performance-Driven Engineering",
+      "Proactive System Maintenance",
     ],
-    buttonText: "Start Your Project Today",
+    buttonText: "Launch Your Innovation",
   },
 
   CloudTimelineData: {

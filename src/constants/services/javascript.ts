@@ -69,6 +69,7 @@ export const javascript: PageData = {
       stats: [],
       description2:
         "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
+      bolds: false,
       image: bndimage1.src,
     },
   ],

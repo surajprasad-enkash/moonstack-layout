@@ -20,13 +20,13 @@ export const it_support: PageData = {
   hero: {
     title: [
       {
-        text: "Moonstack: Supporting India and USA businesses with seamless IT solutions",
+        text: "Supporting India and USA businesses with seamless IT solutions",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "",
+        text: "We provide seamless, end-to-end technical support that bridges the gap between complex challenges and streamlined operations for businesses in India and the USA.",
         color: "text-white",
       },
     ],
@@ -46,48 +46,37 @@ export const it_support: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "Managed IT Support Services India & USA | Moonstack",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Looking for reliable IT support Service? Moonstack provides managed IT services, monitoring, & incident response to keep your systems secure and teams productive.",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "managed IT support company USA,affordable IT helpdesk services India,remote IT support for businesses India,IT infrastructure support USA,24/7 IT support providers India,enterprise IT support services India,IT network troubleshooting services USA",
+    canonical: "/services/it-support-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
 
-  points:
-    "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
-  highlightText: "The application is scalable",
+  points: "",
+  highlightText: "",
 
-  leftCardData: [
-    {
-      title: "Transform Your Business with Custom Laravel Solutions",
-      description:
-        "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",
-      stats: [],
-      description2:
-        "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
-      image: bndimage1.src,
-    },
-  ],
+  leftCardData: [],
   solutions: {
     headingContent: [
       {
-        text: "Our ",
+        text: "Maximize Your Business Efficiency with ",
         color: "text-white",
       },
       {
-        text: "Laravel web Development",
+        text: "Proactive IT Support ",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: "Services Includes",
+        text: "and Infrastructure Management",
         color: "text-white",
       },
     ],
-    subHeadingText: "",
+    subHeadingText:
+      "Eliminate technical bottlenecks and propel your business forward with Moonstack’s premier IT infrastructure management. Our proactive support model keeps you ahead of the curve by delivering smooth, end-to-end technical services that allow you to focus entirely on your core business goals.",
   },
   featuresData: [
     {
@@ -131,29 +120,31 @@ export const it_support: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+      {
+        text: "Scale Your Global Infrastructure With Our 5-Star IT Support Team",
+      },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Scale Forever: Your ",
+        text: "Maximize Your Efficiency With ",
         color: "text-white",
         className: "",
       },
       {
-        text: "Expert Laravel Development Partner",
+        text: "Our Expert IT Support Team",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
     ],
     checklist: [
       "Robust & Secure Architecture",
-      "Rapid Development & Deployment",
-      "High-Performance & Scalable Code",
-      "Easy Maintenance & Updates",
+      "Proactive Monitoring & Support",
+      "High-Performance Server Admin",
+      "Reliable Backup & Recovery",
     ],
-    buttonText: "Start Your Project Today",
+    buttonText: "Book a meeting",
   },
 
   CloudTimelineData: {

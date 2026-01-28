@@ -46,20 +46,18 @@ export const wordPress: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "WordPress Website Development Company India & USA | Moonstack",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Looking for WordPress developers in India? Moonstack launches and maintains secure, fast WordPress sites with custom themes, plugins, and SEO‑ready setups. call now!",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "wordpress development company USA,wordpress development service India,custom wordpress development service India,hire wordpress website developers USA,affordable wordpress website development service",
+    canonical: "/services/wordpress-website-development-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
 
-  points:
-    "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
-  highlightText: "The application is scalable",
+  points: "",
+  highlightText: "",
 
   leftCardData: [
     {
@@ -72,6 +70,7 @@ export const wordPress: PageData = {
       description2:
         "Along with this, our core values that make us different is timely project delivery, transparent communication, and different engagement modules that meet all our clients hiring needs.",
       image: bndimage1.src,
+      bolds: false,
     },
   ],
   solutions: {
@@ -134,29 +133,31 @@ export const wordPress: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+      {
+        text: "Scale Your Presence With Our Expert WordPress Development Team",
+      },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Scale Forever: Your ",
+        text: "Build Faster, Scale Smarter: Your ",
         color: "text-white",
         className: "",
       },
       {
-        text: "Expert Laravel Development Partner",
+        text: "Expert WordPress Development Partner",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
     ],
     checklist: [
-      "Robust & Secure Architecture",
-      "Rapid Development & Deployment",
-      "High-Performance & Scalable Code",
-      "Easy Maintenance & Updates",
+      "Performance-Driven Custom Themes",
+      "Next-Gen Security & Scalability",
+      "Tailored Plugin Engineering",
+      "Total Content Control",
     ],
-    buttonText: "Start Your Project Today",
+    buttonText: "Launch Your Vision Today",
   },
 
   CloudTimelineData: {

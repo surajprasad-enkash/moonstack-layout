@@ -63,6 +63,7 @@ export const css: PageData = {
 
   leftCardData: [
     {
+      bolds: false,
       title: "Transform Your Business with Custom Laravel Solutions",
       description:
         "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",

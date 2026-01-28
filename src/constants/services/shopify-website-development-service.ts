@@ -46,20 +46,18 @@ export const shopify: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "Shopify Website Development Company India & USA | Moonstack",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Looking to build and scale a Shopify store? Moonstack develops custom Shopify themes, apps, and optimized funnels to increase your online sales. Call Now!",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "shopify website development company USA,affordable shopify website developers India,shopify website design services India,shopify website experts USA,custom shopify store development service USA",
+    canonical: "/services/shopify-website-development-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
 
-  points:
-    "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
-  highlightText: "The application is scalable",
+  points: "",
+  highlightText: "",
 
   leftCardData: [
     {
@@ -70,6 +68,7 @@ export const shopify: PageData = {
       description2:
         "Our main aim is to launch powerful e-commerce-based Shopify stores for clients. In order to meet all our customers' needs, we offer end-to-end Shopify development services in India that include store setup, custom theme development, responsive designs, third-party API integration services, testing, and many more services. We are considered as a one-stop solution for all our clients' needs. We serve our customers from start ups to large enterprises. Moreover, we believe in effective transparent communication, and deliver things in a timely manner. With technical aspects, our team also focuses on creating appealing and engaging designs for the customers that ensure to meet all market standards.",
       image: bndimage1.src,
+      bolds: false,
     },
   ],
   solutions: {
@@ -132,29 +131,31 @@ export const shopify: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+      {
+        text: "Scale Your Storefront With Our Expert Shopify Development Team",
+      },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Scale Forever: Your ",
+        text: "Build Once, Sell Limitless: Your Expert",
         color: "text-white",
         className: "",
       },
       {
-        text: "Expert Laravel Development Partner",
+        text: " Shopify Development Partner",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
     ],
     checklist: [
-      "Robust & Secure Architecture",
-      "Rapid Development & Deployment",
-      "High-Performance & Scalable Code",
-      "Easy Maintenance & Updates",
+      "Conversion-First Architecture",
+      "Rapid Storefront Deployment",
+      "Precision API & App Logic",
+      "Lightning-Fast Performance",
     ],
-    buttonText: "Start Your Project Today",
+    buttonText: "Launch Your Success Story Today",
   },
 
   CloudTimelineData: {

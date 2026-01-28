@@ -46,20 +46,18 @@ export const crm: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "Custom CRM Development Company India & USA | Moonstack",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Need a custom CRM For your business in India? Moonstack designs and develops CRM systems that match your workflows and integrate with your existing tools.",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "crm development company USA,affordable crm solutions India,custom crm software development India,crm app developers India,best crm development service USA",
+    canonical: "/services/crm-development-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
 
-  points:
-    "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
-  highlightText: "The application is scalable",
+  points: "",
+  highlightText: "",
 
   leftCardData: [
     {
@@ -70,6 +68,7 @@ export const crm: PageData = {
       description2:
         "We offer end to end CRM development services in India that includes custom CRM development, module development solutions, integration services, migration services, database integration, and many more. Moreover, with tech expertise, we are also known for strong communication, on time delivery, and constant updates with our team. In order to stay ahead in the market competition, our CRM app developers in India keep themselves updated with the latest technological advancements and sort last minute complex challenges. With CRM development services to meet the latest business needs, we also offer CRM solutions in India that are ready to use such as CRM software, CRM mobile app, Cloud based CRM software, and many more.",
       image: bndimage1.src,
+      bolds: false,
     },
   ],
   solutions: {
@@ -132,33 +131,33 @@ export const crm: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+      { text: "Optimize Your Operations With Our Expert CRM Development Team" },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Scale Forever: Your ",
+        text: "Build Once, Automate Forever: Your ",
         color: "text-white",
         className: "",
       },
       {
-        text: "Expert Laravel Development Partner",
+        text: "Expert CRM Development Partner",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
     ],
     checklist: [
-      "Robust & Secure Architecture",
-      "Rapid Development & Deployment",
-      "High-Performance & Scalable Code",
-      "Easy Maintenance & Updates",
+      "Centralised Data Architecture",
+      "Rapid Workflow Automation",
+      "Scalable & High-Performance Logic",
+      "Seamless Integration & Support",
     ],
-    buttonText: "Start Your Project Today",
+    buttonText: "Start Your CRM Project Now",
   },
 
   CloudTimelineData: {
-    title: "Moonstack process we follow to integrate",
+    title: "Process we follow to integrate",
     highlight: "CRM Solutions in your Business infrastructure",
     subtitle:
       "At Moonstack, we have a defined and structured approach that delivers the best CRM solutions to our clients with the right strategy. We have delivered a wide range of CRM solutions and have hands-on experience with the delivery process and know the exact method to implement in the CRM delivery process. We have opted for the agile methodology and include best CRM development experts in India who focus on timely delivery and ensure to solve last minute complex challenges.",

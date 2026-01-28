@@ -46,13 +46,12 @@ export const react_native: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "React Native App Development Company in India & USA | Moonstack",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Want a cross‑platform app built with React Native? Moonstack helps Companies in India & USA ship fast, stable React Native apps for Android and iOS from a single codebase.",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "React Native app development Service USA,React Native app development company India,Best React Native app developers India,React Native developers USA,Custom React Native applications India",
+    canonical: "/services/react-native-app-development-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
@@ -70,6 +69,7 @@ export const react_native: PageData = {
       description2:
         "With over 15 years of experience and 450+ completed projects, Moonstack shines as the top React Native app development company in India. We thrive in building highly functional apps that feature an intuitive design, a UX-focused front-end, secure user data storage, and a scalable framework. Armed with the best React Native app developers in India, Moonstack is ready to help your business build multi-platform apps on a budget. Contact us today, and we can help you get started.",
       image: bndimage1.src,
+      bolds: false,
     },
   ],
   solutions: {

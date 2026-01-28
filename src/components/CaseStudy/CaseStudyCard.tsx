@@ -107,7 +107,7 @@ export default function CaseStudyCard({ item, index }: Props) {
           <div>
             <button
               onClick={() => router.push(`/case-study/${item.slug}`)}
-              className="inline-flex items-center gap-2 rounded-[10px] bg-black px-6 py-3 text-[15px] font-medium text-white transition hover:bg-[#d0f601] hover:text-[var(--global--text-black)]"
+              className="inline-flex cursor-pointer items-center gap-2 rounded-[10px] bg-black px-6 py-3 text-[15px] font-medium text-white transition hover:bg-[#d0f601] hover:text-[var(--global--text-black)]"
             >
               View case study
               <IoIosArrowRoundForward className="h-[24px] w-[24px]" />

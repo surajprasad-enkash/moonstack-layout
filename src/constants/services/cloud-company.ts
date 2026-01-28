@@ -26,7 +26,7 @@ export const cloud: PageData = {
     ],
     description: [
       {
-        text: "",
+        text: "Expert cloud services for seamless digital transformation. We handle cloud migration, infrastructure management, DevOps, and optimization across AWS, Azure, and Google Cloud—delivering secure, scalable solutions that drive efficiency and business growth.",
         color: "text-white",
       },
     ],
@@ -46,46 +46,43 @@ export const cloud: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "Cloud Solutions Company | Scalable Cloud Infrastructure",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Transform your business with expert cloud solutions. We offer cloud migration, architecture design, security, and 24/7 management services. Trusted cloud company in India.",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "best cloud computing services USA,affordable cloud hosting services India,cloud migration services for enterprises India,multi-cloud management company India,cloud infrastructure services USA",
+    canonical: "/services/cloud-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
 
-  points:
-    "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
-  highlightText: "The application is scalable",
+  points: "",
+  highlightText: "",
 
   leftCardData: [],
   solutions: {
     headingContent: [
       {
-        text: "Our ",
+        text: "Empower Your Growth with  ",
         color: "text-white",
       },
       {
-        text: "Laravel web Development",
+        text: "Scalable Cloud ",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: "Services Includes",
+        text: "Infrastructure",
         color: "text-white",
       },
     ],
-    subHeadingText:
-      "We have best Laravel web developers and with them we offer affordable laravel development service in India - from consultation to migration all your needs will fulfill at one stop ",
+    subHeadingText: "",
   },
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
       title: "We will maintain your website by our extensive cloud service",
       description:
-        "Cloud services have already had a great impact on the digital transformation worldwide. However, businesses face new hurdles, questions, and considerations when they want to adopt cloud services, compared to traditional IT services.",
+        "Cloud infrastructure has revolutionized digital transformation for modern businesses across the globe. However, companies frequently encounter complex technical hurdles and security considerations when migrating away from traditional IT services. Our team simplifies this transition by providing managed cloud ecosystems that eliminate downtime and optimize performance. We specialize in proactive monitoring and seamless maintenance, ensuring your digital assets remain secure, updated, and fully operational around the clock. By leveraging our extensive cloud expertise, you can focus on core innovation while we handle the complexities of your backend architecture and server stability.",
     },
     {
       imgSrc: engagingIcon.src,
@@ -104,29 +101,31 @@ export const cloud: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+      {
+        text: "Scale Your Infrastructure With Our Expert Cloud Development Team",
+      },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Scale Forever: Your ",
+        text: "Bringing your vision to life quickly ",
         color: "text-white",
         className: "",
       },
       {
-        text: "Expert Laravel Development Partner",
+        text: "with high-fidelity, interactive designs.",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
     ],
     checklist: [
-      "Robust & Secure Architecture",
-      "Rapid Development & Deployment",
-      "High-Performance & Scalable Code",
-      "Easy Maintenance & Updates",
+      "User-Centric & Intuitive Layouts",
+      "Rapid Prototyping & Wireframing",
+      "High-Performance Visual Identity",
+      "Responsive & Accessible Design",
     ],
-    buttonText: "Start Your Project Today",
+    buttonText: "Start Your Design Today",
   },
 
   CloudTimelineData: {
@@ -268,6 +267,13 @@ export const cloud: PageData = {
         icon: collaboration.src,
         description:
           "To help businesses maximize the value and potential of cloud services, Moonstack, the leading cloud service provider in India, intends to offer vast and all-encompassing cloud solutions and support to enhance the overall exploitation of cloud solutions. We have developed a range of cloud based services in USA necessary for the company’s smooth functioning and tailored for your individual requirements ",
+      },
+      {
+        id: 3,
+        title: "Advanced security and compliance management",
+        icon: collaboration.src,
+        description:
+          "We implement robust security frameworks and industry-standard compliance practices to safeguard critical business data. Our solutions include continuous monitoring, threat detection, and regulatory alignment, helping organizations maintain trust, reliability, and uninterrupted digital operations.",
       },
     ],
   },

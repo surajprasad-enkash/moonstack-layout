@@ -156,7 +156,7 @@ export default function ApplicationPage({ params }: PageProps) {
           </>
         )}
 
-        {page.solutions && (
+        {page.featuresData.length > 0 && (
           <FeatureSection
             heading={page.solutions.headingContent}
             subHeadingText={page.solutions.subHeadingText}

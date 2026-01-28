@@ -26,7 +26,7 @@ export const ui_ux: PageData = {
     ],
     description: [
       {
-        text: "",
+        text: "With a track record of 250+ successful projects and a 5.0 client rating, our expert team specializes in transforming complex ideas into seamless, high-performance digital products that resonate with users across every device.",
         color: "text-white",
       },
     ],
@@ -46,20 +46,18 @@ export const ui_ux: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "UI/UX Design Services India USA | Web & Mobile | Moonstack",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Need UI/UX designers in India for your web or mobile app? Moonstack delivers user centric interfaces, design systems, and tested flows that boost engagement.",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "UI UX design company India 2026,best UI UX design agency USA,affordable UI UX services providers India,UI UX design for ecommerce websites USA,app UI UX designing experts India,UI UX prototyping services USA",
+    canonical: "/services/ui-ux-designing-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
 
-  points:
-    "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
-  highlightText: "The application is scalable",
+  points: "",
+  highlightText: "",
 
   leftCardData: [
     // {
@@ -70,25 +68,26 @@ export const ui_ux: PageData = {
     //   description2:
     //     "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
     //   image: bndimage1.src,
+    //  bolds: false,
     // },
   ],
   solutions: {
     headingContent: [
-      // {
-      //   text: "Our ",
-      //   color: "text-white",
-      // },
-      // {
-      //   text: "Laravel web Development",
-      //   color: "text-white libreItalic font-[400] highlight-text",
-      // },
-      // {
-      //   text: "Services Includes",
-      //   color: "text-white",
-      // },
+      {
+        text: "Mastering User-Centric Design:  ",
+        color: "text-white",
+      },
+      {
+        text: "From Aesthetic Brilliance ",
+        color: "text-white libreItalic font-[400] highlight-text",
+      },
+      {
+        text: "to Impactful Digital Experiences",
+        color: "text-white",
+      },
     ],
-    subHeadingText: "",
-    //   "We have best Laravel web developers and with them we offer affordable laravel development service in India - from consultation to migration all your needs will fulfill at one stop ",
+    subHeadingText:
+      "Elevate your brand with high-performance digital solutions designed to captivate and convert. We combine visual excellence with strategic usability to ensure every user interaction is seamless and goal-oriented.",
   },
   featuresData: [
     {
@@ -114,27 +113,27 @@ export const ui_ux: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+      { text: "Scale Your Vision With Our Elite UI/UX Design Specialists" },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Scale Forever: Your ",
+        text: "Scale Your Engagement With Our ",
         color: "text-white",
         className: "",
       },
       {
-        text: "Expert Laravel Development Partner",
+        text: "Expert UI/UX Design Team",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
     ],
     checklist: [
-      "Robust & Secure Architecture",
-      "Rapid Development & Deployment",
-      "High-Performance & Scalable Code",
-      "Easy Maintenance & Updates",
+      "Data-Driven User Research",
+      "Rapid Interactive Prototyping",
+      "Performance-First Aesthetics",
+      "Proven Global Excellence",
     ],
     buttonText: "Start Your Project Today",
   },
@@ -198,7 +197,7 @@ export const ui_ux: PageData = {
         title: " Iterative Design",
         description:
           "Refine designs based on feedback, testing, and evolving requirements for optimal results.",
-        position: "left",
+        position: "right",
       },
       {
         number: 9,
@@ -212,7 +211,7 @@ export const ui_ux: PageData = {
         title: " Delivery",
         description:
           "Provide final design assets, guidelines, and support for smooth product development and launch.",
-        position: "left",
+        position: "right",
       },
     ],
   },
@@ -318,6 +317,13 @@ export const ui_ux: PageData = {
         icon: collaboration.src,
         description:
           "We at Moonstack deliver innovative UI and UX design services to mobilize clients across industries to create new designs that better suit the target users and improve on their engagement. Great attention is paid to the fact that our team’s goal is to create digital products that are efficient and visually appealing but also oriented to the USA cultural context and consumer values.",
+      },
+      {
+        id: 3,
+        title: "Performance-Optimized Interfaces: Bridging Art and Analytics",
+        icon: collaboration.src,
+        description:
+          "By utilizing data-driven insights and rigorous user testing, our team ensures that every design element serves a specific purpose in enhancing your company's productivity. Whether you are a large enterprise or a growing business, we deliver flawless digital products that bridge the gap between creative artistry and the technical accuracy required for the competitive market.",
       },
     ],
   },
