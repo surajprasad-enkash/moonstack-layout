@@ -4,6 +4,7 @@ import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { IoIosArrowRoundForward } from "react-icons/io"
 import icon from "@/assets/case-study/banner/case-list-star.svg"
+import Link from "next/link"
 
 interface Props {
   item: {
@@ -105,13 +106,14 @@ export default function CaseStudyCard({ item, index }: Props) {
           </div>
 
           <div>
-            <button
-              onClick={() => router.push(`/case-study/${item.slug}`)}
+            <Link
+              href={`/case-study/${item.slug}`}
               className="inline-flex cursor-pointer items-center gap-2 rounded-[10px] bg-black px-6 py-3 text-[15px] font-medium text-white transition hover:bg-[#d0f601] hover:text-[var(--global--text-black)]"
             >
+              {" "}
               View case study
               <IoIosArrowRoundForward className="h-[24px] w-[24px]" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>
