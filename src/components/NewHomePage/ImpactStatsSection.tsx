@@ -66,7 +66,7 @@ export default function ImpactStatsSection({
               } md:min-w-[350px]`}
             >
               {/* Floating badges */}
-              {stat.badges && (
+              {/* {stat.badges && (
                 <div className="">
                   {stat.badges.map((badge, i) => (
                     <div
@@ -83,7 +83,7 @@ export default function ImpactStatsSection({
                     </div>
                   ))}
                 </div>
-              )}
+              )} */}
 
               {/* Stat value */}
               <h3 className="!text-[90px] leading-none font-semibold text-white/80 transition group-hover:text-white md:!text-[130px]">
