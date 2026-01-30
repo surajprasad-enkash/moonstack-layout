@@ -50,7 +50,7 @@ export default function CaseOverview({ data }: any) {
                     alt="Product"
                     width={2000}
                     height={2000}
-                    className="h-[auto] w-[100%] object-contain"
+                    className="h-[auto] w-[100%] rounded-[20px] object-contain"
                   />
                 </div>
               ))}
