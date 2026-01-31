@@ -60,24 +60,24 @@ export default function NewHeader() {
 
   const isActive = (path) => pathname === path;
 
-  const isServicesActive = () =>
-    pathname &&
-    (pathname.startsWith("/application-development") ||
-      pathname.startsWith("/website-development-service") ||
-      pathname.startsWith("/frontend-development") ||
-      pathname.startsWith("/backend-developer") ||
-      pathname.startsWith("/services/search-engine-optimization-company") ||
-      pathname.startsWith("/services/product-designing-service") ||
-      pathname.startsWith("/services/ui-ux-designing-service") ||
-      pathname.startsWith("/services/cloud-services") ||
-      pathname.startsWith("/services/industries"));
+  // const isServicesActive = () =>
+  //   pathname &&
+  //   (pathname.startsWith("/application-development") ||
+  //     pathname.startsWith("/website-development-service") ||
+  //     pathname.startsWith("/frontend-development") ||
+  //     pathname.startsWith("/backend-developer") ||
+  //     pathname.startsWith("/services/search-engine-optimization-company") ||
+  //     pathname.startsWith("/services/product-designing-service") ||
+  //     pathname.startsWith("/services/ui-ux-designing-service") ||
+  //     pathname.startsWith("/services/cloud-services") ||
+  //     pathname.startsWith("/services/industries"));
 
-  const isCompanyActive = () =>
-    pathname &&
-    (pathname.startsWith("/about-us") ||
-      pathname.startsWith("/career") ||
-      pathname.startsWith("/blogs") ||
-      pathname.includes("company"));
+  // const isCompanyActive = () =>
+  //   pathname &&
+  //   (pathname.startsWith("/about-us") ||
+  //     pathname.startsWith("/career") ||
+  //     pathname.startsWith("/blogs") ||
+  //     pathname.includes("company"));
 
   const megaMenuData = {
     "Frontend Development": [
@@ -125,6 +125,12 @@ export default function NewHeader() {
         title: "PHP",
         icon: backendicon8.src,
         url: "/services/php-development-company",
+        subtitle: "Reliable and flexible  web solutions",
+      },
+      {
+        title: "Full Stack Development",
+        icon: backendicon8.src,
+        url: "/services/full-stack-website-development-company",
         subtitle: "Reliable and flexible  web solutions",
       },
     ],
@@ -260,17 +266,17 @@ export default function NewHeader() {
     "Other Services": otherServices,
   } = megaMenuData;
 
-  const leftMenuLinks = {
-    "Application Development": "",
+  // const leftMenuLinks = {
+  //   "Application Development": "",
 
-    "Frontend Development": "",
-    "Backend Development": "",
-    "Search Engine Optimization": "",
-    "Product Designing": "",
-    "Ui/Ux Designing": "",
-    "Cloud Service": "",
-    Industries: "",
-  };
+  //   "Frontend Development": "",
+  //   "Backend Development": "",
+  //   "Search Engine Optimization": "",
+  //   "Product Designing": "",
+  //   "Ui/Ux Designing": "",
+  //   "Cloud Service": "",
+  //   Industries: "",
+  // };
   const [openPopup, setOpenPopup] = useState(false);
   const { open, closeVideo } = useVideoModal();
   return (
@@ -321,7 +327,7 @@ export default function NewHeader() {
                             Frontend Development
                           </h4>
 
-                          <ul className="grid grid-cols-2 gap-x-8 gap-y-2">
+                          <ul className="grid grid-cols-2 gap-x-8 ">
                             {frontend.map((item, i) => (
                               <li key={i} className="submenuList h-[75px]">
                                 <Link

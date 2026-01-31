@@ -47,6 +47,7 @@ import icon from "@/assets/newHomePage/awards/icon.svg"
 import type { Metadata } from "next"
 import BusinessNeedsDesignSection from "@/components/Industries/BusinessNeedsDesignSection"
 import CloudTimeline from "@/components/Sections/CloudServices/CloudTimeline/CloudTimeline"
+import { notFound } from "next/navigation"
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -113,7 +114,7 @@ export default async function ApplicationPage({ params }: PageProps) {
   const page = getPageBySlug(slug)
 
   if (!page) {
-    return <p className="p-10 text-center">Page not found</p>
+    notFound()
   }
 
   return (

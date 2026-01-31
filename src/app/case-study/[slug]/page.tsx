@@ -2,6 +2,7 @@ import Layout from "@/components/Layout"
 import CaseStudyPages from "@/components/CaseStudy/CaseStudySingle/CaseStudyPage"
 import { getCaseStudy } from "@/helper"
 import { Metadata } from "next"
+import { notFound } from "next/navigation"
 
 interface PageProps {
   params: {
@@ -81,10 +82,16 @@ export async function generateMetadata({
 async function CaseStudyPage({ params }: PageProps) {
   const { slug } = params
   const data = await getCaseStudy(slug)
+
+  if (!data || data?.data?.status === 404 || data?.code === "not_found") {
+    notFound()
+  }
+
   return (
     <Layout>
       <CaseStudyPages data={data} />
     </Layout>
   )
 }
+
 export default CaseStudyPage

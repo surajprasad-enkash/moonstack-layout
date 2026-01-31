@@ -62,9 +62,9 @@ export default function FeatureSection({
                 <Image
                   src={item.imgSrc}
                   alt={item.title}
-                  width={150}
-                  height={150}
-                  className="object-contain"
+                  width={120}
+                  height={120}
+                  className="h-[120px] w-[120px] object-contain object-center"
                 />
               </div>
 

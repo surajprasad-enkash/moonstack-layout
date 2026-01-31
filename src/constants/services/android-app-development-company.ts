@@ -5,15 +5,13 @@ import nativeBannerImg from "@/assets/app-development-images/native-banner-img.w
 import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
-import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
-import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
-import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
-
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
+import bndimage1 from "@/assets/industries/icon/appdevelopmentimg.webp"
+import intuitiveIcon from "@/assets/app-development-images/AndroidApplications1.svg"
+import engagingIcon from "@/assets/app-development-images/APIIntegrations.svg"
+import brandingIcon from "@/assets/app-development-images/CrossPlatformDevelopment.svg"
+import brandingIcon4 from "@/assets/app-development-images/CodeTestingDebugging&Troubleshooting.svg"
+import brandingIcon5 from "@/assets/app-development-images/PlayStoreDeployment.svg"
+import brandingIcon6 from "@/assets/app-development-images/AndroidAppMaintenanceSupport.svg"
 
 export const android: PageData = {
   hero: {
@@ -115,19 +113,19 @@ export const android: PageData = {
         "As a part of our Android app development for startups in India, our team offers proficient cross-platform app development services. Our cross-platform development services are powered by Flutter, Dart, and Native React, which allows us to build Android apps that are compatible across devices and platforms using a single codebase. What sets our services apart is the use of clean code in our development process.",
     },
     {
-      imgSrc: brandingIcon.src,
+      imgSrc: brandingIcon4.src,
       title: "Code Testing, Debugging, & Troubleshooting",
       description:
         "Moonstack offers one of the most comprehensive Android app testing services in India. This is one of the areas where we leave no stone unturned to ensure that your app is adequately prepared for its launch with no glitches or bugs that hamper the functionality of your app. Our testing services are reliable as every app we develop goes through a rigorous three-step, functional, performance, and device testing process before launch.",
     },
     {
-      imgSrc: brandingIcon.src,
+      imgSrc: brandingIcon5.src,
       title: "Play Store Deployment",
       description:
         "Once the Android applications are ready, we help our clients deploy the apps to the Play Store and even optimize their listing for easy access by users. All of this comes standard as a part of our premier and affordable Android app development service in India. ",
     },
     {
-      imgSrc: brandingIcon.src,
+      imgSrc: brandingIcon6.src,
       title: "Android App Maintenance & Support",
       description:
         "As a top Android software development company in India, our work doesn’t end with Play Store deployment. We also offer detailed services for Android app support and maintenance in India. This includes optimising the apps for post-launch performance, checking performance analytics, and offering periodic app maintenance for Android compatibility and app security. We also offer Android app migration services in India as a part of our extended app maintenance and support services.",

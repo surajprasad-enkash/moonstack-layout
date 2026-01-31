@@ -9,6 +9,7 @@ import Breadcrumb from "@/components/Breadcrumb"
 import { fetchPostsByCategory } from "@/helper"
 import { IPostsByCategoryResponse } from "@/types/blog"
 import CategoryPostsClient from "@/components/CategoryPosts/CategoryPostsClient"
+import { notFound } from "next/navigation"
 
 /* Utility */
 const formatCategoryName = (slug: string) =>
@@ -25,7 +26,9 @@ export default async function CategoryPage({
     page
   )) as IPostsByCategoryResponse
   const categoryName = data?.category?.name || formatCategoryName(params.slug)
-
+  if (!data) {
+    notFound()
+  }
   const breadcrumbs = [
     { label: "Home", href: "/" },
     { label: "Blogs", href: "/blogs" },

@@ -39,18 +39,18 @@ export interface ImpactSectionProps {
 const cardVariants: Record<NonNullable<ImpactCardProps["variant"]>, string> = {
   dark: `
     transition-all duration-300 text-white
-    bg-[radial-gradient(120.84%_134.38%_at_94.57%_97.18%,#362070_0%,#1C1C1C_63.02%,#1C1C1C_100%)]
-    hover:bg-[linear-gradient(180deg,#7824E2_-10.6%,rgba(120,36,226,0)_123.74%),radial-gradient(120.84%_134.38%_at_94.57%_97.18%,#362070_0%,#1C1C1C_63.02%,#1C1C1C_100%)]
+    bg-[radial-gradient(120.84%_134.38%_at_94.57%_97.18%,#207049_0%,#1C1C1C_63.02%,#1C1C1C_100%)]
+    hover:bg-[linear-gradient(180deg,#24e283_-10.6%,rgba(36,226,80,0)_123.74%),radial-gradient(120.84%_134.38%_at_94.57%_97.18%,#207050_0%,#1C1C1C_63.02%,#1C1C1C_100%)]
   `,
   light: `
     transition-all duration-300 text-white
-    bg-[radial-gradient(120.84%_134.38%_at_94.57%_97.18%,#30465E_0%,#1C1C1C_63.02%,#1C1C1C_100%)]
-    hover:bg-[linear-gradient(180deg,#C2DDEC_-14%,rgba(48,70,94,0)_112.9%),radial-gradient(120.84%_134.38%_at_94.57%_97.18%,#30465E_0%,#1C1C1C_63.02%,#1C1C1C_100%)]
+    bg-[radial-gradient(120.84%_134.38%_at_94.57%_97.18%,#305e50_0%,#1C1C1C_63.02%,#1C1C1C_100%)]
+    hover:bg-[linear-gradient(180deg,#C2DDEC_-14%,rgba(48,94,51,0)_112.9%),radial-gradient(120.84%_134.38%_at_94.57%_97.18%,#305e51_0%,#1C1C1C_63.02%,#1C1C1C_100%)]
   `,
   accent: `
     transition-all duration-300 text-white
-    bg-[radial-gradient(120.84%_134.38%_at_94.57%_97.18%,#151B90_0%,#1C1C1C_63.02%,#1C1C1C_100%)]
-    hover:bg-[linear-gradient(180deg,#283ADD_-14%,rgba(40,58,221,0)_112.9%),radial-gradient(120.84%_134.38%_at_94.57%_97.18%,#151B90_0%,#1C1C1C_63.02%,#1C1C1C_100%)]
+    bg-[radial-gradient(120.84%_134.38%_at_94.57%_97.18%,#3a9015_0%,#1C1C1C_63.02%,#1C1C1C_100%)]
+    hover:bg-[linear-gradient(180deg,#3a9015_-14%,rgba(40,221,109,0)_112.9%),radial-gradient(120.84%_134.38%_at_94.57%_97.18%,#3a9015_0%,#1C1C1C_63.02%,#1C1C1C_100%)]
   `,
 }
 

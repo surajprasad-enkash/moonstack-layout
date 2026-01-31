@@ -85,6 +85,8 @@ export interface IAcf {
 /* ===================== MAIN CASE STUDY ===================== */
 
 export interface ICaseStudyData {
+  data: any
+  code: string
   id: number
   slug: string
   title: string

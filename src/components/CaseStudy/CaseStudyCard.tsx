@@ -46,7 +46,7 @@ export default function CaseStudyCard({ item, index }: Props) {
       ? "bg-[linear-gradient(299deg,_#F2FFBD_43.88%,_#A4CE00_160.15%)]"
       : index % 3 === 1
         ? "bg-[linear-gradient(299deg,_#D1F0E2_43.89%,_#A4B8FE_182.34%)]"
-        : "bg-[linear-gradient(285deg,_#351BFF_-13.81%,_#FFF_135%)]"
+        : "bg-[linear-gradient(285deg,_#1bffa0_-13.81%,_#FFF_135%)]"
 
   return (
     <div

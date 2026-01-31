@@ -2,6 +2,7 @@ import Layout from "@/components/Layout"
 import SinglePostData from "@/components/SingleBlog/SingleBlogApi"
 import { getPost } from "@/helper"
 import { Metadata } from "next"
+import { notFound } from "next/navigation"
 
 interface PageProps {
   params: {
@@ -82,7 +83,9 @@ export async function generateMetadata({
 async function BlogDetailsPage({ params }: PageProps) {
   const { slug } = params
   const data = await getPost(slug)
-
+  if (!data) {
+    notFound()
+  }
   return (
     <Layout>
       <SinglePostData post={data || undefined} />

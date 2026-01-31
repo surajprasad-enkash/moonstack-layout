@@ -18,11 +18,8 @@ import { it_support } from "./it-support-company"
 import { seo } from "./search-engine-optimization-company"
 import { vueJs } from "./vue-js"
 import { reactJs } from "./react-js"
-import { cakePhp } from "./cake-php"
 import { angularJs } from "./angular-js"
 import { codeigniter } from "./codeigniter"
-import { html } from "./html"
-import { css } from "./css"
 import { dotNet } from "./dot-net"
 import { javascript } from "./javascript"
 import { nodeJs } from "./node-js"
@@ -58,11 +55,8 @@ export type TPageKeys =
   | "nodeJs"
   | "javascript"
   | "dotNet"
-  | "css"
-  | "html"
   | "codeigniter"
   | "angularJs"
-  | "cakePhp"
   | "reactJs"
   | "testing"
   | "flutter"
@@ -95,11 +89,8 @@ export const pagesData: Record<TPageKeys, PageData> = {
   nodeJs: nodeJs,
   javascript: javascript,
   dotNet: dotNet,
-  css: css,
-  html: html,
   codeigniter: codeigniter,
   angularJs: angularJs,
-  cakePhp: cakePhp,
   reactJs: reactJs,
   vueJs: vueJs,
   flutter: flutter,
@@ -137,11 +128,8 @@ export const pagesKeys: Record<string, TPageKeys> = {
   "flutter-development-company": "flutter",
   "vuejs-development-company": "vueJs",
   "reactjs-development-company": "reactJs",
-  "cakephp-development-company": "cakePhp",
   "codeigniter-development-company": "codeigniter",
   "angularjs-development-company": "angularJs",
-  "css3-development-company": "css",
-  "html5-development-company": "html",
   "dotnet-development-company": "dotNet",
   "java-development-company": "java",
   "php-development-company": "php",
