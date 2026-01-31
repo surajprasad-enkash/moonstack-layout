@@ -1,18 +1,18 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import WorksImageSlider from "./BannerRightSlider";
-import Heading from "../Heading/Heading";
-import growthIcon from "@/assets/case-study/banner/works-hero-done.avif";
-import bannerBg from "@/assets/case-study/banner/bannerBg.svg";
+import Image from "next/image"
+import WorksImageSlider from "./BannerRightSlider"
+import Heading from "../Heading/Heading"
+import growthIcon from "@/assets/case-study/banner/works-hero-done.webp"
+import bannerBg from "@/assets/case-study/banner/bannerBg.svg"
 
-import CommanButton from "../CommanButton/CommanButton";
-import Link from "next/link";
-import Marquee from "../Homepage/Marquee";
+import CommanButton from "../CommanButton/CommanButton"
+import Link from "next/link"
+import Marquee from "../Homepage/Marquee"
 
 export default function WorksHeroSection() {
   return (
-    <section className="relative  px-[20px] pt-[160px] pb-[80px] text-white">
+    <section className="relative px-[20px] pt-[160px] pb-[80px] text-white">
       {bannerBg.src && (
         <Image
           src={bannerBg.src}
@@ -23,7 +23,7 @@ export default function WorksHeroSection() {
         />
       )}
 
-      <div className="container relative z-[2]">
+      <div className="relative z-[2] container">
         <div className="grid items-center gap-14 lg:grid-cols-2">
           {/* LEFT CONTENT */}
           <div>
@@ -104,5 +104,5 @@ export default function WorksHeroSection() {
         <Marquee />
       </div>
     </section>
-  );
+  )
 }

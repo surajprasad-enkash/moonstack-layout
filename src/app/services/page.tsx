@@ -1,31 +1,29 @@
 import LottieData from "../../../public/lottie/services/banner.json"
-import bgImagehero from "@/assets/industries/ai/hero-bg.svg"
+import bgImagehero from "@/assets/industries/hero-bg.svg"
 import Layout from "@/components/Layout"
 import AppCategoryBanner from "@/components/Sections/ServicesSection/AppDevelopment/AppCategoryBanner"
 import ServicesSection from "@/components/NewHomePage/ServicesSection"
 import Space from "@/components/Space"
 import CaseStudyHighlight from "@/components/NewHomePage/CaseStudyHighlight"
 
-import clientImage from "@/assets/newHomePage/caseStudy/clientimage.png"
 import clutch from "@/assets/newHomePage/caseStudy/clutch.svg"
 import TestimonialsTabs from "@/components/NewHomePage/TestimonialsTabs"
 
-import tastimonial1 from "@/assets/newHomePage/awards/tastimonial/tastimonial1.avif"
+import tastimonial1 from "@/assets/newHomePage/awards/tastimonial/tastimonial1.svg"
 import tastimonial2 from "@/assets/newHomePage/awards/tastimonial/tastimonial2.svg"
 import tastimonial3 from "@/assets/newHomePage/awards/tastimonial/tastimonial3.svg"
 import tastimonial4 from "@/assets/newHomePage/awards/tastimonial/tastimonial4.svg"
 
-import clientLogo from "@/assets/newHomePage/awards/tastimonial/client_logo.png"
 import clutchLogo from "@/assets/newHomePage/awards/tastimonial/clutchLogo.svg"
 import clutchLogoBlack from "@/assets/newHomePage/awards/tastimonial/clutchBloack.svg"
 import BlogInsightsSection from "@/components/NewHomePage/BlogInsightsSection"
 import ProjectCTA from "@/components/ProjectCTA/ProjectCTA"
 import TrustBadges from "@/components/NewHomePage/TrustBadges"
 
-import clutchBadges from "@/assets/newHomePage/TrustBadges/clutch.avif"
-import upwork from "@/assets/newHomePage/TrustBadges/upwork.avif"
-import dribbble from "@/assets/newHomePage/TrustBadges/dribble.avif"
-import behance from "@/assets/newHomePage/TrustBadges/behance.avif"
+import clutchBadges from "@/assets/newHomePage/TrustBadges/clutch.webp"
+import upwork from "@/assets/newHomePage/TrustBadges/upwork.webp"
+import dribbble from "@/assets/newHomePage/TrustBadges/dribble.webp"
+import behance from "@/assets/newHomePage/TrustBadges/behance.webp"
 
 import screen1 from "@/assets/newHomePage/caseStudy/screenOne.webp"
 import screen2 from "@/assets/newHomePage/caseStudy/nuwamaScreen1.webp"
@@ -34,16 +32,22 @@ import screen3 from "@/assets/newHomePage/caseStudy/nuwamaScreen2.webp"
 import Pickrightscreen1 from "@/assets/newHomePage/caseStudy/pickrightScreen1.webp"
 import Pickrightscreen2 from "@/assets/newHomePage/caseStudy/pickrightScreen2.webp"
 import Pickrightscreen3 from "@/assets/newHomePage/caseStudy/pickrightScreen3.webp"
+import admissify from "@/assets/clientsImages/admissifyceo.jpg"
+import coralogix from "@/assets/clientsImages/coralogixceo.jpg"
+import authbridge from "@/assets/clientsImages/authbridge.jpg"
+import brainmates from "@/assets/clientsImages/brainmates.jpg"
+import amitnuvama from "@/assets/clientsImages/amitnuvama.jpg"
+import pickright from "@/assets/clientsImages/numanbhatiyapikright.jpg"
 const tabs = [
   {
-    id: "mojo",
-    company: "MojoCX",
+    id: "admissify",
+    company: "admissify",
     logo: tastimonial1.src,
     quote:
-      "I was impressed with the high levels of detail and polish for all the features.",
-    author: "Jimmy Hosang",
+      "Moonstack’s communication was clear and proactive throughout the project. The team was easy to work with and delivered exactly what we needed.",
+    author: "Ishant Aggarwal",
     role: "Founder & CEO",
-    avatar: clientLogo.src,
+    avatar: admissify.src,
     rating: 5.0,
     rightBg: "#D0F601",
     clutchLogo: clutchLogoBlack.src,
@@ -54,24 +58,24 @@ const tabs = [
     company: "Tixbase",
     logo: tastimonial2.src,
     quote:
-      "Their professionalism, dedication, responsiveness, and determination are commendable.",
-    author: "John Smith",
-    role: "CTO",
-    avatar: clientLogo.src,
+      "The Moonstack team moved fast without compromising on quality. From concept to delivery, everything was handled efficiently.",
+    author: "Ariel Assaraf",
+    role: "Co-Founder & CEO",
+    avatar: coralogix.src,
     rating: 5.0,
     rightBg: "linear-gradient(300.37deg, #D7CAFE 20.68%, #F8F9FF 67.91%)",
     clutchLogo: clutchLogoBlack.src,
     color: "#000",
   },
   {
-    id: "myso",
-    company: "myso",
+    id: "brainmates",
+    company: "brainmates",
     logo: tastimonial3.src,
     quote:
-      "Their expertise and guidance were instrumental. They demonstrated their commitment to creating a product that resonated with our target audience, which led to improved user satisfaction",
-    author: "John Smith",
-    role: "CTO",
-    avatar: clientLogo.src,
+      "Moonstack perfectly balanced design and development. The final product looks great and performs even better.",
+    author: "Adrienne Tan",
+    role: "Co-Founder and Chief Executive Officer",
+    avatar: brainmates.src,
     rating: 5.0,
     rightBg: "linear-gradient(79.44deg, #3B1F60 17.64%, #5C29AA 40%)",
     color: "#fff",
@@ -82,10 +86,10 @@ const tabs = [
     company: "enzyme",
     logo: tastimonial4.src,
     quote:
-      "Working with Moonstack is really smooth in terms of communication and workflow",
-    author: "John Smith",
-    role: "CTO",
-    avatar: clientLogo.src,
+      "We see Moonstack as a reliable long-term partner. Their expertise and commitment made the entire process smooth and successful.",
+    author: "Ajay Trehan",
+    role: "Founder and CEO",
+    avatar: authbridge.src,
     rating: 5.0,
     rightBg: "linear-gradient(268.33deg, #BBB0FE 16.45%, #DED8FF 67.27%)",
     color: "#000",
@@ -151,16 +155,16 @@ export default function ApplicationPage() {
           showTag={false}
           badges={[{ label: "Web 3.0" }, { label: "$2.4M raised" }]}
           clutchLogo={clutch}
-          title="Stock Trading Ideas - Advisory Services for Stock Market | Pickright"
-          description="Explore top-notch trading ideas with Pickrights advisory services for the stock market. Make confident investment decisions based on ideas."
+          title="Nuvama Wealth: Wealth Management Done Right"
+          description="Moonstack helped improve our product design and development, leading to better user engagement and strong business results."
           testimonial={{
-            name: "Artemine Sarden",
-            role: "Founder, MYSO Finance",
-            clientImage: clientImage,
+            name: "Amit Ahuja",
+            role: "CEO",
+            clientImage: amitnuvama,
             rating: 5,
             text: "Arounda excels with meticulous attention to detail and creative problem-solving.",
           }}
-          images={[Pickrightscreen1, Pickrightscreen2, Pickrightscreen3]}
+          images={[screen2, screen1, screen3]}
         />
         <Space size={240} />
         <CaseStudyHighlight
@@ -168,16 +172,16 @@ export default function ApplicationPage() {
           showTag={false}
           badges={[{ label: "Web 3.0" }, { label: "$2.4M raised" }]}
           clutchLogo={clutch}
-          title="Nuvama Wealth: Wealth Management Done Right"
-          description="Shaping the future of your financial journey"
+          title="Stock Trading Ideas - Advisory Services for Stock Market | Pickright"
+          description="Professional, responsive, and reliable — Moonstack delivered exactly what they promised while maintaining excellent quality."
           testimonial={{
-            name: "Artemine Sarden",
-            role: "Founder, MYSO Finance",
-            clientImage: clientImage,
+            name: "Naman Bhatia",
+            role: "CEO",
+            clientImage: pickright,
             rating: 5,
             text: "Arounda excels with meticulous attention to detail and creative problem-solving.",
           }}
-          images={[screen2, screen1, screen3]}
+          images={[Pickrightscreen1, Pickrightscreen2, Pickrightscreen3]}
         />
         <Space />
         <TestimonialsTabs tabs={tabs} />

@@ -7,6 +7,9 @@ import CustomButton from "../CommanButton/CommanButton";
 import ProjectInquiryModal from "@/components/ProjectInquiryModal/ProjectInquiryModal";
 import { IoIosArrowDown } from "react-icons/io";
 
+import HeroVideoModal from "@/components/NewHomePage/HeroVideoModal";
+import { useVideoModal } from "@/context/VideoModalContext";
+
 import about from "@/assets/header/about-us.svg";
 import logo from "@/assets/logo-white.png";
 import blog from "@/assets/header/blog.svg";
@@ -269,10 +272,11 @@ export default function NewHeader() {
     Industries: "",
   };
   const [openPopup, setOpenPopup] = useState(false);
-
+  const { open, closeVideo } = useVideoModal();
   return (
     <>
       <header className="fixed inset-x-0 top-0 left-0 z-50 w-full bg-[rgba(11,11,11,0.376)] px-5 text-white backdrop-blur-[5px] will-change-[background]">
+
         <div className="container mx-auto flex items-center justify-between py-4">
           <Link href="/" className="flex items-center">
             <img src={logo.src} className="w-42" alt="Moonstack" />
@@ -527,6 +531,11 @@ export default function NewHeader() {
           </div>
         </div>
       </header>
+      <HeroVideoModal
+        isOpen={open}
+        onClose={closeVideo}
+        videoId="2r3ptkDEJ4o"
+      />
       <ProjectInquiryModal
         isOpen={openPopup}
         onClose={() => setOpenPopup(false)}

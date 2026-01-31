@@ -16,15 +16,15 @@ import design1 from "@/assets/newHomePage/banner/icon/design_tag_icon1.svg"
 import design2 from "@/assets/newHomePage/banner/icon/design_tag_icon2.svg"
 import design3 from "@/assets/newHomePage/banner/icon/design_tag_icon3.svg"
 
-import heroVideoPlay from "@/assets/newHomePage/banner/icon/hero-video-play.avif"
-import homeHeroTitleDecorPlay from "@/assets/newHomePage/banner/icon/home-hero-title-decor-play.avif"
+import heroVideoPlay from "@/assets/newHomePage/banner/icon/hero-video-play.webp"
+import homeHeroTitleDecorPlay from "@/assets/newHomePage/banner/icon/home-hero-title-decor-play.webp"
 
-// import bgImage from "@/assets/newHomePage/banner/bg-hero-updated.png";
 import bgImage from "@/assets/newHomePage/banner/bg-hero-updated.png"
 import bgImage2 from "@/assets/newHomePage/banner/baimage2.svg"
 
 import Link from "next/link"
 import Space from "../Space"
+import { useVideoModal } from "@/context/VideoModalContext"
 
 interface HeroTag {
   label: string
@@ -53,6 +53,7 @@ export default function HeroSection({
   buttonText = "Book a Call",
   onButtonClick,
 }: HeroSectionProps) {
+  const { openVideo } = useVideoModal()
   return (
     <section className="relative px-[20px] pt-[160px] text-white">
       {/* Background glow */}
@@ -138,7 +139,10 @@ export default function HeroSection({
           </Link>
           <span className="headingtext"> into </span>
           <span className="mt-2 items-center !justify-center gap-5 md:!flex">
-            <span className="home-hero-title-decor-play relative inline-block cursor-pointer">
+            <span
+              className="home-hero-title-decor-play relative inline-block cursor-pointer"
+              onClick={openVideo}
+            >
               <Image
                 src={homeHeroTitleDecorPlay}
                 alt=""

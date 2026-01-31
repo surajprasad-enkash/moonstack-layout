@@ -1,6 +1,6 @@
 import Heading from "../Heading/Heading"
 import Space from "../Space"
-import bgImage from "@/assets/industries/ai/products-bg.svg"
+import bgImage from "@/assets/industries/products-bg.svg"
 import Image from "next/image"
 
 interface Principle {

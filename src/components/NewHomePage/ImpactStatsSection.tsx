@@ -2,15 +2,7 @@
 
 import Image, { StaticImageData } from "next/image"
 
-import wordPress from "@/assets/newHomePage/ImpactStatsSection/icon/wordpress.avif"
-import galaxy from "@/assets/newHomePage/ImpactStatsSection/icon/galaxy.avif"
-import flair from "@/assets/newHomePage/ImpactStatsSection/icon/flair.png"
-import gtprotocol from "@/assets/newHomePage/ImpactStatsSection/icon/gtprotocol.avif"
-import mojo from "@/assets/newHomePage/ImpactStatsSection/icon/mojo-tag.avif"
-import myso from "@/assets/newHomePage/ImpactStatsSection/icon/myso-tag.avif"
-import preformance from "@/assets/newHomePage/ImpactStatsSection/icon/preformance.png"
-import save from "@/assets/newHomePage/ImpactStatsSection/icon/save.avif"
-import bgImage from "@/assets/newHomePage/ImpactStatsSection/bgImage.avif"
+import bgImage from "@/assets/newHomePage/ImpactStatsSection/bgImage.webp"
 
 interface StatItem {
   value: string
@@ -30,19 +22,19 @@ export default function ImpactStatsSection({
       title: "Engagement Rate",
       description:
         "Seamless user flows that convert visits into qualified leads",
-      badges: [wordPress, galaxy, flair],
+      badges: [],
     },
     {
       value: "4.6x",
       title: "Revenue Growth After Redesign",
       description: "Scalable product enhancements that drive measurable growth",
-      badges: [gtprotocol, mojo, myso],
+      badges: [],
     },
     {
       value: "-37%",
       title: "Reduced Churn Across SaaS Clients",
       description: "Improved onboarding and UX that keep users longer",
-      badges: [preformance, save],
+      badges: [],
     },
   ],
 }: ImpactStatsSectionProps) {
@@ -65,26 +57,6 @@ export default function ImpactStatsSection({
                 index + 1
               } md:min-w-[350px]`}
             >
-              {/* Floating badges */}
-              {/* {stat.badges && (
-                <div className="">
-                  {stat.badges.map((badge, i) => (
-                    <div
-                      key={`${stat.title}-badge-${i}`}
-                      className={`badge-item badge-item${
-                        i + 1
-                      } flex items-center justify-center rounded-full px-2 py-2 transition group-hover:bg-white/15`}
-                    >
-                      <Image
-                        src={badge}
-                        alt="Brand logo"
-                        className="h-[60px] w-auto object-contain"
-                      />
-                    </div>
-                  ))}
-                </div>
-              )} */}
-
               {/* Stat value */}
               <h3 className="!text-[90px] leading-none font-semibold text-white/80 transition group-hover:text-white md:!text-[130px]">
                 {stat.value}

@@ -31,7 +31,7 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
                   key={index}
                   className="relative rounded-2xl px-10 pt-8 pb-0 text-black md:w-[40%]"
                   style={{
-                    background: `linear-gradient(91deg, #C7ACFF -61.77%, #FFF 87.06%)`,
+                    background: `linear-gradient(91deg, #acffd1 -61.77%, #FFF 87.06%)`,
                   }}
                 >
                   <div className="absolute z-10">
@@ -57,7 +57,7 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
                   key={index}
                   className="rounded-2xl py-8 pr-20 pl-10 md:w-[calc(60%-20px)]"
                   style={{
-                    background: `linear-gradient(276.92deg, #1C1C1C 1.7%, #2B2E42 97.05%)`,
+                    background: `linear-gradient(276.92deg, #1C1C1C 1.7%, #2b422f 97.05%)`,
                   }}
                 >
                   <h3 className="mb-[20px] md:!text-[40px]">
@@ -149,7 +149,7 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
                   key={index}
                   className="relative flex flex-col justify-between gap-[120px] rounded-2xl px-10 pt-8 pb-8 text-black md:w-[40%]"
                   style={{
-                    background: `linear-gradient(91deg, #C7ACFF -61.77%, #FFF 87.06%), linear-gradient(91deg, #ACE1FF -61.77%, #FFF 87.06%)`,
+                    background: `linear-gradient(91deg, #acffc2 -61.77%, #FFF 87.06%), linear-gradient(91deg, #ACE1FF -61.77%, #FFF 87.06%)`,
                   }}
                 >
                   <Image
@@ -173,7 +173,7 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
                   key={index}
                   className="rounded-2xl bg-cover p-[64px] pb-[92px] md:w-[calc(60%-20px)]"
                   style={{
-                    backgroundImage: `url(${card.globalRemote}),linear-gradient(104deg, #2c2f45 2%, #1c1c1c 32%)`,
+                    backgroundImage: `url(${card.globalRemote}),linear-gradient(104deg, #2c4533 2%, #1c1c1c 32%)`,
                     backgroundPosition: "bottom right",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "contain",

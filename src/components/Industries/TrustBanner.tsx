@@ -1,7 +1,7 @@
 "use client"
 
 import Heading from "@/components/Heading/Heading"
-import bgImage from "@/assets/industries/ai/icon/partnership-bg-1440.svg"
+import bgImage from "@/assets/industries/icon/partnership-bg-1440.svg"
 import Image from "next/image"
 import MarqueeComponent from "../Marquee"
 interface TrustBannerProps {

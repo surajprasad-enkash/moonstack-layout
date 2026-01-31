@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
-import { Libre_Baskerville } from "next/font/google";
+import type { Metadata } from "next"
+import { Libre_Baskerville } from "next/font/google"
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "./globals.css";
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import "./globals.css"
 
 const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
@@ -11,7 +11,7 @@ const libreBaskerville = Libre_Baskerville({
   style: ["normal", "italic"],
   variable: "--font-libre",
   display: "swap",
-});
+})
 
 export const metadata: Metadata = {
   title: {
@@ -19,22 +19,23 @@ export const metadata: Metadata = {
     template: "%s | Moonstack",
   },
   description: "We build scalable digital products.",
-};
+}
 
-import { gordita } from "@/lib/fonts";
+import { gordita } from "@/lib/fonts"
+import { VideoModalProvider } from "@/context/VideoModalContext"
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en" className={gordita.variable}>
       <body
         className={`font-sans antialiased ${libreBaskerville.variable} ${gordita.variable}`}
       >
-        {children}
+        <VideoModalProvider>{children}</VideoModalProvider>
       </body>
     </html>
-  );
+  )
 }

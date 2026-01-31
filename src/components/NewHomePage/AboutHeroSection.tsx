@@ -86,7 +86,7 @@ export default function AboutHeroSection({
 
           {/* RIGHT CONTENT */}
           <div className="relative flex items-center justify-center">
-            <div className="relative mt-[100px] sm:w-[70%] md:mt-[0]">
+            <div className="relative mt-[100px] sm:w-[70%] md:mt-[0] md:w-[max-content]">
               {/* Team Avatars */}
               <div className="homeTeamMemnerOuter">
                 {teamMembers.slice(0, 5).map((member, i) => (

@@ -22,15 +22,15 @@ import award8 from "@/assets/newHomePage/awards/upwork.svg"
 import icon from "@/assets/newHomePage/awards/icon.svg"
 import NextStepsSection from "@/components/ContactPage/NextStepsSection/NextStepsSection"
 
-import step1 from "@/assets/contact-us/NextStepsSection/step1Icon.avif"
-import step2 from "@/assets/contact-us/NextStepsSection/step2Icon.avif"
-import step3 from "@/assets/contact-us/NextStepsSection/step3Icon.avif"
-import step4 from "@/assets/contact-us/NextStepsSection/step4Icon.avif"
+import step1 from "@/assets/contact-us/NextStepsSection/step1Icon.webp"
+import step2 from "@/assets/contact-us/NextStepsSection/step2Icon.webp"
+import step3 from "@/assets/contact-us/NextStepsSection/step3Icon.webp"
+import step4 from "@/assets/contact-us/NextStepsSection/step4Icon.webp"
 import stepdes from "@/assets/contact-us/NextStepsSection/process-desktop-line.svg"
 import step4Tab from "@/assets/contact-us/NextStepsSection/process-line-tablet.svg"
 import TestimonialCard from "@/components/Sections/ServicesSection/ReviewCardSection"
 
-import userImage from "@/assets/app-development-images/autorImg.webp"
+import userImage from "@/assets/clientsImages/manshi.jpg"
 import { Metadata } from "next"
 import { buildMetadata } from "@/helper/generateMetadata "
 
@@ -143,8 +143,8 @@ const contactUs = (): React.JSX.Element => {
         <TestimonialCard
           quote={points.join(" ")}
           highlightText="partnership and proactive"
-          authorName="Aetienne Sardon"
-          authorRole="Founder at Enkash"
+          authorName="Mansi Bhatia"
+          authorRole="Manager at Enkash"
           authorImage={userImage}
         />
         <LocationSection

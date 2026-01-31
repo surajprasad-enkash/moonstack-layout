@@ -21,15 +21,18 @@ import Enkashscreen1 from "@/assets/newHomePage/caseStudy/EnkashScreen1.webp"
 import Enkashscreen2 from "@/assets/newHomePage/caseStudy/EnkashScreen2.webp"
 import Enkashscreen3 from "@/assets/newHomePage/caseStudy/EnkashScreen3.webp"
 
-import clientImage from "@/assets/newHomePage/caseStudy/clientimage.png"
+import manshi from "@/assets/clientsImages/manshi.jpg"
+import amitnuvama from "@/assets/clientsImages/amitnuvama.jpg"
+import pickright from "@/assets/clientsImages/numanbhatiyapikright.jpg"
+
 import clutch from "@/assets/newHomePage/caseStudy/clutch.svg"
 import AboutHeroSection from "@/components/NewHomePage/AboutHeroSection"
 
-import person1 from "@/assets/newHomePage/about/team/about.png"
-import person2 from "@/assets/newHomePage/about/team/team2.png"
-import person3 from "@/assets/newHomePage/about/team/team3.png"
-import person4 from "@/assets/newHomePage/about/team/team4.png"
-import person5 from "@/assets/newHomePage/about/team/team5.png"
+import person1 from "@/assets/teamsimages/neetaagrawal.webp"
+import person2 from "@/assets/teamsimages/devendra.webp"
+import person3 from "@/assets/teamsimages/sunil.webp"
+import person4 from "@/assets/teamsimages/rskumawat.webp"
+import person5 from "@/assets/teamsimages/harshit.webp"
 import AwardsSection, {
   AwardItem,
 } from "@/components/NewHomePage/AwardsSection"
@@ -50,18 +53,21 @@ import tastimonial2 from "@/assets/newHomePage/awards/tastimonial/tastimonial2.s
 import tastimonial3 from "@/assets/newHomePage/awards/tastimonial/tastimonial3.svg"
 import tastimonial4 from "@/assets/newHomePage/awards/tastimonial/tastimonial4.svg"
 
-import clientLogo from "@/assets/newHomePage/awards/tastimonial/client_logo.png"
 import clutchLogo from "@/assets/newHomePage/awards/tastimonial/clutchLogo.svg"
 import clutchLogoBlack from "@/assets/newHomePage/awards/tastimonial/clutchBloack.svg"
 import ProjectCTA from "@/components/ProjectCTA/ProjectCTA"
 import TrustBadges from "@/components/NewHomePage/TrustBadges"
 
-import clutchBadges from "@/assets/newHomePage/TrustBadges/clutch.avif"
-import upwork from "@/assets/newHomePage/TrustBadges/upwork.avif"
-import dribbble from "@/assets/newHomePage/TrustBadges/dribble.avif"
-import behance from "@/assets/newHomePage/TrustBadges/behance.avif"
+import clutchBadges from "@/assets/newHomePage/TrustBadges/clutch.webp"
+import upwork from "@/assets/newHomePage/TrustBadges/upwork.webp"
+import dribbble from "@/assets/newHomePage/TrustBadges/dribble.webp"
+import behance from "@/assets/newHomePage/TrustBadges/behance.webp"
 import BlogInsightsSection from "@/components/NewHomePage/BlogInsightsSection"
 
+import admissify from "@/assets/clientsImages/admissifyceo.jpg"
+import coralogix from "@/assets/clientsImages/coralogixceo.jpg"
+import authbridge from "@/assets/clientsImages/authbridge.jpg"
+import brainmates from "@/assets/clientsImages/brainmates.jpg"
 const badges = [
   {
     icon: clutchBadges.src,
@@ -83,14 +89,14 @@ const badges = [
 
 const tabs = [
   {
-    id: "mojo",
-    company: "MojoCX",
+    id: "admissify",
+    company: "admissify",
     logo: tastimonial1.src,
     quote:
       "Moonstack’s communication was clear and proactive throughout the project. The team was easy to work with and delivered exactly what we needed.",
-    author: "Jimmy Hosang",
+    author: "Ishant Aggarwal",
     role: "Founder & CEO",
-    avatar: clientLogo.src,
+    avatar: admissify.src,
     rating: 5.0,
     rightBg: "#D0F601",
     clutchLogo: clutchLogoBlack.src,
@@ -102,23 +108,23 @@ const tabs = [
     logo: tastimonial2.src,
     quote:
       "The Moonstack team moved fast without compromising on quality. From concept to delivery, everything was handled efficiently.",
-    author: "John Smith",
-    role: "CTO",
-    avatar: clientLogo.src,
+    author: "Ariel Assaraf",
+    role: "Co-Founder & CEO",
+    avatar: coralogix.src,
     rating: 5.0,
     rightBg: "linear-gradient(300.37deg, #D7CAFE 20.68%, #F8F9FF 67.91%)",
     clutchLogo: clutchLogoBlack.src,
     color: "#000",
   },
   {
-    id: "myso",
-    company: "myso",
+    id: "brainmates",
+    company: "brainmates",
     logo: tastimonial3.src,
     quote:
       "Moonstack perfectly balanced design and development. The final product looks great and performs even better.",
-    author: "John Smith",
-    role: "CTO",
-    avatar: clientLogo.src,
+    author: "Adrienne Tan",
+    role: "Co-Founder and Chief Executive Officer",
+    avatar: brainmates.src,
     rating: 5.0,
     rightBg: "linear-gradient(79.44deg, #3B1F60 17.64%, #5C29AA 40%)",
     color: "#fff",
@@ -130,9 +136,9 @@ const tabs = [
     logo: tastimonial4.src,
     quote:
       "We see Moonstack as a reliable long-term partner. Their expertise and commitment made the entire process smooth and successful.",
-    author: "John Smith",
-    role: "CTO",
-    avatar: clientLogo.src,
+    author: "Ajay Trehan",
+    role: "Founder and CEO",
+    avatar: authbridge.src,
     rating: 5.0,
     rightBg: "linear-gradient(268.33deg, #BBB0FE 16.45%, #DED8FF 67.27%)",
     color: "#000",
@@ -206,7 +212,7 @@ export default function Home() {
           testimonial={{
             name: "Mansi Bhatia",
             role: "Project Menager",
-            clientImage: clientImage,
+            clientImage: manshi,
             rating: 5,
             text: "Arounda excels with meticulous attention to detail and creative problem-solving.",
           }}
@@ -223,7 +229,7 @@ export default function Home() {
           testimonial={{
             name: "Amit Ahuja",
             role: "CEO",
-            clientImage: clientImage,
+            clientImage: amitnuvama,
             rating: 5,
             text: "Arounda excels with meticulous attention to detail and creative problem-solving.",
           }}
@@ -240,7 +246,7 @@ export default function Home() {
           testimonial={{
             name: "Naman Bhatia",
             role: "CEO",
-            clientImage: clientImage,
+            clientImage: pickright,
             rating: 5,
             text: "Arounda excels with meticulous attention to detail and creative problem-solving.",
           }}

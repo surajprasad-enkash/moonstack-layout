@@ -4,7 +4,7 @@ import Link from "next/link"
 import CommanButton from "../CommanButton/CommanButton"
 import Heading from "../Heading/Heading"
 import Image from "next/image"
-import clientImg from "@/assets/newHomePage/ImpactStatsSection/client_logo.png"
+import clientImg from "@/assets/teamsimages/dheeraj.jpg"
 
 interface ServiceItem {
   label: string
@@ -189,8 +189,14 @@ export default function ServicesSection({
         {/* CTA Bar */}
         <div className="mt-[20px] flex flex-col gap-6 rounded-[20px] bg-[#15151570] px-[26px] py-[20px] md:flex-row md:items-center md:justify-between">
           <div className="items-center gap-4 md:flex">
-            <Image src={clientImg} alt={"client logo"} width={70} height={70} />
-            <p className="max-w-[520px] text-white md:!text-[24px]">
+            <Image
+              src={clientImg}
+              alt={"client logo"}
+              width={100}
+              height={100}
+              className="h-[70px] w-[70px] rounded-[50%]"
+            />
+            <p className="max-w-[570px] text-white md:!text-[24px]">
               Drive revenue growth and maximize ROI through strategic product
               design and development.
             </p>

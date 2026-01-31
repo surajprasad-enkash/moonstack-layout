@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout"
 
 /* ===================== CONSTANTS ===================== */
-import { pagesData, pagesKeys, TPageKeys } from "@/constants/services"
+import { pagesData, pagesKeys } from "@/constants/services"
 
 /* ===================== SECTIONS ===================== */
 import AppCategoryBanner from "@/components/Sections/ServicesSection/AppDevelopment/AppCategoryBanner"
@@ -31,9 +31,8 @@ import userImage from "@/assets/app-development-images/autorImg.webp"
 import androidBgImg from "@/assets/app-development-images/hero-bg-1440.svg"
 import projectCtaBgImg from "@/assets/app-development-images/af_match-bg-1440.svg"
 import reviewBgImg from "@/assets/app-development-images/review-under-hero-bg-1440.svg"
-import bccKristenCheng from "@/assets/industries/ai/icon/bcc_kristen-cheng.avif"
-import bndimage1 from "@/assets/industries/ai/icon/bndImage1.webp"
-import bndicon1 from "@/assets/industries/ai/icon/bndicon1.webp"
+import bccKristenCheng from "@/assets/industries/icon/bcc_kristen-cheng.webp"
+
 /* ===================== AWARDS ===================== */
 import award1 from "@/assets/newHomePage/awards/clutch.svg"
 import award2 from "@/assets/newHomePage/awards/Top_Design_company_2025.png"
@@ -50,13 +49,15 @@ import BusinessNeedsDesignSection from "@/components/Industries/BusinessNeedsDes
 import CloudTimeline from "@/components/Sections/CloudServices/CloudTimeline/CloudTimeline"
 
 interface PageProps {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const page = pagesData[pagesKeys[params.slug as TPageKeys] as TPageKeys]
+  const { slug } = await params
+
+  const page = getPageBySlug(slug)
 
   if (!page?.seo) {
     return {
@@ -106,15 +107,10 @@ const awards: AwardItem[] = [
   { title: "GLOBAL 100 B2B UI/UX COMPANY", image: award8 },
 ]
 
-interface PageProps {
-  params: { slug: string }
-}
+export default async function ApplicationPage({ params }: PageProps) {
+  const { slug } = await params
 
-/* ===================== PAGE ===================== */
-export default function ApplicationPage({ params }: PageProps) {
-  const slug = params.slug
-
-  const page = pagesData[pagesKeys[slug as TPageKeys] as TPageKeys]
+  const page = getPageBySlug(slug)
 
   if (!page) {
     return <p className="p-10 text-center">Page not found</p>
@@ -306,4 +302,12 @@ export default function ApplicationPage({ params }: PageProps) {
       </Layout>
     </>
   )
+}
+function getPageBySlug(slug?: string) {
+  if (!slug) return null
+
+  if (!(slug in pagesKeys)) return null
+
+  const pageKey = pagesKeys[slug as keyof typeof pagesKeys]
+  return pagesData[pageKey] ?? null
 }

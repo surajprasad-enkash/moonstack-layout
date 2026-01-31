@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Heading, { HeadingSegment } from "@/components/Heading/Heading"
-import bgImage from "@/assets/industries/ai/icon/bndBGapproach-bg.svg"
+import bgImage from "@/assets/industries/icon/bndBGapproach-bg.svg"
 
 interface InfoCard {
   bolds: boolean

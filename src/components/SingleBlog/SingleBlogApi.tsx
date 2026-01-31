@@ -9,7 +9,7 @@ import RelatedPosts from "../RelatedPosts/RelatedPosts"
 import Breadcrumb from "../Breadcrumb"
 
 // helpers
-import bgImage from "@/assets/blogs/singleBlogBanner.png"
+import bgImage from "@/assets/blogs/singleBlogBanner.webp"
 import { IPostData } from "@/types/blog"
 import CategoryListSingle from "../CategoryList/CategoryListSingle"
 

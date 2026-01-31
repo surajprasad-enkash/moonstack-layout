@@ -14,7 +14,11 @@ import twitter from "@/assets/footer/twitter.svg"
 import instagram from "@/assets/footer/instagram.svg"
 
 // BIG moonstack image
-import moonstackText from "@/assets/footer/moonstack.svg"
+
+// import moonstackText from "@/assets/footer/moonstacklogo.svg"
+import moonstackText from "@/assets/footer/moonstacklogo-2.svg"
+// import moonstackText from "@/assets/footer/moonstacklogo-3.svg"
+// import moonstackText from "@/assets/footer/moonstack.svg"
 
 import footerBg from "@/assets/footer/newbg.svg"
 import HoverSlideText from "./HoverSlideText"
@@ -316,7 +320,9 @@ const Footer = () => {
               <Image
                 src={moonstackText}
                 alt="Moonstack"
-                className="footerBrandImage"
+                className="footerBrandImage h-auto w-[100%] max-w-[1280px]"
+                width={1280}
+                height={300}
               />
             </div>
 
