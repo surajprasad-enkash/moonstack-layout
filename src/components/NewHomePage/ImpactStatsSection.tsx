@@ -53,7 +53,7 @@ export default function ImpactStatsSection({
           {stats.map((stat, index) => (
             <div
               key={index}
-              className={`group relative mb-[150px] last:mb-[0] md:mb-[0] badge_outer${
+              className={`group relative mb-[60px] last:mb-[0] md:mb-[0] md:mb-[150px] badge_outer${
                 index + 1
               } md:min-w-[350px]`}
             >

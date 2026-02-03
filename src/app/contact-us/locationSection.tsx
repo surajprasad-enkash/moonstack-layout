@@ -1,27 +1,27 @@
-"use client";
+"use client"
 
-import React, { useState } from "react";
-import dynamic from "next/dynamic";
-import Image from "next/image";
-import Heading from "@/components/Heading/Heading";
-import usaFlag from "@/assets/contact-us/usa-flag.png";
-import indiaFlag from "@/assets/contact-us/india-flag.png";
-import CustomButton from "@/components/CommanButton/CommanButton";
+import React, { useState } from "react"
+import dynamic from "next/dynamic"
+import Image from "next/image"
+import Heading from "@/components/Heading/Heading"
+import usaFlag from "@/assets/contact-us/usa-flag.png"
+import indiaFlag from "@/assets/contact-us/india-flag.png"
+import CustomButton from "@/components/CommanButton/CommanButton"
 
 const WorldMap = dynamic(() => import("@/components/Map"), {
   ssr: false,
-});
+})
 
 type LocationSectionProps = {
   heading: {
-    text: string;
-    color?: string;
-    className?: string;
-  }[];
-  subHeading?: string;
-  buttonText: string;
-  buttonLink: string;
-};
+    text: string
+    color?: string
+    className?: string
+  }[]
+  subHeading?: string
+  buttonText: string
+  buttonLink: string
+}
 
 const LocationSection = ({
   heading,
@@ -29,7 +29,7 @@ const LocationSection = ({
   buttonText,
   buttonLink,
 }: LocationSectionProps) => {
-  const [activeLocation, setActiveLocation] = useState<string | null>(null);
+  const [activeLocation, setActiveLocation] = useState<string | null>(null)
 
   return (
     <section className="relative z-[1] px-[20px] py-[80px]">
@@ -58,12 +58,12 @@ const LocationSection = ({
             setActiveLocation={setActiveLocation}
           />
 
-          <div className="mx-auto flex items-center justify-center gap-4">
+          <div className="mx-auto items-center justify-center gap-4 md:flex">
             {/* USA CARD */}
             <div
               onMouseEnter={() => setActiveLocation("USA")}
               onMouseLeave={() => setActiveLocation(null)}
-              className={`rounded-2xl p-5 transition ${
+              className={`mb-[20px] rounded-2xl p-5 transition md:mb-[0px] ${
                 activeLocation === "USA"
                   ? "bg-[#D0F601] text-black"
                   : "bg-[#04230F] text-white"
@@ -106,7 +106,7 @@ const LocationSection = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default LocationSection;
+export default LocationSection

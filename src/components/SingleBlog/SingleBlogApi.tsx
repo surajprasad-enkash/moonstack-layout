@@ -83,13 +83,13 @@ function SinglePostData({ post }: Props) {
       <section className="relative bg-[#fff] px-[20px] pt-[80px] pb-[80px]">
         <div className="singlePostBanner">
           <div className="relative z-[2] container">
-            <div className="flex gap-[60px]">
-              <div className="leftSideBar w-[100%] max-w-[50px]">
+            <div className="flex flex-wrap gap-[20px] md:flex-nowrap md:gap-[60px]">
+              <div className="leftSideBar order-[2] w-[100%] md:order-[1] md:max-w-[50px]">
                 <div className="sticky top-[130px]">
                   <p className="mb-[20px] text-[12px] font-[500] text-[#000] uppercase">
                     Share
                   </p>
-                  <ul className="social-share">
+                  <ul className="social-share flex gap-[20px] md:block">
                     <li className="socialItem">
                       <Link
                         className="socialIcon"
@@ -156,7 +156,7 @@ function SinglePostData({ post }: Props) {
                   </ul>
                 </div>
               </div>
-              <div className="contentBox singleBlogPost w-[100%]">
+              <div className="contentBox singleBlogPost order-[1] w-[100%] md:order-[2]">
                 <div className="blogLeftSection">
                   <div className="mb-[20px] flex items-center justify-between border-b border-[#c1c1ff] pb-[20px]">
                     <div className="flex items-center gap-[20px]">
@@ -226,12 +226,12 @@ function SinglePostData({ post }: Props) {
                   />
                 </div>
               </div>
-              <div className="rightSideBar w-[100%] max-w-[324px]">
+              <div className="rightSideBar order-[3] w-[100%] md:order-[3] md:max-w-[324px]">
                 <div className="sticky top-[120px]">
                   <CategoryListSingle
                     ShowAll={false}
                     listClass="!text-[#000]"
-                    classNames="px-[20px] pt-[5px] rounded-[10px] bg-[#fff]"
+                    classNames="md:px-[20px] pt-[5px] rounded-[10px] bg-[#fff]"
                     showLabel={true}
                   />
                 </div>

@@ -7,7 +7,7 @@ import Heading from "@/components/Heading/Heading"
 
 export default function OurValuesSection() {
   return (
-    <section className="relative px-[20px] py-[80px]">
+    <section className="relative px-[20px] pt-[60px] md:py-[80px]">
       {bgImage && (
         <Image
           src={bgImage}
@@ -17,7 +17,7 @@ export default function OurValuesSection() {
       )}
       <div className="relative z-[1] container">
         {/* Heading */}
-        <div className="mb-16 text-center">
+        <div className="mb-10 text-center md:mb-16">
           <Heading
             headingTag="h2"
             className="text-white"
@@ -34,11 +34,11 @@ export default function OurValuesSection() {
         </div>
 
         {/* Cards */}
-        <div className="grid auto-rows-[260px] grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {valuesData.map((card, index) => (
             <div
               key={index}
-              className={`group relative overflow-hidden rounded-2xl p-6 transition-all duration-500 ${
+              className={`group relative min-h-[260px] overflow-hidden rounded-2xl p-6 transition-all duration-500 ${
                 card.className ?? "bg-white"
               }`}
             >

@@ -5,7 +5,7 @@ let comma = ","
 export default function CaseOverview({ data }: any) {
   return (
     <>
-      <section className="bg-[#fff] py-[80px]">
+      <section className="bg-[#fff] px-[20px] pt-[60px] pb-[20px] md:py-[80px]">
         <div className="container">
           <div className="left_section rounded-rb-none rounded-[32px] bg-[#1515150a]">
             <div className="m-0 mb-[40px] flex flex-wrap p-0">
@@ -24,9 +24,9 @@ export default function CaseOverview({ data }: any) {
               ))}
             </div>
           </div>
-          <div className="aboutProject mt-[120px] mb-[120px] gap-[60px] md:flex">
+          <div className="aboutProject mt-[60px] mb-[60px] gap-[60px] md:mt-[120px] md:mb-[120px] md:flex">
             <div className="leftSection md:w-[34%]">
-              <p className="!text-[12px] !font-[500] text-[#000] uppercase">
+              <p className="mb-[20px] !text-[12px] !font-[500] text-[#000] uppercase md:mb-0">
                 About Project
               </p>
             </div>
@@ -43,7 +43,7 @@ export default function CaseOverview({ data }: any) {
               {data.acf.product_images.map((img: string, i: number) => (
                 <div
                   key={i}
-                  className="w-full md:w-[calc(50%-20px)] md:[&:nth-child(3)]:!w-full"
+                  className="mb-[20px] w-full md:mb-0 md:w-[calc(50%-20px)] md:[&:nth-child(3)]:!w-full"
                 >
                   <Image
                     src={img}
@@ -58,9 +58,9 @@ export default function CaseOverview({ data }: any) {
           </div>
         </div>
       </section>
-      <section className="challengesSolutions bg-white pt-[80px]">
+      <section className="challengesSolutions bg-white px-[20px] pt-[20px] md:pt-[80px]">
         <div className="container">
-          <div className="mb-[80px]">
+          <div className="mb-[30px] md:mb-[80px]">
             <Heading
               headingTag="h2"
               className="text-[#000]"
@@ -74,8 +74,8 @@ export default function CaseOverview({ data }: any) {
             />
           </div>
           <div className="ml-[auto] max-w-[975px]">
-            <div className="flex justify-between gap-[60px] rounded-[24px] rounded-tl-none border border-[#dce5e0] px-[48px] py-[40px]">
-              <div>
+            <div className="justify-between gap-[60px] rounded-[24px] rounded-tl-none border border-[#dce5e0] p-[20px] md:flex md:p-[48px]">
+              <div className="mb-[20px] md:mb-0">
                 <p className="!text-[26px] !font-[500]">Problem</p>
               </div>
               <div className="max-w-[448px]">
@@ -86,8 +86,8 @@ export default function CaseOverview({ data }: any) {
             </div>
           </div>
           <div className="ml-[auto] max-w-[975px]">
-            <div className="mt-[6px] flex justify-between gap-[60px] rounded-[24px] rounded-br-none border border-[#f7f7f7] bg-[#f7f7f7] px-[48px] py-[40px]">
-              <div>
+            <div className="mt-[6px] justify-between gap-[60px] rounded-[24px] rounded-br-none border border-[#f7f7f7] bg-[#f7f7f7] p-[20px] md:flex md:p-[40px]">
+              <div className="mb-[20px] md:mb-0">
                 <p className="!text-[26px] !font-[500]">Solution</p>
               </div>
               <div className="max-w-[448px]">

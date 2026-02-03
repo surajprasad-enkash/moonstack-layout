@@ -51,7 +51,7 @@ export default async function CategoryList({
           <li>
             <Link
               href="/blogs"
-              className="mb-[10px] block flex justify-between rounded-[10px] px-4 py-2 text-sm text-white backdrop-blur-md transition hover:bg-white/20 hover:text-[#00ea52]"
+              className="mb-[10px] block flex justify-between rounded-[10px] py-2 text-sm text-white backdrop-blur-md transition hover:bg-white/20 hover:text-[#00ea52] md:px-4"
             >
               All Topics
               <HiArrowRight className="text-xl" />
@@ -63,7 +63,7 @@ export default async function CategoryList({
           <li key={cat.id}>
             <Link
               href={`/category/${cat.slug}`}
-              className={`mb-[10px] block flex justify-between rounded-[10px] px-4 py-2 text-sm font-[500] text-white backdrop-blur-md transition hover:bg-white/20 hover:!text-[#00ea52] ${listClass}`}
+              className={`mb-[10px] block flex justify-between rounded-[10px] py-2 text-sm font-[500] text-white backdrop-blur-md transition hover:bg-white/20 hover:!text-[#00ea52] md:px-4 ${listClass}`}
             >
               {cat.name}
               <HiArrowRight className="text-xl" />

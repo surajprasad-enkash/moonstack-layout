@@ -284,12 +284,12 @@ export default function Home() {
         <TestimonialsTabs tabs={tabs} />
         <Space size={160} />
         <BlogInsightsSection imageHeight="h-[280px]" />
-        <Space size={50} />
+        <Space size={50} mobileSize={0} />
         <ProjectCTA
           title="Ready to scale"
           subtitle="your business?"
           description="Book a free strategy call and get clear, actionable guidance for your next move."
-          fontSize="!text-[80px]"
+          fontSize="md:!text-[80px] !text-[40px]"
           marginBottom="mb-0"
           whiteBoxClass=""
         />

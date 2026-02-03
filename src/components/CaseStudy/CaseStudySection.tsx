@@ -73,7 +73,7 @@ export default function CaseStudySection({
   }
 
   return (
-    <section className="relative z-2 px-[20px] pt-[20px] pb-[80px]">
+    <section className="relative z-2 px-[20px] pt-[20px] pb-[20px] md:pb-[80px]">
       {loadMoreBtn && (
         <Image
           src={bannerBg}

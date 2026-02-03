@@ -47,9 +47,9 @@ export default async function CategoryPage({
         />
       </div>
 
-      <section className="relative z-[3] px-[20px] pb-[80px]">
+      <section className="relative z-[3] px-[20px] pb-[20] md:pb-[80px]">
         <div className="container">
-          <div className="mb-[40px] pl-[15px]">
+          <div className="mb-[40px] md:pl-[15px]">
             <Breadcrumb items={breadcrumbs} />
           </div>
 
@@ -64,7 +64,7 @@ export default async function CategoryPage({
                 />
 
                 <div className="exploreMore">
-                  <span className="block py-[20px] pl-[10px] text-[12px] text-[#fff]/50 uppercase">
+                  <span className="block py-[20px] text-[12px] text-[#fff]/50 uppercase md:pl-[10px]">
                     Explore More
                   </span>
 
@@ -72,7 +72,7 @@ export default async function CategoryPage({
                     <li>
                       <Link
                         href="/about-us"
-                        className="mb-[10px] flex justify-between rounded-[10px] px-4 py-2 text-sm text-white backdrop-blur-md hover:text-[#00ea52]"
+                        className="mb-[10px] flex justify-between rounded-[10px] py-2 text-sm text-white backdrop-blur-md hover:text-[#00ea52] md:px-4"
                       >
                         About Us <HiArrowRight className="text-xl" />
                       </Link>
@@ -81,7 +81,7 @@ export default async function CategoryPage({
                     <li>
                       <Link
                         href="/case-study"
-                        className="mb-[10px] flex justify-between rounded-[10px] px-4 py-2 text-sm text-white backdrop-blur-md hover:text-[#00ea52]"
+                        className="mb-[10px] flex justify-between rounded-[10px] py-2 text-sm text-white backdrop-blur-md hover:text-[#00ea52] md:px-4"
                       >
                         Case Study <HiArrowRight className="text-xl" />
                       </Link>
@@ -105,7 +105,7 @@ export default async function CategoryPage({
       </section>
 
       {/* CTA */}
-      <div className="relative overflow-hidden pb-[100px]">
+      <div className="relative overflow-hidden pb-[00px] md:pb-[100px]">
         <Image
           src={bgImage}
           alt="Background"
@@ -117,7 +117,7 @@ export default async function CategoryPage({
             title="Ready to scale"
             subtitle="your business?"
             description="Book a free consultation to get clarity, direction, and expert advice you can implement right away."
-            fontSize="!text-[80px]"
+            fontSize="md:!text-[80px] !text-[40px] !leading-[130%]"
             marginBottom="mb-0"
           />
         </div>

@@ -1,13 +1,13 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import React from "react";
+import Image from "next/image"
+import React from "react"
 // import teams from "@/assets/about-us/moonstack-teams.png";
-import teams from "@/assets/about-us/moonstack-teams.webp";
+import teams from "@/assets/about-us/moonstack-teams.webp"
 
 const AboutGallery = () => {
   return (
-    <section className="relative z-[2] px-[20px] pt-[80] pb-[150]">
+    <section className="relative z-[2] px-[20px] pt-[80] pb-[40px] md:pb-[150px]">
       <div className="container">
         <div className="flex rounded-3xl">
           <Image
@@ -20,7 +20,7 @@ const AboutGallery = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default AboutGallery;
+export default AboutGallery

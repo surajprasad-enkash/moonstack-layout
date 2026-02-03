@@ -1,36 +1,36 @@
-"use client";
+"use client"
 
-import { motion } from "framer-motion";
-import React from "react";
-import Image, { StaticImageData } from "next/image";
-import CustomButton from "../../../CommanButton/CommanButton";
-import Heading, { HeadingSegment } from "../../../Heading/Heading";
-import LottiePlayer from "../../../LottieAnimation";
-import Breadcrumb from "../../../Breadcrumb";
-import IndustryTags from "../../../Industries/IndustriesBanner";
-import HomeMarquee from "../../../Homepage/Marquee";
+import { motion } from "framer-motion"
+import React from "react"
+import Image, { StaticImageData } from "next/image"
+import CustomButton from "../../../CommanButton/CommanButton"
+import Heading, { HeadingSegment } from "../../../Heading/Heading"
+import LottiePlayer from "../../../LottieAnimation"
+import Breadcrumb from "../../../Breadcrumb"
+import IndustryTags from "../../../Industries/IndustriesBanner"
+import HomeMarquee from "../../../Homepage/Marquee"
 
 interface BreadcrumbItem {
-  label: string;
-  href: string;
+  label: string
+  href: string
 }
 
 interface AppCategoryBannerProps {
-  title: string | HeadingSegment[];
-  description: string | HeadingSegment[];
-  mediaType?: "image" | "lottie";
-  image?: StaticImageData | string;
-  lottieData?: object;
-  buttonText?: string;
-  bgColor?: string;
-  bgImage?: StaticImageData | string;
-  containerWidth?: string;
-  textAlign?: "left" | "center" | "right";
-  breadcrumbs?: BreadcrumbItem[];
-  tags?: string[];
-  logoSlider?: boolean;
-  highlight?: string;
-  containerClass?: string;
+  title: string | HeadingSegment[]
+  description: string | HeadingSegment[]
+  mediaType?: "image" | "lottie"
+  image?: StaticImageData | string
+  lottieData?: object
+  buttonText?: string
+  bgColor?: string
+  bgImage?: StaticImageData | string
+  containerWidth?: string
+  textAlign?: "left" | "center" | "right"
+  breadcrumbs?: BreadcrumbItem[]
+  tags?: string[]
+  logoSlider?: boolean
+  highlight?: string
+  containerClass?: string
 }
 
 const AppCategoryBanner: React.FC<AppCategoryBannerProps> = ({
@@ -51,7 +51,9 @@ const AppCategoryBanner: React.FC<AppCategoryBannerProps> = ({
   containerClass,
 }) => {
   return (
-    <section className={`${bgColor} relative px-[20px]`}>
+    <section
+      className={`${bgColor} relative px-[20px] pt-[150px] pb-[60px] md:pb-[130px]`}
+    >
       {bgImage && (
         <Image
           src={bgImage}
@@ -59,9 +61,7 @@ const AppCategoryBanner: React.FC<AppCategoryBannerProps> = ({
           className="absolute top-[0] right-[0] left-[0] z-[1]"
         />
       )}
-      <div
-        className={`${containerClass} relative z-[2] container py-20 md:pt-[150px] md:pb-[130px]`}
-      >
+      <div className={`${containerClass} relative z-[2] container`}>
         <div className="relative grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
           <div
             className={`flex w-[100%] flex-col justify-center gap-6 ${containerWidth} text-${textAlign}`}
@@ -160,7 +160,7 @@ const AppCategoryBanner: React.FC<AppCategoryBannerProps> = ({
         )}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default AppCategoryBanner;
+export default AppCategoryBanner

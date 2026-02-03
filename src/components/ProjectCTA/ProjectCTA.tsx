@@ -1,23 +1,23 @@
-"use client";
+"use client"
 
-import CustomButton from "../CommanButton/CommanButton";
-import Heading from "../Heading/Heading";
-import { useRouter } from "next/navigation";
-import Image from "next/image";
+import CustomButton from "../CommanButton/CommanButton"
+import Heading from "../Heading/Heading"
+import { useRouter } from "next/navigation"
+import Image from "next/image"
 
 interface ProjectCTAProps {
-  title?: string;
-  subtitle?: string;
-  buttonText?: string;
-  redirectPath?: string;
-  scrollTargetId?: string;
-  className?: string;
-  bgImage?: string;
-  description?: string;
-  fontSize?: string;
-  marginBottom?: string;
-  whiteBoxClass?: string;
-  descriptionClass?: string;
+  title?: string
+  subtitle?: string
+  buttonText?: string
+  redirectPath?: string
+  scrollTargetId?: string
+  className?: string
+  bgImage?: string
+  description?: string
+  fontSize?: string
+  marginBottom?: string
+  whiteBoxClass?: string
+  descriptionClass?: string
 }
 
 export default function ProjectCTA({
@@ -34,23 +34,23 @@ export default function ProjectCTA({
   descriptionClass = "",
   marginBottom = "mb-[60px]",
 }: ProjectCTAProps) {
-  const router = useRouter();
+  const router = useRouter()
 
   const handleScroll = () => {
     // App Router push (no options object)
-    router.push(redirectPath);
+    router.push(redirectPath)
 
     // Scroll after navigation
     setTimeout(() => {
       document
         .getElementById(scrollTargetId)
-        ?.scrollIntoView({ behavior: "smooth" });
-    }, 200);
-  };
+        ?.scrollIntoView({ behavior: "smooth" })
+    }, 200)
+  }
 
   return (
     <section
-      className={`relative z-[1] flex items-center justify-center px-[20px] pt-[120px] ${className}`}
+      className={`relative z-[1] flex items-center justify-center px-[20px] pt-[60px] md:pt-[120px] ${className}`}
     >
       {bgImage && (
         <Image
@@ -73,7 +73,7 @@ export default function ProjectCTA({
         >
           <Heading
             headingTag="h2"
-            className={`${marginBottom} ${fontSize} !leading-[100px]`}
+            className={`${marginBottom} ${fontSize} !leading-[60px] md:!leading-[100px]`}
             content={[
               {
                 title,
@@ -105,5 +105,5 @@ export default function ProjectCTA({
         </div>
       </div>
     </section>
-  );
+  )
 }

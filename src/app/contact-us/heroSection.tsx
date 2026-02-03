@@ -1,13 +1,13 @@
-import Heading from "@/components/Heading/Heading";
-import Image from "next/image";
-import React from "react";
+import Heading from "@/components/Heading/Heading"
+import Image from "next/image"
+import React from "react"
 
-import Marquee from "@/components/Homepage/Marquee";
-import Form from "@/components/Form/Form";
-import ContactInfoCard from "@/components/ProjectInquiryModal/ContactInfoCard";
+import Marquee from "@/components/Homepage/Marquee"
+import Form from "@/components/Form/Form"
+import ContactInfoCard from "@/components/ProjectInquiryModal/ContactInfoCard"
 
-import bgImage from "@/assets/blogs/blogPageNewBg.svg";
-import Breadcrumb from "@/components/Breadcrumb";
+import bgImage from "@/assets/blogs/blogPageNewBg.svg"
+import Breadcrumb from "@/components/Breadcrumb"
 const breadcrumbs = [
   {
     label: "Home",
@@ -17,11 +17,11 @@ const breadcrumbs = [
     label: "Contact Us",
     href: "/contact-us",
   },
-];
+]
 const HeroSection = () => {
   return (
     <section
-      className="bg-black px-[20px] pt-[200px] pb-[80px]"
+      className="bg-black px-[20px] pt-[140px] pb-[20px] md:pt-[200px] md:pb-[80px]"
       id="contact-hero"
     >
       {bgImage && (
@@ -36,14 +36,14 @@ const HeroSection = () => {
         <div className="mb-[30px]">
           {breadcrumbs && <Breadcrumb items={breadcrumbs} />}
         </div>
-        <div className="relative flex">
-          <ContactInfoCard className="mr-[10px] hidden w-[38%] flex-col justify-between rounded-[60px] rounded-tl-none bg-[#004619] p-[40px] text-white md:flex" />
+        <div className="relative md:flex">
+          <ContactInfoCard className="mb:mb-[0px] mr-[10px] mb-[20px] w-[100%] flex-col justify-between rounded-[60px] rounded-tl-none bg-[#004619] p-[40px] text-white md:flex md:w-[38%]" />
 
           <div className="right_section relative w-full rounded-[60px] rounded-tl-none bg-white p-[40px] md:w-[62%]">
             <div className="contact_form">
               <Heading
                 headingTag="h1"
-                className="mb-[40px] !text-[48px] text-[#000]"
+                className="mb-[20px] !text-[48px] text-[#000] md:mb-[40px]"
                 content={[{ title: "Tell us about your project" }]}
               />
               <Form formName="contact_us" />
@@ -56,7 +56,7 @@ const HeroSection = () => {
         <Marquee />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection

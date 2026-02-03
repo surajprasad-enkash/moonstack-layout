@@ -195,8 +195,8 @@ export default function Form({ formName }: FormProps) {
         <p className="!text-[12px] text-[red]">{errors.attachment}</p>
       )}
 
-      <div className="flex gap-[20px]">
-        <p className="form_privacy_policy_links w-[50%] max-w-[300px] text-xs text-[#747474]">
+      <div className="gap-[20px] md:flex">
+        <p className="form_privacy_policy_links max-w-[300px] text-xs text-[#747474] md:w-[50%]">
           By submitting this form you agree to our{" "}
           <Link href="#">
             <span className="cursor-pointer font-medium text-[#000]">
@@ -211,7 +211,7 @@ export default function Form({ formName }: FormProps) {
           </Link>
         </p>
 
-        <div className="flex w-[50%] items-center justify-end pt-2">
+        <div className="mt-[20px] flex items-center justify-center pt-2 md:mt-[0] md:w-[50%] md:justify-end">
           <CustomButton
             text={loading ? "Submitting..." : "Submit"}
             className="px-8 py-3 tracking-[0.8px] whitespace-nowrap"

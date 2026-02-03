@@ -50,11 +50,11 @@ export default function CaseStudyCard({ item, index }: Props) {
 
   return (
     <div
-      className={`relative w-full overflow-hidden rounded-[28px] rounded-tl-none p-[72px] pb-0 ${gradientClass}`}
+      className={`relative w-full overflow-hidden rounded-[28px] rounded-tl-none p-[20px] pb-0 md:p-[72px] ${gradientClass}`}
     >
-      <div className="flex gap-16">
+      <div className="gap-16 md:flex">
         {/* LEFT */}
-        <div className="w-1/2">
+        <div className="md:w-1/2">
           {item.logo && (
             <Image
               src={item.logo}
@@ -82,7 +82,7 @@ export default function CaseStudyCard({ item, index }: Props) {
         </div>
 
         {/* RIGHT */}
-        <div className="flex w-1/2 flex-col gap-10 md:pt-[82px]">
+        <div className="mt-[30px] flex flex-col gap-10 pb-[20px] md:mt-0 md:w-1/2 md:pt-[82px]">
           <div>
             <h4
               className="mb-6 !text-[26px] !font-bold text-[#0b0b0b]"

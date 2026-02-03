@@ -10,8 +10,8 @@ interface ImpactStatsSectionProps {
 
 export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
   return (
-    <section className="relative z-[1] px-[20px] py-[80px] text-white">
-      <div className="container mx-auto px-4">
+    <section className="relative z-[1] px-[20px] pt-[0] pb-[0px] text-white md:py-[80px]">
+      <div className="container">
         {/* HEADING */}
         <h2 className="mx-auto mb-16 max-w-[840px] text-center">
           {data.heading.prefix}{" "}
@@ -22,14 +22,14 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
         </h2>
 
         {/* GRID */}
-        <div className="flex-wrap gap-[20px] md:flex">
+        <div className="flex-wrap gap-[20px] space-y-[20px] md:flex md:space-y-[0px]">
           {data.cards.map((card: any, index: number) => {
             /* ---------------- YEARS (LOTTIE) ---------------- */
             if (card.type === "years-lottie") {
               return (
                 <div
                   key={index}
-                  className="relative rounded-2xl px-10 pt-8 pb-0 text-black md:w-[40%]"
+                  className="relative rounded-2xl px-5 pt-8 pb-0 text-black md:w-[40%] md:px-10"
                   style={{
                     background: `linear-gradient(91deg, #acffd1 -61.77%, #FFF 87.06%)`,
                   }}
@@ -55,7 +55,7 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
               return (
                 <div
                   key={index}
-                  className="rounded-2xl py-8 pr-20 pl-10 md:w-[calc(60%-20px)]"
+                  className="rounded-2xl px-5 py-8 md:w-[calc(60%-20px)] md:pr-20 md:pl-10"
                   style={{
                     background: `linear-gradient(276.92deg, #1C1C1C 1.7%, #2b422f 97.05%)`,
                   }}
@@ -94,28 +94,28 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
               return (
                 <div
                   key={index}
-                  className="rounded-2xl !bg-cover p-[64px] pb-[92px] md:w-[calc(60%-20px)]"
+                  className="rounded-2xl !bg-cover px-5 pt-[20px] pb-[92px] md:w-[calc(60%-20px)] md:p-[64px] md:pt-[0]"
                   style={{
                     background: `url(${bgImageFunding.src})`,
                     backgroundPosition: `50% 100%`,
                   }}
                 >
-                  <h3 className="mb-[100px] !text-[50px] font-semibold">
+                  <h3 className="mb-[100px] !text-[30px] font-semibold md:!text-[50px]">
                     {card.title}
                   </h3>
 
-                  <div className="flex flex-wrap gap-[120px]">
+                  <div className="flex flex-wrap gap-[80px] md:gap-[120px]">
                     {card.companies.map((company: any, i: number) => (
                       <div
                         key={i}
-                        className="flex w-[calc(50%-60px)] justify-center text-center"
+                        className="flex w-[calc(50%-40px)] justify-center text-center md:w-[calc(50%-60px)]"
                       >
                         <Image
                           src={company.ImageLogo}
                           alt={company.amount}
                           width={100}
                           height={100}
-                          className="h-[auto] w-[60%] object-contain"
+                          className="h-[auto] w-[90%] object-contain md:w-[60%]"
                         />
                       </div>
                     ))}
@@ -129,7 +129,7 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
               return (
                 <div
                   key={index}
-                  className="relative rounded-2xl !bg-cover px-10 pt-8 pb-0 text-black md:w-[40%]"
+                  className="relative rounded-2xl !bg-cover px-5 pt-8 pb-10 text-black md:w-[40%] md:px-10 md:pb-0"
                   style={{
                     background: `url(${bgImageProject.src})`,
                     backgroundPosition: `bottom right`,
@@ -147,7 +147,7 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
               return (
                 <div
                   key={index}
-                  className="relative flex flex-col justify-between gap-[120px] rounded-2xl px-10 pt-8 pb-8 text-black md:w-[40%]"
+                  className="relative flex flex-col justify-between gap-[60px] rounded-2xl px-5 pt-8 pb-8 text-black md:w-[40%] md:gap-[120px] md:px-10"
                   style={{
                     background: `linear-gradient(91deg, #acffc2 -61.77%, #FFF 87.06%), linear-gradient(91deg, #ACE1FF -61.77%, #FFF 87.06%)`,
                   }}
@@ -171,7 +171,7 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
               return (
                 <div
                   key={index}
-                  className="rounded-2xl bg-cover p-[64px] pb-[92px] md:w-[calc(60%-20px)]"
+                  className="rounded-2xl bg-cover px-5 pt-[64px] pb-[92px] md:w-[calc(60%-20px)] md:px-[64px]"
                   style={{
                     backgroundImage: `url(${card.globalRemote}),linear-gradient(104deg, #2c4533 2%, #1c1c1c 32%)`,
                     backgroundPosition: "bottom right",

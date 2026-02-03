@@ -20,13 +20,13 @@ export const angularJs: PageData = {
   hero: {
     title: [
       {
-        text: "Laravel Website Development Service Provider",
+        text: "AngularJS Development Services",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Need a fast, secure, and scalable web solution? Our Laravel development services deliver enterprise-grade applications with clean code, optimal performance, and seamless functionality.",
+        text: "Launch high-performance, scalable, and result-driven web applications for your business. We offer custom development with clean, secure code architecture that delivers high-performance, user-centric solutions.",
         color: "text-white",
       },
     ],
@@ -40,35 +40,34 @@ export const angularJs: PageData = {
         href: "/services",
       },
       {
-        label: "Laravel",
-        href: "/services/laravel-website-development-company",
+        label: "Angular JS",
+        href: "/services/angularjs-development-company",
       },
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title:
+      "Top AngularJS Development Company | Hire Angular Developers | Moonstack",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Looking for a reliable AngularJS development company? Moonstack offers custom Angular solutions, dedicated developers, and enterprise-grade web apps. Call Now!",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "AngularJS developers India,AngularJS development company India,AngularJS web application development India,AngularJS developers UK,AngularJS development company UK,AngularJS web application development London,Hire AngularJS programmers USA,AngularJS consulting firm USA",
+    canonical: "/services/angularjs-development-company",
     ogImage: "/opengraph-image.png",
   },
   mobDesignBanner: nativeBannerImg,
 
-  points:
-    "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
-  highlightText: "The application is scalable",
+  points: "",
+  highlightText: "",
 
   leftCardData: [
     {
-      title: "Transform Your Business with Custom Laravel Solutions",
+      title: "One Stop AngularJS Development Company",
       description:
-        "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",
+        "We are a premier AngularJS development company that builds high-performance websites through seamless integration and modern technologies. Our Angular web development services enable businesses to leverage reusable components and two-way data binding. With our team of AngularJS experts, we offer end-to-end Angular development services that include development, design, API integration, and maintenance services. Our main aim is to deliver a seamless user experience with clean architecture and faster loading times.",
       stats: [],
       description2:
-        "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
+        "At Moonstack, we provide our Angular web development services to start ups to large enterprises. Our main aim is to follow best coding practises with an agile methodology approach that ensures flexibility, quality, and on-time delivery in all development phases. With our in-depth tech expertise, we allow our clients to leverage the benefits of future-ready digital solutions that lead to high growth and engagement. We offer end-to-end custom Angular development services, and clients can also hire Angular developers for their projects as per their requirements on the basis of part time, full-time, or hourly basis.",
       image: bndimage1.src,
       bolds: false,
     },
@@ -80,201 +79,148 @@ export const angularJs: PageData = {
         color: "text-white",
       },
       {
-        text: "Laravel web Development",
+        text: "AngularJS Web Development ",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: "Services Includes",
+        text: "Services",
         color: "text-white",
       },
     ],
     subHeadingText:
-      "We have best Laravel web developers and with them we offer affordable laravel development service in India - from consultation to migration all your needs will fulfill at one stop ",
+      "Moonstack is the leading one-stop AngularJS web development company. We provide comprehensive Angular web development services from development to maintenance that meet all our clients' needs. With our expert AngularJS development team, we deliver custom solutions tailored to your business needs.",
   },
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
-      title: "Laravel Consulting Services",
+      title: "Custom AngularJS Web Application Development",
       description:
-        "Bring your idea into reality with the right strategy and roadmap with Laravel web experts. Our Moonstack’s expert Laravel consulting professionals will understand your business needs and provide you with the right development strategy to deliver secure and scalable Laravel solutions in the market.",
+        "Our AngularJS web development team builds powerful web applications that are customised specifically to meet different business needs. We design high-performance, scalable Angular web solutions that ensure a fast development cycle and deliver a seamless user experience across devices. At Moonstack, we understand our clients' requirements and integrate essential functionalities that match their expectations.",
     },
     {
       imgSrc: engagingIcon.src,
-      title: "Custom Laravel Website Development Service",
+      title: "Single Page Application (SPA) Development",
       description:
-        "We build high performance, secure, and functional custom Laravel web apps in India. We develop custom  Laravel websites for clients as per their business requirements. Our Laravel web development experts understand the gap in your operational process  and integrate modern features to meet latest business demands. ",
+        "Launch your powerful, interactive, and user-friendly Angular-based single-page applications. Our Angular web developers in India load content dynamically without reloading pages. With our AngularJS experts, we focus to build single page apps that offer high performance, secure architecture, and smooth navigation to users that deliver app like experience directly in the browser. ",
     },
 
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Custom  E-Commerce Development Services ",
+      title: "AngularJS UI/UX Design",
       description:
-        "Grow your online presence with Laravel ecommerce development service in India. We build high performance and secure custom e-commerce solutions integrated with advanced functionalities and deliver smooth shopping experiences to customers. Our team's main aim is to increase website conversions on your websites.",
+        "Create interactive and engaging AngularJS designs to deliver a user-centric and easy-to-use interface. At Moonstack, our design architect delivers responsive AngularJS designs for several platforms that provide smooth interactions. We adopt the latest tools and focus on innovations to improve user experience and retention. Our team focuses on scalability and accessibility to meet the market trends and stay ahead in the competitive market. ",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel UI/UX Designing Services ",
+      title: "API & Third-Party Integration",
       description:
-        "Our architect designers create interactive and engaging designs for our customers. We hold expertise with custom designing in which we bring your business brand identity to the real world and connect with customers. At Moonstack, our designers create interactive designs with easy to use aspects.",
+        "Extend add-on functionalities with third-party integration services via a simple API with REST APIs. Moonstack Angular development team have hands on experience to integrate third-party features, including payment gateways, CRM systems, cloud services, and many more functionalities to enhance user experience. We opt for API integration services that are highly secure, reliable, and offer high performance experience.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel API Integration Services",
+      title: "AngularJS Migration and Upgradation",
       description:
-        "Extend your web and mobile app functionalities with seamless laravel REST API development service in India by partnering with the best Laravel development agency. We integrate Laravel web solutions with third party services via API such as secure payment gateway, internal systems, and many more. ",
+        "Transfer your existing data from one platform to another securely without losing any data or information. We allow businesses to leverage the benefits of modernizing legacy applications with minimal risk and downtime without losing any data. Along with this, our AngularJS team of experts upgrades outdated versions to the latest versions that deliver improved performance, better security, and compatibility with modern technologies. ",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Maintenance and Support Services ",
+      title: "AngularJS Support and Maintenance ",
       description:
-        "We offer end to end Laravel maintenance and support services. With our expert Laravel team, we run Laravel web solutions smoothly without any errors. We provide constant updates, optimize performance, and fix bugs to run solutions smoothly and deliver long term business commitment. ",
+        "Moonstack team offers constant AngularJS support and maintenance services that keep web apps fully secure and up to market trends. Our team identifies and fixes bugs instantly, which also ensure to performance optimization, security enhancements, and feature updates. We offer proactive monitoring and support 24/7, so your business doesn't face anydowntime or any loss and performs best in the market. ",
     },
   ],
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+      {
+        text: "15+ Years of Experience Delivering High-Performance Web Applications.",
+      },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Scale Forever: Your ",
+        text: "Build Powerful ",
         color: "text-white",
         className: "",
       },
       {
-        text: "Expert Laravel Development Partner",
+        text: "AngularJS Applications with Experts",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
     ],
     checklist: [
-      "Robust & Secure Architecture",
-      "Rapid Development & Deployment",
-      "High-Performance & Scalable Code",
-      "Easy Maintenance & Updates",
+      "SPA & Enterprise App Development",
+      "API Integration & Third-Party Services",
+      "Performance Optimization & Code Quality",
+      "Maintenance, Upgrade & Support",
     ],
-    buttonText: "Start Your Project Today",
+    buttonText: "Get Free Consultation",
   },
 
   CloudTimelineData: {
-    title: "Our Process of ",
-    highlight: "Laravel website Development Service",
+    title: "Our ",
+    highlight: "AngularJS Development Process",
     subtitle:
-      "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges.",
+      "We follow a structured and agile AngularJS development process that ensures the delivery of high-quality and efficient web solutions in the market. We have defined a process that allows us to deliver successful AngularJS solutions without any development delays and meet clients' as well as market demands. ",
     steps: [
       {
         number: 1,
-        title: "Gather Requirements",
+        title: "Requirement Analysis and Planning",
         description:
-          "We collect all the information about the project to understand what our client actually needs that allow us to align with the project.",
+          "On the initial stage, we understand your business goal, target audience, and technical needs. Our experts analyse your project needs, workflow, and project scope in detail. Once we get all your information, we define a proper road map with timelines and a technology stack that provides clarity.",
         position: "left",
       },
       {
         number: 2,
-        title: "Client Discussion",
+        title: "Designing Architecture",
         description:
-          "Once we have proper requirements then our Laravel team experts conduct a formal client discussion to solve all queries.",
+          "Once we  understand the requirement and have proper planning, we start working on the designing par that are basd on interactive, user friendly, and scalable architecture. At Moonstack, we believe in delivering responsive, high performance, and easy to use design that ensure to connect with users. ",
         position: "right",
       },
       {
         number: 3,
-        title: "Internal Strategy Discussion",
+        title: "Development ",
         description:
-          "After that we have an internal strategy discussion in which we have our tech brainstorming to deliver the best outcome.",
+          "Once we complete the AngularJS UI/UX designing process, we opt for the end-to-end development process with the right technologies and frameworks. Our AngularJS developers opt for the frontend and backend development process that ensures the delivery of successful solutions in the market.",
         position: "left",
       },
       {
         number: 4,
-        title: "Designing - UI/UX Services",
+        title: "Testing and Quality Assurance ",
         description:
-          "Designers start the designing process in which they focus on interactive user interface and easy to use for the users.",
+          "We opt for a manual and automatic testing process that allow us to deliver bug free Angular solutions in the market. Our tester team conduct end to end testing with different ways and deliver highly quality Angular solutions in the market that are bug free.",
         position: "right",
       },
       {
         number: 5,
-        title: "Development",
+        title: "Deployment and launch ",
         description:
-          "Tech team start the development process in which frontend developers and backend coders work together.",
+          "Once we are asssusred that our application is error free, then we opt for the deployment process. We deploy Angularjs solution on different platforms such as Android, iOS, and web with right coding practises. Our launching process is to deliver error free solutions in the market.",
         position: "left",
       },
       {
         number: 6,
-        title: "Deployment and Testing",
+        title: "Support and Maintenance",
         description:
-          "We deploy and test the Laravel software with automated and manual processes that allow us to deliver bug free solutions. ",
+          "We provide full support and maintenance services to our clients after even launching their solution in the market. At Moonstack, we provide full ongoing support that includes constant updates, support, and performance optimisation. We offer quick issue resolution with minimal downtime and focus on delivering future-ready solutions in the market.",
         position: "right",
-      },
-      {
-        number: 7,
-        title: "Delivery and Post Support ",
-        description:
-          "After testing, we deliver Laravel based solutions in the market with post support that ensure our team is always there.",
-        position: "left",
       },
     ],
   },
 
   impactSection: {
-    heading: [
-      { text: "Our Scalable " },
-      {
-        text: "Laravel Web development",
-        className: "libreItalic font-[400] highlight-text",
-      },
-      { text: "Solutions" },
-    ],
-    description:
-      "For decades MoonStack has been creating a wide range of Laravel web solutions for our clients for different industries that are ready to use as per different business with minor and major customisation processes. ",
+    heading: [],
+    description: "",
     cards: [
-      {
-        id: "Laravel Web Apps",
-        label: "Laravel Web Apps",
-        description:
-          "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
-        variant: "light",
-      },
-      {
-        id: "Laravel E-commerce Solutions",
-
-        label: "Laravel E-commerce Solutions",
-        description:
-          "The best ecommerce website developers in India build innovative and highly functional Laravel online stores. We have integrated essential functionalities such as product catalog, shopping carts, order tracking, and secure payment gateways that increase conversion rates and user experience.",
-        variant: "accent",
-      },
-      {
-        id: "Laravel CRM Solutions ",
-
-        label: "Laravel CRM Solutions ",
-        description:
-          "Moonstack builds Laravel based CRM solutions that improve customer relationship management processes in companies. We design custom CRM solutions that allow us to track leads and automate conversions that lead to data driven decisions and streamline client communication processes.",
-        variant: "dark",
-      },
-      {
-        id: "Laravel CMS Solutions",
-
-        label: "Laravel CMS Solutions",
-        description:
-          "Professional Laravel experts offer robust Laravel based CMS development in India. We have built the best Laravel CMS solutions that allow businesses to easily update, publish, and manage content effortlessly on their websites. We deliver CMS solutions to businesses that  have full control on content management systems. ",
-        variant: "dark",
-      },
-      {
-        id: "POS Systems",
-
-        label: "POS Systems",
-        description:
-          "Integrate modern Laravel powered POS systems that are developed by Laravel experts in India. Our POS systems help to streamline different operational processes, allow retailers to manage multiple outlets, and deliver best outcomes for customers. We have delivered a wide range of POS (Point of Sale solutions) to our retail businesses.",
-        variant: "light",
-      },
-      {
-        id: "Video Streaming and Media Apps",
-
-        label: "Video Streaming and Media Apps",
-        description:
-          "Develop your Laravel based video streaming and media apps with  expert laravel web developers in India. We designed video streaming and media apps that support secure content delivery and content management. We develop video streaming and media apps in such a way that offer seamless streaming and integrated with user authentication and support multiple platforms. ",
-        variant: "dark",
-      },
+      // {
+      //   id: "Laravel Web Apps",
+      //   label: "Laravel Web Apps",
+      //   description:
+      //     "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
+      //   variant: "light",
+      // },
     ],
   },
   // processSteps: {
@@ -298,98 +244,98 @@ export const angularJs: PageData = {
   qualitySectionData: {
     heading: [
       {
-        text: " Why Choose us for your ",
+        text: "Why choose us for your next ",
         color: "text-white",
       },
       {
-        text: "Laravel  Web Development",
+        text: "AngularJS development",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: " Services?",
+        text: "  project?",
         color: "text-white",
       },
     ],
     description:
-      "Laravel is known for the best Laravel framework development in India. At Moonstack, we have delivered a wide range of custom Laravel web development services to our customers. Our professional Laravel experts have delivered secure, high performance, and future ready web apps.",
+      "We are the leading AngularJS development company. With our top AngularJS development experts, we have been offering our high-performance and result-driven custom web development solutions for years. Along with the modern Angualrjs development cycle, we also focus on transparent communication and strict quality standards that are based on timely delivery. ",
     columsClass: "lg:grid-cols-3",
     list: [
       {
         id: 1,
-        title: "Decade of Experience",
+        title: "Custom AngularJS Development",
         icon: collaboration.src,
         description:
-          "Our Laravel experts have decades of experience that allows them to meet all clients' needs. Laravel coders have delivered scalable, secure, and high performance web apps with advanced integrated functionalities.",
+          "We provide custom AngularJS development services that are tailored to our customers' expectations. Our AngularJS experts build custom web solutions from scratch and integrate features that are required for the business. We focus on the company's UI/UX designing services and development needs that opt for an agile process that ensures the delivery of successful AngularJS solutions in the market.",
       },
       {
         id: 2,
-        title: "Custom Solutions for Every Business",
+        title: "Hire AngularJS developers",
         icon: collaboration.src,
         description:
-          "We have delivered 450+ custom web development solutions across the world. Our professional Laravel experts have built high performance, scalable different solutions specifically designed for different business needs.",
+          "Hire AngularJS developers for your project on a full-time, part-time, and hourly basis that match your business needs. We have designed flexible hiring models that provide overall control of the resources. In the dedicated hours, Moonstack professional developers will work only on your project and focus on delivering high-performance solutions in the market. Our hiring model of AngularJS developers is based on transparent communication and seamless collaboration.",
       },
       {
         id: 3,
-        title: "End to End Laravel Development Services",
-        icon: collaboration.src,
-        description:
-          "Delivering end to end Laravel development services to our clients. From consultation to development to migration - Moonstack is known as a one stop solution for all our client’s Laravel web development needs.",
-      },
-      {
-        id: 4,
         title: "Transparent Communication",
         icon: collaboration.src,
         description:
-          "At Moonstack, we maintain open communication with our clients with constant updates, demos, and progress reports that ensure us to stay connected with our customers. Moreover, that also allows us to understand each other's mindset in a better way.",
+          "Communication is the success factor of every business. At Moonstack, we believe in maintaining clear and open communication at every stage of the development process. We provide constant updates, progress reports, and feedback loops that keep our clients fully aligned with the project details. We ensure clarity and perfect deliverables. Here, we don’t believe in hidden surprises but honest trust and instant responses.",
+      },
+      {
+        id: 4,
+        title: "Timely Project Delivery",
+        icon: collaboration.src,
+        description:
+          "We believe in timely project delivery with clear milestones and realistic timelines. At Moonstack, we have defined a development process with agile methodology that ensures the delivery of successful AngularJS solutions without compromising on quality. Our foremost quality is to prioritise our clients’ workflow in a way that we deliver high-performance solutions with regular monitoring that ensures identifying issues at an early stage and resolving them instantly. ",
       },
       {
         id: 5,
-        title: "Confidential Details",
+        title: "Dedicated Support and Maintenance",
         icon: collaboration.src,
         description:
-          "Every project idea is unique - we understand the importance of your business module. We keep all your information fully secure and confidential with us. Our team keeps all details to them, and in any case we don’t leak any of your project ideas to third parties.",
+          "At Moonstack - leading AngularJS development company, we offer full dedicated support and maintenance services to our clients. We provide end-to-end dedicated support and maintenance to start-ups to large enterprises so that our AngularJS solutions run smoothly. From fixing bugs to performance enhancements, we manage all processes easily, and it's our responsibility to keep over all solution up to date with quick response and minimal downtime. For all technical support, you can count on us without even a second thought.",
       },
       {
         id: 6,
-        title: "Creative and Business oriented solutions",
+        title: "Experienced AngularJS developers",
         icon: collaboration.src,
         description:
-          "We just don’t build Laravel solutions only for the web development purpose. At Moonstack, we build business oriented solutions that align with your business needs and attract users with advanced based next generation features.",
+          "We have a blend of skilled AngularJS experts who have hands-on experience with strong technical expertise and have worked on diverse projects. All our AngularJS coders follow best coding practises to meet industry standards. Our main aim is to write clean, maintainable, and efficient code. By partnering with us, you will get your reliable professional AngularJS coders who reduce development time, make the best tech decisions, and reduce overall technical risks.",
       },
     ],
   },
   accordionData: [
     {
-      question:
-        "Will you be able to work long term for my Laravel project requirements?",
+      question: "Why should I choose Angularjs for my project?",
       answer:
-        "Yes, our Laravel web developers are always available and they are proficient with all types of Laravel web development requirements. Our team offers professional Laravel web development services to our customers. ",
-    },
-    {
-      question: "How long will you take to build my Laravel website?",
-      answer:
-        "There is no fixed time - the completion of Laravel websites are fully dependent on different factors - time, no of Laravel developers, complexity of app. But, we make sure we will put our high efforts and deliver your solutions with all essential features.",
-    },
-    {
-      question: "Will you provide Laravel migration services in India?",
-      answer:
-        "Yes, we will provide Laravel migration services in India. Our Laravel expert team specializes in migrating solutions from other technologies to Laravel without affecting design, performance, and even your data.",
-    },
-    {
-      question: "Can I hire Laravel web developers from your team?",
-      answer:
-        "Yes, of course you can hire the best Laravel developers from our team on full time, part time, and hourly basis. We have a pool of dedicated Laravel developers.",
+        "Yes, there are many technologies available to launch your solution in the market. Choosing the right technology depends on your project needs, whereas Angularjs offer faster development, clean code structure, and high performance. Moreover, Angularjs is best for solutions that requires real time updates, scalability, and provides rich user experiences.",
     },
     {
       question:
-        "Can you integrate API or third party services into my Laravel solutions?",
+        "Will Angularjs support large scale enterprises basis applications?",
       answer:
-        "Yes, we can extend functionalities in Laravel solutions with third party services via API. Our experts have hands-on experience in third party integration services. ",
+        "Yes, even Angularjs is well suited for large enterprises due to its modular architectur, dependency injection, and reusable components that makes easy to manage complex project. With Moonstack you can leverage the benefits of modern technologies and solve your tech complex issues.",
     },
     {
-      question: "How much does it cost for Laravel web development services? ",
+      question: "Does AngularJS support third-party integration services?",
       answer:
-        "There is no fixed cost for Laravel web development services. The Laravel web development factors are based on several factors such as features, design, hiring model, third party integration requirement.",
+        "Yes, AngularJS supports seamless third-party integration services. It is compatible with Rest APIs and external tools that allow for enhancing functionalities and supporting smooth data exchange. With third-party integration services via API, developers can extend additional functionalities, such as a payment gateway and many more.",
+    },
+    {
+      question: " Do you provide AngularJS migration and upgradation services?",
+      answer:
+        "Yes, we provide AngularJS migration and updation services that allow our clients to modernise their legacy systems into modern solutions. Along with this, to migrate all their data from one technology to another without any loss of data and information. We fully believe in data integrity, performance, and to maintain security.",
+    },
+    {
+      question:
+        "Will you offer support and maintenance for Angularjs after project delivery?",
+      answer:
+        "Yes, we will provide end-to-end support and maintenance for AngularJS that includes ongoing support, maintenance, bug fixing, and optimizing performance. If there is any issue, as per your plan, we will be available even post-launch and support our clients constantly whenever they need us. Our core value is let our clients focus on their business, and we will take care of the technical aspects.",
+    },
+    {
+      question: "Will you provide souce code of my AngularJS application?",
+      answer:
+        "Yes, we will provide the source code of Angularjs application just after the completion of the project. It is your only, and we will delete it from our records. After the completion of AngularJS, we will handover the source code so that our clients can edit, add, and delete it as per their future business preferences. ",
     },
   ],
 

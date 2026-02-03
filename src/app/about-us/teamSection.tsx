@@ -8,7 +8,7 @@ import neeta from "@/assets/about-us/neetaMam.webp"
 import sunil from "@/assets/about-us/sunilSir.webp"
 export default function TeamSection() {
   return (
-    <section className="relative z-[2] px-[20px] py-[80px]">
+    <section className="relative z-[2] px-[20px] py-[60px] md:py-[80px]">
       <div className="container mx-auto grid grid-cols-1 gap-6 lg:grid-cols-2">
         {/* LEFT – BIG CARD */}
         <div className="relative min-h-[600px] overflow-hidden rounded-2xl bg-[linear-gradient(294deg,#0b4e00_-14.71%,#FFF_88.49%)] p-6">
@@ -64,9 +64,9 @@ export default function TeamSection() {
           </div>
 
           {/* BOTTOM – TWO SMALL CARDS */}
-          <div className="flex gap-6">
+          <div className="gap-6 md:flex">
             {/* Devender */}
-            <div className="relative min-h-[250px] flex-1 overflow-hidden rounded-2xl bg-[linear-gradient(294deg,_#092c04_26.29%,_#fff_146.49%)] p-6">
+            <div className="relative mb-[20px] min-h-[250px] flex-1 overflow-hidden rounded-2xl bg-[linear-gradient(294deg,_#092c04_26.29%,_#fff_146.49%)] p-6 md:mb-[0px]">
               <Image
                 src={devender.src}
                 alt="Devender Sharma"

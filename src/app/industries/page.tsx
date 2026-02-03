@@ -404,7 +404,7 @@ const Industries = () => {
             },
           ]}
         />
-        <Space size={160} />
+        <Space size={160} mobileSize={0} />
         <div className="relative z-[2]">
           <FAQSection
             faqs={accordionData}

@@ -1,16 +1,16 @@
-"use client";
+"use client"
 
 import {
   ComposableMap,
   Geographies,
   Geography,
   Marker,
-} from "react-simple-maps";
-import Image from "next/image";
-import usaFlag from "@/assets/contact-us/usa-flag.png";
-import indiaFlag from "@/assets/contact-us/india-flag.png";
+} from "react-simple-maps"
+import Image from "next/image"
+import usaFlag from "@/assets/contact-us/usa-flag.png"
+import indiaFlag from "@/assets/contact-us/india-flag.png"
 
-const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
+const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"
 
 const locations = [
   {
@@ -28,43 +28,43 @@ const locations = [
     mapUrl:
       "https://www.google.com/maps/place/8+The+Green,+STE+R,+Dover,+DE+19901,+USA",
   },
-];
+]
 
 export default function WorldMap({
   activeLocation,
   setActiveLocation,
 }: {
-  activeLocation: string | null;
-  setActiveLocation: (val: string | null) => void;
+  activeLocation: string | null
+  setActiveLocation: (val: string | null) => void
 }) {
   const openMap = (url: string) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
+    window.open(url, "_blank", "noopener,noreferrer")
+  }
 
   const highlightedCountry =
     activeLocation === "USA"
       ? "United States of America"
       : activeLocation === "INDIA"
-      ? "India"
-      : null;
+        ? "India"
+        : null
 
   return (
-    <div className="mx-auto h-[500px] w-2/3">
+    <div className="mx-auto h-[auto] w-full md:h-[500px] md:w-2/3">
       <ComposableMap projectionConfig={{ scale: 160 }}>
         <Geographies geography={geoUrl}>
           {({
             geographies,
           }: {
             geographies: {
-              rsmKey: string;
+              rsmKey: string
               properties: {
-                NAME: string;
-              };
-            }[];
+                NAME: string
+              }
+            }[]
           }) =>
             geographies.map((geo) => {
-              const isIndia = geo.properties.NAME === "India";
-              const isUSA = geo.properties.NAME === "United States of America";
+              const isIndia = geo.properties.NAME === "India"
+              const isUSA = geo.properties.NAME === "United States of America"
 
               return (
                 <Geography
@@ -83,12 +83,12 @@ export default function WorldMap({
                     pressed: { outline: "none" },
                   }}
                   onMouseEnter={() => {
-                    if (isIndia) setActiveLocation("INDIA");
-                    if (isUSA) setActiveLocation("USA");
+                    if (isIndia) setActiveLocation("INDIA")
+                    if (isUSA) setActiveLocation("USA")
                   }}
                   onMouseLeave={() => setActiveLocation(null)}
                 />
-              );
+              )
             })
           }
         </Geographies>
@@ -123,5 +123,5 @@ export default function WorldMap({
         ))}
       </ComposableMap>
     </div>
-  );
+  )
 }

@@ -1,22 +1,22 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import { cn } from "@/lib/utils";
+import Image from "next/image"
+import { cn } from "@/lib/utils"
 
 /* ---------------- TYPES ---------------- */
 
 export interface StepItem {
-  step?: string;
-  description?: string;
-  icon?: string;
-  desktop?: string;
-  tablet?: string;
+  step?: string
+  description?: string
+  icon?: string
+  desktop?: string
+  tablet?: string
 }
 
 interface NextStepsSectionProps {
-  heading?: string;
-  steps: StepItem[];
-  className?: string;
+  heading?: string
+  steps: StepItem[]
+  className?: string
 }
 
 /* ---------------- COMPONENT ---------------- */
@@ -27,7 +27,12 @@ export default function NextStepsSection({
   className,
 }: NextStepsSectionProps) {
   return (
-    <section className={cn("relative z-[1] py-[140px] px-[20px] text-white", className)}>
+    <section
+      className={cn(
+        "relative z-[1] px-[20px] py-[80px] text-white md:py-[140px]",
+        className
+      )}
+    >
       <div className="container">
         {/* ---------------- HEADING ---------------- */}
         <div className="mb-[40px] text-center">
@@ -35,23 +40,25 @@ export default function NextStepsSection({
             {heading.split("next steps").map((part, index) =>
               index === 1 ? (
                 <span key={index}>
-                  <span className="libreItalic highlight-text font-normal">next steps</span>
+                  <span className="libreItalic highlight-text font-normal">
+                    next steps
+                  </span>
                   {part}
                 </span>
               ) : (
                 part
-              ),
+              )
             )}
           </h2>
         </div>
 
         {/* ---------------- STEPS ---------------- */}
-        <div className="flex gap-[40px] border-t border-[#ffffff4d]">
+        <div className="flex flex-wrap gap-[20px] border-t border-[#ffffff4d] md:flex-nowrap md:gap-[40px]">
           {steps.map((step, index) => (
             <div
               key={index}
               className={cn(
-                step.desktop ? "md:w-[25px]" : "md:w-[calc(25%-65px)]",
+                step.desktop ? "md:w-[25px]" : "md:w-[calc(25%-65px)]"
               )}
             >
               {/* Image */}
@@ -70,9 +77,9 @@ export default function NextStepsSection({
                     <Image
                       src={step.tablet}
                       alt="Next step illustration"
-                      width={25}
+                      width={250}
                       height={150}
-                      className="block w-full object-contain md:hidden"
+                      className="block hidden w-full object-contain md:hidden"
                     />
                   )}
                 </div>
@@ -103,5 +110,5 @@ export default function NextStepsSection({
         </div>
       </div>
     </section>
-  );
+  )
 }

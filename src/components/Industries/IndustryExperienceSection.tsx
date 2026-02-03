@@ -26,7 +26,7 @@ export default function IndustryExperienceSection({
 }: IndustryExperienceSectionProps) {
   return (
     <section className="relative px-[20px]">
-      <div className="relative z-10 container mx-auto px-4">
+      <div className="relative z-10 container mx-auto">
         {/* HEADING */}
         <div className="mx-auto mb-[72px] max-w-[820px] text-center">
           <Heading headingTag="h2" content={heading} className="text-white" />

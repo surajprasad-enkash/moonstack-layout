@@ -45,7 +45,7 @@ export default function CaseStudyPage({ data }: Props) {
         <CaseResults results={data.acf.results} />
       )}
 
-      <div className="px-[20px] pt-[80px]">
+      <div className="pt-[60px] md:px-[20px] md:pt-[80px]">
         <Heading
           headingTag="h2"
           className="text-center text-[#fff] md:!text-[92px]"
@@ -58,12 +58,12 @@ export default function CaseStudyPage({ data }: Props) {
         <ProjectCTA
           title="3-day FREE trial to get to know us"
           subtitle=""
-          marginBottom="mb-[10px] max-w-[700px] md:!leading-[130%] mx-[auto] md:!text-[72px]"
+          marginBottom="mb-[10px] max-w-[700px] !leading-[130%]  mx-[auto] md:!text-[72px]"
           description="We offer you a free 3-day trial work with one of our web developers to cover your questions about our working process. "
           descriptionClass="md:!max-w-[700px]"
         />
       </div>
-      <Space />
+      <Space mobileSize={0} />
     </>
   )
 }

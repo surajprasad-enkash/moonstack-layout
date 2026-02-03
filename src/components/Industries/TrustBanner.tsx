@@ -11,7 +11,7 @@ interface TrustBannerProps {
 
 export default function TrustBanner({ title, highlight }: TrustBannerProps) {
   return (
-    <section className={`relative px-[20px] md:px-[0px]`}>
+    <section className={`relative md:px-[0px]`}>
       {bgImage && (
         <Image
           src={bgImage}
@@ -36,7 +36,7 @@ export default function TrustBanner({ title, highlight }: TrustBannerProps) {
           />
         </div>
 
-        <div className="slider mt-[96px]">
+        <div className="slider mt-[20px] md:mt-[96px]">
           <MarqueeComponent />
         </div>
       </div>

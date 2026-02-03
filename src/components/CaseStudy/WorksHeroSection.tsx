@@ -24,7 +24,7 @@ export default function WorksHeroSection() {
       )}
 
       <div className="relative z-[2] container">
-        <div className="grid items-center gap-14 lg:grid-cols-2">
+        <div className="grid items-center gap-14 md:grid-cols-2">
           {/* LEFT CONTENT */}
           <div>
             <p className="mb-4 text-sm text-gray-300">
@@ -93,7 +93,7 @@ export default function WorksHeroSection() {
           </div>
 
           {/* RIGHT CARD */}
-          <div className="relative">
+          <div className="relative hidden md:block">
             <div className="">
               <WorksImageSlider />
             </div>

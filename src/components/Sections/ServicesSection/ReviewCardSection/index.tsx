@@ -1,16 +1,16 @@
-"use client";
+"use client"
 
-import Image, { StaticImageData } from "next/image";
-import { cn } from "@/lib/utils";
+import Image, { StaticImageData } from "next/image"
+import { cn } from "@/lib/utils"
 
 interface TestimonialCardProps {
-  quote?: string;
-  highlightText?: string;
-  authorName: string;
-  authorRole?: string;
-  authorImage: string | StaticImageData;
-  className?: string;
-  bgImage?: string;
+  quote?: string
+  highlightText?: string
+  authorName: string
+  authorRole?: string
+  authorImage: string | StaticImageData
+  className?: string
+  bgImage?: string
 }
 
 export default function TestimonialCard({
@@ -23,9 +23,9 @@ export default function TestimonialCard({
   bgImage,
 }: TestimonialCardProps) {
   const renderQuote = () => {
-    if (!highlightText) return quote;
+    if (!highlightText) return quote
 
-    const parts = (quote ?? "").split(highlightText);
+    const parts = (quote ?? "").split(highlightText)
 
     return (
       <>
@@ -35,9 +35,9 @@ export default function TestimonialCard({
         </span>
         {parts[1]}
       </>
-    );
-  };
-  const customColor = bgImage ? "" : "";
+    )
+  }
+  const customColor = bgImage ? "" : ""
   return (
     <section className={`relative z-[1] px-[20px] ${customColor}`}>
       {bgImage && (
@@ -54,9 +54,9 @@ export default function TestimonialCard({
             className
           )}
         >
-          <div className="mb-6 text-4xl font-bold text-black">“</div>
+          <div className="mb-2 text-4xl font-bold text-black md:mb-6">“</div>
 
-          <p className="!text-[40px] mx-auto max-w-5xl text-xl leading-relaxed !font-medium text-black md:text-2xl">
+          <p className="mx-auto max-w-5xl text-xl !text-[25px] leading-relaxed !font-medium text-black md:text-2xl md:!text-[40px]">
             {renderQuote()}
           </p>
 
@@ -79,5 +79,5 @@ export default function TestimonialCard({
         </div>
       </div>
     </section>
-  );
+  )
 }

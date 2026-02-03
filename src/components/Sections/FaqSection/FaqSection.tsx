@@ -1,20 +1,20 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import Heading from "@/components/Heading/Heading";
-import Image from "next/image";
-import icon from "@/assets/faq-icon.svg";
+import { useState } from "react"
+import Heading from "@/components/Heading/Heading"
+import Image from "next/image"
+import icon from "@/assets/faq-icon.svg"
 interface FAQItem {
-  question: string;
-  answer: string;
+  question: string
+  answer: string
 }
 
 interface FAQSectionProps {
-  title: string;
-  highlight?: string;
-  description: string;
-  classname?: string;
-  faqs: FAQItem[];
+  title: string
+  highlight?: string
+  description: string
+  classname?: string
+  faqs: FAQItem[]
 }
 
 export default function FAQSection({
@@ -24,14 +24,14 @@ export default function FAQSection({
   faqs,
   classname = "block",
 }: FAQSectionProps) {
-  const [activeIndex, setActiveIndex] = useState<number | null>(0);
+  const [activeIndex, setActiveIndex] = useState<number | null>(0)
 
   const toggleFAQ = (index: number) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
+    setActiveIndex(activeIndex === index ? null : index)
+  }
 
   return (
-    <section className="faqSection relative w-full px-[20px] py-[80px] text-white">
+    <section className="faqSection relative w-full overflow-hidden px-[20px] py-[60px] text-white md:py-[80px]">
       <div className="relative z-10 container mx-auto grid grid-cols-1 gap-10 lg:grid-cols-2">
         <div>
           <Heading
@@ -59,7 +59,7 @@ export default function FAQSection({
 
         <div className="space-y-4">
           {faqs.map((item, index) => {
-            const isActive = activeIndex === index;
+            const isActive = activeIndex === index
 
             return (
               <div
@@ -109,7 +109,7 @@ export default function FAQSection({
                   </p>
                 </div>
               </div>
-            );
+            )
           })}
         </div>
       </div>
@@ -118,5 +118,5 @@ export default function FAQSection({
       <div className="absolute bottom-0 left-0 flex h-[550px] w-[500px] items-end"></div>
       <div className="absolute top-10 right-10 h-[300px] w-[300px] rounded-full bg-green-400/10 blur-3xl"></div>
     </section>
-  );
+  )
 }

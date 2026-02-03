@@ -28,7 +28,7 @@ export default function AIProductsGrid({
 }: AIProductsGridProps) {
   return (
     <section className="relative px-[20px]">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         {/* HEADING */}
         <Heading
           headingTag="h2"

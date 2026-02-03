@@ -8,7 +8,7 @@ export default function CaseHero({ data }: any) {
     featured_image = data.acf.case_study_profile_image
   }
   return (
-    <section className="relative min-h-[100vh] overflow-hidden px-[20px] pt-[160px] pb-[10px] pb-[40px] text-white">
+    <section className="relative overflow-hidden px-[20px] pt-[160px] pb-[40px] text-white md:min-h-[100vh] md:pt-[160px] md:pb-[40px]">
       {bgImage.src && (
         <Image
           src={bgImage.src}
@@ -41,7 +41,7 @@ export default function CaseHero({ data }: any) {
           <div>
             <div className="mx-[auto] max-w-[900px]">
               <h1
-                className="mt-[20px] text-center"
+                className="mt-[20px] md:text-center"
                 dangerouslySetInnerHTML={{ __html: data.title }}
               />
             </div>
@@ -50,10 +50,10 @@ export default function CaseHero({ data }: any) {
               dangerouslySetInnerHTML={{ __html: data.acf.case_study_tag_list }}
             /> */}
 
-            <div className="mt-[40px] flex items-end gap-[60px]">
+            <div className="mt-[40px] items-end gap-[60px] md:flex">
               <div className="md:w-[34%]">
                 <h2
-                  className="!text-[40px] !leading-[130%] !font-[400]"
+                  className="mb-[30px] !text-[25px] !leading-[130%] !font-[400] md:mb-[0] md:!text-[40px]"
                   dangerouslySetInnerHTML={{
                     __html: data.acf.bannerDescription,
                   }}

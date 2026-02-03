@@ -13,10 +13,10 @@ const CaseStudyMoodboard = ({ data }: { data: MoodboardData }) => {
   if (!data || !data.images?.length) return null
 
   return (
-    <section className="bg-white px-[20px] pt-[150px]">
+    <section className="bg-white px-[20px] pt-[60px] md:pt-[150px]">
       <div className="container">
         {/* Header */}
-        <div className="mb-14 justify-between md:flex">
+        <div className="mb-[30px] justify-between md:mb-14 md:flex">
           <Heading
             headingTag="h2"
             content={[
@@ -27,7 +27,7 @@ const CaseStudyMoodboard = ({ data }: { data: MoodboardData }) => {
             ]}
           />
 
-          <div className="description my-[50px] md:my-[0]">
+          <div className="description mt-[10px] mb-[30px] md:my-[0]">
             <p className="max-w-[390px] !font-[500] text-[#000]">
               {data.description}
             </p>

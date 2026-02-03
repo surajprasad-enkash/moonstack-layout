@@ -40,9 +40,9 @@ export default function CategoryPosts({
   onLoadMore,
 }: Props) {
   return (
-    <div className="px-[20px] text-[#fff]">
+    <div className="text-[#fff] md:px-[20px]">
       <div className="relative z-[2] container">
-        <h1 className="mb-10">{categoryName}</h1>
+        <h1 className="mt-10 mb-10 md:mt-[0]">{categoryName}</h1>
 
         {loading ? (
           <div className="flex h-[100vh] items-center justify-center">

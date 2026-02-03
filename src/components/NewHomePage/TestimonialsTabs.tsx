@@ -86,13 +86,15 @@ export default function TestimonialsTabs({
 
           {/* RIGHT CONTENT */}
           <div
-            className={`relative flex flex-col justify-between rounded-[20px] p-[48px]`}
+            className={`relative flex flex-col justify-between rounded-[20px] p-[30px] md:p-[48px]`}
             style={{
               background: activeTab.rightBg,
               color: activeTab.color || "#000",
             }}
           >
-            <p className="!text-[20px] md:!text-[36px]">“{activeTab.quote}”</p>
+            <p className="pb-4 !text-[20px] md:!text-[36px]">
+              “{activeTab.quote}”
+            </p>
 
             <div className="flex items-center justify-between border-t border-[#5e5e5e1f] pt-6">
               <div className="flex items-center gap-4">
@@ -118,6 +120,7 @@ export default function TestimonialsTabs({
                     alt=""
                     width={100}
                     height={100}
+                    className="w-[100px]"
                   />
                 </div>
               )}

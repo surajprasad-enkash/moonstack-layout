@@ -48,7 +48,7 @@ export default async function CaseStudy({ searchParams }: CaseStudyProps) {
           title="Ready to scale"
           subtitle="your business?"
           description="Book a free consultation to get clarity, direction, and expert advice you can implement right away."
-          fontSize="!text-[80px]"
+          fontSize="md:!text-[80px] !text-[40px] !leading-[130%]"
           marginBottom="mb-0"
           whiteBoxClass=""
         />

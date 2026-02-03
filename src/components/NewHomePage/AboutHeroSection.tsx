@@ -86,7 +86,7 @@ export default function AboutHeroSection({
 
           {/* RIGHT CONTENT */}
           <div className="relative flex items-center justify-center">
-            <div className="relative mt-[100px] sm:w-[70%] md:mt-[0] md:w-[max-content]">
+            <div className="relative mt-[100px] md:mt-[0] md:w-[max-content]">
               {/* Team Avatars */}
               <div className="homeTeamMemnerOuter">
                 {teamMembers.slice(0, 5).map((member, i) => (
@@ -109,10 +109,10 @@ export default function AboutHeroSection({
 
               {/* Team Count */}
               <div className="text-center">
-                <p className="pt-[40px] !leading-[90%] !font-[500] text-[#fff9] md:pt-[0] md:!text-[160px]">
+                <p className="pt-[40px] !text-[150px] !leading-[90%] !font-[500] text-[#fff9] md:pt-[0] md:!text-[160px]">
                   {teamCount}
                 </p>
-                <p className="text-[#fff9]">Team members</p>
+                <p className="mt-2 text-[#fff9] md:mt-0">Team members</p>
               </div>
             </div>
           </div>

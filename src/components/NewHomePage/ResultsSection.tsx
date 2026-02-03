@@ -49,7 +49,7 @@ export default function ResultsSection({
               {items.map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-[110px] border-b border-white/10 py-[16px] last:border-b-0"
+                  className="flex items-center gap-[40px] border-b border-white/10 py-[16px] last:border-b-0 md:gap-[110px]"
                 >
                   <span className="!text-[20px] text-[#fff6]">{`{/}`}</span>
                   <p className="!text-[20px] !font-[500] text-[#fff]">

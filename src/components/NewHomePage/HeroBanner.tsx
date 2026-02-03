@@ -140,7 +140,7 @@ export default function HeroSection({
           <span className="headingtext"> into </span>
           <span className="mt-2 items-center !justify-center gap-5 md:!flex">
             <span
-              className="home-hero-title-decor-play relative inline-block cursor-pointer"
+              className="home-hero-title-decor-play relative hidden cursor-pointer md:!inline-block"
               onClick={openVideo}
             >
               <Image
@@ -167,8 +167,8 @@ export default function HeroSection({
             </span>
           </span>
         </h1>
-        <Space size={62} />
-        <div className="home-hero-quotes mb-[22px] flex gap-[46px] md:w-[60%]">
+        <Space size={62} mobileSize={0} />
+        <div className="home-hero-quotes mb-[22px] flex flex-wrap gap-[46px] md:w-[60%] md:flex-nowrap">
           <div className="home-hero-quote md:w-[50%]">
             <p className="home-hero-quote_decor text-white/60">{"{/}"}</p>
             <p className="home-hero-quote_text home-hero-quote_text-1 mt-2 !font-[500] first-letter:pl-[30px]">
