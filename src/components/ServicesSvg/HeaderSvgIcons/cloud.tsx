@@ -1,6 +1,6 @@
 import * as React from "react"
 
-export default function AndroidIcon(props: React.SVGProps<SVGSVGElement>) {
+export default function Cloud(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -32,8 +32,8 @@ export default function AndroidIcon(props: React.SVGProps<SVGSVGElement>) {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(1.99978 1.39164) rotate(45.2682) scale(52.0623)"
         >
-          <stop stop-color="#00620B" />
-          <stop offset="1" stop-color="#00A313" />
+          <stop stopColor="#00620B" />
+          <stop offset="1" stopColor="#00A313" />
         </radialGradient>
       </defs>
     </svg>

@@ -1,8 +1,6 @@
-import * as React from "react";
+import * as React from "react"
 
-export default function WebsiteDevIcon(
-  props: React.SVGProps<SVGSVGElement>
-) {
+export default function WebsiteDev(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -86,5 +84,5 @@ export default function WebsiteDevIcon(
         </radialGradient>
       </defs>
     </svg>
-  );
+  )
 }

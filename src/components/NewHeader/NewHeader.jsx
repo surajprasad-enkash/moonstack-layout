@@ -10,55 +10,27 @@ import { IoIosArrowDown } from "react-icons/io";
 import HeroVideoModal from "@/components/NewHomePage/HeroVideoModal";
 import { useVideoModal } from "@/context/VideoModalContext";
 
-import about from "@/assets/header/about-us.svg";
 import logo from "@/assets/logo-white.png";
-import blog from "@/assets/header/blog.svg";
-import case_study from "@/assets/header/case-studies.svg";
-
-
-import appDevIcon2 from "@/assets/header/Ios.svg";
-import appDevIcon3 from "@/assets/header/pwa.svg";
-import appDevIcon4 from "@/assets/header/react-svgrepo-com.svg";
-import appDevIcon5 from "@/assets/header/andriod-development.svg";
-import appDevIcon6 from "@/assets/header/mobile-app-developing.svg";
-
-// web development icon
-
-import webDevIcon4 from "@/assets/header/e-commerce.svg";
-import webDevIcon5 from "@/assets/header/web-designer.svg";
-
-
-// frontend development icon
-import frontDevIcon1 from "@/assets/header/frontendIcon/angularjs.svg";
-
-import frontDevIcon6 from "@/assets/header/frontendIcon/react-svgrepo-com.svg";
-
-// Backend development icon
-import backendicon1 from "@/assets/header/backend/dotnet.svg";
-import backendicon2 from "@/assets/header/backend/nodejs.svg";
-import backendicon3 from "@/assets/header/backend/laravel.svg";
-import backendicon6 from "@/assets/header/backend/python.svg";
-import backendicon7 from "@/assets/header/backend/java-filled.svg";
-import backendicon8 from "@/assets/header/backend/php.svg";
 
 //other
-import Uiux from "@/components/ServicesSvg/HeaderSvgIcons/websiteDev";
-import Ecomm from "@/components/ServicesSvg/HeaderSvgIcons/e-comm";
-import WebDesining from "@/components/ServicesSvg/HeaderSvgIcons/web-desining";
-import Angular from "@/components/ServicesSvg/HeaderSvgIcons/angular";
+import Uiux from "@/components/ServicesSvg/HeaderSvgIcons/WebsiteDev";
+import Ecomm from "@/components/ServicesSvg/HeaderSvgIcons/Ecomm";
+import WebDesining from "@/components/ServicesSvg/HeaderSvgIcons/WebDesining";
+import Angular from "@/components/ServicesSvg/HeaderSvgIcons/Angular";
 import React from "@/components/ServicesSvg/HeaderSvgIcons/react";
-import FullStack from "@/components/ServicesSvg/HeaderSvgIcons/full-stack";
-import Laravel from "@/components/ServicesSvg/HeaderSvgIcons/laravel";
-import Python from "@/components/ServicesSvg/HeaderSvgIcons/python";
-import Android from "@/components/ServicesSvg/HeaderSvgIcons/android";
-import Ios from "@/components/ServicesSvg/HeaderSvgIcons/ios";
-import Pwa from "@/components/ServicesSvg/HeaderSvgIcons/pwa";
-import Maintaince from "@/components/ServicesSvg/HeaderSvgIcons/maintanance";
-import Seo from "@/components/ServicesSvg/HeaderSvgIcons/seo";
-import Cloud from "@/components/ServicesSvg/HeaderSvgIcons/cloud";
-import About from "@/components/ServicesSvg/HeaderSvgIcons/about-us";
-import Blog from "@/components/ServicesSvg/HeaderSvgIcons/blog";
-import CaseStudy from "@/components/ServicesSvg/HeaderSvgIcons/caseStudy";
+import FullStack from "@/components/ServicesSvg/HeaderSvgIcons/FullStack";
+import Laravel from "@/components/ServicesSvg/HeaderSvgIcons/Laravel";
+import Python from "@/components/ServicesSvg/HeaderSvgIcons/Python";
+import Android from "@/components/ServicesSvg/HeaderSvgIcons/Android";
+import Ios from "@/components/ServicesSvg/HeaderSvgIcons/Ios";
+import Pwa from "@/components/ServicesSvg/HeaderSvgIcons/Pwa";
+import Maintaince from "@/components/ServicesSvg/HeaderSvgIcons/Maintanance";
+import Seo from "@/components/ServicesSvg/HeaderSvgIcons/Seo";
+import Cloud from "@/components/ServicesSvg/HeaderSvgIcons/Cloud";
+import About from "@/components/ServicesSvg/HeaderSvgIcons/AboutUs";
+import Blog from "@/components/ServicesSvg/HeaderSvgIcons/Blog";
+import CaseStudy from "@/components/ServicesSvg/HeaderSvgIcons/CaseStudy";
+
 
 import HoverSlideText from "../HoverSlideText";
 
@@ -92,7 +64,7 @@ export default function NewHeader() {
 
   const megaMenuData = {
     "Frontend Development": [
-         {
+      {
         title: "Website Development",
         Icon: Uiux,
         url: "/services/website-development-company",
@@ -100,7 +72,7 @@ export default function NewHeader() {
       },
       {
         title: "ReactJS",
-      Icon: React,
+        Icon: React,
         url: "/services/reactjs-development-company",
         subtitle: "Fast interfaces built with React",
       },
@@ -150,7 +122,7 @@ export default function NewHeader() {
         url: "/services/full-stack-website-development-company",
         subtitle: "Reliable and flexible  web solutions",
       },
-       {
+      {
         title: "Shopify",
         Icon: Ecomm,
         url: "/services/shopify-website-development-company",
@@ -386,7 +358,7 @@ export default function NewHeader() {
                                   href={item.url}
                                   className="submenuLink group flex w-full gap-3"
                                 >
-                                   <item.Icon />
+                                  <item.Icon />
 
                                   <div className="w-full">
                                     <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">
@@ -418,7 +390,7 @@ export default function NewHeader() {
                                   href={item.url}
                                   className="submenuLink group flex w-full gap-3"
                                 >
-                                       <item.Icon />
+                                  <item.Icon />
 
                                   <div className="w-full">
                                     <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">
@@ -454,7 +426,7 @@ export default function NewHeader() {
                                 href={item.url}
                                 className="submenuLink group flex w-full gap-3"
                               >
-                                                                 <item.Icon />
+                                <item.Icon />
 
 
                                 <div className="w-full">
@@ -497,7 +469,7 @@ export default function NewHeader() {
                             href={item.href}
                             className="submenuLink group flex w-full gap-3"
                           >
-                                                             <item.Icon />
+                            <item.Icon />
 
 
                             <div className="w-full">
