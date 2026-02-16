@@ -157,7 +157,7 @@ export default function Healthcare(props: React.SVGProps<SVGSVGElement>) {
       />
       <path
         fillRule="evenodd"
-        clip-rule="evenodd"
+        clipRule="evenodd"
         d="M34.5893 48.8603L7.08776 64.738C6.55266 65.053 5.96049 65.2588 5.34543 65.3437C4.73037 65.4286 4.10458 65.3908 3.50419 65.2326C2.90379 65.0743 2.34068 64.7988 1.84733 64.4218C1.35398 64.0448 0.940177 63.5739 0.629785 63.0361C0.319394 62.4984 0.118563 61.9045 0.0388837 61.2887C-0.040796 60.673 0.00225238 60.0475 0.165544 59.4485C0.328836 58.8495 0.609139 58.2887 0.990278 57.7986C1.37142 57.3084 1.84585 56.8986 2.38619 56.5928L34.5903 37.9971L66.8002 56.5928C67.8692 57.2219 68.6463 58.2478 68.9624 59.4472C69.2784 60.6465 69.1079 61.9222 68.4878 62.9964C67.8678 64.0706 66.8484 64.8564 65.6518 65.1826C64.4551 65.5087 63.1781 65.349 62.0987 64.738L34.5893 48.8603Z"
         fill="url(#paint7_linear_727_1451)"
       />
@@ -193,9 +193,9 @@ export default function Healthcare(props: React.SVGProps<SVGSVGElement>) {
           width="75.8282"
           height="117.55"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"

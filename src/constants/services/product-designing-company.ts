@@ -9,12 +9,14 @@ import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
 import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
 import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
-
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
 import collaboration from "@/assets/app-development-images/flexible.webp"
-import { color } from "framer-motion"
+
+import Icon1 from "@/components/ServicesSvg/ProductDesigningIcon/ProductDesigningIcon1"
+import Icon2 from "@/components/ServicesSvg/ProductDesigningIcon/ProductDesigningIcon2"
+import Icon3 from "@/components/ServicesSvg/ProductDesigningIcon/ProductDesigningIcon3"
+import Icon4 from "@/components/ServicesSvg/ProductDesigningIcon/ProductDesigningIcon4"
+import Icon5 from "@/components/ServicesSvg/ProductDesigningIcon/ProductDesigningIcon5"
+import Icon6 from "@/components/ServicesSvg/ProductDesigningIcon/ProductDesigningIcon6"
 
 export const product: PageData = {
   hero: {
@@ -90,21 +92,24 @@ export const product: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: Icon1,
+      imgSrc: "",
       title:
         "Enlighten Your Product's Potential with Moonstack's Design Mastery",
       description:
         "The development of our products is a logical and successful scenario presented from idea to implementation. Our product design and development service begin with an evaluation session to get a clear understanding of the client’s expectations. This is followed by our design team coming up with various ideas that implement the latest trends and unique characteristics. After choosing a concept, we proceed to the prototyping stage, whereby we build a model of the item as a means of implementation and evaluation to ensure that the concept is in line with functional, structural, and aesthetic needs.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: Icon2,
+      imgSrc: "",
       title: "Product Design Company in the India",
       description:
         "If you choose a category that is slightly different from the one you would initially select for a specific contest, it will be highly effective to go with ‘Excellence in Innovation.’ We deliver Product Design Services in India for creating new and innovative products that will meet or exceed the needs of end-users. We are experienced in interpreting the workings of the Indian market and thus offer a form of service delivery that fits the needs and wants of your targeted customers. From idea generation to the development of only prototypes and fully established products, the team works to create products that will have a niche in the market.",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon3,
+      imgSrc: "",
       title: "Best Product Design Service in the India",
       description:
         "Every product has some unique style and elegance that are appreciated within the market and this is why Moonstack focuses on such products. Our Product Designing Service in India is crafted to capture the essence of British design, combining traditional aesthetics with modern functionality. In the process of implementing projects, our team collaborates with clients, focusing on the fact that the individual products should match the brand of our clients as well as attract those users from India.",
@@ -308,22 +313,25 @@ export const product: PageData = {
     list: [
       {
         id: 1,
+        Icon: Icon4,
         title: "Product Design Service India: Innovation Meets Practicality",
-        icon: collaboration.src,
+        icon: "",
         description:
           "India is well known for its comparatively tougher terrain and lifestyle, hence, our Product Design Service in India is diverse. We aim our attention at those inventions that will be useful and unique for use in India, being resistant to the physical and climatic conditions in the country. We maintain an approach of proper market analysis and consumer trials, so that each product created can adequately prepare to meet the requirements of India.",
       },
       {
         id: 2,
+        Icon: Icon5,
         title: "Flawless Product Design USA: The Art of Innovation",
-        icon: collaboration.src,
+        icon: "",
         description:
           "At Moonstack, our product design and development team helps materialize your boldest ideas through unique design and perfect execution. Our staff is always focused on the primary goal: achieving success, whether through the introduction of a brand-new product into the global market or the strategic redesign of an existing one. We bring a world-class perspective to every project, ensuring that your digital assets meet the rigorous standards of the USA market while maintaining a competitive edge.",
       },
       {
         id: 3,
+        Icon: Icon6,
         title: "Let's Create Something Extraordinary",
-        icon: collaboration.src,
+        icon: "",
         description:
           "Collaborate with Moonstack for any product design and development solutions and feel the difference between innovation and creativity. If you are looking for Product Design Services in Jaipur, we have you covered. Call us today for concepts to create and experience astonishing outcomes with the help of Moonstack’s proficient product design solutions.",
       },

@@ -9,12 +9,20 @@ import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
 import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
 import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
-
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
 import collaboration from "@/assets/app-development-images/flexible.webp"
-import { color } from "framer-motion"
+
+import Icon1 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon1"
+import Icon2 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon2"
+import Icon3 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon3"
+import Icon4 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon4"
+import Icon5 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon5"
+import Icon6 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon6"
+import Icon7 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon7"
+import Icon8 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon8"
+import Icon9 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon9"
+import Icon10 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon10"
+import Icon11 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon11"
+import Icon12 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon12"
 
 export const crm: PageData = {
   hero: {
@@ -91,38 +99,44 @@ export const crm: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: Icon1,
+      imgSrc: "",
       title: "Custom CRM Development",
       description:
         "We build fully customised CRM solutions that are designed as per your business needs. Our CRM experts build software that are integrated with modern features, modules, and several workflows that are with the motive to improve efficiency, boost productivity, and support growth. Moreover, we design CRM software that reflect your brand identity and style that align with your business needs.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: Icon2,
+      imgSrc: "",
       title: "CRM Integration Services",
       description:
         "Integrate best CRM services that help to grow your business. Extend the functionalities of your CRM software with the integration of WhatsApp, ERP, HRMS, and secure payment gateways. We identify the specific features that are required in your business that ensure to reduce time, improve accuracy, and respond faster to customers. We focus on delivering smart CRM integration services India via a secure API that offers real time syncing and delivers smarter and faster experiences.",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon3,
+      imgSrc: "",
       title: "CRM Mobile Applications",
       description:
         "Build custom CRM mobile applications for Android and iOS platforms. We build fast, secure, and easy to use CRM mobile apps that bring the entire business infrastructure to the mobility of the users. With our CRM mobile apps our customers can track leads, manage different follow ups, opt for seamless communication processes. Our mobile apps are easy to use and users can access the information from anywhere and at any time.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon4,
+      imgSrc: "",
       title: "Cloud-Based CRM Services",
       description:
         "Moonstack delivers Cloud based CRM solutions that turn the processings into faster and secure. Our cloud based CRM software offers automatic back ups, real time syncing, and high performance so that the team can work smoothly and don’t have to be hesitant about being connected with server and maintenance processes. Our CRM solution allows users to manage data from anywhere and at any time with instant updates with no delay that helps to connect users and team with each other.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon5,
+      imgSrc: "",
       title: "CRM Migration & Upgradation",
       description:
         "Our custom CRM software development in  India offers complete CRM migration services in India. We offer data transfer to set up services that guarantee all existing feature optimisation, performance, and constant support to improve performance. Along with this, Moonstack CRM development services in India include updates to increase performance, add new functionalities, and make sure that your CRM solution runs smoothly.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon6,
+      imgSrc: "",
       title: "CRM Ongoing Support & Maintenanc",
       description:
         "As the leading CRM development company in India, we offer full time ongoing support and maintenance services to our clients that offer continuous support, fix bugs immediately, provide feature enhancements for smooth operations, and many more. Our end to end ongoing support and maintenance services. From trouble shooting issues to managing different operations we manage the end to end process with our clients to enhance performance and meet all tech standards",
@@ -292,43 +306,49 @@ export const crm: PageData = {
     list: [
       {
         id: 1,
+        Icon: Icon7,
         title: "Experience Team",
-        icon: collaboration.src,
+        icon: "",
         description:
           "We have a team of CRM developers, who have decades of experience in delivering a wide range of CRM solutions to different industries like Real estate, healthcare, education, Fintech, and many more. At Moonstack, we are enabled to sort last minute complex challenges and put our experience in delivering best CRM solutions that align with your business needs and meet latest market innovations.",
       },
       {
         id: 2,
+        Icon: Icon8,
         title: "Updated with Latest Tech trends",
-        icon: collaboration.src,
+        icon: "",
         description:
           "Our CRM professionals keep them updated with the latest technological trends and updated frameworks that help us to meet the market trends. We have hands-on experience on different tools and technologies, but it is also important for us to keep ourselves updated with the new innovations and what's going on in the market. At Moonstack, we don’t opt for the outdated strategies but opt for the modern technological advancements.",
       },
       {
         id: 3,
+        Icon: Icon9,
         title: "On Time Delivery",
-        icon: collaboration.src,
+        icon: "",
         description:
           "We believe in on time delivery. Our focus is to deliver projects on time and without delay and compromising on quality. At Moonstack, we plan, execute, and review all details in detail and provide CRM solutions on a promised timeline. We always focus on being committed to our words and deliver solutions without any delay and you can face no surprises in future. Hence, punctuality is our priority.",
       },
       {
         id: 4,
+        Icon: Icon10,
         title: "Strong Communication",
-        icon: collaboration.src,
+        icon: "",
         description:
           "Our team opt for a strong communication process as we understand the value of clear and transparent. We focus on professional communication at every stage that helps our clients to stay informed at every stage of the development and have an idea what's going on in the process. We offer end to end strong communication that ensures clear, structured, and professional communication among clients and with us.",
       },
       {
         id: 5,
+        Icon: Icon11,
         title: "Seamless Integrations",
-        icon: collaboration.src,
+        icon: "",
         description:
           "At Moonstack, we offer seamless integration with CRM tools like WhatsApp, ERP, HRMS, emails, and payment gateways. Our CRM app development team works collaboratively and delivers best performance that matches real time data flow that leads to more accuracy, faster operations, and reduces manual work.",
       },
       {
         id: 6,
+        Icon: Icon12,
         title: "Dedicated Support and Maintenance",
-        icon: collaboration.src,
+        icon: "",
         description:
           "We offer end to end dedicated support and maintenance to our clients. At Moonstack, if we start with a journey, we will go till the end. For us it's not only to deploy the CRM solutions, we aim to focus on dedicated support and maintenance services that allow clients to leverage the benefits of modern technologies and smooth performance for a long period of time.",
       },

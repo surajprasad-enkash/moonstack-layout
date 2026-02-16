@@ -10,11 +10,12 @@ import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
 import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
 import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
 
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
-import { color } from "framer-motion"
+import Icon1 from "@/components/ServicesSvg/ItSupportIcon/ItSupportIcon1"
+import Icon2 from "@/components/ServicesSvg/ItSupportIcon/ItSupportIcon2"
+import Icon3 from "@/components/ServicesSvg/ItSupportIcon/ItSupportIcon3"
+import Icon4 from "@/components/ServicesSvg/ItSupportIcon/ItSupportIcon4"
+import Icon5 from "@/components/ServicesSvg/ItSupportIcon/ItSupportIcon5"
+import Icon6 from "@/components/ServicesSvg/ItSupportIcon/ItSupportIcon6"
 
 export const it_support: PageData = {
   hero: {
@@ -80,38 +81,44 @@ export const it_support: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: Icon1,
+      imgSrc: "",
       title: "How our IT support will help you",
       description:
         "Keep your business running smoothly with our range of IT solutions that keep you ahead of the curve. Don't put up with outmoded technologies and communications. Let our IT support company deliver smooth service and support so you can focus on what you do best.",
     },
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: Icon2,
+      imgSrc: "",
       title: "Complete IT Support. One Reliable Partner.",
       description:
         " We are one of the Famous India based IT support companies having a team of expert IT consultants that collaborate with you to offer an assortment of professional services, such as help desk support, server administration, cloud services support, data backup and recovery, IT asset management, and vendor management.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: Icon3,
+      imgSrc: "",
       title: "Server Administration in India and USA",
       description:
         "We know that data loss can be catastrophic for any business. We at Moonstack, provide robust Data Backup and Recovery services in India to safeguard your valuable data. Our innovative backup solutions safeguard that your data is always secure and easily recoverable in the event of unexpected events. We comprehend the importance of data integrity and strive to deliver peace of mind through our reliable services.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: Icon4,
+      imgSrc: "",
       title: "Expert Server Management Solutions You Can Trust",
       description:
         "Our cutting-edge services, like Server Administration in India, are personalized to meet your specific business needs. We offer a wide range of server management services that include security updates, regular maintenance, and performance optimization. With us, you can be assured that your servers are in skilled hands, allowing you to focus on growing your business.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: Icon5,
+      imgSrc: "",
       title: "Protecting Your Data, Powering Your Digital Growth",
       description:
         "We will be your trusted partner in providing flawless services of Data Backup and Recovery in India for your team, which include phone, internet, and local managed services. Our inclusive end-to-end Server Administration in India offers unmatched cloud computing solutions that redefine the potential of the digital landscape. We know that data loss can be catastrophic for any business.",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon6,
+      imgSrc: "",
       title: "Why Choose Moonstack?",
       description:
         "Choosing Moonstack means partnering with a company that values your business as much as you do. At Moonstack we are focused on quality and doing the right thing by serving our customers. Being a trusted IT support company, we employ preventive measures that help solve future challenges before they escalate. Our intent is to produce efficient and effective solutions that improve the modalities of your enterprise.",

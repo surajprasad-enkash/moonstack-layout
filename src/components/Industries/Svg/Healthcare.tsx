@@ -88,8 +88,8 @@ export default function Healthcare(props: React.SVGProps<SVGSVGElement>) {
           y2="56.7346"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6CFF8C" />
-          <stop offset="1" stop-color="#1E672E" />
+          <stop stopColor="#6CFF8C" />
+          <stop offset="1" stopColor="#1E672E" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_727_1275"

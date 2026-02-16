@@ -38,7 +38,7 @@ export default function NewBanner({
       )}
       <div className="relative z-[2] container mx-auto">
         <div className="items-center gap-10 rounded-[32px] rounded-tl-none bg-white px-6 py-10 md:flex md:px-12 md:py-14">
-          <div className="w-[100%] md:w-[45%]">
+          <div className="w-[100%] md:w-[50%]">
             <Heading
               headingTag="h2"
               content={headingLines}
@@ -53,7 +53,7 @@ export default function NewBanner({
             />
           </div>
 
-          <div className="flex justify-center md:w-[55%] md:justify-end">
+          <div className="flex justify-center md:w-[50%] md:justify-end">
             <div className="relative h-[260px] w-[260px] md:h-[340px] md:w-[340px]">
               <Image
                 src={imageSrc}
