@@ -131,6 +131,11 @@ h6 {
   transform-origin: center center;
 }
 
+.servicesFeatureIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
 .highlight-text {
   color: #0ce859;
 }

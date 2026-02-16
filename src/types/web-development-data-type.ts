@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image"
+import { ElementType } from "react"
 
 /* ================= Accordion ================= */
 export interface IAccordionItem {
@@ -51,6 +52,7 @@ export interface qualitySectionProps {
   title: string
   icon: string | StaticImageData
   description?: string
+  Icon?: ElementType
 }
 export interface qualitySectionHeading {
   text: string
@@ -127,6 +129,7 @@ export interface PageData {
   featuresData: {
     imgSrc: StaticImageData | string
     title: string
+    Icon?: ElementType
     description: string
   }[]
 

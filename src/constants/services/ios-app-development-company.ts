@@ -6,15 +6,13 @@ import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
-import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
-import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
-import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
 
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
-import { color } from "framer-motion"
+import IosIcon1 from "@/components/ServicesSvg/IosIcons/IosIcon1"
+import IosIcon2 from "@/components/ServicesSvg/IosIcons/IosIcon2"
+import IosIcon3 from "@/components/ServicesSvg/IosIcons/IosIcon3"
+import IosIcon4 from "@/components/ServicesSvg/IosIcons/IosIcon4"
+import IosIcon5 from "@/components/ServicesSvg/IosIcons/IosIcon5"
+import IosIcon6 from "@/components/ServicesSvg/IosIcons/IosIcon6"
 
 export const ios: PageData = {
   hero: {
@@ -44,7 +42,7 @@ export const ios: PageData = {
         href: "/services",
       },
       {
-        label: "ISO App development company",
+        label: "ISO App Development",
         href: "/services/iso-app-development-company",
       },
     ],
@@ -98,41 +96,47 @@ export const ios: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: IosIcon1,
       title: "iOS App Consultation & Strategy",
       description:
         "Building an iOS application is a long process, which involves first understanding your business goals and formulating how to create an application that fits your needs. Luckily, when you choose Moonstack, the best iOS app development service in India, you don’t have to make these decisions alone. Our team of highly qualified developers helps you create a framework that helps you visualise exactly how the app functionality will work, as well as the entire development structure. This attention to detail helps us rank as the top iOS app development firm in India.",
+      imgSrc: "",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: IosIcon2,
       title: "Custom iOS App Development",
       description:
         "Our iOS mobile app development services in India at Moonstack are always keeping in mind the stringent quality standards of Apple. We not only follow these standards, but also ensure your application performs seamlessly across different iOS devices. Our native iOS app development service in India focuses on complete custom iOS app development for our clients, including developing the entire codebase from scratch using clean code.",
+      imgSrc: "",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: IosIcon3,
       title: "Front-end Development With Intuitive UI/UX Design",
       description:
         "An intuitive UI and UX design is crucial for an iOS application’s success in 2025. We at Moonstack ensure our iOS app designing service in India is focused on designing clean interfaces that are easy to navigate and visually soft. We try to develop unique design languages for each app based on our client’s branding and market positioning. We also integrate accessibility in our designs to make the apps convenient for all users.",
+      imgSrc: "",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: IosIcon4,
       title: "iOS App Integrations & 3rd Party API Deployment",
       description:
         "When you hire iOS app developers in India through Moonstack, we always take care of two things in the backend of every app. First, we ensure the app is connected to third-party platforms for monitoring of analytics and user request fulfilment. Secondly, we guarantee there’s secure connectivity with APIs to ensure a smooth and seamless application user experience. Our API calls are adequately marked in code to ensure it's easy to recheck or debug later if required.",
+      imgSrc: "",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: IosIcon5,
       title: "iOS App Testing & Debugging",
       description:
         "Once the developmental phase is complete, our QA engineers at Moonstack ensure there are no bugs or glitches in the app’s code or functioning. We ensure the app runs smoothly across Apple devices and it's able to perform fast, have proper user data security, and be responsive across different screen sizes. This is the testament to our service and what makes us the best iOS app testing company in India.",
+      imgSrc: "",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: IosIcon6,
       title: "App Store Deployment & Post-launch Support",
       description:
         "Most agencies that offer iOS app development skim on the post-launch support and app maintenance parts, but not us. At Moonstack, we pride ourselves on our iOS app support and maintenance services in India. We provide iOS app migration services in India to ensure your application is compatible with the latest iOS releases. This, along with our App Store deployment and optimisation of your listing, guarantees you get end-to-end iOS app development service when you choose Moonstack.",
+      imgSrc: "",
     },
   ],
   qualitySectionData: {

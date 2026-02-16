@@ -88,7 +88,7 @@ export default function CloudTimeline({
 
   return (
     <section className="w-full bg-black px-4 py-20 text-white md:px-[80px]">
-      <div className="mx-auto max-w-5xl">
+      <div className="container md:px-[50px]">
         {/* ================= HEADING ================= */}
         <div className="mb-12 text-center">
           <Heading
@@ -96,13 +96,13 @@ export default function CloudTimeline({
             className="font-bold"
             content={[
               { text: `${title} `, color: "text-white block" },
-              { text: highlight, className: "highlight-text" },
+              { text: highlight, className: "highlight-text libreItalic" },
             ]}
           />
           {subtitle && (
             <Heading
               headingTag="p"
-              className="text-primary-grey pt-3"
+              className="text-primary-grey pt-3 md:mx-auto md:max-w-[900px]"
               content={[{ text: subtitle }]}
             />
           )}

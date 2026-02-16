@@ -10,11 +10,12 @@ import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
 import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
 import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
 
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
-import { color } from "framer-motion"
+import RnaIcon1 from "@/components/ServicesSvg/ReactNativeApp/Rnacon1"
+import RnaIcon2 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon2"
+import RnaIcon3 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon3"
+import RnaIcon4 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon4"
+import RnaIcon5 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon5"
+import RnaIcon6 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon6"
 
 export const react_native: PageData = {
   hero: {
@@ -92,38 +93,44 @@ export const react_native: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: RnaIcon1,
+      imgSrc: "",
       title: "Cross-Platform App Development",
       description:
         "The most important part of React Native app development is working on cross-platform compatibility. That’s why we at Moonstack hire the top React Native developers in India who have real-world experience in React Native building. This allows us to create apps that offer seamless access to users across platforms like Web, Android, and iOS.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: RnaIcon2,
+      imgSrc: "",
       title: "Custom App Design & Development",
       description:
         "At Moonstack, we take custom development very seriously. As the best affordable React Native development service in India, we provide more value than any other agency by creating entire codebases from scratch. This helps our applications have fewer bugs or glitches because our team is familiar with the entire codebase. So, if you want to hire React Native developers in India, choose Moonstack to build with confidence.",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: RnaIcon3,
+      imgSrc: "",
       title: "Cross-Platform UX Design",
       description:
         "When applications are built natively and independently of each other, they can have vastly different UIs and UX for users. This is not good for brand consistency, and that’s why always prioritise cross-platform UX while building apps. Our key design strategy as the top company for React Native UI/UX design in India is to build apps that are accessible, easily navigable, and suit our clients’ brand image across platforms. This focus on cross-platform accessibility is the reason we’re the top React Native developers in India.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: RnaIcon4,
+      imgSrc: "",
       title: "Clean Backend Code & API Integrations",
       description:
         "Cross-platform builds come with their significant challenges of maintaining the privacy, security, and quality standards of every platform. So, it is crucial to have clean backend code in cross-platform apps for added security and a lower risk of data breach. This is something we always follow as the top agency with React Native developers for startups in India.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: RnaIcon5,
+      imgSrc: "",
       title: "Launch Support & Future Maintenance",
       description:
         "Our React Native maintenance services in India are robust and offer complete launch support for every app we build. We ensure your apps are deployed in the respective Play Store and App Store with optimised listing pages for search engine performance. Our services also include future maintenance and compatibility coverage for future Android and iOS versions.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: RnaIcon6,
+      imgSrc: "",
       title: "React Native Migration",
       description:
         "We offer a full-fledged React Native migration service in India as well for businesses that have existing applications and just want to migrate them to React Native for seamless cross-platform functionality and accessibility. Our services improve the app’s performance and ensure the applications are scalable for future expansions. It also helps reduce long-term costs associated with Native app development, maintenance, and updates.",

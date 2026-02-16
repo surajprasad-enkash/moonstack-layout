@@ -1,13 +1,13 @@
-"use client"
-
 import Image, { StaticImageData } from "next/image"
 import Heading from "@/components/Heading/Heading"
 import { cn } from "@/lib/utils"
+import { ElementType } from "react"
 
 interface FeatureItem {
   id: number
   title: string
   icon: string | StaticImageData
+  Icon?: ElementType
   description?: string
 }
 interface headingProps {
@@ -55,20 +55,24 @@ export default function QualitySection({
         </div>
 
         <div
-          className={`grid grid-cols-1 gap-10 sm:grid-cols-2 ${columsClass}`}
+          className={`grid grid-cols-1 gap-10 sm:grid-cols-2 md:gap-20 ${columsClass}`}
         >
           {features.map((item, i) => (
-            <div key={i} className="flex flex-col items-center">
-              <div className="relative h-[130px] w-[130px]">
-                <Image
-                  src={item.icon}
-                  alt={item.title}
-                  fill
-                  className="object-contain"
-                />
+            <div key={i} className="flex flex-col items-center text-center">
+              <div className="relative flex h-[100px] w-[100px] items-end justify-center">
+                {item.Icon ? (
+                  <item.Icon className="h-full w-full" />
+                ) : (
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    fill
+                    className="object-contain"
+                  />
+                )}
               </div>
 
-              <h4 className="mt-[64px] w-full leading-relaxed text-white/90">
+              <h4 className="mt-[20px] w-full leading-relaxed text-white/90">
                 {item.title}
               </h4>
               {item.description && (

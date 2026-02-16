@@ -1,8 +1,7 @@
-"use client"
-
 import Image, { StaticImageData } from "next/image"
 import { cn } from "@/lib/utils"
 import Heading from "@/components/Heading/Heading"
+import { ElementType } from "react"
 
 /* =========================
    Types
@@ -12,7 +11,8 @@ export interface FeatureSectionProps {
   subHeadingText?: string
   column?: 2 | 3 | 4
   features: {
-    imgSrc: StaticImageData | string
+    imgSrc?: StaticImageData | string
+    Icon?: ElementType // ✅ NEW (for SVG component)
     title: string
     description: string
   }[]
@@ -55,34 +55,47 @@ export default function FeatureSection({
 
         {/* Features Grid */}
         <div className={cn("mt-20 grid grid-cols-1 gap-14", columnClass)}>
-          {features.map((item, index) => (
-            <div key={index} className="flex flex-col">
-              {/* Icon / Image */}
-              <div className="mb-16 flex items-start justify-start">
-                <Image
-                  src={item.imgSrc}
-                  alt={item.title}
-                  width={120}
-                  height={120}
-                  className="h-[120px] w-[120px] object-contain object-center"
+          {features.map((item, index) => {
+            const IconComponent = item.Icon
+            console.log(IconComponent)
+            return (
+              <div key={index} className="flex flex-col">
+                {/* Icon / Image */}
+                <div className="mb-[30px] flex items-start justify-start">
+                  {/* ✅ If SVG Component */}
+                  {(IconComponent && (
+                    <div className="servicesFeatureIcon h-[80px] w-[80px]">
+                      <IconComponent />
+                    </div>
+                  )) ||
+                    /* ✅ Else normal Image */
+                    (item.imgSrc && (
+                      <Image
+                        src={item.imgSrc}
+                        alt={item.title}
+                        width={80}
+                        height={80}
+                        className="h-[80px] w-[80px] object-contain object-center"
+                      />
+                    ))}
+                </div>
+
+                {/* Title */}
+                <Heading
+                  headingTag="h4"
+                  content={item.title}
+                  className="mb-3 text-start text-white"
+                />
+
+                {/* Description */}
+                <Heading
+                  headingTag="p"
+                  content={item.description}
+                  className="text-start text-white/70"
                 />
               </div>
-
-              {/* Title */}
-              <Heading
-                headingTag="h4"
-                content={item.title}
-                className="mb-3 text-start text-white"
-              />
-
-              {/* Description */}
-              <Heading
-                headingTag="p"
-                content={item.description}
-                className="text-start text-white/70"
-              />
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>

@@ -6,14 +6,20 @@ import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
-import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
-import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
-import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
 
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
+// import pwaIcon1 from "@/assets/pwa-development/pwa-migration.svg"
+// import pwaIcon2 from "@/assets/pwa-development/pwa-migration.svg"
+// import pwaIcon3 from "@/assets/pwa-development/secure-pwa-development.svg"
+// import pwaIcon4 from "@/assets/pwa-development/fast-loading.svg"
+// import pwaIcon5 from "@/assets/pwa-development/ui-ux.svg"
+// import pwaIcon6 from "@/assets/pwa-development/qa.svg"
+
+import PwaIcon1 from "@/components/ServicesSvg/Pwa/PwaIcon1"
+import PwaIcon2 from "@/components/ServicesSvg/Pwa/PwaIcon2"
+import PwaIcon3 from "@/components/ServicesSvg/Pwa/PwaIcon3"
+import PwaIcon4 from "@/components/ServicesSvg/Pwa/PwaIcon4"
+import PwaIcon5 from "@/components/ServicesSvg/Pwa/PwaIcon5"
+import PwaIcon6 from "@/components/ServicesSvg/Pwa/PwaIcon6"
 
 export const pwa: PageData = {
   hero: {
@@ -90,38 +96,44 @@ export const pwa: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: PwaIcon1,
+      imgSrc: "",
       title: "Custom PWA Development",
       description:
         "Our custom PWA development services are some of the most affordable PWA development services in India. We ensure each aspect of your PWA is optimised for speed and performance across devices with custom code that’s built as per your business requirements and not templates.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: PwaIcon2,
+      imgSrc: "",
       title: "PWA Migration",
       description:
         "Our PWA migration services in India are curated to help businesses transform existing applications into full-featured PWAs. We ensure each application has its unique set of features, while being perfectly compliant across devices and platforms. Best of all? Our service retains the existing design and data seamlessly.",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: PwaIcon3,
+      imgSrc: "",
       title: "Secure PWA Development",
       description:
         "Backend security is one of the most crucial aspects of PWA development. That’s why we offer the most trusted secure PWA development service in India at Moonstack. We ensure your code is secure, and specifically, user information and backend data are safe against breaches.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: PwaIcon4,
+      imgSrc: "",
       title: "Fast Loading PWA Development",
       description:
         "Fine-tuning the performance of a PWA we’re developing is a major part of our backend process. That’s why we’re the premier provider of fast-loading PWA development service in India. We take loading time very seriously while ensuring that our responsive PWA development service in India is able to offer a holistic solution to our clients.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: PwaIcon5,
+      imgSrc: "",
       title: "UI/UX Design for PWAs",
       description:
         "Creating a web app with an immaculate user experience is at the cornerstone of our PWA design and development services in India at Moonstack. We ensure clean navigation and accessibility in all apps we develop across devices, ensuring perfect harmony with our cross-platform PWA development services in India.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: PwaIcon6,
+      imgSrc: "",
       title: "QA & Deployment",
       description:
         "Whether it is deployment assistance and rigorous testing, if you’re looking to hire PWA developers in India, Moonstack can be your help. We handle the entire PWA lifecycle to ensure your app is performing optimally at all times.",

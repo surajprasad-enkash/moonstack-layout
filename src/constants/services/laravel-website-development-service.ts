@@ -16,6 +16,19 @@ import delivery from "@/assets/app-development-images/guarante.webp"
 import collaboration from "@/assets/app-development-images/flexible.webp"
 import { color } from "framer-motion"
 
+import laravelIcon1 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon1"
+import laravelIcon2 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon2"
+import laravelIcon3 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon3"
+import laravelIcon4 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon4"
+import laravelIcon5 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon5"
+import laravelIcon6 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon6"
+import laravelIcon7 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon7"
+import laravelIcon8 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon8"
+import laravelIcon9 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon9"
+import laravelIcon10 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon10"
+import laravelIcon11 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon11"
+import laravelIcon12 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon12"
+
 export const laravel: PageData = {
   hero: {
     title: [
@@ -92,38 +105,44 @@ export const laravel: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: laravelIcon1,
+      imgSrc: "",
       title: "Laravel Consulting Services",
       description:
         "Bring your idea into reality with the right strategy and roadmap with Laravel web experts. Our Moonstack’s expert Laravel consulting professionals will understand your business needs and provide you with the right development strategy to deliver secure and scalable Laravel solutions in the market.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: laravelIcon2,
+      imgSrc: "",
       title: "Custom Laravel Website Development Service",
       description:
         "We build high performance, secure, and functional custom Laravel web apps in India. We develop custom  Laravel websites for clients as per their business requirements. Our Laravel web development experts understand the gap in your operational process  and integrate modern features to meet latest business demands. ",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: laravelIcon3,
+      imgSrc: "",
       title: "Laravel Custom  E-Commerce Development Services ",
       description:
         "Grow your online presence with Laravel ecommerce development service in India. We build high performance and secure custom e-commerce solutions integrated with advanced functionalities and deliver smooth shopping experiences to customers. Our team's main aim is to increase website conversions on your websites.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: laravelIcon4,
+      imgSrc: "",
       title: "Laravel UI/UX Designing Services ",
       description:
         "Our architect designers create interactive and engaging designs for our customers. We hold expertise with custom designing in which we bring your business brand identity to the real world and connect with customers. At Moonstack, our designers create interactive designs with easy to use aspects.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: laravelIcon5,
+      imgSrc: "",
       title: "Laravel API Integration Services",
       description:
         "Extend your web and mobile app functionalities with seamless laravel REST API development service in India by partnering with the best Laravel development agency. We integrate Laravel web solutions with third party services via API such as secure payment gateway, internal systems, and many more. ",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: laravelIcon6,
+      imgSrc: "",
       title: "Laravel Maintenance and Support Services ",
       description:
         "We offer end to end Laravel maintenance and support services. With our expert Laravel team, we run Laravel web solutions smoothly without any errors. We provide constant updates, optimize performance, and fix bugs to run solutions smoothly and deliver long term business commitment. ",
@@ -317,6 +336,7 @@ export const laravel: PageData = {
         id: 1,
         title: "Decade of Experience",
         icon: collaboration.src,
+        Icon: laravelIcon7,
         description:
           "Our Laravel experts have decades of experience that allows them to meet all clients' needs. Laravel coders have delivered scalable, secure, and high performance web apps with advanced integrated functionalities.",
       },
@@ -324,6 +344,7 @@ export const laravel: PageData = {
         id: 2,
         title: "Custom Solutions for Every Business",
         icon: collaboration.src,
+        Icon: laravelIcon8,
         description:
           "We have delivered 450+ custom web development solutions across the world. Our professional Laravel experts have built high performance, scalable different solutions specifically designed for different business needs.",
       },
@@ -331,6 +352,7 @@ export const laravel: PageData = {
         id: 3,
         title: "End to End Laravel Development Services",
         icon: collaboration.src,
+        Icon: laravelIcon9,
         description:
           "Delivering end to end Laravel development services to our clients. From consultation to development to migration - Moonstack is known as a one stop solution for all our client’s Laravel web development needs.",
       },
@@ -338,6 +360,7 @@ export const laravel: PageData = {
         id: 4,
         title: "Transparent Communication",
         icon: collaboration.src,
+        Icon: laravelIcon10,
         description:
           "At Moonstack, we maintain open communication with our clients with constant updates, demos, and progress reports that ensure us to stay connected with our customers. Moreover, that also allows us to understand each other's mindset in a better way.",
       },
@@ -345,6 +368,7 @@ export const laravel: PageData = {
         id: 5,
         title: "Confidential Details",
         icon: collaboration.src,
+        Icon: laravelIcon11,
         description:
           "Every project idea is unique - we understand the importance of your business module. We keep all your information fully secure and confidential with us. Our team keeps all details to them, and in any case we don’t leak any of your project ideas to third parties.",
       },
@@ -352,6 +376,7 @@ export const laravel: PageData = {
         id: 6,
         title: "Creative and Business oriented solutions",
         icon: collaboration.src,
+        Icon: laravelIcon12,
         description:
           "We just don’t build Laravel solutions only for the web development purpose. At Moonstack, we build business oriented solutions that align with your business needs and attract users with advanced based next generation features.",
       },

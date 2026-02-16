@@ -1,15 +1,16 @@
-"use client"
+// "use client"
 
 import Link from "next/link"
-import Image from "next/image"
+
 import { FiArrowRight } from "react-icons/fi"
 import Heading from "@/components/Heading/Heading"
+import { ElementType } from "react"
 
 interface AIProductItem {
   title: string
   description: string
   href?: string
-  icon?: string
+  Icon?: ElementType
   gradient: string
 }
 interface HeadingItem {
@@ -27,7 +28,7 @@ export default function AIProductsGrid({
   items,
 }: AIProductsGridProps) {
   return (
-    <section className="relative px-[20px]">
+    <section className="relative z-[1] px-[20px]">
       <div className="container mx-auto">
         {/* HEADING */}
         <Heading
@@ -45,14 +46,9 @@ export default function AIProductsGrid({
               style={item.gradient ? { background: item.gradient } : undefined}
             >
               {/* ICON */}
-              {item.icon && (
-                <div className="mb-[14px]">
-                  <Image
-                    src={item.icon}
-                    alt={`${item.title} icon`}
-                    width={40}
-                    height={40}
-                  />
+              {item.Icon && (
+                <div className="servicesFeatureIcon mb-[14px] h-[40px] w-[40px]">
+                  <item.Icon />
                 </div>
               )}
 

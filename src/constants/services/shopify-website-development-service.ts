@@ -10,11 +10,20 @@ import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
 import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
 import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
 
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
 import collaboration from "@/assets/app-development-images/flexible.webp"
-import { color } from "framer-motion"
+
+import ShopifyIcon1 from "@/components/ServicesSvg/ShopifyIcon/ShopifyIcon1"
+import ShopifyIcon2 from "@/components/ServicesSvg/ShopifyIcon/ShopifyIcon2"
+import ShopifyIcon3 from "@/components/ServicesSvg/ShopifyIcon/ShopifyIcon3"
+import ShopifyIcon4 from "@/components/ServicesSvg/ShopifyIcon/ShopifyIcon4"
+import ShopifyIcon5 from "@/components/ServicesSvg/ShopifyIcon/ShopifyIcon5"
+import ShopifyIcon6 from "@/components/ServicesSvg/ShopifyIcon/ShopifyIcon6"
+import ShopifyIcon7 from "@/components/ServicesSvg/ShopifyIcon/ShopifyIcon7"
+import ShopifyIcon8 from "@/components/ServicesSvg/ShopifyIcon/ShopifyIcon8"
+import ShopifyIcon9 from "@/components/ServicesSvg/ShopifyIcon/ShopifyIcon9"
+import ShopifyIcon10 from "@/components/ServicesSvg/ShopifyIcon/ShopifyIcon10"
+import ShopifyIcon11 from "@/components/ServicesSvg/ShopifyIcon/ShopifyIcon11"
+import ShopifyIcon12 from "@/components/ServicesSvg/ShopifyIcon/ShopifyIcon12"
 
 export const shopify: PageData = {
   hero: {
@@ -91,38 +100,44 @@ export const shopify: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: ShopifyIcon1,
+      imgSrc: "",
       title: "Shopify Consulting Services",
       description:
         "Discuss all your Shopify related project needs with top tech experts. With our expert Shopify consulting services, we allow businesses to set up, optimize, and grow their shopify business. We also offer theme customisation and conversion focused strategies that meet all modern tech guidelines as well as stay ahead in the market competition. ",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: ShopifyIcon2,
+      imgSrc: "",
       title: "Shopify Set up and Product Import",
       description:
         "We help you in the complete Shopify store set up that reflects fully professional and with an appealing user interface. With our experts, we also offer seamless product import with accurate information including product description, prices, variants, and many more things. Experts focus is to set up modern error free stores with more conversions and easy navigation.",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: ShopifyIcon3,
+      imgSrc: "",
       title: "Shopify Designing Services",
       description:
         "Grow your online store with stunning and engaging user interface. Our expert Shopify team builds modern, mobile friendly, and user centric designs for the users. We focus to reflect on brand identity that can connect with your customers and increase conversion rates. Our designs are easy to use and deliver a next generation shopping experience to the users.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: ShopifyIcon4,
+      imgSrc: "",
       title: "Shopify Third Party Integrations",
       description:
         "Extend your Shopify functionalities with third party integration services that will match your business needs. Our Shopify experts connect third party platforms via API that ensure to connect different platforms such as CRM, ERP, payment gateway, marketing tools that allow to automate the processes and improve efficiency. With Shopify API integration services developers can save time and effort as they don’t have to build features from scratch. ",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: ShopifyIcon5,
+      imgSrc: "",
       title: "Shopify Testing Services",
       description:
         "Launch your error free Shopify store bug free. We offer comprehensive testing services from manual to automated testing. In our Shopify development services in India we constantly conduct functionality checks, speed optimisation, UI/UX reviews, and payment gateway testing that ensure our clients enjoy seamless shopping experiences.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: ShopifyIcon6,
+      imgSrc: "",
       title: "Shopify Support and Maintenance Services",
       description:
         "We offer end to end Shopify support and maintenance services to our clients that ensure high performance optimization. Our team of Shopify coders are always available for 24*7 that helps to manage updates, constant back ups, and continuous monitoring. You can get reliable support and instant solutions for all your Shopify related needs that help you maintain your store with full security and maintain responsiveness.",
@@ -311,6 +326,7 @@ export const shopify: PageData = {
         id: 1,
         title: "Certified Shopify Experts",
         icon: collaboration.src,
+        Icon: ShopifyIcon7,
         description:
           "We have a team of certified Shopify experts who have hands-on experience with who understand custom themes and business systems. Our Shopify developers have managed several projects from planning to execution. They are proficient in delivering to deployment and solving all last minute complex challenges",
       },
@@ -318,6 +334,7 @@ export const shopify: PageData = {
         id: 2,
         title: "Custom Brand Focused",
         icon: collaboration.src,
+        Icon: ShopifyIcon8,
         description:
           "Our Shopify designers create the Shopify website that reflects your brand identity. We not only focus on development aspects that our team also put their ideology to truly reflect the brand identity. We make sure that your store stands out with a smooth navigation process that helps in better understanding and helps to increase conversion rates.",
       },
@@ -325,6 +342,7 @@ export const shopify: PageData = {
         id: 3,
         title: "Transparent process",
         icon: collaboration.src,
+        Icon: ShopifyIcon9,
         description:
           "We believe in keeping transparency with our clients. We work as a tech partner and share information with them. With us, whatever the strategy we create and team involvement and future roadmap everything we clearly discuss with our customers. We have created a process that ensures zero hidden surprises.",
       },
@@ -332,6 +350,7 @@ export const shopify: PageData = {
         id: 4,
         title: "On -Time Delivery",
         icon: collaboration.src,
+        Icon: ShopifyIcon10,
         description:
           "With our Shopify developers in India, we make sure that we will deliver all your tasks on time without any delay. Our team discusses internally and then only we provide deadlines to our clients. We believe in delivering all tasks on time or before deadlines. At Moonstack, deadlines are strictly followed without any quality compromise.",
       },
@@ -339,6 +358,7 @@ export const shopify: PageData = {
         id: 5,
         title: "Client Centric Approach",
         icon: collaboration.src,
+        Icon: ShopifyIcon11,
         description:
           "We work as one team and follow a client-centric approach. We listen to all your requirements and deliver all projects as per our clients' expectations. Our team is always available for open communication and we are always open to discuss our ideas and next steps that we will take for the project. All functionalities we decide for our clients will match all your standards and deliver next-generation experiences to clients.",
       },
@@ -346,6 +366,7 @@ export const shopify: PageData = {
         id: 6,
         title: "Long term Partnership ",
         icon: collaboration.src,
+        Icon: ShopifyIcon12,
         description:
           "At Moonstack, we are here not for limited functionality integration. We are for our clients to offer them long term partnership and stand with them in every thick and thin decision making. We focus on building relationships not only to fulfill technical requirements. We help you to grow your Shopify store for a long term. Our team doesn't deal with clients for a limited period, we offer long term support without any delay to them.",
       },

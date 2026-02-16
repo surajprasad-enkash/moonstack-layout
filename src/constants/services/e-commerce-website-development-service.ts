@@ -9,12 +9,20 @@ import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
 import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
 import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
-
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
 import collaboration from "@/assets/app-development-images/flexible.webp"
-import { color } from "framer-motion"
+
+import EcommerceIcon1 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon1"
+import EcommerceIcon2 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon2"
+import EcommerceIcon3 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon3"
+import EcommerceIcon4 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon4"
+import EcommerceIcon5 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon5"
+import EcommerceIcon6 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon6"
+import EcommerceIcon7 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon7"
+import EcommerceIcon8 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon8"
+import EcommerceIcon9 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon9"
+import EcommerceIcon10 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon10"
+import EcommerceIcon11 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon11"
+import EcommerceIcon12 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon12"
 
 export const ecommerce: PageData = {
   hero: {
@@ -98,38 +106,44 @@ export const ecommerce: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: EcommerceIcon1,
+      imgSrc: "",
       title: "Custom e-commerce website development  Services ",
       description:
         "We build e-commerce solutions for small business and large enterprises that are fully customised and align with the brand identity that deliver high performance and seamless shopping experience to the users. In e-commerce web development, we integrate advanced functionalities that offer next generation shopping experience to the users.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: EcommerceIcon2,
+      imgSrc: "",
       title: "E-commerce Designing Services ",
       description:
         "Moonstack creates user friendly, interactive, and engaging e-commerce solutions that reflect the brand identity and increase sales conversion. Professional ecommerce design company in India aim is to focus on delivering impressive designs that are based on 2D and 3D animations as well as easy to use. ",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: EcommerceIcon3,
+      imgSrc: "",
       title: "E-commerce API and Integration Services",
       description:
         "Add on the functionalities in your e-commerce solutions with mobile ecommerce website development in India. Our e-commerce developers integrate third party features via API that allow customers to experience a wide range of functionalities. Designers can integrate different tools such as  CRM, real time synchronization, and secure payment gateway platforms.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: EcommerceIcon4,
+      imgSrc: "",
       title: " E-commerce Testing Services ",
       description:
         "Before launching your e-commerce web solution in the market, make sure that your online store is fully secure and bug free. With our expert e-commerce web developers opt for manual and unit testing services for your e-commerce solutions that allow you to meet your clients expectations and exclude risk of failure.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: EcommerceIcon5,
+      imgSrc: "",
       title: "E-commerce Migration Services",
       description:
         "Transfer all your data from one platform to another without any technical hassle. We allow our clients to migrate all the data from existing platforms to others without losing any confidential internal data or records or even SEO ranking. Our e-commerce experts in Jaipur have defined the approach hassle free migrate the data from one to other.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: EcommerceIcon6,
+      imgSrc: "",
       title: "E-commerce Support and Maintenance Services ",
       description:
         "Our e-commerce coders offer full time support and maintenance services for our clients. We offer end to end support and maintenance services allowing e-commerce businesses to have tech partners, who detect bugs for 24/7 and resolve them on immediate basis. Along with this, experts keep e-commerce solutions updated with the latest technologies on a constant basis.",
@@ -323,6 +337,7 @@ export const ecommerce: PageData = {
         id: 1,
         title: " Experts E-commerce Developers",
         icon: collaboration.src,
+        Icon: EcommerceIcon7,
         description:
           "Being the leading e-commerce development company in India we have skilled e-commerce coders that build customised, high performance, and e-commerce solutions. With our highly skilled team, we guarantee to meet latest development standards as well deliver seamless shopping experiences.",
       },
@@ -330,6 +345,7 @@ export const ecommerce: PageData = {
         id: 2,
         title: "Customised e-commerce Business Solution",
         icon: collaboration.src,
+        Icon: EcommerceIcon8,
         description:
           "We develop customized e-commerce business solutions that match your business needs. Our secure ecommerce website developers in India create personalized e-commerce strategies that match brand identity and customer expectations.",
       },
@@ -337,6 +353,7 @@ export const ecommerce: PageData = {
         id: 3,
         title: " User Centric Designs",
         icon: collaboration.src,
+        Icon: EcommerceIcon9,
         description:
           "Our e-commerce developers team focuses on conversion focused design that not only looks appealing but also user centric. We create designs that are interactive and help to convert users to loyal customers. Our e-commerce designing services in India main aim is to meet the latest industry standards and deliver next generation experiences to customers.",
       },
@@ -344,6 +361,7 @@ export const ecommerce: PageData = {
         id: 4,
         title: "Hire E-Commerce Developers",
         icon: collaboration.src,
+        Icon: EcommerceIcon10,
         description:
           "With our advanced ecommerce development in India we offer you an opportunity to hire the best e-commerce developers in India that will allow you to hire part time, full time, and on hourly basis. We allow you to extend your e-commerce development team with the proficient designers and developers for your project.",
       },
@@ -351,6 +369,7 @@ export const ecommerce: PageData = {
         id: 5,
         title: "Transparent Process",
         icon: collaboration.src,
+        Icon: EcommerceIcon11,
         description:
           "Our e-commerce development team believes in a transparent process. We share all records and information with our clients in a transparent manner. In any case, we don’t hide anything from our customers. All the information is shared without any hiding parameters as we associate with business and believe to sort everything together. ",
       },
@@ -358,6 +377,7 @@ export const ecommerce: PageData = {
         id: 6,
         title: "Seamless Integration",
         icon: collaboration.src,
+        Icon: EcommerceIcon12,
         description:
           "At Moonstack, our e-commerce development team supports a seamless integration process. We provide seamless API integration that allows us to extend functionalities with third party advanced functionalities in less time and effort. We hold expertise with advanced seamless feature integration processes via API.",
       },

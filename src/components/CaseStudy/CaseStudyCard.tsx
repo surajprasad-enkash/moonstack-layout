@@ -50,7 +50,7 @@ export default function CaseStudyCard({ item, index }: Props) {
 
   return (
     <div
-      className={`relative w-full overflow-hidden rounded-[28px] rounded-tl-none p-[20px] pb-0 md:p-[72px] ${gradientClass}`}
+      className={`relative w-full overflow-hidden rounded-[28px] rounded-tl-none p-[20px] !pb-0 md:p-[72px] ${gradientClass}`}
     >
       <div className="gap-16 md:flex">
         {/* LEFT */}

@@ -540,7 +540,7 @@ export default function NewHeader() {
       <HeroVideoModal
         isOpen={open}
         onClose={closeVideo}
-        videoId="2r3ptkDEJ4o"
+        videoId="NVRVwo9ZRq8"
       />
       <ProjectInquiryModal
         isOpen={openPopup}

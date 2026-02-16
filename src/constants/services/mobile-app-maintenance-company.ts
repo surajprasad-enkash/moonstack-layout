@@ -10,10 +10,12 @@ import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
 import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
 import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
 
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
+import MamIcon1 from "@/components/ServicesSvg/MamIcon/MamIcon1"
+import MamIcon2 from "@/components/ServicesSvg/MamIcon/MamIcon2"
+import MamIcon3 from "@/components/ServicesSvg/MamIcon/MamIcon3"
+import MamIcon4 from "@/components/ServicesSvg/MamIcon/MamIcon4"
+import MamIcon5 from "@/components/ServicesSvg/MamIcon/MamIcon5"
+import MamIcon6 from "@/components/ServicesSvg/MamIcon/MamIcon6"
 
 export const app_maintenance: PageData = {
   hero: {
@@ -90,38 +92,44 @@ export const app_maintenance: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: MamIcon1,
+      imgSrc: "",
       title: "Performance Optimisation",
       description:
         "As a part of our Android app maintenance service in India and our mobile app troubleshooting service in India, we offer complete performance optimisation for the mobile apps we maintain. This includes removing bottlenecks and optimising backend processes.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: MamIcon2,
+      imgSrc: "",
       title: "Feature Improvements",
       description:
         "Moonstack offers the most thorough app updates and upgrades service in India. Our mobile app enhancement service in India can be used to refine design elements, improve usability, and enhance features based on user feedback.",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: MamIcon3,
+      imgSrc: "",
       title: "Security Improvements & Compliance",
       description:
         "Afraid of data breaches or corruption of user data? Avail of Moonstack’s app security maintenance services in India. We offer complete assistance in monitoring and fixing code vulnerabilities while ensuring OS and app store compatibility.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: MamIcon4,
+      imgSrc: "",
       title: "Bug Fixes",
       description:
         "Bugs can ruin the user experience of your app; that’s why you should try our mobile app bug fixing services in India. We offer quick debugging and issue-based resolution to minimise your app’s downtime during maintenance.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: MamIcon5,
+      imgSrc: "",
       title: "OS Update Compatibility",
       description:
         "We offer a proactive mobile app support service in India at Moonstack. This includes UI adjustments and API changes to match the latest OS updates and optimise app compatibility across devices.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: MamIcon6,
+      imgSrc: "",
       title: "Analytics & Reporting",
       description:
         "As a leading app maintenance agency, we help businesses with third-party mobile app maintenance services in India that are tailored to their needs. Our analytics and reporting services offer crucial insights on app performance and user behaviour, which can be used to optimise the app further.",

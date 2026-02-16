@@ -17,7 +17,33 @@ import img3 from "@/assets/industries/xp-3-p-500.webp"
 import img4 from "@/assets/industries/xp-4-p-500.webp"
 import AIProductsGrid from "@/components/Industries/AIProductsGrid"
 
-import icon from "@/assets/industries/icon/ai-p-icon.webp"
+// import icon from "@/assets/industries/icon/ai-p-icon.webp"
+
+// import icon1 from "@/assets/industries/icon/new-update/ai-chatbots.svg"
+// import icon2 from "@/assets/industries/icon/new-update/education.svg"
+// import icon3 from "@/assets/industries/icon/new-update/e-commerce.svg"
+// import icon4 from "@/assets/industries/icon/new-update/healthcare.svg"
+// import icon5 from "@/assets/industries/icon/new-update/finance.svg"
+// import icon6 from "@/assets/industries/icon/new-update/travel-hospital.svg"
+// import icon7 from "@/assets/industries/icon/new-update/retail.svg"
+// import icon8 from "@/assets/industries/icon/new-update/real-estate.svg"
+// import icon9 from "@/assets/industries/icon/new-update/logistics.svg"
+// import icon10 from "@/assets/industries/icon/new-update/media.svg"
+// import icon11 from "@/assets/industries/icon/new-update/legal.svg"
+// import icon12 from "@/assets/industries/icon/new-update/event.svg"
+
+import Icon1 from "@/components/Industries/Svg/AiChatbots"
+import Icon2 from "@/components/Industries/Svg/Education"
+import Icon3 from "@/components/Industries/Svg/ECommerce"
+import Icon4 from "@/components/Industries/Svg/Healthcare"
+import Icon5 from "@/components/Industries/Svg/Finance"
+import Icon6 from "@/components/Industries/Svg/TravelHospitality"
+import Icon7 from "@/components/Industries/Svg/Retail"
+import Icon8 from "@/components/Industries/Svg/RealEstate"
+import Icon9 from "@/components/Industries/Svg/LogisticsSupplyChain"
+import Icon10 from "@/components/Industries/Svg/Media"
+import Icon11 from "@/components/Industries/Svg/Legal"
+import Icon12 from "@/components/Industries/Svg/Event"
 
 import BusinessNeedsDesignSection from "@/components/Industries/BusinessNeedsDesignSection"
 import TrustBanner from "@/components/Industries/TrustBanner"
@@ -122,7 +148,7 @@ const Industries = () => {
               title: "AI Chatbots",
               description:
                 "Ensuring your chatbot engages users and provides meaningful assistance.",
-              icon: icon.src,
+              Icon: Icon1,
               href: "/contact-us",
               gradient: "linear-gradient(91deg, #acffc5 -61.77%, #FFF 87.06%)",
             },
@@ -130,7 +156,7 @@ const Industries = () => {
               title: "Education",
               description:
                 "Learning platforms, e-learning tools, and student management software.",
-              icon: icon.src,
+              Icon: Icon2,
               href: "/contact-us",
               gradient:
                 "linear-gradient(91deg, #80cab6 -61.77%, #FFF 87.06%), #1C1C1C",
@@ -139,7 +165,7 @@ const Industries = () => {
               title: "E-commerce",
               description:
                 "Online platforms for buying and selling products with seamless UX.",
-              icon: icon.src,
+              Icon: Icon3,
               href: "/contact-us",
               gradient: "linear-gradient(91deg, #acffc5 -61.77%, #FFF 87.06%)",
             },
@@ -147,7 +173,7 @@ const Industries = () => {
               title: "Healthcare",
               description:
                 "Patient care solutions, telemedicine, and hospital management systems.",
-              icon: icon.src,
+              Icon: Icon4,
               href: "/contact-us",
               gradient:
                 "linear-gradient(91deg, #80cab6 -61.77%, #FFF 87.06%), #1C1C1C",
@@ -156,7 +182,7 @@ const Industries = () => {
               title: "Finance",
               description:
                 "Banking apps, investment tools, and financial management software.",
-              icon: icon.src,
+              Icon: Icon5,
               href: "/contact-us",
               gradient: "linear-gradient(91deg, #acffc5 -61.77%, #FFF 87.06%)",
             },
@@ -164,7 +190,7 @@ const Industries = () => {
               title: "Travel & Hospitality",
               description:
                 "Booking platforms, travel planning apps, and hotel management solutions.",
-              icon: icon.src,
+              Icon: Icon6,
               href: "/contact-us",
               gradient:
                 "linear-gradient(91deg, #80cab6 -61.77%, #FFF 87.06%), #1C1C1C",
@@ -173,7 +199,7 @@ const Industries = () => {
               title: "Retail",
               description:
                 "Store management, POS solutions, and omnichannel experiences.",
-              icon: icon.src,
+              Icon: Icon7,
               href: "/contact-us",
               gradient: "linear-gradient(91deg, #acffc5 -61.77%, #FFF 87.06%)",
             },
@@ -181,7 +207,7 @@ const Industries = () => {
               title: "Real Estate",
               description:
                 "Property listing platforms, virtual tours, and real estate management tools.",
-              icon: icon.src,
+              Icon: Icon8,
               href: "/contact-us",
               gradient:
                 "linear-gradient(91deg, #80cab6 -61.77%, #FFF 87.06%), #1C1C1C",
@@ -190,7 +216,7 @@ const Industries = () => {
               title: "Logistics & Supply Chain",
               description:
                 "Shipping automation, route optimization, and inventory tracking.",
-              icon: icon.src,
+              Icon: Icon9,
               href: "/contact-us",
               gradient: "linear-gradient(91deg, #acffc5 -61.77%, #FFF 87.06%)",
             },
@@ -198,7 +224,7 @@ const Industries = () => {
               title: "Media & Entertainment",
               description:
                 "Streaming platforms, content management, and recommendation engines.",
-              icon: icon.src,
+              Icon: Icon10,
               href: "/contact-us",
               gradient:
                 "linear-gradient(91deg, #80cab6 -61.77%, #FFF 87.06%), #1C1C1C",
@@ -207,7 +233,7 @@ const Industries = () => {
               title: "Legal & Compliance",
               description:
                 "Case management, document automation, and compliance tracking tools.",
-              icon: icon.src,
+              Icon: Icon11,
               href: "/contact-us",
               gradient: "linear-gradient(91deg, #acffc5 -61.77%, #FFF 87.06%)",
             },
@@ -215,7 +241,7 @@ const Industries = () => {
               title: "Event and Planner",
               description:
                 "Powering high-performance websites for the creators of unforgettable experiences.",
-              icon: icon.src,
+              Icon: Icon12,
               href: "/contact-us",
               gradient:
                 "linear-gradient(91deg, #80cab6 -61.77%, #FFF 87.06%), #1C1C1C",

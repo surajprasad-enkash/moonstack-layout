@@ -10,10 +10,12 @@ import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
 import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
 import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
 
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
+import MadIcon1 from "@/components/ServicesSvg/MadIcon/MadIcon1"
+import MadIcon2 from "@/components/ServicesSvg/MadIcon/MadIcon2"
+import MadIcon3 from "@/components/ServicesSvg/MadIcon/MadIcon3"
+import MadIcon4 from "@/components/ServicesSvg/MadIcon/MadIcon4"
+import MadIcon5 from "@/components/ServicesSvg/MadIcon/MadIcon5"
+import MadIcon6 from "@/components/ServicesSvg/MadIcon/MadIcon6"
 
 export const mobileAppDev: PageData = {
   hero: {
@@ -93,38 +95,44 @@ export const mobileAppDev: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: MadIcon1,
+      imgSrc: "",
       title: "Android App Development",
       description:
         "Moonstack offers high-performance mobile app development services in India. Our mobile application developers in India work alongside top designers to create a consistent front-end design for your Android applications.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: MadIcon2,
+      imgSrc: "",
       title: "iOS App Development",
       description:
         "Moonstack offers the best mobile app development services in India for iOS development. Our team of top mobile app developers in India is experienced in developing iOS applications for all Apple devices.",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: MadIcon3,
+      imgSrc: "",
       title: "React Native App Development",
       description:
         "If you’re looking for affordable mobile app development services in India, our React native app development services are perfect for you. This is one of our most sought-after services for mobile app design and development in India.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: MadIcon4,
+      imgSrc: "",
       title: "Flutter app development",
       description:
         "Launch Faster & Scale Smarter with Flutter App Solutions: Don't let platform boundaries slow your growth. Our Flutter development service allows you to reach both Android and iOS users simultaneously with 50% faster development cycles",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: MadIcon5,
+      imgSrc: "",
       title: "Progressive Web App (PWA) Development",
       description:
         "Our on-demand mobile app development service in India for progressive web apps is reliable, secure, and offers unmatched functionality with minimal friction for users.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: MadIcon6,
+      imgSrc: "",
       title: "App Maintenance & Post Deployment Support",
       description:
         "As a part of our mobile app development for startups in India, at Moonstack, we offer ongoing app maintenance and post-deployment support.",

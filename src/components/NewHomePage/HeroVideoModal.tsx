@@ -36,7 +36,7 @@ export default function HeroVideoModal({
       <div className="relative mx-4 aspect-video w-full max-w-4xl overflow-hidden rounded-lg bg-black">
         <iframe
           className="h-full w-full"
-          src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+          src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1`}
           allow="autoplay; encrypted-media"
           allowFullScreen
         />

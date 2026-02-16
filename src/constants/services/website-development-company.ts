@@ -10,11 +10,20 @@ import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
 import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
 import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
 
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
 import collaboration from "@/assets/app-development-images/flexible.webp"
-import { color } from "framer-motion"
+
+import WebDevIcon1 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon1"
+import WebDevIcon2 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon2"
+import WebDevIcon3 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon3"
+import WebDevIcon4 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon4"
+import WebDevIcon5 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon5"
+import WebDevIcon6 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon6"
+import WebDevIcon7 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon7"
+import WebDevIcon8 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon8"
+import WebDevIcon9 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon9"
+import WebDevIcon10 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon10"
+import WebDevIcon11 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon11"
+import WebDevIcon12 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon12"
 
 export const websiteDevelopment: PageData = {
   hero: {
@@ -92,38 +101,44 @@ export const websiteDevelopment: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: WebDevIcon1,
+      imgSrc: "",
       title: "Custom website development",
       description:
         "Our web programmers develop custom websites for start ups to large enterprises that meet all business needs. Our web developers in India have a strategic approach that ensures to deliver high performance and responsive mobile friendly websites for your clients.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: WebDevIcon2,
+      imgSrc: "",
       title: "Website Designing Services",
       description:
         "We focus on UI and UX website designing services that allow designers to create interactive and engaging for our clients. Our web designers create easy to use and eye catchy designs that reflect your business brand presence.",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: WebDevIcon3,
+      imgSrc: "",
       title: "Website Backend Services",
       description:
         "Our backend website experts build a strong backend digital ecosystem with modern technologies and frameworks such as React, Node.js , and many more. With the right tech stack we deliver high performance and response websites to our clients.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: WebDevIcon4,
+      imgSrc: "",
       title: "Website Frontend Services",
       description:
         "Our team creates an engaging and impressive frontend based user interface. We fully focus on user centric and interactive designs that ensure us to connect with the audiences. Our frontend development strategies are designed to deliver highly engaging and responsive experiences.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: WebDevIcon5,
+      imgSrc: "",
       title: "Website Testing and Migration Service",
       description:
         "Before launching websites our team opt for end to end testing and migration services. We opt for manual as well automotive testing with advanced tools for error free launching. Moreover, we also hold expertise in migration website services.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: WebDevIcon6,
+      imgSrc: "",
       title: "Website Support and Maintenance",
       description:
         "Our website development team is available for our clients 24/7. We keep your websites fully responsive, detect bugs on the initial stage, and fix issues on an instant basis to avoid any future complex challenges.",
@@ -310,6 +325,7 @@ export const websiteDevelopment: PageData = {
         id: 1,
         title: "Decade of Experience",
         icon: collaboration.src,
+        Icon: WebDevIcon7,
         description:
           "Moonstack has delivered 450+ projects across different industries. Our affordable website development service India  is in high demand among start ups, mid sized, and large enterprises.",
       },
@@ -317,6 +333,7 @@ export const websiteDevelopment: PageData = {
         id: 2,
         title: "Data Security & Compliance",
         icon: collaboration.src,
+        Icon: WebDevIcon8,
         description:
           "We don’t only build websites to deliver. At Moonstack - leading website development company in Jaipur,  we know the importance of data security and to match the standards and protection with essential compliance.",
       },
@@ -324,6 +341,7 @@ export const websiteDevelopment: PageData = {
         id: 3,
         title: "Next Generation Technology Stack",
         icon: collaboration.src,
+        Icon: WebDevIcon9,
         description:
           "Our secure website development service provider opt for the modern and latest technology stack AI and Machine Learning. Moreover, in languages we opt for React, Next.js , and Laravel that allow us to launch powerful and high performance websites.",
       },
@@ -331,6 +349,7 @@ export const websiteDevelopment: PageData = {
         id: 4,
         title: "Custom web Solutions ",
         icon: collaboration.src,
+        Icon: WebDevIcon10,
         description:
           "Opt for custom business website development service in India. We offer end to end custom website solutions for our clients that includes consultation to post support. Our team builds custom websites that align with your business goals. ",
       },
@@ -338,6 +357,7 @@ export const websiteDevelopment: PageData = {
         id: 5,
         title: "Confidential Details",
         icon: collaboration.src,
+        Icon: WebDevIcon11,
         description:
           "We are considered as one of the  top website developments for small business in India. Our team keeps all your ideas and execution strategies fully secure and 100% confidential with us only. In any case, we will not share your idea or any details to any third party.",
       },
@@ -345,6 +365,7 @@ export const websiteDevelopment: PageData = {
         id: 6,
         title: "Post Launch Support ",
         icon: collaboration.src,
+        Icon: WebDevIcon12,
         description:
           "For us we don’t only deliver websites, but we partner as the top website development service provider. After launching the start ups to large enterprise level websites, we provide post launch support to our clients. We always stand with them to match the latest tech innovations and meet their customer expectations.",
       },

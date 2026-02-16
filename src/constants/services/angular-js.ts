@@ -9,12 +9,20 @@ import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
 import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
 import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
-
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
 import collaboration from "@/assets/app-development-images/flexible.webp"
-import { color } from "framer-motion"
+
+import AngularJsIcon1 from "@/components/ServicesSvg/AngularJSIcon/AngularJSIcon1"
+import AngularJsIcon2 from "@/components/ServicesSvg/AngularJSIcon/AngularJSIcon2"
+import AngularJsIcon3 from "@/components/ServicesSvg/AngularJSIcon/AngularJSIcon3"
+import AngularJsIcon4 from "@/components/ServicesSvg/AngularJSIcon/AngularJSIcon4"
+import AngularJsIcon5 from "@/components/ServicesSvg/AngularJSIcon/AngularJSIcon5"
+import AngularJsIcon6 from "@/components/ServicesSvg/AngularJSIcon/AngularJSIcon6"
+import AngularJsIcon7 from "@/components/ServicesSvg/AngularJSIcon/AngularJSIcon7"
+import AngularJsIcon8 from "@/components/ServicesSvg/AngularJSIcon/AngularJSIcon8"
+import AngularJsIcon9 from "@/components/ServicesSvg/AngularJSIcon/AngularJSIcon9"
+import AngularJsIcon10 from "@/components/ServicesSvg/AngularJSIcon/AngularJSIcon10"
+import AngularJsIcon11 from "@/components/ServicesSvg/AngularJSIcon/AngularJSIcon11"
+import AngularJsIcon12 from "@/components/ServicesSvg/AngularJSIcon/AngularJSIcon12"
 
 export const angularJs: PageData = {
   hero: {
@@ -92,38 +100,44 @@ export const angularJs: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: AngularJsIcon1,
+      imgSrc: "",
       title: "Custom AngularJS Web Application Development",
       description:
         "Our AngularJS web development team builds powerful web applications that are customised specifically to meet different business needs. We design high-performance, scalable Angular web solutions that ensure a fast development cycle and deliver a seamless user experience across devices. At Moonstack, we understand our clients' requirements and integrate essential functionalities that match their expectations.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: AngularJsIcon2,
+      imgSrc: "",
       title: "Single Page Application (SPA) Development",
       description:
         "Launch your powerful, interactive, and user-friendly Angular-based single-page applications. Our Angular web developers in India load content dynamically without reloading pages. With our AngularJS experts, we focus to build single page apps that offer high performance, secure architecture, and smooth navigation to users that deliver app like experience directly in the browser. ",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: AngularJsIcon3,
+      imgSrc: "",
       title: "AngularJS UI/UX Design",
       description:
         "Create interactive and engaging AngularJS designs to deliver a user-centric and easy-to-use interface. At Moonstack, our design architect delivers responsive AngularJS designs for several platforms that provide smooth interactions. We adopt the latest tools and focus on innovations to improve user experience and retention. Our team focuses on scalability and accessibility to meet the market trends and stay ahead in the competitive market. ",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: AngularJsIcon4,
+      imgSrc: "",
       title: "API & Third-Party Integration",
       description:
         "Extend add-on functionalities with third-party integration services via a simple API with REST APIs. Moonstack Angular development team have hands on experience to integrate third-party features, including payment gateways, CRM systems, cloud services, and many more functionalities to enhance user experience. We opt for API integration services that are highly secure, reliable, and offer high performance experience.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: AngularJsIcon5,
+      imgSrc: "",
       title: "AngularJS Migration and Upgradation",
       description:
         "Transfer your existing data from one platform to another securely without losing any data or information. We allow businesses to leverage the benefits of modernizing legacy applications with minimal risk and downtime without losing any data. Along with this, our AngularJS team of experts upgrades outdated versions to the latest versions that deliver improved performance, better security, and compatibility with modern technologies. ",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: AngularJsIcon6,
+      imgSrc: "",
       title: "AngularJS Support and Maintenance ",
       description:
         "Moonstack team offers constant AngularJS support and maintenance services that keep web apps fully secure and up to market trends. Our team identifies and fixes bugs instantly, which also ensure to performance optimization, security enhancements, and feature updates. We offer proactive monitoring and support 24/7, so your business doesn't face anydowntime or any loss and performs best in the market. ",
@@ -263,6 +277,7 @@ export const angularJs: PageData = {
       {
         id: 1,
         title: "Custom AngularJS Development",
+        Icon: AngularJsIcon7,
         icon: collaboration.src,
         description:
           "We provide custom AngularJS development services that are tailored to our customers' expectations. Our AngularJS experts build custom web solutions from scratch and integrate features that are required for the business. We focus on the company's UI/UX designing services and development needs that opt for an agile process that ensures the delivery of successful AngularJS solutions in the market.",
@@ -270,6 +285,7 @@ export const angularJs: PageData = {
       {
         id: 2,
         title: "Hire AngularJS developers",
+        Icon: AngularJsIcon8,
         icon: collaboration.src,
         description:
           "Hire AngularJS developers for your project on a full-time, part-time, and hourly basis that match your business needs. We have designed flexible hiring models that provide overall control of the resources. In the dedicated hours, Moonstack professional developers will work only on your project and focus on delivering high-performance solutions in the market. Our hiring model of AngularJS developers is based on transparent communication and seamless collaboration.",
@@ -277,6 +293,7 @@ export const angularJs: PageData = {
       {
         id: 3,
         title: "Transparent Communication",
+        Icon: AngularJsIcon9,
         icon: collaboration.src,
         description:
           "Communication is the success factor of every business. At Moonstack, we believe in maintaining clear and open communication at every stage of the development process. We provide constant updates, progress reports, and feedback loops that keep our clients fully aligned with the project details. We ensure clarity and perfect deliverables. Here, we don’t believe in hidden surprises but honest trust and instant responses.",
@@ -284,6 +301,7 @@ export const angularJs: PageData = {
       {
         id: 4,
         title: "Timely Project Delivery",
+        Icon: AngularJsIcon10,
         icon: collaboration.src,
         description:
           "We believe in timely project delivery with clear milestones and realistic timelines. At Moonstack, we have defined a development process with agile methodology that ensures the delivery of successful AngularJS solutions without compromising on quality. Our foremost quality is to prioritise our clients’ workflow in a way that we deliver high-performance solutions with regular monitoring that ensures identifying issues at an early stage and resolving them instantly. ",
@@ -291,6 +309,7 @@ export const angularJs: PageData = {
       {
         id: 5,
         title: "Dedicated Support and Maintenance",
+        Icon: AngularJsIcon11,
         icon: collaboration.src,
         description:
           "At Moonstack - leading AngularJS development company, we offer full dedicated support and maintenance services to our clients. We provide end-to-end dedicated support and maintenance to start-ups to large enterprises so that our AngularJS solutions run smoothly. From fixing bugs to performance enhancements, we manage all processes easily, and it's our responsibility to keep over all solution up to date with quick response and minimal downtime. For all technical support, you can count on us without even a second thought.",
@@ -298,6 +317,7 @@ export const angularJs: PageData = {
       {
         id: 6,
         title: "Experienced AngularJS developers",
+        Icon: AngularJsIcon12,
         icon: collaboration.src,
         description:
           "We have a blend of skilled AngularJS experts who have hands-on experience with strong technical expertise and have worked on diverse projects. All our AngularJS coders follow best coding practises to meet industry standards. Our main aim is to write clean, maintainable, and efficient code. By partnering with us, you will get your reliable professional AngularJS coders who reduce development time, make the best tech decisions, and reduce overall technical risks.",
