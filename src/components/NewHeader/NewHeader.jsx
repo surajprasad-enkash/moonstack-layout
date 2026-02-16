@@ -77,7 +77,7 @@ export default function NewHeader() {
         subtitle: "Fast interfaces built with React",
       },
       {
-        title: "E-Comm Development",
+        title: "E-Com Development",
         subtitle: "Get Secure, scalable solutions",
         Icon: Ecomm,
         url: "/services/ecommerce-website-development-company",
