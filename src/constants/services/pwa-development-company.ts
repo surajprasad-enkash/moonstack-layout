@@ -7,13 +7,6 @@ import androidContactbannerImg from "@/assets/app-development-images/contact-app
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 
-// import pwaIcon1 from "@/assets/pwa-development/pwa-migration.svg"
-// import pwaIcon2 from "@/assets/pwa-development/pwa-migration.svg"
-// import pwaIcon3 from "@/assets/pwa-development/secure-pwa-development.svg"
-// import pwaIcon4 from "@/assets/pwa-development/fast-loading.svg"
-// import pwaIcon5 from "@/assets/pwa-development/ui-ux.svg"
-// import pwaIcon6 from "@/assets/pwa-development/qa.svg"
-
 import PwaIcon1 from "@/components/ServicesSvg/Pwa/PwaIcon1"
 import PwaIcon2 from "@/components/ServicesSvg/Pwa/PwaIcon2"
 import PwaIcon3 from "@/components/ServicesSvg/Pwa/PwaIcon3"

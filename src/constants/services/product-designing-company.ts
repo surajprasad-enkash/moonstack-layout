@@ -5,11 +5,6 @@ import nativeBannerImg from "@/assets/app-development-images/native-banner-img.w
 import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
-import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
-import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
-import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
 
 import Icon1 from "@/components/ServicesSvg/ProductDesigningIcon/ProductDesigningIcon1"
 import Icon2 from "@/components/ServicesSvg/ProductDesigningIcon/ProductDesigningIcon2"

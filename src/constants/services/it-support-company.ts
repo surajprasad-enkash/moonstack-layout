@@ -5,10 +5,6 @@ import nativeBannerImg from "@/assets/app-development-images/native-banner-img.w
 import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
-import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
-import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
-import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
 
 import Icon1 from "@/components/ServicesSvg/ItSupportIcon/ItSupportIcon1"
 import Icon2 from "@/components/ServicesSvg/ItSupportIcon/ItSupportIcon2"
@@ -243,37 +239,12 @@ export const it_support: PageData = {
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
+
   qualitySectionData: {
     heading: [],
     description: "",
     columsClass: "lg:grid-cols-3",
-    list: [
-      // {
-      //   id: 1,
-      //   title: "Decade of Experience",
-      //   icon: collaboration.src,
-      //   description:
-      //     "Our Laravel experts have decades of experience that allows them to meet all clients' needs. Laravel coders have delivered scalable, secure, and high performance web apps with advanced integrated functionalities.",
-      // },
-    ],
+    list: [],
   },
   accordionData: [
     {

@@ -5,11 +5,6 @@ import nativeBannerImg from "@/assets/app-development-images/native-banner-img.w
 import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
-import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
-import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
-import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
-
 import Icon1 from "@/components/ServicesSvg/CloudIcon/CloudIcon1"
 import Icon2 from "@/components/ServicesSvg/CloudIcon/CloudIcon2"
 import Icon3 from "@/components/ServicesSvg/CloudIcon/CloudIcon3"
@@ -220,24 +215,7 @@ export const cloud: PageData = {
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
+
   qualitySectionData: {
     heading: [
       {
