@@ -14,7 +14,7 @@ import about from "@/assets/header/about-us.svg";
 import logo from "@/assets/logo-white.png";
 import blog from "@/assets/header/blog.svg";
 import case_study from "@/assets/header/case-studies.svg";
-import career from "@/assets/header/carrer.svg";
+
 
 import appDevIcon2 from "@/assets/header/Ios.svg";
 import appDevIcon3 from "@/assets/header/pwa.svg";
@@ -31,9 +31,6 @@ import webDevIcon5 from "@/assets/header/web-designer.svg";
 // frontend development icon
 import frontDevIcon1 from "@/assets/header/frontendIcon/angularjs.svg";
 
-import frontDevIcon3 from "@/assets/header/frontendIcon/vue-js-svgrepo-com.svg";
-
-import frontDevIcon5 from "@/assets/header/frontendIcon/javascript-fill-svgrepo-com.svg";
 import frontDevIcon6 from "@/assets/header/frontendIcon/react-svgrepo-com.svg";
 
 // Backend development icon
@@ -45,10 +42,24 @@ import backendicon7 from "@/assets/header/backend/java-filled.svg";
 import backendicon8 from "@/assets/header/backend/php.svg";
 
 //other
-import Uiux from "@/assets/header/uiux.svg";
-import seo from "@/assets/header/seo.svg";
-import product from "@/assets/header/product.svg";
-import cloud from "@/assets/header/cloud.svg";
+import Uiux from "@/components/ServicesSvg/HeaderSvgIcons/websiteDev";
+import Ecomm from "@/components/ServicesSvg/HeaderSvgIcons/e-comm";
+import WebDesining from "@/components/ServicesSvg/HeaderSvgIcons/web-desining";
+import Angular from "@/components/ServicesSvg/HeaderSvgIcons/angular";
+import React from "@/components/ServicesSvg/HeaderSvgIcons/react";
+import FullStack from "@/components/ServicesSvg/HeaderSvgIcons/full-stack";
+import Laravel from "@/components/ServicesSvg/HeaderSvgIcons/laravel";
+import Python from "@/components/ServicesSvg/HeaderSvgIcons/python";
+import Android from "@/components/ServicesSvg/HeaderSvgIcons/android";
+import Ios from "@/components/ServicesSvg/HeaderSvgIcons/ios";
+import Pwa from "@/components/ServicesSvg/HeaderSvgIcons/pwa";
+import Maintaince from "@/components/ServicesSvg/HeaderSvgIcons/maintanance";
+import Seo from "@/components/ServicesSvg/HeaderSvgIcons/seo";
+import Cloud from "@/components/ServicesSvg/HeaderSvgIcons/cloud";
+import About from "@/components/ServicesSvg/HeaderSvgIcons/about-us";
+import Blog from "@/components/ServicesSvg/HeaderSvgIcons/blog";
+import CaseStudy from "@/components/ServicesSvg/HeaderSvgIcons/caseStudy";
+
 import HoverSlideText from "../HoverSlideText";
 
 export default function NewHeader() {
@@ -81,126 +92,135 @@ export default function NewHeader() {
 
   const megaMenuData = {
     "Frontend Development": [
+         {
+        title: "Website Development",
+        Icon: Uiux,
+        url: "/services/website-development-company",
+        subtitle: "Get High-performance websites",
+      },
       {
         title: "ReactJS",
-        icon: frontDevIcon6.src,
+      Icon: React,
         url: "/services/reactjs-development-company",
         subtitle: "Fast interfaces built with React",
       },
       {
-        title: "E-Com  Development",
+        title: "E-Comm Development",
         subtitle: "Get Secure, scalable solutions",
-        icon: webDevIcon4.src,
+        Icon: Ecomm,
         url: "/services/ecommerce-website-development-company",
       },
 
       {
         title: "Web Designing",
         subtitle: "Visually striking designs- engage ",
-        icon: webDevIcon5.src,
+        Icon: WebDesining,
         url: "/services/web-designing-company",
       },
 
       {
         title: "AngularJs",
-        icon: frontDevIcon1.src,
+        Icon: Angular,
         url: "/services/angularjs-development-company",
         subtitle: "Robust Angular solutions ",
       },
 
-      {
-        title: "Vue.js",
-        icon: frontDevIcon3.src,
-        url: "/services/vuejs-development-company",
-        subtitle: "Get Lightweight frontends",
-      },
+      // {
+      //   title: "Vue.js",
+      //   icon: frontDevIcon3.src,
+      //   url: "/services/vuejs-development-company",
+      //   subtitle: "Get Lightweight frontends",
+      // },
 
-      {
-        title: "JavaScript",
-        icon: frontDevIcon5.src,
-        url: "/services/javascript-development-company",
-        subtitle: "Interactive web experiences",
-      },
-      {
-        title: "PHP",
-        icon: backendicon8.src,
-        url: "/services/php-development-company",
-        subtitle: "Reliable and flexible  web solutions",
-      },
+      // {
+      //   title: "JavaScript",
+      //   icon: frontDevIcon5.src,
+      //   url: "/services/javascript-development-company",
+      //   subtitle: "Interactive web experiences",
+      // },
+      // {
+      //   title: "PHP",
+      //   icon: backendicon8.src,
+      //   url: "/services/php-development-company",
+      //   subtitle: "Reliable and flexible  web solutions",
+      // },
       {
         title: "Full Stack Development",
-        icon: backendicon8.src,
+        Icon: FullStack,
         url: "/services/full-stack-website-development-company",
         subtitle: "Reliable and flexible  web solutions",
+      },
+       {
+        title: "Shopify",
+        Icon: Ecomm,
+        url: "/services/shopify-website-development-company",
+        subtitle: "Stores built for growth and sales",
       },
     ],
 
     "Backend Development": [
-      {
-        title: ".NET",
-        icon: backendicon1.src,
-        url: "/services/dotnet-development-company",
-        subtitle: "Get Enterprise-grade applications",
-      },
-      {
-        title: "NodeJS",
-        icon: backendicon2.src,
-        url: "/services/nodejs-development-company",
-        subtitle: "Scalable backend solutions for apps",
-      },
+      // {
+      //   title: ".NET",
+      //   icon: backendicon1.src,
+      //   url: "/services/dotnet-development-company",
+      //   subtitle: "Get Enterprise-grade applications",
+      // },
+      // {
+      //   title: "NodeJS",
+      //   icon: backendicon2.src,
+      //   url: "/services/nodejs-development-company",
+      //   subtitle: "Scalable backend solutions for apps",
+      // },
       {
         title: "Laravel",
-        icon: backendicon3.src,
+        Icon: Laravel,
         url: "/services/laravel-website-development-company",
         subtitle: "Get Secure, scalable solutions",
       },
 
       {
         title: "Python",
-        icon: backendicon6.src,
+        Icon: Python,
         url: "/services/python-development-company",
         subtitle: "Powerful  solutions for web and AI",
       },
-      {
-        title: "Java",
-        icon: backendicon7.src,
-        url: "/services/java-development-company",
-        subtitle: "Secure, high-performance  applications",
-      },
+      // {
+      //   title: "Java",
+      //   icon: backendicon7.src,
+      //   url: "/services/java-development-company",
+      //   subtitle: "Secure, high-performance  applications",
+      // },
     ],
 
     "Application Development": [
       {
         title: "Android App Development",
         subtitle: "Apps designed for growth",
-        icon: appDevIcon5.src,
+        Icon: Android,
         url: "/services/android-app-development-company",
       },
       {
         title: "iOS App Development",
         subtitle: "Get iOS apps for better experiences",
-
-        icon: appDevIcon2.src,
+        Icon: Ios,
         url: "/services/ios-app-development-company",
       },
       {
         title: "React Native  Development",
         subtitle: "Apps with  speed and efficiency",
-
-        icon: appDevIcon4.src,
+        Icon: React,
         url: "/services/react-native-app-development-company",
       },
       {
         title: "App Maintenance Service",
         subtitle: "Keep apps secure and smoothly",
-        icon: appDevIcon6.src,
+        Icon: Maintaince,
         url: "/services/mobile-app-maintenance-company",
       },
       {
         title: "PWA Development",
         subtitle: "Fast, reliable web app",
-
-        icon: appDevIcon3.src,
+        Icon: Pwa,
         url: "/services/pwa-development-company",
       },
     ],
@@ -209,25 +229,25 @@ export default function NewHeader() {
       {
         title: "Search Engine Optimization",
         subtitle: "Organic Growth, Technical SEO, Content Strategy",
-        icon: seo.src,
+        Icon: Seo,
         url: "/services/search-engine-optimization-company",
       },
       {
         title: "UI/UX",
         subtitle: "Figma, Adobe XD, User Research, Prototyping",
-        icon: Uiux.src,
+        Icon: Uiux,
         url: "/services/ui-ux-designing-company",
       },
       {
         title: "Product",
         subtitle: "Concept Ideation, Market Analysis, Rapid MVP",
-        icon: product.src,
+        Icon: FullStack,
         url: "/services/product-designing-company",
       },
       {
         title: "Cloud",
         subtitle: "AWS, Azure, Server Security, Scalable Infrastructure",
-        icon: cloud.src,
+        Icon: Cloud,
         url: "/services/cloud-company",
       },
     ],
@@ -237,13 +257,13 @@ export default function NewHeader() {
       title: "About",
       subtitle: "Driven by innovation, powered by experience",
       href: "/about-us",
-      icon: about.src,
+      Icon: About,
     },
     {
       title: "Blogs",
       subtitle: "Insights, trends, and expert tech knowledge",
       href: "/blogs",
-      icon: blog.src,
+      Icon: Blog,
     },
     // {
     //   title: "Careers",
@@ -255,7 +275,7 @@ export default function NewHeader() {
       title: "Case Study",
       subtitle: "Real projects, real results, real impact",
       href: "/case-study",
-      icon: case_study.src,
+      Icon: CaseStudy,
     },
   ];
 
@@ -334,7 +354,7 @@ export default function NewHeader() {
                                   href={item.url}
                                   className="submenuLink group flex w-full gap-3"
                                 >
-                                  <img src={item.icon} className="w-8" />
+                                  <item.Icon />
 
                                   <div className="w-full">
                                     <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">
@@ -366,7 +386,7 @@ export default function NewHeader() {
                                   href={item.url}
                                   className="submenuLink group flex w-full gap-3"
                                 >
-                                  <img src={item.icon} className="w-8" />
+                                   <item.Icon />
 
                                   <div className="w-full">
                                     <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">
@@ -398,7 +418,7 @@ export default function NewHeader() {
                                   href={item.url}
                                   className="submenuLink group flex w-full gap-3"
                                 >
-                                  <img src={item.icon} className="w-8" />
+                                       <item.Icon />
 
                                   <div className="w-full">
                                     <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">
@@ -434,7 +454,8 @@ export default function NewHeader() {
                                 href={item.url}
                                 className="submenuLink group flex w-full gap-3"
                               >
-                                <img src={item.icon} className="w-8" />
+                                                                 <item.Icon />
+
 
                                 <div className="w-full">
                                   <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">
@@ -476,7 +497,8 @@ export default function NewHeader() {
                             href={item.href}
                             className="submenuLink group flex w-full gap-3"
                           >
-                            <img src={item.icon} className="w-8" />
+                                                             <item.Icon />
+
 
                             <div className="w-full">
                               <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">

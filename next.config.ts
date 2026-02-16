@@ -16,6 +16,16 @@ const nextConfig: NextConfig = {
     ],
   },
 
+  async redirects() {
+    return [
+      {
+        source: "/career",
+        destination: "/",
+        permanent: true, // 301 redirect (SEO friendly)
+      },
+    ]
+  },
+
   webpack(config) {
     // Find existing rule for SVG
     const fileLoaderRule = config.module.rules.find((rule: any) =>
