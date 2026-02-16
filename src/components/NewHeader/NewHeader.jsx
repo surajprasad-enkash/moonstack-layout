@@ -17,7 +17,7 @@ import Uiux from "@/components/ServicesSvg/HeaderSvgIcons/WebsiteDev";
 import Ecomm from "@/components/ServicesSvg/HeaderSvgIcons/Ecomm";
 import WebDesining from "@/components/ServicesSvg/HeaderSvgIcons/WebDesining";
 import Angular from "@/components/ServicesSvg/HeaderSvgIcons/Angular";
-import React from "@/components/ServicesSvg/HeaderSvgIcons/react";
+import React from "@/components/ServicesSvg/HeaderSvgIcons/React";
 import FullStack from "@/components/ServicesSvg/HeaderSvgIcons/FullStack";
 import Laravel from "@/components/ServicesSvg/HeaderSvgIcons/Laravel";
 import Python from "@/components/ServicesSvg/HeaderSvgIcons/Python";
