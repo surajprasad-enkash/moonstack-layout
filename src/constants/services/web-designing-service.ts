@@ -6,15 +6,18 @@ import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
-import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
-import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
-import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
-
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
-import { color } from "framer-motion"
+import Icon1 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon1"
+import Icon2 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon2"
+import Icon3 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon3"
+import Icon4 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon4"
+import Icon5 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon5"
+import Icon6 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon6"
+import Icon7 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon7"
+import Icon8 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon8"
+import Icon9 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon9"
+import Icon10 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon10"
+import Icon11 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon11"
+import Icon12 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon12"
 
 export const webDesigning: PageData = {
   hero: {
@@ -91,38 +94,44 @@ export const webDesigning: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: Icon1,
+      imgSrc: "",
       title: "Website Design  Consulting Services",
       description:
         "Discuss about your idea with the professional web design experts. Our web designers understand your business and provide you with the right strategy (technology, colour, and steps)  that you should implement in your user interface that satisfies your customers. We create web designs that transform your brand identity.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: Icon2,
+      imgSrc: "",
       title: "Custom web Design",
       description:
         "Our professional web designers service in  India is designed in such a way that it offers premium custom tailor made designs that align with brand identity and goals. We create connected user friendly designs that deliver next generation experience to the users. ",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon3,
+      imgSrc: "",
       title: "Responsive Web and App Designs",
       description:
         "As the creative website designing service in India, our aim is to provide responsive  web designs to our customers. Our web designs are created in such a way that are compatible with all devices on different screens and sizes of devices.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon4,
+      imgSrc: "",
       title: "UI/UX Designing Services",
       description:
         "We create engaging and interactive user interfaces that deliver seamless user experiences that increase engagement and conversion rates. Our main aim is to offer the same brand experience to users in the digital era that allow us to connect with brands.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon5,
+      imgSrc: "",
       title: "Website Redesign Services",
       description:
         "Moonstack is known as the top web designers company in India. With custom web designs we offer redesigning services that help to modernise outdated websites with fresh designs and additional next generation functionalities. Our UI UX designers understand and bring innovative designs that match your current brand image.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon6,
+      imgSrc: "",
       title: "Landing Page Design",
       description:
         "Our web designers create highly impactful and creative landing pages for different marketing campaigns and lead generation processes. Our landing page design services strategy is to create emergencies for clients and deliver the same experience that they want in service. Our landing page is fully SEO optimized",
@@ -259,43 +268,49 @@ export const webDesigning: PageData = {
     list: [
       {
         id: 1,
+        Icon: Icon7,
         title: "Experienced Professionals",
-        icon: collaboration.src,
+        icon: "",
         description:
           "We have a team of proficient designing experts, who have hands-on experience on different projects. At Moonstack, we have a team of designers, who not only design creative designs but also build connections between brands and customers.",
       },
       {
         id: 2,
+        Icon: Icon8,
         title: "Focus on Both UI/UX",
-        icon: collaboration.src,
+        icon: "",
         description:
           "Our designers focus on both UI and UX in that designers create interactive and engaging designs that are easy to navigate and deliver immersive experiences. At Moonstack, we create design layouts that are mobile friendly,  modern, and deliver next generation experiences to the users.",
       },
       {
         id: 3,
+        Icon: Icon9,
         title: "SEO and Performance Optimised",
-        icon: collaboration.src,
+        icon: "",
         description:
           "Create designs that are fully SEO optimised and deliver high performance experience to the users. We create designs that load faster, rank better, and deliver best outcomes. Our website designs are strategically SEO driven and light weight that attract more customers and increase conversion rates.",
       },
       {
         id: 4,
+        Icon: Icon10,
         title: "Transparent Process",
-        icon: collaboration.src,
+        icon: "",
         description:
           "As the best modern website design company in India, we focus on a fully transparent process. In our web design services, we convey all information transparently to our clients. In any case, we don’t hide any things from our clients as we believe to work or associate together.",
       },
       {
         id: 5,
+        Icon: Icon11,
         title: "Ongoing Support and Maintenance",
-        icon: collaboration.src,
+        icon: "",
         description:
           "We provide full support and maintenance to our clients after deployment also as per the hiring model. Our support and maintenance designing services include constant updates regarding designs and resolve issues immediately so users don’t face any technical error.",
       },
       {
         id: 6,
+        Icon: Icon12,
         title: "Responsive Design",
-        icon: collaboration.src,
+        icon: "",
         description:
           "At Moonstack, we provide responsive web designs to our clients. Our designs are mobile friendly, deliver seamless performance, and compatible with all devices. Before launching, we make sure that our web designs are compatible with all different devices and users don’t face any challenge to access them.",
       },

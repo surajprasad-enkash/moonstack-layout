@@ -6,15 +6,19 @@ import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
-import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
-import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
-import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
 
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
-import { color } from "framer-motion"
+import Icon1 from "@/components/ServicesSvg/WordPressIcon/WordPressIcon1"
+import Icon2 from "@/components/ServicesSvg/WordPressIcon/WordPressIcon2"
+import Icon3 from "@/components/ServicesSvg/WordPressIcon/WordPressIcon3"
+import Icon4 from "@/components/ServicesSvg/WordPressIcon/WordPressIcon4"
+import Icon5 from "@/components/ServicesSvg/WordPressIcon/WordPressIcon5"
+import Icon6 from "@/components/ServicesSvg/WordPressIcon/WordPressIcon6"
+import Icon7 from "@/components/ServicesSvg/WordPressIcon/WordPressIcon7"
+import Icon8 from "@/components/ServicesSvg/WordPressIcon/WordPressIcon8"
+import Icon9 from "@/components/ServicesSvg/WordPressIcon/WordPressIcon9"
+import Icon10 from "@/components/ServicesSvg/WordPressIcon/WordPressIcon10"
+import Icon11 from "@/components/ServicesSvg/WordPressIcon/WordPressIcon11"
+import Icon12 from "@/components/ServicesSvg/WordPressIcon/WordPressIcon12"
 
 export const wordPress: PageData = {
   hero: {
@@ -93,38 +97,44 @@ export const wordPress: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: Icon1,
+      imgSrc: "",
       title: "Custom WordPress Development Services",
       description:
         "We offer custom WordPress development services. Our team builds responsive and powerful WordPress based solutions from scratch that reflect the company brand and integrate functionalities that are aligned with business goals. We focus on building interactive and modern websites that ensure to stay ahead among competitors.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: Icon2,
+      imgSrc: "",
       title: "WordPress Theme Customization",
       description:
         "Our WordPress development team provides full theme customisation services that allow you to transform your brand into brand focused and reflect your style. We create top notch web designs with the best combination of colors, fonts, and features integrated that match your business and today’s tech design needs.",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon3,
+      imgSrc: "",
       title: "Third Party Integration Services",
       description:
         "Integrate third party functionalities with API integration services. Our team is proficient in integrating third party features into WordPress development services that allow the access of additional features and can link via API only.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon4,
+      imgSrc: "",
       title: "WordPress Plugin Integration",
       description:
         "We are proficient with WordPress plugin integration services. Our team of WordPress coders integrate plugins that allow you to enhance website features. At Moonstack - we choose, install, and configure the right plugins as per your tech needs. We integrate plugins for performance improvement and that support your business needs.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon5,
+      imgSrc: "",
       title: "WordPress Testing Services",
       description:
         "Our WordPress development team offers end to end testing for our clients. We test Wordpress based solutions with automated and manual processes that allow us to deliver bug free websites in the market. Our team has top quality assurance testing coders with us who test all features and deliver successful solutions.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon6,
+      imgSrc: "",
       title: "WordPress Maintenance and Support",
       description:
         "Maintain your full WordPress requirements with us. We offer end to end maintenance and support services that ensure to stay ahead in the market. Our team keeps your website fully secure and updated with the latest trends. Additionally, if we find any gaps we resolve them instantly that helps to grow your business.",
@@ -262,42 +272,48 @@ export const wordPress: PageData = {
       {
         id: 1,
         title: "End to End custom web development",
-        icon: collaboration.src,
+        Icon: Icon7,
+        icon: "",
         description:
           "We are proficient in building end to end custom WordPress web development services in which we create solutions from scratch. Our team understands your business needs and launches solutions that ensure to leverage the benefits of modern tech and meet the business needs.",
       },
       {
         id: 2,
         title: "Expert WordPress Developers",
-        icon: collaboration.src,
+        Icon: Icon8,
+        icon: "",
         description:
           "Moonstack has a team of professionals who are skilled professionals with deep technical expertise. Our expert WordPress development team focuses on custom development, performance optimisation, advanced integration that ensures to meet high standard and professional services.",
       },
       {
         id: 3,
         title: "Hire Skilled Developers",
-        icon: collaboration.src,
+        Icon: Icon9,
+        icon: "",
         description:
           "With us you can have access to a pool of WordPress developers. You can hire different types of developers as per their experience level. Our WordPress coders can collaborate as an extension in your team and deliver secure, responsive and high performance based WordPress solutions that meet your project needs.",
       },
       {
         id: 4,
         title: "On Time Delivery",
-        icon: collaboration.src,
+        Icon: Icon10,
+        icon: "",
         description:
           "We deliver all your projects on time. Our focus is to be on our commitments.With our experts we follow a structured roadmap that ensures us to deliver all projects on time without any timely delay and compromise in quality.",
       },
       {
         id: 5,
         title: "User Centric Design",
-        icon: collaboration.src,
+        Icon: Icon11,
+        icon: "",
         description:
           "Design is the backbone of any website. We don’t only focus on development aspects but also experience  in custom wordpress designing service in  India. We create interactive and engaging designs that are user centric and innovative that match the latest modern trends.",
       },
       {
         id: 6,
         title: "Strong Communication",
-        icon: collaboration.src,
+        Icon: Icon12,
+        icon: "",
         description:
           "Strong and clear communication is our core value. We understand communication is important and at every stage we believe to convey our ideas and progress to our clients. At Moonstack, we keep all information and progress transparent with our clients and make collaboration stress free.",
       },

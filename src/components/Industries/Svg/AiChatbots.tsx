@@ -89,9 +89,9 @@ export default function AiChatbots(props: React.SVGProps<SVGSVGElement>) {
           width="95.346"
           height="90.4505"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -131,8 +131,8 @@ export default function AiChatbots(props: React.SVGProps<SVGSVGElement>) {
           y2="4.52269"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00500C" />
-          <stop offset="1" stop-color="#00D820" />
+          <stop stopColor="#00500C" />
+          <stop offset="1" stopColor="#00D820" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_727_1250"
@@ -142,8 +142,8 @@ export default function AiChatbots(props: React.SVGProps<SVGSVGElement>) {
           y2="72.2094"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6CFF8C" />
-          <stop offset="1" stop-color="#1E672E" />
+          <stop stopColor="#6CFF8C" />
+          <stop offset="1" stopColor="#1E672E" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_727_1250"
@@ -153,8 +153,8 @@ export default function AiChatbots(props: React.SVGProps<SVGSVGElement>) {
           y2="125.548"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_727_1250"
@@ -164,8 +164,8 @@ export default function AiChatbots(props: React.SVGProps<SVGSVGElement>) {
           y2="60.675"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00500C" />
-          <stop offset="1" stop-color="#00D820" />
+          <stop stopColor="#00500C" />
+          <stop offset="1" stopColor="#00D820" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_727_1250"
@@ -175,8 +175,8 @@ export default function AiChatbots(props: React.SVGProps<SVGSVGElement>) {
           y2="68.8522"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#5DFF75" />
-          <stop offset="1" stop-color="#00EE24" />
+          <stop stopColor="#5DFF75" />
+          <stop offset="1" stopColor="#00EE24" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_727_1250"
@@ -186,8 +186,8 @@ export default function AiChatbots(props: React.SVGProps<SVGSVGElement>) {
           y2="68.8522"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#5DFF75" />
-          <stop offset="1" stop-color="#00EE24" />
+          <stop stopColor="#5DFF75" />
+          <stop offset="1" stopColor="#00EE24" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_727_1250"
@@ -197,8 +197,8 @@ export default function AiChatbots(props: React.SVGProps<SVGSVGElement>) {
           y2="60.6188"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#5DFF75" />
-          <stop offset="1" stop-color="#00EE24" />
+          <stop stopColor="#5DFF75" />
+          <stop offset="1" stopColor="#00EE24" />
         </linearGradient>
       </defs>
     </svg>

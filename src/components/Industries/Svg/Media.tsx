@@ -43,7 +43,7 @@ export default function Healthcare(props: React.SVGProps<SVGSVGElement>) {
         <path
           d="M155.248 52.6738H116.435C113.373 52.6738 110.891 55.1562 110.891 58.2185V85.9417C110.891 89.0039 113.373 91.4863 116.435 91.4863H155.248C158.31 91.4863 160.792 89.0039 160.792 85.9417V58.2185C160.792 55.1562 158.31 52.6738 155.248 52.6738Z"
           fill="url(#paint3_linear_727_1821)"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
       </g>
       <path
@@ -68,7 +68,7 @@ export default function Healthcare(props: React.SVGProps<SVGSVGElement>) {
         <path
           d="M44.3571 52.6738H5.54464C2.48242 52.6738 0 55.1562 0 58.2185V85.9417C0 89.0039 2.48242 91.4863 5.54464 91.4863H44.3571C47.4194 91.4863 49.9018 89.0039 49.9018 85.9417V58.2185C49.9018 55.1562 47.4194 52.6738 44.3571 52.6738Z"
           fill="url(#paint6_linear_727_1821)"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
       </g>
       <path
@@ -101,7 +101,7 @@ export default function Healthcare(props: React.SVGProps<SVGSVGElement>) {
         <path
           d="M155.252 0H127.529C124.467 0 121.984 2.48242 121.984 5.54464V33.2679C121.984 36.3301 124.467 38.8125 127.529 38.8125H155.252C158.314 38.8125 160.797 36.3301 160.797 33.2679V5.54464C160.797 2.48242 158.314 0 155.252 0Z"
           fill="url(#paint8_linear_727_1821)"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
       </g>
       <path

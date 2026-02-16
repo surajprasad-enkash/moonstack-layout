@@ -6,15 +6,17 @@ import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
-import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
-import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
-import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
 
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
-import { color } from "framer-motion"
+import AiIcon1 from "@/components/ServicesSvg/AiIcon/AiIcon1"
+import AiIcon2 from "@/components/ServicesSvg/AiIcon/AiIcon2"
+import AiIcon3 from "@/components/ServicesSvg/AiIcon/AiIcon3"
+import AiIcon4 from "@/components/ServicesSvg/AiIcon/AiIcon4"
+import AiIcon5 from "@/components/ServicesSvg/AiIcon/AiIcon5"
+import AiIcon6 from "@/components/ServicesSvg/AiIcon/AiIcon6"
+import AiIcon7 from "@/components/ServicesSvg/AiIcon/AiIcon7"
+import AiIcon8 from "@/components/ServicesSvg/AiIcon/AiIcon8"
+import AiIcon9 from "@/components/ServicesSvg/AiIcon/AiIcon9"
+import AiIcon10 from "@/components/ServicesSvg/AiIcon/AiIcon10"
 
 export const ai: PageData = {
   hero: {
@@ -101,38 +103,44 @@ export const ai: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: AiIcon1,
+      imgSrc: "",
       title: "AI Consulting & Strategy",
       description:
         "Cut through the AI hype and build a clear and execution-ready AI roadmap aligned to your real business needs. Our AI consulting and strategy services for SMEs help identify high-ROI AI agent use cases in your business, select the right LLM, recommend architecture, assess your data readiness, outline success metrics, and draft a plan so your AI investment delivers results.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: AiIcon2,
+      imgSrc: "",
       title: "Custom AI Agent Development",
       description:
         "Build custom AI agents tailored to your business logic, tools, and workflows, turning your challenges into opportunities for success. Hire our AI developers to build highly functional and autonomous AI agents capable of processing data, reasoning, executing tasks, and improving on feedback without any human involvement.",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: AiIcon3,
+      imgSrc: "",
       title: "AI Agent Support and Maintenance",
       description:
         "Maintain the reliability and relevance of your AI agents with our ongoing support and maintenance services. Our team ensures your AI agents stay accurate and aligned to your changing business needs and vision. From performance monitoring and optimization to model tuning, knowledge base updates, error handling, security, and compliance, we take care of everything.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: AiIcon4,
+      imgSrc: "",
       title: "RAG & AI Chatbot Development",
       description:
         "Build a RAG-based AI chatbot on your company's knowledge base to give your employees easy and instant access to accurate data. Our RAG-based AI chatbot development services fine-tune LLM with your documents, databases, and knowledge sources for multiple internal use cases like knowledge base chatbots, PDF chatbots, and Q&A assistants.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: AiIcon5,
+      imgSrc: "",
       title: "Process Automation Development",
       description:
         "Automate and streamline your processes with agentic automations, multi-agent systems, or AI agent workflows for faster processes, lower operational costs, and teams freed to focus on high-value work. Our AI-powered workflow automation for small business solutions combines AI agents with tools and integrations to automate simple to complex and even multi-step workflows. ",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: AiIcon6,
+      imgSrc: "",
       title: "Agentic AI Development",
       description:
         "Develop advanced agentic AI systems capable of planning, decision-making, and autonomous execution across complex workflows. We can deploy a set of AI agents, each trained to execute a specific task and capable of collaborating with other agents to collectively execute the target task and deliver intended results. ",
@@ -145,29 +153,33 @@ export const ai: PageData = {
     list: [
       {
         id: 1,
+        Icon: AiIcon7,
         title: "Improved Decision Making",
-        icon: collaboration.src,
+        icon: "",
         description:
           "We help you turn your raw business data into valuable insights for accurate, faster, and smarter business decision-making.",
       },
       {
         id: 2,
+        Icon: AiIcon8,
         title: "High Efficiency & Accuracy",
-        icon: delivery.src,
+        icon: "",
         description:
           "Our AI solutions and AI agents will enable you to intelligently automate complex processes effortlessly to reduce manual work, delays, and errors, delivering high efficiency and precision.",
       },
       {
         id: 3,
+        Icon: AiIcon9,
         title: "Lower Operational Costs",
-        icon: hiring.src,
+        icon: "",
         description:
           "By automating processes and implementing AI agents for multiple tasks, we bring down the workload on your employees and save you from hiring more staff.",
       },
       {
         id: 4,
+        Icon: AiIcon10,
         title: "Better Customer Experience",
-        icon: designer.src,
+        icon: "",
         description:
           "Moonstack’s AI developers can boost your customer experience by building AI solutions that offer insight into customer preferences by analyzing their data, recommending products, and instantly resolving customer queries.",
       },

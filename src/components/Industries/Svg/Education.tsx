@@ -23,7 +23,7 @@ export default function Education(props: React.SVGProps<SVGSVGElement>) {
         <path
           d="M71.6528 41.0419C70.0185 44.9875 69.9156 49.8653 71.55 53.8109L72.9564 56.5659H12.2498C12.2498 56.5659 0.947475 50.2155 12.2498 38.9131L72.4322 37.6729L71.6528 41.0419Z"
           fill="url(#paint0_linear_727_1335)"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
       </g>
       <path

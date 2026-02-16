@@ -6,15 +6,18 @@ import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
-import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
-import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
-import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
-
-import designer from "@/assets/app-development-images/work-directly.webp"
-import hiring from "@/assets/app-development-images/hiring.webp"
-import delivery from "@/assets/app-development-images/guarante.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
-import { color } from "framer-motion"
+import Icon1 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon1"
+import Icon2 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon2"
+import Icon3 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon3"
+import Icon4 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon4"
+import Icon5 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon5"
+import Icon6 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon6"
+import Icon7 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon7"
+import Icon8 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon8"
+import Icon9 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon9"
+import Icon10 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon10"
+import Icon11 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon11"
+import Icon12 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon12"
 
 export const fullstack: PageData = {
   hero: {
@@ -92,38 +95,44 @@ export const fullstack: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: Icon1,
+      imgSrc: "",
       title: "Front end Development ",
       description:
         "Our front end developers create engaging and immersive user interfaces with the right usage of technologies such as HTML, CSS/SCSS, and JavaScript. With high performance our tech experts also focus to deliver interactive and easy to use UI/UX that provides next generation experiences to users.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: Icon2,
+      imgSrc: "",
       title: "Back End Development",
       description:
         "With our Moonstack engineers in India, we deliver end to end high performance server side solutions to different businesses. We provide secure, scalable, and highly optimized API for seamless database integration. Our experienced back end developers main aim is to write clean codes and offer smooth execution with best industry practices.",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon3,
+      imgSrc: "",
       title: "Full Stack API Integration Services",
       description:
         "Extend your website functionalities with simple API integration services. Our full stack coders in India offer secure, scalable APIs that support third party platforms that improve features, automate different processes, and develop a unified digital ecosystem that match all your business needs that increase efficiency and improve customer experiences.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon4,
+      imgSrc: "",
       title: "Full Stack Testing Services",
       description:
         "At Moonstack, our focus is to deliver secure and bug free solutions to our customers. We provide end to end solution testing that offers functional, performance, and integration testing. Our full stack coders provide automated and unit testing that allow us to deliver high performance and bug free solutions in the market.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon5,
+      imgSrc: "",
       title: "Full Stack Support and Maintenance",
       description:
         "Our Full stack engineers offer end to end support and maintenance services to our customers.By partnering with the leading full stack company - your enterprise's solutions will be fully updated with functionalities and modern trends, issues will be fixed immediately. Moreover, we will offer proactive support on a constant basis that will lead to maintaining stability.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: Icon6,
+      imgSrc: "",
       title: "Full Stack Custom Designing Services",
       description:
         "Launch interactive custom designing services to your users. We create custom designs that reflect your brand identity and deliver next generation experiences to your users. Our focus is to create best front end designs with responsive layouts and modern interfaces that deliver next generation user experiences.",
@@ -273,43 +282,49 @@ export const fullstack: PageData = {
     list: [
       {
         id: 1,
+        Icon: Icon7,
         title: "End to End Expertise",
-        icon: collaboration.src,
+        icon: "",
         description:
           "We offer end to end full stack development services. Our Full Stack coders have hands-on experience from development to launching full time innovative solutions in the market. Along with this, they are proficient with different types of technologies - React, MERN,and many more.",
       },
       {
         id: 2,
+        Icon: Icon8,
         title: "Hands on Experience on Different Technologies",
-        icon: collaboration.src,
+        icon: "",
         description:
           "Our team has hands-on experience with a wide range of technologies and frameworks including React development in India to MERN. We have a team that is skilled in Cloud platforms, DevOps, and scalable architectures that ensure smooth performance and integrate modern API for future ready digital solutions for different industries.",
       },
       {
         id: 3,
+        Icon: Icon9,
         title: "Strong Communication",
-        icon: collaboration.src,
+        icon: "",
         description:
           "At Moonstack, we believe in strong communication with our clients. We keep transparent communication in this we share and convey all information to our clients. We have a structured communication process that ensures us to understand all your goals and bring clarity in the workflow.",
       },
       {
         id: 4,
+        Icon: Icon10,
         title: "On Time Delivery Commitment",
-        icon: collaboration.src,
+        icon: "",
         description:
           "As the leading Full stack development company in India, we value time. We stick to different timelines that offer a clear roadmap and ensure to meet all milestones as promised in a particular time frame. With us we guarantee, there are no hidden surprises as we follow all essential industry standard practices.",
       },
       {
         id: 5,
+        Icon: Icon11,
         title: "Dedicated Support and Maintenance",
-        icon: collaboration.src,
+        icon: "",
         description:
           "We provide full stack full support and maintenance services to our clients. Here we just don’t believe in delivery solutions but stay with you from updates to performance improvements. Our team is always with you to solve any tech bug and we do it instantly without any delay.",
       },
       {
         id: 6,
+        Icon: Icon12,
         title: "Client Centric Approach",
-        icon: collaboration.src,
+        icon: "",
         description:
           "We have a client centric approach. Our team doesn't only build solutions, but we think in the perspective of our clients and then deliver solutions in the market. At Moonstack, we build solutions that meet all our clients' needs and what the customer is looking for. ",
       },

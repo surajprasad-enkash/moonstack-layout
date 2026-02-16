@@ -207,8 +207,8 @@ export default function Healthcare(props: React.SVGProps<SVGSVGElement>) {
           transform="translate(-22.0985 -22.3143)"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M43.7608 24.1689H51.6957V28.1505C54.3228 28.6742 56.7659 29.7078 58.9177 31.1438L61.7343 28.3272L67.3452 33.9381L64.5286 36.7546C65.9648 38.9062 66.998 41.3495 67.5219 43.9766H71.5032V51.9116H67.5219C66.9982 54.5389 65.9646 56.9818 64.5286 59.1338L67.3452 61.9503L61.7341 67.561L58.9177 64.7446C56.7659 66.1808 54.3226 67.214 51.6955 67.7379V71.719H43.7606V67.7379C41.1333 67.2142 38.6902 66.1806 36.5384 64.7446L33.722 67.561L28.1112 61.9501L30.9275 59.1338C29.4913 56.982 28.4581 54.5387 27.9343 51.9114H23.9531V43.9764H27.9343C28.4579 41.3491 29.4915 38.9062 30.9275 36.7542L28.111 33.9377L33.722 28.3268L36.5386 31.1432C38.6904 29.7071 41.1337 28.674 43.7608 28.1499V24.1689Z"
           />
         </clipPath>
@@ -309,7 +309,7 @@ export default function Healthcare(props: React.SVGProps<SVGSVGElement>) {
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="white" />
-          <stop offset="0.5" stopColor="white" stop-opacity="0" />
+          <stop offset="0.5" stopColor="white" stopOpacity="0" />
           <stop offset="1" stopColor="white" />
         </linearGradient>
         <linearGradient
