@@ -28,7 +28,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="pageFooter">
         {/* TOP SECTION */}
-        <div className="footerTop relative z-5 mt-[-2px] bg-black bg-cover bg-center px-5 py-20">
+        <div className="footerTop relative z-50 mt-[-2px] bg-black bg-cover bg-center px-5 py-20">
           {footerBg && (
             <Image
               src={footerBg.src}
@@ -38,7 +38,7 @@ const Footer = () => {
               className="absolute bottom-[0] left-[0] z-[-1] h-[auto] w-full"
             />
           )}
-          <div className="container">
+          <div className="relative z-50 container">
             <div className="row flex flex-wrap gap-[60px]">
               {/* LEFT */}
               <div className="footerLeft w-[100%] md:w-[calc(40%-60px)]">
@@ -79,28 +79,36 @@ const Footer = () => {
               {/* LINKS */}
               <div className="footerLinksWrapper w-[100%] md:w-[60%]">
                 <div className="flex w-[100%] flex-wrap">
-                  <div className="footerLinks w-[100%] md:w-[33.33%]">
+                  <div className="footerLinks w-[100%] md:w-[25%]">
                     <h4 className="footerTitle mb-[21px] !text-[18px] leading-[150%] text-[#fff]">
                       Frontend Services
                     </h4>
                     <ul className="footerMenu text-[#fff]">
                       <li>
                         <Link
-                          href="services/angularjs-development-company"
+                          href="/services/website-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="Website Development" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/angularjs-development-company"
                           className="inline-block"
                         >
                           <HoverSlideText text="Angular" />
                         </Link>
                       </li>
 
-                      <li>
+                      {/* <li>
                         <Link
                           href="/services/vuejs-development-company"
                           className="inline-block"
                         >
                           <HoverSlideText text="Vue.JS" />
                         </Link>
-                      </li>
+                      </li> */}
 
                       <li>
                         <Link
@@ -111,14 +119,6 @@ const Footer = () => {
                         </Link>
                       </li>
 
-                      <li>
-                        <Link
-                          href="/services/wordpress-website-development-company"
-                          className="inline-block"
-                        >
-                          <HoverSlideText text="Wordpress" />
-                        </Link>
-                      </li>
                       <li>
                         <Link
                           href="/services/shopify-website-development-company"
@@ -146,40 +146,56 @@ const Footer = () => {
                     </ul>
                   </div>
 
-                  <div className="footerLinks w-[100%] md:w-[33.33%]">
+                  <div className="footerLinks w-[100%] md:w-[25%]">
                     <h4 className="footerTitle mb-[21px] !text-[18px] leading-[150%] text-[#fff]">
-                      Beckend Services
+                      Backend Services
                     </h4>
                     <ul className="footerMenu text-[#fff]">
-                      <li>
+                      {/* <li>
                         <Link
                           href="/services/dotnet-development-company"
                           className="inline-block"
                         >
                           <HoverSlideText text=".NET" />
                         </Link>
-                      </li>
+                      </li> */}
 
-                      <li>
+                      {/* <li>
                         <Link
                           href="/services/nodejs-development-company"
                           className="inline-block"
                         >
                           <HoverSlideText text="Node Js" />
                         </Link>
-                      </li>
+                      </li> */}
 
-                      <li>
+                      {/* <li>
                         <Link
-                          href="/setvices/php-development-company"
+                          href="/services/php-development-company"
                           className="inline-block"
                         >
                           <HoverSlideText text="PHP" />
                         </Link>
+                      </li> */}
+                      <li>
+                        <Link
+                          href="/services/wordpress-website-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="Wordpress" />
+                        </Link>
                       </li>
                       <li>
                         <Link
-                          href="/setvices/laravel-website-development-company"
+                          href="/services/crm-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="CRM" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/laravel-website-development-company"
                           className="inline-block"
                         >
                           <HoverSlideText text="Laravel" />
@@ -187,31 +203,96 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          href="/setvices/python-development-company"
+                          href="/services/python-development-company"
                           className="inline-block"
                         >
                           <HoverSlideText text="Python" />
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link
-                          href="/setvices/codeigniter-development-company"
+                          href="/services/codeigniter-development-company"
                           className="inline-block"
                         >
                           <HoverSlideText text="CodeIgniter" />
                         </Link>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <Link
-                          href="/setvices/java-development-company"
+                          href="/services/java-development-company"
                           className="inline-block"
                         >
                           <HoverSlideText text="Java" />
                         </Link>
+                      </li> */}
+                      <li>
+                        <Link
+                          href="/services/full-stack-website-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="Full Stack" />
+                        </Link>
                       </li>
                     </ul>
                   </div>
-                  <div className="footerLinks w-[100%] md:w-[33.33%]">
+                  <div className="footerLinks w-[100%] md:w-[25%]">
+                    <h4 className="footerTitle mb-[21px] !text-[18px] leading-[150%] text-[#fff]">
+                      App Development Services
+                    </h4>
+                    <ul className="footerMenu text-[#fff]">
+                      <li>
+                        <Link
+                          href="/services/mobile-app-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="Mobile App" />
+                        </Link>
+                      </li>
+
+                      <li>
+                        <Link
+                          href="/services/android-app-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="Android App" />
+                        </Link>
+                      </li>
+
+                      <li>
+                        <Link
+                          href="/services/ios-app-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="IOS App" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/react-native-app-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="React Native" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/mobile-app-maintenance-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="Mobile App Maintenance" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/pwa-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="PWA Development" />
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="footerLinks w-[100%] md:w-[25%]">
                     <h4 className="footerTitle mb-[21px] !text-[18px] leading-[150%] text-[#fff]">
                       Company
                     </h4>
@@ -242,6 +323,14 @@ const Footer = () => {
                       <li>
                         <Link href="/case-study" className="inline-block">
                           <HoverSlideText text="Case Study" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/it-support-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="IT Support" />
                         </Link>
                       </li>
                     </ul>

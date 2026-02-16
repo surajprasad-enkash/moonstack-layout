@@ -57,8 +57,8 @@ export default function ProjectCTA({
           src={bgImage}
           alt="Background"
           width={1920}
-          height={1000}
-          className="absolute inset-0 z-[1] h-[1000px] w-[120%] object-cover"
+          height={800}
+          className="absolute inset-0 z-[1] h-[800px] w-[120%] object-cover"
           priority
         />
       )}

@@ -122,12 +122,12 @@ export default function Header() {
     ],
 
     "Frontend Development": [
-      // {
-      //   title: "Laravel Development ",
-      //   subtitle: "Get High-performance websites",
-      //   icon: webDevIcon3.src,
-      //   url: "/services/laravel-website-development-company",
-      // },
+       {
+         title: "Website Development ",
+         subtitle: "Get High-performance websites",
+         icon: webDevIcon3.src,
+         url: "/services/website-development-company",
+      },
       {
         title: "E-Commerce website Development",
         subtitle: "Get Secure, scalable solutions",

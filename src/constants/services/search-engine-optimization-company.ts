@@ -307,36 +307,45 @@ export const seo: PageData = {
   },
   accordionData: [
     {
-      question:
-        "Will you be able to work long term for my Laravel project requirements?",
+      question: "Why is my website not ranking on Google?",
       answer:
-        "Yes, our Laravel web developers are always available and they are proficient with all types of Laravel web development requirements. Our team offers professional Laravel web development services to our customers. ",
+        "There can be several reasons affecting your website ranking, including poor content optimization, technical issues, or lack of proper SEO strategies. Google frequently updates its SEO algorithms, which can also impact rankings.",
     },
     {
-      question: "How long will you take to build my Laravel website?",
+      question: "How to improve website visibility in India?",
       answer:
-        "There is no fixed time - the completion of Laravel websites are fully dependent on different factors - time, no of Laravel developers, complexity of app. But, we make sure we will put our high efforts and deliver your solutions with all essential features.",
+        "Partner with a leading SEO agency with proven case studies in India. Focus on India-specific keywords, use terms like INR, prioritize local SEO, list your business on Indian directories, and publish India-relevant content. Additionally, build high-quality backlinks from Indian websites.",
     },
     {
-      question: "Will you provide Laravel migration services in India?",
+      question: "What SEO services does Moonstack provide?",
       answer:
-        "Yes, we will provide Laravel migration services in India. Our Laravel expert team specializes in migrating solutions from other technologies to Laravel without affecting design, performance, and even your data.",
-    },
-    {
-      question: "Can I hire Laravel web developers from your team?",
-      answer:
-        "Yes, of course you can hire the best Laravel developers from our team on full time, part time, and hourly basis. We have a pool of dedicated Laravel developers.",
+        "Moonstack is a one-stop solution and a Google-certified SEO partner in India. We provide end-to-end SEO services including website audits, keyword research, on-page optimization, technical SEO, content optimization, link building, local SEO, and performance monitoring tailored to business needs.",
     },
     {
       question:
-        "Can you integrate API or third party services into my Laravel solutions?",
+        "How long does it take to get results from SEO services in India?",
       answer:
-        "Yes, we can extend functionalities in Laravel solutions with third party services via API. Our experts have hands-on experience in third party integration services. ",
+        "There is no fixed timeline for SEO results. At Moonstack, we focus on consistent optimization and strategic execution, and typically aim to start delivering measurable results within approximately three months.",
     },
     {
-      question: "How much does it cost for Laravel web development services? ",
+      question: "Do you use white hat SEO practices?",
       answer:
-        "There is no fixed cost for Laravel web development services. The Laravel web development factors are based on several factors such as features, design, hiring model, third party integration requirement.",
+        "Yes, we strictly follow white-hat SEO techniques aligned with Google search engine guidelines to ensure sustainable, long-term online growth.",
+    },
+    {
+      question: "Can SEO help me generate leads?",
+      answer:
+        "Yes, our data-driven SEO strategies are designed to attract the right audience, generate qualified leads, and help grow your business effectively.",
+    },
+    {
+      question: "Do you provide constant SEO reports and performance tracking?",
+      answer:
+        "Yes, Moonstack provides regular SEO performance reports and tracking updates to maintain transparency. These reports help clients understand progress, performance metrics, and ongoing optimization efforts.",
+    },
+    {
+      question: "Is SEO suitable for small businesses and large enterprises?",
+      answer:
+        "Yes, SEO is highly effective for both small businesses and large enterprises. It helps increase audience reach, improve conversion rates, build credibility, and support long-term business growth.",
     },
   ],
 

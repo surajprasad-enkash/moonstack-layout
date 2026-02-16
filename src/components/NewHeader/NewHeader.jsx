@@ -81,6 +81,12 @@ export default function NewHeader() {
 
   const megaMenuData = {
     "Frontend Development": [
+         {
+        title: "Website Development",
+        icon: Uiux.src,
+        url: "/services/website-development-company",
+        subtitle: "Get High-performance websites",
+      },
       {
         title: "ReactJS",
         icon: frontDevIcon6.src,
@@ -88,7 +94,7 @@ export default function NewHeader() {
         subtitle: "Fast interfaces built with React",
       },
       {
-        title: "E-Com  Development",
+        title: "E-Com Development",
         subtitle: "Get Secure, scalable solutions",
         icon: webDevIcon4.src,
         url: "/services/ecommerce-website-development-company",
@@ -108,46 +114,52 @@ export default function NewHeader() {
         subtitle: "Robust Angular solutions ",
       },
 
-      {
-        title: "Vue.js",
-        icon: frontDevIcon3.src,
-        url: "/services/vuejs-development-company",
-        subtitle: "Get Lightweight frontends",
-      },
+      // {
+      //   title: "Vue.js",
+      //   icon: frontDevIcon3.src,
+      //   url: "/services/vuejs-development-company",
+      //   subtitle: "Get Lightweight frontends",
+      // },
 
-      {
-        title: "JavaScript",
-        icon: frontDevIcon5.src,
-        url: "/services/javascript-development-company",
-        subtitle: "Interactive web experiences",
-      },
-      {
-        title: "PHP",
-        icon: backendicon8.src,
-        url: "/services/php-development-company",
-        subtitle: "Reliable and flexible  web solutions",
-      },
+      // {
+      //   title: "JavaScript",
+      //   icon: frontDevIcon5.src,
+      //   url: "/services/javascript-development-company",
+      //   subtitle: "Interactive web experiences",
+      // },
+      // {
+      //   title: "PHP",
+      //   icon: backendicon8.src,
+      //   url: "/services/php-development-company",
+      //   subtitle: "Reliable and flexible  web solutions",
+      // },
       {
         title: "Full Stack Development",
         icon: backendicon8.src,
         url: "/services/full-stack-website-development-company",
         subtitle: "Reliable and flexible  web solutions",
       },
+       {
+        title: "Shopify",
+        icon: webDevIcon4.src,
+        url: "/services/shopify-website-development-company",
+        subtitle: "Stores built for growth and sales",
+      },
     ],
 
     "Backend Development": [
-      {
-        title: ".NET",
-        icon: backendicon1.src,
-        url: "/services/dotnet-development-company",
-        subtitle: "Get Enterprise-grade applications",
-      },
-      {
-        title: "NodeJS",
-        icon: backendicon2.src,
-        url: "/services/nodejs-development-company",
-        subtitle: "Scalable backend solutions for apps",
-      },
+      // {
+      //   title: ".NET",
+      //   icon: backendicon1.src,
+      //   url: "/services/dotnet-development-company",
+      //   subtitle: "Get Enterprise-grade applications",
+      // },
+      // {
+      //   title: "NodeJS",
+      //   icon: backendicon2.src,
+      //   url: "/services/nodejs-development-company",
+      //   subtitle: "Scalable backend solutions for apps",
+      // },
       {
         title: "Laravel",
         icon: backendicon3.src,
@@ -161,12 +173,12 @@ export default function NewHeader() {
         url: "/services/python-development-company",
         subtitle: "Powerful  solutions for web and AI",
       },
-      {
-        title: "Java",
-        icon: backendicon7.src,
-        url: "/services/java-development-company",
-        subtitle: "Secure, high-performance  applications",
-      },
+      // {
+      //   title: "Java",
+      //   icon: backendicon7.src,
+      //   url: "/services/java-development-company",
+      //   subtitle: "Secure, high-performance  applications",
+      // },
     ],
 
     "Application Development": [
