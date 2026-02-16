@@ -21,6 +21,7 @@ import React from "@/components/ServicesSvg/HeaderSvgIcons/react";
 import FullStack from "@/components/ServicesSvg/HeaderSvgIcons/FullStack";
 import Laravel from "@/components/ServicesSvg/HeaderSvgIcons/Laravel";
 import Python from "@/components/ServicesSvg/HeaderSvgIcons/Python";
+
 import Android from "@/components/ServicesSvg/HeaderSvgIcons/Android";
 import Ios from "@/components/ServicesSvg/HeaderSvgIcons/Ios";
 import Pwa from "@/components/ServicesSvg/HeaderSvgIcons/Pwa";
