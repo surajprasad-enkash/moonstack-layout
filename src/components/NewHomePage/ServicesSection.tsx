@@ -55,15 +55,15 @@ export default function ServicesSection({
         },
         {
           label: "Vue.js",
-          href: "/services/vuejs-development-company",
+          href: "/",
         },
         {
           label: "JavaScript",
-          href: "/services/javascript-development-company",
+          href: "/",
         },
         {
           label: "PHP",
-          href: "/services/php-development-company",
+          href: "/",
         },
       ],
     },
@@ -72,11 +72,11 @@ export default function ServicesSection({
       items: [
         {
           label: ".NET",
-          href: "/services/dotnet-development-company",
+          href: "/",
         },
         {
           label: "NodeJS",
-          href: "/services/nodejs-development-company",
+          href: "/",
         },
         {
           label: "Laravel",
@@ -88,15 +88,15 @@ export default function ServicesSection({
         },
         {
           label: "Codeigniter",
-          href: "/services/codeigniter-development-company",
+          href: "/",
         },
         {
           label: "Java",
-          href: "/services/java-development-company",
+          href: "/",
         },
         {
           label: "Cakephp",
-          href: "/service/cakephp-development-company",
+          href: "/",
         },
       ],
     },
@@ -125,11 +125,11 @@ export default function ServicesSection({
         },
         {
           label: "Flutter Development",
-          href: "/services/flutter-development-company",
+          href: "/",
         },
         {
           label: "Mobile App Testing ",
-          href: "/services/mobile-app-testing-company",
+          href: "/",
         },
       ],
     },
