@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { IoIosArrowRoundForward } from "react-icons/io"
@@ -47,6 +47,26 @@ export default function NewHeader() {
   const toggleMobileCategory = (category: string) => {
     setActiveMobileCategory((prev) => (prev === category ? null : category))
   }
+  useEffect(() => {
+    const body = document.body
+
+    if (mobileMenuOpen) {
+      const scrollBarWidth =
+        window.innerWidth - document.documentElement.clientWidth
+
+      body.style.overflow = "hidden"
+      body.style.paddingRight = `${scrollBarWidth}px`
+    } else {
+      body.style.overflow = ""
+      body.style.paddingRight = ""
+    }
+
+    return () => {
+      body.style.overflow = ""
+      body.style.paddingRight = ""
+    }
+  }, [mobileMenuOpen])
+
   return (
     <>
       <header className="fixed inset-x-0 top-0 left-0 z-50 w-full bg-[rgba(11,11,11,0.376)] px-5 text-white backdrop-blur-[5px] will-change-[background]">
@@ -328,7 +348,7 @@ export default function NewHeader() {
               className="h-100vh fixed inset-0 top-[27px] z-40 flex flex-col px-5 py-8 text-white lg:hidden"
             >
               <div className="flex h-full flex-col overflow-y-auto">
-                <ul className="absolute left-0 flex max-h-[80vh] w-full flex-col gap-6 overflow-y-auto rounded-[20px] rounded-b-[20px] bg-black px-5 text-lg font-medium">
+                <ul className="absolute left-0 flex max-h-[80vh] w-full flex-col gap-6 overflow-y-auto rounded-[20px] rounded-b-[20px] bg-black px-5 pb-5 text-lg font-medium">
                   <li>
                     <Link
                       href="/"
@@ -366,7 +386,7 @@ export default function NewHeader() {
                           {Object.entries(megaMenuData).map(
                             ([category, items]) => (
                               <div key={category} className="my-2">
-                                <h5 className="mb-2 text-sm font-bold text-gray-400">
+                                <h5 className="mb-2 text-sm font-bold text-yellow-100">
                                   {category}
                                 </h5>
                                 <ul className="flex flex-col gap-2 pl-4">
