@@ -1,287 +1,61 @@
-"use client";
-import { useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { IoIosArrowRoundForward } from "react-icons/io";
-import CustomButton from "../CommanButton/CommanButton";
-import ProjectInquiryModal from "@/components/ProjectInquiryModal/ProjectInquiryModal";
-import { IoIosArrowDown } from "react-icons/io";
+"use client"
+import { useState } from "react"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { IoIosArrowRoundForward } from "react-icons/io"
+import CustomButton from "../CommanButton/CommanButton"
+import ProjectInquiryModal from "@/components/ProjectInquiryModal/ProjectInquiryModal"
+import { IoIosArrowDown, IoMdMenu, IoMdClose } from "react-icons/io"
+import { AnimatePresence, motion } from "framer-motion"
 
-import HeroVideoModal from "@/components/NewHomePage/HeroVideoModal";
-import { useVideoModal } from "@/context/VideoModalContext";
+import HeroVideoModal from "@/components/NewHomePage/HeroVideoModal"
+import { useVideoModal } from "@/context/VideoModalContext"
 
-import logo from "@/assets/logo-white.png";
+import logo from "@/assets/logo-white.png"
 
 //other
-import Uiux from "@/components/ServicesSvg/HeaderSvgIcons/WebsiteDev";
-import Ecomm from "@/components/ServicesSvg/HeaderSvgIcons/Ecomm";
-import WebDesining from "@/components/ServicesSvg/HeaderSvgIcons/WebDesining";
-import Angular from "@/components/ServicesSvg/HeaderSvgIcons/Angular";
-import React from "@/components/ServicesSvg/HeaderSvgIcons/ReactIcon";
-import FullStack from "@/components/ServicesSvg/HeaderSvgIcons/FullStack";
-import Laravel from "@/components/ServicesSvg/HeaderSvgIcons/Laravel";
-import Python from "@/components/ServicesSvg/HeaderSvgIcons/Python";
+import { megaMenuData, aboutMenu } from "./headerData"
 
-import Android from "@/components/ServicesSvg/HeaderSvgIcons/Android";
-import Ios from "@/components/ServicesSvg/HeaderSvgIcons/Ios";
-import Pwa from "@/components/ServicesSvg/HeaderSvgIcons/Pwa";
-import Maintaince from "@/components/ServicesSvg/HeaderSvgIcons/Maintanance";
-import Seo from "@/components/ServicesSvg/HeaderSvgIcons/Seo";
-import Cloud from "@/components/ServicesSvg/HeaderSvgIcons/Cloud";
-import About from "@/components/ServicesSvg/HeaderSvgIcons/AboutUs";
-import Blog from "@/components/ServicesSvg/HeaderSvgIcons/Blog";
-import CaseStudy from "@/components/ServicesSvg/HeaderSvgIcons/CaseStudy";
-
-
-import HoverSlideText from "../HoverSlideText";
+import HoverSlideText from "../HoverSlideText"
 
 export default function NewHeader() {
-  const pathname = usePathname();
-  const [openMenu, setOpenMenu] = useState(null);
+  const pathname = usePathname()
+  const [openMenu, setOpenMenu] = useState<string | null>(null)
+
   const [activeCategory, setActiveCategory] = useState(
-    "Application Development",
-  );
-
-  const isActive = (path) => pathname === path;
-
-  // const isServicesActive = () =>
-  //   pathname &&
-  //   (pathname.startsWith("/application-development") ||
-  //     pathname.startsWith("/website-development-service") ||
-  //     pathname.startsWith("/frontend-development") ||
-  //     pathname.startsWith("/backend-developer") ||
-  //     pathname.startsWith("/services/search-engine-optimization-company") ||
-  //     pathname.startsWith("/services/product-designing-service") ||
-  //     pathname.startsWith("/services/ui-ux-designing-service") ||
-  //     pathname.startsWith("/services/cloud-services") ||
-  //     pathname.startsWith("/services/industries"));
-
-  // const isCompanyActive = () =>
-  //   pathname &&
-  //   (pathname.startsWith("/about-us") ||
-  //     pathname.startsWith("/career") ||
-  //     pathname.startsWith("/blogs") ||
-  //     pathname.includes("company"));
-
-  const megaMenuData = {
-    "Frontend Development": [
-      {
-        title: "Website Development",
-        Icon: Uiux,
-        url: "/services/website-development-company",
-        subtitle: "Get High-performance websites",
-      },
-      {
-        title: "ReactJS",
-        Icon: React,
-        url: "/services/reactjs-development-company",
-        subtitle: "Fast interfaces built with React",
-      },
-      {
-        title: "E-Com Development",
-        subtitle: "Get Secure, scalable solutions",
-        Icon: Ecomm,
-        url: "/services/ecommerce-website-development-company",
-      },
-
-      {
-        title: "Web Designing",
-        subtitle: "Visually striking designs- engage ",
-        Icon: WebDesining,
-        url: "/services/web-designing-company",
-      },
-
-      {
-        title: "AngularJs",
-        Icon: Angular,
-        url: "/services/angularjs-development-company",
-        subtitle: "Robust Angular solutions ",
-      },
-
-      // {
-      //   title: "Vue.js",
-      //   icon: frontDevIcon3.src,
-      //   url: "/services/vuejs-development-company",
-      //   subtitle: "Get Lightweight frontends",
-      // },
-
-      // {
-      //   title: "JavaScript",
-      //   icon: frontDevIcon5.src,
-      //   url: "/services/javascript-development-company",
-      //   subtitle: "Interactive web experiences",
-      // },
-      // {
-      //   title: "PHP",
-      //   icon: backendicon8.src,
-      //   url: "/services/php-development-company",
-      //   subtitle: "Reliable and flexible  web solutions",
-      // },
-      {
-        title: "Full Stack Development",
-        Icon: FullStack,
-        url: "/services/full-stack-website-development-company",
-        subtitle: "Reliable and flexible  web solutions",
-      },
-      {
-        title: "Shopify",
-        Icon: Ecomm,
-        url: "/services/shopify-website-development-company",
-        subtitle: "Stores built for growth and sales",
-      },
-    ],
-
-    "Backend Development": [
-      // {
-      //   title: ".NET",
-      //   icon: backendicon1.src,
-      //   url: "/services/dotnet-development-company",
-      //   subtitle: "Get Enterprise-grade applications",
-      // },
-      // {
-      //   title: "NodeJS",
-      //   icon: backendicon2.src,
-      //   url: "/services/nodejs-development-company",
-      //   subtitle: "Scalable backend solutions for apps",
-      // },
-      {
-        title: "Laravel",
-        Icon: Laravel,
-        url: "/services/laravel-website-development-company",
-        subtitle: "Get Secure, scalable solutions",
-      },
-
-      {
-        title: "Python",
-        Icon: Python,
-        url: "/services/python-development-company",
-        subtitle: "Powerful  solutions for web and AI",
-      },
-      // {
-      //   title: "Java",
-      //   icon: backendicon7.src,
-      //   url: "/services/java-development-company",
-      //   subtitle: "Secure, high-performance  applications",
-      // },
-    ],
-
-    "Application Development": [
-      {
-        title: "Android App Development",
-        subtitle: "Apps designed for growth",
-        Icon: Android,
-        url: "/services/android-app-development-company",
-      },
-      {
-        title: "iOS App Development",
-        subtitle: "Get iOS apps for better experiences",
-        Icon: Ios,
-        url: "/services/ios-app-development-company",
-      },
-      {
-        title: "React Native  Development",
-        subtitle: "Apps with  speed and efficiency",
-        Icon: React,
-        url: "/services/react-native-app-development-company",
-      },
-      {
-        title: "App Maintenance Service",
-        subtitle: "Keep apps secure and smoothly",
-        Icon: Maintaince,
-        url: "/services/mobile-app-maintenance-company",
-      },
-      {
-        title: "PWA Development",
-        subtitle: "Fast, reliable web app",
-        Icon: Pwa,
-        url: "/services/pwa-development-company",
-      },
-    ],
-
-    "Other Services": [
-      {
-        title: "Search Engine Optimization",
-        subtitle: "Organic Growth, Technical SEO, Content Strategy",
-        Icon: Seo,
-        url: "/services/search-engine-optimization-company",
-      },
-      {
-        title: "UI/UX",
-        subtitle: "Figma, Adobe XD, User Research, Prototyping",
-        Icon: Uiux,
-        url: "/services/ui-ux-designing-company",
-      },
-      {
-        title: "Product",
-        subtitle: "Concept Ideation, Market Analysis, Rapid MVP",
-        Icon: FullStack,
-        url: "/services/product-designing-company",
-      },
-      {
-        title: "Cloud",
-        subtitle: "AWS, Azure, Server Security, Scalable Infrastructure",
-        Icon: Cloud,
-        url: "/services/cloud-company",
-      },
-    ],
-  };
-  const aboutMenu = [
-    {
-      title: "About",
-      subtitle: "Driven by innovation, powered by experience",
-      href: "/about-us",
-      Icon: About,
-    },
-    {
-      title: "Blogs",
-      subtitle: "Insights, trends, and expert tech knowledge",
-      href: "/blogs",
-      Icon: Blog,
-    },
-    // {
-    //   title: "Careers",
-    //   subtitle: "Grow your career with us",
-    //   href: "/careers",
-    //   icon: career.src,
-    // },
-    {
-      title: "Case Study",
-      subtitle: "Real projects, real results, real impact",
-      href: "/case-study",
-      Icon: CaseStudy,
-    },
-  ];
+    "Application Development"
+  )
+  const isActive = (path: string) => pathname === path
 
   const {
     "Frontend Development": frontend,
     "Backend Development": backend,
     "Application Development": application,
     "Other Services": otherServices,
-  } = megaMenuData;
+  } = megaMenuData
 
-  // const leftMenuLinks = {
-  //   "Application Development": "",
+  const [openPopup, setOpenPopup] = useState(false)
+  const { open, closeVideo } = useVideoModal()
 
-  //   "Frontend Development": "",
-  //   "Backend Development": "",
-  //   "Search Engine Optimization": "",
-  //   "Product Designing": "",
-  //   "Ui/Ux Designing": "",
-  //   "Cloud Service": "",
-  //   Industries: "",
-  // };
-  const [openPopup, setOpenPopup] = useState(false);
-  const { open, closeVideo } = useVideoModal();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [activeMobileCategory, setActiveMobileCategory] = useState<
+    string | null
+  >(null)
+
+  const toggleMobileMenu = () => setMobileMenuOpen((prev) => !prev)
+
+  const toggleMobileCategory = (category: string) => {
+    setActiveMobileCategory((prev) => (prev === category ? null : category))
+  }
   return (
     <>
       <header className="fixed inset-x-0 top-0 left-0 z-50 w-full bg-[rgba(11,11,11,0.376)] px-5 text-white backdrop-blur-[5px] will-change-[background]">
-
         <div className="container mx-auto flex items-center justify-between py-4">
           <Link href="/" className="flex items-center">
             <img src={logo.src} className="w-42" alt="Moonstack" />
           </Link>
 
-          <nav className="relative hidden items-center gap-10 text-sm font-medium md:flex">
+          <nav className="relative hidden items-center gap-10 text-sm font-medium lg:flex">
             <ul className="menu-list flex items-center gap-9">
               <li>
                 <Link href="/" className="menu-item group">
@@ -302,10 +76,11 @@ export default function NewHeader() {
                       active={openMenu === "services"}
                     />
                     <IoIosArrowDown
-                      className={`ml-1 text-sm transition-colors ${openMenu === "services"
-                        ? "text-[#d6ff00]"
-                        : "text-white"
-                        }`}
+                      className={`ml-1 text-sm transition-colors ${
+                        openMenu === "services"
+                          ? "text-[#d6ff00]"
+                          : "text-white"
+                      }`}
                     />
                   </button>
                 </Link>
@@ -320,7 +95,7 @@ export default function NewHeader() {
                             Frontend Development
                           </h4>
 
-                          <ul className="grid grid-cols-2 gap-x-8 ">
+                          <ul className="grid grid-cols-2 gap-x-8">
                             {frontend.map((item, i) => (
                               <li key={i} className="submenuList h-[75px]">
                                 <Link
@@ -330,13 +105,13 @@ export default function NewHeader() {
                                   <item.Icon />
 
                                   <div className="w-full">
-                                    <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">
+                                    <p className="flex w-full items-center !text-[14px] !font-semibold uppercase">
                                       {item.title}
 
                                       <IoIosArrowRoundForward className="ml-auto h-[24px] w-[24px] opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
                                     </p>
 
-                                    <p className="!text-[12px] mt-1 leading-[1.5] text-gray-600">
+                                    <p className="mt-1 !text-[12px] leading-[1.5] text-gray-600">
                                       {item.subtitle}
                                     </p>
                                   </div>
@@ -362,13 +137,13 @@ export default function NewHeader() {
                                   <item.Icon />
 
                                   <div className="w-full">
-                                    <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">
+                                    <p className="flex w-full items-center !text-[14px] !font-semibold uppercase">
                                       {item.title}
 
                                       <IoIosArrowRoundForward className="ml-auto h-[24px] w-[24px] opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
                                     </p>
 
-                                    <p className="!text-[12px] mt-1 leading-[1.5] text-gray-600">
+                                    <p className="mt-1 !text-[12px] leading-[1.5] text-gray-600">
                                       {item.subtitle}
                                     </p>
                                   </div>
@@ -394,13 +169,13 @@ export default function NewHeader() {
                                   <item.Icon />
 
                                   <div className="w-full">
-                                    <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">
+                                    <p className="flex w-full items-center !text-[14px] !font-semibold uppercase">
                                       {item.title}
 
                                       <IoIosArrowRoundForward className="ml-auto h-[24px] w-[24px] opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
                                     </p>
 
-                                    <p className="!text-[12px] mt-1 leading-[1.5] text-gray-600">
+                                    <p className="mt-1 !text-[12px] leading-[1.5] text-gray-600">
                                       {item.subtitle}
                                     </p>
                                   </div>
@@ -422,22 +197,24 @@ export default function NewHeader() {
 
                         <div className="flex flex-wrap justify-between">
                           {otherServices.map((item, i) => (
-                            <div key={i} className="submenuList md:w-[25%] h-[75px]">
+                            <div
+                              key={i}
+                              className="submenuList h-[75px] lg:w-[25%]"
+                            >
                               <Link
                                 href={item.url}
                                 className="submenuLink group flex w-full gap-3"
                               >
                                 <item.Icon />
 
-
                                 <div className="w-full">
-                                  <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">
+                                  <p className="flex w-full items-center !text-[14px] !font-semibold uppercase">
                                     {item.title}
 
                                     <IoIosArrowRoundForward className="ml-auto h-[24px] w-[24px] opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
                                   </p>
 
-                                  <p className="!text-[12px] mt-1 leading-[1.5] text-gray-600">
+                                  <p className="mt-1 !text-[12px] leading-[1.5] text-gray-600">
                                     {item.subtitle}
                                   </p>
                                 </div>
@@ -472,15 +249,14 @@ export default function NewHeader() {
                           >
                             <item.Icon />
 
-
                             <div className="w-full">
-                              <p className="!text-[14px] flex w-full items-center !font-semibold uppercase">
+                              <p className="flex w-full items-center !text-[14px] !font-semibold uppercase">
                                 {item.title}
 
                                 <IoIosArrowRoundForward className="ml-auto h-[24px] w-[24px] opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
                               </p>
 
-                              <p className="!text-[12px] mt-1 leading-[1.5] text-gray-600">
+                              <p className="mt-1 !text-[12px] leading-[1.5] text-gray-600">
                                 {item.subtitle}
                               </p>
                             </div>
@@ -491,7 +267,6 @@ export default function NewHeader() {
                   </div>
                 )}
               </li>
-
 
               <li className={`menu-item megaMenuItem relative`}>
                 <Link href="/services/ai-agent-development-company">
@@ -526,11 +301,179 @@ export default function NewHeader() {
             <CustomButton
               text="Get a quote"
               onClick={() => setOpenPopup(true)}
-              className="px-5 py-2 tracking-[0.8px] whitespace-nowrap text-black"
+              className="hidden px-5 py-2 tracking-[0.8px] whitespace-nowrap text-black lg:block"
               variant="headerButton"
             />
+            {/* Mobile Menu Toggle */}
+            <button
+              className="text-2xl text-white lg:hidden"
+              onClick={(e) => {
+                e.stopPropagation()
+                toggleMobileMenu()
+              }}
+            >
+              {mobileMenuOpen ? <IoMdClose /> : <IoMdMenu />}
+            </button>
           </div>
         </div>
+
+        {/* Mobile Menu Drawer */}
+        <AnimatePresence>
+          {mobileMenuOpen && (
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "tween", duration: 0.3 }}
+              className="h-100vh fixed inset-0 top-[27px] z-40 flex flex-col px-5 py-8 text-white lg:hidden"
+            >
+              <div className="flex h-full flex-col overflow-y-auto">
+                <ul className="absolute left-0 flex max-h-[80vh] w-full flex-col gap-6 overflow-y-auto rounded-[20px] rounded-b-[20px] bg-black px-5 text-lg font-medium">
+                  <li>
+                    <Link
+                      href="/"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block py-2"
+                    >
+                      Home
+                    </Link>
+                  </li>
+
+                  {/* Services Accordion */}
+                  <li>
+                    <button
+                      onClick={() => toggleMobileCategory("services")}
+                      className="flex w-full items-center justify-between py-2"
+                    >
+                      <span>Services</span>
+                      <IoIosArrowDown
+                        className={`transition-transform ${
+                          activeMobileCategory === "services"
+                            ? "rotate-180"
+                            : ""
+                        }`}
+                      />
+                    </button>
+                    <AnimatePresence>
+                      {activeMobileCategory === "services" && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          className="overflow-hidden pl-4"
+                        >
+                          {/* Nested Accordions for Service Categories */}
+                          {Object.entries(megaMenuData).map(
+                            ([category, items]) => (
+                              <div key={category} className="my-2">
+                                <h5 className="mb-2 text-sm font-bold text-gray-400">
+                                  {category}
+                                </h5>
+                                <ul className="flex flex-col gap-2 pl-4">
+                                  {items.map((item, i) => (
+                                    <li key={i}>
+                                      <Link
+                                        href={item.url}
+                                        onClick={() => setMobileMenuOpen(false)}
+                                        className="block py-1 text-sm text-gray-300 hover:text-white"
+                                      >
+                                        {item.title}
+                                      </Link>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )
+                          )}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </li>
+
+                  {/* Company Accordion */}
+                  <li>
+                    <button
+                      onClick={() => toggleMobileCategory("company")}
+                      className="flex w-full items-center justify-between py-2"
+                    >
+                      <span>Company</span>
+                      <IoIosArrowDown
+                        className={`transition-transform ${
+                          activeMobileCategory === "company" ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    <AnimatePresence>
+                      {activeMobileCategory === "company" && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          className="overflow-hidden pl-4"
+                        >
+                          <ul className="flex flex-col gap-3 pt-2">
+                            {aboutMenu.map((item, i) => (
+                              <li key={i}>
+                                <Link
+                                  href={item.href}
+                                  onClick={() => setMobileMenuOpen(false)}
+                                  className="flex items-center gap-3 py-1 text-sm text-gray-300 hover:text-white"
+                                >
+                                  {/* <item.Icon className="text-lg" /> */}
+                                  <span>{item.title}</span>
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </li>
+
+                  <li>
+                    <Link
+                      href="/services/ai-agent-development-company"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block py-2"
+                    >
+                      AI
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/industries"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block py-2"
+                    >
+                      Industries
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/contact-us"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block py-2"
+                    >
+                      Contact us
+                    </Link>
+                  </li>
+                  <li>
+                    {" "}
+                    <CustomButton
+                      text="Get a quote"
+                      onClick={() => {
+                        setOpenPopup(true)
+                        setMobileMenuOpen(false)
+                      }}
+                      className="w-full text-center text-black"
+                      variant="headerButton"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </header>
       <HeroVideoModal
         isOpen={open}
@@ -542,5 +485,5 @@ export default function NewHeader() {
         onClose={() => setOpenPopup(false)}
       />
     </>
-  );
+  )
 }
