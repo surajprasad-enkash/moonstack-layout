@@ -13,24 +13,24 @@ import { useVideoModal } from "@/context/VideoModalContext";
 import logo from "@/assets/logo-white.png";
 
 //other
-import Uiux from "@/components/ServicesSvg/HeaderSvgIcons/WebsiteDev";
+import Uiux from "@/components/ServicesSvg/HeaderSvgIcons/websiteDev";
 import Ecomm from "@/components/ServicesSvg/HeaderSvgIcons/Ecomm";
 import WebDesining from "@/components/ServicesSvg/HeaderSvgIcons/WebDesining";
-import Angular from "@/components/ServicesSvg/HeaderSvgIcons/Angular";
+import Angular from "@/components/ServicesSvg/HeaderSvgIcons/angular";
 import React from "@/components/ServicesSvg/HeaderSvgIcons/react";
 import FullStack from "@/components/ServicesSvg/HeaderSvgIcons/FullStack";
-import Laravel from "@/components/ServicesSvg/HeaderSvgIcons/Laravel";
-import Python from "@/components/ServicesSvg/HeaderSvgIcons/Python";
+import Laravel from "@/components/ServicesSvg/HeaderSvgIcons/laravel";
+import Python from "@/components/ServicesSvg/HeaderSvgIcons/python";
 
-import Android from "@/components/ServicesSvg/HeaderSvgIcons/Android";
-import Ios from "@/components/ServicesSvg/HeaderSvgIcons/Ios";
-import Pwa from "@/components/ServicesSvg/HeaderSvgIcons/Pwa";
-import Maintaince from "@/components/ServicesSvg/HeaderSvgIcons/Maintanance";
-import Seo from "@/components/ServicesSvg/HeaderSvgIcons/Seo";
-import Cloud from "@/components/ServicesSvg/HeaderSvgIcons/Cloud";
+import Android from "@/components/ServicesSvg/HeaderSvgIcons/android";
+import Ios from "@/components/ServicesSvg/HeaderSvgIcons/ios";
+import Pwa from "@/components/ServicesSvg/HeaderSvgIcons/pwa";
+import Maintaince from "@/components/ServicesSvg/HeaderSvgIcons/maintanance";
+import Seo from "@/components/ServicesSvg/HeaderSvgIcons/seo";
+import Cloud from "@/components/ServicesSvg/HeaderSvgIcons/cloud";
 import About from "@/components/ServicesSvg/HeaderSvgIcons/AboutUs";
-import Blog from "@/components/ServicesSvg/HeaderSvgIcons/Blog";
-import CaseStudy from "@/components/ServicesSvg/HeaderSvgIcons/CaseStudy";
+import Blog from "@/components/ServicesSvg/HeaderSvgIcons/blog";
+import CaseStudy from "@/components/ServicesSvg/HeaderSvgIcons/caseStudy";
 
 
 import HoverSlideText from "../HoverSlideText";
