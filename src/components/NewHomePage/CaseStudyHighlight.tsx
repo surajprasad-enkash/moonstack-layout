@@ -1,31 +1,31 @@
-"use client";
+"use client"
 
-import Image, { StaticImageData } from "next/image";
-import bgImage from "@/assets/newHomePage/caseStudy/banner.svg";
+import Image, { StaticImageData } from "next/image"
+import bgImage from "@/assets/newHomePage/caseStudy/banner.svg"
 
 /* ---------------- TYPES ---------------- */
 
 interface Badge {
-  label: string;
+  label: string
 }
 
 interface Testimonial {
-  name: string;
-  role: string;
-  text: string;
-  rating?: number;
-  clientImage?: StaticImageData | string;
+  name: string
+  role: string
+  text: string
+  rating?: number
+  clientImage?: StaticImageData | string
 }
 
 interface CaseStudyHighlightProps {
-  tag?: string;
-  badges?: Badge[];
-  title?: string;
-  showTag?: boolean;
-  description?: string;
-  testimonial?: Testimonial;
-  images?: StaticImageData[];
-  clutchLogo?: StaticImageData | string;
+  tag?: string
+  badges?: Badge[]
+  title?: string
+  showTag?: boolean
+  description?: string
+  testimonial?: Testimonial
+  images?: StaticImageData[]
+  clutchLogo?: StaticImageData | string
 }
 
 /* ---------------- COMPONENT ---------------- */
@@ -46,12 +46,12 @@ export default function CaseStudyHighlight({
   images = [],
 }: CaseStudyHighlightProps) {
   return (
-    <section className="relative text-white px-[20px]">
+    <section className="relative px-[20px] text-white">
       {showTag && bgImage && (
         <Image
           src={bgImage}
           alt="Background"
-          className="absolute top-[20%] right-[0] left-[0%] z-[1] h-[auto] w-[150%] "
+          className="absolute top-[20%] right-[0] left-[0%] z-[1] h-[auto] w-[150%]"
         />
       )}
 
@@ -59,7 +59,7 @@ export default function CaseStudyHighlight({
         {/* TAG */}
         {showTag && (
           <div className="mb-5 md:mb-[90px]">
-            <span className="font-[500] block text-xs tracking-widest text-white/60 uppercase">
+            <span className="block text-xs font-[500] tracking-widest text-white/60 uppercase">
               {tag}
             </span>
           </div>
@@ -67,7 +67,7 @@ export default function CaseStudyHighlight({
 
         <div className="gap-20 md:flex">
           {/* LEFT CONTENT */}
-          <div className="md:max-w-[520px] max-w-full">
+          <div className="max-w-full md:max-w-[520px]">
             <div className="sticky top-[20px] md:pt-[85px]">
               {/* Badges */}
               <div className="mb-[30px] flex flex-wrap">
@@ -157,5 +157,5 @@ export default function CaseStudyHighlight({
         </div>
       </div>
     </section>
-  );
+  )
 }

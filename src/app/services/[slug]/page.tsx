@@ -132,7 +132,7 @@ export default async function ApplicationPage({ params }: PageProps) {
           breadcrumbs={page.hero.breadcrumbs}
         />
 
-        <Space />
+        <Space mobileSize={0} />
         {page.points && (
           <>
             <TestimonialCard
@@ -150,7 +150,7 @@ export default async function ApplicationPage({ params }: PageProps) {
         {page.leftCardData.length > 0 && (
           <>
             <BusinessNeedsDesignSection leftCards={page.leftCardData} />
-            <Space size={160} />
+            <Space size={160} mobileSize={0} />
           </>
         )}
 
@@ -177,7 +177,7 @@ export default async function ApplicationPage({ params }: PageProps) {
           />
         )}
 
-        <Space size={160} />
+        <Space size={160} mobileSize={0} />
 
         {page.impactSection && page.impactSection.cards.length > 0 && (
           <ImpactSection

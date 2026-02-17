@@ -41,7 +41,12 @@ export default function QualitySection({
 }: QualitySectionProps) {
   if (!features || features.length === 0) return null
   return (
-    <section className={cn("relative py-24 text-white", className)}>
+    <section
+      className={cn(
+        "relative px-4 pt-[60px] pb-0 text-white md:py-24",
+        className
+      )}
+    >
       <div className="pointer-events-none absolute inset-0 opacity-30" />
 
       <div className="relative z-10 container">
@@ -59,7 +64,7 @@ export default function QualitySection({
         >
           {features.map((item, i) => (
             <div key={i} className="flex flex-col items-center text-center">
-              <div className="relative flex h-[100px] w-[100px] items-end justify-center">
+              <div className="servicesFeatureIcon relative flex h-[100px] w-[100px] items-end justify-center">
                 {item.Icon ? (
                   <item.Icon className="h-full w-full" />
                 ) : (

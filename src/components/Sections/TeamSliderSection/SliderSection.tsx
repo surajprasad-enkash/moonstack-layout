@@ -1,24 +1,24 @@
-"use client";
+"use client"
 
-import React, { useRef } from "react";
-import Slider from "react-slick";
-import Image from "next/image";
-import Heading from "../../Heading/Heading";
-import { motion } from "framer-motion";
-import { slides } from "./data";
-import TeamBottomInfo from "@/components/TeamBottomInfo";
-import CommanButton from "@/components/CommanButton/CommanButton";
-import TeamBottomInfoImg1 from "@/assets/app-development-images/team-bottom-cards-1.svg";
-import TeamBottomInfoImg2 from "@/assets/app-development-images/team-bottom-cards-2.svg";
-import TeamBottomInfoImg3 from "@/assets/app-development-images/team-bottom-cards-3.svg";
-import TeamBottomInfoImg4 from "@/assets/app-development-images/team-bottom-cards-4.svg";
-import bgImageGradient from "@/assets/app-development-images/team-bg-1440.svg";
+import React, { useRef } from "react"
+import Slider from "react-slick"
+import Image from "next/image"
+import Heading from "../../Heading/Heading"
+import { motion } from "framer-motion"
+import { slides } from "./data"
+import TeamBottomInfo from "@/components/TeamBottomInfo"
+import CommanButton from "@/components/CommanButton/CommanButton"
+import TeamBottomInfoImg1 from "@/assets/app-development-images/team-bottom-cards-1.svg"
+import TeamBottomInfoImg2 from "@/assets/app-development-images/team-bottom-cards-2.svg"
+import TeamBottomInfoImg3 from "@/assets/app-development-images/team-bottom-cards-3.svg"
+import TeamBottomInfoImg4 from "@/assets/app-development-images/team-bottom-cards-4.svg"
+import bgImageGradient from "@/assets/app-development-images/team-bg-1440.svg"
 
 interface TeamSliderSectionProps {
-  headingLines: { text: string; color?: string }[];
-  bgColor?: string;
-  slidesToShow?: number;
-  autoplaySpeed?: number;
+  headingLines: { text: string; color?: string }[]
+  bgColor?: string
+  slidesToShow?: number
+  autoplaySpeed?: number
 }
 
 export const features = [
@@ -38,29 +38,39 @@ export const features = [
     text: "Close cooperation where you get flexibility and comfort",
     bgImage: TeamBottomInfoImg4,
   },
-];
+]
 const TeamSliderSection: React.FC<TeamSliderSectionProps> = ({
   headingLines,
 
   bgColor = "",
 }) => {
-  const sliderRef = useRef<Slider>(null);
+  const sliderRef = useRef<Slider>(null)
 
   const settings = {
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 5, // ✅ MOBILE FIRST
     slidesToScroll: 1,
     autoplay: true,
     speed: 3000,
     autoplaySpeed: 0,
     cssEase: "linear",
     arrows: false,
+    mobileFirst: true, // ⭐ IMPORTANT
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 3 } },
-      { breakpoint: 768, settings: { slidesToShow: 2 } },
-      { breakpoint: 480, settings: { slidesToShow: 1 } },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
     ],
-  };
+  }
 
   return (
     <section className={` ${bgColor} relative py-12 md:py-20`}>
@@ -116,7 +126,7 @@ const TeamSliderSection: React.FC<TeamSliderSectionProps> = ({
           </Slider>
         </div>
 
-        <div className="container pt-20">
+        <div className="container px-[20px] pt-20 md:px-0">
           <div className="mx-auto grid max-w-[1048px] gap-0.5 md:grid-cols-2">
             {features.map((item, index) => (
               <TeamBottomInfo
@@ -137,7 +147,7 @@ const TeamSliderSection: React.FC<TeamSliderSectionProps> = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default TeamSliderSection;
+export default TeamSliderSection

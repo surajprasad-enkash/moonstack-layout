@@ -19,7 +19,7 @@ import design3 from "@/assets/newHomePage/banner/icon/design_tag_icon3.svg"
 import heroVideoPlay from "@/assets/newHomePage/banner/icon/hero-video-play.webp"
 import homeHeroTitleDecorPlay from "@/assets/newHomePage/banner/icon/home-hero-title-decor-play.webp"
 
-import bgImage from "@/assets/newHomePage/banner/bg-hero-updated.png"
+import bgImage from "@/assets/newHomePage/banner/bg-hero-updated.webp"
 import bgImage2 from "@/assets/newHomePage/banner/baimage2.svg"
 
 import Link from "next/link"

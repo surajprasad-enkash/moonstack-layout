@@ -72,7 +72,7 @@ export default function FAQSection({
                   onClick={() => toggleFAQ(index)}
                 >
                   <h5
-                    className={`hover:text-primary-yellow text-start font-medium ${
+                    className={`hover:text-primary-yellow max-w-[calc(100%-30px)] text-start font-medium ${
                       isActive
                         ? "hover:text-primary-yellow text-white"
                         : "text-white/80"
@@ -82,7 +82,7 @@ export default function FAQSection({
                   </h5>
 
                   <span
-                    className={`transform text-xl transition-transform ${
+                    className={`h-[20px] w-[20px] transform text-xl transition-transform ${
                       isActive ? "rotate-180 text-green-400" : "text-white"
                     }`}
                   >

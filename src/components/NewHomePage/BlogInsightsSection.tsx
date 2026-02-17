@@ -26,14 +26,14 @@ export default async function BlogInsightsSection({
     <section className={cn("relative z-[1] px-[20px] text-white", className)}>
       <div className="container">
         {title && (
-          <div className="mb-[72px] grid gap-8 lg:grid-cols-[1fr_1.2fr]">
-            <span className="block text-xs font-[500] tracking-widest text-white/60 uppercase">
+          <div className="mb-[72px] grid gap-[20px] md:gap-8 lg:grid-cols-[1fr_1.2fr]">
+            <span className="block text-center text-xs font-[500] tracking-widest text-white/60 uppercase md:text-start">
               Blog
             </span>
 
             <Heading
               headingTag="h2"
-              className="max-w-[650px]"
+              className="max-w-[650px] text-center md:text-start"
               content={[
                 { text: "Get " },
                 {

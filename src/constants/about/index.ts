@@ -1,3 +1,8 @@
+import industryicon1 from "@/assets/industries/icon/dbd2_i1.png"
+import industryicon2 from "@/assets/industries/icon/b_i2.png"
+import industryicon3 from "@/assets/industries/icon/b_i4.png"
+import industryicon4 from "@/assets/industries/icon/_i5.png"
+
 import revenue1 from "@/assets/revenue.svg"
 import neeta from "@/assets/about-us/neetaMan2.webp"
 import dheeraj from "@/assets/about-us/dheerajSirHoldingMIc.webp"
@@ -112,6 +117,7 @@ export const steps = [
       "Define project goals, gather requirements, and outline timelines to set a clear path for development",
   },
 ]
+
 export type ValueCard = {
   title?: string
   description?: string
@@ -152,4 +158,72 @@ export const valuesData: ValueCard[] = [
   },
 ]
 
-export default {}
+export const aboutDnaData = {
+  title: {
+    before: "What is",
+    highlight: "imprinted",
+    after: "in our DNA",
+    circled: "",
+  },
+  mission: {
+    label: "Mission",
+    text: "To help businesses worldwide turn ideas into impactful digital products through innovation-driven design, robust engineering, and performance-focused technology.",
+  },
+  vision: {
+    label: "Vision",
+    text: "To shape the future of digital experiences by building scalable, intelligent, and human-centric solutions for the world’s most forward-thinking companies.",
+  },
+}
+
+export const aboutLocationData = {
+  heading: [
+    { text: "Let`s create ", color: "text-white" },
+    {
+      text: "‍amazing ",
+      className: "highlight-text libreItalic",
+    },
+    {
+      text: "‍digital experiences together",
+      color: "text-white",
+    },
+  ],
+  buttonText: "Schedule a call",
+  buttonLink: "/contact-us",
+}
+
+export const aboutIndustryExperienceData = {
+  heading: [
+    { text: "We have ", color: "text-white" },
+    { text: "extensive ", className: "highlight-text libreItalic" },
+    {
+      text: "industry experiences",
+      color: "text-white",
+      className:
+        "relative inline-block after:absolute after:-bottom-2 after:left-0 after:h-[6px] after:w-full after:bg-[url('/underline.svg')] after:bg-contain after:bg-no-repeat",
+    },
+  ],
+  description:
+    "Our product designers have completed projects in different niches. They know how to add business value and provide personalized design solutions for your digital product.",
+  industries: [
+    {
+      title: "Web 3, Blockchain",
+      icon: industryicon1.src,
+      tags: ["Apps", "DeFi", "IPFS", "Exchanges", "Play2Earn"],
+    },
+    {
+      title: "SaaS",
+      icon: industryicon2.src,
+      tags: ["CRM", "HR", "AI", "ERP", "Automation tools"],
+    },
+    {
+      title: "Healthcare",
+      icon: industryicon3.src,
+      tags: ["Mental health", "Wellness", "Insurance", "Fitness"],
+    },
+    {
+      title: "Fintech",
+      icon: industryicon4.src,
+      tags: ["Banking", "Exchanges", "Digital Payments"],
+    },
+  ],
+}

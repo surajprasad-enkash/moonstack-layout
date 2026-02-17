@@ -1,96 +1,96 @@
-"use client";
- 
-import Image from "next/image";
-import Marquee from "react-fast-marquee";
- 
-// Logos
-import figma from "@/assets/figma.svg";
-import React from "@/assets/react-icon.svg";
-import node from "@/assets/node-icon.svg";
-import php from "@/assets/php-icon.svg";
-import ios from "@/assets/ios-icon.svg";
-import adobe from "@/assets/adobe-xd.svg";
-import flutter from "@/assets/flutter-icon.svg";
-import swift from "@/assets/swift-icon.svg";
-import android from "@/assets/android-icon.svg";
-import angular from "@/assets/angular-icon.svg";
-import aws from "@/assets/aws-icon.svg";
-import cakePhp from "@/assets/cake-php-icon.svg";
-import css from "@/assets/css-icon.svg";
-import docker from "@/assets/docker-icon.svg";
-import dotNet from "@/assets/dotNet-icon.svg";
-import framer from "@/assets/framer-icon.svg";
-import googleAnalytics from "@/assets/google-analytics-icon.svg";
-import html from "@/assets/html.svg";
-import illustrator from "@/assets/iullustrator.svg";
-import java from "@/assets/java-icon.svg";
-import kubernets from "@/assets/kubernetes-icon.svg";
+"use client"
 
-import logo from "@/assets/app-development-images/moonstackIcon.svg";
- 
-import { motion } from "framer-motion";
-import Heading from "@/components/Heading/Heading";
- 
+import Image from "next/image"
+import Marquee from "react-fast-marquee"
+
+// Logos
+import figma from "@/assets/figma.svg"
+import React from "@/assets/react-icon.svg"
+import node from "@/assets/node-icon.svg"
+import php from "@/assets/php-icon.svg"
+import ios from "@/assets/ios-icon.svg"
+import adobe from "@/assets/adobe-xd.svg"
+import flutter from "@/assets/flutter-icon.svg"
+import swift from "@/assets/swift-icon.svg"
+import android from "@/assets/android-icon.svg"
+import angular from "@/assets/angular-icon.svg"
+import aws from "@/assets/aws-icon.svg"
+import cakePhp from "@/assets/cake-php-icon.svg"
+import css from "@/assets/css-icon.svg"
+import docker from "@/assets/docker-icon.svg"
+import dotNet from "@/assets/dotNet-icon.svg"
+import framer from "@/assets/framer-icon.svg"
+import googleAnalytics from "@/assets/google-analytics-icon.svg"
+import html from "@/assets/html.svg"
+import illustrator from "@/assets/iullustrator.svg"
+import java from "@/assets/java-icon.svg"
+import kubernets from "@/assets/kubernetes-icon.svg"
+
+import logo from "@/assets/app-development-images/moonstackIcon.svg"
+
+import { motion } from "framer-motion"
+import Heading from "@/components/Heading/Heading"
+
 /* ---------------- TYPES ---------------- */
- 
+
 type MarqueeItem =
   | { type: "logo"; src: string; label: string }
-  | { type: "text"; text: string };
- 
+  | { type: "text"; text: string }
+
 /* ---------------- DATA ---------------- */
- 
+
 const marqueeItems: MarqueeItem[] = [
   { type: "logo", src: figma, label: "Accord" },
- 
+
   { type: "logo", src: React, label: "Aligneur" },
- 
+
   { type: "logo", src: node, label: "Backend Developer" },
- 
+
   { type: "logo", src: php, label: "Crafty We Kabar" },
- 
+
   { type: "logo", src: ios, label: "eNetworks" },
- 
+
   { type: "logo", src: adobe, label: "EnKash" },
- 
+
   { type: "logo", src: flutter, label: "Hydrocan" },
- 
+
   { type: "logo", src: swift, label: "PickRight" },
   { type: "logo", src: android, label: "Accord" },
- 
+
   { type: "logo", src: angular, label: "Aligneur" },
- 
+
   { type: "logo", src: aws, label: "Backend Developer" },
- 
+
   { type: "logo", src: cakePhp, label: "Crafty We Kabar" },
- 
+
   { type: "logo", src: css, label: "eNetworks" },
- 
+
   { type: "logo", src: docker, label: "EnKash" },
- 
+
   { type: "logo", src: dotNet, label: "Hydrocan" },
- 
+
   { type: "logo", src: googleAnalytics, label: "PickRight" },
   { type: "logo", src: html, label: "eNetworks" },
- 
+
   { type: "logo", src: java, label: "EnKash" },
- 
+
   { type: "logo", src: kubernets, label: "Hydrocan" },
   { type: "logo", src: framer, label: "EnKash" },
- 
+
   { type: "logo", src: illustrator, label: "Hydrocan" },
-];
- 
+]
+
 /* ---------------- ROW COMPONENT ---------------- */
- 
+
 const MarqueeRow = ({ direction }: { direction: "left" | "right" }) => {
   return (
-    <div className="relative py-20">
+    <div className="relative px-4 pt-0 pb-[60px] md:py-20">
       <div className="techMarqueeLogo">
         {" "}
         <Image src={logo} alt={"logo"} height="115" width="155" />
       </div>
- 
-      <div className="m-auto w-1/2 text-center">
+
+      <div className="m-auto text-center md:w-1/2">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -102,7 +102,7 @@ const MarqueeRow = ({ direction }: { direction: "left" | "right" }) => {
             className="font-semibold text-white"
             content={[
               { text: " We Use ", color: "text-white" },
- 
+
               {
                 text: "Technology to Build ",
                 className: "highlight-text libreItalic",
@@ -111,7 +111,7 @@ const MarqueeRow = ({ direction }: { direction: "left" | "right" }) => {
             ]}
           />
         </motion.div>
- 
+
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -142,18 +142,18 @@ const MarqueeRow = ({ direction }: { direction: "left" | "right" }) => {
         ))}
       </Marquee>
     </div>
-  );
-};
- 
+  )
+}
+
 /* ---------------- MAIN COMPONENT ---------------- */
- 
+
 const TechMarqueeComponent = () => {
   return (
     <section className="space-y-4 overflow-x-hidden py-6">
       {/* Row 1 */}
       <MarqueeRow direction="left" />
     </section>
-  );
-};
- 
-export default TechMarqueeComponent;
+  )
+}
+
+export default TechMarqueeComponent

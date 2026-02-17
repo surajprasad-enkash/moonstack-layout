@@ -37,10 +37,10 @@ export default function TestimonialsTabs({
     <section className={cn("relative z-[1] px-[20px] text-white", className)}>
       <div className="container mx-auto">
         {/* Heading */}
-        <span className="mb-[20px] block text-xs font-[500] tracking-widest text-white/60 uppercase md:mb-[0]">
+        <span className="mb-[20px] block text-center text-xs font-[500] tracking-widest text-white/60 uppercase md:mb-[0] md:text-start">
           Verified reviews
         </span>
-        <div className="mx-auto mb-[72px] max-w-[680px] text-center">
+        <div className="mx-auto mb-[72px] max-w-[765px] text-center">
           <Heading
             headingTag="h2"
             content={[

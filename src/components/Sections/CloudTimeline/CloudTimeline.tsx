@@ -110,7 +110,7 @@ export default function CloudTimeline({
 
         {/* ================= MOBILE TIMELINE ================= */}
         <div className="relative md:hidden">
-          <div className="absolute top-0 left-5 h-full w-[2px] bg-[#1A4C2B]" />
+          <div className="absolute top-0 left-5 hidden h-full w-[2px] bg-[#1A4C2B]" />
 
           <div className="space-y-12">
             {steps.map((item, index) => {
@@ -122,14 +122,14 @@ export default function CloudTimeline({
                   ref={(el) => {
                     stepRefs.current[index] = el
                   }}
-                  className="relative pl-16"
+                  className="relative md:pl-16"
                 >
                   {/* Circle */}
                   <div
                     ref={(el) => {
                       circleRefs.current[index] = el
                     }}
-                    className={`absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-full ${
+                    className={`absolute top-0 left-0 flex hidden h-10 w-10 items-center justify-center rounded-full md:block ${
                       isActive ? "bg-[#00CF49]" : "bg-[#0B2714]"
                     }`}
                   >
@@ -166,13 +166,13 @@ export default function CloudTimeline({
         >
           {/* Base Line */}
           <div
-            className="absolute top-[50px] left-1/2 w-[3px] -translate-x-1/2 bg-[#1A4C2B]"
+            className="absolute top-[50px] left-1/2 hidden w-[3px] -translate-x-1/2 bg-[#1A4C2B] md:block"
             style={{ height: `${lineMaxHeight}px` }}
           />
 
           {/* Active Line */}
           <div
-            className="absolute top-[50px] left-1/2 w-[3px] -translate-x-1/2 bg-[#00CF49]"
+            className="absolute top-[50px] left-1/2 hidden w-[3px] -translate-x-1/2 bg-[#00CF49] md:block"
             style={{
               height: `${lineHeight}%`,
               maxHeight: `${lineMaxHeight}px`,

@@ -750,7 +750,7 @@ h1 .highlight-text {
 
 @media (max-width: 640px) {
   .techMarqueeLogo {
-    top: 231px;
+    bottom: 50px;
   }
 }
 
@@ -2092,9 +2092,7 @@ h1 .highlight-text {
   color: #000;
 }
 
-/* .awardBoxInner:hover .imageLogo {
-  filter: invert(1);
-} */
+
 
 .tastimonials_button {
   background: linear-gradient(82.15deg, #605f5f 9.95%, #3d3d3d 36.57%);
@@ -2186,7 +2184,7 @@ h1 .highlight-text {
 
 @media (max-width: 767px) {
   h1 {
-    font-size: 40px;
+    font-size: 38px;
     font-weight: 500;
     line-height: 130%;
   }
@@ -2281,18 +2279,7 @@ select:-webkit-autofill {
   scrollbar-width: none;
 }
 
-.leftSideBar .social-share li {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.leftSideBar .social-share li a {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-}
 
 .caseStudySingleTag ul {
   display: flex;
@@ -2332,20 +2319,8 @@ select:-webkit-autofill {
   display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .lds-spinner {
-  /* change color here */
+
   color: #1c4c5b
 }
 
@@ -2466,12 +2441,12 @@ select:-webkit-autofill {
   box-sizing: border-box;
 }
 
-/* Контейнер для збереження пропорцій */
+
 .hero-modal-video-wrapper {
   position: relative;
   width: 100%;
   max-width: 960px;
-  /* можна збільшити до 1200px */
+
   aspect-ratio: 16 / 9;
 }
 

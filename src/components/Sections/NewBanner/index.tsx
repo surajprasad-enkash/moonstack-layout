@@ -37,7 +37,7 @@ export default function NewBanner({
         />
       )}
       <div className="relative z-[2] container mx-auto">
-        <div className="items-center gap-10 rounded-[32px] rounded-tl-none bg-white px-6 py-10 md:flex md:px-12 md:py-14">
+        <div className="items-center gap-10 rounded-[32px] rounded-tl-none bg-white bg-gradient-to-b from-[#FFFFFF] to-[#DDFFE8] px-6 py-10 md:flex md:px-12 md:py-14">
           <div className="w-[100%] md:w-[50%]">
             <Heading
               headingTag="h2"

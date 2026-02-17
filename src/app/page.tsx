@@ -8,179 +8,22 @@ import ResultsSection from "@/components/NewHomePage/ResultsSection"
 import ImpactStatsSection from "@/components/NewHomePage/ImpactStatsSection"
 import ServicesSection from "@/components/NewHomePage/ServicesSection"
 import CaseStudyHighlight from "@/components/NewHomePage/CaseStudyHighlight"
-
-import screen1 from "@/assets/newHomePage/caseStudy/screenOne.webp"
-import screen2 from "@/assets/newHomePage/caseStudy/nuwamaScreen1.webp"
-import screen3 from "@/assets/newHomePage/caseStudy/nuwamaScreen2.webp"
-
-import Pickrightscreen1 from "@/assets/newHomePage/caseStudy/pickrightScreen1.webp"
-import Pickrightscreen2 from "@/assets/newHomePage/caseStudy/pickrightScreen2.webp"
-import Pickrightscreen3 from "@/assets/newHomePage/caseStudy/pickrightScreen3.webp"
-
-import Enkashscreen1 from "@/assets/newHomePage/caseStudy/EnkashScreen1.webp"
-import Enkashscreen2 from "@/assets/newHomePage/caseStudy/EnkashScreen2.webp"
-import Enkashscreen3 from "@/assets/newHomePage/caseStudy/EnkashScreen3.webp"
-
-import manshi from "@/assets/clientsImages/manshi.jpg"
-import amitnuvama from "@/assets/clientsImages/amitnuvama.jpg"
-import pickright from "@/assets/clientsImages/numanbhatiyapikright.jpg"
-
-import clutch from "@/assets/newHomePage/caseStudy/clutch.svg"
 import AboutHeroSection from "@/components/NewHomePage/AboutHeroSection"
-
-import person1 from "@/assets/teamsimages/neetaagrawal.webp"
-import person2 from "@/assets/teamsimages/devendra.webp"
-import person3 from "@/assets/teamsimages/sunil.webp"
-import person4 from "@/assets/teamsimages/rskumawat.webp"
-import person5 from "@/assets/teamsimages/harshit.webp"
-import AwardsSection, {
-  AwardItem,
-} from "@/components/NewHomePage/AwardsSection"
-
-import award1 from "@/assets/newHomePage/awards/clutch.svg"
-import award2 from "@/assets/newHomePage/awards/Top_Design_company_2025.png"
-import award3 from "@/assets/newHomePage/awards/Top_Digital_Design_Company_2025.png"
-import award4 from "@/assets/newHomePage/awards/clutch-badge-6.svg"
-import award5 from "@/assets/newHomePage/awards/clutch-badge.svg"
-import award6 from "@/assets/newHomePage/awards/dribbble.svg"
-import award7 from "@/assets/newHomePage/awards/good-firms.svg"
-import award8 from "@/assets/newHomePage/awards/upwork.svg"
-import icon from "@/assets/newHomePage/awards/icon.svg"
+import AwardsSection from "@/components/NewHomePage/AwardsSection"
 import TestimonialsTabs from "@/components/NewHomePage/TestimonialsTabs"
-
-import tastimonial1 from "@/assets/newHomePage/awards/tastimonial/tastimonial1.svg"
-import tastimonial2 from "@/assets/newHomePage/awards/tastimonial/tastimonial2.svg"
-import tastimonial3 from "@/assets/newHomePage/awards/tastimonial/tastimonial3.svg"
-import tastimonial4 from "@/assets/newHomePage/awards/tastimonial/tastimonial4.svg"
-
-import clutchLogo from "@/assets/newHomePage/awards/tastimonial/clutchLogo.svg"
-import clutchLogoBlack from "@/assets/newHomePage/awards/tastimonial/clutchBloack.svg"
 import ProjectCTA from "@/components/ProjectCTA/ProjectCTA"
 import TrustBadges from "@/components/NewHomePage/TrustBadges"
-
-import clutchBadges from "@/assets/newHomePage/TrustBadges/clutch.webp"
-import upwork from "@/assets/newHomePage/TrustBadges/upwork.webp"
-import dribbble from "@/assets/newHomePage/TrustBadges/dribble.webp"
-import behance from "@/assets/newHomePage/TrustBadges/behance.webp"
 import BlogInsightsSection from "@/components/NewHomePage/BlogInsightsSection"
 
-import admissify from "@/assets/clientsImages/admissifyceo.jpg"
-import coralogix from "@/assets/clientsImages/coralogixceo.jpg"
-import authbridge from "@/assets/clientsImages/authbridge.jpg"
-import brainmates from "@/assets/clientsImages/brainmates.jpg"
-const badges = [
-  {
-    icon: clutchBadges.src,
-    subtitle: "89+ Reviews on Clutch",
-  },
-  {
-    icon: upwork.src,
-    subtitle: "Top Rated Plus Agency on Upwork",
-  },
-  {
-    icon: dribbble.src,
-    subtitle: "Top 50 Trending team on Dribbble",
-  },
-  {
-    icon: behance.src,
-    subtitle: "Projects are Featured on Behance platform",
-  },
-]
-
-const tabs = [
-  {
-    id: "admissify",
-    company: "admissify",
-    logo: tastimonial1.src,
-    quote:
-      "Moonstack’s communication was clear and proactive throughout the project. The team was easy to work with and delivered exactly what we needed.",
-    author: "Ishant Aggarwal",
-    role: "Founder & CEO",
-    avatar: admissify.src,
-    rating: 5.0,
-    rightBg: "#D0F601",
-    clutchLogo: clutchLogoBlack.src,
-    color: "#000",
-  },
-  {
-    id: "tixbase",
-    company: "Tixbase",
-    logo: tastimonial2.src,
-    quote:
-      "The Moonstack team moved fast without compromising on quality. From concept to delivery, everything was handled efficiently.",
-    author: "Ariel Assaraf",
-    role: "Co-Founder & CEO",
-    avatar: coralogix.src,
-    rating: 5.0,
-    rightBg: "linear-gradient(300.37deg, #D7CAFE 20.68%, #F8F9FF 67.91%)",
-    clutchLogo: clutchLogoBlack.src,
-    color: "#000",
-  },
-  {
-    id: "brainmates",
-    company: "brainmates",
-    logo: tastimonial3.src,
-    quote:
-      "Moonstack perfectly balanced design and development. The final product looks great and performs even better.",
-    author: "Adrienne Tan",
-    role: "Co-Founder and Chief Executive Officer",
-    avatar: brainmates.src,
-    rating: 5.0,
-    rightBg: "linear-gradient(79.44deg, #3B1F60 17.64%, #5C29AA 40%)",
-    color: "#fff",
-    clutchLogo: clutchLogo.src,
-  },
-  {
-    id: "enzyme",
-    company: "enzyme",
-    logo: tastimonial4.src,
-    quote:
-      "We see Moonstack as a reliable long-term partner. Their expertise and commitment made the entire process smooth and successful.",
-    author: "Ajay Trehan",
-    role: "Founder and CEO",
-    avatar: authbridge.src,
-    rating: 5.0,
-    rightBg: "linear-gradient(268.33deg, #BBB0FE 16.45%, #DED8FF 67.27%)",
-    color: "#000",
-    clutchLogo: clutchLogoBlack.src,
-  },
-]
-const awards: AwardItem[] = [
-  {
-    title: "89+ REVIEWS ON CLUTCH",
-    subtitle: "5.0",
-    icon: icon.src,
-    image: award1,
-  },
-  {
-    title: "TOP DESIGN COMPANY 2025",
-    image: award2,
-  },
-  {
-    title: "TOP DIGITAL DESIGN COMPANY 2025",
-    image: award3,
-  },
-  {
-    title: "GLOBAL 100 B2B UI/UX COMPANY",
-    image: award4,
-  },
-  {
-    title: "GLOBAL 100 B2B UI/UX COMPANY",
-    image: award5,
-  },
-  {
-    title: "GLOBAL 100 B2B UI/UX COMPANY",
-    image: award6,
-  },
-  {
-    title: "GLOBAL 100 B2B UI/UX COMPANY",
-    image: award7,
-  },
-  {
-    title: "GLOBAL 100 B2B UI/UX COMPANY",
-    image: award8,
-  },
-]
+import {
+  badges,
+  tabs,
+  awards,
+  caseStudies,
+  teamMembers,
+  awardsHeading,
+  projectCtaData,
+} from "@/constants/home"
 
 export default function Home() {
   return (
@@ -190,7 +33,7 @@ export default function Home() {
         description="We're product-focused app and web development company in India. Moonstack’s senior engineers and designers help companies in building World class AI-powered full-stack development, UI/UX, SEO and ongoing support."
         keywords=" Website Development,Mobile app development service India, SEO, Next.js, React, Moonstack,AI solutions for businesses "
         canonical="/"
-        ogImage="https://www.moonstack.com/og-image.jpg"
+        ogImage="https://moonstack.co/wp-content/uploads/2024/03/logo_moon_dark.svg"
       />
 
       <Layout>
@@ -202,82 +45,28 @@ export default function Home() {
         <Space size={160} />
         <ServicesSection />
         <Space size={140} />
-        <CaseStudyHighlight
-          tag="CASE STUDY"
-          showTag={true}
-          badges={[{ label: "Web 3.0" }, { label: "$2.4M raised" }]}
-          clutchLogo={clutch}
-          title="EnKash: Best Expense Management & Payment Solutions for Businesses."
-          description="Working with Moonstack was a smooth experience. The team understood our needs well and delivered high-quality work on time, exceeding our expectations."
-          testimonial={{
-            name: "Mansi Bhatia",
-            role: "Project Menager",
-            clientImage: manshi,
-            rating: 5,
-            text: "Arounda excels with meticulous attention to detail and creative problem-solving.",
-          }}
-          images={[Enkashscreen1, Enkashscreen2, Enkashscreen3]}
-        />
-        <Space size={240} />
-        <CaseStudyHighlight
-          tag="CASE STUDY"
-          showTag={false}
-          badges={[{ label: "Web 3.0" }, { label: "$2.4M raised" }]}
-          clutchLogo={clutch}
-          title="Nuvama Wealth: Wealth Management Done Right"
-          description="Moonstack helped improve our product design and development, leading to better user engagement and strong business results."
-          testimonial={{
-            name: "Amit Ahuja",
-            role: "CEO",
-            clientImage: amitnuvama,
-            rating: 5,
-            text: "Arounda excels with meticulous attention to detail and creative problem-solving.",
-          }}
-          images={[screen2, screen1, screen3]}
-        />
-        <Space size={240} />
-        <CaseStudyHighlight
-          tag="CASE STUDY"
-          showTag={false}
-          badges={[{ label: "Web 3.0" }, { label: "$2.4M raised" }]}
-          clutchLogo={clutch}
-          title="Stock Trading Ideas - Advisory Services for Stock Market | Pickright"
-          description="Professional, responsive, and reliable — Moonstack delivered exactly what they promised while maintaining excellent quality."
-          testimonial={{
-            name: "Naman Bhatia",
-            role: "CEO",
-            clientImage: pickright,
-            rating: 5,
-            text: "Arounda excels with meticulous attention to detail and creative problem-solving.",
-          }}
-          images={[Pickrightscreen1, Pickrightscreen2, Pickrightscreen3]}
-        />
-        <Space size={150} />
-        <AboutHeroSection
-          teamMembers={[
-            { image: person1 },
-            { image: person2 },
-            { image: person3 },
-            { image: person4 },
-            { image: person5 },
-          ]}
-        />
+        {caseStudies.map((study, index) => (
+          <div key={index}>
+            <CaseStudyHighlight
+              tag={study.tag}
+              showTag={study.showTag}
+              badges={study.badges}
+              clutchLogo={study.clutchLogo}
+              title={study.title}
+              description={study.description}
+              testimonial={study.testimonial}
+              images={study.images}
+            />
+            {/* Add space after each case study except the last one if needed, or keeping original spacing logic */}
+            {index < caseStudies.length - 1 && <Space size={240} />}
+            {index === caseStudies.length - 1 && <Space size={150} />}
+          </div>
+        ))}
+        <AboutHeroSection teamMembers={teamMembers} />
         <Space size={160} />
         <AwardsSection
           label="Awards & Achievements"
-          heading={[
-            { text: "Growth" },
-            {
-              text: "of our clients ",
-              className: "libreItalic highlight-text font-[400]",
-            },
-            { text: " is the goal:" },
-            {
-              text: "awards ",
-              className: "libreItalic highlight-text font-[400]",
-            },
-            { text: "are just the a plus" },
-          ]}
+          heading={awardsHeading}
           awards={awards}
         />
         <Space size={160} />
@@ -286,12 +75,12 @@ export default function Home() {
         <BlogInsightsSection imageHeight="h-[280px]" />
         <Space size={50} mobileSize={0} />
         <ProjectCTA
-          title="Ready to scale"
-          subtitle="your business?"
-          description="Book a free strategy call and get clear, actionable guidance for your next move."
-          fontSize="md:!text-[80px] !text-[40px]"
-          marginBottom="mb-0"
-          whiteBoxClass=""
+          title={projectCtaData.title}
+          subtitle={projectCtaData.subtitle}
+          description={projectCtaData.description}
+          fontSize={projectCtaData.fontSize}
+          marginBottom={projectCtaData.marginBottom}
+          whiteBoxClass={projectCtaData.whiteBoxClass}
         />
         <Space size={24} />
         <TrustBadges items={badges} />;
