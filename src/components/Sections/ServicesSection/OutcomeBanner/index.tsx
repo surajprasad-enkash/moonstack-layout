@@ -34,7 +34,7 @@ const OutcomeBanner: React.FC<OutcomeBannerProps> = ({
       />
 
       <div className="relative z-[2] container mx-auto">
-        <div className="mx-auto grid max-w-[920px] items-center justify-items-start gap-10 rounded-3xl rounded-tl-none bg-[radial-gradient(93.15%_91.89%_at_29.35%_0%,rgba(13,150,97,0.9)_0%,rgba(12,24,30,0.9)_100%),linear-gradient(180deg,#1C1C1C_0%,rgba(28,28,28,0)_100%)] px-[70px] py-[90px] backdrop-blur-md md:grid-cols-2">
+        <div className="mx-auto grid max-w-[920px] items-center justify-items-start gap-10 rounded-3xl rounded-tl-none bg-[radial-gradient(93.15%_91.89%_at_29.35%_0%,rgba(13,150,97,0.9)_0%,rgba(12,24,30,0.9)_100%),linear-gradient(180deg,#1C1C1C_0%,rgba(28,28,28,0)_100%)] px-[20px] py-[90px] backdrop-blur-md md:grid-cols-2 md:px-[70px]">
           <div>
             <Heading
               headingTag="h3"

@@ -85,7 +85,7 @@ const marqueeItems: MarqueeItem[] = [
 const MarqueeRow = ({ direction }: { direction: "left" | "right" }) => {
   return (
     <div className="relative px-4 pt-0 pb-[60px] md:py-20">
-      <div className="techMarqueeLogo">
+      <div className="techMarqueeLogo hidden md:block">
         {" "}
         <Image src={logo} alt={"logo"} height="115" width="155" />
       </div>
