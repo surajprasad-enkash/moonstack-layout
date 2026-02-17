@@ -17,10 +17,11 @@ import Uiux from "@/components/ServicesSvg/HeaderSvgIcons/WebsiteDev";
 import Ecomm from "@/components/ServicesSvg/HeaderSvgIcons/Ecomm";
 import WebDesining from "@/components/ServicesSvg/HeaderSvgIcons/WebDesining";
 import Angular from "@/components/ServicesSvg/HeaderSvgIcons/Angular";
-import React from "@/components/ServicesSvg/HeaderSvgIcons/React";
+import React from "@/components/ServicesSvg/HeaderSvgIcons/ReactIcon";
 import FullStack from "@/components/ServicesSvg/HeaderSvgIcons/FullStack";
 import Laravel from "@/components/ServicesSvg/HeaderSvgIcons/Laravel";
 import Python from "@/components/ServicesSvg/HeaderSvgIcons/Python";
+
 import Android from "@/components/ServicesSvg/HeaderSvgIcons/Android";
 import Ios from "@/components/ServicesSvg/HeaderSvgIcons/Ios";
 import Pwa from "@/components/ServicesSvg/HeaderSvgIcons/Pwa";
