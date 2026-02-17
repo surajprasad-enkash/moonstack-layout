@@ -28,7 +28,7 @@ export default function ResultsSection({
       <div className="relative z-10 container">
         {/* Label */}
         <div className="gap-[40px] md:flex">
-          <div className="md:w-[40%]">
+          <div className="text-center md:w-[40%] md:text-start">
             <span className="mb-6 block text-xs font-[500] tracking-widest text-white/70 uppercase">
               {label}
             </span>
@@ -36,7 +36,7 @@ export default function ResultsSection({
           <div className="md:w-[60%]">
             <Heading
               headingTag="h2"
-              className="mb-[50px] text-white md:ml-[82px]"
+              className="mb-[50px] text-center text-white md:ml-[82px] md:text-start"
               content={[
                 { text: brandName, className: "" },
                 {

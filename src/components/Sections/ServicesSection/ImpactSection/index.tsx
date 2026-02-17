@@ -65,7 +65,9 @@ const ImpactSection: React.FC<ImpactSectionProps> = ({
   className,
 }) => {
   return (
-    <section className={clsx("relative px-4 py-24", className)}>
+    <section
+      className={clsx("relative px-4 pt-[60px] pb-[0px] md:py-24", className)}
+    >
       <div className="container mx-auto">
         {/* Heading */}
         <div className="mx-auto max-w-3xl text-center">

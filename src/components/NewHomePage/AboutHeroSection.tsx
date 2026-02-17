@@ -64,7 +64,7 @@ export default function AboutHeroSection({
       <div className="relative z-10 container">
         {/* Label */}
 
-        <span className="mb-[50px] block text-xs font-[500] tracking-widest text-white/60 uppercase">
+        <span className="mb-[20px] block text-center text-xs font-[500] tracking-widest text-white/60 uppercase md:mb-[50px] md:text-start">
           {label}
         </span>
 
@@ -73,7 +73,7 @@ export default function AboutHeroSection({
           <div className="max-w-[650px]">
             <Heading
               headingTag="h2"
-              className="!leading-[110%] md:!text-[92px]"
+              className="text-center !leading-[110%] md:text-start md:!text-[92px]"
               content={[
                 { text: heading, className: "" },
                 {

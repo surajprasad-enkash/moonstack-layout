@@ -1,29 +1,29 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import { IoClose } from "react-icons/io5";
-import Form from "../Form/Form";
-import ContactInfoCard from "./ContactInfoCard";
+import { useState } from "react"
+import { IoClose } from "react-icons/io5"
+import Form from "../Form/Form"
+import ContactInfoCard from "./ContactInfoCard"
 
 interface Props {
-  isOpen: boolean;
-  onClose: () => void;
+  isOpen: boolean
+  onClose: () => void
 }
 
 export default function ProjectInquiryModal({ isOpen, onClose }: Props) {
-  const [fileName, setFileName] = useState<string | null>(null);
-  const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState<string | null>(null);
+  const [fileName, setFileName] = useState<string | null>(null)
+  const [loading, setLoading] = useState(false)
+  const [message, setMessage] = useState<string | null>(null)
 
-  if (!isOpen) return null;
+  if (!isOpen) return null
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
-    setMessage(null);
+    e.preventDefault()
+    setLoading(true)
+    setMessage(null)
 
-    const form = e.currentTarget;
-    const formData = new FormData(form);
+    const form = e.currentTarget
+    const formData = new FormData(form)
 
     try {
       const res = await fetch(
@@ -35,31 +35,31 @@ export default function ProjectInquiryModal({ isOpen, onClose }: Props) {
           },
           body: formData,
         }
-      );
+      )
 
-      const data = await res.json();
+      const data = await res.json()
 
       if (data.status === "success") {
-        setMessage("Your inquiry has been submitted successfully.");
-        form.reset();
-        setFileName(null);
+        setMessage("Your inquiry has been submitted successfully.")
+        form.reset()
+        setFileName(null)
       } else {
-        setMessage("Something went wrong. Please try again.");
+        setMessage("Something went wrong. Please try again.")
       }
     } catch (error) {
-      setMessage("Server error. Please try again later.");
+      setMessage("Server error. Please try again later.")
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
-  };
+  }
 
   return (
     <div
-      className="projectInquiryModalOuter fixed top-0 right-[-17px] bottom-0 left-0 z-50 overflow-auto bg-[#000]/90 p-[80px]"
+      className="projectInquiryModalOuter fixed top-0 right-[-17px] bottom-0 left-0 z-50 max-w-[100%] overflow-auto bg-[#000]/90 p-[20px] md:p-[80px]"
       onClick={onClose}
     >
       <div
-        className="flex items-center justify-center p-20"
+        className="flex items-center justify-center md:p-20"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="relative flex w-full max-w-[1040px] overflow-hidden">
@@ -85,5 +85,5 @@ export default function ProjectInquiryModal({ isOpen, onClose }: Props) {
         </div>
       </div>
     </div>
-  );
+  )
 }

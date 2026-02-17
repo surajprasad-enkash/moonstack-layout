@@ -26,7 +26,12 @@ export default function TestimonialsSection({
   className,
 }: TestimonialsSectionProps) {
   return (
-    <section className={cn("relative px-[20px] text-white", className)}>
+    <section
+      className={cn(
+        "relative px-[20px] pb-[60px] text-white md:py-20",
+        className
+      )}
+    >
       {bgImage && (
         <Image
           src={bgImage}

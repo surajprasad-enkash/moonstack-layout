@@ -39,7 +39,7 @@ export default function AwardsSection({
         {/* Header */}
         <div className="mb-[50px] md:mb-[150px]">
           {showLabel && label && (
-            <span className="mb-[20px] block text-xs font-[500] tracking-widest text-white/60 uppercase md:mb-0">
+            <span className="mb-[20px] block text-center text-xs font-[500] tracking-widest text-white/60 uppercase md:mb-0 md:text-start">
               {label}
             </span>
           )}

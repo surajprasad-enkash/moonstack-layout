@@ -140,7 +140,7 @@ export default function ServicesSection({
       <div className="relative z-10 container">
         {/* Label */}
         {showLabel && (
-          <span className="block text-xs font-[500] tracking-widest text-white/60 uppercase">
+          <span className="mb-[20px] block text-center text-xs font-[500] tracking-widest text-white/60 uppercase md:mb-0 md:text-start">
             Services
           </span>
         )}

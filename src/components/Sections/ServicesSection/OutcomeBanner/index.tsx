@@ -1,20 +1,20 @@
-"use client";
+"use client"
 
-import React from "react";
-import Image, { StaticImageData } from "next/image";
+import React from "react"
+import Image, { StaticImageData } from "next/image"
 
-import { FiCheck } from "react-icons/fi";
-import { cn } from "@/lib/utils";
-import Heading from "@/components/Heading/Heading";
-import CustomButton from "@/components/CommanButton/CommanButton";
+import { FiCheck } from "react-icons/fi"
+import { cn } from "@/lib/utils"
+import Heading from "@/components/Heading/Heading"
+import CustomButton from "@/components/CommanButton/CommanButton"
 
 interface OutcomeBannerProps {
-  heading: { text: string; color?: string; className?: string }[];
-  checklist: string[];
-  buttonText?: string;
-  onButtonClick?: () => void;
-  bgImage: string | StaticImageData;
-  className?: string;
+  heading: { text: string; color?: string; className?: string }[]
+  checklist: string[]
+  buttonText?: string
+  onButtonClick?: () => void
+  bgImage: string | StaticImageData
+  className?: string
 }
 
 const OutcomeBanner: React.FC<OutcomeBannerProps> = ({
@@ -26,7 +26,7 @@ const OutcomeBanner: React.FC<OutcomeBannerProps> = ({
   className,
 }) => {
   return (
-    <section className={cn("relative mt-[72px] px-4", className)}>
+    <section className={cn("relative mt-0 px-4 md:mt-[72px]", className)}>
       <Image
         src={bgImage}
         alt="gradient background"
@@ -66,7 +66,7 @@ const OutcomeBanner: React.FC<OutcomeBannerProps> = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default OutcomeBanner;
+export default OutcomeBanner
