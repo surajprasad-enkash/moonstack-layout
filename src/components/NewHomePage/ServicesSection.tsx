@@ -29,8 +29,12 @@ interface ServicesSectionProps {
 
 export default function ServicesSection({
   heading = [
-    { text: "Our Digital Product Design & Development" },
-    { text: "Services", className: "highlight-text libreItalic" },
+    { text: "Our Digital " },
+    {
+      text: "Product Design & Development ",
+      className: "highlight-text libreItalic",
+    },
+    { text: "Services", className: "" },
   ],
   showLabel = true,
   columns = [
@@ -55,7 +59,7 @@ export default function ServicesSection({
         },
         {
           label: "Vue.js",
-          href: "/",
+          href: "/services/vuejs-development-company",
         },
         {
           label: "JavaScript",

@@ -198,13 +198,13 @@ export default function Form({ formName }: FormProps) {
       <div className="gap-[20px] md:flex">
         <p className="form_privacy_policy_links max-w-[300px] text-xs text-[#747474] md:w-[50%]">
           By submitting this form you agree to our{" "}
-          <Link href="#">
+          <Link href="/cookie-policy">
             <span className="cursor-pointer font-medium text-[#000]">
               Cookie Policy
             </span>
           </Link>{" "}
           and{" "}
-          <Link href="#">
+          <Link href="/privacy-policy">
             <span className="cursor-pointer font-medium text-[#000]">
               Privacy Policy
             </span>

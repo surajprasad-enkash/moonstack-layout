@@ -2,7 +2,6 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/android.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/appdevelopmentimg.webp"
@@ -17,12 +16,13 @@ export const android: PageData = {
   hero: {
     title: [
       {
-        text: "Android Application Development",
+        text: "Android Application ",
         color: "text-white",
       },
       {
-        text: " Service",
-        color: "text-white",
+        text: "Development Service",
+        color: "",
+        className: "libreItalic font-[400] highlight-text",
       },
     ],
     description: [
@@ -31,7 +31,7 @@ export const android: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -242,7 +242,6 @@ export const android: PageData = {
       },
       {
         id: "Focus on User Intent",
-
         label: "Focus on User Intent",
         description:
           " There’s an innate focus on user intent in our Android app development services in India. We ensure every app we build is practical in terms of design and engaging for users.",
@@ -250,7 +249,6 @@ export const android: PageData = {
       },
       {
         id: "Production Transparency",
-
         label: "Production Transparency",
         description:
           "When you work with Moonstack, you’ll always be in the loop with regular updates and milestones. We ensure the work flows smoothly and production timelines are always met.",
@@ -258,7 +256,6 @@ export const android: PageData = {
       },
       {
         id: "Maintenance & Support",
-
         label: "Maintenance & Support",
         description:
           "Our enterprise Android app solutions in India always come with maintenance and post-launch support to ensure your app is functioning optimally and doesn’t have any compatibility issues moving forward.",
@@ -268,28 +265,16 @@ export const android: PageData = {
   },
   NewBanner: {
     headingLines: [
-      { text: "Looking To Hire Professional Android App Developers?" },
-      { text: "" },
+      {
+        text: "Looking To Hire",
+      },
+      {
+        text: "Professional Android",
+        className: "italic font-[400] libreItalic",
+      },
+      { text: " App Developers?", className: "" },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
 
   accordionData: [
     {

@@ -161,7 +161,7 @@ export const valuesData: ValueCard[] = [
 export const aboutDnaData = {
   title: {
     before: "What is",
-    highlight: "imprinted",
+    highlight: "Imprinted",
     after: "in our DNA",
     circled: "",
   },
@@ -177,13 +177,13 @@ export const aboutDnaData = {
 
 export const aboutLocationData = {
   heading: [
-    { text: "Let`s create ", color: "text-white" },
+    { text: "Let`s Create ", color: "text-white" },
     {
-      text: "‍amazing ",
+      text: "‍Amazing ",
       className: "highlight-text libreItalic",
     },
     {
-      text: "‍digital experiences together",
+      text: "‍Digital Experiences Together",
       color: "text-white",
     },
   ],
@@ -194,9 +194,9 @@ export const aboutLocationData = {
 export const aboutIndustryExperienceData = {
   heading: [
     { text: "We have ", color: "text-white" },
-    { text: "extensive ", className: "highlight-text libreItalic" },
+    { text: "Extensive ", className: "highlight-text libreItalic" },
     {
-      text: "industry experiences",
+      text: "Industry Experiences",
       color: "text-white",
       className:
         "relative inline-block after:absolute after:-bottom-2 after:left-0 after:h-[6px] after:w-full after:bg-[url('/underline.svg')] after:bg-contain after:bg-no-repeat",

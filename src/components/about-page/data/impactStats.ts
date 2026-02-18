@@ -15,21 +15,21 @@ export const impactStatsData = {
     prefix: "Today, ",
     highlight: "Moonstack",
     suffix:
-      "holds a trusted, market-leading position as a global technology partner.",
+      "Holds a Trusted, Market-Leading Position as a Global Technology Partner.",
   },
 
   cards: [
     {
       type: "years-lottie",
       years: "7",
-      label: "years in business",
+      label: "Years in Business",
       lottie: lottieFile,
     },
 
     {
       type: "testimonial",
-      title: "40+ successfully designed",
-      subtitle: "Angel / Seed startups",
+      title: "40+ Successfully Designed",
+      subtitle: "Angel / Seed Startups",
       quote:
         "Moonstack brought clarity, technical expertise, and a collaborative mindset. Their close communication and ownership mindset made a real difference to our product journey.",
       author: {
@@ -41,7 +41,7 @@ export const impactStatsData = {
 
     {
       type: "funding",
-      title: "$1B+ funding raised by our clients",
+      title: "$1B+ Funding Raised by our clients",
       companies: [
         { ImageLogo: MYSO, amount: "$2.4M RAISED" },
         { ImageLogo: paradigm, amount: "$700M RAISED" },
@@ -53,17 +53,17 @@ export const impactStatsData = {
     {
       type: "projects",
       value: "170+",
-      label: "successful projects",
+      label: "Successful Projects",
     },
     {
       type: "teamMembers",
       value: "55+",
-      label: "team members",
+      label: "Team Members",
       teamMember: teamMember.src,
     },
     {
       type: "globalRemote",
-      label: "Global remote team that operates internationally",
+      label: "Global Remote Team that Operates Internationally",
       globalRemote: globalRemote.src,
     },
   ],

@@ -44,7 +44,7 @@ const HeroSection = () => {
               <Heading
                 headingTag="h1"
                 className="mb-[20px] !text-[48px] text-[#000] md:mb-[40px]"
-                content={[{ title: "Tell us about your project" }]}
+                content={[{ title: "Tell Us About Your Project" }]}
               />
               <Form formName="contact_us" />
             </div>

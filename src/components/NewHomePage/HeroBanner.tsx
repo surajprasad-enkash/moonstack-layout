@@ -47,7 +47,7 @@ export default function HeroSection({
   title = "Your technology partner uniting",
   highlightedItems = ["App", "website", "UX/UI design"],
   subtitle = "into one powerful",
-  descriptionLeft = "We work closely with reputable brands, growing businesses, and Fortune companies.",
+  descriptionLeft = "We work closely with reputable brands, growing businesses, and fortune companies.",
   descriptionRight = "Helping organizations achieve impactful results since 2014.",
   tags = [{ label: "SaaS" }, { label: "AI" }, { label: "Web 3.0" }],
   buttonText = "Book a Call",
@@ -83,9 +83,9 @@ export default function HeroSection({
 
         {/* Heading */}
         <h1 className="home-hero-title m-auto max-w-[1240px] text-center !leading-[150%] md:!leading-[130%]">
-          <span>Your Fixed technology partner uniting</span>
+          <span>Your Fixed Technology Partner Uniting</span>
           <Link
-            href=""
+            href="services/android-app-development-company"
             className="headingBrand home-hero-title-word-bg LibreBaskervilleFont !font-[400] italic"
           >
             App{" "}
@@ -101,10 +101,10 @@ export default function HeroSection({
           </Link>
           <span>,</span>
           <Link
-            href=""
+            href="/services/website-development-company"
             className="headingwebsite home-hero-title-word-bg LibreBaskervilleFont !font-[400] italic"
           >
-            website{" "}
+            Website{" "}
             <span className="website1 homeHeroTitleIcon top-[-55px] left-[81px] inline-block rounded-[50%] rounded-tl-none bg-[#ffffff14] backdrop-blur">
               <Image src={website1} alt="" width={75} height={75} />
             </span>
@@ -117,10 +117,10 @@ export default function HeroSection({
           </Link>
           <span>,</span>
           <Link
-            href=""
+            href="/services/ui-ux-designing-company"
             className="headingdesign home-hero-title-word-bg LibreBaskervilleFont !font-[400] italic"
           >
-            ux/ui design{" "}
+            UX/UI Design{" "}
             <span className="design1 homeHeroTitleIcon top-[43px] right-[-65px] inline-block rounded-[50%] rounded-tl-none bg-[#ffffff14] backdrop-blur">
               <Image src={design3} alt="" width={75} height={75} />
             </span>
@@ -137,7 +137,7 @@ export default function HeroSection({
               <Image src={design1} alt="" width={75} height={75} />
             </span>
           </Link>
-          <span className="headingtext"> into </span>
+          <span className="headingtext"> Into </span>
           <span className="mt-2 items-center !justify-center gap-5 md:!flex">
             <span
               className="home-hero-title-decor-play relative hidden cursor-pointer md:!inline-block"
@@ -159,10 +159,10 @@ export default function HeroSection({
               />
             </span>
             <span>
-              <span> one powerful digital </span>
+              <span> One Powerful Digital </span>
               <span className="home-hero-title-word-purple LibreBaskervilleFont italic">
                 {" "}
-                product{" "}
+                Product{" "}
               </span>
             </span>
           </span>

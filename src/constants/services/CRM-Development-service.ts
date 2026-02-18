@@ -2,11 +2,9 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 
+// SVG Icons Components
 import Icon1 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon1"
 import Icon2 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon2"
 import Icon3 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon3"
@@ -24,7 +22,16 @@ export const crm: PageData = {
   hero: {
     title: [
       {
-        text: "Custom Affordable CRM Development for your Business",
+        text: "Custom Affordable",
+        color: "text-white",
+      },
+      {
+        text: "CRM Development",
+        color: "",
+        className: "libreItalic highlight-text",
+      },
+      {
+        text: "for Your Business",
         color: "text-white",
       },
     ],
@@ -34,7 +41,7 @@ export const crm: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -141,7 +148,16 @@ export const crm: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Optimize Your Operations With Our Expert CRM Development Team" },
+      {
+        text: "Optimize Operations ",
+      },
+      {
+        text: "With Expert ",
+        className: "libreItalic font-[400]",
+      },
+      {
+        text: "CRM Development Team",
+      },
     ],
   },
   OutcomeBanner: {
@@ -167,8 +183,8 @@ export const crm: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Process we follow to integrate",
-    highlight: "CRM Solutions in your Business infrastructure",
+    title: "Process We Follow to Integrate",
+    highlight: "CRM Solutions in Your Business Infrastructure",
     subtitle:
       "At Moonstack, we have a defined and structured approach that delivers the best CRM solutions to our clients with the right strategy. We have delivered a wide range of CRM solutions and have hands-on experience with the delivery process and know the exact method to implement in the CRM delivery process. We have opted for the agile methodology and include best CRM development experts in India who focus on timely delivery and ensure to solve last minute complex challenges.",
     steps: [
@@ -212,12 +228,12 @@ export const crm: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Our " },
+      { text: "Our" },
       {
-        text: "CRM Solutions ",
+        text: "CRM Solutions",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: "that takes your Business to next level " },
+      { text: "that Takes Your Business to Next Level" },
     ],
     description:
       "As the leading CRM service provider in India, we have designed different CRM solutions for our clients to streamline different operations, improve customer interactions, and boost team productivity. We have ready to use CRM solutions that are easy to integrate in the workflow process that automate your internal operations and deliver faster responses  that are designed for all business needs.",
@@ -231,7 +247,6 @@ export const crm: PageData = {
       },
       {
         id: "Data Analysis",
-
         label: "Data Analysis",
         description:
           "With our Data analysis CRM based solution you can analyse a large set of customer data that is collected via different sources such as social media, email integration platforms, website, and many more different platforms. Our Artificial Intelligence and Machine Learning CRM solutions are enabled to identify patterns and trends that help you to make the right decision for your business with data driven decisions. This also excludes manual tasks that excludes repetitive tasks and saves huge amounts of time.",
@@ -239,60 +254,46 @@ export const crm: PageData = {
       },
       {
         id: "Chatbots and Virtual Assistants",
-
         label: "Chatbots and Virtual Assistants",
         description:
           "We integrate smart chat bots and modern virtual assistants in the CRM solutions that help to increase customer engagement and exclude human dependency. Our bots are designed and trained in such a way that provide instant replies and solve queries of the users instantly without any delay. We have integrated wide range chat bots and virtual assistants in the solutions with the aim to support or manage different routine based customer inquiries. ",
         variant: "dark",
       },
       {
-        id: "Automated CRM based Marketing Campaigns",
-
-        label: "Automated CRM based Marketing Campaigns",
+        id: "Automated CRM Based Marketing Campaigns",
+        label: "Automated CRM Based Marketing Campaigns",
         description:
-          " With our hands-on CRM experience, we integrate the combination of AI and modern tech advancements that automates different marketing campaigns. With our advanced CRM solution, we integrate automated features such as content creation, email campaigns with different tools, and social media scheduling. With the support of AI, we analyze customer behaviour, identify the most retention based customer market, and target relevant campaigns. Our AI prediction helps to run successful marketing campaigns that lead to maximum conversion rates.",
+          "Automate your marketing with our advanced CRM solutions. We integrate AI to streamline content creation, email campaigns, and social media scheduling. By analyzing customer behavior, our AI-driven tools help you target the right audience, ensuring successful campaigns and maximum conversion rates.",
         variant: "dark",
       },
       {
         id: "Cloud Based CRM Solution ",
-
         label: "Cloud Based CRM Solution ",
         description:
           "Our CRM integration services in India offer Cloud based CRM solutions that allow sales people to access data from anywhere and at any time with simple credentials. They don’t require any complicated real time servers. Enterprise all data, interactions, and inclusive all information is stored securely on Cloud that offers easy access to the platform and supports real time updates across several devices.",
         variant: "light",
       },
+      {
+        id: "Sales Pipeline Management",
+        label: "Sales Pipeline Management",
+        description:
+          "Monitor and manage your sales pipeline effectively with our CRM solutions. Visual dashboards provide real-time insights into deal stages, fostering better forecasting and resource allocation. Keep your sales team aligned and focused on high-priority opportunities to accelerate revenue growth.",
+        variant: "accent",
+      },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
   qualitySectionData: {
     heading: [
       {
-        text: "Why choose us for your ",
+        text: "Why Choose Us for Your ",
         color: "text-white",
       },
       {
-        text: "CRM software development ",
+        text: "CRM Software Development",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: "services in India?",
+        text: "Services in India?",
         color: "text-white",
       },
     ],
@@ -311,7 +312,7 @@ export const crm: PageData = {
       {
         id: 2,
         Icon: Icon8,
-        title: "Updated with Latest Tech trends",
+        title: "Updated with Latest Tech Trends",
         icon: "",
         description:
           "Our CRM professionals keep them updated with the latest technological trends and updated frameworks that help us to meet the market trends. We have hands-on experience on different tools and technologies, but it is also important for us to keep ourselves updated with the new innovations and what's going on in the market. At Moonstack, we don’t opt for the outdated strategies but opt for the modern technological advancements.",
@@ -385,36 +386,16 @@ export const crm: PageData = {
   ],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
 
-    buttonText: "Connect with us",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",

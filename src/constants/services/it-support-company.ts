@@ -2,7 +2,6 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 
@@ -17,8 +16,13 @@ export const it_support: PageData = {
   hero: {
     title: [
       {
-        text: "Supporting India and USA businesses with seamless IT solutions",
+        text: "Supporting India & USA Businesses With ",
         color: "text-white",
+      },
+      {
+        text: "Seamless IT Solutions",
+        color: "",
+        className: "libreItalic highlight-text",
       },
     ],
     description: [
@@ -27,7 +31,7 @@ export const it_support: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -37,7 +41,7 @@ export const it_support: PageData = {
         href: "/services",
       },
       {
-        label: "it support",
+        label: "IT Support",
         href: "/services/it-support-company",
       },
     ],
@@ -60,7 +64,7 @@ export const it_support: PageData = {
   solutions: {
     headingContent: [
       {
-        text: "Maximize Your Business Efficiency with ",
+        text: "Maximize Efficiency With ",
         color: "text-white",
       },
       {
@@ -68,7 +72,7 @@ export const it_support: PageData = {
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: "and Infrastructure Management",
+        text: "And Management",
         color: "text-white",
       },
     ],
@@ -79,7 +83,7 @@ export const it_support: PageData = {
     {
       Icon: Icon1,
       imgSrc: "",
-      title: "How our IT support will help you",
+      title: "How Our IT Support Will Help You",
       description:
         "Keep your business running smoothly with our range of IT solutions that keep you ahead of the curve. Don't put up with outmoded technologies and communications. Let our IT support company deliver smooth service and support so you can focus on what you do best.",
     },
@@ -124,7 +128,14 @@ export const it_support: PageData = {
   NewBanner: {
     headingLines: [
       {
-        text: "Scale Your Global Infrastructure With Our 5-Star IT Support Team",
+        text: "Scale Your Global Infrastructure ",
+      },
+      {
+        text: "With Our 5-Star ",
+        className: "libreItalic",
+      },
+      {
+        text: "IT Support Team",
       },
     ],
   },
@@ -152,7 +163,7 @@ export const it_support: PageData = {
 
   CloudTimelineData: {
     title: "Get in Touch",
-    highlight: " with Moonstack",
+    highlight: " With Moonstack",
     subtitle:
       "Are you ready to embrace flawless IT support services? Please get in touch with Moonstack now to learn more about our IT services in this valuable journey of your business, and we shall assist you in every difficult situation to stand by you with pride. This ranges from data backup and recovery services to server administration and the complete IT solutions that you require.",
     steps: [
@@ -189,9 +200,9 @@ export const it_support: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Edge tools Drive That" },
+      { text: "Edge Tools Drive That" },
       {
-        text: "performance",
+        text: "Performance",
         className: "libreItalic font-[400] highlight-text",
       },
     ],
@@ -207,7 +218,6 @@ export const it_support: PageData = {
       },
       {
         id: "IT Helpdesk Support",
-
         label: "IT Helpdesk Support",
         description:
           "We provide round-the-clock IT helpdesk support to address your technical issues promptly. Whether it’s troubleshooting, software updates, or user assistance, our team is always ready to keep your business running smoothly.",
@@ -215,7 +225,6 @@ export const it_support: PageData = {
       },
       {
         id: "Managed IT Services",
-
         label: "Managed IT Services",
         description:
           "Our managed IT services take the burden of IT management off your shoulders. From monitoring and maintenance to security and backups, we ensure your IT infrastructure is always up-to-date, secure, and efficient.",
@@ -223,7 +232,6 @@ export const it_support: PageData = {
       },
       {
         id: "IT Consulting",
-
         label: "IT Consulting",
         description:
           "Our IT consulting services offer expert guidance on technology adoption, system optimization, and digital transformation. We help you make informed decisions to leverage technology for business growth and innovation.",
@@ -231,7 +239,6 @@ export const it_support: PageData = {
       },
       {
         id: "Network Support",
-
         label: "Network Support",
         description:
           "We provide comprehensive network support to ensure your business connectivity remains fast, reliable, and secure. From setup and configuration to troubleshooting and optimization, we keep your network running at peak performance",
@@ -248,70 +255,48 @@ export const it_support: PageData = {
   },
   accordionData: [
     {
-      question:
-        "Will you be able to work long term for my Laravel project requirements?",
+      question: "What types of businesses do you provide IT support for?",
       answer:
-        "Yes, our Laravel web developers are always available and they are proficient with all types of Laravel web development requirements. Our team offers professional Laravel web development services to our customers. ",
+        "We support businesses of all sizes, from startups to large enterprises, across various industries. Our scalable solutions are designed to meet the unique needs of each client.",
     },
     {
-      question: "How long will you take to build my Laravel website?",
+      question: "Do you offer 24/7 IT support?",
       answer:
-        "There is no fixed time - the completion of Laravel websites are fully dependent on different factors - time, no of Laravel developers, complexity of app. But, we make sure we will put our high efforts and deliver your solutions with all essential features.",
+        "Yes, our helpdesk and monitoring services operate 24/7/365 to ensuring critical issues are addressed immediately, minimizing downtime and keeping your business running smoothly.",
     },
     {
-      question: "Will you provide Laravel migration services in India?",
+      question: "Can you support remote or hybrid teams?",
       answer:
-        "Yes, we will provide Laravel migration services in India. Our Laravel expert team specializes in migrating solutions from other technologies to Laravel without affecting design, performance, and even your data.",
+        "Absolutely. We specialize in setting up and securing remote work environments, providing seamless access to company resources, VPN management, and ongoing support for distributed teams.",
     },
     {
-      question: "Can I hire Laravel web developers from your team?",
+      question: "Do you provide proactive monitoring?",
       answer:
-        "Yes, of course you can hire the best Laravel developers from our team on full time, part time, and hourly basis. We have a pool of dedicated Laravel developers.",
+        "Yes, our managed IT services include proactive monitoring to detect and resolve potential issues before they impact your operations, ensuring better system reliability and performance.",
     },
     {
-      question:
-        "Can you integrate API or third party services into my Laravel solutions?",
+      question: "How quickly can we expect a response to our support tickets?",
       answer:
-        "Yes, we can extend functionalities in Laravel solutions with third party services via API. Our experts have hands-on experience in third party integration services. ",
+        "We prioritize urgent issues and adhere to strict SLAs (Service Level Agreements). Our team is committed to providing rapid responses and efficient resolutions to minimize any disruption to your workflow.",
     },
     {
-      question: "How much does it cost for Laravel web development services? ",
+      question: "Is your IT support scalable as my business grows?",
       answer:
-        "There is no fixed cost for Laravel web development services. The Laravel web development factors are based on several factors such as features, design, hiring model, third party integration requirement.",
+        "Yes, our IT solutions are built to scale. As your business expands, we can easily adjust our services, add more resources, and upgrade your infrastructure to support your growth.",
     },
   ],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
 
-    buttonText: "Connect with us",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",

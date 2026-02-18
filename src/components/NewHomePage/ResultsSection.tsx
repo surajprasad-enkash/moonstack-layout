@@ -15,7 +15,7 @@ interface ResultsSectionProps {
 
 export default function ResultsSection({
   label = "RESULTS",
-  brandName = "Why businesses choose",
+  brandName = "Why Businesses Choose",
   heading = " Moonstack",
   items = [
     { text: "Ready-to-deploy hiring systems for immediate start" },

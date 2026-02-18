@@ -2,9 +2,7 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/uiUx.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
+import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 import Icon1 from "@/components/ServicesSvg/UiUxDesigning/UiUxDesigning1"
 import Icon2 from "@/components/ServicesSvg/UiUxDesigning/UiUxDesigning2"
 import Icon3 from "@/components/ServicesSvg/UiUxDesigning/UiUxDesigning3"
@@ -16,8 +14,13 @@ export const ui_ux: PageData = {
   hero: {
     title: [
       {
-        text: "Transform Your Digital Presence with Moonstack’s UI/UX Design Services",
+        text: "Transform Your Digital Presence with Moonstack’s ",
         color: "text-white",
+      },
+      {
+        text: "UI/UX Design Services",
+        color: "",
+        className: "libreItalic font-[400] highlight-text",
       },
     ],
     description: [
@@ -26,7 +29,7 @@ export const ui_ux: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -56,16 +59,16 @@ export const ui_ux: PageData = {
   highlightText: "",
 
   leftCardData: [
-    // {
-    //   title: "Transform Your Business with Custom Laravel Solutions",
-    //   description:
-    //     "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",
-    //   stats: [],
-    //   description2:
-    //     "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
-    //   image: bndimage1.src,
-    //  bolds: false,
-    // },
+    {
+      title: "Leading UI/UX Company Globally",
+      description:
+        "Moonstack stands as a premier UI/UX design agency in India, recognized globally for excellence. We have successfully delivered a broad spectrum of intuitive design solutions across various industries. Our core expertise lies in crafting seamless user experiences for web and mobile platforms. At Moonstack, we offer comprehensive, custom UI/UX design services that result in highly engaging and innovative digital products. Our team of seasoned designers brings extensive hands-on experience in creating user-centered designs that resonate with audiences.",
+      stats: [],
+      description2:
+        "Our primary goal is to launch impactful digital experiences for our clients. To fulfill diverse business requirements, we provide end-to-end UI/UX design services in India, encompassing user research, wireframing, prototyping, visual design, and usability testing. We position ourselves as a holistic design partner for startups and enterprises alike. We believe in transparent communication and timely delivery. Beyond aesthetics, our team emphasizes functional design that aligns with market standards and drives user engagement.",
+      image: bndimage1.src,
+      bolds: false,
+    },
   ],
   solutions: {
     headingContent: [
@@ -89,7 +92,7 @@ export const ui_ux: PageData = {
     {
       Icon: Icon1,
       imgSrc: "",
-      title: "How we create attractive and engaging design to attract users",
+      title: "How we Create Attractive and Engaging Design to Attract Users",
       description:
         "Nowadays, the experience that a user gets while interacting with a business strongly determines its success. Moonstack is among the finest UI UX design agencies in India that specializes in creating visually appealing, customized digital solutions that engage and compel users and yield the desired organizational outcomes. We have professional UI UX designers in our team, ensuring that your digital products are not only visually stunning but also highly functional and user-friendly.",
     },
@@ -112,7 +115,11 @@ export const ui_ux: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Vision With Our Elite UI/UX Design Specialists" },
+      { text: "Scale Your Vision With Our " },
+      {
+        text: "Elite UI/UX Design Specialists",
+        className: "libreItalic font-[400]",
+      },
     ],
   },
   OutcomeBanner: {
@@ -217,74 +224,53 @@ export const ui_ux: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Edge tools Drive That" },
+      { text: "Edge Tools Drive That" },
       {
-        text: "performance",
+        text: "Performance",
         className: "libreItalic font-[400] highlight-text",
       },
     ],
     description:
-      "Feel free adapt this based on the specific managed services, features, and unique selling points your IT service company provides.",
+      "At Moonstack, our design philosophy is rooted in data and empathy. We leverage cutting-edge tools and methodologies to deliver designs that not only look exceptional but also perform flawlessly, driving user engagement and business growth.",
     cards: [
       {
-        id: "Technical Implementation",
-        label: "Technical Implementation",
+        id: "User Research & Strategy",
+        label: "User Research & Strategy",
         description:
-          "Deploy and configure technology solutions, ensuring seamless integration and functionality for optimal performance",
+          "We dive deep into understanding your users through comprehensive research methods including interviews, surveys, and competitive analysis. This data-driven approach allows us to build a solid strategic foundation, ensuring that every design decision is aligned with user needs and business objectives for maximum impact.",
         variant: "light",
       },
       {
-        id: "IT Helpdesk Support",
-
-        label: "IT Helpdesk Support",
+        id: "Wireframing & Prototyping",
+        label: "Wireframing & Prototyping",
         description:
-          "Provide timely assistance, troubleshoot issues, and resolve technical problems to ensure uninterrupted operations.",
+          "Our team transforms complex concepts into intuitive structural layouts and interactive prototypes. We rigorously test these early-stage designs to validate flows and functionality, allowing for rapid iteration and refinement before moving into the final visual design phase, saving time and resources.",
         variant: "accent",
       },
       {
-        id: "Managed IT Services",
-
-        label: "Managed IT Services",
+        id: "Visual User Interface Design",
+        label: "Visual User Interface Design",
         description:
-          "Offer proactive monitoring, maintenance, and management of IT infrastructure for reliability and efficiency.",
+          "We craft visually stunning and brand-aligned interfaces that captivate users from the first glance. Our designers meticulously detail every element, from typography and color palettes to iconography and spacing, creating a cohesive and aesthetically pleasing digital environment that enhances brand perception.",
         variant: "dark",
       },
       {
-        id: "IT Consulting",
-
-        label: "IT Consulting",
+        id: "Interactive Experience Design",
+        label: "Interactive Experience Design",
         description:
-          "Advise on technology strategies, optimize systems, and align IT solutions with business goals for growth.",
+          "Beyond static visuals, we design dynamic interactions and micro-animations that breathe life into your product. These subtle yet powerful details guide users through their journey, providing feedback and delight, significantly improving the overall user experience and perceived performance.",
         variant: "dark",
       },
       {
-        id: "Network Support",
-
-        label: "Network Support",
+        id: "Usability Testing & Optimization",
+        label: "Usability Testing & Optimization",
         description:
-          "Ensure secure, stable, and efficient network operations through monitoring, troubleshooting, and maintenance.",
+          "We don't just design; we validate. Through rigorous usability testing with real users, we identify friction points and areas for improvement. We continuously iterate and optimize the design based on actionable insights to ensure the final product is seamless, intuitive, and highly effective.",
         variant: "light",
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
+
   qualitySectionData: {
     heading: [
       {
@@ -330,45 +316,43 @@ export const ui_ux: PageData = {
     ],
   },
   accordionData: [
-    // {
-    //   question:
-    //     "Will you be able to work long term for my Laravel project requirements?",
-    //   answer:
-    //     "Yes, our Laravel web developers are always available and they are proficient with all types of Laravel web development requirements. Our team offers professional Laravel web development services to our customers. ",
-    // },
+    {
+      question: "What tools do you use for UI/UX design?",
+      answer:
+        "We primarily use industry-standard tools like Figma and Adobe XD for designing and prototyping. For specific needs, we also utilize tools like Sketch, InVision, and Adobe Creative Cloud suite to ensure high-quality deliverables.",
+    },
+    {
+      question: "Can you redesign an existing website or app?",
+      answer:
+        "Yes, we specialize in redesigning existing digital products. We analyze the current user experience, identify pain points, and create a fresh, modern design that improves usability and aesthetics while aligning with your brand goals.",
+    },
+    {
+      question: "How long does the UI/UX design process take?",
+      answer:
+        "The timeline varies depending on the project's complexity and scope. A typical project might take anywhere from a few weeks to a couple of months. We provide a detailed timeline after understanding your specific requirements during the initial consultation.",
+    },
+    {
+      question: "What deliverables will I receive?",
+      answer:
+        "You will receive high-fidelity design screens, interactive prototypes, source files (Figma/Adobe XD), a style guide or design system, and all necessary assets (icons, images, fonts) ready for development handoff.",
+    },
+    {
+      question: "Do you follow a mobile-first approach?",
+      answer:
+        "Absolutely. We prioritize mobile-first design principles to ensure your website or application provides an optimal experience on smaller screens before scaling up to larger desktop displays, catering to the growing number of mobile users.",
+    },
   ],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
-
-    buttonText: "Connect with us",
+    headingText: [],
+    subHeadingText: [],
+    image: "",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",

@@ -107,7 +107,7 @@ export default function NewHeader() {
                 {openMenu === "services" && (
                   <div className="absolute top-[20px] left-[50%] translate-x-[-38%] pt-10 text-black">
                     {/* TOP SECTION */}
-                    <div className="no-scrollbar h-[83vh] w-[100vw] max-w-[1440px] overflow-auto rounded-[24px] rounded-tl-none bg-white p-8 pt-[px]">
+                    <div className="no-scrollbar h-[83vh] max-h-[max-content] w-[100vw] max-w-[1440px] overflow-auto rounded-[24px] rounded-tl-none bg-white p-8 pt-[px]">
                       <div className="grid grid-cols-[2fr_1fr_1fr] gap-x-8">
                         {/* FRONTEND (2 columns) */}
                         <div>
@@ -319,7 +319,7 @@ export default function NewHeader() {
           {/* RIGHT BUTTONS */}
           <div className="flex items-center gap-3">
             <CustomButton
-              text="Get a quote"
+              text="Get a Quote"
               onClick={() => setOpenPopup(true)}
               className="hidden px-5 py-2 tracking-[0.8px] whitespace-nowrap text-black lg:block"
               variant="headerButton"
@@ -350,19 +350,15 @@ export default function NewHeader() {
               <div className="flex h-full flex-col overflow-y-auto">
                 <ul className="absolute left-0 flex max-h-[80vh] w-full flex-col gap-6 overflow-y-auto rounded-[20px] rounded-b-[20px] bg-black px-5 pb-5 text-lg font-medium">
                   <li>
-                    <Link
-                      href="/"
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="block py-2"
-                    >
+                    <Link href="/" className="block py-2">
                       Home
                     </Link>
                   </li>
 
                   {/* Services Accordion */}
                   <li>
-                    <button
-                      onClick={() => toggleMobileCategory("services")}
+                    <Link
+                      href={"/services"}
                       className="flex w-full items-center justify-between py-2"
                     >
                       <span>Services</span>
@@ -373,7 +369,7 @@ export default function NewHeader() {
                             : ""
                         }`}
                       />
-                    </button>
+                    </Link>
                     <AnimatePresence>
                       {activeMobileCategory === "services" && (
                         <motion.div

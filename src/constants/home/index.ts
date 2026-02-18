@@ -157,20 +157,20 @@ export const teamMembers = [
 export const awardsHeading = [
   { text: "Growth" },
   {
-    text: "of our clients ",
+    text: "of Our Clients ",
     className: "libreItalic highlight-text font-[400]",
   },
-  { text: " is the goal:" },
+  { text: "is the Goal:" },
   {
-    text: "awards ",
+    text: "Awards ",
     className: "libreItalic highlight-text font-[400]",
   },
-  { text: "are just the a plus" },
+  { text: "are just the A Plus" },
 ]
 
 export const projectCtaData = {
-  title: "Ready to scale",
-  subtitle: "your business?",
+  title: "Ready to Scale",
+  subtitle: "Your Business?",
   description:
     "Book a free strategy call and get clear, actionable guidance for your next move.",
   fontSize: "md:!text-[80px] !text-[40px]",

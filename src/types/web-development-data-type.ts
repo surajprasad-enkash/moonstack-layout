@@ -105,7 +105,7 @@ export interface PageData {
   leftCardData: leftCardData[]
 
   hero: {
-    title: { text: string; color: string }[]
+    title: { text: string; color: string | undefined; className?: string }[]
     description: { text: string; color: string }[]
     image?: StaticImageData | string
     backgroundImage?: StaticImageData | string

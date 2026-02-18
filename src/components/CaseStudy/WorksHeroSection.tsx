@@ -38,7 +38,7 @@ export default function WorksHeroSection() {
               className=""
               content={[
                 {
-                  text: `We transform`,
+                  text: `We Transform`,
                   color: "text-white block",
                 },
                 {
@@ -47,7 +47,7 @@ export default function WorksHeroSection() {
                     "italic highlight-text font-[400] LibreBaskervilleFont",
                 },
                 {
-                  text: `into design`,
+                  text: `Into Design`,
                   color: "text-white",
                 },
                 {

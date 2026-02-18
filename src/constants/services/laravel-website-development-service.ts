@@ -2,13 +2,11 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/laravel.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 
-import collaboration from "@/assets/app-development-images/flexible.webp"
-
+// Svg Icons Components
 import laravelIcon1 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon1"
 import laravelIcon2 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon2"
 import laravelIcon3 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon3"
@@ -26,7 +24,16 @@ export const laravel: PageData = {
   hero: {
     title: [
       {
-        text: "Laravel Website Development Service Provider",
+        text: "Laravel Website ",
+        color: "text-white",
+      },
+      {
+        text: "Development Service ",
+        color: "",
+        className: "libreItalic highlight-text",
+      },
+      {
+        text: "Provider",
         color: "text-white",
       },
     ],
@@ -36,7 +43,7 @@ export const laravel: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -68,7 +75,7 @@ export const laravel: PageData = {
 
   leftCardData: [
     {
-      title: "Transform Your Business with Custom Laravel Solutions",
+      title: "Transform Your Business With Custom Laravel Solutions",
       description:
         "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",
       stats: [],
@@ -85,7 +92,7 @@ export const laravel: PageData = {
         color: "text-white",
       },
       {
-        text: "Laravel web Development",
+        text: "Laravel Web Development",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
@@ -107,7 +114,7 @@ export const laravel: PageData = {
     {
       Icon: laravelIcon2,
       imgSrc: "",
-      title: "Custom Laravel Website Development Service",
+      title: "Custom Laravel Web Development Service",
       description:
         "We build high performance, secure, and functional custom Laravel web apps in India. We develop custom  Laravel websites for clients as per their business requirements. Our Laravel web development experts understand the gap in your operational process  and integrate modern features to meet latest business demands. ",
     },
@@ -115,7 +122,7 @@ export const laravel: PageData = {
     {
       Icon: laravelIcon3,
       imgSrc: "",
-      title: "Laravel Custom  E-Commerce Development Services ",
+      title: "Laravel Custom E-Commerce Development Services ",
       description:
         "Grow your online presence with Laravel ecommerce development service in India. We build high performance and secure custom e-commerce solutions integrated with advanced functionalities and deliver smooth shopping experiences to customers. Our team's main aim is to increase website conversions on your websites.",
     },
@@ -144,18 +151,27 @@ export const laravel: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+      {
+        text: "Scale Your Business ",
+      },
+      {
+        text: "With Our Expert ",
+        className: "libreItalic font-[400]",
+      },
+      {
+        text: "Laravel Development Team",
+      },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Scale Forever: Your ",
+        text: "Build & Scale: Your ",
         color: "text-white",
         className: "",
       },
       {
-        text: "Expert Laravel Development Partner",
+        text: "Expert Laravel Partner",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
@@ -231,7 +247,7 @@ export const laravel: PageData = {
     heading: [
       { text: "Our Scalable " },
       {
-        text: "Laravel Web development",
+        text: "Laravel Web Development",
         className: "libreItalic font-[400] highlight-text",
       },
       { text: "Solutions" },
@@ -256,7 +272,6 @@ export const laravel: PageData = {
       },
       {
         id: "Laravel CRM Solutions ",
-
         label: "Laravel CRM Solutions ",
         description:
           "Moonstack builds Laravel based CRM solutions that improve customer relationship management processes in companies. We design custom CRM solutions that allow us to track leads and automate conversions that lead to data driven decisions and streamline client communication processes.",
@@ -264,7 +279,6 @@ export const laravel: PageData = {
       },
       {
         id: "Laravel CMS Solutions",
-
         label: "Laravel CMS Solutions",
         description:
           "Professional Laravel experts offer robust Laravel based CMS development in India. We have built the best Laravel CMS solutions that allow businesses to easily update, publish, and manage content effortlessly on their websites. We deliver CMS solutions to businesses that  have full control on content management systems. ",
@@ -272,7 +286,6 @@ export const laravel: PageData = {
       },
       {
         id: "POS Systems",
-
         label: "POS Systems",
         description:
           "Integrate modern Laravel powered POS systems that are developed by Laravel experts in India. Our POS systems help to streamline different operational processes, allow retailers to manage multiple outlets, and deliver best outcomes for customers. We have delivered a wide range of POS (Point of Sale solutions) to our retail businesses.",
@@ -280,7 +293,6 @@ export const laravel: PageData = {
       },
       {
         id: "Video Streaming and Media Apps",
-
         label: "Video Streaming and Media Apps",
         description:
           "Develop your Laravel based video streaming and media apps with  expert laravel web developers in India. We designed video streaming and media apps that support secure content delivery and content management. We develop video streaming and media apps in such a way that offer seamless streaming and integrated with user authentication and support multiple platforms. ",
@@ -288,32 +300,15 @@ export const laravel: PageData = {
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
+
   qualitySectionData: {
     heading: [
       {
-        text: " Why Choose us for your ",
+        text: " Why Choose us for Your ",
         color: "text-white",
       },
       {
-        text: "Laravel  Web Development",
+        text: "Laravel Web Development",
         className: "libreItalic font-[400] highlight-text",
       },
       {
@@ -328,7 +323,7 @@ export const laravel: PageData = {
       {
         id: 1,
         title: "Decade of Experience",
-        icon: collaboration.src,
+        icon: "",
         Icon: laravelIcon7,
         description:
           "Our Laravel experts have decades of experience that allows them to meet all clients' needs. Laravel coders have delivered scalable, secure, and high performance web apps with advanced integrated functionalities.",
@@ -336,7 +331,7 @@ export const laravel: PageData = {
       {
         id: 2,
         title: "Custom Solutions for Every Business",
-        icon: collaboration.src,
+        icon: "",
         Icon: laravelIcon8,
         description:
           "We have delivered 450+ custom web development solutions across the world. Our professional Laravel experts have built high performance, scalable different solutions specifically designed for different business needs.",
@@ -344,7 +339,7 @@ export const laravel: PageData = {
       {
         id: 3,
         title: "End to End Laravel Development Services",
-        icon: collaboration.src,
+        icon: "",
         Icon: laravelIcon9,
         description:
           "Delivering end to end Laravel development services to our clients. From consultation to development to migration - Moonstack is known as a one stop solution for all our client’s Laravel web development needs.",
@@ -352,7 +347,7 @@ export const laravel: PageData = {
       {
         id: 4,
         title: "Transparent Communication",
-        icon: collaboration.src,
+        icon: "",
         Icon: laravelIcon10,
         description:
           "At Moonstack, we maintain open communication with our clients with constant updates, demos, and progress reports that ensure us to stay connected with our customers. Moreover, that also allows us to understand each other's mindset in a better way.",
@@ -360,15 +355,15 @@ export const laravel: PageData = {
       {
         id: 5,
         title: "Confidential Details",
-        icon: collaboration.src,
+        icon: "",
         Icon: laravelIcon11,
         description:
           "Every project idea is unique - we understand the importance of your business module. We keep all your information fully secure and confidential with us. Our team keeps all details to them, and in any case we don’t leak any of your project ideas to third parties.",
       },
       {
         id: 6,
-        title: "Creative and Business oriented solutions",
-        icon: collaboration.src,
+        title: "Creative and Business Oriented Solutions",
+        icon: "",
         Icon: laravelIcon12,
         description:
           "We just don’t build Laravel solutions only for the web development purpose. At Moonstack, we build business oriented solutions that align with your business needs and attract users with advanced based next generation features.",

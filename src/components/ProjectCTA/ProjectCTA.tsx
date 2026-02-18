@@ -21,10 +21,10 @@ interface ProjectCTAProps {
 }
 
 export default function ProjectCTA({
-  title = "Got a project in mind?",
-  subtitle = "Tell us about it.",
+  title = "Got a Project in Mind?",
+  subtitle = "Tell Us About It.",
   description,
-  buttonText = "Contact us",
+  buttonText = "Contact Us",
   redirectPath = "/contact-us",
   scrollTargetId = "contact-hero",
   bgImage,
@@ -68,7 +68,7 @@ export default function ProjectCTA({
           className={`relative rounded-[20px] bg-[#fff] px-6 py-[100px] text-center ${whiteBoxClass}`}
           style={{
             background:
-              "linear-gradient(300.37deg, #D7CAFE 20.68%, #F8F9FF 67.91%)",
+              "linear-gradient(300.37deg, #cafecdff 20.68%, #f8fffaff 67.91%)",
           }}
         >
           <Heading

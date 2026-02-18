@@ -43,7 +43,7 @@ export default function TestimonialsSection({
       <div className="relative z-[2] container">
         {/* HEADER */}
         <div className="mb-[64px] flex flex-col gap-[24px] lg:flex-row lg:items-start lg:justify-between">
-          <div className="max-w-[700px]">
+          <div className="max-w-[720px]">
             <Heading headingTag="h2" content={heading} className="text-white" />
           </div>
 

@@ -2,9 +2,8 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/cloude.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
+
+// SVG Icons Components
 import Icon1 from "@/components/ServicesSvg/CloudIcon/CloudIcon1"
 import Icon2 from "@/components/ServicesSvg/CloudIcon/CloudIcon2"
 import Icon3 from "@/components/ServicesSvg/CloudIcon/CloudIcon3"
@@ -15,7 +14,16 @@ export const cloud: PageData = {
   hero: {
     title: [
       {
-        text: "Moonstack: Trusted Cloud Service Providers in India and USA",
+        text: "Moonstack: Trusted ",
+        color: "text-white",
+      },
+      {
+        text: "Cloud Service Providers ",
+        color: "",
+        className: "libreItalic highlight-text",
+      },
+      {
+        text: "in India and USA",
         color: "text-white",
       },
     ],
@@ -25,7 +33,7 @@ export const cloud: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -76,14 +84,14 @@ export const cloud: PageData = {
     {
       Icon: Icon1,
       imgSrc: "",
-      title: "We will maintain your website by our extensive cloud service",
+      title: "Extensive Cloud Maintenance",
       description:
         "Cloud infrastructure has revolutionized digital transformation for modern businesses across the globe. However, companies frequently encounter complex technical hurdles and security considerations when migrating away from traditional IT services. Our team simplifies this transition by providing managed cloud ecosystems that eliminate downtime and optimize performance. We specialize in proactive monitoring and seamless maintenance, ensuring your digital assets remain secure, updated, and fully operational around the clock. By leveraging our extensive cloud expertise, you can focus on core innovation while we handle the complexities of your backend architecture and server stability.",
     },
     {
       Icon: Icon2,
       imgSrc: "",
-      title: "Cloud-Based Services in India and USA",
+      title: "Cloud-Based Services",
       description:
         "We are one of the most reliable and top cloud service providers in India, aiming to optimize your business processes. Moonstack, a trusted cloud server service provider, delivers pioneering and efficient solutions for you to be able to handle your data and applications well. Our team is proficient in offering you various cloud-based services to help you transform your business. Moonstack, one of the leading cloud service providers in USA, has several cloud server solutions for efficient and high performing servers. It’s vital to note that our cloud servers are optimized for demanding applications; they offer all the possibilities your business wants for development.",
     },
@@ -91,7 +99,7 @@ export const cloud: PageData = {
     {
       Icon: Icon3,
       imgSrc: "",
-      title: "Streamline Your Business with DBaaS and PaaS Solutions",
+      title: "DBaaS & PaaS Solutions",
       description:
         "Let me tell you, there are countless benefits to adopting the cloud hosting services offered by Moonstack for your business. You don’t have to invest time and money into hardware and software systems that are tedious and problematic to implement cloud-based solutions. We deliver DBaaS services in India to give you flexible and elastic computing resource solutions that can help you get only the best hosting platforms at reasonable prices. Our PaaS services solution in India can help you build, run, and manage your applications while sparing you the trouble of constructing the base infrastructure.",
     },
@@ -100,19 +108,26 @@ export const cloud: PageData = {
   NewBanner: {
     headingLines: [
       {
-        text: "Scale Your Infrastructure With Our Expert Cloud Development Team",
+        text: "Scale Your Infrastructure ",
+      },
+      {
+        text: "With Our Expert ",
+        className: "libreItalic font-[400]",
+      },
+      {
+        text: "Cloud Development Team",
       },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Bringing your vision to life quickly ",
+        text: "Bringing Your Vision to Life Quickly ",
         color: "text-white",
         className: "",
       },
       {
-        text: "with high-fidelity, interactive designs.",
+        text: "With High-Fidelity, Interactive Designs.",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
@@ -127,13 +142,13 @@ export const cloud: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Bringing the best ",
-    highlight: "cloud solution Agency To You.",
+    title: "Bringing the Best ",
+    highlight: "Cloud Solutions Agency To You.",
     subtitle: "",
     steps: [
       {
         number: 1,
-        title: " Client Consultation",
+        title: "Client Consultation",
         description:
           "Understand client needs, cloud goals, and business processes to tailor a cloud solution that aligns with their objectives.",
         position: "left",
@@ -164,12 +179,12 @@ export const cloud: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Edge tools ." },
+      { text: "Edge Tools." },
       {
         text: "Drive That ",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: "performance" },
+      { text: "Performance" },
     ],
     description:
       "Feel free adapt this based on the specific managed services, features, and unique selling points your IT service company provides.",
@@ -183,7 +198,6 @@ export const cloud: PageData = {
       },
       {
         id: "IT Helpdesk Support",
-
         label: "IT Helpdesk Support",
         description:
           "Provide timely technical assistance, troubleshoot cloud-related issues, and resolve user problems to ensure smooth operations and minimal downtime.",
@@ -191,7 +205,6 @@ export const cloud: PageData = {
       },
       {
         id: "Managed IT Services",
-
         label: "Managed IT Services",
         description:
           "Proactively monitor, maintain, and optimize cloud infrastructure to enhance performance, security, and scalability for business growth.",
@@ -199,7 +212,6 @@ export const cloud: PageData = {
       },
       {
         id: "IT Consulting",
-
         label: "IT Consulting",
         description:
           "Analyze business needs, recommend tailored cloud solutions, and guide strategic decisions to improve efficiency and drive innovation.",
@@ -207,7 +219,6 @@ export const cloud: PageData = {
       },
       {
         id: "Network Support",
-
         label: "Network Support",
         description:
           "Monitor, maintain, and troubleshoot cloud network systems to ensure reliable connectivity, security, and optimal performance.",
@@ -223,11 +234,11 @@ export const cloud: PageData = {
         color: "text-white",
       },
       {
-        text: "healthy cloud ",
+        text: "Healthy Cloud ",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: " Services",
+        text: "Services",
         color: "text-white",
       },
     ],
@@ -238,7 +249,7 @@ export const cloud: PageData = {
       {
         id: 1,
         Icon: Icon4,
-        title: "Benefits of cloud service",
+        title: "Benefits of Cloud Service",
         icon: "",
         description:
           "Our patrons can rest assured that the whole process of storing and protecting their data is entirely transparent and customer driven. While your data is being stored with us, you can have endless access to our friendly, professional, and tremendously knowledgeable team of support staff, equipped to provide help and guidance whenever needed. ",
@@ -246,7 +257,7 @@ export const cloud: PageData = {
       {
         id: 2,
         Icon: Icon5,
-        title: "How it help businesses",
+        title: "How It Help Businesses",
         icon: "",
         description:
           "To help businesses maximize the value and potential of cloud services, Moonstack, the leading cloud service provider in India, intends to offer vast and all-encompassing cloud solutions and support to enhance the overall exploitation of cloud solutions. We have developed a range of cloud based services in USA necessary for the company’s smooth functioning and tailored for your individual requirements ",
@@ -254,7 +265,7 @@ export const cloud: PageData = {
       {
         id: 3,
         Icon: Icon6,
-        title: "Advanced security and compliance management",
+        title: "Advanced Security and Compliance Management",
         icon: "",
         description:
           "We implement robust security frameworks and industry-standard compliance practices to safeguard critical business data. Our solutions include continuous monitoring, threat detection, and regulatory alignment, helping organizations maintain trust, reliability, and uninterrupted digital operations.",
@@ -264,36 +275,15 @@ export const cloud: PageData = {
   accordionData: [],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
-
-    buttonText: "Connect with us",
+    headingText: [],
+    subHeadingText: [],
+    image: "",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",

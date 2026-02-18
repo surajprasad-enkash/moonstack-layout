@@ -2,9 +2,6 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/pwa.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 
 import PwaIcon1 from "@/components/ServicesSvg/Pwa/PwaIcon1"
@@ -18,8 +15,12 @@ export const pwa: PageData = {
   hero: {
     title: [
       {
-        text: "Create Dynamic PWAs & Custom PWA Development Service",
+        text: "Create Dynamic PWAs & ",
         color: "text-white",
+      },
+      {
+        text: "Custom PWA Development Service",
+        color: "text-white libreItalic font-[400] highlight-text",
       },
     ],
     description: [
@@ -28,7 +29,7 @@ export const pwa: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -76,7 +77,7 @@ export const pwa: PageData = {
         color: "text-white",
       },
       {
-        text: "PWS Development",
+        text: "PWA Development",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
@@ -213,7 +214,6 @@ export const pwa: PageData = {
       },
       {
         id: "Performance Focused Architecture",
-
         label: "Performance Focused Architecture",
         description:
           "Our development process at Moonstack focuses on optimising code to ensure the app is fast and offers smooth navigation across devices.",
@@ -221,7 +221,6 @@ export const pwa: PageData = {
       },
       {
         id: "Ensemble Developers",
-
         label: "Ensemble Developers",
         description:
           "We work with a team of the most experienced and talented developers with multi-platform development experience. Our experienced team always delivers native app-like performance for PWAs.",
@@ -229,7 +228,6 @@ export const pwa: PageData = {
       },
       {
         id: "Scalable Solutions",
-
         label: "Scalable Solutions",
         description:
           "Scalability is a factor that limits many PWAs. This is why we always build our PWAs on scalable platforms, which allow future expansion without complete redevelopment.",
@@ -237,7 +235,6 @@ export const pwa: PageData = {
       },
       {
         id: "24/7 Support",
-
         label: "24/7 Support",
         description:
           "Need to discuss updates regarding your project? Our team is always available to discuss and talk to you. Never be in the dark when you choose Moonstack.",
@@ -245,7 +242,6 @@ export const pwa: PageData = {
       },
       {
         id: "Proven Experience Across Industries",
-
         label: "Proven Experience Across Industries",
         description:
           "We have worked with businesses like startups, MNCs, and everything in between across industries. Our proven track record allows us to be the best PWA development agency in India.",
@@ -256,29 +252,14 @@ export const pwa: PageData = {
   NewBanner: {
     headingLines: [
       {
-        text: "Build Scalable PWAs For Your Business: Hire our professional developers now",
+        text: "Build Scalable PWAs For Your Business: ",
       },
-      { text: "" },
+      {
+        text: "Hire Our Professional Developers Now",
+        className: "libreItalic font-[400]",
+      },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
 
   accordionData: [
     {
@@ -309,36 +290,16 @@ export const pwa: PageData = {
   ],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
 
-    buttonText: "Connect with us",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",

@@ -50,13 +50,13 @@ export default function CaseStudyPage({ data }: Props) {
           headingTag="h2"
           className="text-center text-[#fff] md:!text-[92px]"
           content={[
-            { text: "Let’s", className: "" },
-            { text: "work", className: "libreItalic highlight-text" },
-            { text: "together", className: "" },
+            { text: "Let's", className: "" },
+            { text: "Work", className: "libreItalic highlight-text" },
+            { text: "Together", className: "" },
           ]}
         />
         <ProjectCTA
-          title="3-day FREE trial to get to know us"
+          title="3-Day Free Trial to Get to Know Us"
           subtitle=""
           marginBottom="mb-[10px] max-w-[700px] !leading-[130%]  mx-[auto] md:!text-[72px]"
           description="We offer you a free 3-day trial work with one of our web developers to cover your questions about our working process. "

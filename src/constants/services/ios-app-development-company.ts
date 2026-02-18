@@ -2,11 +2,11 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/ios.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 
+// Svg Icons Components
 import IosIcon1 from "@/components/ServicesSvg/IosIcons/IosIcon1"
 import IosIcon2 from "@/components/ServicesSvg/IosIcons/IosIcon2"
 import IosIcon3 from "@/components/ServicesSvg/IosIcons/IosIcon3"
@@ -18,11 +18,16 @@ export const ios: PageData = {
   hero: {
     title: [
       {
-        text: "Powerful Apps development for ",
+        text: "Powerful ",
         color: "text-white",
       },
       {
-        text: " the Apple Ecosystem",
+        text: "iOS App Development ",
+        color: "",
+        className: "libreItalic highlight-text",
+      },
+      {
+        text: "for the Apple Ecosystem",
         color: "text-white",
       },
     ],
@@ -32,7 +37,7 @@ export const ios: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -83,7 +88,7 @@ export const ios: PageData = {
         color: "text-white",
       },
       {
-        text: "IOS development",
+        text: "iOS Development",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
@@ -112,7 +117,7 @@ export const ios: PageData = {
 
     {
       Icon: IosIcon3,
-      title: "Front-end Development With Intuitive UI/UX Design",
+      title: "Frontend Development With Intuitive UI/UX Design",
       description:
         "An intuitive UI and UX design is crucial for an iOS application’s success in 2025. We at Moonstack ensure our iOS app designing service in India is focused on designing clean interfaces that are easy to navigate and visually soft. We try to develop unique design languages for each app based on our client’s branding and market positioning. We also integrate accessibility in our designs to make the apps convenient for all users.",
       imgSrc: "",
@@ -147,8 +152,16 @@ export const ios: PageData = {
   },
   NewBanner: {
     headingLines: [
-      { text: "Develop an Optimised Proof " },
-      { text: "of Concept With Our iOS App Developers" },
+      {
+        text: "Develop an Optimised Proof ",
+      },
+      {
+        text: "of Concept With Our ",
+        className: "libreItalic font-[400]",
+      },
+      {
+        text: "iOS App Developers",
+      },
     ],
   },
   OutcomeBanner: {
@@ -171,7 +184,7 @@ export const ios: PageData = {
 
   CloudTimelineData: {
     title: "Our Process for ",
-    highlight: "Apple app development",
+    highlight: "iOS App Development",
     subtitle:
       "At Moonstack, we value transparency and confidentiality for our enterprise iOS app development services in India. Our team manages this dichotomy with a stringent set of guidelines and a working structure. Here’s an overview of our collaborative process for iOS app development at Moonstack.",
     steps: [
@@ -208,12 +221,12 @@ export const ios: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Why Choose moonstack for your " },
+      { text: "Why Choose Moonstack for Your " },
       {
-        text: "IOS app ",
+        text: "iOS App ",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: "service?" },
+      { text: "Service?" },
     ],
     description:
       "If you wanted to know what sets our iPad app development service in India apart, here are six reasons to help you get started.",
@@ -227,7 +240,6 @@ export const ios: PageData = {
       },
       {
         id: "Truly Custom App Builds",
-
         label: "Truly Custom App Builds",
         description:
           "We create apps from scratch for our clients that are suited to their requirements. No templates, no starter packs.",
@@ -235,7 +247,6 @@ export const ios: PageData = {
       },
       {
         id: "User Experience Centric Design",
-
         label: "User Experience Centric Design",
         description:
           "An app that’s easy to use is one that users come back to. We ensure our app designs are intuitive, clean, and offer functionality with convenience to users.",
@@ -243,7 +254,6 @@ export const ios: PageData = {
       },
       {
         id: "Transparent Building",
-
         label: "Transparent Building",
         description:
           "We always ensure you’re a part of the team when you work with Moonstack. Our developers use clean code to guarantee the codebase is accessible, and we provide regular updates so you’re always up-to-date with developments.",
@@ -251,7 +261,6 @@ export const ios: PageData = {
       },
       {
         id: "Scalable Builds For Growing Businesses",
-
         label: "Scalable Builds For Growing Businesses",
         description:
           "We create scalable apps that can adapt to the growing needs of a successful business. And we always offer ongoing support for builds to all our clients.",
@@ -259,24 +268,6 @@ export const ios: PageData = {
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
 
   accordionData: [
     {

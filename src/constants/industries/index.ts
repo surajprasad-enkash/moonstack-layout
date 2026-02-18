@@ -228,7 +228,7 @@ export const newBannerData = {
       text: " with a World-Class",
       className: " libreItalic",
     },
-    { text: " Development solution " },
+    { text: " Development Solution " },
   ],
   imageSrc: mobDesignBanner,
   buttonText: "Start Your Project",
@@ -303,17 +303,17 @@ export const aiExperienceData = {
 }
 
 export const trustBannerData = {
-  highlight: "Elevating project ",
-  title: "success into trusted collaborations",
+  highlight: "Elevating Project ",
+  title: "Success into Trusted Collaborations",
 }
 
 export const testimonialsSectionData = {
   heading: [
     {
-      text: "Expertise you’ll appreciate.",
+      text: "Expertise You’ll Appreciate.",
       className: "highlight-text libreItalic",
     },
-    { text: " Collaboration you’ll love.", color: "text-white" },
+    { text: " Collaboration You’ll Love.", color: "text-white" },
   ],
   className: "pt-[80px]",
   testimonials: [
@@ -355,7 +355,7 @@ export const testimonialsSectionData = {
     {
       quote:
         "The best ROI we've seen this year. Their efficiency and high-quality code led to a 30% spike in engagement immediately after launch.",
-      name: "Manshi Bhatia",
+      name: "Mansi  Bhatia",
       role: "Manager",
       avatar: bccKristenCheng7.src,
     },

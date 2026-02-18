@@ -45,8 +45,8 @@ export default async function CaseStudy({ searchParams }: CaseStudyProps) {
 
       <div className="relative z-[2]">
         <ProjectCTA
-          title="Ready to scale"
-          subtitle="your business?"
+          title="Ready to Scale"
+          subtitle="Your Business?"
           description="Book a free consultation to get clarity, direction, and expert advice you can implement right away."
           fontSize="md:!text-[80px] !text-[40px] !leading-[130%]"
           marginBottom="mb-0"

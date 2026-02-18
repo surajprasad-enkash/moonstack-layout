@@ -1,7 +1,7 @@
-import Breadcrumb from "@/components/Breadcrumb";
-import Layout from "@/components/Layout";
-import Heading from "@/components/Heading/Heading";
-import { privacyPolicyData } from "@/constants/terms-and-conditions";
+import Breadcrumb from "@/components/Breadcrumb"
+import Layout from "@/components/Layout"
+import Heading from "@/components/Heading/Heading"
+import { privacyPolicyData } from "@/constants/terms-and-conditions"
 
 export default function PrivacyPolicy() {
   return (
@@ -37,7 +37,7 @@ export default function PrivacyPolicy() {
                 headingTag="h6"
                 className="font-bold"
                 content={[
-                  { text: " Efective Date : 08/03/2026", color: "text-black" },
+                  { text: " Updated Date : 08/03/2026", color: "text-black" },
                 ]}
               />
             </div>
@@ -101,5 +101,5 @@ export default function PrivacyPolicy() {
         </div>
       </section>
     </Layout>
-  );
+  )
 }

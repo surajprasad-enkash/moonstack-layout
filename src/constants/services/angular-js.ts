@@ -2,7 +2,6 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/angular.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
@@ -25,8 +24,18 @@ export const angularJs: PageData = {
   hero: {
     title: [
       {
-        text: "AngularJS Development Services",
+        text: "AngularJS",
         color: "text-white",
+      },
+      {
+        text: "Development ",
+        color: "",
+        className: "libreItalic  highlight-text",
+      },
+      {
+        text: "Services ",
+        color: "text-white",
+        className: "",
       },
     ],
     description: [
@@ -35,17 +44,17 @@ export const angularJs: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
       { label: "Home", href: "/" },
       {
-        label: " Services",
+        label: "Services",
         href: "/services",
       },
       {
-        label: "Angular JS",
+        label: "AngularJS",
         href: "/services/angularjs-development-company",
       },
     ],
@@ -128,14 +137,14 @@ export const angularJs: PageData = {
     {
       Icon: AngularJsIcon5,
       imgSrc: "",
-      title: "AngularJS Migration and Upgradation",
+      title: "AngularJS Migration & Upgradation",
       description:
         "Transfer your existing data from one platform to another securely without losing any data or information. We allow businesses to leverage the benefits of modernizing legacy applications with minimal risk and downtime without losing any data. Along with this, our AngularJS team of experts upgrades outdated versions to the latest versions that deliver improved performance, better security, and compatibility with modern technologies. ",
     },
     {
       Icon: AngularJsIcon6,
       imgSrc: "",
-      title: "AngularJS Support and Maintenance ",
+      title: "AngularJS Support & Maintenance ",
       description:
         "Moonstack team offers constant AngularJS support and maintenance services that keep web apps fully secure and up to market trends. Our team identifies and fixes bugs instantly, which also ensure to performance optimization, security enhancements, and feature updates. We offer proactive monitoring and support 24/7, so your business doesn't face anydowntime or any loss and performs best in the market. ",
     },
@@ -144,7 +153,14 @@ export const angularJs: PageData = {
   NewBanner: {
     headingLines: [
       {
-        text: "15+ Years of Experience Delivering High-Performance Web Applications.",
+        text: "15+ Years of Experience",
+      },
+      {
+        text: "Delivering High-Performance",
+        className: "libreItalic font-[400]",
+      },
+      {
+        text: " Web Applications.",
       },
     ],
   },
@@ -171,8 +187,8 @@ export const angularJs: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Our ",
-    highlight: "AngularJS Development Process",
+    title: "Our AngularJS",
+    highlight: "Development Process",
     subtitle:
       "We follow a structured and agile AngularJS development process that ensures the delivery of high-quality and efficient web solutions in the market. We have defined a process that allows us to deliver successful AngularJS solutions without any development delays and meet clients' as well as market demands. ",
     steps: [
@@ -206,7 +222,7 @@ export const angularJs: PageData = {
       },
       {
         number: 5,
-        title: "Deployment and launch ",
+        title: "Deployment and Launch ",
         description:
           "Once we are asssusred that our application is error free, then we opt for the deployment process. We deploy Angularjs solution on different platforms such as Android, iOS, and web with right coding practises. Our launching process is to deliver error free solutions in the market.",
         position: "left",
@@ -224,46 +240,21 @@ export const angularJs: PageData = {
   impactSection: {
     heading: [],
     description: "",
-    cards: [
-      // {
-      //   id: "Laravel Web Apps",
-      //   label: "Laravel Web Apps",
-      //   description:
-      //     "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
-      //   variant: "light",
-      // },
-    ],
+    cards: [],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
+
   qualitySectionData: {
     heading: [
       {
-        text: "Why choose us for your next ",
+        text: "Why Choose Us for Your Next ",
         color: "text-white",
       },
       {
-        text: "AngularJS development",
+        text: "AngularJS Development",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: "  project?",
+        text: " Project?",
         color: "text-white",
       },
     ],
@@ -281,7 +272,7 @@ export const angularJs: PageData = {
       },
       {
         id: 2,
-        title: "Hire AngularJS developers",
+        title: "Hire AngularJS Developers",
         Icon: AngularJsIcon8,
         icon: collaboration.src,
         description:
@@ -313,7 +304,7 @@ export const angularJs: PageData = {
       },
       {
         id: 6,
-        title: "Experienced AngularJS developers",
+        title: "Experienced AngularJS Developers",
         Icon: AngularJsIcon12,
         icon: collaboration.src,
         description:

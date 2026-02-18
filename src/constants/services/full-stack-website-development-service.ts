@@ -2,10 +2,11 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/full-stack.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
+
+// SVG Icons Components
 import Icon1 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon1"
 import Icon2 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon2"
 import Icon3 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon3"
@@ -23,7 +24,16 @@ export const fullstack: PageData = {
   hero: {
     title: [
       {
-        text: "Our Vision, Our Full Stack Expertise: End-to-End Web Solutions",
+        text: "Our Vision, Our ",
+        color: "text-white",
+      },
+      {
+        text: "Full Stack Expertise: ",
+        color: "",
+        className: "libreItalic highlight-text",
+      },
+      {
+        text: "End-to-End Web Solutions",
         color: "text-white",
       },
     ],
@@ -33,7 +43,7 @@ export const fullstack: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -97,14 +107,14 @@ export const fullstack: PageData = {
     {
       Icon: Icon1,
       imgSrc: "",
-      title: "Front end Development ",
+      title: "Frontend Development ",
       description:
         "Our front end developers create engaging and immersive user interfaces with the right usage of technologies such as HTML, CSS/SCSS, and JavaScript. With high performance our tech experts also focus to deliver interactive and easy to use UI/UX that provides next generation experiences to users.",
     },
     {
       Icon: Icon2,
       imgSrc: "",
-      title: "Back End Development",
+      title: "Backend Development",
       description:
         "With our Moonstack engineers in India, we deliver end to end high performance server side solutions to different businesses. We provide secure, scalable, and highly optimized API for seamless database integration. Our experienced back end developers main aim is to write clean codes and offer smooth execution with best industry practices.",
     },
@@ -126,7 +136,7 @@ export const fullstack: PageData = {
     {
       Icon: Icon5,
       imgSrc: "",
-      title: "Full Stack Support and Maintenance",
+      title: "Full Stack Support & Maintenance",
       description:
         "Our Full stack engineers offer end to end support and maintenance services to our customers.By partnering with the leading full stack company - your enterprise's solutions will be fully updated with functionalities and modern trends, issues will be fixed immediately. Moreover, we will offer proactive support on a constant basis that will lead to maintaining stability.",
     },
@@ -142,19 +152,26 @@ export const fullstack: PageData = {
   NewBanner: {
     headingLines: [
       {
-        text: "Scale Your Business With Our Expert Full-Stack Development Team",
+        text: "Scale Your Business ",
+      },
+      {
+        text: "With Our Expert ",
+        className: "libreItalic font-[400]",
+      },
+      {
+        text: "Full-Stack Development Team",
       },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "From Vision to Velocity: Your Premier ",
+        text: "Vision to Velocity: Your Premier ",
         color: "text-white",
         className: "",
       },
       {
-        text: "Full-Stack Development Partner",
+        text: "Full-Stack Partner",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
@@ -195,15 +212,14 @@ export const fullstack: PageData = {
       "To make the apps more modern and smarter we integrate trending AI services in our solutions. By integrating AI services we allow clients to leverage the benefits of intelligent automation, real time data processings, and offer personalized user experiences that deliver next generation and advanced user experience with our best full stack web development service India.",
     cards: [
       {
-        id: "AI driven Automation",
-        label: "AI driven Automation",
+        id: "AI Driven Automation",
+        label: "AI Driven Automation",
         description:
           "With our AI integration in full stack development services, our aim is to streamline different business processes for diverse industries. By integrating AI we reduce manual work, integrate workflows with intelligent triggers, and offer smart decision making for users.",
         variant: "light",
       },
       {
         id: "AI Chatbots and Virtual Assistance",
-
         label: "AI Chatbots and Virtual Assistance",
         description:
           "We integrate virtual assistance in the form of modern bots that allow us to increase user interaction. Our AI bots offer instant responses, personalized recommendations, and 24/7 assistance to users that reduces work load as well as improve customer satisfaction.",
@@ -211,7 +227,6 @@ export const fullstack: PageData = {
       },
       {
         id: "Predictive Data Analytics",
-
         label: "Predictive Data Analytics",
         description:
           "We opt for predictive data analytics with smart AI models that help users to get real time information, identify patterns that help to analyze human behaviour. With our full stack experts we integrate best tools that provide actionable insights, boost performance, and help to stay ahead in the market.",
@@ -219,7 +234,6 @@ export const fullstack: PageData = {
       },
       {
         id: "AI Enabled API Integration",
-
         label: "AI Enabled API Integration",
         description:
           "Integrate modern existing AI based features into your solution by integrating them via API. With our team of full stack experts, we integrate API that ensures to extend functionalities and provide next generation experiences to the users. Our full stack professionals deal in secure integration such as automate operations, backend processes that ensure smooth data exchange and scalable performance",
@@ -227,7 +241,6 @@ export const fullstack: PageData = {
       },
       {
         id: "Computer Vision Integration",
-
         label: "Computer Vision Integration",
         description:
           "We launch powerful intelligent digital products with image recognition, object detection, and automated scanning.  Our full stack experts integrate full stack architecture that enhance your operational accuracy and allow business to opt for advanced intelligent solutions. We offer smarter and reliable services for our clients that deliver next generation user experiences.",
@@ -235,7 +248,6 @@ export const fullstack: PageData = {
       },
       {
         id: "Natural Language Processing (NLP)",
-
         label: "Natural Language Processing (NLP)",
         description:
           "Moonstack NLP apps offer apps that help to understand, interpret, and respond to human languages. We provide high performance full stack solutions that automate content processings, voice command, and contextual responses that transform apps into real answers that solve all queries. We build user friendly, intuitive and easy to use platforms.",
@@ -243,28 +255,11 @@ export const fullstack: PageData = {
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
+
   qualitySectionData: {
     heading: [
       {
-        text: " Why Choose us for your ",
+        text: " Why Choose Us for Your ",
         color: "text-white",
       },
       {
@@ -283,7 +278,7 @@ export const fullstack: PageData = {
       {
         id: 1,
         Icon: Icon7,
-        title: "End to End Expertise",
+        title: "End-to-End Expertise",
         icon: "",
         description:
           "We offer end to end full stack development services. Our Full Stack coders have hands-on experience from development to launching full time innovative solutions in the market. Along with this, they are proficient with different types of technologies - React, MERN,and many more.",
@@ -291,7 +286,7 @@ export const fullstack: PageData = {
       {
         id: 2,
         Icon: Icon8,
-        title: "Hands on Experience on Different Technologies",
+        title: "Hands-On Experience on Different Technologies",
         icon: "",
         description:
           "Our team has hands-on experience with a wide range of technologies and frameworks including React development in India to MERN. We have a team that is skilled in Cloud platforms, DevOps, and scalable architectures that ensure smooth performance and integrate modern API for future ready digital solutions for different industries.",
@@ -307,7 +302,7 @@ export const fullstack: PageData = {
       {
         id: 4,
         Icon: Icon10,
-        title: "On Time Delivery Commitment",
+        title: "On-Time Delivery Commitment",
         icon: "",
         description:
           "As the leading Full stack development company in India, we value time. We stick to different timelines that offer a clear roadmap and ensure to meet all milestones as promised in a particular time frame. With us we guarantee, there are no hidden surprises as we follow all essential industry standard practices.",

@@ -2,16 +2,26 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/seo.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
+
+import SeoIcon from "@/components/ServicesSvg/HeaderSvgIcons/Seo"
 
 export const seo: PageData = {
   hero: {
     title: [
       {
-        text: "AI-Powered SEO Services for AEO, AIO, GEO & Semantic Search Growth",
+        text: "AI-Powered SEO Services for ",
+        color: "text-white",
+      },
+      {
+        text: "AEO, AIO, GEO & Semantic Search ",
+        color: "",
+        className: "libreItalic highlight-text",
+      },
+      {
+        text: "Growth",
         color: "text-white",
       },
     ],
@@ -21,7 +31,7 @@ export const seo: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -64,30 +74,78 @@ export const seo: PageData = {
   ],
   solutions: {
     headingContent: [
-      // {
-      //   text: "Advance SEO ",
-      //   color: "text-white",
-      // },
-      // {
-      //   text: "Built for the AI Era",
-      //   color: "text-white libreItalic font-[400] highlight-text",
-      // },
+      {
+        text: "Our Specialities In ",
+        color: "text-white",
+      },
+      {
+        text: "SEO ",
+        color: "text-white libreItalic font-[400] highlight-text",
+      },
+      {
+        text: "Services",
+        color: "text-white",
+      },
     ],
-    subHeadingText: "",
+    subHeadingText:
+      "Moonstack is a leading SEO agency that offers comprehensive SEO solutions to businesses worldwide. We specialize in driving organic traffic, improving search rankings, and enhancing brand visibility through data-driven strategies and ethical SEO practices.",
   },
   featuresData: [
-    // {
-    //   imgSrc: intuitiveIcon.src,
-    //   title: "AI Optimization",
-    //   description:
-    //     "We are a data-driven SEO agency in India that provides accurate content structured for AI comprehension that is not created for the sake of human readers. With our SEO strategy, we create an end-to-end AIO-based strategy that focuses on entity mapping, semantic relationships, and contextual relevance. Our SEO strategy focuses on entity mapping, semantic relationships, and contextual relevance that connect your audience.",
-    // },
+    {
+      Icon: SeoIcon,
+      imgSrc: "",
+      title: "On-Page SEO Optimization",
+      description:
+        "We optimize your website's content, structure on-page elements, and ensure proper keyword usage to improve relevancy and user experience.",
+    },
+    {
+      Icon: SeoIcon,
+      imgSrc: "",
+      title: "Off-Page SEO & Link Building",
+      description:
+        "Our experts build high-quality backlinks and execute strategic off-page campaigns to boost your domain authority and search engine trust.",
+    },
+    {
+      Icon: SeoIcon,
+      imgSrc: "",
+      title: "Technical SEO Services",
+      description:
+        "We resolve technical issues like site speed, crawl errors, and mobile-friendliness to ensure search engines can index and rank your site effectively.",
+    },
+    {
+      Icon: SeoIcon,
+      imgSrc: "",
+      title: "Local SEO Services",
+      description:
+        "Dominate your local market with our targeted local SEO strategies. We optimize your GMB profile and build local citations to attract nearby customers.",
+    },
+    {
+      Icon: SeoIcon,
+      imgSrc: "",
+      title: "E-Commerce SEO",
+      description:
+        "Drive more sales with our specialized E-commerce SEO. We optimize product pages, improve site architecture, and target transactional keywords to boost conversions.",
+    },
+    {
+      Icon: SeoIcon,
+      imgSrc: "",
+      title: "Content Marketing Strategy",
+      description:
+        "Engage your audience with high-quality, SEO-optimized content. Our team creates compelling blog posts, articles, and guides that drive traffic and build authority.",
+    },
   ],
 
   NewBanner: {
     headingLines: [
       {
-        text: "Scale Your Search Visibility With Our Expert SEO Strategy Team",
+        text: "Scale Your Search Visibility With Our ",
+      },
+      {
+        text: "Expert SEO Strategy ",
+        className: "libreItalic font-[400]",
+      },
+      {
+        text: "Team",
       },
     ],
   },
@@ -114,8 +172,8 @@ export const seo: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Modern SEO Process that ",
-    highlight: "we follow for your website",
+    title: "Modern SEO Process That ",
+    highlight: "We Follow for Your Website",
     steps: [
       {
         number: 1,
@@ -133,7 +191,7 @@ export const seo: PageData = {
       },
       {
         number: 3,
-        title: "AI-Enhanced Content Strategy & Creationg",
+        title: "AI-Enhanced Content Strategy & Creation",
         description:
           "Develop a data-driven content strategy that combines human expertise with AI assistance. Create high-quality, E-E-A-T focused content optimized for both traditional search engines and AI-powered platforms, ensuring visibility across all search channels.",
         position: "left",
@@ -157,7 +215,7 @@ export const seo: PageData = {
         title: "Continuous Monitoring, AI Insights & Adaptation",
         description:
           "Deploy advanced analytics and AI-powered monitoring systems to track performance, predict trends, and adapt strategies in real-time. Stay ahead of algorithm updates and emerging AI search patterns with proactive optimization.",
-        position: "left",
+        position: "right",
       },
     ],
   },

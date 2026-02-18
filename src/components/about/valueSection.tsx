@@ -23,7 +23,7 @@ export default function OurValuesSection() {
             className="text-white"
             content={[
               { text: "Our", className: "" },
-              { text: "values", className: "highlight-text libreItalic" },
+              { text: "Values", className: "highlight-text libreItalic" },
             ]}
           />
           <p className="mx-auto mt-4 max-w-xl text-sm text-white/80">

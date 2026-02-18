@@ -40,16 +40,16 @@ export default function TestimonialsTabs({
         <span className="mb-[20px] block text-center text-xs font-[500] tracking-widest text-white/60 uppercase md:mb-[0] md:text-start">
           Verified reviews
         </span>
-        <div className="mx-auto mb-[72px] max-w-[765px] text-center">
+        <div className="mx-auto mb-[72px] max-w-[790px] text-center">
           <Heading
             headingTag="h2"
             content={[
-              { text: "Trusted by 250+ companies" },
+              { text: "Trusted by 250+ Companies" },
               {
-                text: "to build and scale",
+                text: "to Build and Scale",
                 className: "libreItalic font-[400] highlight-text",
               },
-              { text: "their products by moonstack team" },
+              { text: "Their Products by Moonstack Team" },
             ]}
           />
         </div>

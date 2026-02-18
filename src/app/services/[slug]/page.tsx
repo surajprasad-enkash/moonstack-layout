@@ -21,6 +21,7 @@ import AwardsSection, {
   AwardItem,
 } from "@/components/NewHomePage/AwardsSection"
 
+import { testimonialsSectionData } from "@/constants/industries"
 /* ===================== UI ===================== */
 import Space from "@/components/Space"
 
@@ -227,9 +228,9 @@ export default async function ApplicationPage({ params }: PageProps) {
 
         <TeamSliderSection
           headingLines={[
-            { text: "Qualified mobile developer  ", color: "text-white" },
+            { text: "Qualified Mobile Developer  ", color: "text-white" },
             {
-              text: "who know their business",
+              text: "Who Know Their Business",
               color: "text-white libreItalic font-[400] highlight-text",
             },
           ]}
@@ -238,56 +239,13 @@ export default async function ApplicationPage({ params }: PageProps) {
         <TestimonialsSection
           heading={[
             {
-              text: "Expertise you’ll appreciate.",
+              text: "Expertise You’ll Appreciate.",
               className: "highlight-text libreItalic",
             },
-            { text: " Collaboration you’ll love.", color: "text-white" },
+            { text: " Collaboration You’ll Love.", color: "text-white" },
           ]}
           className="pt-[80px]"
-          testimonials={[
-            {
-              quote:
-                "Moonstack turned our complex vision into an intuitive experience. Their design-first approach significantly boosted our user retention from day one.",
-              name: "Kristen Cheng",
-              role: " CEO, USA",
-              avatar: bccKristenCheng.src,
-            },
-            {
-              quote:
-                "They are more than developers—they are technical consultants. Moonstack solved our toughest backend hurdles with scalable, future-proof architecture.",
-              name: "Aetienne Sardon",
-              role: " CEO, UK",
-              avatar: bccKristenCheng.src,
-            },
-            {
-              quote:
-                "Working with Moonstack feels like having an in-house team. Their transparent communication and on-time delivery set a new standard for us.",
-              name: "Mohamed Shegow",
-              role: "CEO, Australia",
-              avatar: bccKristenCheng.src,
-            },
-            {
-              quote:
-                "They truly turn projects into partnerships. Moonstack stayed involved post-launch, using real data to help us iterate and grow.",
-              name: "Kirill Onasenko",
-              role: "CEO, South Africa",
-              avatar: bccKristenCheng.src,
-            },
-            {
-              quote:
-                "Moonstack helped us launch in record time. They knew exactly which features to prioritize to get our MVP to market without sacrificing quality",
-              name: "Esme Guevara",
-              role: "CMO & Head of Product, UK",
-              avatar: bccKristenCheng.src,
-            },
-            {
-              quote:
-                "The best ROI we've seen this year. Their efficiency and high-quality code led to a 30% spike in engagement immediately after launch.",
-              name: "Ola Olusoga",
-              role: "Vice President, Canada",
-              avatar: bccKristenCheng.src,
-            },
-          ]}
+          testimonials={testimonialsSectionData.testimonials}
         />
         <Space />
         {page.accordionData.length > 0 && (

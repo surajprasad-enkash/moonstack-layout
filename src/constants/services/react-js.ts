@@ -2,9 +2,6 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
 import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
@@ -16,8 +13,13 @@ export const reactJs: PageData = {
   hero: {
     title: [
       {
-        text: "React.js Development Services",
+        text: "React.js ",
         color: "text-white",
+      },
+      {
+        text: "Development Services",
+        color: "",
+        className: "libreItalic highlight-text",
       },
     ],
     description: [
@@ -26,7 +28,7 @@ export const reactJs: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -57,7 +59,7 @@ export const reactJs: PageData = {
 
   leftCardData: [
     {
-      title: "Top-Notch React JS Development Company for your Business",
+      title: "Top-Notch React JS Development Company for Your Business",
       description:
         "As a leading React.js development company, Moonstack allows start ups to large enterprises to build high-performance, secure, and user-centric web applications for businesses. Our expert React.js experts offer a combination of modern frontend architecture and intuitive designs that deliver responsive, fast, and reliable React.js solutions in the market. We offer our smart digital web apps for all types of businesses, from start-ups to large enterprises. The strategies are designed to meet the specific business needs and allow organisations to leverage the latest benefits of React.js technology. We not only develop solutions for our clients, but also make sure that with the right strategies, they can stay ahead in the market competition.",
       stats: [],
@@ -74,7 +76,7 @@ export const reactJs: PageData = {
         color: "text-white",
       },
       {
-        text: "React.js Development",
+        text: "ReactJS Development",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
@@ -88,38 +90,38 @@ export const reactJs: PageData = {
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
-      title: "React.JS Consulting Services",
+      title: "ReactJS Consulting Services",
       description:
         "Our top React.js experts offer React.js consulting services that help businesses to plan, optimise, and grow their front-end solutions. With proper guidance and the right technical strategies, companies can choose the right tech stack and development strategy to avoid future failures and make informed decisions. In our consulting services, we analyse existing systems, recommend best development practices and provide a roadmap.",
     },
     {
       imgSrc: engagingIcon.src,
-      title: "React.js Development Services",
+      title: "ReactJS Development Services",
       description:
         "Develop your React.js web applications with top industry experts. We deliver high-performance, responsive web apps built with ReactJS. At Moonstack, we opt for a modern technology stack that aligns with your business needs, that ensures to improve user engagement as well as overall customer satisfaction. We analyse the project and then shortlist the essential functionalities that are required for the businesses with the best coding practices as well as the user interface.",
     },
 
     {
       imgSrc: brandingIcon.src,
-      title: "React JS UI/UX Development",
+      title: "ReactJS UI/UX Development",
       description:
         "We offer customized React.js design services to our clients. At Moonstack, we combine modern design principles and component-based architecture that allow us to deliver interactive and engaging designs that help to increase client retention rates and improve overall customer satisfaction. We opt for the latest industry design principles and coding techniques, in which we choose trending colors, fonts, and themes as per the business. Moonstack designers focus on UI and UX, both with interactive designs. We also focus on the design that should be easy to use and deliver next generation experience to the users.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "React JS API Integration",
+      title: "ReactJS API Integration",
       description:
         "Extend your existing functionalities with third-party API integration services. Our React.js developers have hands-on experience with third-party API integration services via API that includes a payment gateway and market-ready enterprise tool that we integrate in solution to enhance functionalities, automate workflows, and deliver real-time data updates that ensure a seamless user experience. By partnering with Moonstack for your API integration services, we take full responsibility for data exchange and to run functionalities smoothly. ",
     },
     {
       imgSrc: brandingIcon.src,
-      title: " React JS Migration & Upgradation",
+      title: "ReactJS Migration & Upgradation",
       description:
         "Migrate your existing data from one platform to another with minimal downtime and securely. Moonstack migration services are designed in such a way that customers can exchange data from React to React.js  or from other technologies to ReactJS easily, without losing any data, with proper backup infrastructure. Our ReactJS migration services help to improve application speed and maintain core functionalities. Moreover, our team also has expertise to upgrade different outdated versions to the latest ones. ",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "React JS Support & Maintenance",
+      title: "ReactJS Support & Maintenance",
       description:
         "Hire experienced React developers to maintain your enterprise solutions with latest updates. Moonstack, React coders in India provide ReactJS support and maintenance services that ensure React enterprises solutions to run smoothly without any downtime. In our Reactjs support and maintenance services, our team ensures to fix bugs, improve performance, and optimize functionalities that allow business to leverage the latest modern tech benefits and fix bugs instantly without any downtime.",
     },
@@ -127,7 +129,16 @@ export const reactJs: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Hire Trusted ReactJS Development Partner for Growth" },
+      {
+        text: "Hire Trusted ",
+      },
+      {
+        text: "ReactJS Development Partner ",
+        className: "libreItalic font-[400]",
+      },
+      {
+        text: "for Growth",
+      },
     ],
   },
   OutcomeBanner: {
@@ -144,10 +155,10 @@ export const reactJs: PageData = {
       },
     ],
     checklist: [
-      "50% faster load times",
-      "End-to-end services",
-      "Future-proof code",
-      "On-time delivery",
+      "50% Faster Load Times",
+      "End-to-End Services",
+      "Future-Proof Code",
+      "On-Time Delivery",
     ],
     buttonText: "Start Your Project Today",
   },
@@ -181,7 +192,7 @@ export const reactJs: PageData = {
       },
       {
         number: 4,
-        title: "React.js Development Services",
+        title: "ReactJS Development Services",
         description:
           "Develop React.js web solutions with us, with reusable and scalable React.js components, by using a clean and optimised coding process. At Moonstack, we follow the best industry practices and latest React.js development tools and frameworks that allow us to deliver high-performance, fast, and secure web solutions. Our React.js  coders in India focus on integrating modern functionalities, API integration services, and web and app responsiveness.",
         position: "right",
@@ -207,7 +218,7 @@ export const reactJs: PageData = {
     heading: [
       { text: "Our Trending " },
       {
-        text: "React js ",
+        text: "ReactJS ",
         className: "libreItalic font-[400] highlight-text",
       },
       { text: " Technology Capabilities" },
@@ -216,8 +227,8 @@ export const reactJs: PageData = {
       "At Moonstack, we opt for the React.js technology stack with cutting edge technologies like AI and ML that helps to build intelligent, data-driven web applications. In order to stay ahead in the market competition, we opt for the latest technology trends and have hands-on experience on modern technologies such as AI and ML that enable users to experience next-generation tech features and deliver seamless tech experiences.",
     cards: [
       {
-        id: "AI-powered React.js Web Application",
-        label: "AI-powered React.js Web Application",
+        id: "AI-powered ReactJS Web Application",
+        label: "AI-powered ReactJS Web Application",
         description:
           "Our full-stack React developers team in  India has hands-on experience to create enterprise solutions. Our motive is to deliver smart, data-driven solutions that include chatbots, workflow automation, and personalisation that make the process faster and more informed decisions.  With AI-based, powerful mobile apps, we opt for the intelligent technologies that deliver next-generation experiences to the users as per the enterprise needs.",
         variant: "light",
@@ -231,16 +242,14 @@ export const reactJs: PageData = {
         variant: "accent",
       },
       {
-        id: "Cloud Native React.js Applications",
-
-        label: "Cloud Native React.js Applications",
+        id: "Cloud Native ReactJS Applications",
+        label: "Cloud Native ReactJS Applications",
         description:
           "In order to meet the latest market standards, we build cloud native applications that are designed to manage storage and data securely. Our Cloud native React.js solutions are designed to deliver high performance, strong data management, and consistency across the cloud environment. In our Cloud native application development process, we designed a solution that handles traffic growth smoothly, reduces downtime, and provides high flexibility.",
         variant: "dark",
       },
       {
         id: "Real-Time Data and API Integration Services",
-
         label: "Real-Time Data and API Integration Services",
         description:
           "At Moonstack, our professional React.js developers have hands-on experience with real data and  API integration services. In our React.js API integration services, our designers opt for instant data updates, live dashboards, and seamless system communication. We identify the functionalities that React.js enterprise solutions require, then we search for the best and most trusted API in the market that aligns with our business needs as well as matches our technical aspects.",
@@ -248,7 +257,6 @@ export const reactJs: PageData = {
       },
       {
         id: "Progressive Web App (PWA) Development",
-
         label: "Progressive Web App (PWA) Development",
         description:
           "Moonstack builds progressive web apps using React.js that deliver faster and app-like experiences with faster offline access. Our progressive web apps are designed for startups to large enterprises that improve performance and support cross-device compatibility. Our React coders in India combine both web and mobile capabilities to help to increase user engagement, improve performance, and reduce development costs. Along with this, our PWS development approach with React.js delivers a similar user experience to users on diverse platforms.",
@@ -256,7 +264,6 @@ export const reactJs: PageData = {
       },
       {
         id: "Modern UI/UX & Performance Optimization",
-
         label: "Modern UI/UX & Performance Optimization",
         description:
           "We don’t only design the solution in the name of designing, our aim is to deliver a next-generation modern user interface to the users with smooth and easy-to-use navigation. Our design architects focus on the right color combination, text, and many other design aspects. Along with this, at Moonstack, we also focus on fast loading times and engaging user experiences across all platforms and devices. In our performance-first React development services, we opt to optimize different components, assets, and code structure that enhance usability, improve user retention, and provide interactive digital experiences for both users and businesses.",
@@ -264,36 +271,18 @@ export const reactJs: PageData = {
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
   qualitySectionData: {
     heading: [
       {
-        text: "Why choose us for your ",
+        text: "Why Choose Us for Your ",
         color: "text-white",
       },
       {
-        text: "next React.js ",
+        text: "Next ReactJS ",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: "development project?",
+        text: "Development Project?",
         color: "text-white",
       },
     ],
@@ -303,7 +292,7 @@ export const reactJs: PageData = {
     list: [
       {
         id: 1,
-        title: "Custom React.js Development",
+        title: "Custom ReactJS Development",
         icon: collaboration.src,
         description:
           "We build custom React.js development solutions with strong technical expertise and latest framework as well as tools. Our Angular.js team have delivered a wide range of high performance web solutions from start ups to large enterprises that are aligned with their business goals. Our React web coders keep themselves updated with the latest market trends as well as deliver modern, future ready Angular web applications in the market. ",
@@ -347,7 +336,7 @@ export const reactJs: PageData = {
   },
   accordionData: [
     {
-      question: "What is React.js best used for ?",
+      question: "What is React.js best used for?",
       answer:
         "React.js is used to develop high-performance and dynamic user interface-based React web solutions. It is ideal for all types of businesses, mid to large enterprises.",
     },
@@ -380,36 +369,15 @@ export const reactJs: PageData = {
   ],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
-
-    buttonText: "Connect with us",
+    headingText: [],
+    subHeadingText: [],
+    image: "",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",

@@ -2,10 +2,8 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/product.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 
+// svg icons components
 import Icon1 from "@/components/ServicesSvg/ProductDesigningIcon/ProductDesigningIcon1"
 import Icon2 from "@/components/ServicesSvg/ProductDesigningIcon/ProductDesigningIcon2"
 import Icon3 from "@/components/ServicesSvg/ProductDesigningIcon/ProductDesigningIcon3"
@@ -17,8 +15,13 @@ export const product: PageData = {
   hero: {
     title: [
       {
-        text: "Transforming Ideas into Reality with Moonstack's Custom Product Design Services",
+        text: "Transforming Ideas to Reality: ",
         color: "text-white",
+      },
+      {
+        text: "Custom Product Design",
+        color: "",
+        className: "libreItalic highlight-text",
       },
     ],
     description: [
@@ -27,7 +30,7 @@ export const product: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -56,17 +59,7 @@ export const product: PageData = {
   points: "",
   highlightText: "",
 
-  leftCardData: [
-    // {
-    //   title: "Transform Your Business with Custom Laravel Solutions",
-    //   description:
-    //     "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",
-    //   stats: [],
-    //   description2:
-    //     "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
-    //   image: bndimage1.src,
-    // },
-  ],
+  leftCardData: [],
   solutions: {
     headingContent: [
       {
@@ -113,7 +106,16 @@ export const product: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Innovation With Our Expert Product Design Team" },
+      {
+        text: "Scale Your Innovation With Our ",
+      },
+      {
+        text: "Expert Product Design ",
+        className: "libreItalic font-[400]",
+      },
+      {
+        text: "Team",
+      },
     ],
   },
   OutcomeBanner: {
@@ -139,55 +141,55 @@ export const product: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Bringing the best Designing",
+    title: "Bringing the Best Designing",
     highlight: "Agency To You",
     subtitle: "",
     steps: [
       {
         number: 1,
-        title: " Product Discovery",
+        title: "Product Discovery",
         description:
           " Research user needs, market trends, and business goals to define product vision and scope.",
         position: "left",
       },
       {
         number: 2,
-        title: " User Research",
+        title: "User Research",
         description:
           "Conduct interviews, surveys, and usability tests to understand user pain points and preferences.",
         position: "right",
       },
       {
         number: 3,
-        title: " Wireframing",
+        title: "Wireframing",
         description:
           "Create low-fidelity layouts to outline structure, functionality, and user flow of the product.",
         position: "left",
       },
       {
         number: 4,
-        title: " Prototyping",
+        title: "Prototyping",
         description:
           "Develop interactive prototypes to visualize and test product concepts before development.",
         position: "right",
       },
       {
         number: 5,
-        title: " UI/UX Design",
+        title: "UI/UX Design",
         description:
           "Design intuitive, visually appealing interfaces focused on enhancing user experience and engagement.",
         position: "left",
       },
       {
         number: 6,
-        title: " Design Systems",
+        title: "Design Systems",
         description:
           "Build consistent design frameworks for scalability and brand alignment across the product.",
         position: "right",
       },
       {
         number: 7,
-        title: " Usability Testing",
+        title: "Usability Testing",
         description:
           "Evaluate designs with real users to identify improvements and ensure ease of use.",
         position: "left",
@@ -201,7 +203,7 @@ export const product: PageData = {
       },
       {
         number: 9,
-        title: " Collaboration",
+        title: "Collaboration",
         description:
           " Work closely with developers, stakeholders, and teams to ensure seamless design implementation.",
         position: "left",
@@ -218,12 +220,12 @@ export const product: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Edge tools " },
+      { text: "Edge Tools " },
       {
         text: "Drive That",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: "performance" },
+      { text: "Performance" },
     ],
     description:
       "Feel free adapt this based on the specific managed services, features, and unique selling points your IT service company provides.",
@@ -237,7 +239,6 @@ export const product: PageData = {
       },
       {
         id: "IT Helpdesk Support",
-
         label: "IT Helpdesk Support",
         description:
           "Provide timely assistance, troubleshoot issues, and resolve technical problems to ensure uninterrupted operations.",
@@ -245,7 +246,6 @@ export const product: PageData = {
       },
       {
         id: "Managed IT Services",
-
         label: "Managed IT Services",
         description:
           "Offer proactive monitoring, maintenance, and management of IT infrastructure for reliability and efficiency.",
@@ -253,7 +253,6 @@ export const product: PageData = {
       },
       {
         id: "IT Consulting",
-
         label: "IT Consulting",
         description:
           "Advise on technology strategies, optimize systems, and align IT solutions with business goals for growth.",
@@ -261,7 +260,6 @@ export const product: PageData = {
       },
       {
         id: "Network Support",
-
         label: "Network Support",
         description:
           "Ensure secure, stable, and efficient network operations through monitoring, troubleshooting, and maintenance.",
@@ -269,24 +267,6 @@ export const product: PageData = {
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
   qualitySectionData: {
     heading: [
       {
@@ -298,7 +278,7 @@ export const product: PageData = {
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: " in USA: The Art of Innovation",
+        text: " in India: The Art of Innovation",
         color: "text-white",
       },
     ],
@@ -332,46 +312,19 @@ export const product: PageData = {
       },
     ],
   },
-  accordionData: [
-    // {
-    //   question:
-    //     "Will you be able to work long term for my Laravel project requirements?",
-    //   answer:
-    //     "Yes, our Laravel web developers are always available and they are proficient with all types of Laravel web development requirements. Our team offers professional Laravel web development services to our customers. ",
-    // },
-  ],
+  accordionData: [],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
 
-    buttonText: "Connect with us",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",

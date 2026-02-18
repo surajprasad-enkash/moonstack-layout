@@ -42,8 +42,8 @@ interface AboutHeroSectionProps {
 
 export default function AboutHeroSection({
   label = "ABOUT US",
-  heading = "Digital design experts driving business",
-  highlightWord = "growth",
+  heading = "Digital Design Experts Driving Business",
+  highlightWord = "Growth",
   subTextLeft = "High-impact digital design and development, done right",
   subTextRight = "Powered by a global team that knows your users and your market",
   teamCount = "55+",
@@ -53,7 +53,7 @@ export default function AboutHeroSection({
   unicornCount = "3 clients",
 }: AboutHeroSectionProps) {
   return (
-    <section className="relative px-[20px] text-white">
+    <section className="relative px-[20px] text-white md:pt-[80px]">
       {bgImage && (
         <Image
           src={bgImage}
@@ -70,7 +70,7 @@ export default function AboutHeroSection({
 
         <div className="justify-between gap-[110px] md:flex">
           {/* LEFT CONTENT */}
-          <div className="max-w-[650px]">
+          <div className="max-w-[750px]">
             <Heading
               headingTag="h2"
               className="text-center !leading-[110%] md:text-start md:!text-[92px]"

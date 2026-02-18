@@ -2,7 +2,6 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
@@ -27,7 +26,7 @@ export const ai: PageData = {
       },
       {
         text: " Agents & Automation",
-        color: "text-white",
+        color: "text-white highlight-text libreItalic",
       },
     ],
     description: [
@@ -36,7 +35,7 @@ export const ai: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -46,7 +45,7 @@ export const ai: PageData = {
         href: "/services",
       },
       {
-        label: "Ai agent development company",
+        label: "Ai Agent Development Company",
         href: "/services/ai-agent-development-company",
       },
     ],
@@ -147,8 +146,18 @@ export const ai: PageData = {
     },
   ],
   qualitySectionData: {
-    heading: [],
-    description: "",
+    heading: [
+      {
+        text: "Engineering Intelligence into ",
+        color: "text-white",
+      },
+      {
+        text: "Every Workflow",
+        color: "text-white libreItalic font-[400] highlight-text",
+      },
+    ],
+    description:
+      "We go beyond simple automation. Our team architects sophisticated AI agents that understand context, execute variable-dependent decisions, and integrate deeply with your enterprise ecosystem to drive genuine operational excellence.",
     columsClass: "",
     list: [
       {
@@ -291,7 +300,7 @@ export const ai: PageData = {
       {
         id: "e-Commerce",
 
-        label: "e-Commerce",
+        label: "E-Commerce",
         description:
           "At Moonstack, we offer cutting-edge AI solutions for e-commerce companies, helping them enhance customer experience, engage users, run campaigns, manage inventories, and get valuable data insights for strategic business decision-making. This is possible by integrating AI solutions like virtual shopping assistants, AI custom support solutions, inventory forecasting solutions, dynamic pricing solutions, data analytics tools, AI sales agents, and more such smart solutions with our help.",
         variant: "dark",
@@ -322,63 +331,45 @@ export const ai: PageData = {
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
 
   accordionData: [
     {
-      question: "How much does Android app development cost in India?",
+      question: "What is an AI agent?",
       answer:
-        "The actual development cost of an Android app depends on the app’s purpose, technology stack, features, and scale. For a quick quotation, feel free to reach out to our team at Moonstack.",
+        "An AI agent is a software program that can perceive its environment, reason, and take actions to achieve specific goals autonomously. Unlike traditional software, AI agents can learn from their interactions and improve their performance over time.",
     },
     {
-      question: "Will AI replace Android developers in India?",
+      question: "How can AI agents benefit my business?",
       answer:
-        "No, while AI is gradually becoming a good tool that can assist developers, it is not advanced enough to replace Android developers in India.",
+        "AI agents can automate repetitive tasks, improve decision-making, enhance customer service, and optimize operations. They can work 24/7, handle large volumes of data, and provide personalized experiences to users.",
     },
     {
-      question: "Which is the best Android app development company in India?",
+      question: "What industries can benefit from AI agents?",
       answer:
-        "Moonstack. We pride ourselves on being the best Android app development company in India, thanks to our years of experience developing popular Android apps that are downloaded and loved by millions of users.",
+        "AI agents can benefit a wide range of industries, including healthcare, finance, e-commerce, customer service, logistics, and more. Any industry that involves data processing, decision-making, or customer interaction can benefit from AI agents.",
     },
     {
-      question: "Can Moonstack develop Android e-commerce applications?",
+      question: "How long does it take to develop an AI agent?",
       answer:
-        "Yes, we can help you build completely custom e-commerce Android applications, complete with payment gateway integration and even chat support.",
+        "The development time for an AI agent depends on the complexity of the project, the features required, and the availability of data. Simple agents can be developed in a few weeks, while complex agents may take several months.",
     },
     {
-      question: "How long does it take to develop an Android app?",
+      question: "How much does it cost to develop an AI agent?",
       answer:
-        "The timeline for app development depends on various factors; however, the development process can generally take between a few weeks to a few months, based on underlying factors.",
+        "The cost of developing an AI agent varies depending on the scope of the project, the technology stack, and the level of customization required. Contact us for a quote based on your specific needs.",
     },
   ],
 
   banner: {
     headingText: [
       {
-        text: "Opt for your custom Android app development services now",
+        text: "Opt for your custom AI Agent development services now",
         color: "text-white",
       },
     ],
     subHeadingText: [
       {
-        text: "Android app development goes through different stages of work.",
+        text: "AI Agent development goes through different stages of work.",
         color: "text-white",
       },
     ],
@@ -387,13 +378,13 @@ export const ai: PageData = {
   quoteBanner: {
     headingText: [
       {
-        text: "Looking To Hire Android Developers in India? ",
+        text: "Looking To Hire AI Developers in India? ",
         color: "text-white",
       },
     ],
     subHeadingText: [
       {
-        text: "We offer top-rated Android e-commerce app development in India. ",
+        text: "We offer top-rated AI development services in India. ",
         color: "text-white",
       },
     ],

@@ -2,10 +2,8 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/webDesining.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/meeting-banner-images/webDesining.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
+
 import Icon1 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon1"
 import Icon2 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon2"
 import Icon3 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon3"
@@ -23,7 +21,12 @@ export const webDesigning: PageData = {
   hero: {
     title: [
       {
-        text: "Website Design Services That Turn Visitors into Customers",
+        text: "Website Design Services ",
+        color: "",
+        className: "libreItalic font-[400] highlight-text",
+      },
+      {
+        text: "That Turn Visitors into Customers",
         color: "text-white",
       },
     ],
@@ -33,7 +36,7 @@ export const webDesigning: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -64,7 +67,7 @@ export const webDesigning: PageData = {
 
   leftCardData: [
     {
-      title: "Trusted Website Designing Company near you",
+      title: "Trusted Website Designing Company Near You",
       description:
         "Moonstack is known as a one stop solution for all your IT needs. We specialize in creating stunning and mobile friendly designs that can connect with your audience. Our UI UX web designing services in India are designed in such a way that attracts users with animations, font color, and other latest designing trends. Along with this, experts also focus on delivering easy to navigate designs.",
       stats: [],
@@ -77,7 +80,7 @@ export const webDesigning: PageData = {
   solutions: {
     headingContent: [
       {
-        text: "Here are Our",
+        text: "Here Are Our",
         color: "text-white",
       },
       {
@@ -96,14 +99,14 @@ export const webDesigning: PageData = {
     {
       Icon: Icon1,
       imgSrc: "",
-      title: "Website Design  Consulting Services",
+      title: "Website Design Consulting Services",
       description:
         "Discuss about your idea with the professional web design experts. Our web designers understand your business and provide you with the right strategy (technology, colour, and steps)  that you should implement in your user interface that satisfies your customers. We create web designs that transform your brand identity.",
     },
     {
       Icon: Icon2,
       imgSrc: "",
-      title: "Custom web Design",
+      title: "Custom Web Design",
       description:
         "Our professional web designers service in  India is designed in such a way that it offers premium custom tailor made designs that align with brand identity and goals. We create connected user friendly designs that deliver next generation experience to the users. ",
     },
@@ -140,7 +143,11 @@ export const webDesigning: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Elevate Your Brand With Our Expert Website Designing Team" },
+      { text: "Elevate Your Brand With Our " },
+      {
+        text: "Expert Website Designing Team",
+        className: "libreItalic font-[400]",
+      },
     ],
   },
   OutcomeBanner: {
@@ -166,8 +173,8 @@ export const webDesigning: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Process we opt to deliver successful  ",
-    highlight: "web design services Globally",
+    title: "Process We Opt To Deliver Successful  ",
+    highlight: "Web Design Services Globally",
     subtitle:
       "We have simplified the web design service  process that allows us to meet our client’s expectations. Our process is defined based on agile methodology and ensures to overcome last minute complex challenges.",
     steps: [
@@ -201,14 +208,14 @@ export const webDesigning: PageData = {
       },
       {
         number: 5,
-        title: "Testing and Quality Check",
+        title: "Testing And Quality Check",
         description:
           "Our web designing team in India rigorously tests different functionalities with the motive to deliver a flawless user experience.",
         position: "left",
       },
       {
         number: 6,
-        title: "Launch and Support",
+        title: "Launch And Support",
         description:
           "After deployment we offer constant support and regular modification as per the latest trends to meet latest demands.",
         position: "right",
@@ -217,36 +224,61 @@ export const webDesigning: PageData = {
   },
 
   impactSection: {
-    heading: [],
-    description: "",
+    heading: [
+      { text: "Why Choose Our " },
+      {
+        text: "Web Design Services?",
+        className: "libreItalic font-[400] highlight-text",
+      },
+    ],
+    description:
+      "We go beyond aesthetics to deliver comprehensive web design solutions that drive results. From custom layouts to robust e-commerce platforms, our designs are built to enhance user engagement and boost your bottom line.",
     cards: [
-      // {
-      //   id: "Laravel Web Apps",
-      //   label: "Laravel Web Apps",
-      //   description:
-      //     "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
-      //   variant: "light",
-      // },
+      {
+        id: "Custom Website Design",
+        label: "Custom Website Design",
+        description:
+          "We create unique, tailor-made website designs that perfectly reflect your brand identity. Our custom solutions ensure your website stands out from the competition and provides a memorable experience for your visitors.",
+        variant: "light",
+      },
+      {
+        id: "E-commerce Web Design",
+        label: "E-commerce Web Design",
+        description:
+          "Drive sales with our high-converting e-commerce designs. We focus on seamless navigation, secure checkout processes, and attractive product displays to maximize your online store's potential and revenue.",
+        variant: "accent",
+      },
+      {
+        id: "CMS Web Design",
+        label: "CMS Web Design",
+        description:
+          "We specialize in designing for popular Content Management Systems like WordPress, Shopify, and more. Our CMS designs are flexible, easy to manage, and scalable, allowing you to update your content effortlessly.",
+        variant: "dark",
+      },
+      {
+        id: "Mobile-First Design",
+        label: "Mobile-First Design",
+        description:
+          "With the majority of web traffic coming from mobile devices, we prioritize mobile-first design. We ensure your website looks and functions dramatically well on smartphones and tablets, providing an optimal user experience everywhere.",
+        variant: "dark",
+      },
+      {
+        id: "Landing Page Design",
+        label: "Landing Page Design",
+        description:
+          "Maximize your marketing campaigns with high-converting landing pages. We design focused, persuasive pages optimized for specific goals, whether it's lead generation, product sales, or event registrations.",
+        variant: "light",
+      },
+      {
+        id: "Website Redesign",
+        label: "Website Redesign",
+        description:
+          "Transform your outdated website into a modern digital asset. We revamp your existing site with improved aesthetics, enhanced usability, and better performance to meet current web standards and user expectations.",
+        variant: "accent",
+      },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
+
   qualitySectionData: {
     heading: [
       {
@@ -350,35 +382,14 @@ export const webDesigning: PageData = {
   ],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
-
+    headingText: [],
+    subHeadingText: [],
+    image: "",
     buttonText: "Connect with us",
   },
   whyChooseData: {

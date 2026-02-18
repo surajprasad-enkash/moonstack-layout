@@ -92,12 +92,12 @@ const contactUs = (): React.JSX.Element => {
         <AwardsSection
           showLabel={false}
           heading={[
-            { text: "Trusted and recognized", className: "" },
+            { text: "Trusted and Recognized", className: "" },
             {
-              text: " across top industry",
+              text: " Across Top Industry",
               className: "libreItalic highlight-text font-[400]",
             },
-            { text: " review platforms", className: "" },
+            { text: " Review Platforms", className: "" },
           ]}
           awards={awards}
         />
@@ -149,9 +149,9 @@ const contactUs = (): React.JSX.Element => {
         />
         <LocationSection
           heading={[
-            { text: "Let`s discuss", color: "text-white block" },
+            { text: "Let's Discuss", color: "text-white block" },
             {
-              text: "‍your next project",
+              text: "‍Your Next Project",
               className: "text-white libreItalic highlight-text",
             },
           ]}

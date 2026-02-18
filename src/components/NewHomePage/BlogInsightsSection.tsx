@@ -37,10 +37,10 @@ export default async function BlogInsightsSection({
               content={[
                 { text: "Get " },
                 {
-                  text: "growth insights",
+                  text: "Growth Insights",
                   className: "libreItalic highlight-text font-[400]",
                 },
-                { text: "and proven strategies for digital success" },
+                { text: "and Proven Strategies for Digital Success" },
               ]}
             />
           </div>

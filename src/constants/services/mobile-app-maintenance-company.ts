@@ -2,11 +2,9 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/mobile-main.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 
+// svg icons components
 import MamIcon1 from "@/components/ServicesSvg/MamIcon/MamIcon1"
 import MamIcon2 from "@/components/ServicesSvg/MamIcon/MamIcon2"
 import MamIcon3 from "@/components/ServicesSvg/MamIcon/MamIcon3"
@@ -18,11 +16,16 @@ export const app_maintenance: PageData = {
   hero: {
     title: [
       {
-        text: "Future-Proof Your App: Expert App Maintenance",
+        text: "Future-Proof Your App: ",
         color: "text-white",
       },
       {
-        text: " Service",
+        text: "Expert App Maintenance ",
+        color: "",
+        className: "libreItalic highlight-text",
+      },
+      {
+        text: "Service",
         color: "text-white",
       },
     ],
@@ -32,7 +35,7 @@ export const app_maintenance: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -80,7 +83,7 @@ export const app_maintenance: PageData = {
         color: "text-white",
       },
       {
-        text: "app maintenance",
+        text: "App Maintenance",
         color: "text-white libreItalic font-[400] highlight-text",
       },
     ],
@@ -157,8 +160,8 @@ export const app_maintenance: PageData = {
     list: [],
   },
   CloudTimelineData: {
-    title: "Our Process to assist you in ",
-    highlight: "App maintenance",
+    title: "Our Process to Assist You in ",
+    highlight: "App Maintenance",
     subtitle:
       "Moonstack is the leading provider of app optimisation services in India. So, if you want to know what makes us the best, here’s an overview of how we provide tangible results to our clients.",
     steps: [
@@ -195,12 +198,11 @@ export const app_maintenance: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Why Choose Us for maintaining Your " },
+      { text: "Why Choose Us for Maintaining Your " },
       {
-        text: "App to run ",
+        text: "App to Run Smoothly?",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: "smoothly?" },
     ],
     description:
       "Our emergency app support services in India have helped many businesses across industries. Apart from our stellar records and highly appreciative clientele, here are some more reasons why you should work with Moonstack.",
@@ -214,7 +216,6 @@ export const app_maintenance: PageData = {
       },
       {
         id: "Platform Independent Expertise",
-
         label: "Platform Independent Expertise",
         description:
           "Our team is experienced in offering maintenance services for apps built across platforms such as Android, iOS, and even hybrid frameworks.",
@@ -222,7 +223,6 @@ export const app_maintenance: PageData = {
       },
       {
         id: "Security First Approach",
-
         label: "Security First Approach",
         description:
           "When you choose Moonstack, you can rest assured that the security standards and OS policies will always be followed, ensuring app compliance across platforms and app stores.",
@@ -230,7 +230,6 @@ export const app_maintenance: PageData = {
       },
       {
         id: "Proactive Maintenance",
-
         label: "Proactive Maintenance",
         description:
           "We create failsafes in the code that prevent major outages or problems with the core function of the app. This helps us prevent problems in the first place and offer a seamless user experience to users.",
@@ -238,7 +237,6 @@ export const app_maintenance: PageData = {
       },
       {
         id: "Tailored Maintenance",
-
         label: "Tailored Maintenance",
         description:
           "Not only do we offer tailored maintenance for your apps, but we also offer tailored pricing for every project and do not overcharge or oversell our clients, services that they wouldn’t need.",
@@ -246,7 +244,6 @@ export const app_maintenance: PageData = {
       },
       {
         id: "Transparency Always",
-
         label: "Transparency Always",
         description:
           " When you choose Moonstack, you will always be a part of the loop with regular updates and reports delivered to you at every stage of our mobile app SLA support service in India.",
@@ -257,29 +254,17 @@ export const app_maintenance: PageData = {
   NewBanner: {
     headingLines: [
       {
-        text: "Need Reliable Mobile App Maintenance That Keeps Your Users Happy?",
+        text: "Need Reliable ",
       },
-      { text: "" },
+      {
+        text: "Mobile App Maintenance ",
+        className: "libreItalic font-[400]",
+      },
+      {
+        text: "For Happy Users",
+      },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
 
   accordionData: [
     {
@@ -312,36 +297,15 @@ export const app_maintenance: PageData = {
   ],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
-
-    buttonText: "Connect with us",
+    headingText: [],
+    subHeadingText: [],
+    image: "",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",

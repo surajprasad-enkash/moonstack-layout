@@ -2,11 +2,7 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
 
 import WebDevIcon1 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon1"
 import WebDevIcon2 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon2"
@@ -25,7 +21,12 @@ export const websiteDevelopment: PageData = {
   hero: {
     title: [
       {
-        text: "Website Development Service for Businesses",
+        text: "Website Development Service ",
+        color: "",
+        className: "libreItalic font-[400] highlight-text",
+      },
+      {
+        text: "for Businesses",
         color: "text-white",
       },
     ],
@@ -35,7 +36,7 @@ export const websiteDevelopment: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -80,15 +81,15 @@ export const websiteDevelopment: PageData = {
   solutions: {
     headingContent: [
       {
-        text: "Moonstack offers ",
+        text: "Moonstack Offers ",
         color: "text-white",
       },
       {
-        text: "website development",
+        text: "Website Development",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: "  services Globally",
+        text: "Services Globally",
         color: "text-white",
       },
     ],
@@ -99,7 +100,7 @@ export const websiteDevelopment: PageData = {
     {
       Icon: WebDevIcon1,
       imgSrc: "",
-      title: "Custom website development",
+      title: "Custom Website Development",
       description:
         "Our web programmers develop custom websites for start ups to large enterprises that meet all business needs. Our web developers in India have a strategic approach that ensures to deliver high performance and responsive mobile friendly websites for your clients.",
     },
@@ -143,7 +144,11 @@ export const websiteDevelopment: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Web Development Team" },
+      { text: "Scale Your Business With Our " },
+      {
+        text: "Expert Web Development Team",
+        className: "libreItalic font-[400]",
+      },
     ],
   },
   OutcomeBanner: {
@@ -240,7 +245,6 @@ export const websiteDevelopment: PageData = {
       },
       {
         id: "E-commerce Website Development Service",
-
         label: "E-commerce Website Development Service",
         description:
           "Launch your powerful online store that allows start ups - mid sized and large enterprises to reach wider audiences and double their sales. Our top e-commerce web developers in India integrate modern functionalities such as AI driven product recommendation, and seamless payment integration, ",
@@ -248,7 +252,6 @@ export const websiteDevelopment: PageData = {
       },
       {
         id: "Full Stack Web Development Services",
-
         label: "Full Stack Web Development Services",
         description:
           "Get your end to end secure and customised website with best modern practises. Our web developers in India are proficient with both front end and back end development that deliver responsive and user friendly experiences with latest innovations.",
@@ -256,7 +259,6 @@ export const websiteDevelopment: PageData = {
       },
       {
         id: "WordPress Development Services",
-
         label: "WordPress Development Services",
         description:
           "Launch high performance secure and dynamic wordpress based websites with us. We develop corporate, e-commerce, and dynamic sites for our clients that are user and SEO  friendly and fully secure that meet all our clients needs.",
@@ -264,7 +266,6 @@ export const websiteDevelopment: PageData = {
       },
       {
         id: "Shopify Website Development Service",
-
         label: "Shopify Website Development Service",
         description:
           "Build custom Shopify online stores or upgrade existing ones with inbuilt customizable themes, easy store step up, and fully optimised mobile designs that increase sales and drive growth.",
@@ -272,7 +273,6 @@ export const websiteDevelopment: PageData = {
       },
       {
         id: "CRM Development Service",
-
         label: "CRM Development Service",
         description:
           "Integrate custom CRM development solutions into your enterprise that turn complex processes into easier and faster. Our custom CRM solutions are designed in such a way that all information stored at a centralized platform with limited access and automated workflow enhances overall efficiency.",
@@ -280,36 +280,19 @@ export const websiteDevelopment: PageData = {
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
+
   qualitySectionData: {
     heading: [
       {
-        text: "Why Choose us for your ",
+        text: "Why Choose Moonstack for Next ",
         color: "text-white",
       },
       {
-        text: "next website development  ",
+        text: "Website Development  ",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: "services in India?",
+        text: "Services in India?",
         color: "text-white",
       },
     ],
@@ -320,7 +303,7 @@ export const websiteDevelopment: PageData = {
       {
         id: 1,
         title: "Decade of Experience",
-        icon: collaboration.src,
+        icon: "",
         Icon: WebDevIcon7,
         description:
           "Moonstack has delivered 450+ projects across different industries. Our affordable website development service India  is in high demand among start ups, mid sized, and large enterprises.",
@@ -328,7 +311,7 @@ export const websiteDevelopment: PageData = {
       {
         id: 2,
         title: "Data Security & Compliance",
-        icon: collaboration.src,
+        icon: "",
         Icon: WebDevIcon8,
         description:
           "We don’t only build websites to deliver. At Moonstack - leading website development company in Jaipur,  we know the importance of data security and to match the standards and protection with essential compliance.",
@@ -336,15 +319,15 @@ export const websiteDevelopment: PageData = {
       {
         id: 3,
         title: "Next Generation Technology Stack",
-        icon: collaboration.src,
+        icon: "",
         Icon: WebDevIcon9,
         description:
           "Our secure website development service provider opt for the modern and latest technology stack AI and Machine Learning. Moreover, in languages we opt for React, Next.js , and Laravel that allow us to launch powerful and high performance websites.",
       },
       {
         id: 4,
-        title: "Custom web Solutions ",
-        icon: collaboration.src,
+        title: "Custom Web Solutions ",
+        icon: "",
         Icon: WebDevIcon10,
         description:
           "Opt for custom business website development service in India. We offer end to end custom website solutions for our clients that includes consultation to post support. Our team builds custom websites that align with your business goals. ",
@@ -352,7 +335,7 @@ export const websiteDevelopment: PageData = {
       {
         id: 5,
         title: "Confidential Details",
-        icon: collaboration.src,
+        icon: "",
         Icon: WebDevIcon11,
         description:
           "We are considered as one of the  top website developments for small business in India. Our team keeps all your ideas and execution strategies fully secure and 100% confidential with us only. In any case, we will not share your idea or any details to any third party.",
@@ -360,7 +343,7 @@ export const websiteDevelopment: PageData = {
       {
         id: 6,
         title: "Post Launch Support ",
-        icon: collaboration.src,
+        icon: "",
         Icon: WebDevIcon12,
         description:
           "For us we don’t only deliver websites, but we partner as the top website development service provider. After launching the start ups to large enterprise level websites, we provide post launch support to our clients. We always stand with them to match the latest tech innovations and meet their customer expectations.",
@@ -404,36 +387,15 @@ export const websiteDevelopment: PageData = {
   ],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
-
-    buttonText: "Connect with us",
+    headingText: [],
+    subHeadingText: [],
+    image: "",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",

@@ -13,7 +13,7 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
     <section className="relative z-[1] px-[20px] pt-[0] pb-[0px] text-white md:py-[80px]">
       <div className="container">
         {/* HEADING */}
-        <h2 className="mx-auto mb-16 max-w-[840px] text-center">
+        <h2 className="mx-auto mb-16 max-w-[860px] text-center">
           {data.heading.prefix}{" "}
           <span className="highlight-text libreItalic">
             {data.heading.highlight}

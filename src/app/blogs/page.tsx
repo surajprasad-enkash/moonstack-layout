@@ -95,7 +95,7 @@ export default function BlogsPage() {
               <Heading
                 className="mb-[40px] pl-[20px] text-white"
                 headingTag="h1"
-                content={[{ text: "All topics" }]}
+                content={[{ text: "All Topics" }]}
               />
 
               {/* BLOG LIST + LOAD MORE */}
@@ -120,8 +120,8 @@ export default function BlogsPage() {
 
         <div className="relative z-[2]">
           <ProjectCTA
-            title="Ready to scale"
-            subtitle="your business?"
+            title="Ready to Scale"
+            subtitle="Your Business?"
             description="Book a free consultation to get clarity, direction, and expert advice you can implement right away."
             fontSize="md:!text-[80px]  !text-[40px] md:!leading-[130%] !leading-[120%]"
             marginBottom="mb-0"

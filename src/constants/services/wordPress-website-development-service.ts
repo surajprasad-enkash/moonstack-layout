@@ -2,9 +2,6 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 
 import Icon1 from "@/components/ServicesSvg/WordPressIcon/WordPressIcon1"
@@ -24,7 +21,12 @@ export const wordPress: PageData = {
   hero: {
     title: [
       {
-        text: "WordPress Development Services in India",
+        text: "WordPress Development ",
+        color: "",
+        className: "libreItalic font-[400] highlight-text",
+      },
+      {
+        text: "Services in India",
         color: "text-white",
       },
     ],
@@ -34,7 +36,7 @@ export const wordPress: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -143,8 +145,10 @@ export const wordPress: PageData = {
 
   NewBanner: {
     headingLines: [
+      { text: "Scale Your Presence With Our " },
       {
-        text: "Scale Your Presence With Our Expert WordPress Development Team",
+        text: "Expert WordPress Development Team",
+        className: "libreItalic font-[400]",
       },
     ],
   },
@@ -171,17 +175,53 @@ export const wordPress: PageData = {
   },
 
   CloudTimelineData: {
-    title: "",
-    highlight: "",
-    subtitle: "",
+    title: "Our Process of ",
+    highlight: "WordPress development in India",
+    subtitle:
+      "Moonstack follows a structured and agile WordPress development process designed to deliver high-quality, scalable, and secure websites. Our proven methodology ensures transparency, timely delivery, and results that exceed expectations.",
     steps: [
-      // {
-      //   number: 1,
-      //   title: "Fixed Model",
-      //   description:
-      //     "We collect all the information about the project to understand what our client actually needs that allow us to align with the project.",
-      //   position: "left",
-      // },
+      {
+        number: 1,
+        title: "Requirement Analysis",
+        description:
+          "We begin by thoroughly analyzing your business goals, target audience, and functional requirements to create a detailed project roadmap.",
+        position: "left",
+      },
+      {
+        number: 2,
+        title: "UI/UX Design Strategy",
+        description:
+          "Our designers create intuitive and visually appealing prototypes and wireframes that align with your brand identity and ensure an optimal user experience.",
+        position: "right",
+      },
+      {
+        number: 3,
+        title: "Theme & Plugin Development",
+        description:
+          "We develop custom themes and plugins or customize existing ones, ensuring clean code, performance optimization, and seamless functionality.",
+        position: "left",
+      },
+      {
+        number: 4,
+        title: "Content & SEO Integration",
+        description:
+          "We integrate your content and optimize the website structure for search engines to ensure better visibility and ranking from day one.",
+        position: "right",
+      },
+      {
+        number: 5,
+        title: "Testing & QA",
+        description:
+          "Rigorous rigorous testing across devices and browsers ensures your WordPress site is bug-free, secure, and performs flawlessly under various conditions.",
+        position: "left",
+      },
+      {
+        number: 6,
+        title: "Deployment & Maintenance",
+        description:
+          "After a smooth launch, we provide ongoing support and maintenance to keep your website updated, secure, and performing at its peak.",
+        position: "right",
+      },
     ],
   },
 
@@ -208,7 +248,6 @@ export const wordPress: PageData = {
       },
       {
         id: "Hire WordPress Developer",
-
         label: "Hire WordPress Developer",
         description:
           "Hire WordPress developers on hourly, full time, and part time basis. You can hire the best WordPress resources from us as per their skills and work with them on your hourly model.",
@@ -216,7 +255,6 @@ export const wordPress: PageData = {
       },
       {
         id: "Dedicated Team",
-
         label: "Dedicated Team",
         description:
           "At Moonstack, we offer a dedicated hire team module in which you build your best WordPress team. In our pool, you can do hiring of designers, coders, testers as per your project needs. The dedicated WordPress team ensures faster delivery, better quality, and you can have full control on resources with direct communication and daily reporting.",
@@ -224,7 +262,6 @@ export const wordPress: PageData = {
       },
       {
         id: "Time and Material Model ",
-
         label: "Time and Material Model ",
         description:
           "Moonstack, known as the professional WordPress development services in  India offers a time and material model in which you can pay for the actual time and resources that are used for the specific WordPress tasks including integrated functionalities and on the basis of priorities. This model is ideal for the companies who have ongoing projects with limited or expertise resources.",
@@ -232,28 +269,10 @@ export const wordPress: PageData = {
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
   qualitySectionData: {
     heading: [
       {
-        text: " Why choose us for your",
+        text: " Why Choose Us for Your",
         color: "text-white",
       },
       {
@@ -271,7 +290,7 @@ export const wordPress: PageData = {
     list: [
       {
         id: 1,
-        title: "End to End custom web development",
+        title: "End to End Custom Web Development",
         Icon: Icon7,
         icon: "",
         description:
@@ -355,36 +374,15 @@ export const wordPress: PageData = {
   ],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
-
-    buttonText: "Connect with us",
+    headingText: [],
+    subHeadingText: [],
+    image: "",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",

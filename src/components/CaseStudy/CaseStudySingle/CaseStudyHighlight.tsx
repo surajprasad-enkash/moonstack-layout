@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-import Heading from "@/components/Heading/Heading";
-import React from "react";
-import secondBanner from "@/assets/case-study/single-case-study/secondBanner.svg";
+import Heading from "@/components/Heading/Heading"
+import React from "react"
+import secondBanner from "@/assets/case-study/single-case-study/secondBanner.svg"
 
 const CaseStudyHighlight = () => {
   return (
@@ -17,17 +17,17 @@ const CaseStudyHighlight = () => {
           content={[
             { text: "Build", className: "libreItalic highlight-text" },
             {
-              text: "a modern, high-performing website that earns trust and",
+              text: "a Modern, High-Performing Website That Earns Trust and",
               className: "",
             },
-            { text: "converts", className: "libreItalic highlight-text" },
-            { text: "with", className: "" },
+            { text: "Converts", className: "libreItalic highlight-text" },
+            { text: "With", className: "" },
             { text: "Moonstack", className: "libreItalic highlight-text" },
           ]}
         />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default CaseStudyHighlight;
+export default CaseStudyHighlight

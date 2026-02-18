@@ -17,7 +17,16 @@ export const react_native: PageData = {
   hero: {
     title: [
       {
-        text: "Expert React Native app  Development Service Provider",
+        text: "Expert ",
+        color: "text-white",
+      },
+      {
+        text: "React Native App ",
+        color: "",
+        className: "libreItalic highlight-text",
+      },
+      {
+        text: "Development Service Provider",
         color: "text-white",
       },
     ],
@@ -27,7 +36,7 @@ export const react_native: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -140,7 +149,13 @@ export const react_native: PageData = {
   },
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our React Native Apps Developers " },
+      {
+        text: "Scale Your Business With Our ",
+      },
+      {
+        text: "React Native Apps Developers",
+        className: "libreItalic font-[400]",
+      },
     ],
   },
   OutcomeBanner: {
@@ -166,8 +181,8 @@ export const react_native: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Our Process in providing",
-    highlight: " React Native Development Service",
+    title: "Our Process in Providing",
+    highlight: "React Native Development Service",
     subtitle:
       "Moonstack is the trusted partner for React Native enterprise app development in India across industries. Our success can be attributed to our working process, which is built around transparency and confidentiality. What sets us apart? Find out here.",
     steps: [
@@ -204,7 +219,7 @@ export const react_native: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Why Choose Moonstack for your" },
+      { text: "Why Choose Moonstack for Your" },
       {
         text: " React Native",
         className: "libreItalic font-[400] highlight-text",
@@ -231,7 +246,6 @@ export const react_native: PageData = {
       },
       {
         id: "End-to-end Service",
-
         label: "End-to-end Service",
         description:
           "An app that’s easy to use is one that users come back to. We ensure our app designs are intuitive, clean, and offer functionality with convenience to users.We provide complete development solutions for startups and enterprises, from developing a proof-of-concept to deploying complete cross-platform React Native applications to app stores.",
@@ -239,7 +253,6 @@ export const react_native: PageData = {
       },
       {
         id: "Experienced Team",
-
         label: "Experienced Team",
         description:
           "We work with the top React Native developers in India. Our team functions as one with industry-leading experts from each field collaborating to build top-tier React Native applications.",
@@ -247,7 +260,6 @@ export const react_native: PageData = {
       },
       {
         id: "Client-Centric Approach",
-
         label: "Client-Centric Approach",
         description:
           "Our focus on every project is to create applications that fit our client’s business goals without fail.",
@@ -255,7 +267,6 @@ export const react_native: PageData = {
       },
       {
         id: "Quick Development Timeline",
-
         label: "Quick Development Timeline",
         description:
           "Our React Native app development services in India offer a quick development timeline thanks to our team’s experience and React Native’s multi-platform building capabilities.",
@@ -263,25 +274,6 @@ export const react_native: PageData = {
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
-
   accordionData: [
     {
       question:

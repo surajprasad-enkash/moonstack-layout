@@ -2,11 +2,11 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/android.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 
+// Svg Icons Components
 import MadIcon1 from "@/components/ServicesSvg/MadIcon/MadIcon1"
 import MadIcon2 from "@/components/ServicesSvg/MadIcon/MadIcon2"
 import MadIcon3 from "@/components/ServicesSvg/MadIcon/MadIcon3"
@@ -18,11 +18,16 @@ export const mobileAppDev: PageData = {
   hero: {
     title: [
       {
-        text: "Customised Mobile App Development",
+        text: "Customised ",
         color: "text-white",
       },
       {
-        text: " Service",
+        text: "Mobile App Development ",
+        color: "",
+        className: "libreItalic highlight-text",
+      },
+      {
+        text: "Service",
         color: "text-white",
       },
     ],
@@ -32,7 +37,7 @@ export const mobileAppDev: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -216,7 +221,6 @@ export const mobileAppDev: PageData = {
       },
       {
         id: "100% Custom Mobile App Solutions",
-
         label: "100% Custom Mobile App Solutions",
         description:
           "We don’t believe in templates at Moonstack. Thanks to our experienced team of designers and developers, we build every app from scratch, ensuring unparalleled functionality and security across platforms.",
@@ -224,7 +228,6 @@ export const mobileAppDev: PageData = {
       },
       {
         id: "Real World App Building Experience",
-
         label: "Real World App Building Experience",
         description:
           "Moonstack has worked with startups, SMEs, and even MNCs. This gives us real-world experience in managing our development to meet your business goals optimally.",
@@ -232,7 +235,6 @@ export const mobileAppDev: PageData = {
       },
       {
         id: "Scalable Architecture",
-
         label: "Scalable Architecture",
         description:
           "All our apps are built for scalability without hampering existing functions. This allows our clients to grow and expand their apps as per business requirements without fail.",
@@ -240,7 +242,6 @@ export const mobileAppDev: PageData = {
       },
       {
         id: "Transparent Development",
-
         label: "Transparent Development",
         description:
           "We ensure our code is clean and accessible to the developers on board the project. Even after the app launch, we ensure the entire codebase is accessible to our client easily.",
@@ -248,7 +249,6 @@ export const mobileAppDev: PageData = {
       },
       {
         id: "Intent Focused UI/UX Design",
-
         label: "Intent Focused UI/UX Design",
         description:
           "At Moonstack, we ensure our design principles are focused on practicality and user ease of use. We work tirelessly on our app designs to ensure each interface is clean, professional, and easy to use with optimal functionality.",
@@ -259,29 +259,17 @@ export const mobileAppDev: PageData = {
   NewBanner: {
     headingLines: [
       {
-        text: "Want To Hire Scalable Mobile App Developers That Converts Ideas in Reality?",
+        text: "Want to Hire Scalable ",
       },
-      { text: "" },
+      {
+        text: "Mobile App Developers ",
+        className: "libreItalic font-[400]",
+      },
+      {
+        text: "To Build Your Vision",
+      },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
 
   accordionData: [
     {

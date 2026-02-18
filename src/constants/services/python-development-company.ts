@@ -8,6 +8,7 @@ import androidBannerImg from "@/assets/app-development-images/android-banner.web
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 import collaboration from "@/assets/app-development-images/flexible.webp"
 
+// Svg Icons Components
 import PythonIcon1 from "@/components/ServicesSvg/PythonIcon/PythonIcon1"
 import PythonIcon2 from "@/components/ServicesSvg/PythonIcon/PythonIcon2"
 import PythonIcon3 from "@/components/ServicesSvg/PythonIcon/PythonIcon3"
@@ -25,7 +26,16 @@ export const python: PageData = {
   hero: {
     title: [
       {
-        text: "Python website development service",
+        text: "Python Website ",
+        color: "text-white",
+      },
+      {
+        text: "Development ",
+        color: "",
+        className: "libreItalic highlight-text",
+      },
+      {
+        text: "Service",
         color: "text-white",
       },
     ],
@@ -35,7 +45,7 @@ export const python: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -83,7 +93,7 @@ export const python: PageData = {
         color: "text-white",
       },
       {
-        text: " Python web Development",
+        text: " Python Web Development",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
@@ -120,14 +130,14 @@ export const python: PageData = {
     {
       Icon: PythonIcon4,
       imgSrc: "",
-      title: "Python  Migration & Modernization to Python",
+      title: "Python Migration & Modernization to Python",
       description:
         "Our Python experts allow enterprises to migrate their data from one platform to another without losing anything. We also  help enterprises to upgrade outdated systems with modern functionalities. Our Python developers ensure easy transition with minimum downtime that allows us to experience advanced functionalities and optimised workflows. Our Python experts are always available for our clients to migrate data from one to another or upgrade it to the next level or rich digital ecosystem.",
     },
     {
       Icon: PythonIcon5,
       imgSrc: "",
-      title: "Python Django & Flask Framework Development",
+      title: "Django & Flask Framework Development",
       description:
         "We allow our clients to leverage the benefits of powerful Python frameworks such as Django & Flask that allow them to deliver structured, high performance, and secure web apps in the market. Our Python Django & Flask framework development offers different solutions with faster deployment, increased performance, and delivers seamless integrations that match all technical requirements.",
     },
@@ -142,7 +152,16 @@ export const python: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Grow Faster With Our Professional Python Development Experts" },
+      {
+        text: "Grow Faster With Our ",
+      },
+      {
+        text: "Professional Python Development ",
+        className: "libreItalic font-[400]",
+      },
+      {
+        text: "Experts",
+      },
     ],
   },
   OutcomeBanner: {
@@ -168,8 +187,8 @@ export const python: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Process we follow for ",
-    highlight: "Python web development Services",
+    title: "Process We Follow For ",
+    highlight: "Python Web Development Services",
     subtitle:
       "To launch the successful Python web solutions we opt for the best Python web development process. Our Python experts have defined the structure approach on the basis of agile methodology and best Python industry practices. In our Python application development we understand our clients' demand and then deliver the best end to end Python solution for your business.",
     steps: [
@@ -239,7 +258,6 @@ export const python: PageData = {
       },
       {
         id: "DevOps and Automation Solutions",
-
         label: "DevOps and Automation Solutions",
         description:
           "At Moonstack, we have built DevOps and automation solutions to streamline your development, deployment, and operational workflow far faster and in a reliable delivery process. In our Python DevOps and deployment services we integrate CI/CD pipelines, automated testing process, cloud infrastructure management, and monitor different systems to decrease manual efforts, and boost development process. We ensure continuous improvements across the deployment and development cycle in the entire technology ecosystem.",
@@ -247,7 +265,6 @@ export const python: PageData = {
       },
       {
         id: "Python IoT Solutions",
-
         label: "Python IoT Solutions",
         description:
           "Our Python IoT solutions allow businesses to connect, automate, and manage smart devices easily. We have developed secure IoT ecosystems that support real time data collection, intelligent processings, and device interoperability. At Moonstack, we support sensor integration to cloud connectivity that ensures increased automation, productivity, and offer insightful decision making across the operational departments.",
@@ -255,7 +272,6 @@ export const python: PageData = {
       },
       {
         id: "Blockchain Python Development Services",
-
         label: "Blockchain Python Development Services",
         description:
           "Deploy our Blockchain powered platforms and smart contracts that will help in transparency, trust, and to maintain reliable and stronger digital transactions. We have built Blockchain Python solutions with powerful libraries and modern Blockchain frameworks that allow businesses to leverage the benefits of next generation technologies. Along with this, Python Blockchain solutions support data integrity and allow users to experience decentralised Blockchain capabilities.",
@@ -263,7 +279,6 @@ export const python: PageData = {
       },
       {
         id: "Python Chatbot Development",
-
         label: "Python Chatbot Development",
         description:
           "Our Python app coders have built modern smart chatbots by using advanced NLP and AI frameworks. We have built Python chatbots that understand user intent, provide accurate responses, and integrate seamlessly with several platforms. Our Python smart bots streamline operations, customer engagement, and provide full customer support that accelerate business growth. The main aim is to deliver Python bot is to improve customer engagement and solve their queries instantly without any disruptions.",
@@ -271,7 +286,6 @@ export const python: PageData = {
       },
       {
         id: "Custom Python CMS Development",
-
         label: "Custom Python CMS Development",
         description:
           "With powerful and intuitive custom Python CMS development services, we have launched secure and flexible CMS platforms for start ups and large enterprises. For our clients we have built interactive dashboards, role based access, and seamless integration with the blend of powerful frameworks like Django that ensure effortless content control and deliver high performance and allow users to experience modern digital experiences.",
@@ -279,36 +293,18 @@ export const python: PageData = {
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
   qualitySectionData: {
     heading: [
       {
-        text: "Why Choose Moonstack for your ",
+        text: "Why Choose Moonstack For Your ",
         color: "text-white",
       },
       {
-        text: "Python web ",
+        text: "Python Web ",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: "development Services?",
+        text: "Development Services?",
         color: "text-white",
       },
     ],
@@ -319,7 +315,7 @@ export const python: PageData = {
       {
         id: 1,
         title: "Expert Python Developer",
-        icon: collaboration.src,
+        icon: "",
         Icon: PythonIcon7,
         description:
           "Moonstack offers a highly skilled team of Python developers who have in-depth knowledge in modern Python frameworks that includes Django, Flask, and several API integration. Our Python developers focus to deliver future ready solutions that meet all your modern tech demands and meet your needs.",
@@ -327,7 +323,7 @@ export const python: PageData = {
       {
         id: 2,
         title: "Fully Customised Solution",
-        icon: collaboration.src,
+        icon: "",
         Icon: PythonIcon8,
         description:
           "We provide a fully customized solution as per your business needs. Our team offers tailored Python solutions that meet all your business needs. We offer a custom development approach in which we highly focus on smoother operations, better user experiences, and advanced modern experience. At Moonstack, we focus on different functionalities and integration that match our exact project requirements on our clients. ",
@@ -335,7 +331,7 @@ export const python: PageData = {
       {
         id: 3,
         title: "OnTime Delivery",
-        icon: collaboration.src,
+        icon: "",
         Icon: PythonIcon9,
         description:
           "Time is important and we understand its value. At Moonstack ,we focus on a structured approach that allows us to deliver our projects on time without compromising quality. Our team plans their daily routine as per the structured way that helps them to meet all the business needs with regular updates. Our strategic roadmap will not allow any productive task to delay in any care.",
@@ -343,7 +339,7 @@ export const python: PageData = {
       {
         id: 4,
         title: "Transparent Communication",
-        icon: collaboration.src,
+        icon: "",
         Icon: PythonIcon10,
         description:
           "At Moonstack, we offer end to end transparent communication with structured updates, clear timelines, and constant progress reports. Our team always ensures to keep our clients in loop and convey all information to them with clear timelines. We believe in an open communication approach and our main aim is to improve collaboration with our clients and meet their expectations constantly.",
@@ -351,7 +347,7 @@ export const python: PageData = {
       {
         id: 5,
         title: "Long Term Support and Maintenance",
-        icon: collaboration.src,
+        icon: "",
         Icon: PythonIcon11,
         description:
           "Our focus is to not only deploy the solutions in the market. We believe in long term commitments and provide end to end maintenance services to our customers. At Moonstack, we properly plan the project and ensure that we meet with all committed milestones that are required in the business. With a constant work process, our python web developers ensure to maintain the quality and meet customer experience for the long period.",
@@ -359,7 +355,7 @@ export const python: PageData = {
       {
         id: 6,
         title: "End to End Security ",
-        icon: collaboration.src,
+        icon: "",
         Icon: PythonIcon12,
         description:
           "We offer end to end security standards to our clients with optimised codes and high performance frameworks. At Moonstack, we focus on high speed, stability, and keep all our clients' information fully secure and details confidential. Our python web app developers will not leak any information in any case, it would only be shared with the team who is constantly working on the project. We opt for high security frameworks not only to protect your solutions but also all details.",

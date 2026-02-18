@@ -1,7 +1,7 @@
-import Breadcrumb from "@/components/Breadcrumb";
-import Layout from "@/components/Layout";
-import Heading from "@/components/Heading/Heading";
-import { privacyPolicyData } from "@/constants/privacy-policy";
+import Breadcrumb from "@/components/Breadcrumb"
+import Layout from "@/components/Layout"
+import Heading from "@/components/Heading/Heading"
+import { privacyPolicyData } from "@/constants/privacy-policy"
 
 export default function PrivacyPolicy() {
   return (
@@ -31,13 +31,16 @@ export default function PrivacyPolicy() {
                 headingTag="h6"
                 className="font-bold"
                 content={[
-                  { text: " Efective Date : 08/03/2026", color: "text-black" },
+                  {
+                    text: "Updated Date : 08/03/2026",
+                    color: "text-black",
+                  },
                 ]}
               />
             </div>
 
-            {privacyPolicyData.map((section) => (
-              <section key={section.title} className="mb-16">
+            {privacyPolicyData.map((section, i) => (
+              <section key={i} className="mb-16">
                 <h2 className="mb-3 text-2xl font-semibold">{section.title}</h2>
 
                 {Array.isArray(section.content) ? (
@@ -95,5 +98,5 @@ export default function PrivacyPolicy() {
         </div>
       </section>
     </Layout>
-  );
+  )
 }

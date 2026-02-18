@@ -2,12 +2,9 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/e-commerce.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
 
+// Svg Icons Components
 import EcommerceIcon1 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon1"
 import EcommerceIcon2 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon2"
 import EcommerceIcon3 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon3"
@@ -25,7 +22,16 @@ export const ecommerce: PageData = {
   hero: {
     title: [
       {
-        text: "E-commerce Website Development Services Provider",
+        text: "E-commerce Website ",
+        color: "text-white",
+      },
+      {
+        text: "Development Services ",
+        color: "",
+        className: "libreItalic highlight-text",
+      },
+      {
+        text: "Provider",
         color: "text-white",
       },
     ],
@@ -35,7 +41,7 @@ export const ecommerce: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -66,7 +72,7 @@ export const ecommerce: PageData = {
 
   leftCardData: [
     {
-      title: "Trusted E-commerce Development Company to maximize digital sales",
+      title: "Trusted E-Commerce Development Company to Maximize Digital Sales",
       description:
         "Moonstack is the leading e-commerce development company. With our ecommerce website developers in India, we have built powerful and user centric  online stores that align with brand identity and increase conversion rates. We integrate modern functionalities powered by advanced technologies such as secure payment gateways, mobile responsive, and create interactive user interfaces for users that are easy to use. Our main aim is to deliver a seamless shopping experience to your customers that 2X sales.",
       stats: [
@@ -90,7 +96,7 @@ export const ecommerce: PageData = {
         color: "text-white",
       },
       {
-        text: " E-commerce Development",
+        text: " E-Commerce Development",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
@@ -105,14 +111,14 @@ export const ecommerce: PageData = {
     {
       Icon: EcommerceIcon1,
       imgSrc: "",
-      title: "Custom e-commerce website development  Services ",
+      title: "Custom E-Commerce Website Development Services ",
       description:
         "We build e-commerce solutions for small business and large enterprises that are fully customised and align with the brand identity that deliver high performance and seamless shopping experience to the users. In e-commerce web development, we integrate advanced functionalities that offer next generation shopping experience to the users.",
     },
     {
       Icon: EcommerceIcon2,
       imgSrc: "",
-      title: "E-commerce Designing Services ",
+      title: "E-Commerce Designing Services ",
       description:
         "Moonstack creates user friendly, interactive, and engaging e-commerce solutions that reflect the brand identity and increase sales conversion. Professional ecommerce design company in India aim is to focus on delivering impressive designs that are based on 2D and 3D animations as well as easy to use. ",
     },
@@ -120,28 +126,28 @@ export const ecommerce: PageData = {
     {
       Icon: EcommerceIcon3,
       imgSrc: "",
-      title: "E-commerce API and Integration Services",
+      title: "E-Commerce API and Integration Services",
       description:
         "Add on the functionalities in your e-commerce solutions with mobile ecommerce website development in India. Our e-commerce developers integrate third party features via API that allow customers to experience a wide range of functionalities. Designers can integrate different tools such as  CRM, real time synchronization, and secure payment gateway platforms.",
     },
     {
       Icon: EcommerceIcon4,
       imgSrc: "",
-      title: " E-commerce Testing Services ",
+      title: "E-Commerce Testing Services ",
       description:
         "Before launching your e-commerce web solution in the market, make sure that your online store is fully secure and bug free. With our expert e-commerce web developers opt for manual and unit testing services for your e-commerce solutions that allow you to meet your clients expectations and exclude risk of failure.",
     },
     {
       Icon: EcommerceIcon5,
       imgSrc: "",
-      title: "E-commerce Migration Services",
+      title: "E-Commerce Migration Services",
       description:
         "Transfer all your data from one platform to another without any technical hassle. We allow our clients to migrate all the data from existing platforms to others without losing any confidential internal data or records or even SEO ranking. Our e-commerce experts in Jaipur have defined the approach hassle free migrate the data from one to other.",
     },
     {
       Icon: EcommerceIcon6,
       imgSrc: "",
-      title: "E-commerce Support and Maintenance Services ",
+      title: "E-Commerce Support and Maintenance Services ",
       description:
         "Our e-commerce coders offer full time support and maintenance services for our clients. We offer end to end support and maintenance services allowing e-commerce businesses to have tech partners, who detect bugs for 24/7 and resolve them on immediate basis. Along with this, experts keep e-commerce solutions updated with the latest technologies on a constant basis.",
     },
@@ -149,18 +155,27 @@ export const ecommerce: PageData = {
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Store With Our Expert E-commerce Development Team" },
+      {
+        text: "Scale Stores ",
+      },
+      {
+        text: "With Expert ",
+        className: "libreItalic font-[400]",
+      },
+      {
+        text: "E-Commerce Development Team",
+      },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Sell Everywhere: Your Expert",
+        text: "Build & Sell: Your Expert",
         color: "text-white",
         className: "",
       },
       {
-        text: "E-commerce Development Partner",
+        text: "E-Commerce Partner",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
@@ -175,14 +190,14 @@ export const ecommerce: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Advanced Features that ",
-    highlight: "our e-commerce portal integrated with",
+    title: "Advanced Features That ",
+    highlight: "Our E-Commerce Portal Integrated With",
     subtitle:
-      "We integrated modern  functionalities that are powered by next generation technologies. With our B2B & B2C ecommerce website development services we integrate advanced features such as real time analytics and deliver seamless inventory management to enhance customer experience",
+      "We integrated modern  functionalities that are powered by next generation technologies. With our B2B & B2C E-Commerce website development services we integrate advanced features such as real time analytics and deliver seamless inventory management to enhance customer experience",
     steps: [
       {
         number: 1,
-        title: "AI Powered Product Recommendation",
+        title: "AI-Powered Product Recommendation",
         description:
           "Offering personalized shopping experiences with smart suggestions that meet customer expectations.",
         position: "left",
@@ -210,7 +225,7 @@ export const ecommerce: PageData = {
       },
       {
         number: 5,
-        title: "Order Tracking and Notifications",
+        title: "Order Tracking & Notifications",
         description:
           "Keep your customers informed about the orders and notify them with pop up notifications.",
         position: "left",
@@ -224,7 +239,7 @@ export const ecommerce: PageData = {
       },
       {
         number: 7,
-        title: "Delivery and Post Support ",
+        title: "Delivery & Post Support ",
         description:
           "After testing, we deliver Laravel based solutions in the market with post support that ensure our team is always there.",
         position: "left",
@@ -234,9 +249,9 @@ export const ecommerce: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Moonstack Ready to use" },
+      { text: "Moonstack Ready to Use" },
       {
-        text: "E-commerce ",
+        text: "E-Commerce ",
         className: "libreItalic font-[400] highlight-text",
       },
       { text: "Solutions" },
@@ -245,23 +260,21 @@ export const ecommerce: PageData = {
       "We offer a wide range of e-commerce web solutions to our customers that align with their business model. Our e-commerce coders build high performance, modern, secure online based solutions for different businesses.",
     cards: [
       {
-        id: "E-commerce Portals",
-        label: "E-commerce Portals",
+        id: "E-Commerce Portals",
+        label: "E-Commerce Portals",
         description:
           "We provide  ready to use e-commerce portals for our clients that allow e-commerce businesses to integrate solutions that streamline the purchasing and internal operational processes. Moreover, e-commerce portals also manage bulk orders and volume based pricing systems. We deliver all types of e-commerce portals including apps, marketplaces, multi vendor, and many more.",
         variant: "light",
       },
       {
-        id: "Mobile E-commerce Apps",
-
-        label: "Mobile E-commerce Apps",
+        id: "Mobile E-Commerce Apps",
+        label: "Mobile E-Commerce Apps",
         description:
           "Moonstack is known as the best  mobile ecommerce website development in India. We deliver mobile e-commerce mobile apps that are user friendly and integrated with advanced technologies. We provide ready to use e-commerce mobile apps that offer shopping-like experiences. Our e-commerce mobile app experts have designed apps that provide faster loading times and have easy to navigate user interface.",
         variant: "accent",
       },
       {
         id: "Marketplaces ",
-
         label: "Marketplaces ",
         description:
           "Create and operate your marketplaces and connect you with your target audiences. We build B2B and B2C e-commerce marketplaces that incorporate functionalities like inventory management, payment processing, and CRM based on modern technologies. Our e-commerce marketplace features are powered by modern technologies. As the leading marketplace website development in India, we provide a one stop marketplace that fit all needs. ",
@@ -269,7 +282,6 @@ export const ecommerce: PageData = {
       },
       {
         id: "Multi-Vendor Marketplaces",
-
         label: "Multi-Vendor Marketplaces",
         description:
           "We offer multi vendor marketplace solutions that allow multiple sellers to list, manage, and sell their products at one place. Our multi-vendor marketplace is designed in such a way that is integrated by a powerful dashboard, easy vendor management, and delivers smooth shopping experiences.",
@@ -277,7 +289,6 @@ export const ecommerce: PageData = {
       },
       {
         id: "Subscription-Based E-Commerce",
-
         label: "Subscription-Based E-Commerce",
         description:
           "Opt for subscription based e-commerce portals that keep customers engaged on premium models. We build powerful online stores that offer recurring revenue streams with different custom subscription plans. Our e-commerce developers integrate automated billing to seamless systems that maximize retention. ",
@@ -285,7 +296,6 @@ export const ecommerce: PageData = {
       },
       {
         id: "E-Commerce Analytics & Automation Solutions",
-
         label: "E-Commerce Analytics & Automation Solutions",
         description:
           "With our e-commerce developers we offer analytics and automation ready to use solutions that ensure to optimize operations with real time, automate several workflows, and deliver data driven strategies that streamline workflow process as well as maximise revenue.",
@@ -293,36 +303,18 @@ export const ecommerce: PageData = {
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
   qualitySectionData: {
     heading: [
       {
-        text: "Why choose us for ",
+        text: "Why Choose Us for ",
         color: "text-white",
       },
       {
-        text: "ecommerce portal",
+        text: "E-Commerce Portal",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: "  development in India?",
+        text: "Development in India?",
         color: "text-white",
       },
     ],
@@ -332,16 +324,16 @@ export const ecommerce: PageData = {
     list: [
       {
         id: 1,
-        title: " Experts E-commerce Developers",
-        icon: collaboration.src,
+        title: " Experts E-Commerce Developers",
+        icon: "",
         Icon: EcommerceIcon7,
         description:
           "Being the leading e-commerce development company in India we have skilled e-commerce coders that build customised, high performance, and e-commerce solutions. With our highly skilled team, we guarantee to meet latest development standards as well deliver seamless shopping experiences.",
       },
       {
         id: 2,
-        title: "Customised e-commerce Business Solution",
-        icon: collaboration.src,
+        title: "Customised E-Commerce Business Solution",
+        icon: "",
         Icon: EcommerceIcon8,
         description:
           "We develop customized e-commerce business solutions that match your business needs. Our secure ecommerce website developers in India create personalized e-commerce strategies that match brand identity and customer expectations.",
@@ -349,7 +341,7 @@ export const ecommerce: PageData = {
       {
         id: 3,
         title: " User Centric Designs",
-        icon: collaboration.src,
+        icon: "",
         Icon: EcommerceIcon9,
         description:
           "Our e-commerce developers team focuses on conversion focused design that not only looks appealing but also user centric. We create designs that are interactive and help to convert users to loyal customers. Our e-commerce designing services in India main aim is to meet the latest industry standards and deliver next generation experiences to customers.",
@@ -357,7 +349,7 @@ export const ecommerce: PageData = {
       {
         id: 4,
         title: "Hire E-Commerce Developers",
-        icon: collaboration.src,
+        icon: "",
         Icon: EcommerceIcon10,
         description:
           "With our advanced ecommerce development in India we offer you an opportunity to hire the best e-commerce developers in India that will allow you to hire part time, full time, and on hourly basis. We allow you to extend your e-commerce development team with the proficient designers and developers for your project.",
@@ -365,7 +357,7 @@ export const ecommerce: PageData = {
       {
         id: 5,
         title: "Transparent Process",
-        icon: collaboration.src,
+        icon: "",
         Icon: EcommerceIcon11,
         description:
           "Our e-commerce development team believes in a transparent process. We share all records and information with our clients in a transparent manner. In any case, we don’t hide anything from our customers. All the information is shared without any hiding parameters as we associate with business and believe to sort everything together. ",
@@ -373,7 +365,7 @@ export const ecommerce: PageData = {
       {
         id: 6,
         title: "Seamless Integration",
-        icon: collaboration.src,
+        icon: "",
         Icon: EcommerceIcon12,
         description:
           "At Moonstack, our e-commerce development team supports a seamless integration process. We provide seamless API integration that allows us to extend functionalities with third party advanced functionalities in less time and effort. We hold expertise with advanced seamless feature integration processes via API.",
@@ -416,36 +408,16 @@ export const ecommerce: PageData = {
   ],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
 
-    buttonText: "Connect with us",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",

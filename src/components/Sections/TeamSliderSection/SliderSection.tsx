@@ -90,7 +90,7 @@ const TeamSliderSection: React.FC<TeamSliderSectionProps> = ({
         className="absolute top-[15%] right-0 bottom-0 left-0 z-[-1] h-full w-full scale-y-150 object-contain object-center text-transparent [transform-style:preserve-3d]"
       />
       <div className="relative z-[2]">
-        <div className="m-auto w-full px-[20px] text-center md:w-2/5 xl:w-[50%]">
+        <div className="m-auto w-full px-[20px] text-center md:w-[780px]">
           <motion.div
             className="pt-3"
             initial={{ opacity: 0, y: 40 }}

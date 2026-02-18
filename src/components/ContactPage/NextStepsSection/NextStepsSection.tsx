@@ -22,7 +22,7 @@ interface NextStepsSectionProps {
 /* ---------------- COMPONENT ---------------- */
 
 export default function NextStepsSection({
-  heading = "What are the next steps?",
+  heading = "What are the Next Steps?",
   steps,
   className,
 }: NextStepsSectionProps) {

@@ -2,11 +2,9 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
 
 import ShopifyIcon1 from "@/components/ServicesSvg/ShopifyIcon/ShopifyIcon1"
 import ShopifyIcon2 from "@/components/ServicesSvg/ShopifyIcon/ShopifyIcon2"
@@ -25,7 +23,16 @@ export const shopify: PageData = {
   hero: {
     title: [
       {
-        text: "Build a High-Converting Shopify Store That Scales with Your Business",
+        text: "Build a High-Converting ",
+        color: "text-white",
+      },
+      {
+        text: "Shopify Store ",
+        color: "",
+        className: "libreItalic font-[400] highlight-text",
+      },
+      {
+        text: "That Scales with Your Business",
         color: "text-white",
       },
     ],
@@ -35,7 +42,7 @@ export const shopify: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -143,7 +150,11 @@ export const shopify: PageData = {
   NewBanner: {
     headingLines: [
       {
-        text: "Scale Your Storefront With Our Expert Shopify Development Team",
+        text: "Scale Your Storefront With Our ",
+      },
+      {
+        text: "Expert Shopify Development Team",
+        className: "libreItalic font-[400]",
       },
     ],
   },
@@ -170,7 +181,7 @@ export const shopify: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Process we follow to deliver best ",
+    title: "Process We Follow To Deliver Best ",
     highlight: "Shopify Development Services",
     subtitle:
       "We follow a structured pattern and quality focus process that allows us to deliver high performance and optimised Shopify stores in the market. With our experience, our Shopify experts have defined a proper process that delivers seamless development, smooth functionalities that lead to maximum conversion for businesses.",
@@ -184,7 +195,7 @@ export const shopify: PageData = {
       },
       {
         number: 2,
-        title: "Shopify custom design & theme set up",
+        title: "Shopify Custom Design & Theme Set Up",
         description:
           "Start with custom UI/UX designing services, we start design for our clients as per their brand identity and connect their audience via designs.",
         position: "right",
@@ -222,12 +233,12 @@ export const shopify: PageData = {
 
   impactSection: {
     heading: [
-      { text: "Why are our " },
+      { text: "Why Are Our " },
       {
         text: "Shopify Solutions",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: " different?" },
+      { text: " Different?" },
     ],
     description:
       "As the leading Shopify development company in India. We offer complete set of Shopify development services that match all your market needs",
@@ -241,7 +252,6 @@ export const shopify: PageData = {
       },
       {
         id: "Shopify Brand Theme",
-
         label: "Shopify Brand Theme",
         description:
           "At Moonstack, we create online stores that match your brand standards and theme. From logo to color palettes, and typography we create a user interface with eye catchy colors and reflect your online store that gives the same feel like your offline business. The user interface will connect with your audience.",
@@ -249,7 +259,6 @@ export const shopify: PageData = {
       },
       {
         id: "Shopify Website Development",
-
         label: "Shopify Website Development",
         description:
           "Our Shopify website developers build powerful websites that are integrated with customized designs, responsive layouts, and essential functionalities. We opt for the best backend and frontend development technologies that launch secure websites for customers. From homepage to product pages, we create the best websites that enhance shopping experiences. ",
@@ -257,7 +266,6 @@ export const shopify: PageData = {
       },
       {
         id: "Shopify Mobile Apps",
-
         label: "Shopify Mobile Apps",
         description:
           "Create your interactive and user-friendly mobile applications for Android and iOS that help Shopify businesses to grow effortlessly. Our Shopify designing team creates interactive mobile apps with intuitive designs and smooth navigation that allow users to shop at their fingertips. With interactive designs, we focus on responsive layouts that will never turn off the customers.",
@@ -265,7 +273,6 @@ export const shopify: PageData = {
       },
       {
         id: "Integration Services",
-
         label: "Integration Services",
         description:
           "Our team makes your Shopify platform advanced and modern with our third party integration services. We integrate third party functionalities easily with API. Our Shopify coders have hands-on experience in integrating third party API services security without any issues that allow your customers to have access to a wide range of functionalities.",
@@ -273,7 +280,6 @@ export const shopify: PageData = {
       },
       {
         id: "Advanced Functionalities",
-
         label: "Advanced Functionalities",
         description:
           "Make your Shopify platform modern with advanced integration functionalities. With our advanced features such as AI driven recommendations, real time analytics, and automation processes improve user experiences, create smart workflow, and connect with your customers easily. Moreover, allow your clients to leverage the benefits of modern functionalities powered by next gen technologies.",
@@ -281,24 +287,7 @@ export const shopify: PageData = {
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
+
   qualitySectionData: {
     heading: [
       {
@@ -306,11 +295,11 @@ export const shopify: PageData = {
         color: "text-white",
       },
       {
-        text: "your Shopify",
+        text: "Your Shopify",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: " platform?",
+        text: " Platform?",
         color: "text-white",
       },
     ],
@@ -321,7 +310,7 @@ export const shopify: PageData = {
       {
         id: 1,
         title: "Certified Shopify Experts",
-        icon: collaboration.src,
+        icon: "",
         Icon: ShopifyIcon7,
         description:
           "We have a team of certified Shopify experts who have hands-on experience with who understand custom themes and business systems. Our Shopify developers have managed several projects from planning to execution. They are proficient in delivering to deployment and solving all last minute complex challenges",
@@ -329,23 +318,23 @@ export const shopify: PageData = {
       {
         id: 2,
         title: "Custom Brand Focused",
-        icon: collaboration.src,
+        icon: "",
         Icon: ShopifyIcon8,
         description:
           "Our Shopify designers create the Shopify website that reflects your brand identity. We not only focus on development aspects that our team also put their ideology to truly reflect the brand identity. We make sure that your store stands out with a smooth navigation process that helps in better understanding and helps to increase conversion rates.",
       },
       {
         id: 3,
-        title: "Transparent process",
-        icon: collaboration.src,
+        title: "Transparent Process",
+        icon: "",
         Icon: ShopifyIcon9,
         description:
           "We believe in keeping transparency with our clients. We work as a tech partner and share information with them. With us, whatever the strategy we create and team involvement and future roadmap everything we clearly discuss with our customers. We have created a process that ensures zero hidden surprises.",
       },
       {
         id: 4,
-        title: "On -Time Delivery",
-        icon: collaboration.src,
+        title: "On-Time Delivery",
+        icon: "",
         Icon: ShopifyIcon10,
         description:
           "With our Shopify developers in India, we make sure that we will deliver all your tasks on time without any delay. Our team discusses internally and then only we provide deadlines to our clients. We believe in delivering all tasks on time or before deadlines. At Moonstack, deadlines are strictly followed without any quality compromise.",
@@ -353,15 +342,15 @@ export const shopify: PageData = {
       {
         id: 5,
         title: "Client Centric Approach",
-        icon: collaboration.src,
+        icon: "",
         Icon: ShopifyIcon11,
         description:
           "We work as one team and follow a client-centric approach. We listen to all your requirements and deliver all projects as per our clients' expectations. Our team is always available for open communication and we are always open to discuss our ideas and next steps that we will take for the project. All functionalities we decide for our clients will match all your standards and deliver next-generation experiences to clients.",
       },
       {
         id: 6,
-        title: "Long term Partnership ",
-        icon: collaboration.src,
+        title: "Long-Term Partnership",
+        icon: "",
         Icon: ShopifyIcon12,
         description:
           "At Moonstack, we are here not for limited functionality integration. We are for our clients to offer them long term partnership and stand with them in every thick and thin decision making. We focus on building relationships not only to fulfill technical requirements. We help you to grow your Shopify store for a long term. Our team doesn't deal with clients for a limited period, we offer long term support without any delay to them.",

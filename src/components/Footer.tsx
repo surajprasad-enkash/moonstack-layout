@@ -390,8 +390,8 @@ const Footer = () => {
                       </li>
 
                       <li>
-                        <Link href="/cookies">
-                          <HoverSlideText text="Cookies" />
+                        <Link href="/cookie-policy">
+                          <HoverSlideText text="Cookie Policy" />
                         </Link>
                       </li>
                     </ul>
@@ -418,8 +418,8 @@ const Footer = () => {
             {/* BOTTOM */}
             <div className="footerBottom mt-[50px] text-center text-[#fff]">
               <p className="!text-[14px] !font-[500]">
-                Copyright © {moment().year()} Moonstack | Designed with ❤️ by
-                Moonstack Team
+                Copyright © {moment().year()} Moonstack | Designed with{" "}
+                <span className="text-[#01a74e]">❤</span> by Moonstack Team
               </p>
             </div>
           </div>
