@@ -48,25 +48,19 @@ const TeamSliderSection: React.FC<TeamSliderSectionProps> = ({
 
   const settings = {
     infinite: true,
-    slidesToShow: 5, // ✅ MOBILE FIRST
+    slidesToShow: 5, // Default: 5 slides for desktop
     slidesToScroll: 1,
     autoplay: true,
     speed: 3000,
     autoplaySpeed: 0,
     cssEase: "linear",
     arrows: false,
-    mobileFirst: true, // ⭐ IMPORTANT
+    // Remove mobileFirst completely
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1023, // Screens ≤1023px (mobile/tablet)
         settings: {
           slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 5,
         },
       },
     ],
