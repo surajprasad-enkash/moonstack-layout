@@ -4,7 +4,8 @@ import Link from "next/link"
 import CommanButton from "../CommanButton/CommanButton"
 import Heading from "../Heading/Heading"
 import Image from "next/image"
-import clientImg from "@/assets/teamsimages/dheeraj.jpg"
+import clientImg from "@/assets/teamsimages/dheerajSir.webp"
+import CalBookingButton from "../CalBookingButton/CalBookingButton"
 
 interface ServiceItem {
   label: string
@@ -194,7 +195,7 @@ export default function ServicesSection({
               alt={"client logo"}
               width={100}
               height={100}
-              className="h-[70px] w-[70px] rounded-[50%]"
+              className="h-[70px] w-[70px] rounded-[50%] object-cover"
             />
             <p className="max-w-[570px] text-white md:!text-[24px]">
               Drive revenue growth and maximize ROI through strategic product
@@ -202,7 +203,7 @@ export default function ServicesSection({
             </p>
           </div>
 
-          <CommanButton text="Book a Call" href="tel:9772009900" />
+          <CalBookingButton />
         </div>
       </div>
     </section>

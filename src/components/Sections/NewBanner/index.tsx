@@ -2,9 +2,9 @@
 
 import Image, { StaticImageData } from "next/image"
 import Heading from "@/components/Heading/Heading"
-import CommanButton from "@/components/CommanButton/CommanButton"
 import BgImg from "@/assets/app-development-images/banner-underrr-cases-bg-1440.svg"
 import { cn } from "@/lib/utils"
+import CalBookingButton from "@/components/CalBookingButton/CalBookingButton"
 
 interface NewBannerProps {
   headingLines: {
@@ -45,12 +45,7 @@ export default function NewBanner({
               className="mb-8 text-[28px] leading-tight font-semibold md:text-[40px]"
             />
 
-            <CommanButton
-              text={buttonText}
-              onClick={onButtonClick}
-              href="/contact-us"
-              hoverBg="group-hover:bg-[#000] group-hover:text-[#fff]"
-            />
+            <CalBookingButton />
           </div>
 
           <div className="flex justify-center md:w-[50%] md:justify-end">

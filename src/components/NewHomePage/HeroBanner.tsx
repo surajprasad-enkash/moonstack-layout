@@ -25,6 +25,7 @@ import bgImage2 from "@/assets/newHomePage/banner/baimage2.svg"
 import Link from "next/link"
 import Space from "../Space"
 import { useVideoModal } from "@/context/VideoModalContext"
+import CalBookingButton from "../CalBookingButton/CalBookingButton"
 
 interface HeroTag {
   label: string
@@ -196,7 +197,8 @@ export default function HeroSection({
 
         {/* CTA */}
         <div className="mt-12 flex max-w-[1024px] justify-end">
-          <CommanButton text={buttonText} href={`/contact-us`} />
+   
+          <CalBookingButton />
         </div>
         <Space />
         <div className="opacity-[0.2]">
