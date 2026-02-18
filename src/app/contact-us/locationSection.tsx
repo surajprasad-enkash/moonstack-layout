@@ -6,7 +6,7 @@ import Image from "next/image"
 import Heading from "@/components/Heading/Heading"
 import usaFlag from "@/assets/contact-us/usa-flag.png"
 import indiaFlag from "@/assets/contact-us/india-flag.png"
-import CustomButton from "@/components/CommanButton/CommanButton"
+import CalBookingButton from "@/components/CalBookingButton/CalBookingButton"
 
 const WorldMap = dynamic(() => import("@/components/Map"), {
   ssr: false,
@@ -48,7 +48,7 @@ const LocationSection = ({
             content={subHeading}
           />
 
-          <CustomButton text={buttonText} href={buttonLink} />
+          <CalBookingButton />
         </div>
 
         {/* MAP + CARDS */}

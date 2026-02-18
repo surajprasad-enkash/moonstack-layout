@@ -176,7 +176,7 @@ export default function AboutHeroSection({
           </div>
 
           {/* Stats */}
-          <div className="flex gap-12 border-[#ffffff1a] py-[20px] md:border-l md:pl-[40px]">
+          <div className="flex gap-12 border-[#ffffff1a] py-[20px] pt-12 md:border-l md:pt-0 md:pl-[40px]">
             <div className="">
               <p className="mb-[15px] text-[16px] text-white/60">
                 Our clients raised

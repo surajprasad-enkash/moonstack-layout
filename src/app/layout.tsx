@@ -23,6 +23,8 @@ export const metadata: Metadata = {
 
 import { gordita } from "@/lib/fonts"
 import { VideoModalProvider } from "@/context/VideoModalContext"
+import CookieConsent from "@/components/CookieConsent/CookieConsent"
+// import ChatWidget from "@/components/ChatWidget/ChatWidget"
 
 export default function RootLayout({
   children,
@@ -35,6 +37,8 @@ export default function RootLayout({
         className={`font-sans antialiased ${libreBaskerville.variable} ${gordita.variable}`}
       >
         <VideoModalProvider>{children}</VideoModalProvider>
+        <CookieConsent />
+        {/* <ChatWidget /> */}
       </body>
     </html>
   )

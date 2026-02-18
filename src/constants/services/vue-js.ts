@@ -16,13 +16,13 @@ export const vueJs: PageData = {
   hero: {
     title: [
       {
-        text: "Laravel Website Development Service Provider",
+        text: "Vue.JS Development Services ",
         color: "text-white",
       },
     ],
     description: [
       {
-        text: "Need a fast, secure, and scalable web solution? Our Laravel development services deliver enterprise-grade applications with clean code, optimal performance, and seamless functionality.",
+        text: "Launch your high-performance and result-driven Vue. JS-based applications that are powered by modern technologies. Our Vue.js tech experts create user-friendly and interactive user interface apps that are lightweight and packed with extensive functionalities. Vue.js framework makes your development cycle 40% faster and 3x times improves user engagement. ",
         color: "text-white",
       },
     ],
@@ -53,18 +53,19 @@ export const vueJs: PageData = {
   },
   mobDesignBanner: nativeBannerImg,
 
-  points:
-    "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
-  highlightText: "The application is scalable",
+  points: "",
+  highlightText: "",
 
   leftCardData: [
     {
-      title: "Transform Your Business with Custom Laravel Solutions",
+      title: "Leading Vue.js Development Company for your project",
       description:
-        "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",
-      stats: [],
+        "We are known as the top-notch Vue.js development company, which has a blend of professional and dedicated Vue.js professionals in the team. We aim to deliver a seamless user experience and meet all modern business requirements. At Moonstack, we offer end-to-end custom web applications that includes Single page apps, enterprise-level solutions that enable companies to stay ahead in the business world.",
+      stats: [
+        "Vue.js expert coders offer all the benefits of the framework that allow start ups to large enterprises to deliver interactive and responsive user interfaces. We opt for the industry best practices and coding standards that allow us to help create future-ready, maintainable, and secure web solutions for the market.  Our expert Vue.js professionals also hold expertise with third-party integration services via API.  We integrate additional functionalities via secure APIs into the solution that users can experience next generation tech world.",
+      ],
       description2:
-        "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
+        "Along with this, with standard coding development techniques, we also follow the best Vue.js development process. Our dedicated Vue.js expert team follow standard process that includes planning, designing, development, and launching in the market with agile methodology. Additionally, you can hire Vue.js developers on a part-time, full-time, and hourly basis for your project. ",
       image: bndimage1.src,
       bolds: false,
     },
@@ -76,73 +77,68 @@ export const vueJs: PageData = {
         color: "text-white",
       },
       {
-        text: "Laravel web Development",
+        text: " Vue.js ",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: "Services Includes",
+        text: "Development Services ",
         color: "text-white",
       },
     ],
     subHeadingText:
-      "We have best Laravel web developers and with them we offer affordable laravel development service in India - from consultation to migration all your needs will fulfill at one stop ",
+      "At Moonstack, we offer end-to-end Vue.js development services to our clients. We are one stop Vue.js service provider that offers all solutions to our clients that meet security, scalability, and deliver seamless user experiences to the users. Our motive is to meet with tech demands and the latest market expectations.  ",
   },
   featuresData: [
     {
       imgSrc: intuitiveIcon.src,
-      title: "Laravel Consulting Services",
+      title: "Vue.js Consulting Service ",
       description:
-        "Bring your idea into reality with the right strategy and roadmap with Laravel web experts. Our Moonstack’s expert Laravel consulting professionals will understand your business needs and provide you with the right development strategy to deliver secure and scalable Laravel solutions in the market.",
+        "Moonstack provides end-to-end Vue.js consulting services to our clients. In our consulting service, we understand our clients' project needs and provide the right strategy and tech stack, including Vue.js, for their projects. Here, we help them to make the right decisions to deliver future-ready Vue.js solutions to the market that align with business goals.",
     },
     {
       imgSrc: engagingIcon.src,
-      title: "Custom Laravel Website Development Service",
+      title: "Vue.js Custom  Development Services ",
       description:
-        "We build high performance, secure, and functional custom Laravel web apps in India. We develop custom  Laravel websites for clients as per their business requirements. Our Laravel web development experts understand the gap in your operational process  and integrate modern features to meet latest business demands. ",
+        "We provide end-to-end custom Vue.js development services. In which our professional Vue.js coders build secure and high-performance top-notch solutions for the clients that meet all the modern business demands. At Moonstack, we deliver a seamless and interactive user interface with component-based architecture. Along with this, we also hold expertise in SPA and API integration services that make our solution future-ready and scalable.  ",
     },
 
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Custom  E-Commerce Development Services ",
+      title: "Vue.js Designing Services  ",
       description:
-        "Grow your online presence with Laravel ecommerce development service in India. We build high performance and secure custom e-commerce solutions integrated with advanced functionalities and deliver smooth shopping experiences to customers. Our team's main aim is to increase website conversions on your websites.",
+        "We create interactive and engaging Vue.js designs for our clients that are highly intuitive, responsive, and visually appealing. Our Vue.js designers focus on connecting with the targeted users as well as delivering seamless user navigation that is based on easy to use interface. At Moonstack, we opt for modern design principles and align the design with the brand identity. ",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel UI/UX Designing Services ",
+      title: "Vue.js Third-Party API Integration Services ",
       description:
-        "Our architect designers create interactive and engaging designs for our customers. We hold expertise with custom designing in which we bring your business brand identity to the real world and connect with customers. At Moonstack, our designers create interactive designs with easy to use aspects.",
+        "With Moonstack, extend your third-party-based functionalities easily. Our API integration services are designed in such a way that the process supports seamless connectivity between Vue.js and third-party platforms, tools, and backend systems. Our Moonstack Vue.js coders have hands-on experience with RESTful APIs, payment gateways, and CRM systems. Our main aim is to allow users to have access to real-time data and leverage the benefits of modern technologies with less development time and effort.",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel API Integration Services",
+      title: " Vue.js Migration Services ",
       description:
-        "Extend your web and mobile app functionalities with seamless laravel REST API development service in India by partnering with the best Laravel development agency. We integrate Laravel web solutions with third party services via API such as secure payment gateway, internal systems, and many more. ",
+        "Transfer your data from one platform to another with our Vue.js migration services. Our Vue.js coders modernize legacy apps that lead to improved performance and scalability. At Moonstack, we focus on code refactoring and architecture optimisation that helps to minimize downtime and reduce different technical risks. With our Vue.js migration and maintenance services, we upgrade our clients' outdated systems with modern functionlites allow them to leverage the benefits of updated versions. ",
     },
     {
       imgSrc: brandingIcon.src,
-      title: "Laravel Maintenance and Support Services ",
+      title: "Vue.js Support and Maintenance Services ",
       description:
-        "We offer end to end Laravel maintenance and support services. With our expert Laravel team, we run Laravel web solutions smoothly without any errors. We provide constant updates, optimize performance, and fix bugs to run solutions smoothly and deliver long term business commitment. ",
+        "Get full support for Vue.js web applications that ensure your web apps remain fully secure, updated, and provide high performance across devices. We offer Vue.js full support and maintenance services, in which developers identify the bugs and instantly resolve them at the same time. Our Vue.js development team provides 24*7 support to the team, in which we constantly monitor your solutions, identify and resolve bugs in real time, and enhance features that ensure smooth performance and keep your solution updated as per the market standards. ",
     },
   ],
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+      { text: "Scale Your Business With Our Expert Vue.js Development Team" },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Scale Forever: Your ",
+        text: "Get your Vue.js development services now -  ",
         color: "text-white",
         className: "",
-      },
-      {
-        text: "Expert Laravel Development Partner",
-        className: "text-white libreItalic font-[400]",
-        color: "",
       },
     ],
     checklist: [
@@ -155,120 +151,113 @@ export const vueJs: PageData = {
   },
 
   CloudTimelineData: {
-    title: "Our Process of ",
-    highlight: "Laravel website Development Service",
+    title: "Our Vue.js Development ",
+    highlight: "Process for your business ",
     subtitle:
-      "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges.",
+      "In order to launch a successful Vue.js solution, we follow a structured Vue.js development process that is based on agile methodology. At Moonstack, our team has built a Vue.js development process that combines technical expertise and modern best practices. Our development process ensures to streamline the process and keep things aligned for a seamless user experience. ",
     steps: [
       {
         number: 1,
-        title: "Gather Requirements",
+        title: "Requirement Gathering and Planning ",
         description:
-          "We collect all the information about the project to understand what our client actually needs that allow us to align with the project.",
+          "On the initial stage, it is important for the Vue.js developers to understand the project and its information in-depth. Get all the details and have in depth idea about the project and its future goals. Once the team has all the information, they start planning for the Vue.js execution process. ",
         position: "left",
       },
       {
         number: 2,
-        title: "Client Discussion",
+        title: "Designing UI/UX ",
         description:
-          "Once we have proper requirements then our Laravel team experts conduct a formal client discussion to solve all queries.",
+          "After understanding the project and execution map, we will start with the design process, in which we will focus on UI/UX. Our designer architects focus on delivering interactive and engaging designs. With proper creativity, we also ensure that designs are easy to use and connect with the targeted audience.  ",
         position: "right",
       },
       {
         number: 3,
-        title: "Internal Strategy Discussion",
+        title: " Development ",
         description:
-          "After that we have an internal strategy discussion in which we have our tech brainstorming to deliver the best outcome.",
+          "After delivering an engaging design, our professional Vue.js coders begin developing the web application. We opt for the supported tools, technologies, and frameworks to build high-performance and secure solutions for businesses. Our Vue.js developers integrate advanced functionalities and opt for  API integration services. ",
         position: "left",
       },
       {
         number: 4,
-        title: "Designing - UI/UX Services",
+        title: "Testing and Assurance",
         description:
-          "Designers start the designing process in which they focus on interactive user interface and easy to use for the users.",
+          "After proper Vue.js development, our professional Vue.js team opts for the testing and quality assurance processes. We conduct a rigorous testing process - both automated and manual. Our testers test all functionalities and other aspects, so we can deliver a bug-free Vue.js  solution. Along with this, we also guarantee quality assurance.",
         position: "right",
       },
       {
         number: 5,
-        title: "Development",
+        title: " Deployment and Launch ",
         description:
-          "Tech team start the development process in which frontend developers and backend coders work together.",
+          "Once we finish the testing and launching process, we deploy the Vue.js solution across the different platforms. In the launching process, we make sure that the launch is successful and without any bugs users have access to the web application's functionalities. Launching and checking the solution again is our responsibility to meet all our clients’ needs. ",
         position: "left",
       },
       {
         number: 6,
-        title: "Deployment and Testing",
+        title: " Vue.js Support and Maintenance Services ",
         description:
-          "We deploy and test the Laravel software with automated and manual processes that allow us to deliver bug free solutions. ",
+          "We provide full Vue.js support and maintenance services for our clients’ web applications. The Moonstack team is always available for all your technical needs, even after launching the solutions in the market. We deliver end-to-end support and maintenance services in which we detect bugs instantly and resolve them. Moreover, we also keep the web applications up to date with the latest innovations. ",
         position: "right",
-      },
-      {
-        number: 7,
-        title: "Delivery and Post Support ",
-        description:
-          "After testing, we deliver Laravel based solutions in the market with post support that ensure our team is always there.",
-        position: "left",
       },
     ],
   },
 
   impactSection: {
     heading: [
-      { text: "Our Scalable " },
+      { text: "Moonstack Emerging " },
       {
-        text: "Laravel Web development",
+        text: " Technology Capabilities for Vue.js",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: "Solutions" },
+      { text: " Development " },
     ],
     description:
-      "For decades MoonStack has been creating a wide range of Laravel web solutions for our clients for different industries that are ready to use as per different business with minor and major customisation processes. ",
+      "At Moonstack, we understand that  businesses have to meet the steps with modern technologies. In order to stay ahead in the market competition, we hold hands-on expertise on different emerging technologies that allow us to integrate next generation features powered by modern technologies. ",
     cards: [
       {
-        id: "Laravel Web Apps",
-        label: "Laravel Web Apps",
+        id: "Modern Frontend Development ",
+        label: "Modern Frontend Development ",
         description:
-          "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
+          "With Vue.js, our front-end developers create dynamic, responsive, and user-friendly web applications. In order to meet today’s market expectations, our Vue.js development team fully opt for standard coding structures that are based on clean architecture, reusable components, and interactive UI that match all modern development needs. We designed our development cycle that delivers faster processes and enterprises can maintain code bases easily for long term business growth. ",
         variant: "light",
       },
       {
-        id: "Laravel E-commerce Solutions",
+        id: "AI and Machine Learning for Smart Applications ",
 
-        label: "Laravel E-commerce Solutions",
+        label: "AI and Machine Learning for Smart Applications ",
         description:
-          "The best ecommerce website developers in India build innovative and highly functional Laravel online stores. We have integrated essential functionalities such as product catalog, shopping carts, order tracking, and secure payment gateways that increase conversion rates and user experience.",
+          "We integrate modern advanced functionalities into our Vue.js web apps that are powered by powerful trending technologies such as AI and ML. At Moonstack, we design solutions that offer predictive analytics, personalisation, and automation processes. Our Vue.js coders implement intelligent algorithms that can analyse data and make decision maing smarter and faster as ever before. We design AI and ML-based web solutions that can analyse user behaviour, optimise performance, and bring data-driven decisions. ",
         variant: "accent",
       },
       {
-        id: "Laravel CRM Solutions ",
+        id: "Cloud Based Arcitecture and Deployment ",
 
-        label: "Laravel CRM Solutions ",
+        label: "Cloud Based Arcitecture and Deployment ",
         description:
-          "Moonstack builds Laravel based CRM solutions that improve customer relationship management processes in companies. We design custom CRM solutions that allow us to track leads and automate conversions that lead to data driven decisions and streamline client communication processes.",
+          "Deploy all your data on a cloud infrastructure to manage all your business data and workflow on a single platform. We integrate cloud infrastructure into businesses that help enterprises to manage user base, handle large datasets, and support seamless data integration services. At Moonstack, we set up a secure data management system that helps companies to manage data and maintain future ready data infrastructure that support the latest business needs. ",
         variant: "dark",
       },
       {
-        id: "Laravel CMS Solutions",
+        id: "Vue.js Seamless API Integration Services ",
 
-        label: "Laravel CMS Solutions",
+        label: "Vue.js Seamless API Integration Services ",
         description:
-          "Professional Laravel experts offer robust Laravel based CMS development in India. We have built the best Laravel CMS solutions that allow businesses to easily update, publish, and manage content effortlessly on their websites. We deliver CMS solutions to businesses that  have full control on content management systems. ",
+          "Our Vue.js development team builds a secure and scalable API for your project and can be reused with other systems also. At Moonstack, you can build and opt for third-party API integration services that facilitate data exchange and enhance feature integration. With our Vue.js API integration service, we ensure a faster development process and extend functionalities that users can access, and it offers a seamless user experience that meets modern demands. ",
         variant: "dark",
       },
       {
-        id: "POS Systems",
+        id: " Data Driven Analytics and Automation ",
 
-        label: "POS Systems",
+        label: " Data Driven Analytics and Automation ",
         description:
-          "Integrate modern Laravel powered POS systems that are developed by Laravel experts in India. Our POS systems help to streamline different operational processes, allow retailers to manage multiple outlets, and deliver best outcomes for customers. We have delivered a wide range of POS (Point of Sale solutions) to our retail businesses.",
+          "Make your system smart with Vue.js automation services and get data-driven results. At Moonstack, we integrate smart, intelligent, powerful dashboards that turn manual workflow into an automated process. We integrate the system that turns raw data into an actionable process. We have designed our Vue.js solutions that improve operational efficiency, performance in real time, and support teams across the platforms. Our automation process helps to save time and make informed decisions.",
         variant: "light",
       },
       {
-        id: "Video Streaming and Media Apps",
+        id: " Performance Optimisation and Future Ready Digital Solutions",
 
-        label: "Video Streaming and Media Apps",
+        label: " Performance Optimisation and Future Ready Digital Solutions",
         description:
-          "Develop your Laravel based video streaming and media apps with  expert laravel web developers in India. We designed video streaming and media apps that support secure content delivery and content management. We develop video streaming and media apps in such a way that offer seamless streaming and integrated with user authentication and support multiple platforms. ",
+          "At Moonstack, our professional Vue.js team highly focuses on future-ready IT infrastructure. We deliver highly secure and scalable web solutions in the market with the best industry practices. Before launching the Vue.js solution, we perform end-to-end performance testing, code refactoring, and opt for the best industry practices. Moreover, we also focus on integrating emerging technologies that ensure the delivery of future-ready digital solutions that meet the latest business needs and technological advancement needs.  ",
         variant: "dark",
       },
     ],
@@ -294,98 +283,86 @@ export const vueJs: PageData = {
   qualitySectionData: {
     heading: [
       {
-        text: " Why Choose us for your ",
+        text: "Why choose us for your next ",
         color: "text-white",
       },
       {
-        text: "Laravel  Web Development",
+        text: "Vue.js development",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: " Services?",
+        text: "  project? ",
         color: "text-white",
       },
     ],
     description:
-      "Laravel is known for the best Laravel framework development in India. At Moonstack, we have delivered a wide range of custom Laravel web development services to our customers. Our professional Laravel experts have delivered secure, high performance, and future ready web apps.",
+      "We are the leading Vue.js development company. We offer end to end Vue.js development services in India for decades. Our main aim is to launch successful solutions without bugs that meet their latest market demands. At Moonstack, we not only build solutions but also focus on user-centric and responsive solutions.",
     columsClass: "lg:grid-cols-3",
     list: [
       {
         id: 1,
-        title: "Decade of Experience",
+        title: "Custom Vue.js Development ",
         icon: collaboration.src,
         description:
-          "Our Laravel experts have decades of experience that allows them to meet all clients' needs. Laravel coders have delivered scalable, secure, and high performance web apps with advanced integrated functionalities.",
+          "We develop custom Vue.js solutions as per the enterprise's needs. Our Vue.js developers are highly proficient and deliver next-generation solutions in the market. At Moonstack, we have hands-on expertise in developing solutions from scratch. In this custom Vue.js development, we identify all your project needs and build web apps that fulfill the tech gap. ",
       },
       {
         id: 2,
-        title: "Custom Solutions for Every Business",
+        title: "Hire Vue.js Developers ",
         icon: collaboration.src,
         description:
-          "We have delivered 450+ custom web development solutions across the world. Our professional Laravel experts have built high performance, scalable different solutions specifically designed for different business needs.",
+          "You can hire Vue.js developers for your project from us. We offer you an opportunity to hire Vue.js programmers from Moonstack on an hourly, part-time, and full-time basis as per your project needs. Our hiring module is designed in such a way that clients get overall control of the resources, track their daily report, and assign workflow to them.",
       },
       {
         id: 3,
-        title: "End to End Laravel Development Services",
+        title: "Transparent Communication ",
         icon: collaboration.src,
         description:
-          "Delivering end to end Laravel development services to our clients. From consultation to development to migration - Moonstack is known as a one stop solution for all our client’s Laravel web development needs.",
+          "We understand the project needs and opt for transparent communication in which we discuss ideas and share opinions openly. Communication is an important factor in businesses; it is important to open communication and we don’t hide anything from our clients. At Moonstack, we provide constant updates, regular feedback, and Vue.js project managers are available full-time to support clients. ",
       },
       {
         id: 4,
-        title: "Transparent Communication",
+        title: "Timely Project Delivery ",
         icon: collaboration.src,
         description:
-          "At Moonstack, we maintain open communication with our clients with constant updates, demos, and progress reports that ensure us to stay connected with our customers. Moreover, that also allows us to understand each other's mindset in a better way.",
+          "Time is an important factor in every project. Our focus is to deliver all our project requirements on time. We never miss a deadline or commit any false deadlines. At Moonstack, we plan our project delivery in such a way that we deliver the project on time or before. Our clients will never have to ask for the project's status or wait for the final delivery. We believe in saving time and working strategically. ",
       },
       {
         id: 5,
-        title: "Confidential Details",
+        title: "Vue.js  Dedicated Support and Maintenance ",
         icon: collaboration.src,
         description:
-          "Every project idea is unique - we understand the importance of your business module. We keep all your information fully secure and confidential with us. Our team keeps all details to them, and in any case we don’t leak any of your project ideas to third parties.",
+          "We provide full support and maintenance services to our clients. We don’t believe in launching the solutions in the market, but successful Vue.js solutions are our main goal. In Vue.js support and maintenance services, we allow our clients to detect bugs at an initial stage and resolve them instantly. Along with this, we also maintain your Vue.js solutions, in which we upgrade your solutions with advanced functionalities constantly. ",
       },
       {
         id: 6,
-        title: "Creative and Business oriented solutions",
+        title: " Vue.js Experienced Developers ",
         icon: collaboration.src,
         description:
-          "We just don’t build Laravel solutions only for the web development purpose. At Moonstack, we build business oriented solutions that align with your business needs and attract users with advanced based next generation features.",
+          "Moonstack has a blend of affordable Vue.js team members who are professional and experienced and have delivered a wide range of solutions in the market. We have hands-on experience with different customised development projects that meet the latest modern development needs. Our Vue.js professionals are highly experienced and provide you right strategic guidance and avoid future failure challenges. We ensure to integrate the latest functionalities that align with your business needs. ",
       },
     ],
   },
   accordionData: [
     {
-      question:
-        "Will you be able to work long term for my Laravel project requirements?",
+      question: "Is Vue.js good for SEO?​",
       answer:
-        "Yes, our Laravel web developers are always available and they are proficient with all types of Laravel web development requirements. Our team offers professional Laravel web development services to our customers. ",
+        "Yes, but with the right SEO strategies. Vue.js is a client-side rendered framework, which simply means that content is loaded via JavaScript; if it is not managed properly, this can affect the process of SEO  ",
     },
     {
-      question: "How long will you take to build my Laravel website?",
+      question: "How difficult is it to learn Vue.js?",
       answer:
-        "There is no fixed time - the completion of Laravel websites are fully dependent on different factors - time, no of Laravel developers, complexity of app. But, we make sure we will put our high efforts and deliver your solutions with all essential features.",
+        "Vue.js technology is considered as easy to use as compared to Angular and React. It has different supported features - simple syntax, clear documentation, beginner-friendly structure, and less boilerplate code. Moreover, Developers with basic Javascript  knowledge can develop app quickly. ",
     },
     {
-      question: "Will you provide Laravel migration services in India?",
+      question: "Should startups use Vue.js or React?",
       answer:
-        "Yes, we will provide Laravel migration services in India. Our Laravel expert team specializes in migrating solutions from other technologies to Laravel without affecting design, performance, and even your data.",
+        "For Start ups Vue.js or React - then this choice totally depends on project needs. If you prefer faster development, and your team size is small then Vue.js is your choice. On the other side, if you want the technology for a larger complex ecosystem then React is your preferred choice. ",
     },
     {
-      question: "Can I hire Laravel web developers from your team?",
+      question: "What is Nuxt.js and when should we use it?",
       answer:
-        "Yes, of course you can hire the best Laravel developers from our team on full time, part time, and hourly basis. We have a pool of dedicated Laravel developers.",
-    },
-    {
-      question:
-        "Can you integrate API or third party services into my Laravel solutions?",
-      answer:
-        "Yes, we can extend functionalities in Laravel solutions with third party services via API. Our experts have hands-on experience in third party integration services. ",
-    },
-    {
-      question: "How much does it cost for Laravel web development services? ",
-      answer:
-        "There is no fixed cost for Laravel web development services. The Laravel web development factors are based on several factors such as features, design, hiring model, third party integration requirement.",
+        "Nuxt.js is a trending  framework built on top of Vue.js with supported functionalities  Server-Side Rendering (SSR), Static Site Generation (SSG),  Automatic routing, SEO optimization tool,  Performance improvements. If you require SEO, better performance, and manage heavy content then Nuxt.js is your choice. ",
     },
   ],
 
