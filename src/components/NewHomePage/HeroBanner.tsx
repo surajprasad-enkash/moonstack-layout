@@ -169,7 +169,7 @@ export default function HeroSection({
           </span>
         </h1>
         <Space size={62} mobileSize={0} />
-        <div className="home-hero-quotes mb-[22px] flex flex-wrap gap-[46px] md:w-[60%] md:flex-nowrap">
+        <div className="home-hero-quotes mt-[40px] mb-5 flex flex-wrap gap-[46px] md:mt-[60px] md:w-[60%] md:flex-nowrap">
           <div className="home-hero-quote md:w-[50%]">
             <p className="home-hero-quote_decor text-white/60">{"{/}"}</p>
             <p className="home-hero-quote_text home-hero-quote_text-1 mt-2 !font-[500] first-letter:pl-[30px]">
@@ -197,7 +197,6 @@ export default function HeroSection({
 
         {/* CTA */}
         <div className="mt-12 flex max-w-[1024px] justify-end">
-   
           <CalBookingButton />
         </div>
         <Space />

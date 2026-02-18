@@ -101,14 +101,14 @@ const Footer = () => {
                         </Link>
                       </li>
 
-                      {/* <li>
+                      <li>
                         <Link
                           href="/services/vuejs-development-company"
                           className="inline-block"
                         >
                           <HoverSlideText text="Vue.JS" />
                         </Link>
-                      </li> */}
+                      </li>
 
                       <li>
                         <Link
@@ -345,7 +345,7 @@ const Footer = () => {
                   </p>
                 </div>
                 <div className="footerSocialRight md:w-[50%]">
-                  <div className="flex w-full justify-end gap-[20px]">
+                  <div className="flex w-full justify-end gap-[20px] pt-6">
                     <Link
                       target="_blank"
                       href="https://www.facebook.com/people/Moonstack/100085468621969/?_rdr"

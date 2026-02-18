@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import CommanButton from "../CommanButton/CommanButton"
 import Heading from "../Heading/Heading"
 import Image from "next/image"
 import clientImg from "@/assets/teamsimages/dheerajSir.webp"
@@ -197,7 +196,7 @@ export default function ServicesSection({
               height={100}
               className="h-[70px] w-[70px] rounded-[50%] object-cover"
             />
-            <p className="max-w-[570px] text-white md:!text-[24px]">
+            <p className="max-w-[570px] pt-1 text-white md:pt-0 md:!text-[24px]">
               Drive revenue growth and maximize ROI through strategic product
               design and development.
             </p>
