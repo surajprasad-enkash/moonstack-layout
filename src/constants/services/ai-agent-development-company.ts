@@ -2,8 +2,6 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 
 import AiIcon1 from "@/components/ServicesSvg/AiIcon/AiIcon1"
@@ -361,36 +359,16 @@ export const ai: PageData = {
   ],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom AI Agent development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "AI Agent development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire AI Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated AI development services in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
 
-    buttonText: "Connect with us",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",
