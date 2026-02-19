@@ -12,7 +12,7 @@ import RnaIcon3 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon3"
 import RnaIcon4 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon4"
 import RnaIcon5 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon5"
 import RnaIcon6 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon6"
-
+import bccKristenCheng6 from "@/assets/clientsImages/manshi.jpg"
 export const react_native: PageData = {
   hero: {
     title: [
@@ -65,7 +65,9 @@ export const react_native: PageData = {
   points:
     "15 years of experience really shows. Moonstack transformed our complex app idea into a sleek React Native reality. By using a single codebase, they made our long-term maintenance easier and significantly more affordable. Secure, scalable, and beautifully designed—Moonstack is easily the top React Native agency in India.",
   highlightText: "single codebase",
-
+  userImage: bccKristenCheng6,
+  userRole: "Product Manager",
+  userName: "Mansi Bhatia ",
   leftCardData: [
     {
       title: "Globally Leading React Native Development Partner",

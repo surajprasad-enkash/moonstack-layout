@@ -14,6 +14,7 @@ import AiIcon7 from "@/components/ServicesSvg/AiIcon/AiIcon7"
 import AiIcon8 from "@/components/ServicesSvg/AiIcon/AiIcon8"
 import AiIcon9 from "@/components/ServicesSvg/AiIcon/AiIcon9"
 import AiIcon10 from "@/components/ServicesSvg/AiIcon/AiIcon10"
+import bccKristenCheng6 from "@/assets/clientsImages/brainmates.jpg"
 
 export const ai: PageData = {
   hero: {
@@ -62,7 +63,9 @@ export const ai: PageData = {
   points:
     "Moonstack’s AI expertise was a game-changer. They engineered a custom predictive layer that cut our manual processing by 45%. Navigating complex security was seamless, delivering an intelligent system that scales with our users. For AI that impacts the bottom line, Moonstack is the premier partner.",
   highlightText: "cut our manual processing by 45%",
-
+  userImage: bccKristenCheng6,
+  userRole: "CEO",
+  userName: "Kirill Onasenko",
   leftCardData: [
     {
       title: "Why Consider AI for Your Business?",

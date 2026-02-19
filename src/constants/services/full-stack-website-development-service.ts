@@ -19,6 +19,7 @@ import Icon9 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon9"
 import Icon10 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon10"
 import Icon11 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon11"
 import Icon12 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon12"
+import bccKristenCheng6 from "@/assets/clientsImages/authbridge.jpg"
 
 export const fullstack: PageData = {
   hero: {
@@ -72,7 +73,9 @@ export const fullstack: PageData = {
   points:
     "Moonstack is a game-changer. Their full-stack expertise is unmatched—they delivered a scalable, high-performance ecosystem in record time where others failed. They didn’t just build what we asked; they proactively improved our entire technical strategy. They are our #1 recommended partner for any complex development project.",
   highlightText: "scalable, high-performance ecosystem",
-
+  userImage: bccKristenCheng6,
+  userRole: "CEO",
+  userName: "Mohamed Shegow",
   leftCardData: [
     {
       title: "Leading Full Stack Development Company Globally",

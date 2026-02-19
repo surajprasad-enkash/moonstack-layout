@@ -16,7 +16,7 @@ import WebDevIcon9 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon9"
 import WebDevIcon10 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon10"
 import WebDevIcon11 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon11"
 import WebDevIcon12 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon12"
-
+import bccKristenCheng6 from "@/assets/clientsImages/coralogixceo.jpg"
 export const websiteDevelopment: PageData = {
   hero: {
     title: [
@@ -65,7 +65,9 @@ export const websiteDevelopment: PageData = {
   points:
     "Exceptional work from start to finish.Moonstack transformed our outdated website into a sleek, high-performing digital asset. Their full-stack expertise was evident in every detail—from the intuitive UI to the robust backend architecture. What impressed us most was their proactive communication and commitment to delivering on time. Our online engagement has tripled, and customers constantly compliment the seamless experience. Highly recommended!",
   highlightText: "Our online engagement has tripled",
-
+  userImage: bccKristenCheng6,
+  userRole: "CMO & Head of Product",
+  userName: "Esme Guevara",
   leftCardData: [
     {
       title: "Futuristic Website Development Company",

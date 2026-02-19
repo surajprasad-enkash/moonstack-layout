@@ -125,7 +125,9 @@ export interface PageData {
 
   points: string
   highlightText: string
-
+  userImage?: StaticImageData | string
+  userName?: string
+  userRole?: string
   featuresData: {
     imgSrc: StaticImageData | string
     title: string

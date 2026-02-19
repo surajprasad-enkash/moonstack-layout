@@ -27,7 +27,7 @@ import Space from "@/components/Space"
 
 /* ===================== ASSETS ===================== */
 import gradientBg from "@/assets/app-development-images/bannerGradientBg.svg"
-import userImage from "@/assets/app-development-images/autorImg.webp"
+// import userImage from "@/assets/app-development-images/autorImg.webp"
 
 import androidBgImg from "@/assets/app-development-images/hero-bg-1440.svg"
 import projectCtaBgImg from "@/assets/app-development-images/af_match-bg-1440.svg"
@@ -137,13 +137,14 @@ export default async function ApplicationPage({ params }: PageProps) {
         {page.points && (
           <>
             <TestimonialCard
-              quote={page.points}
-              highlightText={page.highlightText}
-              authorName="Aetienne Sardon"
-              authorRole="CEO"
-              authorImage={userImage}
+              quote={page.points ?? ""}
+              highlightText={page.highlightText ?? ""}
+              authorName={page.userName ?? ""}
+              authorRole={page.userRole ?? ""}
+              authorImage={page.userImage ?? ""}
               bgImage={reviewBgImg}
             />
+
             <Space size={160} />
           </>
         )}

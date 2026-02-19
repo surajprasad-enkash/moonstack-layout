@@ -105,7 +105,7 @@ export default function NewHeader() {
                   </button>
                 </Link>
                 {openMenu === "services" && (
-                  <div className="absolute top-[20px] left-[50%] translate-x-[-38%] pt-10 text-black">
+                  <div className="absolute top-[20px] left-[50%] translate-x-[-36.7%] pt-10 text-black">
                     {/* TOP SECTION */}
                     <div className="no-scrollbar h-[83vh] max-h-[max-content] w-[100vw] max-w-[1440px] overflow-auto rounded-[24px] rounded-tl-none bg-white p-8 pt-[px]">
                       <div className="grid grid-cols-[2fr_1fr_1fr] gap-x-8">

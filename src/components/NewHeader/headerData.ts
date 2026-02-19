@@ -16,6 +16,7 @@ import Cloud from "@/components/ServicesSvg/HeaderSvgIconsData/CloudIcon"
 import About from "@/components/ServicesSvg/HeaderSvgIconsData/AboutUsIcon"
 import Blog from "@/components/ServicesSvg/HeaderSvgIconsData/BlogIcon"
 import CaseStudy from "@/components/ServicesSvg/HeaderSvgIconsData/CaseStudyIcon"
+import Vue from "@/components/ServicesSvg/HeaderSvgIconsData/VueJsIcon"
 
 export const megaMenuData = {
   "Frontend Development": [
@@ -52,12 +53,12 @@ export const megaMenuData = {
       subtitle: "Robust Angular Solutions ",
     },
 
-    // {
-    //   title: "Vue.js",
-    //   icon: frontDevIcon3.src,
-    //   url: "/services/vuejs-development-company",
-    //   subtitle: "Get Lightweight frontends",
-    // },
+    {
+      title: "Vue.js",
+      Icon: Vue,
+      url: "/services/vuejs-development-company",
+      subtitle: "Get Lightweight frontends",
+    },
 
     // {
     //   title: "JavaScript",
