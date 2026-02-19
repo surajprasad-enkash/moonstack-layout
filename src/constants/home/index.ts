@@ -236,7 +236,7 @@ export const tabs = [
     role: "Co-Founder and Chief Executive Officer",
     avatar: brainmates.src,
     rating: 5.0,
-    rightBg: "linear-gradient(79.44deg, #3B1F60 17.64%, #5C29AA 40%)",
+    rightBg: "linear-gradient(79.44deg, #1f6053ff 17.64%, #29aa97ff 40%)",
     color: "#fff",
     clutchLogo: clutchLogo.src,
   },

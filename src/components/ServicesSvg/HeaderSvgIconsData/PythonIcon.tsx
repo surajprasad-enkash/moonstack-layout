@@ -1,6 +1,6 @@
 import * as React from "react"
 
-export default function Python(props: React.SVGProps<SVGSVGElement>) {
+export default function PythonIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

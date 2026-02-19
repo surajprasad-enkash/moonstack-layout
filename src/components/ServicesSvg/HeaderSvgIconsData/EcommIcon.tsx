@@ -1,6 +1,6 @@
 import * as React from "react"
 
-export default function Ecomm(props: React.SVGProps<SVGSVGElement>) {
+export default function EcommIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

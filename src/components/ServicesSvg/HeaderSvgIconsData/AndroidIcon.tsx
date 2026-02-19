@@ -1,6 +1,6 @@
 import * as React from "react"
 
-export default function Android(props: React.SVGProps<SVGSVGElement>) {
+export default function AndroidIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

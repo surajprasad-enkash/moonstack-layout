@@ -6,7 +6,7 @@ import androidContactbannerImg from "@/assets/app-development-images/contact-app
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 
-import SeoIcon from "@/components/ServicesSvg/HeaderSvgIcons/Seo"
+import SeoIcon from "@/components/ServicesSvg/HeaderSvgIconsData/SeoIcon"
 
 export const seo: PageData = {
   hero: {
