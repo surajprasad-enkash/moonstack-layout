@@ -103,7 +103,7 @@ export default function BusinessNeedsDesignSection({
                         alt={card.title || "card Image"}
                         width={700}
                         height={500}
-                        className="h-auto w-full object-contain"
+                        className="h-auto w-full rounded-[20px] object-contain"
                       />
                     </div>
                   )}

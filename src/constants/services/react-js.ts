@@ -2,12 +2,20 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
-import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
-import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
-import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
+import leftSideImage from "@/assets/services/reactjs/leftSideImage.webp"
 
-import collaboration from "@/assets/app-development-images/flexible.webp"
+import ReactIcon1 from "@/components/ServicesSvg/ReactIcon/ReactIcon1"
+import ReactIcon2 from "@/components/ServicesSvg/ReactIcon/ReactIcon2"
+import ReactIcon3 from "@/components/ServicesSvg/ReactIcon/ReactIcon3"
+import ReactIcon4 from "@/components/ServicesSvg/ReactIcon/ReactIcon4"
+import ReactIcon5 from "@/components/ServicesSvg/ReactIcon/ReactIcon5"
+import ReactIcon6 from "@/components/ServicesSvg/ReactIcon/ReactIcon6"
+import ReactIcon7 from "@/components/ServicesSvg/ReactIcon/ReactIcon7"
+import ReactIcon8 from "@/components/ServicesSvg/ReactIcon/ReactIcon8"
+import ReactIcon9 from "@/components/ServicesSvg/ReactIcon/ReactIcon9"
+import ReactIcon10 from "@/components/ServicesSvg/ReactIcon/ReactIcon10"
+import ReactIcon11 from "@/components/ServicesSvg/ReactIcon/ReactIcon11"
+import ReactIcon12 from "@/components/ServicesSvg/ReactIcon/ReactIcon12"
 
 export const reactJs: PageData = {
   hero: {
@@ -66,7 +74,7 @@ export const reactJs: PageData = {
       bolds: false,
       description2:
         "We opt for the best industry practices, agile development process, and quality-driven processes to deliver high-performance and responsive web apps based on trending ReactJS technology. Our expert team not only develops solutions, but our goal is to meet our clients' expectations, and the ReactJS solution, including dynamic single apps or progressive web apps, should be a bridge for the businesses. In the development process, we plan and opt for the modern ReactJS framework that aligns with the enterprise solutions. Apart from React.js development services, we also focus on 24/7 support, strong communication processes, and agile methodologies that enable us to stay out in the competitive world.",
-      image: bndimage1.src,
+      image: leftSideImage.src,
     },
   ],
   solutions: {
@@ -89,39 +97,45 @@ export const reactJs: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      imgSrc: "",
       title: "ReactJS Consulting Services",
+      Icon: ReactIcon1,
       description:
         "Our top React.js experts offer React.js consulting services that help businesses to plan, optimise, and grow their front-end solutions. With proper guidance and the right technical strategies, companies can choose the right tech stack and development strategy to avoid future failures and make informed decisions. In our consulting services, we analyse existing systems, recommend best development practices and provide a roadmap.",
     },
     {
-      imgSrc: engagingIcon.src,
+      imgSrc: "",
       title: "ReactJS Development Services",
+      Icon: ReactIcon2,
       description:
         "Develop your React.js web applications with top industry experts. We deliver high-performance, responsive web apps built with ReactJS. At Moonstack, we opt for a modern technology stack that aligns with your business needs, that ensures to improve user engagement as well as overall customer satisfaction. We analyse the project and then shortlist the essential functionalities that are required for the businesses with the best coding practices as well as the user interface.",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      imgSrc: "",
       title: "ReactJS UI/UX Development",
+      Icon: ReactIcon3,
       description:
         "We offer customized React.js design services to our clients. At Moonstack, we combine modern design principles and component-based architecture that allow us to deliver interactive and engaging designs that help to increase client retention rates and improve overall customer satisfaction. We opt for the latest industry design principles and coding techniques, in which we choose trending colors, fonts, and themes as per the business. Moonstack designers focus on UI and UX, both with interactive designs. We also focus on the design that should be easy to use and deliver next generation experience to the users.",
     },
     {
-      imgSrc: brandingIcon.src,
+      imgSrc: "",
       title: "ReactJS API Integration",
+      Icon: ReactIcon4,
       description:
         "Extend your existing functionalities with third-party API integration services. Our React.js developers have hands-on experience with third-party API integration services via API that includes a payment gateway and market-ready enterprise tool that we integrate in solution to enhance functionalities, automate workflows, and deliver real-time data updates that ensure a seamless user experience. By partnering with Moonstack for your API integration services, we take full responsibility for data exchange and to run functionalities smoothly. ",
     },
     {
-      imgSrc: brandingIcon.src,
+      imgSrc: "",
       title: "ReactJS Migration & Upgradation",
+      Icon: ReactIcon5,
       description:
         "Migrate your existing data from one platform to another with minimal downtime and securely. Moonstack migration services are designed in such a way that customers can exchange data from React to React.js  or from other technologies to ReactJS easily, without losing any data, with proper backup infrastructure. Our ReactJS migration services help to improve application speed and maintain core functionalities. Moreover, our team also has expertise to upgrade different outdated versions to the latest ones. ",
     },
     {
-      imgSrc: brandingIcon.src,
+      imgSrc: "",
       title: "ReactJS Support & Maintenance",
+      Icon: ReactIcon6,
       description:
         "Hire experienced React developers to maintain your enterprise solutions with latest updates. Moonstack, React coders in India provide ReactJS support and maintenance services that ensure React enterprises solutions to run smoothly without any downtime. In our Reactjs support and maintenance services, our team ensures to fix bugs, improve performance, and optimize functionalities that allow business to leverage the latest modern tech benefits and fix bugs instantly without any downtime.",
     },
@@ -293,42 +307,48 @@ export const reactJs: PageData = {
       {
         id: 1,
         title: "Custom ReactJS Development",
-        icon: collaboration.src,
+        icon: "",
+        Icon: ReactIcon7,
         description:
           "We build custom React.js development solutions with strong technical expertise and latest framework as well as tools. Our Angular.js team have delivered a wide range of high performance web solutions from start ups to large enterprises that are aligned with their business goals. Our React web coders keep themselves updated with the latest market trends as well as deliver modern, future ready Angular web applications in the market. ",
       },
       {
         id: 2,
         title: "User Focused UI/UX ",
-        icon: collaboration.src,
+        icon: "",
+        Icon: ReactIcon8,
         description:
           "At Moonstack, we provide user centric custom UI/UX React.js designing services for our clients that connect them with their target audience. We focus on developing intuitive, interactive, and responsive designing services that align with the brand identity in terms of color, theme, and many more aspects that are required. With attractive design components, we also make sure that the user interface should be easy to use and improve user engagement, retention, and over client satisfaction. ",
       },
       {
         id: 3,
         title: "Transparent Communication",
-        icon: collaboration.src,
+        icon: "",
+        Icon: ReactIcon9,
         description:
           "We believe communication is key to every business. It is important to keep clear communication with clients, and our USP is to provide regular information to them. Our React.js experts provide constant updates and timely feedback to clients that helps them to be updated with the development cycle and challenges that we face. At Moonstack, we ensure to provide the right information to our clients on a constant basis. Our transparent communication process helps to bring high visibility, faster decision making, and also align our team with business expectations.",
       },
       {
         id: 4,
         title: "High End Security",
-        icon: collaboration.src,
+        icon: "",
+        Icon: ReactIcon10,
         description:
           "Security is the major concern in businesses and we understand it. We opt for the best security practices to deliver stable and reliable React.js solutions in the market. At Moonstack, we keep our clients' information fully secure and confidential. In order to meet all security standards, we opt for the best coding practices, data protection protocols, and constant security checks. In our React.js development cycle, we opt for industry-based compliance guidelines and avoid potential vulnerabilities and threats. ",
       },
       {
         id: 5,
         title: "Seamless Integration Capabilities",
-        icon: collaboration.src,
+        icon: "",
+        Icon: ReactIcon11,
         description:
           "Our professional React.js developers can extend functionalities with third-party services via API. We opt for different seamless API’s in the existing data flow and functionality across platforms. Our React.js experts have hands-on experience with various APIs, including payment gateways, CRM systems, and cloud services, to support business operations and scalability. Our React.js API integration services enable businesses to leverage third-party integrations with add-on features.",
       },
       {
         id: 6,
         title: "Dedicated Support & Maintenance",
-        icon: collaboration.src,
+        icon: "",
+        Icon: ReactIcon12,
         description:
           "Get proactive maintenance and support from our clients. We provide dedicated maintenance and support to our clients that help to manage performance, monitor different solutions, fix bugs instantly, and enhance features. With our React.js development services, we keep all solutions up to date as per market demand. Along with this, we provide proactive support that minimizes downtime, improves reliability, and ensures your application performs efficiently as per the business demands. ",
       },

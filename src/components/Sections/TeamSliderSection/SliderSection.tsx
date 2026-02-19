@@ -107,33 +107,74 @@ const TeamSliderSection: React.FC<TeamSliderSectionProps> = ({
         </div>
 
         <div className="mt-20">
-          <Slider ref={sliderRef} {...settings}>
-            {slides.map((item, index) => (
-              <div key={index} className="px-6">
-                {item.type === "image" ? (
-                  /* IMAGE CARD */
-                  <div className="h-[260px] w-full overflow-hidden rounded-[24px] bg-[#D8D1CC]">
-                    <Image
-                      src={item.image}
-                      alt="team"
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                ) : (
-                  <div className="flex h-[260px] w-full flex-col items-center justify-center rounded-[24px] bg-gradient-to-b from-[#0AA38F] to-[#0B6E61] text-center text-white">
-                    <Heading
-                      headingTag="h3"
-                      className="text-center font-bold text-white"
-                      content={item.count}
-                    />
+          <div className="hidden md:block">
+            <Slider ref={sliderRef} {...settings}>
+              {slides.map((item, index) => (
+                <div key={index} className="px-6">
+                  {item.type === "image" ? (
+                    /* IMAGE CARD */
+                    <div className="h-[260px] w-full overflow-hidden rounded-[24px] bg-[#D8D1CC]">
+                      <Image
+                        src={item.image}
+                        alt="team"
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex h-[260px] w-full flex-col items-center justify-center rounded-[24px] bg-gradient-to-b from-[#0AA38F] to-[#0B6E61] text-center text-white">
+                      <Heading
+                        headingTag="h3"
+                        className="text-center font-bold text-white"
+                        content={item.count}
+                      />
 
-                    <p className="mt-2 text-lg font-semibold">{item.label}</p>
-                    <p className="text-sm opacity-80">{item.subLabel}</p>
-                  </div>
-                )}
-              </div>
-            ))}
-          </Slider>
+                      <p className="mt-2 text-lg font-semibold">{item.label}</p>
+                      <p className="text-sm opacity-80">{item.subLabel}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </Slider>
+          </div>
+
+          <div className="block md:hidden">
+            <Slider
+              infinite={true}
+              speed={3000}
+              slidesToShow={1}
+              slidesToScroll={1}
+              arrows={false}
+              autoplay={true}
+              autoplaySpeed={0}
+              cssEase="linear"
+            >
+              {slides.map((item, index) => (
+                <div key={index} className="px-6">
+                  {item.type === "image" ? (
+                    /* IMAGE CARD */
+                    <div className="h-[260px] w-full overflow-hidden rounded-[24px] bg-[#D8D1CC]">
+                      <Image
+                        src={item.image}
+                        alt="team"
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex h-[260px] w-full flex-col items-center justify-center rounded-[24px] bg-gradient-to-b from-[#0AA38F] to-[#0B6E61] text-center text-white">
+                      <Heading
+                        headingTag="h3"
+                        className="text-center font-bold text-white"
+                        content={item.count}
+                      />
+
+                      <p className="mt-2 text-lg font-semibold">{item.label}</p>
+                      <p className="text-sm opacity-80">{item.subLabel}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
 
         <div className="container px-[20px] pt-20 md:px-0">
