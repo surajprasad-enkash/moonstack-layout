@@ -52,7 +52,7 @@ export const webDesigning: PageData = {
     ],
   },
   seo: {
-    title: "Affordable Website Design Services India & USA | Moonstack",
+    title: "Affordable Website Design Services India & USA ",
     description:
       "Want a modern, conversion focused website design service on affordable price, aligns with your brand and improves engagement and leads. Explore our web design services.",
     keywords:

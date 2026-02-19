@@ -57,7 +57,7 @@ export const ecommerce: PageData = {
     ],
   },
   seo: {
-    title: "Ecommerce Website Development Company India & USA | Moonstack",
+    title: "Ecommerce Website Development Company India & USA ",
     description:
       "Need an ecommerce site that increase sells? We designs and develops conversion‑focused online stores with secure payments and mobile‑first UX. Get Quote Now!",
     keywords:

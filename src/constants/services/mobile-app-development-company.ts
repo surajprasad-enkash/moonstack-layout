@@ -53,7 +53,7 @@ export const mobileAppDev: PageData = {
     ],
   },
   seo: {
-    title: "Custom Mobile App Development Company India & USA | Moonstack",
+    title: "Custom Mobile App Development Company India & USA ",
     description:
       "Build high-performing Android, iOS, & cross-platform apps with senior developer team that ships fast and scales with your roadmap. Book a free consultation",
     keywords:

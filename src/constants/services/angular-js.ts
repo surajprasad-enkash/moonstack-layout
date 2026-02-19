@@ -58,8 +58,7 @@ export const angularJs: PageData = {
     ],
   },
   seo: {
-    title:
-      "Top AngularJS Development Company | Hire Angular Developers | Moonstack",
+    title: "Top AngularJS Development Company | Hire Angular Developers ",
     description:
       "Looking for a reliable AngularJS development company? Moonstack offers custom Angular solutions, dedicated developers, and enterprise-grade web apps. Call Now!",
     keywords:

@@ -47,7 +47,7 @@ export const it_support: PageData = {
     ],
   },
   seo: {
-    title: "Managed IT Support Services India & USA | Moonstack",
+    title: "Managed IT Support Services India & USA ",
     description:
       "Looking for reliable IT support Service? Moonstack provides managed IT services, monitoring, & incident response to keep your systems secure and teams productive.",
     keywords:

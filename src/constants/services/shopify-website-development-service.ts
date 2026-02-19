@@ -58,7 +58,7 @@ export const shopify: PageData = {
     ],
   },
   seo: {
-    title: "Shopify Website Development Company India & USA | Moonstack",
+    title: "Shopify Website Development Company India & USA ",
     description:
       "Looking to build and scale a Shopify store? Moonstack develops custom Shopify themes, apps, and optimized funnels to increase your online sales. Call Now!",
     keywords:

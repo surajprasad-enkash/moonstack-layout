@@ -60,7 +60,7 @@ export const laravel: PageData = {
     ],
   },
   seo: {
-    title: "Laravel Web Development Company in India & USA | Moonstack",
+    title: "Laravel Web Development Company in India & USA ",
     description:
       "Build secure, scalable Laravel websites and web apps with experienced developers, clean code, and long-term maintainability. Share your Laravel requirements with us today.",
     keywords:

@@ -54,7 +54,7 @@ export const ios: PageData = {
     ],
   },
   seo: {
-    title: "IOS App Development Company in India & USA | Moonstack",
+    title: "IOS App Development Company in India & USA ",
     description:
       "Searching for expert IOS app developers in India? Moonstack designs and builds iPhone and iPad apps with pixel‑perfect UI and App Store–ready performance. Call Now!",
     keywords:

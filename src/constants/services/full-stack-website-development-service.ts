@@ -60,7 +60,7 @@ export const fullstack: PageData = {
     ],
   },
   seo: {
-    title: "Full-Stack Web Development Company India & USA | Moonstack",
+    title: "Full-Stack Web Development Company India & USA ",
     description:
       "Looking for a full stack web development team in India? We handling frontend, backend, APIs, and cloud infrastructure under one roof. Book a product discovery call.",
     keywords:

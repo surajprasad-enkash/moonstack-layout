@@ -52,7 +52,7 @@ export const wordPress: PageData = {
     ],
   },
   seo: {
-    title: "WordPress Website Development Company India & USA | Moonstack",
+    title: "WordPress Website Development Company India & USA ",
     description:
       "Looking for WordPress developers in India? Moonstack launches and maintains secure, fast WordPress sites with custom themes, plugins, and SEO‑ready setups. call now!",
     keywords:

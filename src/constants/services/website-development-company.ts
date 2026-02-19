@@ -52,7 +52,7 @@ export const websiteDevelopment: PageData = {
     ],
   },
   seo: {
-    title: "Customized Website Development Company in India & US | Moonstack",
+    title: "Customized Website Development Company in India & US ",
     description:
       "Get fast, secure, SEO-friendly websites built by full-stack experts focused on performance, scalability, & business results. Start your website project with Moonstack.",
     keywords:

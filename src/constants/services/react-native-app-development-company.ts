@@ -53,7 +53,7 @@ export const react_native: PageData = {
     ],
   },
   seo: {
-    title: "React Native App Development Company in India & USA | Moonstack",
+    title: "React Native App Development Company in India & USA ",
     description:
       "Want a cross‑platform app built with React Native? Moonstack helps Companies in India & USA ship fast, stable React Native apps for Android and iOS from a single codebase.",
     keywords:

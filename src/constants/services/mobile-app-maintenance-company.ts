@@ -51,7 +51,7 @@ export const app_maintenance: PageData = {
     ],
   },
   seo: {
-    title: "Mobile App Maintenance & Support in India & USA | Moonstack",
+    title: "Mobile App Maintenance & Support in India & USA ",
     description:
       "Want mobile app maintenance Service? We provide ongoing updates, crash fixes, performance tuning, and OS compatibility support for your Android and iOS apps.",
     keywords:

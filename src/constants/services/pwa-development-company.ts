@@ -45,7 +45,7 @@ export const pwa: PageData = {
     ],
   },
   seo: {
-    title: "Progressive Web App (PWA) Development in India & USA | Moonstack",
+    title: "Progressive Web App (PWA) Development in India & USA ",
     description:
       "Build fast, installable PWAs that work offline, feel native, and boost conversions across devices with our expert PWA development team. Request a PWA strategy session.",
     keywords:

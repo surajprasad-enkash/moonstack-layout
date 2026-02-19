@@ -15,10 +15,64 @@ const libreBaskerville = Libre_Baskerville({
 
 export const metadata: Metadata = {
   title: {
-    default: "Moonstack - Digital Product Studio",
+    default: "Product Focused App & Web Development Company in India & USA",
     template: "%s | Moonstack",
   },
-  description: "We build scalable digital products.",
+  description:
+    "We're product-focused app and web development company in India. Moonstack’s senior engineers and designers help companies in building World class AI-powered full-stack development, UI/UX, SEO and ongoing support.",
+  keywords: [
+    "web development company India",
+    "app development company India",
+    "full stack development services",
+    "AI powered development",
+    "UI UX design agency",
+    "SEO services company",
+    "Next.js development company",
+    "React development agency",
+    "software development company USA",
+    "Moonstack",
+  ],
+
+  alternates: {
+    canonical: "/",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  authors: [
+    {
+      name: "Moonstack",
+      url: "https://moonstack.co",
+    },
+  ],
+
+  publisher: "Moonstack",
+
+  openGraph: {
+    title: "Product Focused App & Web Development Company",
+    description:
+      "AI-powered full-stack development, UI/UX, SEO and ongoing support.",
+    url: "https://moonstack.co",
+    siteName: "Moonstack",
+    type: "website",
+    locale: "en_US",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Moonstack",
+    description: "Product-focused AI-powered web & app development company.",
+  },
 }
 
 import { gordita } from "@/lib/fonts"

@@ -57,7 +57,7 @@ export const crm: PageData = {
     ],
   },
   seo: {
-    title: "Custom CRM Development Company India & USA | Moonstack",
+    title: "Custom CRM Development Company India & USA ",
     description:
       "Need a custom CRM For your business in India? Moonstack designs and develops CRM systems that match your workflows and integrate with your existing tools.",
     keywords:

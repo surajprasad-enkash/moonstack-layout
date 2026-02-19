@@ -45,7 +45,7 @@ export const ui_ux: PageData = {
     ],
   },
   seo: {
-    title: "UI/UX Design Services India USA | Web & Mobile | Moonstack",
+    title: "UI/UX Design Services India USA | Web & Mobile ",
     description:
       "Need UI/UX designers in India for your web or mobile app? Moonstack delivers user centric interfaces, design systems, and tested flows that boost engagement.",
     keywords:

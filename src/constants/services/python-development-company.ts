@@ -59,7 +59,7 @@ export const python: PageData = {
     ],
   },
   seo: {
-    title: "Python Development Company in India | Moonstack",
+    title: "Python Development Company in India ",
     description:
       "Get custom Python development services for web, AI, and cloud applications. Moonstack delivers secure, scalable, and fast solutions.",
     keywords:
