@@ -19,6 +19,7 @@ import laravelIcon9 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon9"
 import laravelIcon10 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon10"
 import laravelIcon11 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon11"
 import laravelIcon12 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon12"
+import bccKristenCheng6 from "@/assets/clientsImages/amitnuvama.jpg"
 
 export const laravel: PageData = {
   hero: {
@@ -72,7 +73,9 @@ export const laravel: PageData = {
   points:
     "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
   highlightText: "The application is scalable",
-
+  userImage: bccKristenCheng6,
+  userRole: "CEO",
+  userName: "Amit",
   leftCardData: [
     {
       title: "Transform Your Business With Custom Laravel Solutions",

@@ -13,6 +13,7 @@ import IosIcon3 from "@/components/ServicesSvg/IosIcons/IosIcon3"
 import IosIcon4 from "@/components/ServicesSvg/IosIcons/IosIcon4"
 import IosIcon5 from "@/components/ServicesSvg/IosIcons/IosIcon5"
 import IosIcon6 from "@/components/ServicesSvg/IosIcons/IosIcon6"
+import bccKristenCheng6 from "@/assets/clientsImages/admissifyceo.jpg"
 
 export const ios: PageData = {
   hero: {
@@ -66,7 +67,9 @@ export const ios: PageData = {
   points:
     "Moonstack’s IOS Development mastery was a game-changer. They engineered a high-performance architecture that boosted our app’s fluidity by 45%. From navigating strict App Store security to delivering a premium, native feel, Moonstack is the premier partner for high-converting iOS solutions.",
   highlightText: "boosted our app’s fluidity by 45%",
-
+  userImage: bccKristenCheng6,
+  userRole: "CEO",
+  userName: "Kristen Cheng",
   leftCardData: [
     {
       title: "IOS App Development Services",
