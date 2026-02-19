@@ -2,7 +2,7 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/e-commerce.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
+import bndimage1 from "@/assets/services/eComm/eComm.webp"
 
 // Svg Icons Components
 import EcommerceIcon1 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon1"
