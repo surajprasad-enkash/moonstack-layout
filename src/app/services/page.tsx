@@ -77,7 +77,8 @@ const tabs = [
     role: "Co-Founder and Chief Executive Officer",
     avatar: brainmates.src,
     rating: 5.0,
-    rightBg: "linear-gradient(79.44deg, #3B1F60 17.64%, #5C29AA 40%)",
+    rightBg:
+      "linear-gradient(79.44deg, rgb(31, 96, 83) 17.64%, rgb(41, 170, 151) 40%)",
     color: "#fff",
     clutchLogo: clutchLogo.src,
   },

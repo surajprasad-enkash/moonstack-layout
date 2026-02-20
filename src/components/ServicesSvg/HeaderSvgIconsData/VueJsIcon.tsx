@@ -34,8 +34,8 @@ export default function SeoIcon(props: React.SVGProps<SVGSVGElement>) {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(1.99978 1.39164) rotate(45.2682) scale(52.0623)"
         >
-          <stop stop-color="#00620B" />
-          <stop offset="1" stop-color="#00A313" />
+          <stop stopColor="#00620B" />
+          <stop offset="1" stopColor="#00A313" />
         </radialGradient>
         <clipPath id="clip0_292_2103">
           <rect

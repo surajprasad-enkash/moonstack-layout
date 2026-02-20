@@ -19,7 +19,7 @@ import CaseStudy from "@/components/ServicesSvg/HeaderSvgIconsData/CaseStudyIcon
 import Vue from "@/components/ServicesSvg/HeaderSvgIconsData/VueJsIcon"
 
 export const megaMenuData = {
-  "Frontend Development": [
+  "Website Development": [
     {
       title: "Website Development",
       Icon: Uiux,
@@ -59,19 +59,6 @@ export const megaMenuData = {
       url: "/services/vuejs-development-company",
       subtitle: "Get Lightweight frontends",
     },
-
-    // {
-    //   title: "JavaScript",
-    //   icon: frontDevIcon5.src,
-    //   url: "/services/javascript-development-company",
-    //   subtitle: "Interactive web experiences",
-    // },
-    // {
-    //   title: "PHP",
-    //   icon: backendicon8.src,
-    //   url: "/services/php-development-company",
-    //   subtitle: "Reliable and flexible  web solutions",
-    // },
     {
       title: "Full Stack Development",
       Icon: FullStack,
@@ -84,21 +71,6 @@ export const megaMenuData = {
       url: "/services/shopify-website-development-company",
       subtitle: "Stores Built For Growth And Sales",
     },
-  ],
-
-  "Backend Development": [
-    // {
-    //   title: ".NET",
-    //   icon: backendicon1.src,
-    //   url: "/services/dotnet-development-company",
-    //   subtitle: "Get Enterprise-grade applications",
-    // },
-    // {
-    //   title: "NodeJS",
-    //   icon: backendicon2.src,
-    //   url: "/services/nodejs-development-company",
-    //   subtitle: "Scalable backend solutions for apps",
-    // },
     {
       title: "Laravel",
       Icon: Laravel,
@@ -112,21 +84,9 @@ export const megaMenuData = {
       url: "/services/python-development-company",
       subtitle: "Powerful Solutions For Web And AI",
     },
-    // {
-    //   title: "Java",
-    //   icon: backendicon7.src,
-    //   url: "/services/java-development-company",
-    //   subtitle: "Secure, high-performance  applications",
-    // },
   ],
 
   "Application Development": [
-    {
-      title: "Android App Development",
-      subtitle: "Apps Designed For Growth",
-      Icon: Android,
-      url: "/services/android-app-development-company",
-    },
     {
       title: "Android App Development",
       subtitle: "Apps Designed For Growth",
@@ -200,12 +160,6 @@ export const aboutMenu = [
     href: "/blogs",
     Icon: Blog,
   },
-  // {
-  //   title: "Careers",
-  //   subtitle: "Grow your career with us",
-  //   href: "/careers",
-  //   icon: career.src,
-  // },
   {
     title: "Case Study",
     subtitle: "Real Projects, Real Results, Real Impact",
