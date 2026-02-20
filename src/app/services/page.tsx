@@ -163,7 +163,7 @@ export default function ApplicationPage() {
             role: "CEO",
             clientImage: amitnuvama,
             rating: 5,
-            text: "Arounda excels with meticulous attention to detail and creative problem-solving.",
+            text: "Moonstack excels with meticulous attention to detail and creative problem-solving.",
           }}
           images={[screen2, screen1, screen3]}
         />
@@ -180,7 +180,7 @@ export default function ApplicationPage() {
             role: "CEO",
             clientImage: pickright,
             rating: 5,
-            text: "Arounda excels with meticulous attention to detail and creative problem-solving.",
+            text: "Moonstack excels with meticulous attention to detail and creative problem-solving.",
           }}
           images={[Pickrightscreen1, Pickrightscreen2, Pickrightscreen3]}
         />

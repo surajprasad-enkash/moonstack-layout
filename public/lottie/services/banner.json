@@ -49,7 +49,7 @@
           "ddd": 0,
           "ind": 1,
           "ty": 3,
-          "nm": "cs_klasha",
+          "nm": "cs_moonstack",
           "sr": 1,
           "ks": {
             "o": {
@@ -110,7 +110,7 @@
           "ddd": 0,
           "ind": 2,
           "ty": 0,
-          "nm": "klasha",
+          "nm": "moonstack",
           "parent": 1,
           "tt": 2,
           "tp": 6,
@@ -286,7 +286,7 @@
           "ddd": 0,
           "ind": 3,
           "ty": 0,
-          "nm": "klasha",
+          "nm": "moonstack",
           "parent": 1,
           "tt": 1,
           "tp": 6,
@@ -10869,7 +10869,7 @@
           "ddd": 0,
           "ind": 61,
           "ty": 0,
-          "nm": "klasha",
+          "nm": "moonstack",
           "parent": 1,
           "tt": 2,
           "tp": 57,
@@ -14094,7 +14094,7 @@
     },
     {
       "id": "comp_1",
-      "nm": "klasha",
+      "nm": "moonstack",
       "fr": 60,
       "layers": [
         {
@@ -15823,7 +15823,7 @@
           "ddd": 0,
           "ind": 3,
           "ty": 2,
-          "nm": "klasha bg.pdf",
+          "nm": "moonstack bg.pdf",
           "cl": "pdf",
           "refId": "image_0",
           "sr": 1,
@@ -27974,7 +27974,7 @@
           "ddd": 0,
           "ind": 1,
           "ty": 3,
-          "nm": "cs_klasha",
+          "nm": "cs_moonstack",
           "sr": 1,
           "ks": {
             "o": {
@@ -28035,7 +28035,7 @@
           "ddd": 0,
           "ind": 2,
           "ty": 0,
-          "nm": "klasha 2",
+          "nm": "moonstack 2",
           "parent": 1,
           "refId": "comp_11",
           "sr": 1,
@@ -29930,7 +29930,7 @@
           "ddd": 0,
           "ind": 20,
           "ty": 0,
-          "nm": "klasha 2",
+          "nm": "moonstack 2",
           "parent": 1,
           "refId": "comp_11",
           "sr": 1,
@@ -32266,7 +32266,7 @@
     },
     {
       "id": "comp_11",
-      "nm": "klasha 2",
+      "nm": "moonstack 2",
       "fr": 60,
       "layers": [
         {
