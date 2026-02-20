@@ -1,24 +1,24 @@
+import dynamic from "next/dynamic"
 import LottieData from "../../../public/lottie/services/banner.json"
 import bgImagehero from "@/assets/industries/hero-bg.svg"
 import Layout from "@/components/Layout"
 import AppCategoryBanner from "@/components/Sections/ServicesSection/AppDevelopment/AppCategoryBanner"
-import ServicesSection from "@/components/NewHomePage/ServicesSection"
 import Space from "@/components/Space"
-import CaseStudyHighlight from "@/components/NewHomePage/CaseStudyHighlight"
+
+const ServicesSection = dynamic(() => import("@/components/NewHomePage/ServicesSection"))
+const CaseStudyHighlight = dynamic(() => import("@/components/NewHomePage/CaseStudyHighlight"))
+const TestimonialsTabs = dynamic(() => import("@/components/NewHomePage/TestimonialsTabs"))
+const BlogInsightsSection = dynamic(() => import("@/components/NewHomePage/BlogInsightsSection"))
+const ProjectCTA = dynamic(() => import("@/components/ProjectCTA/ProjectCTA"))
+const TrustBadges = dynamic(() => import("@/components/NewHomePage/TrustBadges"))
 
 import clutch from "@/assets/newHomePage/caseStudy/clutch.svg"
-import TestimonialsTabs from "@/components/NewHomePage/TestimonialsTabs"
-
 import tastimonial1 from "@/assets/newHomePage/awards/tastimonial/tastimonial1.svg"
 import tastimonial2 from "@/assets/newHomePage/awards/tastimonial/tastimonial2.svg"
 import tastimonial3 from "@/assets/newHomePage/awards/tastimonial/tastimonial3.svg"
 import tastimonial4 from "@/assets/newHomePage/awards/tastimonial/tastimonial4.svg"
-
 import clutchLogo from "@/assets/newHomePage/awards/tastimonial/clutchLogo.svg"
 import clutchLogoBlack from "@/assets/newHomePage/awards/tastimonial/clutchBloack.svg"
-import BlogInsightsSection from "@/components/NewHomePage/BlogInsightsSection"
-import ProjectCTA from "@/components/ProjectCTA/ProjectCTA"
-import TrustBadges from "@/components/NewHomePage/TrustBadges"
 
 import clutchBadges from "@/assets/newHomePage/TrustBadges/clutch.webp"
 import upwork from "@/assets/newHomePage/TrustBadges/upwork.webp"

@@ -1,18 +1,16 @@
-import React from "react"
-
-//components
+import dynamic from "next/dynamic"
 import Layout from "@/components/Layout"
 import HeroSection from "./heroSection"
-import GetQuoteBanner from "@/components/GetQuoteBanner/GetQuoteBanner"
-import WhyJoinSection from "./whyJoin"
-import LatestOpportunity from "./latestOpp"
+const GetQuoteBanner = dynamic(() => import("@/components/GetQuoteBanner/GetQuoteBanner"))
+const WhyJoinSection = dynamic(() => import("./whyJoin"))
+const LatestOpportunity = dynamic(() => import("./latestOpp"))
+const ProcessSection = dynamic(() => import("./process"))
 
 //data
 import { benefitsData } from "./data"
 
 //utils
 import bannerImg from "@/assets/android-app-bg.webp"
-import ProcessSection from "./process"
 import { Metadata } from "next"
 import { buildMetadata } from "@/helper/generateMetadata "
 
