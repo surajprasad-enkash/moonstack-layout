@@ -12,13 +12,7 @@ import facebook from "@/assets/footer/Facebook.svg"
 import linkedin from "@/assets/footer/linkdin.svg"
 import twitter from "@/assets/footer/twitter.svg"
 import instagram from "@/assets/footer/instagram.svg"
-
-// BIG moonstack image
-
-// import moonstackText from "@/assets/footer/moonstacklogo.svg"
 import moonstackText from "@/assets/footer/moonstacklogo-2.svg"
-// import moonstackText from "@/assets/footer/moonstacklogo-3.svg"
-// import moonstackText from "@/assets/footer/moonstack.svg"
 
 import footerBg from "@/assets/footer/newbg.svg"
 import HoverSlideText from "./HoverSlideText"
@@ -66,7 +60,10 @@ const Footer = () => {
                     </div>
 
                     <div className="reviewBox">
-                      <Image src={clutch} alt="Clutch" />
+                      <Link href="https://www.upwork.com/agencies/958032289046228992/">
+                        <Image src={clutch} alt="Clutch" />
+                      </Link>
+
                       <p className="text-[#fff]">
                         <span className="reviewStars">★★★★★</span>
                         <span className="reviewCount">(120 Reviews)</span>
@@ -80,18 +77,15 @@ const Footer = () => {
               <div className="footerLinksWrapper w-[100%] md:w-[60%]">
                 <div className="flex w-[100%] flex-wrap">
                   <div className="footerLinks w-[100%] md:w-[25%]">
-                    <h4 className="footerTitle mb-[21px] !text-[18px] leading-[150%] text-[#fff]">
-                      Frontend Services
-                    </h4>
+                    <Link
+                      href="/services/website-development-company"
+                      className="inline-block"
+                    >
+                      <h4 className="footerTitle mb-[21px] !text-[18px] leading-[150%] text-[#fff]">
+                        Website Development Services
+                      </h4>
+                    </Link>
                     <ul className="footerMenu text-[#fff]">
-                      <li>
-                        <Link
-                          href="/services/website-development-company"
-                          className="inline-block"
-                        >
-                          <HoverSlideText text="Website Development" />
-                        </Link>
-                      </li>
                       <li>
                         <Link
                           href="/services/angularjs-development-company"
@@ -100,7 +94,38 @@ const Footer = () => {
                           <HoverSlideText text="Angular" />
                         </Link>
                       </li>
-
+                      <li>
+                        <Link
+                          href="/services/wordpress-website-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="Wordpress" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/crm-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="CRM" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/laravel-website-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="Laravel" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/full-stack-website-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="Full Stack" />
+                        </Link>
+                      </li>
                       <li>
                         <Link
                           href="/services/vuejs-development-company"
@@ -146,95 +171,6 @@ const Footer = () => {
                     </ul>
                   </div>
 
-                  <div className="footerLinks w-[100%] md:w-[25%]">
-                    <h4 className="footerTitle mb-[21px] !text-[18px] leading-[150%] text-[#fff]">
-                      Backend Services
-                    </h4>
-                    <ul className="footerMenu text-[#fff]">
-                      {/* <li>
-                        <Link
-                          href="/services/dotnet-development-company"
-                          className="inline-block"
-                        >
-                          <HoverSlideText text=".NET" />
-                        </Link>
-                      </li> */}
-
-                      {/* <li>
-                        <Link
-                          href="/services/nodejs-development-company"
-                          className="inline-block"
-                        >
-                          <HoverSlideText text="Node Js" />
-                        </Link>
-                      </li> */}
-
-                      {/* <li>
-                        <Link
-                          href="/services/php-development-company"
-                          className="inline-block"
-                        >
-                          <HoverSlideText text="PHP" />
-                        </Link>
-                      </li> */}
-                      <li>
-                        <Link
-                          href="/services/wordpress-website-development-company"
-                          className="inline-block"
-                        >
-                          <HoverSlideText text="Wordpress" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/services/crm-development-company"
-                          className="inline-block"
-                        >
-                          <HoverSlideText text="CRM" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/services/laravel-website-development-company"
-                          className="inline-block"
-                        >
-                          <HoverSlideText text="Laravel" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/services/python-development-company"
-                          className="inline-block"
-                        >
-                          <HoverSlideText text="Python" />
-                        </Link>
-                      </li>
-                      {/* <li>
-                        <Link
-                          href="/services/codeigniter-development-company"
-                          className="inline-block"
-                        >
-                          <HoverSlideText text="CodeIgniter" />
-                        </Link>
-                      </li> */}
-                      {/* <li>
-                        <Link
-                          href="/services/java-development-company"
-                          className="inline-block"
-                        >
-                          <HoverSlideText text="Java" />
-                        </Link>
-                      </li> */}
-                      <li>
-                        <Link
-                          href="/services/full-stack-website-development-company"
-                          className="inline-block"
-                        >
-                          <HoverSlideText text="Full Stack" />
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
                   <div className="footerLinks w-[100%] md:w-[25%]">
                     <h4 className="footerTitle mb-[21px] !text-[18px] leading-[150%] text-[#fff]">
                       App Development Services
@@ -292,6 +228,113 @@ const Footer = () => {
                       </li>
                     </ul>
                   </div>
+                  <div className="footerLinks w-[100%] md:w-[25%]">
+                    <h4 className="footerTitle mb-[21px] !text-[18px] leading-[150%] text-[#fff]">
+                      Other Services
+                    </h4>
+                    <ul className="footerMenu text-[#fff]">
+                      {/* <li>
+                        <Link
+                          href="/services/dotnet-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text=".NET" />
+                        </Link>
+                      </li> */}
+
+                      {/* <li>
+                        <Link
+                          href="/services/nodejs-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="Node Js" />
+                        </Link>
+                      </li> */}
+
+                      {/* <li>
+                        <Link
+                          href="/services/php-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="PHP" />
+                        </Link>
+                      </li> */}
+
+                      <li>
+                        <Link
+                          href="/services/python-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="Python" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/search-engine-optimization-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="SEO" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/ai-agent-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="AI" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/cloud-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="Cloud Services" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/it-support-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="IT Support" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/ui-ux-designing-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="UI Ux" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/product-designing-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="Product Designing" />
+                        </Link>
+                      </li>
+                      {/* <li>
+                        <Link
+                          href="/services/codeigniter-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="CodeIgniter" />
+                        </Link>
+                      </li> */}
+                      {/* <li>
+                        <Link
+                          href="/services/java-development-company"
+                          className="inline-block"
+                        >
+                          <HoverSlideText text="Java" />
+                        </Link>
+                      </li> */}
+                    </ul>
+                  </div>
+
                   <div className="footerLinks w-[100%] md:w-[25%]">
                     <h4 className="footerTitle mb-[21px] !text-[18px] leading-[150%] text-[#fff]">
                       Company
@@ -376,7 +419,7 @@ const Footer = () => {
                     </Link>
                   </div>
                   <div className="mt-[20px] flex w-full justify-end gap-[20px]">
-                    <ul className="footerMenu flex w-full justify-end gap-[20px] text-[#fff]">
+                    <ul className="footerMenu block h-10 w-full justify-end gap-[20px] text-[#fff] md:flex">
                       <li>
                         <Link href="/terms-and-conditions">
                           <HoverSlideText text="Terms & Conditions" />
@@ -416,7 +459,7 @@ const Footer = () => {
             </div>
 
             {/* BOTTOM */}
-            <div className="footerBottom mt-[50px] text-center text-[#fff]">
+            <div className="footerBottom mt-[50px] mb-9 text-center text-[#fff] md:mb-0">
               <p className="!text-[14px] !font-[500]">
                 Copyright © {moment().year()} Moonstack | Designed with{" "}
                 <span className="text-[#01a74e]">❤</span> by Moonstack Team

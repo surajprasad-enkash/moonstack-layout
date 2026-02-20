@@ -159,7 +159,7 @@ export const megaMenuData = {
 
   "Other Services": [
     {
-      title: "Search Engine Optimization",
+      title: "SEO",
       subtitle: "Organic Growth, Technical SEO, Content Strategy",
       Icon: Seo,
       url: "/services/search-engine-optimization-company",

@@ -17,7 +17,7 @@ export default function CaseOverview({ data }: any) {
                   <p className="mb-[12px] block text-[#000] uppercase">
                     <strong className="text-[12px]">{item.label}</strong>
                   </p>
-                  <span className="block text-[32px] font-[500] whitespace-nowrap">
+                  <span className="block text-[32px] font-[500] text-wrap md:whitespace-nowrap">
                     {item.content}
                   </span>
                 </div>

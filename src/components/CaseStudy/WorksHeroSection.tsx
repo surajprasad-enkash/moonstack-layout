@@ -65,7 +65,9 @@ export default function WorksHeroSection() {
 
             {/* Buttons & Ratings */}
             <div className="flex flex-wrap items-center gap-6 border-t border-[#ffffff14] pt-[20px]">
-              <CommanButton text={"All Cases"} />
+              <Link href="/contact-us">
+                <CommanButton text={"Talk to our Team"} />
+              </Link>
 
               <div className="ml-[20px] flex items-center gap-[30px]">
                 <div className="border-r border-[#ffffff14] pr-[30px]">
