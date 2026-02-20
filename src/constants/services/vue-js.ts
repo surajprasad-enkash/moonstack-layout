@@ -2,15 +2,21 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/services/vue/vue.webp"
-import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
-import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
-import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
 
-import collaboration from "@/assets/app-development-images/flexible.webp"
+// Svg Icon Components
+import VueJs1 from "@/components/ServicesSvg/VueJs/VueJs1"
+import VueJs2 from "@/components/ServicesSvg/VueJs/VueJs2"
+import VueJs3 from "@/components/ServicesSvg/VueJs/VueJs3"
+import VueJs4 from "@/components/ServicesSvg/VueJs/VueJs4"
+import VueJs5 from "@/components/ServicesSvg/VueJs/VueJs5"
+import VueJs6 from "@/components/ServicesSvg/VueJs/VueJs6"
+import VueJs7 from "@/components/ServicesSvg/VueJs/VueJs7"
+import VueJs8 from "@/components/ServicesSvg/VueJs/VueJs8"
+import VueJs9 from "@/components/ServicesSvg/VueJs/VueJs9"
+import VueJs10 from "@/components/ServicesSvg/VueJs/VueJs10"
+import VueJs11 from "@/components/ServicesSvg/VueJs/VueJs11"
+import VueJs12 from "@/components/ServicesSvg/VueJs/VueJs12"
 
 export const vueJs: PageData = {
   hero: {
@@ -26,7 +32,7 @@ export const vueJs: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -90,38 +96,44 @@ export const vueJs: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: VueJs1,
+      imgSrc: "",
       title: "Vue.js Consulting Service ",
       description:
         "Moonstack provides end-to-end Vue.js consulting services to our clients. In our consulting service, we understand our clients' project needs and provide the right strategy and tech stack, including Vue.js, for their projects. Here, we help them to make the right decisions to deliver future-ready Vue.js solutions to the market that align with business goals.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: VueJs2,
+      imgSrc: "",
       title: "Vue.js Custom  Development Services ",
       description:
         "We provide end-to-end custom Vue.js development services. In which our professional Vue.js coders build secure and high-performance top-notch solutions for the clients that meet all the modern business demands. At Moonstack, we deliver a seamless and interactive user interface with component-based architecture. Along with this, we also hold expertise in SPA and API integration services that make our solution future-ready and scalable.  ",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: VueJs3,
+      imgSrc: "",
       title: "Vue.js Designing Services  ",
       description:
         "We create interactive and engaging Vue.js designs for our clients that are highly intuitive, responsive, and visually appealing. Our Vue.js designers focus on connecting with the targeted users as well as delivering seamless user navigation that is based on easy to use interface. At Moonstack, we opt for modern design principles and align the design with the brand identity. ",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: VueJs4,
+      imgSrc: "",
       title: "Vue.js Third-Party API Integration Services ",
       description:
         "With Moonstack, extend your third-party-based functionalities easily. Our API integration services are designed in such a way that the process supports seamless connectivity between Vue.js and third-party platforms, tools, and backend systems. Our Moonstack Vue.js coders have hands-on experience with RESTful APIs, payment gateways, and CRM systems. Our main aim is to allow users to have access to real-time data and leverage the benefits of modern technologies with less development time and effort.",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: VueJs5,
+      imgSrc: "",
       title: " Vue.js Migration Services ",
       description:
         "Transfer your data from one platform to another with our Vue.js migration services. Our Vue.js coders modernize legacy apps that lead to improved performance and scalability. At Moonstack, we focus on code refactoring and architecture optimisation that helps to minimize downtime and reduce different technical risks. With our Vue.js migration and maintenance services, we upgrade our clients' outdated systems with modern functionlites allow them to leverage the benefits of updated versions. ",
     },
     {
-      imgSrc: brandingIcon.src,
+      Icon: VueJs6,
+      imgSrc: "",
       title: "Vue.js Support and Maintenance Services ",
       description:
         "Get full support for Vue.js web applications that ensure your web apps remain fully secure, updated, and provide high performance across devices. We offer Vue.js full support and maintenance services, in which developers identify the bugs and instantly resolve them at the same time. Our Vue.js development team provides 24*7 support to the team, in which we constantly monitor your solutions, identify and resolve bugs in real time, and enhance features that ensure smooth performance and keep your solution updated as per the market standards. ",
@@ -262,24 +274,7 @@ export const vueJs: PageData = {
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
+
   qualitySectionData: {
     heading: [
       {
@@ -300,44 +295,50 @@ export const vueJs: PageData = {
     columsClass: "lg:grid-cols-3",
     list: [
       {
+        Icon: VueJs7,
         id: 1,
         title: "Custom Vue.js Development ",
-        icon: collaboration.src,
+        icon: "",
         description:
           "We develop custom Vue.js solutions as per the enterprise's needs. Our Vue.js developers are highly proficient and deliver next-generation solutions in the market. At Moonstack, we have hands-on expertise in developing solutions from scratch. In this custom Vue.js development, we identify all your project needs and build web apps that fulfill the tech gap. ",
       },
       {
+        Icon: VueJs8,
         id: 2,
         title: "Hire Vue.js Developers ",
-        icon: collaboration.src,
+        icon: "",
         description:
           "You can hire Vue.js developers for your project from us. We offer you an opportunity to hire Vue.js programmers from Moonstack on an hourly, part-time, and full-time basis as per your project needs. Our hiring module is designed in such a way that clients get overall control of the resources, track their daily report, and assign workflow to them.",
       },
       {
+        Icon: VueJs9,
         id: 3,
         title: "Transparent Communication ",
-        icon: collaboration.src,
+        icon: "",
         description:
           "We understand the project needs and opt for transparent communication in which we discuss ideas and share opinions openly. Communication is an important factor in businesses; it is important to open communication and we don’t hide anything from our clients. At Moonstack, we provide constant updates, regular feedback, and Vue.js project managers are available full-time to support clients. ",
       },
       {
+        Icon: VueJs10,
         id: 4,
         title: "Timely Project Delivery ",
-        icon: collaboration.src,
+        icon: "",
         description:
           "Time is an important factor in every project. Our focus is to deliver all our project requirements on time. We never miss a deadline or commit any false deadlines. At Moonstack, we plan our project delivery in such a way that we deliver the project on time or before. Our clients will never have to ask for the project's status or wait for the final delivery. We believe in saving time and working strategically. ",
       },
       {
+        Icon: VueJs11,
         id: 5,
         title: "Vue.js  Dedicated Support and Maintenance ",
-        icon: collaboration.src,
+        icon: "",
         description:
           "We provide full support and maintenance services to our clients. We don’t believe in launching the solutions in the market, but successful Vue.js solutions are our main goal. In Vue.js support and maintenance services, we allow our clients to detect bugs at an initial stage and resolve them instantly. Along with this, we also maintain your Vue.js solutions, in which we upgrade your solutions with advanced functionalities constantly. ",
       },
       {
+        Icon: VueJs12,
         id: 6,
         title: " Vue.js Experienced Developers ",
-        icon: collaboration.src,
+        icon: "",
         description:
           "Moonstack has a blend of affordable Vue.js team members who are professional and experienced and have delivered a wide range of solutions in the market. We have hands-on experience with different customised development projects that meet the latest modern development needs. Our Vue.js professionals are highly experienced and provide you right strategic guidance and avoid future failure challenges. We ensure to integrate the latest functionalities that align with your business needs. ",
       },
@@ -367,36 +368,15 @@ export const vueJs: PageData = {
   ],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
-
-    buttonText: "Connect with us",
+    headingText: [],
+    subHeadingText: [],
+    image: "",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",

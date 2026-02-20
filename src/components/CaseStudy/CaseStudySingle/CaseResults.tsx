@@ -59,9 +59,10 @@ export default function CaseResults({ results }: any) {
                     </div>
                   </div>
 
-                  <p className="mt-[24px] !font-[500] text-[#0006]">
-                    {item.description}
-                  </p>
+                  <p
+                    className="mt-[24px] !font-[500] text-[#0006]"
+                    dangerouslySetInnerHTML={{ __html: item.description }}
+                  />
                 </div>
               ))}
             </div>
