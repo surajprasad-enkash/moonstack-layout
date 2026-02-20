@@ -2,55 +2,10 @@
 
 | Image Name | Path |
 | --- | --- |
-| backgroundImg.webp | src\assets\about-us\backgroundImg.webp |
-| globalRemote.svg | src\assets\about-us\ImpactStatsSection\globalRemote.svg |
-| project-card-bg.png | src\assets\about-us\ImpactStatsSection\project-card-bg.png |
-| moonstack-team.webp | src\assets\about-us\moonstack-team.webp |
-| team-bg.svg | src\assets\about-us\team-bg.svg |
-| teams.jpg | src\assets\about-us\teams.jpg |
-| valueBg.svg | src\assets\about-us\valueBg.svg |
-| acc-close.svg | src\assets\acc-close.svg |
-| acc-open.svg | src\assets\acc-open.svg |
-| ai-Image.webp | src\assets\ai-Image.webp |
-| app-development-hero.webp | src\assets\app-development-hero.webp |
-| android-bg-banner.webp | src\assets\app-development-images\android-bg-banner.webp |
-| AndroidApplications1.svg | src\assets\app-development-images\AndroidApplications1.svg |
-| AndroidAppMaintenanceSupport.svg | src\assets\app-development-images\AndroidAppMaintenanceSupport.svg |
-| api-icon.svg | src\assets\app-development-images\api-icon.svg |
-| APIIntegrations.svg | src\assets\app-development-images\APIIntegrations.svg |
-| app-store.svg | src\assets\app-development-images\app-store.svg |
-| appImportanceImg.webp | src\assets\app-development-images\appImportanceImg.webp |
-| apple-icon.svg | src\assets\app-development-images\apple-icon.svg |
-| application-dev-bg.webp | src\assets\app-development-images\application-dev-bg.webp |
-| banner-under-cases-bg-1440.svg | src\assets\app-development-images\banner-under-cases-bg-1440.svg |
-| be_reviews-bg-1440.svg | src\assets\app-development-images\be_reviews-bg-1440.svg |
-| bodySectionBg.webp | src\assets\app-development-images\bodySectionBg.webp |
-| bodySectionsServicesBg.webp | src\assets\app-development-images\bodySectionsServicesBg.webp |
-| brandingIcon.webp | src\assets\app-development-images\brandingIcon.webp |
-| code-icon.svg | src\assets\app-development-images\code-icon.svg |
-| CodeTestingDebugging&Troubleshooting.svg | src\assets\app-development-images\CodeTestingDebugging&Troubleshooting.svg |
-| CrossPlatformDevelopment.svg | src\assets\app-development-images\CrossPlatformDevelopment.svg |
-| debbuging-icon.svg | src\assets\app-development-images\debbuging-icon.svg |
-| development-icon.svg | src\assets\app-development-images\development-icon.svg |
-| guarante.webp | src\assets\app-development-images\guarante.webp |
-| hiring.webp | src\assets\app-development-images\hiring.webp |
-| infinityLogo.svg | src\assets\app-development-images\infinityLogo.svg |
-| integration-icon.svg | src\assets\app-development-images\integration-icon.svg |
-| ios-tab-img-six.webp | src\assets\app-development-images\ios-tab-img-six.webp |
-| main-icon-five.svg | src\assets\app-development-images\main-icon-five.svg |
-| main-icon-four.svg | src\assets\app-development-images\main-icon-four.svg |
-| main-icon-one.svg | src\assets\app-development-images\main-icon-one.svg |
-| main-icon-six.svg | src\assets\app-development-images\main-icon-six.svg |
-| main-icon-three.svg | src\assets\app-development-images\main-icon-three.svg |
-| main-icon-two.svg | src\assets\app-development-images\main-icon-two.svg |
-| managment-icon-five.svg | src\assets\app-development-images\managment-icon-five.svg |
-| managment-icon-four.svg | src\assets\app-development-images\managment-icon-four.svg |
-| managment-icon-one.svg | src\assets\app-development-images\managment-icon-one.svg |
-| managment-icon-six.svg | src\assets\app-development-images\managment-icon-six.svg |
-| managment-icon-three.svg | src\assets\app-development-images\managment-icon-three.svg |
-| managment-icon-two.svg | src\assets\app-development-images\managment-icon-two.svg |
-| memberImg1.png | src\assets\app-development-images\memberImg1.png |
-| memberImg2.png | src\assets\app-development-images\memberImg2.png |
+
+
+
+
 | memberImg3.png | src\assets\app-development-images\memberImg3.png |
 | mobile-icon.svg | src\assets\app-development-images\mobile-icon.svg |
 | native-icon-five.svg | src\assets\app-development-images\native-icon-five.svg |
