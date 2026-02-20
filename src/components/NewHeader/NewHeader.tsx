@@ -28,7 +28,7 @@ export default function NewHeader() {
   const isActive = (path: string) => pathname === path
 
   const {
-    "Frontend Development": frontend,
+    "Website Development": website,
     "Backend Development": backend,
     "Application Development": application,
     "Other Services": otherServices,
@@ -109,14 +109,15 @@ export default function NewHeader() {
                     {/* TOP SECTION */}
                     <div className="no-scrollbar h-[83vh] max-h-[max-content] w-[100vw] max-w-[1440px] overflow-auto rounded-[24px] rounded-tl-none bg-white p-8 pt-[px]">
                       <div className="grid grid-cols-[2fr_1fr_1fr] gap-x-8">
-                        {/* FRONTEND (2 columns) */}
+                        {/* website (2 columns) */}
                         <div>
-                          <h4 className="mb-6 !text-[14px] !font-bold uppercase">
-                            Frontend Development
-                          </h4>
-
+                          <Link href="/services/website-development-company">
+                            <h4 className="hover:text-primary mb-6 !text-[14px] !font-bold uppercase">
+                              Website Development
+                            </h4>
+                          </Link>
                           <ul className="grid grid-cols-2 gap-x-8">
-                            {frontend.map((item, i) => (
+                            {website.map((item, i) => (
                               <li key={i} className="submenuList h-[75px]">
                                 <Link
                                   href={item.url}
@@ -140,44 +141,12 @@ export default function NewHeader() {
                             ))}
                           </ul>
                         </div>
-
-                        {/* BACKEND (1 column) */}
                         <div>
-                          <h4 className="mb-6 !text-[14px] !font-bold uppercase">
-                            Backend Development
-                          </h4>
-
-                          <ul className="gap-x-10 gap-y-2">
-                            {backend.map((item, i) => (
-                              <li key={i} className="submenuList h-[75px]">
-                                <Link
-                                  href={item.url}
-                                  className="submenuLink group flex w-full gap-3"
-                                >
-                                  <item.Icon />
-
-                                  <div className="w-full">
-                                    <p className="flex w-full items-center !text-[14px] !font-semibold uppercase">
-                                      {item.title}
-
-                                      <IoIosArrowRoundForward className="ml-auto h-[24px] w-[24px] opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
-                                    </p>
-
-                                    <p className="mt-1 !text-[12px] leading-[1.5] text-gray-600">
-                                      {item.subtitle}
-                                    </p>
-                                  </div>
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-
-                        {/* APPLICATION (1 column) */}
-                        <div>
-                          <h4 className="mb-6 !text-[14px] !font-bold uppercase">
-                            Application Development
-                          </h4>
+                          <Link href="/services/android-app-development-company">
+                            <h4 className="hover:text-primary mb-6 !text-[14px] !font-bold uppercase">
+                              Application Development
+                            </h4>
+                          </Link>
 
                           <ul className="gap-x-10 gap-y-2">
                             {application.map((item, i) => (
@@ -204,6 +173,39 @@ export default function NewHeader() {
                             ))}
                           </ul>
                         </div>
+                        {/* BACKEND (1 column) */}
+                        <div>
+                          <h4 className="mb-6 !text-[14px] !font-bold uppercase">
+                            More Services
+                          </h4>
+
+                          <ul className="gap-x-10 gap-y-2">
+                            {otherServices.map((item, i) => (
+                              <li key={i} className="submenuList h-[75px]">
+                                <Link
+                                  href={item.url}
+                                  className="submenuLink group flex w-full gap-3"
+                                >
+                                  <item.Icon />
+
+                                  <div className="w-full">
+                                    <p className="flex w-full items-center !text-[14px] !font-semibold uppercase">
+                                      {item.title}
+
+                                      <IoIosArrowRoundForward className="ml-auto h-[24px] w-[24px] opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
+                                    </p>
+
+                                    <p className="mt-1 !text-[12px] leading-[1.5] text-gray-600">
+                                      {item.subtitle}
+                                    </p>
+                                  </div>
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        {/* APPLICATION (1 column) */}
                       </div>
 
                       {/* DIVIDER */}
@@ -212,11 +214,11 @@ export default function NewHeader() {
                       {/* BOTTOM : OTHER SERVICES */}
                       <div className="rounded-xl bg-[#00CF4912] p-5">
                         <h4 className="mb-2 !text-[14px] !font-bold uppercase">
-                          More Services
+                          Backend Development
                         </h4>
 
                         <div className="flex flex-wrap justify-between">
-                          {otherServices.map((item, i) => (
+                          {backend.map((item, i) => (
                             <div
                               key={i}
                               className="submenuList h-[75px] lg:w-[25%]"
@@ -360,6 +362,7 @@ export default function NewHeader() {
                     <Link
                       href={"/services"}
                       className="flex w-full items-center justify-between py-2"
+                      onClick={() => toggleMobileCategory("services")}
                     >
                       <span>Services</span>
                       <IoIosArrowDown

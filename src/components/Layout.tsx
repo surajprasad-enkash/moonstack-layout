@@ -2,6 +2,7 @@ import React from "react"
 import Footer from "./Footer"
 import BodyClass from "./BodyClass/BodyClass" // Ensure this path is correct
 import NewHeader from "@/components/NewHeader/NewHeader"
+import SheduleAMeeting from "./SheduleAMeeting"
 
 interface IHeaderRefs {
   home: React.RefObject<HTMLDivElement>
@@ -33,6 +34,7 @@ const Layout: React.FC<{
     <>
       <BodyClass />
       <NewHeader />
+      <SheduleAMeeting />
       <main
         className="relative bg-black bg-cover"
         // style={{ backgroundImage: `url(${bgImage.src})` }}
