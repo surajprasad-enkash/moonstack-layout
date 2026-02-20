@@ -16,24 +16,11 @@ export default function CalBookingButton() {
 
   return (
     <>
-      {/* Hidden embed */}
       <Cal
         calLink="nidhimoonstack"
         style={{ width: "0px", height: "0px", overflow: "hidden" }}
       />
 
-      {/* Button */}
-      {/* <button
-        onClick={async () => {
-          const cal = await getCalApi()
-          cal("modal", {
-            calLink: "nidhimoonstack",
-          })
-        }}
-        className="rounded-lg bg-black px-6 py-3 text-white"
-      >
-        Schedule Meeting
-      </button> */}
       <CustomButton
         text="Book a Call"
         onClick={async () => {
