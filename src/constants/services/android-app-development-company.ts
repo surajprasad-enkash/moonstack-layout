@@ -3,12 +3,14 @@ import { PageData } from "@/types/web-development-data-type"
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/android.webp"
 import bndimage1 from "@/assets/industries/icon/appdevelopmentimg.webp"
-import intuitiveIcon from "@/assets/app-development-images/AndroidApplications1.svg"
-import engagingIcon from "@/assets/app-development-images/APIIntegrations.svg"
-import brandingIcon from "@/assets/app-development-images/CrossPlatformDevelopment.svg"
-import brandingIcon4 from "@/assets/app-development-images/CodeTestingDebugging&Troubleshooting.svg"
-import brandingIcon5 from "@/assets/app-development-images/PlayStoreDeployment.svg"
-import brandingIcon6 from "@/assets/app-development-images/AndroidAppMaintenanceSupport.svg"
+
+// Svg Icons components
+import AndroidAppDev1 from "@/components/ServicesSvg/AndroidAppDevelopment/AndroidAppDev1"
+import AndroidAppDev2 from "@/components/ServicesSvg/AndroidAppDevelopment/AndroidAppDev2"
+import AndroidAppDev3 from "@/components/ServicesSvg/AndroidAppDevelopment/AndroidAppDev3"
+import AndroidAppDev4 from "@/components/ServicesSvg/AndroidAppDevelopment/AndroidAppDev4"
+import AndroidAppDev5 from "@/components/ServicesSvg/AndroidAppDevelopment/AndroidAppDev5"
+import AndroidAppDev6 from "@/components/ServicesSvg/AndroidAppDevelopment/AndroidAppDev6"
 
 export const android: PageData = {
   hero: {
@@ -92,38 +94,44 @@ export const android: PageData = {
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
+      Icon: AndroidAppDev1,
+      imgSrc: "",
       title: "UI/UX Design For Android Applications",
       description:
         "Moonstack works with the best Android app developers in India to create consistent, clean, and intuitive UI designs for any app we build. We work with the top designers to create a front-end design that’s visually appealing and integrates the client’s brand image, creating a truly custom Android application for our clients. This level of attention to detail allows us to rank as the top Android UI/UX designing service in India.",
     },
     {
-      imgSrc: engagingIcon.src,
+      Icon: AndroidAppDev2,
+      imgSrc: "",
       title: "Backend Development & API Integrations",
       description:
         "The functionality and security of apps developed by Moonstack are unparalleled due to two factors. We build a robust backend framework for all applications we develop from scratch. And to help our apps function optimally, sync data automatically, and improve the app’s responsiveness and functionality across devices, we use trusted third-party APIs. These practices power us as the top Android app development firm in India.",
     },
 
     {
-      imgSrc: brandingIcon.src,
+      Icon: AndroidAppDev3,
+      imgSrc: "",
       title: "Cross-Platform Development & Clean Code Embedding",
       description:
         "As a part of our Android app development for startups in India, our team offers proficient cross-platform app development services. Our cross-platform development services are powered by Flutter, Dart, and Native React, which allows us to build Android apps that are compatible across devices and platforms using a single codebase. What sets our services apart is the use of clean code in our development process.",
     },
     {
-      imgSrc: brandingIcon4.src,
+      Icon: AndroidAppDev4,
+      imgSrc: "",
       title: "Code Testing, Debugging, & Troubleshooting",
       description:
         "Moonstack offers one of the most comprehensive Android app testing services in India. This is one of the areas where we leave no stone unturned to ensure that your app is adequately prepared for its launch with no glitches or bugs that hamper the functionality of your app. Our testing services are reliable as every app we develop goes through a rigorous three-step, functional, performance, and device testing process before launch.",
     },
     {
-      imgSrc: brandingIcon5.src,
+      Icon: AndroidAppDev5,
+      imgSrc: "",
       title: "Play Store Deployment",
       description:
         "Once the Android applications are ready, we help our clients deploy the apps to the Play Store and even optimize their listing for easy access by users. All of this comes standard as a part of our premier and affordable Android app development service in India. ",
     },
     {
-      imgSrc: brandingIcon6.src,
+      Icon: AndroidAppDev6,
+      imgSrc: "",
       title: "Android App Maintenance & Support",
       description:
         "As a top Android software development company in India, our work doesn’t end with Play Store deployment. We also offer detailed services for Android app support and maintenance in India. This includes optimising the apps for post-launch performance, checking performance analytics, and offering periodic app maintenance for Android compatibility and app security. We also offer Android app migration services in India as a part of our extended app maintenance and support services.",
