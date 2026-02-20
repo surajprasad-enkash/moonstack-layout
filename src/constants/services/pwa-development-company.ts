@@ -2,7 +2,7 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/pwa.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
+import bndimage1 from "@/assets/services/pwa/pwa.webp"
 
 import PwaIcon1 from "@/components/ServicesSvg/Pwa/PwaIcon1"
 import PwaIcon2 from "@/components/ServicesSvg/Pwa/PwaIcon2"
@@ -45,7 +45,7 @@ export const pwa: PageData = {
     ],
   },
   seo: {
-    title: "Progressive Web App (PWA) Development in India & USA | Moonstack",
+    title: "Progressive Web App (PWA) Development in India & USA ",
     description:
       "Build fast, installable PWAs that work offline, feel native, and boost conversions across devices with our expert PWA development team. Request a PWA strategy session.",
     keywords:

@@ -2,7 +2,7 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/e-commerce.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
+import bndimage1 from "@/assets/services/eComm/eComm.webp"
 
 // Svg Icons Components
 import EcommerceIcon1 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon1"
@@ -57,7 +57,7 @@ export const ecommerce: PageData = {
     ],
   },
   seo: {
-    title: "Ecommerce Website Development Company India & USA | Moonstack",
+    title: "Ecommerce Website Development Company India & USA ",
     description:
       "Need an ecommerce site that increase sells? We designs and develops conversion‑focused online stores with secure payments and mobile‑first UX. Get Quote Now!",
     keywords:

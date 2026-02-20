@@ -45,7 +45,7 @@ export const android: PageData = {
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA | Moonstack",
+    title: "Android App Development Company India & USA ",
     description:
       "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
     keywords:

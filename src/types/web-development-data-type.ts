@@ -23,6 +23,7 @@ export interface leftCardData {
   icon?: string
   image?: string
   bolds: boolean
+  maxHeight?: string
 }
 
 /* ================= Impact Section ================= */

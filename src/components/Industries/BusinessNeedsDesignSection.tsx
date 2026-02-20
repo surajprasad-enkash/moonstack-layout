@@ -12,6 +12,7 @@ interface InfoCard {
   description2?: string
   icon?: string
   image?: string
+  maxHeight?: string
 }
 
 interface BusinessNeedsDesignSectionProps {
@@ -103,7 +104,9 @@ export default function BusinessNeedsDesignSection({
                         alt={card.title || "card Image"}
                         width={700}
                         height={500}
-                        className="h-auto w-full rounded-[20px] object-contain"
+                        className={`h-auto w-full rounded-[20px] object-cover ${
+                          card.maxHeight ?? "max-h-[500px]"
+                        }`}
                       />
                     </div>
                   )}

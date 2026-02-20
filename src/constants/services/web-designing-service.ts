@@ -2,7 +2,7 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/webDesining.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
+import bndimage1 from "@/assets/services/webDesining/webDesinning.webp"
 
 import Icon1 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon1"
 import Icon2 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon2"
@@ -52,7 +52,7 @@ export const webDesigning: PageData = {
     ],
   },
   seo: {
-    title: "Affordable Website Design Services India & USA | Moonstack",
+    title: "Affordable Website Design Services India & USA ",
     description:
       "Want a modern, conversion focused website design service on affordable price, aligns with your brand and improves engagement and leads. Explore our web design services.",
     keywords:

@@ -46,7 +46,7 @@ export const product: PageData = {
     ],
   },
   seo: {
-    title: "Digital Product Design Service India & USA | Moonstack",
+    title: "Digital Product Design Service India & USA ",
     description:
       "Validating a new digital product in India? Moonstack’s product design team runs discovery, UX research, and prototyping to de risk development and improve usability.",
     keywords:

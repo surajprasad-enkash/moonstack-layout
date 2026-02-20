@@ -4,7 +4,7 @@ import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/laravel.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
+import bndimage1 from "@/assets/services/laravel/laravel.webp"
 
 // Svg Icons Components
 import laravelIcon1 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon1"
@@ -60,7 +60,7 @@ export const laravel: PageData = {
     ],
   },
   seo: {
-    title: "Laravel Web Development Company in India & USA | Moonstack",
+    title: "Laravel Web Development Company in India & USA ",
     description:
       "Build secure, scalable Laravel websites and web apps with experienced developers, clean code, and long-term maintainability. Share your Laravel requirements with us today.",
     keywords:

@@ -2,7 +2,7 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/uiUx.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
+import bndimage1 from "@/assets/services/uiUx/uiUx.webp"
 import Icon1 from "@/components/ServicesSvg/UiUxDesigning/UiUxDesigning1"
 import Icon2 from "@/components/ServicesSvg/UiUxDesigning/UiUxDesigning2"
 import Icon3 from "@/components/ServicesSvg/UiUxDesigning/UiUxDesigning3"
@@ -45,7 +45,7 @@ export const ui_ux: PageData = {
     ],
   },
   seo: {
-    title: "UI/UX Design Services India USA | Web & Mobile | Moonstack",
+    title: "UI/UX Design Services India USA | Web & Mobile ",
     description:
       "Need UI/UX designers in India for your web or mobile app? Moonstack delivers user centric interfaces, design systems, and tested flows that boost engagement.",
     keywords:

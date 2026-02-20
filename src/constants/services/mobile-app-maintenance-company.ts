@@ -2,7 +2,7 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/mobile-main.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
+import bndimage1 from "@/assets/services/mobileMaintenance/mobileMaintance.webp"
 
 // svg icons components
 import MamIcon1 from "@/components/ServicesSvg/MamIcon/MamIcon1"
@@ -51,7 +51,7 @@ export const app_maintenance: PageData = {
     ],
   },
   seo: {
-    title: "Mobile App Maintenance & Support in India & USA | Moonstack",
+    title: "Mobile App Maintenance & Support in India & USA ",
     description:
       "Want mobile app maintenance Service? We provide ongoing updates, crash fixes, performance tuning, and OS compatibility support for your Android and iOS apps.",
     keywords:

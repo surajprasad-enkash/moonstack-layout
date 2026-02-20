@@ -2,7 +2,7 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
+import bndimage1 from "@/assets/services/ai/aiImage.webp"
 
 import AiIcon1 from "@/components/ServicesSvg/AiIcon/AiIcon1"
 import AiIcon2 from "@/components/ServicesSvg/AiIcon/AiIcon2"
@@ -81,6 +81,7 @@ export const ai: PageData = {
       // description2:
       //   "So, looking to make your business future-ready and get a competitive edge? It's time to think the AI way. We are a leading custom AI development company in India, helping businesses of all sizes build custom AI solutions aligned to their needs. Whether you are looking to build an AI assistant, AI agent, or AI app, we can get you cutting-edge solutions to turn your business into an AI-powered success story.",
       image: bndimage1.src,
+      maxHeight: "448px",
     },
   ],
   solutions: {

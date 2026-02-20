@@ -5,7 +5,7 @@ import nativeBannerImg from "@/assets/meeting-banner-images/react-native.webp"
 import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
+import bndimage1 from "@/assets/services/reactNative/reactNative.webp"
 import RnaIcon1 from "@/components/ServicesSvg/ReactNativeApp/Rnacon1"
 import RnaIcon2 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon2"
 import RnaIcon3 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon3"
@@ -13,6 +13,7 @@ import RnaIcon4 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon4"
 import RnaIcon5 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon5"
 import RnaIcon6 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon6"
 import bccKristenCheng6 from "@/assets/clientsImages/manshi.jpg"
+
 export const react_native: PageData = {
   hero: {
     title: [
@@ -52,7 +53,7 @@ export const react_native: PageData = {
     ],
   },
   seo: {
-    title: "React Native App Development Company in India & USA | Moonstack",
+    title: "React Native App Development Company in India & USA ",
     description:
       "Want a cross‑platform app built with React Native? Moonstack helps Companies in India & USA ship fast, stable React Native apps for Android and iOS from a single codebase.",
     keywords:

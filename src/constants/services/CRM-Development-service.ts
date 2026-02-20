@@ -2,7 +2,7 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
+import bndimage1 from "@/assets/services/crm/crm.webp"
 
 // SVG Icons Components
 import Icon1 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon1"
@@ -57,7 +57,7 @@ export const crm: PageData = {
     ],
   },
   seo: {
-    title: "Custom CRM Development Company India & USA | Moonstack",
+    title: "Custom CRM Development Company India & USA ",
     description:
       "Need a custom CRM For your business in India? Moonstack designs and develops CRM systems that match your workflows and integrate with your existing tools.",
     keywords:

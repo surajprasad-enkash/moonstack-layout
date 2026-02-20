@@ -4,7 +4,7 @@ import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/ios.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
+import bndimage1 from "@/assets/services/ios/ios.webp"
 
 // Svg Icons Components
 import IosIcon1 from "@/components/ServicesSvg/IosIcons/IosIcon1"
@@ -54,7 +54,7 @@ export const ios: PageData = {
     ],
   },
   seo: {
-    title: "IOS App Development Company in India & USA | Moonstack",
+    title: "IOS App Development Company in India & USA ",
     description:
       "Searching for expert IOS app developers in India? Moonstack designs and builds iPhone and iPad apps with pixel‑perfect UI and App Store–ready performance. Call Now!",
     keywords:
