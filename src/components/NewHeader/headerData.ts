@@ -17,15 +17,12 @@ import About from "@/components/ServicesSvg/HeaderSvgIconsData/AboutUsIcon"
 import Blog from "@/components/ServicesSvg/HeaderSvgIconsData/BlogIcon"
 import CaseStudy from "@/components/ServicesSvg/HeaderSvgIconsData/CaseStudyIcon"
 import Vue from "@/components/ServicesSvg/HeaderSvgIconsData/VueJsIcon"
+import WordPress from "@/components/ServicesSvg/HeaderSvgIconsData/WordpressIcon"
+import CRM from "@/components/ServicesSvg/HeaderSvgIconsData/CrmIcon"
+import ITSupport from "@/components/ServicesSvg/HeaderSvgIconsData/ItSupoort"
 
 export const megaMenuData = {
-  "Frontend Development": [
-    {
-      title: "Website Development",
-      Icon: Uiux,
-      url: "/services/website-development-company",
-      subtitle: "Get High-Performance Websites",
-    },
+  "Website Development": [
     {
       title: "ReactJS",
       Icon: React,
@@ -58,6 +55,19 @@ export const megaMenuData = {
       Icon: Vue,
       url: "/services/vuejs-development-company",
       subtitle: "Get Lightweight frontends",
+    },
+
+    {
+      title: "Wordpress",
+      Icon: WordPress,
+      url: "/services/wordpress-website-development-company",
+      subtitle: "Flexible, SEO-friendly WordPress solutions",
+    },
+    {
+      title: "CRM",
+      Icon: CRM,
+      url: "/services/crm-development-company",
+      subtitle: "Smart CRM systems for all operations",
     },
 
     // {
@@ -122,12 +132,6 @@ export const megaMenuData = {
 
   "Application Development": [
     {
-      title: "Android App Development",
-      subtitle: "Apps Designed For Growth",
-      Icon: Android,
-      url: "/services/android-app-development-company",
-    },
-    {
       title: "iOS App Development",
       subtitle: "Get iOS Apps For Better Experiences",
       Icon: Ios,
@@ -177,6 +181,12 @@ export const megaMenuData = {
       subtitle: "AWS, Azure, Server Security, Scalable Infrastructure",
       Icon: Cloud,
       url: "/services/cloud-company",
+    },
+    {
+      title: "IT Support",
+      subtitle: "Keep your business running securely",
+      Icon: ITSupport,
+      url: "/services/it-support-company",
     },
   ],
 }

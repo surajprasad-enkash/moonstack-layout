@@ -39,7 +39,7 @@ export default function ServicesSection({
   showLabel = true,
   columns = [
     {
-      title: "Frontend Development",
+      title: "Website Development",
       items: [
         {
           label: "ReactJS",
@@ -62,51 +62,28 @@ export default function ServicesSection({
           href: "/services/vuejs-development-company",
         },
         {
-          label: "JavaScript",
-          href: "/",
+          label: "WordPress",
+          href: "/services/wordpress-website-development-company",
         },
         {
-          label: "PHP",
-          href: "/",
+          label: "CRM",
+          href: "/services/crm-development-company",
+        },
+
+        {
+          label: "Shopify",
+          href: "/services/shopify-website-development-company",
         },
       ],
     },
-    {
-      title: "Backend Development",
-      items: [
-        {
-          label: ".NET",
-          href: "/",
-        },
-        {
-          label: "NodeJS",
-          href: "/",
-        },
-        {
-          label: "Laravel",
-          href: "/services/laravel-website-development-company",
-        },
-        {
-          label: "Python",
-          href: "/services/python-development-company",
-        },
-        {
-          label: "Codeigniter",
-          href: "/",
-        },
-        {
-          label: "Java",
-          href: "/",
-        },
-        {
-          label: "Cakephp",
-          href: "/",
-        },
-      ],
-    },
+
     {
       title: "Application Development",
       items: [
+        {
+          label: "Mobile App Development",
+          href: "/services/mobile-app-development-company",
+        },
         {
           label: "Android App Development",
           href: "/services/android-app-development-company",
@@ -127,13 +104,48 @@ export default function ServicesSection({
           label: "PWA Development",
           href: "/services/pwa-development-company",
         },
+      ],
+    },
+    {
+      title: "Other Services",
+      items: [
         {
-          label: "Flutter Development",
-          href: "/",
+          label: "Python",
+          href: "/services/python-development-company",
+        },
+
+        {
+          label: "Search Engine Optimization",
+
+          href: "/services/search-engine-optimization-company",
         },
         {
-          label: "Mobile App Testing ",
-          href: "/",
+          label: "UI/UX",
+
+          href: "/services/ui-ux-designing-company",
+        },
+        {
+          label: "Product",
+
+          href: "/services/product-designing-company",
+        },
+        {
+          label: "Cloud",
+
+          href: "/services/cloud-company",
+        },
+        {
+          label: "IT Support",
+
+          href: "/services/it-support-company",
+        },
+        {
+          label: "Full Stack",
+          href: "/services/full-stack-website-development-company",
+        },
+        {
+          label: "Laravel",
+          href: "/services/laravel-website-development-company",
         },
       ],
     },
