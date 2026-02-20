@@ -66,9 +66,10 @@ export default function ProcessSection({
               </div>
 
               {/* Title */}
-              <h3 className="mb-[16px] !text-[26px] font-[500]">
-                {item.title}
-              </h3>
+              <h3
+                className="mb-[16px] !text-[26px] font-[500]"
+                dangerouslySetInnerHTML={{ __html: item.title }}
+              />
 
               {/* Divider */}
               <div className="mb-[16px] h-[1px] w-full bg-[#0000001f]" />
@@ -84,9 +85,8 @@ export default function ProcessSection({
                   <li
                     key={i}
                     className="border-b border-white/60 px-[24px] py-[18px] text-[16px] last:border-b-0"
-                  >
-                    {point}
-                  </li>
+                    dangerouslySetInnerHTML={{ __html: point }}
+                  />
                 ))}
               </ul>
             </div>

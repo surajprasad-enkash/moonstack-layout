@@ -176,7 +176,7 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
                     backgroundImage: `url(${card.globalRemote}),linear-gradient(104deg, #2c4533 2%, #1c1c1c 32%)`,
                     backgroundPosition: "bottom right",
                     backgroundRepeat: "no-repeat",
-                    backgroundSize: "contain",
+                    backgroundSize: "cover",
                   }}
                 >
                   <p className="!text-[32px] !font-[500]">{card.label}</p>

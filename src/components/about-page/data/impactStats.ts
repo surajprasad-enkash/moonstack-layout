@@ -9,7 +9,7 @@ import paradigm from "@/assets/newHomePage/ImpactStatsSection/paradigm.png"
 import players from "@/assets/newHomePage/ImpactStatsSection/players.png"
 import voxe from "@/assets/newHomePage/ImpactStatsSection/voxe.png"
 import teamMember from "@/assets/newHomePage/ImpactStatsSection/teamMember.webp"
-import globalRemote from "@/assets/newHomePage/ImpactStatsSection/icon/globalRemote.svg"
+import globalRemote from "@/assets/newHomePage/ImpactStatsSection/icon/globalRemote2.svg"
 export const impactStatsData = {
   heading: {
     prefix: "Today, ",

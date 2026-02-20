@@ -38,6 +38,7 @@ export interface ImpactCardProps {
   label?: string
   description?: string
   variant?: "dark" | "light" | "accent"
+  link?: string
 }
 
 export interface ImpactSectionProps {

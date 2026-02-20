@@ -15,11 +15,15 @@ export default function CaseOverview({ data }: any) {
                   className="left_section_info_list flex-1 p-[40px] font-[300]"
                 >
                   <p className="mb-[12px] block text-[#000] uppercase">
-                    <strong className="text-[12px]">{item.label}</strong>
+                    <strong
+                      className="text-[12px]"
+                      dangerouslySetInnerHTML={{ __html: item.label }}
+                    />
                   </p>
-                  <span className="block text-[32px] font-[500] text-wrap md:whitespace-nowrap">
-                    {item.content}
-                  </span>
+                  <span
+                    className="block text-[32px] font-[500] whitespace-nowrap"
+                    dangerouslySetInnerHTML={{ __html: item.content }}
+                  />
                 </div>
               ))}
             </div>
@@ -32,9 +36,10 @@ export default function CaseOverview({ data }: any) {
             </div>
             <div className="rightSection md:w-[66%]">
               <div>
-                <div className="text-[40px] leading-[120%] font-[400]">
-                  {data.acf.aboutProject}
-                </div>
+                <div
+                  className="text-[40px] leading-[120%] font-[400]"
+                  dangerouslySetInnerHTML={{ __html: data.acf.aboutProject }}
+                />
               </div>
             </div>
           </div>
@@ -79,9 +84,12 @@ export default function CaseOverview({ data }: any) {
                 <p className="!text-[26px] !font-[500]">Problem</p>
               </div>
               <div className="max-w-[448px]">
-                <div className="!text-[20px] !font-[500]">
-                  {data.acf.challenges.description}
-                </div>
+                <div
+                  className="!text-[20px] !font-[500]"
+                  dangerouslySetInnerHTML={{
+                    __html: data.acf.challenges.description,
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -91,9 +99,12 @@ export default function CaseOverview({ data }: any) {
                 <p className="!text-[26px] !font-[500]">Solution</p>
               </div>
               <div className="max-w-[448px]">
-                <div className="!text-[20px] !font-[500]">
-                  {data.acf.solution.description}
-                </div>
+                <div
+                  className="!text-[20px] !font-[500]"
+                  dangerouslySetInnerHTML={{
+                    __html: data.acf.solution.description,
+                  }}
+                />
               </div>
             </div>
           </div>

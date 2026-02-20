@@ -55,13 +55,13 @@ export default function FullStackIcon(props: React.SVGProps<SVGSVGElement>) {
         r="3.7881"
         fill="#3FE644"
         stroke="white"
-        stroke-width="0.0315352"
+        strokeWidth="0.0315352"
       />
       <path
         d="M20.8911 11.8232L21.8197 12.8557L20.7726 13.7717M19.2224 13.7942L18.1797 12.8179L19.2224 11.8753M20.1599 11.8232L19.8896 13.8657"
         stroke="white"
-        stroke-width="0.472756"
-        stroke-linecap="round"
+        strokeWidth="0.472756"
+        strokeLinecap="round"
       />
       <defs>
         <clipPath
@@ -84,8 +84,8 @@ export default function FullStackIcon(props: React.SVGProps<SVGSVGElement>) {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(1.99978 1.39164) rotate(45.2682) scale(52.0623)"
         >
-          <stop stop-color="#00620B" />
-          <stop offset="1" stop-color="#00A313" />
+          <stop stopColor="#00620B" />
+          <stop offset="1" stopColor="#00A313" />
         </radialGradient>
       </defs>
     </svg>

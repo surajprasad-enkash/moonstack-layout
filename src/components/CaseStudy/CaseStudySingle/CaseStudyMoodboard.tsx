@@ -28,9 +28,10 @@ const CaseStudyMoodboard = ({ data }: { data: MoodboardData }) => {
           />
 
           <div className="description mt-[10px] mb-[30px] md:my-[0]">
-            <p className="max-w-[390px] !font-[500] text-[#000]">
-              {data.description}
-            </p>
+            <p
+              className="max-w-[390px] !font-[500] text-[#000]"
+              dangerouslySetInnerHTML={{ __html: data.description }}
+            />
           </div>
         </div>
 

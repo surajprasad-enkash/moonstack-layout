@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import clsx from "clsx"
 import gradientBorder from "@/assets/app-development-images/gradient-middle-border.svg"
 import Heading from "@/components/Heading/Heading"
@@ -22,6 +23,7 @@ export interface ImpactCardProps {
   value?: string
   label?: string
   description?: string
+  link?: string
   variant?: "dark" | "light" | "accent"
 }
 
@@ -89,14 +91,8 @@ const ImpactSection: React.FC<ImpactSectionProps> = ({
           {cards.map((card, index) => {
             const variant = card.variant ?? "dark"
 
-            return (
-              <div
-                key={card.id ?? index}
-                className={clsx(
-                  "rounded-3xl p-8 backdrop-blur-md",
-                  cardVariants[variant]
-                )}
-              >
+            const cardContent = (
+              <>
                 {/* Logo */}
                 {card.logo && (
                   <div className="mb-[63px] h-[80px]">
@@ -141,6 +137,29 @@ const ImpactSection: React.FC<ImpactSectionProps> = ({
                     {card.description}
                   </p>
                 )}
+              </>
+            )
+
+            const containerClasses = clsx(
+              "relative rounded-3xl p-8 backdrop-blur-md",
+              cardVariants[variant]
+            )
+
+            if (card.link) {
+              return (
+                <Link
+                  key={card.id ?? index}
+                  href={card.link}
+                  className={clsx(containerClasses, "block")}
+                >
+                  {cardContent}
+                </Link>
+              )
+            }
+
+            return (
+              <div key={card.id ?? index} className={containerClasses}>
+                {cardContent}
               </div>
             )
           })}

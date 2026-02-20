@@ -241,6 +241,7 @@ export const websiteDevelopment: PageData = {
       {
         id: "Laravel Website Development Services",
         label: "Laravel Website Development Services",
+        link: "/services/laravel-website-development-company",
         description:
           "Leverage all the benefits of PHP based Laravel framework with dedicated web experts. We provide full stack Laravel development services in India that allow us to build dynamic to complex web apps with clean codes and in-built testing models as per the business requirements",
         variant: "light",
@@ -248,6 +249,7 @@ export const websiteDevelopment: PageData = {
       {
         id: "E-commerce Website Development Service",
         label: "E-commerce Website Development Service",
+        link: "/services/ecommerce-website-development-company",
         description:
           "Launch your powerful online store that allows start ups - mid sized and large enterprises to reach wider audiences and double their sales. Our top e-commerce web developers in India integrate modern functionalities such as AI driven product recommendation, and seamless payment integration, ",
         variant: "accent",
@@ -255,6 +257,7 @@ export const websiteDevelopment: PageData = {
       {
         id: "Full Stack Web Development Services",
         label: "Full Stack Web Development Services",
+        link: "/services/full-stack-website-development-company",
         description:
           "Get your end to end secure and customised website with best modern practises. Our web developers in India are proficient with both front end and back end development that deliver responsive and user friendly experiences with latest innovations.",
         variant: "dark",
@@ -262,6 +265,7 @@ export const websiteDevelopment: PageData = {
       {
         id: "WordPress Development Services",
         label: "WordPress Development Services",
+        link: "/services/wordpress-website-development-company",
         description:
           "Launch high performance secure and dynamic wordpress based websites with us. We develop corporate, e-commerce, and dynamic sites for our clients that are user and SEO  friendly and fully secure that meet all our clients needs.",
         variant: "dark",
@@ -269,6 +273,7 @@ export const websiteDevelopment: PageData = {
       {
         id: "Shopify Website Development Service",
         label: "Shopify Website Development Service",
+        link: "/services/shopify-website-development-company",
         description:
           "Build custom Shopify online stores or upgrade existing ones with inbuilt customizable themes, easy store step up, and fully optimised mobile designs that increase sales and drive growth.",
         variant: "light",
@@ -276,8 +281,41 @@ export const websiteDevelopment: PageData = {
       {
         id: "CRM Development Service",
         label: "CRM Development Service",
+        link: "/services/crm-development-company",
         description:
           "Integrate custom CRM development solutions into your enterprise that turn complex processes into easier and faster. Our custom CRM solutions are designed in such a way that all information stored at a centralized platform with limited access and automated workflow enhances overall efficiency.",
+        variant: "dark",
+      },
+      {
+        id: "ReactJS Development Services",
+        label: "ReactJS Development Services",
+        link: "/services/reactjs-development-company",
+        description:
+          "Build fast, interactive, and scalable user interfaces with ReactJS. Our React experts specialize in creating dynamic single-page applications (SPAs) that offer seamless performance and exceptional user experiences, ensuring your business stays ahead with modern, component-based architectures.",
+        variant: "accent",
+      },
+      {
+        id: "Website Designing Services",
+        label: "Website Designing Services",
+        link: "/services/web-designing-company",
+        description:
+          "Create visually striking and user-centric designs that effectively engage your audience. Our creative design team focuses on UI/UX best practices to deliver intuitive, mobile-responsive, and aesthetically pleasing digital experiences that reflect your brand identity and drive higher conversion rates.",
+        variant: "dark",
+      },
+      {
+        id: "Vue.js Development Services",
+        label: "Vue.js Development Services",
+        link: "/services/vuejs-development-company",
+        description:
+          "Get lightweight and high-performance frontends with our Vue.js development services. We specialize in building adaptable, efficient, and maintainable web interfaces. Whether for simple integrations or complex applications, our Vue.js experts deliver solutions that are easy to scale and optimized for speed.",
+        variant: "light",
+      },
+      {
+        id: "AngularJS Development Services",
+        label: "AngularJS Development Services",
+        link: "/services/angularjs-development-company",
+        description:
+          "Develop robust, structured, and enterprise-grade web solutions with our AngularJS development services. Our team leverages Angular's powerful two-way data binding and dependency injection to build dynamic, high-performing applications that are secure, testable, and capable of handling complex business logic.",
         variant: "dark",
       },
     ],
