@@ -9,6 +9,7 @@ import LottiePlayer from "../../../LottieAnimation"
 import Breadcrumb from "../../../Breadcrumb"
 import IndustryTags from "../../../Industries/IndustriesBanner"
 import HomeMarquee from "../../../Homepage/Marquee"
+import Link from "next/link"
 
 interface BreadcrumbItem {
   label: string
@@ -84,7 +85,9 @@ const AppCategoryBanner: React.FC<AppCategoryBannerProps> = ({
             />
 
             <div className="pt-6">
-              <CustomButton text={buttonText} variant="rounded16" />
+              <Link href={"/contact-us"}>
+                <CustomButton text={buttonText} variant="rounded16" />
+              </Link>
             </div>
           </div>
 

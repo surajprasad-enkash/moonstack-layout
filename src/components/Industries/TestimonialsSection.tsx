@@ -5,6 +5,7 @@ import Heading, { HeadingSegment } from "@/components/Heading/Heading"
 import { cn } from "@/lib/utils"
 import clutchReviews from "@/assets/industries/icon/clutch-reviews.svg"
 import bgImage from "@/assets/industries/icon/review-bg.svg"
+import Link from "next/link"
 
 interface Testimonial {
   quote: string
@@ -49,17 +50,18 @@ export default function TestimonialsSection({
 
           {/* CLUTCH BADGE */}
           <div className="">
-            <Image
-              src={clutchReviews}
-              alt="Clutch reviews"
-              width={200}
-              height={80}
-            />
+            <Link href="https://www.upwork.com/agencies/958032289046228992/">
+              <Image
+                src={clutchReviews}
+                alt="Clutch reviews"
+                width={200}
+                height={80}
+              />
+            </Link>
           </div>
         </div>
 
-        {/* GRID */}
-        {/* GRID */}
+       
         <div className="grid grid-cols-1 gap-[16px] md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((item, index) => (
             <div
