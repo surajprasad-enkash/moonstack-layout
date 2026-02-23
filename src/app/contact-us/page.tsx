@@ -1,16 +1,13 @@
-import React from "react"
+import dynamic from "next/dynamic"
 import Layout from "@/components/Layout"
 
 //components
 import HeroSection from "./heroSection"
-import LocationSection from "./locationSection"
-import FAQSection from "@/components/Sections/FaqSection/FaqSection"
+const LocationSection = dynamic(() => import("./locationSection"))
+const FAQSection = dynamic(() => import("@/components/Sections/FaqSection/FaqSection"))
+const AwardsSection = dynamic(() => import("@/components/NewHomePage/AwardsSection"))
+import { type AwardItem } from "@/components/NewHomePage/AwardsSection"
 import { accordionData } from "@/constants/contact"
-
-import AwardsSection, {
-  AwardItem,
-} from "@/components/NewHomePage/AwardsSection"
-
 import award1 from "@/assets/newHomePage/awards/clutch.svg"
 import award2 from "@/assets/newHomePage/awards/Top_Design_company_2025.png"
 import award3 from "@/assets/newHomePage/awards/Top_Digital_Design_Company_2025.png"
@@ -20,7 +17,9 @@ import award6 from "@/assets/newHomePage/awards/dribbble.svg"
 import award7 from "@/assets/newHomePage/awards/good-firms.svg"
 import award8 from "@/assets/newHomePage/awards/upwork.svg"
 import icon from "@/assets/newHomePage/awards/icon.svg"
-import NextStepsSection from "@/components/ContactPage/NextStepsSection/NextStepsSection"
+
+const NextStepsSection = dynamic(() => import("@/components/ContactPage/NextStepsSection/NextStepsSection"))
+const TestimonialCard = dynamic(() => import("@/components/Sections/ServicesSection/ReviewCardSection"))
 
 import step1 from "@/assets/contact-us/NextStepsSection/step1Icon.webp"
 import step2 from "@/assets/contact-us/NextStepsSection/step2Icon.webp"
@@ -28,7 +27,6 @@ import step3 from "@/assets/contact-us/NextStepsSection/step3Icon.webp"
 import step4 from "@/assets/contact-us/NextStepsSection/step4Icon.webp"
 import stepdes from "@/assets/contact-us/NextStepsSection/process-desktop-line.svg"
 import step4Tab from "@/assets/contact-us/NextStepsSection/process-line-tablet.svg"
-import TestimonialCard from "@/components/Sections/ServicesSection/ReviewCardSection"
 
 import userImage from "@/assets/clientsImages/manshi.jpg"
 import { Metadata } from "next"

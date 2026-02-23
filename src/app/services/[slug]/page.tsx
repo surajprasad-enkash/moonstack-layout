@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic"
 import Layout from "@/components/Layout"
 
 /* ===================== CONSTANTS ===================== */
@@ -5,21 +6,20 @@ import { pagesData, pagesKeys } from "@/constants/services"
 
 /* ===================== SECTIONS ===================== */
 import AppCategoryBanner from "@/components/Sections/ServicesSection/AppDevelopment/AppCategoryBanner"
-import FeatureSection from "@/components/Sections/ServicesSection/FeatureSection"
-import OutcomeBanner from "@/components/Sections/ServicesSection/OutcomeBanner"
-import ImpactSection from "@/components/Sections/ServicesSection/ImpactSection"
-import TechMarqueeComponent from "@/components/Sections/TechMarquee"
-import QualitySection from "@/components/Sections/QualitySection"
-import ProcessStages from "@/components/Sections/ServicesSection/AgencyWorkFlowSection"
-import TestimonialsSection from "@/components/Industries/TestimonialsSection"
-import TeamSliderSection from "@/components/Sections/TeamSliderSection/SliderSection"
-import FAQSection from "@/components/Sections/FaqSection/FaqSection"
-import ProjectCTA from "@/components/ProjectCTA/ProjectCTA"
-import TestimonialCard from "@/components/Sections/ServicesSection/ReviewCardSection"
-import NewBanner from "@/components/Sections/NewBanner"
-import AwardsSection, {
-  AwardItem,
-} from "@/components/NewHomePage/AwardsSection"
+const FeatureSection = dynamic(() => import("@/components/Sections/ServicesSection/FeatureSection"))
+const OutcomeBanner = dynamic(() => import("@/components/Sections/ServicesSection/OutcomeBanner"))
+const ImpactSection = dynamic(() => import("@/components/Sections/ServicesSection/ImpactSection"))
+const TechMarqueeComponent = dynamic(() => import("@/components/Sections/TechMarquee"))
+const QualitySection = dynamic(() => import("@/components/Sections/QualitySection"))
+const ProcessStages = dynamic(() => import("@/components/Sections/ServicesSection/AgencyWorkFlowSection"))
+const TestimonialsSection = dynamic(() => import("@/components/Industries/TestimonialsSection"))
+const TeamSliderSection = dynamic(() => import("@/components/Sections/TeamSliderSection/SliderSection"))
+const FAQSection = dynamic(() => import("@/components/Sections/FaqSection/FaqSection"))
+const ProjectCTA = dynamic(() => import("@/components/ProjectCTA/ProjectCTA"))
+const TestimonialCard = dynamic(() => import("@/components/Sections/ServicesSection/ReviewCardSection"))
+const NewBanner = dynamic(() => import("@/components/Sections/NewBanner"))
+const AwardsSection = dynamic(() => import("@/components/NewHomePage/AwardsSection"))
+import { type AwardItem } from "@/components/NewHomePage/AwardsSection"
 
 import { testimonialsSectionData } from "@/constants/industries"
 /* ===================== UI ===================== */

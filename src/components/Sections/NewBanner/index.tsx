@@ -49,7 +49,7 @@ export default function NewBanner({
           </div>
 
           <div className="flex justify-center md:w-[50%] md:justify-end">
-            <div className="relative h-[260px] w-[260px] md:h-[340px] md:w-[340px]">
+            <div className="relative h-[260px] w-[260px] pt-6 md:h-[340px] md:w-[340px] md:pt-0">
               <Image
                 src={imageSrc}
                 alt={imageAlt}

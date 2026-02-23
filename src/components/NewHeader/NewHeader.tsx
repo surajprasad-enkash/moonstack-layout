@@ -89,21 +89,19 @@ export default function NewHeader() {
                 onMouseLeave={() => setOpenMenu(null)}
               >
                 {" "}
-                <Link href="/services">
-                  <button className="flex cursor-pointer items-center gap-2 transition">
+                <button className="flex cursor-pointer items-center gap-2 transition">
+                  <Link href="/services">
                     <HoverSlideText
                       text="Services"
                       active={openMenu === "services"}
-                    />
-                    <IoIosArrowDown
-                      className={`ml-1 text-sm transition-colors ${
-                        openMenu === "services"
-                          ? "text-[#d6ff00]"
-                          : "text-white"
-                      }`}
-                    />
-                  </button>
-                </Link>
+                    />{" "}
+                  </Link>
+                  <IoIosArrowDown
+                    className={`ml-1 text-sm transition-colors ${
+                      openMenu === "services" ? "text-[#d6ff00]" : "text-white"
+                    }`}
+                  />
+                </button>
                 {openMenu === "services" && (
                   <div className="absolute top-[20px] left-[50%] translate-x-[-36.7%] pt-10 text-black">
                     {/* TOP SECTION */}

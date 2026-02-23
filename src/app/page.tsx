@@ -1,19 +1,19 @@
+import dynamic from "next/dynamic"
 import Layout from "@/components/Layout"
-
 import Meta from "@/components/MetaData"
-
 import HeroSection from "@/components/NewHomePage/HeroBanner"
 import Space from "@/components/Space"
-import ResultsSection from "@/components/NewHomePage/ResultsSection"
-import ImpactStatsSection from "@/components/NewHomePage/ImpactStatsSection"
-import ServicesSection from "@/components/NewHomePage/ServicesSection"
-import CaseStudyHighlight from "@/components/NewHomePage/CaseStudyHighlight"
-import AboutHeroSection from "@/components/NewHomePage/AboutHeroSection"
-import AwardsSection from "@/components/NewHomePage/AwardsSection"
-import TestimonialsTabs from "@/components/NewHomePage/TestimonialsTabs"
-import ProjectCTA from "@/components/ProjectCTA/ProjectCTA"
-import TrustBadges from "@/components/NewHomePage/TrustBadges"
-import BlogInsightsSection from "@/components/NewHomePage/BlogInsightsSection"
+
+const ResultsSection = dynamic(() => import("@/components/NewHomePage/ResultsSection"))
+const ImpactStatsSection = dynamic(() => import("@/components/NewHomePage/ImpactStatsSection"))
+const ServicesSection = dynamic(() => import("@/components/NewHomePage/ServicesSection"))
+const CaseStudyHighlight = dynamic(() => import("@/components/NewHomePage/CaseStudyHighlight"))
+const AboutHeroSection = dynamic(() => import("@/components/NewHomePage/AboutHeroSection"))
+const AwardsSection = dynamic(() => import("@/components/NewHomePage/AwardsSection"))
+const TestimonialsTabs = dynamic(() => import("@/components/NewHomePage/TestimonialsTabs"))
+const ProjectCTA = dynamic(() => import("@/components/ProjectCTA/ProjectCTA"))
+const TrustBadges = dynamic(() => import("@/components/NewHomePage/TrustBadges"))
+const BlogInsightsSection = dynamic(() => import("@/components/NewHomePage/BlogInsightsSection"))
 
 import {
   badges,
