@@ -189,17 +189,6 @@ export default async function ApplicationPage({ params }: PageProps) {
           />
         )}
 
-        {/* <AndroidCaseStudySection
-          title={[
-            { text: "Our mobile app design ", color: "text-white" },
-            {
-              text: "works prove themselves",
-              color: "text-white libreItalic font-[400] highlight-text",
-            },
-          ]}
-          description="We've helped many startups and companies design high-quality mobile applications."
-        /> */}
-
         {page.NewBanner && (
           <NewBanner
             headingLines={page.NewBanner.headingLines}

@@ -1,13 +1,11 @@
 // data/impactStats.ts
 import lottieFile from "../../../../public/lottie/about-page/businessYear.json"
-// import clientImg from "@/assets/ImpactStatsSection/clientimg.png";
-import clientImg from "@/assets/newHomePage/ImpactStatsSection/client_logo.png"
+import clientImg from "@/assets/newHomePage/ImpactStatsSection/client_logo.webp"
 
-// import MYSO from "@/assets/newHomePage/ImpactStatsSection/myso.png";
-import MYSO from "@/assets/newHomePage/ImpactStatsSection/myso.png"
-import paradigm from "@/assets/newHomePage/ImpactStatsSection/paradigm.png"
-import players from "@/assets/newHomePage/ImpactStatsSection/players.png"
-import voxe from "@/assets/newHomePage/ImpactStatsSection/voxe.png"
+import MYSO from "@/assets/newHomePage/ImpactStatsSection/myso.webp"
+import paradigm from "@/assets/newHomePage/ImpactStatsSection/paradigm.webp"
+import players from "@/assets/newHomePage/ImpactStatsSection/players.webp"
+import voxe from "@/assets/newHomePage/ImpactStatsSection/voxe.webp"
 import teamMember from "@/assets/newHomePage/ImpactStatsSection/teamMember.webp"
 import globalRemote from "@/assets/newHomePage/ImpactStatsSection/icon/globalRemote2.svg"
 export const impactStatsData = {
