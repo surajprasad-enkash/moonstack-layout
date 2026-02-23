@@ -3,6 +3,7 @@ import { PageData } from "@/types/web-development-data-type"
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/webDesining.webp"
 import bndimage1 from "@/assets/services/webDesining/webDesinning.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 import Icon1 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon1"
 import Icon2 from "@/components/ServicesSvg/WebDesigningIcon/WebDesigningIcon2"
@@ -58,7 +59,7 @@ export const webDesigning: PageData = {
     keywords:
       "web development service in India,web development company in India,affordable website development service USA,custom web development service USA,best web development agency USA,website development services for startups",
     canonical: "/services/web-designing-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

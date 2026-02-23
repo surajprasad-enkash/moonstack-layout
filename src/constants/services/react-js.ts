@@ -3,6 +3,7 @@ import { PageData } from "@/types/web-development-data-type"
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
 import leftSideImage from "@/assets/services/reactjs/leftSideImage.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 import ReactIcon1 from "@/components/ServicesSvg/ReactIcon/ReactIcon1"
 import ReactIcon2 from "@/components/ServicesSvg/ReactIcon/ReactIcon2"
@@ -58,7 +59,7 @@ export const reactJs: PageData = {
     keywords:
       "ReactJS developers India,ReactJS developers UK,ReactJS development agency London,Hire ReactJS consultants USA,ReactJS application development UK,Dedicated ReactJS development team USA,Custom ReactJS app developers UK,ReactJS migration services USA",
     canonical: "/services/reactjs-development-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

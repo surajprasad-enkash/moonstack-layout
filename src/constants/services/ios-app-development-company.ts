@@ -5,6 +5,7 @@ import nativeBannerImg from "@/assets/meeting-banner-images/ios.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/services/ios/ios.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 // Svg Icons Components
 import IosIcon1 from "@/components/ServicesSvg/IosIcons/IosIcon1"
@@ -13,7 +14,7 @@ import IosIcon3 from "@/components/ServicesSvg/IosIcons/IosIcon3"
 import IosIcon4 from "@/components/ServicesSvg/IosIcons/IosIcon4"
 import IosIcon5 from "@/components/ServicesSvg/IosIcons/IosIcon5"
 import IosIcon6 from "@/components/ServicesSvg/IosIcons/IosIcon6"
-import bccKristenCheng6 from "@/assets/clientsImages/admissifyceo.jpg"
+import bccKristenCheng6 from "@/assets/clientsImages/admissifyceo.webp"
 
 export const ios: PageData = {
   hero: {
@@ -60,7 +61,7 @@ export const ios: PageData = {
     keywords:
       "iOS app development Service India,iOS app development company USA,Best iOS app developers India,Custom iOS application development service USA,iOS app development agency UK",
     canonical: "/services/iso-app-development-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

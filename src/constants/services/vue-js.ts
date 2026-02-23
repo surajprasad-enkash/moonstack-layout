@@ -3,6 +3,7 @@ import { PageData } from "@/types/web-development-data-type"
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
 import bndimage1 from "@/assets/services/vue/vue.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 // Svg Icon Components
 import VueJs1 from "@/components/ServicesSvg/VueJs/VueJs1"
@@ -55,7 +56,7 @@ export const vueJs: PageData = {
       "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
     canonical:
       "https://www.moonstack.com/android-app-development-service/android-app-development-service",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

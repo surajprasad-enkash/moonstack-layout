@@ -3,6 +3,7 @@ import { PageData } from "@/types/web-development-data-type"
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
 import bndimage1 from "@/assets/services/crm/crm.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 // SVG Icons Components
 import Icon1 from "@/components/ServicesSvg/CRMDevIcon/CRMDevIcon1"
@@ -63,7 +64,7 @@ export const crm: PageData = {
     keywords:
       "crm development company USA,affordable crm solutions India,custom crm software development India,crm app developers India,best crm development service USA",
     canonical: "/services/crm-development-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

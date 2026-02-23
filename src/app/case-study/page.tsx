@@ -6,6 +6,7 @@ import Layout from "@/components/Layout"
 import WorksHeroSection from "@/components/CaseStudy/WorksHeroSection"
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection"
 import ProjectCTA from "@/components/ProjectCTA/ProjectCTA"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 // helpers
 import { getCaseStudiesServer } from "@/helper"
@@ -17,6 +18,7 @@ export const generateMetadata = (): Metadata => {
     description:
       "See Moonstack’s app, web, and product case studies showing how we solve complex problems and grow client revenue with our futuristic Development service.",
     canonical: "https://www.moonstack.com/case-study",
+    ogImage: OgImageIcon.src,
   })
 }
 

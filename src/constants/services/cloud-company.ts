@@ -10,6 +10,7 @@ import Icon3 from "@/components/ServicesSvg/CloudIcon/CloudIcon3"
 import Icon4 from "@/components/ServicesSvg/CloudIcon/CloudIcon4"
 import Icon5 from "@/components/ServicesSvg/CloudIcon/CloudIcon5"
 import Icon6 from "@/components/ServicesSvg/CloudIcon/CloudIcon6"
+import OgImageIcon from "@/assets/ogImage.svg"
 export const cloud: PageData = {
   hero: {
     title: [
@@ -55,7 +56,7 @@ export const cloud: PageData = {
     keywords:
       "best cloud computing services USA,affordable cloud hosting services India,cloud migration services for enterprises India,multi-cloud management company India,cloud infrastructure services USA",
     canonical: "/services/cloud-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

@@ -8,7 +8,7 @@ import ProjectInquiryModal from "@/components/ProjectInquiryModal/ProjectInquiry
 import { IoIosArrowDown } from "react-icons/io";
 
 import about from "@/assets/header/about-us.svg";
-import logo from "@/assets/logo-white.png";
+import logo from "@/assets/logo-white.webp";
 import blog from "@/assets/header/blog.svg";
 import case_study from "@/assets/header/case-studies.svg";
 import career from "@/assets/header/carrer.svg";
@@ -122,11 +122,11 @@ export default function Header() {
     ],
 
     "Frontend Development": [
-       {
-         title: "Website Development ",
-         subtitle: "Get High-performance websites",
-         icon: webDevIcon3.src,
-         url: "/services/website-development-company",
+      {
+        title: "Website Development ",
+        subtitle: "Get High-performance websites",
+        icon: webDevIcon3.src,
+        url: "/services/website-development-company",
       },
       {
         title: "E-Commerce website Development",
@@ -134,7 +134,7 @@ export default function Header() {
         icon: webDevIcon4.src,
         url: "/services/ecommerce-website-development-company",
       },
-   
+
       {
         title: "Web Designing",
         subtitle: "Visually striking designs- engage & convert",
@@ -165,14 +165,14 @@ export default function Header() {
         url: "/",
         subtitle: "Robust Angular solutions for enterprise",
       },
- 
+
       {
         title: "Vue.js",
         icon: frontDevIcon3.src,
         url: "/",
         subtitle: "Get Lightweight, flexible frontends",
       },
-     
+
       {
         title: "JavaScript",
         icon: frontDevIcon5.src,
@@ -235,17 +235,17 @@ export default function Header() {
         url: "/",
         subtitle: "Reliable and flexible PHP web solutions",
       },
-   
-     
+
+
       {
         title: "Full Stack Development",
         subtitle: "Get End-to-end development",
         icon: webDevIcon8.src,
         url: "/services/full-stack-website-development-company",
       },
-    
 
-   
+
+
     ],
     "Search Engine Optimization": [
       {
@@ -291,7 +291,7 @@ export default function Header() {
 
   const leftMenuLinks = {
     "Application Development": "",
-   
+
     "Frontend Development": "",
     "Backend Development": "",
     "Search Engine Optimization":
@@ -341,14 +341,13 @@ export default function Header() {
                           <li
                             key={name}
                             onMouseEnter={() => setActiveCategory(name)}
-                            className={`submenu-item cursor-pointer rounded-lg px-4 py-2 !font-medium ${
-                              activeCategory === name
+                            className={`submenu-item cursor-pointer rounded-lg px-4 py-2 !font-medium ${activeCategory === name
                                 ? "isActive current"
                                 : "text-black"
-                            }`}
+                              }`}
                           >
                             <span
-                           
+
                               className="block h-full w-full !font-[500]"
                             >
                               {name}

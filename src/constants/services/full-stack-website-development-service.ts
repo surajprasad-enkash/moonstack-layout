@@ -5,6 +5,7 @@ import nativeBannerImg from "@/assets/meeting-banner-images/full-stack.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/services/fullstack/fullstack.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 // SVG Icons Components
 import Icon1 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon1"
@@ -19,7 +20,7 @@ import Icon9 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon9"
 import Icon10 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon10"
 import Icon11 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon11"
 import Icon12 from "@/components/ServicesSvg/FullStackIcon/FullStackIcon12"
-import bccKristenCheng6 from "@/assets/clientsImages/authbridge.jpg"
+import bccKristenCheng6 from "@/assets/clientsImages/authbridge.webp"
 
 export const fullstack: PageData = {
   hero: {
@@ -66,7 +67,7 @@ export const fullstack: PageData = {
     keywords:
       "full stack development company USA,hire full stack developers India,best full stack web development service India,affordable full stack developers USA,full stack web application development USA",
     canonical: "/services/full-stack-website-development-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

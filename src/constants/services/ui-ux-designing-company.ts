@@ -3,6 +3,7 @@ import { PageData } from "@/types/web-development-data-type"
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/uiUx.webp"
 import bndimage1 from "@/assets/services/uiUx/uiUx.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 import Icon1 from "@/components/ServicesSvg/UiUxDesigning/UiUxDesigning1"
 import Icon2 from "@/components/ServicesSvg/UiUxDesigning/UiUxDesigning2"
 import Icon3 from "@/components/ServicesSvg/UiUxDesigning/UiUxDesigning3"
@@ -51,7 +52,7 @@ export const ui_ux: PageData = {
     keywords:
       "UI UX design company India 2026,best UI UX design agency USA,affordable UI UX services providers India,UI UX design for ecommerce websites USA,app UI UX designing experts India,UI UX prototyping services USA",
     canonical: "/services/ui-ux-designing-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

@@ -5,6 +5,7 @@ import nativeBannerImg from "@/assets/meeting-banner-images/seo.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/services/seo/seo.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 import SeoIcon from "@/components/ServicesSvg/HeaderSvgIconsData/SeoIcon"
 
@@ -53,7 +54,7 @@ export const seo: PageData = {
     keywords:
       "Search Engine Optimization Service,affordable SEO services provider USA,Professional SEO company in USA,SEO services for small business India,professional SEO agency India,SEO consultant near me USA",
     canonical: "/services/search-engine-optimization-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

@@ -5,7 +5,7 @@ import moment from "moment"
 import Link from "next/link"
 
 /* Assets */
-import logo from "@/assets/logo-white.png"
+import logo from "@/assets/logo-white.webp"
 import upwork from "@/assets/home/upwork.svg"
 import clutch from "@/assets/home/clutch.svg"
 import facebook from "@/assets/footer/Facebook.svg"

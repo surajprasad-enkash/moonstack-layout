@@ -3,15 +3,23 @@ import Layout from "@/components/Layout"
 import React from "react"
 import HeroSection from "@/components/about/heroSection"
 import Space from "@/components/Space"
-
-const AboutGallery = dynamic(() => import("@/components/about/aboutGallerySection"))
+import OgImageIcon from "@/assets/ogImage.svg"
+const AboutGallery = dynamic(
+  () => import("@/components/about/aboutGallerySection")
+)
 const AboutStepper = dynamic(() => import("@/components/about/aboutStepper"))
 const TeamSection = dynamic(() => import("@/components/about/teamSection"))
 const LocationSection = dynamic(() => import("../contact-us/locationSection"))
-const OurValuesSection = dynamic(() => import("@/components/about/valueSection"))
-const ImpactStatsSection = dynamic(() => import("@/components/about-page/ImpactStatsSection"))
+const OurValuesSection = dynamic(
+  () => import("@/components/about/valueSection")
+)
+const ImpactStatsSection = dynamic(
+  () => import("@/components/about-page/ImpactStatsSection")
+)
 const DnaSection = dynamic(() => import("@/components/about-page/DnaSection"))
-const IndustryExperienceSection = dynamic(() => import("@/components/Industries/IndustryExperienceSection"))
+const IndustryExperienceSection = dynamic(
+  () => import("@/components/Industries/IndustryExperienceSection")
+)
 import { impactStatsData } from "@/components/about-page/data/impactStats"
 import { Metadata } from "next"
 import { buildMetadata } from "@/helper/generateMetadata "
@@ -27,6 +35,7 @@ export const generateMetadata = (): Metadata => {
     description:
       "Want to know who is behind Moonstack? Learn how our India‑based Development team helps startups and businesses ship reliable apps, websites, and digital products.",
     canonical: "https://www.moonstack.com/about-us",
+    ogImage: OgImageIcon.src,
   })
 }
 const AboutUs = (): React.JSX.Element => {

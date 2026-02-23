@@ -10,9 +10,9 @@ import Enkashscreen1 from "@/assets/newHomePage/caseStudy/EnkashScreen1.webp"
 import Enkashscreen2 from "@/assets/newHomePage/caseStudy/EnkashScreen2.webp"
 import Enkashscreen3 from "@/assets/newHomePage/caseStudy/EnkashScreen3.webp"
 
-import manshi from "@/assets/clientsImages/manshi.jpg"
-import amitnuvama from "@/assets/clientsImages/amitnuvama.jpg"
-import pickright from "@/assets/clientsImages/numanbhatiyapikright.jpg"
+import manshi from "@/assets/clientsImages/manshi.webp"
+import amitnuvama from "@/assets/clientsImages/amitnuvama.webp"
+import pickright from "@/assets/clientsImages/numanbhatiyapikright.webp"
 
 import clutch from "@/assets/newHomePage/caseStudy/clutch.svg"
 
@@ -32,18 +32,18 @@ import tastimonial2 from "@/assets/newHomePage/awards/tastimonial/tastimonial2.s
 import tastimonial3 from "@/assets/newHomePage/awards/tastimonial/tastimonial3.svg"
 import tastimonial4 from "@/assets/newHomePage/awards/tastimonial/tastimonial4.svg"
 
-import admissify from "@/assets/clientsImages/admissifyceo.jpg"
-import coralogix from "@/assets/clientsImages/coralogixceo.jpg"
-import brainmates from "@/assets/clientsImages/brainmates.jpg"
-import authbridge from "@/assets/clientsImages/authbridge.jpg"
+import admissify from "@/assets/clientsImages/admissifyceo.webp"
+import coralogix from "@/assets/clientsImages/coralogixceo.webp"
+import brainmates from "@/assets/clientsImages/brainmates.webp"
+import authbridge from "@/assets/clientsImages/authbridge.webp"
 
 import clutchLogo from "@/assets/newHomePage/awards/tastimonial/clutchLogo.svg"
 import clutchLogoBlack from "@/assets/newHomePage/awards/tastimonial/clutchBloack.svg"
 
 import icon from "@/assets/newHomePage/awards/icon.svg"
 import award1 from "@/assets/newHomePage/awards/clutch.svg"
-import award2 from "@/assets/newHomePage/awards/Top_Design_company_2025.png"
-import award3 from "@/assets/newHomePage/awards/Top_Digital_Design_Company_2025.png"
+import award2 from "@/assets/newHomePage/awards/Top_Design_company_2025.webp"
+import award3 from "@/assets/newHomePage/awards/Top_Digital_Design_Company_2025.webp"
 import award4 from "@/assets/newHomePage/awards/clutch-badge-6.svg"
 import award5 from "@/assets/newHomePage/awards/clutch-badge.svg"
 import award6 from "@/assets/newHomePage/awards/dribbble.svg"

@@ -2,7 +2,7 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/product.webp"
-
+import OgImageIcon from "@/assets/ogImage.svg"
 // svg icons components
 import Icon1 from "@/components/ServicesSvg/ProductDesigningIcon/ProductDesigningIcon1"
 import Icon2 from "@/components/ServicesSvg/ProductDesigningIcon/ProductDesigningIcon2"
@@ -52,7 +52,7 @@ export const product: PageData = {
     keywords:
       "product design company India 2026,affordable product design services USA,best product design firms India,custom product design and development USA,innovative product designing solutions India,user-centered product design agency USA",
     canonical: "/services/product-designing-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

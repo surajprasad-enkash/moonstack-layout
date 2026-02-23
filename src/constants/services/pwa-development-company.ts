@@ -3,6 +3,7 @@ import { PageData } from "@/types/web-development-data-type"
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/pwa.webp"
 import bndimage1 from "@/assets/services/pwa/pwa.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 import PwaIcon1 from "@/components/ServicesSvg/Pwa/PwaIcon1"
 import PwaIcon2 from "@/components/ServicesSvg/Pwa/PwaIcon2"
@@ -51,7 +52,7 @@ export const pwa: PageData = {
     keywords:
       "PWA development service USA,PWA development company USA,Progressive web app development service India,Best PWA developers in India,Custom PWA development service India",
     canonical: "/services/pwa-development-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

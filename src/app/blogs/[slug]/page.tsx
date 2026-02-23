@@ -3,6 +3,7 @@ import SinglePostData from "@/components/SingleBlog/SingleBlogApi"
 import { getPost } from "@/helper"
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 interface PageProps {
   params: {
@@ -62,7 +63,7 @@ export async function generateMetadata({
       url: seo.og?.url || seo.canonical,
       siteName: "Moonstack",
       type: "article",
-      images: seo.og?.image ? [{ url: seo.og.image }] : [],
+      images: [{ url: seo.og?.image || OgImageIcon.src }],
     },
 
     // ✅ Twitter Card

@@ -1,27 +1,27 @@
-import React, { useState } from "react";
-import logo from "@/assets/logo-white.png";
-import Image from "next/image";
-import Link from "next/link";
-import CustomButton from "./CommanButton/CommanButton";
+import React, { useState } from "react"
+import logo from "@/assets/logo-white.webp"
+import Image from "next/image"
+import Link from "next/link"
+import CustomButton from "./CommanButton/CommanButton"
 
 interface IHeaderRefs {
-  home: React.RefObject<HTMLDivElement>;
-  service: React.RefObject<HTMLDivElement>;
-  aboutUs: React.RefObject<HTMLDivElement>;
-  contactUs: React.RefObject<HTMLDivElement>;
-  career: React.RefObject<HTMLDivElement>;
-  talkBtn: React.RefObject<HTMLDivElement>;
+  home: React.RefObject<HTMLDivElement>
+  service: React.RefObject<HTMLDivElement>
+  aboutUs: React.RefObject<HTMLDivElement>
+  contactUs: React.RefObject<HTMLDivElement>
+  career: React.RefObject<HTMLDivElement>
+  talkBtn: React.RefObject<HTMLDivElement>
 }
 
 interface IMenuItems {
-  id: number;
-  paths: string[];
-  title: string;
-  ref: React.RefObject<HTMLDivElement>;
+  id: number
+  paths: string[]
+  title: string
+  ref: React.RefObject<HTMLDivElement>
 }
 
 const Header = ({ refs }: { refs: IHeaderRefs }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const menuItems: IMenuItems[] = [
     { id: 1, paths: ["/"], title: "Home", ref: refs.home },
@@ -29,10 +29,10 @@ const Header = ({ refs }: { refs: IHeaderRefs }) => {
     { id: 3, paths: ["/about-us"], title: "About Us", ref: refs.aboutUs },
     { id: 4, paths: ["/contact-us"], title: "Contact Us", ref: refs.contactUs },
     { id: 5, paths: ["/career"], title: "Career", ref: refs.career },
-  ];
+  ]
 
-  const toggleMenu = () => setIsOpen(!isOpen);
-  const closeMenu = () => setIsOpen(false);
+  const toggleMenu = () => setIsOpen(!isOpen)
+  const closeMenu = () => setIsOpen(false)
 
   return (
     <header className="fixed top-0 z-50 w-full bg-black text-white shadow-md">
@@ -52,7 +52,7 @@ const Header = ({ refs }: { refs: IHeaderRefs }) => {
         {/* DESKTOP NAV */}
         <nav className="hidden items-center space-x-10 md:flex">
           {menuItems.map((item, index) => {
-            const isActive = item.paths.includes("/");
+            const isActive = item.paths.includes("/")
 
             return (
               <div
@@ -64,7 +64,7 @@ const Header = ({ refs }: { refs: IHeaderRefs }) => {
               >
                 {item.title}
               </div>
-            );
+            )
           })}
         </nav>
 
@@ -106,7 +106,7 @@ const Header = ({ refs }: { refs: IHeaderRefs }) => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

@@ -3,6 +3,7 @@ import { PageData } from "@/types/web-development-data-type"
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
 import bndimage1 from "@/assets/services/websiteDevelopment/websiteDevelopment.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 import WebDevIcon1 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon1"
 import WebDevIcon2 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon2"
@@ -16,7 +17,7 @@ import WebDevIcon9 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon9"
 import WebDevIcon10 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon10"
 import WebDevIcon11 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon11"
 import WebDevIcon12 from "@/components/ServicesSvg/WebDevIcon/WebDevIcon12"
-import bccKristenCheng6 from "@/assets/clientsImages/coralogixceo.jpg"
+import bccKristenCheng6 from "@/assets/clientsImages/coralogixceo.webp"
 export const websiteDevelopment: PageData = {
   hero: {
     title: [
@@ -58,7 +59,7 @@ export const websiteDevelopment: PageData = {
     keywords:
       "web development service in USA,web development company in USA,affordable website development service India,custom web development service India,best web development agency India,website development services for startups",
     canonical: "/services/website-development-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

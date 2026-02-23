@@ -1,12 +1,15 @@
 import dynamic from "next/dynamic"
 import Layout from "@/components/Layout"
-
+import OgImageIcon from "@/assets/ogImage.svg"
 //components
 import HeroSection from "./heroSection"
 const LocationSection = dynamic(() => import("./locationSection"))
-const FAQSection = dynamic(() => import("@/components/Sections/FaqSection/FaqSection"))
-const AwardsSection = dynamic(() => import("@/components/NewHomePage/AwardsSection"))
-import { type AwardItem } from "@/components/NewHomePage/AwardsSection"
+const FAQSection = dynamic(
+  () => import("@/components/Sections/FaqSection/FaqSection")
+)
+const AwardsSection = dynamic(
+  () => import("@/components/NewHomePage/AwardsSection")
+)
 import {
   accordionData,
   contactAwards,
@@ -14,8 +17,12 @@ import {
   nextSteps,
 } from "@/constants/contact"
 
-const NextStepsSection = dynamic(() => import("@/components/ContactPage/NextStepsSection/NextStepsSection"))
-const TestimonialCard = dynamic(() => import("@/components/Sections/ServicesSection/ReviewCardSection"))
+const NextStepsSection = dynamic(
+  () => import("@/components/ContactPage/NextStepsSection/NextStepsSection")
+)
+const TestimonialCard = dynamic(
+  () => import("@/components/Sections/ServicesSection/ReviewCardSection")
+)
 
 import { Metadata } from "next"
 import { buildMetadata } from "@/helper/generateMetadata "
@@ -26,6 +33,7 @@ export const generateMetadata = (): Metadata => {
     description:
       "Ready to discuss your app, website, or product idea? Share your project details and our Moonstack team will get back with a clear plan and timeline. Call Now!",
     canonical: "https://www.moonstack.com/contact-us",
+    ogImage: OgImageIcon.src,
   })
 }
 

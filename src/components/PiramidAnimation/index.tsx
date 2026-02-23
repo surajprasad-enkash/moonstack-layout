@@ -1,20 +1,20 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import Image from "next/image"
+import React, { useEffect, useState } from "react"
 
-import coneImg from "@/assets/carreers/piramidImg.svg";
-import logo from "@/assets/carreers/MOONSTACK.svg";
+import coneImg from "@/assets/carreers/piramidImg.svg"
+import logo from "@/assets/carreers/MOONSTACK.svg"
 
-import avatar2 from "@/assets/carreers/avatar_2.png";
-import avatar3 from "@/assets/carreers/avatar_3.png";
-import avatar4 from "@/assets/carreers/avatar_4.png";
-import avatar5 from "@/assets/carreers/avatar_5.png";
-import avatar6 from "@/assets/carreers/avatar_6.png";
-import avatar7 from "@/assets/carreers/avatar_7.png";
-import avatar8 from "@/assets/carreers/avatar_8.png";
-import avatar9 from "@/assets/carreers/avatar_9.png";
-import avatar10 from "@/assets/carreers/avatar_10.png";
+import avatar2 from "@/assets/carreers/avatar_2.webp"
+import avatar3 from "@/assets/carreers/avatar_3.webp"
+import avatar4 from "@/assets/carreers/avatar_4.webp"
+import avatar5 from "@/assets/carreers/avatar_5.webp"
+import avatar6 from "@/assets/carreers/avatar_6.webp"
+import avatar7 from "@/assets/carreers/avatar_7.webp"
+import avatar8 from "@/assets/carreers/avatar_8.webp"
+import avatar9 from "@/assets/carreers/avatar_9.webp"
+import avatar10 from "@/assets/carreers/avatar_10.webp"
 
 const avatars = [
   avatar2,
@@ -26,45 +26,45 @@ const avatars = [
   avatar8,
   avatar9,
   avatar10,
-];
+]
 
 const PiramidAnimation = () => {
-  const [fallenSet, setFallenSet] = useState<Set<number>>(new Set());
+  const [fallenSet, setFallenSet] = useState<Set<number>>(new Set())
 
   useEffect(() => {
     const startAnimation = () => {
-      let left = 0;
-      let right = avatars.length - 1;
+      let left = 0
+      let right = avatars.length - 1
 
       const fallNextPair = () => {
         setFallenSet((prev) => {
-          const next = new Set(prev);
-          next.add(Math.min(left, avatars.length - 1));
-          next.add(Math.max(right, 0));
-          return next;
-        });
+          const next = new Set(prev)
+          next.add(Math.min(left, avatars.length - 1))
+          next.add(Math.max(right, 0))
+          return next
+        })
 
-        left++;
-        right--;
+        left++
+        right--
 
         if (left <= right) {
-          setTimeout(fallNextPair, 1400);
+          setTimeout(fallNextPair, 1400)
         } else {
           setTimeout(() => {
-            setFallenSet(new Set());
-            setTimeout(startAnimation, 1500);
-          }, 1800);
+            setFallenSet(new Set())
+            setTimeout(startAnimation, 1500)
+          }, 1800)
         }
-      };
+      }
 
-      fallNextPair();
-    };
+      fallNextPair()
+    }
 
-    startAnimation();
-  }, []);
+    startAnimation()
+  }, [])
 
   return (
-    <div className="pyramid-section  flex w-full justify-center">
+    <div className="pyramid-section flex w-full justify-center">
       <div className="pyramid-wrapper relative">
         {/* Pyramid */}
         <Image
@@ -74,43 +74,43 @@ const PiramidAnimation = () => {
           width={460}
           height={420}
         />{" "}
-        <div className="pyramid-logo flex justify-center relative z-10 pt-2">
+        <div className="pyramid-logo relative z-10 flex justify-center pt-2">
           <Image src={logo} alt="cone" className="" width={230} height={160} />
         </div>
         {/* Avatars */}
-        <div className="avatars-layer pointer-events-none absolute top-0 left-[0%] h-full w-full z-0">
+        <div className="avatars-layer pointer-events-none absolute top-0 left-[0%] z-0 h-full w-full">
           {avatars.map((src, index) => {
-            const radiusInit = 200;
-            const offsetInit = 140;
-            const radiusFall = 70;
-            const offsetFall = 320;
+            const radiusInit = 200
+            const offsetInit = 140
+            const radiusFall = 70
+            const offsetFall = 320
 
-            const startAngle = -80;
-            const endAngle = 80;
+            const startAngle = -80
+            const endAngle = 80
 
             const angle =
               startAngle +
-              (index * (endAngle - startAngle)) / (avatars.length - 1);
+              (index * (endAngle - startAngle)) / (avatars.length - 1)
 
-            const angleRad = (angle * Math.PI) / 180;
+            const angleRad = (angle * Math.PI) / 180
 
-            const initX = radiusInit * Math.sin(angleRad);
-            const initY = -radiusInit * Math.cos(angleRad) - offsetInit;
+            const initX = radiusInit * Math.sin(angleRad)
+            const initY = -radiusInit * Math.cos(angleRad) - offsetInit
 
-            const isEdge = index === 0 || index === avatars.length - 1;
+            const isEdge = index === 0 || index === avatars.length - 1
 
-            const fallX = radiusFall * Math.sin(angleRad);
+            const fallX = radiusFall * Math.sin(angleRad)
             const fallY =
-              -radiusFall * Math.cos(angleRad) + offsetFall + (isEdge ? 60 : 0);
+              -radiusFall * Math.cos(angleRad) + offsetFall + (isEdge ? 60 : 0)
 
-            const isLeft = angle < 0;
-            const rotateDeg = isEdge ? (isLeft ? -25 : 25) : isLeft ? -20 : 20;
-            const scale = isEdge ? 0.7 : 0.8;
+            const isLeft = angle < 0
+            const rotateDeg = isEdge ? (isLeft ? -25 : 25) : isLeft ? -20 : 20
+            const scale = isEdge ? 0.7 : 0.8
 
-            const initTransform = `translate(${initX}px, ${initY}px) translate(-50%, -50%)`;
-            const fallTransform = `translate(${fallX}px, ${fallY}px) translate(-50%, -50%) rotate(${rotateDeg}deg) scale(${scale})`;
+            const initTransform = `translate(${initX}px, ${initY}px) translate(-50%, -50%)`
+            const fallTransform = `translate(${fallX}px, ${fallY}px) translate(-50%, -50%) rotate(${rotateDeg}deg) scale(${scale})`
 
-            const isFallen = fallenSet.has(index);
+            const isFallen = fallenSet.has(index)
 
             return (
               <div
@@ -129,7 +129,7 @@ const PiramidAnimation = () => {
                   height={50}
                 />
               </div>
-            );
+            )
           })}
         </div>
         {/* Floating badges */}
@@ -171,7 +171,7 @@ const PiramidAnimation = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PiramidAnimation;
+export default PiramidAnimation

@@ -5,6 +5,7 @@ import nativeBannerImg from "@/assets/meeting-banner-images/python.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/services/python/python.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 // Svg Icons Components
 import PythonIcon1 from "@/components/ServicesSvg/PythonIcon/PythonIcon1"
@@ -65,7 +66,7 @@ export const python: PageData = {
     keywords:
       "Python development Service USA,best Python development company India,affordable Python developers India,hire dedicated Python developers USA,custom Python web app development India,scalable Python software solutions USA",
     canonical: "/services/python-development-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

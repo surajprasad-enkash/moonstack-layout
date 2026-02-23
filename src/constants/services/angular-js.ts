@@ -17,6 +17,7 @@ import AngularJsIcon9 from "@/components/ServicesSvg/AngularJSIcon/AngularJSIcon
 import AngularJsIcon10 from "@/components/ServicesSvg/AngularJSIcon/AngularJSIcon10"
 import AngularJsIcon11 from "@/components/ServicesSvg/AngularJSIcon/AngularJSIcon11"
 import AngularJsIcon12 from "@/components/ServicesSvg/AngularJSIcon/AngularJSIcon12"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 export const angularJs: PageData = {
   hero: {
@@ -64,7 +65,7 @@ export const angularJs: PageData = {
     keywords:
       "AngularJS developers India,AngularJS development company India,AngularJS web application development India,AngularJS developers UK,AngularJS development company UK,AngularJS web application development London,Hire AngularJS programmers USA,AngularJS consulting firm USA",
     canonical: "/services/angularjs-development-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

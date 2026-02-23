@@ -203,7 +203,7 @@ export interface PageData {
     description: string
     keywords: string
     canonical: string
-    ogImage: string
+    ogImage: string | StaticImageData | ElementType
   }
 
   accordionData: IAccordionItem[]

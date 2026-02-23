@@ -11,6 +11,7 @@ import Heading from "@/components/Heading/Heading"
 import ProjectCTA from "@/components/ProjectCTA/ProjectCTA"
 import { Metadata } from "next"
 import { buildMetadata } from "@/helper/generateMetadata "
+import OgImageIcon from "@/assets/ogImage.svg"
 
 /* ================= META ================= */
 
@@ -20,6 +21,7 @@ export const generateMetadata = (): Metadata => {
     description:
       "Explore the latest AI and tech insights, news, and blog posts on web and mobile app development from the Moonstack team.",
     canonical: "https://www.moonstack.com/blogs",
+    ogImage: OgImageIcon.src,
   })
 }
 

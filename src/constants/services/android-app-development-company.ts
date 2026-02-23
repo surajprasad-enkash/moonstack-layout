@@ -12,6 +12,8 @@ import AndroidAppDev4 from "@/components/ServicesSvg/AndroidAppDevelopment/Andro
 import AndroidAppDev5 from "@/components/ServicesSvg/AndroidAppDevelopment/AndroidAppDev5"
 import AndroidAppDev6 from "@/components/ServicesSvg/AndroidAppDevelopment/AndroidAppDev6"
 
+import OgImageIcon from "@/assets/ogImage.svg"
+
 export const android: PageData = {
   hero: {
     title: [
@@ -53,7 +55,7 @@ export const android: PageData = {
     keywords:
       "Android app development Service India,Android app development company USA,Best Android app developers India,Custom Android application development USA,Android app development agency UK",
     canonical: "/services/android-app-development-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

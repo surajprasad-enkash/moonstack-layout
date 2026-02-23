@@ -1,6 +1,6 @@
 import award1 from "@/assets/newHomePage/awards/clutch.svg"
-import award2 from "@/assets/newHomePage/awards/Top_Design_company_2025.png"
-import award3 from "@/assets/newHomePage/awards/Top_Digital_Design_Company_2025.png"
+import award2 from "@/assets/newHomePage/awards/Top_Design_company_2025.webp"
+import award3 from "@/assets/newHomePage/awards/Top_Digital_Design_Company_2025.webp"
 import award4 from "@/assets/newHomePage/awards/clutch-badge-6.svg"
 import award5 from "@/assets/newHomePage/awards/clutch-badge.svg"
 import award6 from "@/assets/newHomePage/awards/dribbble.svg"
@@ -15,11 +15,11 @@ import step4 from "@/assets/contact-us/NextStepsSection/step4Icon.webp"
 import stepdes from "@/assets/contact-us/NextStepsSection/process-desktop-line.svg"
 import step4Tab from "@/assets/contact-us/NextStepsSection/process-line-tablet.svg"
 
-import userImage from "@/assets/clientsImages/manshi.jpg"
+import userImage from "@/assets/clientsImages/manshi.webp"
 
 export interface IAccordionItem {
-  answer: string;
-  question: string;
+  answer: string
+  question: string
 }
 
 export const accordionData: IAccordionItem[] = [
@@ -53,7 +53,7 @@ export const accordionData: IAccordionItem[] = [
     answer:
       "Yes, Moonstack works with clients across India, the US, Europe, and other global markets.",
   },
-];
+]
 
 export const contactTestimonial = {
   points: [
@@ -139,4 +139,4 @@ export const nextSteps = [
   },
 ]
 
-export default {};
+export default {}

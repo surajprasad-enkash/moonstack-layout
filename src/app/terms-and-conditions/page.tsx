@@ -3,6 +3,19 @@ import Layout from "@/components/Layout"
 import Heading from "@/components/Heading/Heading"
 import { privacyPolicyData } from "@/constants/terms-and-conditions"
 
+import OgImageIcon from "@/assets/ogImage.svg"
+import { Metadata } from "next"
+import { buildMetadata } from "@/helper/generateMetadata "
+
+export const generateMetadata = (): Metadata => {
+  return buildMetadata({
+    title: "Terms And Conditions",
+    description:
+      "Moonstack's Terms and Conditions outline our commitment to protecting your personal information. Learn about data collection, usage, and your rights under GDPR and CCPA.",
+    canonical: "https://www.moonstack.com/terms-and-conditions",
+    ogImage: OgImageIcon.src,
+  })
+}
 export default function PrivacyPolicy() {
   return (
     <Layout>
@@ -42,8 +55,8 @@ export default function PrivacyPolicy() {
               />
             </div>
 
-            {privacyPolicyData.map((section) => (
-              <section key={section.title} className="mb-16">
+            {privacyPolicyData.map((section, i) => (
+              <section key={i} className="mb-16">
                 <h2 className="mb-3 text-2xl font-semibold">{section.title}</h2>
 
                 {Array.isArray(section.content) ? (

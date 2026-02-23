@@ -5,7 +5,7 @@ import nativeBannerImg from "@/assets/meeting-banner-images/laravel.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/services/laravel/laravel.webp"
-
+import OgImageIcon from "@/assets/ogImage.svg"
 // Svg Icons Components
 import laravelIcon1 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon1"
 import laravelIcon2 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon2"
@@ -19,7 +19,7 @@ import laravelIcon9 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon9"
 import laravelIcon10 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon10"
 import laravelIcon11 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon11"
 import laravelIcon12 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon12"
-import bccKristenCheng6 from "@/assets/clientsImages/amitnuvama.jpg"
+import bccKristenCheng6 from "@/assets/clientsImages/amitnuvama.webp"
 
 export const laravel: PageData = {
   hero: {
@@ -66,7 +66,7 @@ export const laravel: PageData = {
     keywords:
       "Laravel development service USA,best Laravel development company USA,affordable Laravel developers India,hire dedicated Laravel developers India,custom Laravel web application development India",
     canonical: "/services/laravel-website-development-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

@@ -5,6 +5,7 @@ import nativeBannerImg from "@/assets/app-development-images/native-banner-img.w
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/services/shopify/shopify.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 import ShopifyIcon1 from "@/components/ServicesSvg/ShopifyIcon/ShopifyIcon1"
 import ShopifyIcon2 from "@/components/ServicesSvg/ShopifyIcon/ShopifyIcon2"
@@ -64,7 +65,7 @@ export const shopify: PageData = {
     keywords:
       "shopify website development company USA,affordable shopify website developers India,shopify website design services India,shopify website experts USA,custom shopify store development service USA",
     canonical: "/services/shopify-website-development-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

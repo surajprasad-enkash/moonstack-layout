@@ -4,8 +4,8 @@ import React, { useState } from "react"
 import dynamic from "next/dynamic"
 import Image from "next/image"
 import Heading from "@/components/Heading/Heading"
-import usaFlag from "@/assets/contact-us/usa-flag.png"
-import indiaFlag from "@/assets/contact-us/india-flag.png"
+import usaFlag from "@/assets/contact-us/usa-flag.webp"
+import indiaFlag from "@/assets/contact-us/india-flag.webp"
 import CalBookingButton from "@/components/CalBookingButton/CalBookingButton"
 
 const WorldMap = dynamic(() => import("@/components/Map"), {

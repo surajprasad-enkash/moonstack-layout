@@ -14,7 +14,8 @@ import AiIcon7 from "@/components/ServicesSvg/AiIcon/AiIcon7"
 import AiIcon8 from "@/components/ServicesSvg/AiIcon/AiIcon8"
 import AiIcon9 from "@/components/ServicesSvg/AiIcon/AiIcon9"
 import AiIcon10 from "@/components/ServicesSvg/AiIcon/AiIcon10"
-import bccKristenCheng6 from "@/assets/clientsImages/brainmates.jpg"
+import bccKristenCheng6 from "@/assets/clientsImages/brainmates.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 export const ai: PageData = {
   hero: {
@@ -56,7 +57,7 @@ export const ai: PageData = {
     keywords:
       "custom ai development company in USA,ai development services for startups,ai agent development company for businesses,hire ai developers for custom automation,enterprise ai development services for digital transformation",
     canonical: "/services/ai-agent-development-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

@@ -1,7 +1,7 @@
-import industryicon1 from "@/assets/industries/icon/dbd2_i1.png"
-import industryicon2 from "@/assets/industries/icon/b_i2.png"
-import industryicon3 from "@/assets/industries/icon/b_i4.png"
-import industryicon4 from "@/assets/industries/icon/_i5.png"
+import industryicon1 from "@/assets/industries/icon/dbd2_i1.webp"
+import industryicon2 from "@/assets/industries/icon/b_i2.webp"
+import industryicon3 from "@/assets/industries/icon/b_i4.webp"
+import industryicon4 from "@/assets/industries/icon/_i5.webp"
 
 import revenue1 from "@/assets/revenue.svg"
 import neeta from "@/assets/about-us/neetaMan2.webp"

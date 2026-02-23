@@ -5,15 +5,28 @@ import Layout from "@/components/Layout"
 import AppCategoryBanner from "@/components/Sections/ServicesSection/AppDevelopment/AppCategoryBanner"
 import Space from "@/components/Space"
 
-const ServicesSection = dynamic(() => import("@/components/NewHomePage/ServicesSection"))
-const CaseStudyHighlight = dynamic(() => import("@/components/NewHomePage/CaseStudyHighlight"))
-const TestimonialsTabs = dynamic(() => import("@/components/NewHomePage/TestimonialsTabs"))
-const BlogInsightsSection = dynamic(() => import("@/components/NewHomePage/BlogInsightsSection"))
+const ServicesSection = dynamic(
+  () => import("@/components/NewHomePage/ServicesSection")
+)
+const CaseStudyHighlight = dynamic(
+  () => import("@/components/NewHomePage/CaseStudyHighlight")
+)
+const TestimonialsTabs = dynamic(
+  () => import("@/components/NewHomePage/TestimonialsTabs")
+)
+const BlogInsightsSection = dynamic(
+  () => import("@/components/NewHomePage/BlogInsightsSection")
+)
 const ProjectCTA = dynamic(() => import("@/components/ProjectCTA/ProjectCTA"))
-const TrustBadges = dynamic(() => import("@/components/NewHomePage/TrustBadges"))
+const TrustBadges = dynamic(
+  () => import("@/components/NewHomePage/TrustBadges")
+)
 
 import { tabs, badges } from "@/constants/services/mainPage"
 import clutch from "@/assets/newHomePage/caseStudy/clutch.svg"
+import OgImageIcon from "@/assets/ogImage.svg"
+import { Metadata } from "next"
+import { buildMetadata } from "@/helper/generateMetadata "
 
 import screen1 from "@/assets/newHomePage/caseStudy/screenOne.webp"
 import screen2 from "@/assets/newHomePage/caseStudy/nuwamaScreen1.webp"
@@ -22,8 +35,17 @@ import screen3 from "@/assets/newHomePage/caseStudy/nuwamaScreen2.webp"
 import Pickrightscreen1 from "@/assets/newHomePage/caseStudy/pickrightScreen1.webp"
 import Pickrightscreen2 from "@/assets/newHomePage/caseStudy/pickrightScreen2.webp"
 import Pickrightscreen3 from "@/assets/newHomePage/caseStudy/pickrightScreen3.webp"
-import amitnuvama from "@/assets/clientsImages/amitnuvama.jpg"
-import pickright from "@/assets/clientsImages/numanbhatiyapikright.jpg"
+import amitnuvama from "@/assets/clientsImages/amitnuvama.webp"
+import pickright from "@/assets/clientsImages/numanbhatiyapikright.webp"
+export const generateMetadata = (): Metadata => {
+  return buildMetadata({
+    title: "Services",
+    description:
+      "Moonstack offers a range of services to help you succeed in your business. Explore our services and learn how we can help you achieve your goals.",
+    canonical: "https://www.moonstack.com/services",
+    ogImage: OgImageIcon.src,
+  })
+}
 export default function ApplicationPage() {
   return (
     <>

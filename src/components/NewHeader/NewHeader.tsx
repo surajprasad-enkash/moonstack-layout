@@ -11,7 +11,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import HeroVideoModal from "@/components/NewHomePage/HeroVideoModal"
 import { useVideoModal } from "@/context/VideoModalContext"
 
-import logo from "@/assets/logo-white.png"
+import logo from "@/assets/logo-white.webp"
 
 //other
 import { megaMenuData, aboutMenu } from "./headerData"
@@ -88,8 +88,7 @@ export default function NewHeader() {
                 onMouseEnter={() => setOpenMenu("services")}
                 onMouseLeave={() => setOpenMenu(null)}
               >
-                {" "}
-                <button className="flex cursor-pointer items-center gap-2 transition">
+                <div className="flex cursor-pointer items-center gap-2 transition">
                   <Link href="/services">
                     <HoverSlideText
                       text="Services"
@@ -101,11 +100,11 @@ export default function NewHeader() {
                       openMenu === "services" ? "text-[#d6ff00]" : "text-white"
                     }`}
                   />
-                </button>
+                </div>
                 {openMenu === "services" && (
                   <div className="absolute top-[20px] left-[50%] translate-x-[-36.7%] pt-10 text-black">
                     {/* TOP SECTION */}
-                    <div className="no-scrollbar h-[83vh] max-h-[max-content] w-[100vw] max-w-[1440px] overflow-auto rounded-[24px] rounded-tl-none bg-white p-8 pt-[px]">
+                    <div className="no-scrollbar h-[83vh] max-h-[max-content] w-[100vw] max-w-[1440px] overflow-auto rounded-[24px] rounded-tl-none bg-white p-8">
                       <div className="grid grid-cols-[2fr_1fr_1fr] gap-x-8">
                         {/* website (2 columns) */}
                         <div>
@@ -345,7 +344,7 @@ export default function NewHeader() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.3 }}
-              className="h-100vh fixed inset-0 top-[27px] z-40 flex flex-col px-5 py-8 text-white lg:hidden"
+              className="fixed inset-0 top-[27px] z-40 flex h-[100vh] flex-col px-5 py-8 text-white lg:hidden"
             >
               <div className="flex h-full flex-col overflow-y-auto">
                 <ul className="absolute left-0 flex max-h-[80vh] w-full flex-col gap-6 overflow-y-auto rounded-[20px] rounded-b-[20px] bg-black px-5 pb-5 text-lg font-medium">

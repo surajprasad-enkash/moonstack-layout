@@ -6,7 +6,7 @@ import Link from "next/link"
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi"
 
 import checkIcon from "@/assets/contact-us/check icon.svg"
-import logo from "@/assets/logo-white.png"
+import logo from "@/assets/logo-white.webp"
 import copyIcon from "@/assets/copyIcon.svg"
 
 interface ContactInfoCardProps {

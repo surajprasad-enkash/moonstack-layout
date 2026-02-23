@@ -2,8 +2,7 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 import Icon1 from "@/components/ServicesSvg/ItSupportIcon/ItSupportIcon1"
 import Icon2 from "@/components/ServicesSvg/ItSupportIcon/ItSupportIcon2"
@@ -53,7 +52,7 @@ export const it_support: PageData = {
     keywords:
       "managed IT support company USA,affordable IT helpdesk services India,remote IT support for businesses India,IT infrastructure support USA,24/7 IT support providers India,enterprise IT support services India,IT network troubleshooting services USA",
     canonical: "/services/it-support-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

@@ -5,7 +5,7 @@ import nativeBannerImg from "@/assets/meeting-banner-images/android.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
-
+import OgImageIcon from "@/assets/ogImage.svg"
 // Svg Icons Components
 import MadIcon1 from "@/components/ServicesSvg/MadIcon/MadIcon1"
 import MadIcon2 from "@/components/ServicesSvg/MadIcon/MadIcon2"
@@ -59,7 +59,7 @@ export const mobileAppDev: PageData = {
     keywords:
       "Mobile app maintenance services India,Mobile app maintenance company USA,App support and maintenance India,Mobile app troubleshooting service USA,App updates and upgrade service UK",
     canonical: "/services/mobile-app-development-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

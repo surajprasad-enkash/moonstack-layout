@@ -2,6 +2,19 @@ import Breadcrumb from "@/components/Breadcrumb"
 import Layout from "@/components/Layout"
 import Heading from "@/components/Heading/Heading"
 import { privacyPolicyData } from "@/constants/terms-and-conditions"
+import OgImageIcon from "@/assets/ogImage.svg"
+import { Metadata } from "next"
+import { buildMetadata } from "@/helper/generateMetadata "
+
+export const generateMetadata = (): Metadata => {
+  return buildMetadata({
+    title: "Cookie Policy",
+    description:
+      "Moonstack's Cookie Policy outlines how we use cookies to enhance your experience and protect your privacy. Learn more about our cookie usage and how to manage your preferences.",
+    canonical: "https://www.moonstack.com/cookie-policy",
+    ogImage: OgImageIcon.src,
+  })
+}
 
 export default function CookiePolicy() {
   return (

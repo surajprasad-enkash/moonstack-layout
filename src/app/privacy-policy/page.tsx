@@ -2,6 +2,19 @@ import Breadcrumb from "@/components/Breadcrumb"
 import Layout from "@/components/Layout"
 import Heading from "@/components/Heading/Heading"
 import { privacyPolicyData } from "@/constants/privacy-policy"
+import OgImageIcon from "@/assets/ogImage.svg"
+import { Metadata } from "next"
+import { buildMetadata } from "@/helper/generateMetadata "
+
+export const generateMetadata = (): Metadata => {
+  return buildMetadata({
+    title: "Privacy Policy",
+    description:
+      "Moonstack's Privacy Policy outlines our commitment to protecting your personal information. Learn about data collection, usage, and your rights under GDPR and CCPA.",
+    canonical: "https://www.moonstack.com/privacy-policy",
+    ogImage: OgImageIcon.src,
+  })
+}
 
 export default function PrivacyPolicy() {
   return (

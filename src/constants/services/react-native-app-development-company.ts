@@ -2,7 +2,6 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/react-native.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
 import bndimage1 from "@/assets/services/reactNative/reactNative.webp"
@@ -12,7 +11,8 @@ import RnaIcon3 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon3"
 import RnaIcon4 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon4"
 import RnaIcon5 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon5"
 import RnaIcon6 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon6"
-import bccKristenCheng6 from "@/assets/clientsImages/manshi.jpg"
+import bccKristenCheng6 from "@/assets/clientsImages/manshi.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 export const react_native: PageData = {
   hero: {
@@ -59,7 +59,7 @@ export const react_native: PageData = {
     keywords:
       "React Native app development Service USA,React Native app development company India,Best React Native app developers India,React Native developers USA,Custom React Native applications India",
     canonical: "/services/react-native-app-development-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

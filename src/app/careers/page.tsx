@@ -1,7 +1,9 @@
 import dynamic from "next/dynamic"
 import Layout from "@/components/Layout"
 import HeroSection from "./heroSection"
-const GetQuoteBanner = dynamic(() => import("@/components/GetQuoteBanner/GetQuoteBanner"))
+const GetQuoteBanner = dynamic(
+  () => import("@/components/GetQuoteBanner/GetQuoteBanner")
+)
 const WhyJoinSection = dynamic(() => import("./whyJoin"))
 const LatestOpportunity = dynamic(() => import("./latestOpp"))
 const ProcessSection = dynamic(() => import("./process"))
@@ -13,6 +15,7 @@ import { benefitsData, whyJoinData, processData, quoteBannerData } from "./data"
 import bannerImg from "@/assets/android-app-bg.webp"
 import { Metadata } from "next"
 import { buildMetadata } from "@/helper/generateMetadata "
+import OgImageIcon from "@/assets/ogImage.svg"
 
 export const generateMetadata = (): Metadata => {
   return buildMetadata({
@@ -20,6 +23,7 @@ export const generateMetadata = (): Metadata => {
     description:
       "Discover career opportunities at Moonstack. Join our product-focused teams and grow your future building innovative digital products. Apply Now!",
     canonical: "https://www.moonstack.com/careeers",
+    ogImage: OgImageIcon.src,
   })
 }
 

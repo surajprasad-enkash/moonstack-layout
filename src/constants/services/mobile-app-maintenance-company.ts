@@ -3,7 +3,7 @@ import { PageData } from "@/types/web-development-data-type"
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/mobile-main.webp"
 import bndimage1 from "@/assets/services/mobileMaintenance/mobileMaintance.webp"
-
+import OgImageIcon from "@/assets/ogImage.svg"
 // svg icons components
 import MamIcon1 from "@/components/ServicesSvg/MamIcon/MamIcon1"
 import MamIcon2 from "@/components/ServicesSvg/MamIcon/MamIcon2"
@@ -57,7 +57,7 @@ export const app_maintenance: PageData = {
     keywords:
       "Mobile app maintenance services USA,Mobile app maintenance company USA,App support and maintenance India,Mobile app troubleshooting service India,App updates and upgrade service India,Mobile app bug fixing service India",
     canonical: "/services/mobile-app-maintenance-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

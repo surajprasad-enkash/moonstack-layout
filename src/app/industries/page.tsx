@@ -31,7 +31,19 @@ import {
   industryExperienceData,
   projectCtaBgData,
 } from "@/constants/industries"
+import OgImageIcon from "@/assets/ogImage.svg"
+import { Metadata } from "next"
+import { buildMetadata } from "@/helper/generateMetadata "
 
+export const generateMetadata = (): Metadata => {
+  return buildMetadata({
+    title: "Industries",
+    description:
+      "Explore our industries and learn how Moonstack can help you succeed in your business. Discover our expertise in app development, AI products, and more.",
+    canonical: "https://www.moonstack.com/industries",
+    ogImage: OgImageIcon.src,
+  })
+}
 const Industries = () => {
   return (
     <>

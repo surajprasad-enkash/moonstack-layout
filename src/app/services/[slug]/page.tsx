@@ -6,19 +6,41 @@ import { pagesData, pagesKeys } from "@/constants/services"
 
 /* ===================== SECTIONS ===================== */
 import AppCategoryBanner from "@/components/Sections/ServicesSection/AppDevelopment/AppCategoryBanner"
-const FeatureSection = dynamic(() => import("@/components/Sections/ServicesSection/FeatureSection"))
-const OutcomeBanner = dynamic(() => import("@/components/Sections/ServicesSection/OutcomeBanner"))
-const ImpactSection = dynamic(() => import("@/components/Sections/ServicesSection/ImpactSection"))
-const TechMarqueeComponent = dynamic(() => import("@/components/Sections/TechMarquee"))
-const QualitySection = dynamic(() => import("@/components/Sections/QualitySection"))
-const ProcessStages = dynamic(() => import("@/components/Sections/ServicesSection/AgencyWorkFlowSection"))
-const TestimonialsSection = dynamic(() => import("@/components/Industries/TestimonialsSection"))
-const TeamSliderSection = dynamic(() => import("@/components/Sections/TeamSliderSection/SliderSection"))
-const FAQSection = dynamic(() => import("@/components/Sections/FaqSection/FaqSection"))
+const FeatureSection = dynamic(
+  () => import("@/components/Sections/ServicesSection/FeatureSection")
+)
+const OutcomeBanner = dynamic(
+  () => import("@/components/Sections/ServicesSection/OutcomeBanner")
+)
+const ImpactSection = dynamic(
+  () => import("@/components/Sections/ServicesSection/ImpactSection")
+)
+const TechMarqueeComponent = dynamic(
+  () => import("@/components/Sections/TechMarquee")
+)
+const QualitySection = dynamic(
+  () => import("@/components/Sections/QualitySection")
+)
+const ProcessStages = dynamic(
+  () => import("@/components/Sections/ServicesSection/AgencyWorkFlowSection")
+)
+const TestimonialsSection = dynamic(
+  () => import("@/components/Industries/TestimonialsSection")
+)
+const TeamSliderSection = dynamic(
+  () => import("@/components/Sections/TeamSliderSection/SliderSection")
+)
+const FAQSection = dynamic(
+  () => import("@/components/Sections/FaqSection/FaqSection")
+)
 const ProjectCTA = dynamic(() => import("@/components/ProjectCTA/ProjectCTA"))
-const TestimonialCard = dynamic(() => import("@/components/Sections/ServicesSection/ReviewCardSection"))
+const TestimonialCard = dynamic(
+  () => import("@/components/Sections/ServicesSection/ReviewCardSection")
+)
 const NewBanner = dynamic(() => import("@/components/Sections/NewBanner"))
-const AwardsSection = dynamic(() => import("@/components/NewHomePage/AwardsSection"))
+const AwardsSection = dynamic(
+  () => import("@/components/NewHomePage/AwardsSection")
+)
 import { type AwardItem } from "@/components/NewHomePage/AwardsSection"
 
 import { testimonialsSectionData } from "@/constants/industries"
@@ -27,17 +49,15 @@ import Space from "@/components/Space"
 
 /* ===================== ASSETS ===================== */
 import gradientBg from "@/assets/app-development-images/bannerGradientBg.svg"
-// import userImage from "@/assets/app-development-images/autorImg.webp"
 
 import androidBgImg from "@/assets/app-development-images/hero-bg-1440.svg"
 import projectCtaBgImg from "@/assets/app-development-images/af_match-bg-1440.svg"
 import reviewBgImg from "@/assets/app-development-images/review-under-hero-bg-1440.svg"
-import bccKristenCheng from "@/assets/industries/icon/bcc_kristen-cheng.webp"
 
 /* ===================== AWARDS ===================== */
 import award1 from "@/assets/newHomePage/awards/clutch.svg"
-import award2 from "@/assets/newHomePage/awards/Top_Design_company_2025.png"
-import award3 from "@/assets/newHomePage/awards/Top_Digital_Design_Company_2025.png"
+import award2 from "@/assets/newHomePage/awards/Top_Design_company_2025.webp"
+import award3 from "@/assets/newHomePage/awards/Top_Digital_Design_Company_2025.webp"
 import award4 from "@/assets/newHomePage/awards/clutch-badge-6.svg"
 import award5 from "@/assets/newHomePage/awards/clutch-badge.svg"
 import award6 from "@/assets/newHomePage/awards/dribbble.svg"
@@ -69,6 +89,10 @@ export async function generateMetadata({
     }
   }
 
+  const ogImage = page.seo.ogImage
+  const ogImageUrl =
+    typeof ogImage === "string" ? ogImage : (ogImage as any)?.src
+
   return {
     title: page.seo.title,
     description: page.seo.description,
@@ -82,13 +106,13 @@ export async function generateMetadata({
       url: page.seo.canonical,
       siteName: "Moonstack",
       type: "website",
-      images: page.seo.ogImage ? [{ url: page.seo.ogImage }] : [],
+      images: ogImageUrl ? [{ url: ogImageUrl }] : [],
     },
     twitter: {
       card: "summary_large_image",
       title: page.seo.title,
       description: page.seo.description,
-      images: page.seo.ogImage ? [page.seo.ogImage] : [],
+      images: ogImageUrl ? [ogImageUrl] : [],
     },
   }
 }

@@ -3,6 +3,7 @@ import { PageData } from "@/types/web-development-data-type"
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
 import bndimage1 from "@/assets/services/wordpress/wordpress.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 import Icon1 from "@/components/ServicesSvg/WordPressIcon/WordPressIcon1"
 import Icon2 from "@/components/ServicesSvg/WordPressIcon/WordPressIcon2"
@@ -58,7 +59,7 @@ export const wordPress: PageData = {
     keywords:
       "wordpress development company USA,wordpress development service India,custom wordpress development service India,hire wordpress website developers USA,affordable wordpress website development service",
     canonical: "/services/wordpress-website-development-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

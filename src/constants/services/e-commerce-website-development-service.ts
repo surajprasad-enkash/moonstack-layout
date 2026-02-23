@@ -3,6 +3,7 @@ import { PageData } from "@/types/web-development-data-type"
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/e-commerce.webp"
 import bndimage1 from "@/assets/services/eComm/eComm.webp"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 // Svg Icons Components
 import EcommerceIcon1 from "@/components/ServicesSvg/EcommerceIcon/EcommerceIcon1"
@@ -63,7 +64,7 @@ export const ecommerce: PageData = {
     keywords:
       "ecommerce SEO services provider USA,SEO for ecommerce websites India,affordable ecommerce SEO service India,ecommerce SEO experts USA,Shopify ecommerce SEO USA",
     canonical: "/services/ecommerce-website-development-company",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 

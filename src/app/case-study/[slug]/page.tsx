@@ -3,6 +3,7 @@ import CaseStudyPages from "@/components/CaseStudy/CaseStudySingle/CaseStudyPage
 import { getCaseStudy } from "@/helper"
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
+import OgImageIcon from "@/assets/ogImage.svg"
 
 interface PageProps {
   params: {
@@ -60,7 +61,9 @@ export async function generateMetadata({
       url: seo.og?.url || seo.canonical,
       siteName: "Moonstack",
       type: "article",
-      images: seo.og?.image ? [{ url: seo.og.image }] : [],
+      images: seo.og?.image
+        ? [{ url: seo.og.image }]
+        : [{ url: OgImageIcon.src }],
     },
 
     // ✅ Twitter Card
@@ -72,7 +75,7 @@ export async function generateMetadata({
         ? [seo.twitter.image]
         : seo.og?.image
           ? [seo.og.image]
-          : [],
+          : [{ url: OgImageIcon.src }],
     },
 
     robots: seo.robots || undefined,

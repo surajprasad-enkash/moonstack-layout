@@ -9,7 +9,7 @@ import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
 import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
 import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
-
+import OgImageIcon from "@/assets/ogImage.svg"
 import collaboration from "@/assets/app-development-images/flexible.webp"
 
 export const java: PageData = {
@@ -49,7 +49,7 @@ export const java: PageData = {
       "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
     canonical:
       "https://www.moonstack.com/android-app-development-service/android-app-development-service",
-    ogImage: "/opengraph-image.png",
+    ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
 
