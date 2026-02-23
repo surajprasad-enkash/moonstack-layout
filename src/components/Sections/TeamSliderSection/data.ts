@@ -19,18 +19,23 @@ import Member17 from "@/assets/members/suraj.webp"
 import Member18 from "@/assets/members/shubham.webp"
 import Member19 from "@/assets/members/tara.webp"
 
+import TeamBottomInfoImg1 from "@/assets/app-development-images/team-bottom-cards-1.svg"
+import TeamBottomInfoImg2 from "@/assets/app-development-images/team-bottom-cards-2.svg"
+import TeamBottomInfoImg3 from "@/assets/app-development-images/team-bottom-cards-3.svg"
+import TeamBottomInfoImg4 from "@/assets/app-development-images/team-bottom-cards-4.svg"
+
 export type SlideItem =
   | {
-      type: "image"
-      image: StaticImageData | string
-      title: string
-    }
+    type: "image"
+    image: StaticImageData | string
+    title: string
+  }
   | {
-      type: "stat"
-      count: string
-      label: string
-      subLabel: string
-    }
+    type: "stat"
+    count: string
+    label: string
+    subLabel: string
+  }
 
 export const slides: SlideItem[] = [
   { type: "image", image: Member1, title: "Designer" },
@@ -67,4 +72,23 @@ export const slides: SlideItem[] = [
   { type: "image", image: Member17, title: "Designer" },
   { type: "image", image: Member18, title: "Designer" },
   { type: "image", image: Member19, title: "Designer" },
+]
+
+export const features = [
+  {
+    text: "Daily reports & time-tracking",
+    bgImage: TeamBottomInfoImg1,
+  },
+  {
+    text: "Transparent process where you get access to working files",
+    bgImage: TeamBottomInfoImg2,
+  },
+  {
+    text: "Meetings & regular feedback gathering",
+    bgImage: TeamBottomInfoImg3,
+  },
+  {
+    text: "Close cooperation where you get flexibility and comfort",
+    bgImage: TeamBottomInfoImg4,
+  },
 ]
