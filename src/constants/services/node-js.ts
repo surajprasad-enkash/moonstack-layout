@@ -1,33 +1,51 @@
 import { PageData } from "@/types/web-development-data-type"
 
-import androidLottie from "../../../public/lottie/android.json"
+import nodeJsLottie from "../../../public/lottie/nodeJs.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
-import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
-import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
-import brandingIcon from "@/assets/app-development-images/featureImgThree.webp"
-import collaboration from "@/assets/app-development-images/flexible.webp"
 import OgImageIcon from "@/assets/ogImage.svg"
+import userImage from "@/assets/clientsImages/manshi.webp"
+import NodeJsBanner from "@/assets/nodeJs/bannerImg.webp"
+
+import NodeJs1 from "@/components/ServicesSvg/NodeJS/NodeJs1"
+import NodeJs2 from "@/components/ServicesSvg/NodeJS/NodeJs2"
+import NodeJs3 from "@/components/ServicesSvg/NodeJS/NodeJs3"
+import NodeJs4 from "@/components/ServicesSvg/NodeJS/NodeJs4"
+import NodeJs5 from "@/components/ServicesSvg/NodeJS/NodeJs5"
+import NodeJs6 from "@/components/ServicesSvg/NodeJS/NodeJs6"
+import NodeJs7 from "@/components/ServicesSvg/NodeJS/NodeJs7"
+import NodeJs8 from "@/components/ServicesSvg/NodeJS/NodeJs8"
+import NodeJs9 from "@/components/ServicesSvg/NodeJS/NodeJs9"
+import NodeJs10 from "@/components/ServicesSvg/NodeJS/NodeJs10"
+import NodeJs11 from "@/components/ServicesSvg/NodeJS/NodeJs11"
+import NodeJs12 from "@/components/ServicesSvg/NodeJS/NodeJs12"
+
 export const nodeJs: PageData = {
   hero: {
     title: [
       {
-        text: "Laravel Website Development Service Provider",
+        text: "Professional",
         color: "text-white",
+      },
+      {
+        text: "Node.js Development",
+        color: "",
+        className: "libreItalic font-[400] highlight-text",
+      },
+      {
+        text: "Services",
+        color: "text-white",
+        className: "",
       },
     ],
     description: [
       {
-        text: "Need a fast, secure, and scalable web solution? Our Laravel development services deliver enterprise-grade applications with clean code, optimal performance, and seamless functionality.",
+        text: "Develop fast, scalable, and secure backend applications that match your modern business needs. With Node.js, leverage the benefits of event-driven architecture, secure API’s, and real-time apps that ensure to deliver high performance next generation based apps. Launch secure and seamless enterprise-grade applications that deliver seamless performance, fully flexible, and scalable for long term digital platforms.",
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
-    lottieData: androidLottie,
+    lottieData: nodeJsLottie,
     breadcrumbs: [
       { label: "Home", href: "/" },
       {
@@ -35,36 +53,39 @@ export const nodeJs: PageData = {
         href: "/services",
       },
       {
-        label: "Laravel",
-        href: "/services/laravel-website-development-company",
+        label: "NodeJs",
+        href: "/services/nodejs-development-company",
       },
     ],
   },
   seo: {
-    title: "Android App Development Company India & USA ",
+    title: "Professional Node.js Development service | India & USA",
     description:
-      "Find Android app development partner in India? Moonstack delivers secure, scalable Android apps using modern architecture and long‑term maintenance support. call today",
+      "Moonstack offers custom Node.js development in India & USA. Get secure web apps, APIs, and backend solutions with expert developers. Book a call now!",
     keywords:
-      "Android app development Service India, Best Android app developers India,  Custom Android application development India,Android app development agency India",
-    canonical:
-      "https://www.moonstack.com/android-app-development-service/android-app-development-service",
+      "best NodeJS development company India,affordable NodeJS developent service in India,NodeJS development company in USA,NodeJS development company in UK,custom NodeJS application development services,NodeJS development company in Canada,NodeJS development company in Australia,NodeJS development company in Germany,NodeJS development company in France",
+    canonical: "/services/nodejs-development-company",
     ogImage: OgImageIcon.src,
   },
   mobDesignBanner: nativeBannerImg,
-
   points:
-    "After struggling with another agency for months, Moonstack came in and delivered what we needed in record time. Their Laravel expertise is unmatched—they not only built exactly what we envisioned but suggested improvements we hadn't considered. The application is scalable, secure, and performs beautifully under heavy load. They've become our go-to development partner for all future projects.",
-  highlightText: "The application is scalable",
+    "Working with Moonstack on our Node.js project was a smooth and professional experience. Their team understood our requirements clearly and delivered a secure, high-quality application on time. Communication was consistent, and their post-launch support was reliable. We appreciate their technical expertise and would gladly recommend Moonstack for Node.js development services.",
+  highlightText: "smooth and professional experience",
+  userImage: userImage.src,
+  userName: "Mansi Bhatia",
+  userRole: "Project Manager",
 
   leftCardData: [
     {
-      title: "Transform Your Business with Custom Laravel Solutions",
+      title: "Professional Node.js Development company",
       description:
-        "Moonstack is known as the leading Laravel development company in India across the globe. We have delivered a wide range of PHP based Laravel web solutions to different businesses. With our expert Laravel developers, we have built custom Laravel web apps, POS systems, CRMs, video streaming apps, and many more solutions to meet diverse needs of different businesses.",
-      stats: [],
+        "Moonstack is the leading Node.js development company. With our technical expertise, we provide secure, scalable, and high-performance web applications in the market. Our highly professional Node.js developers' main aim is to deliver robust web solutions, intelligent systems, and scalable architectures to meet modern business demands and provide long term scalability. At Moonstack, we hired Node.js developers from across the world who have hands-on experience with different projects and have worked with different professionals.",
+      stats: [
+        "We have delivered extensive Node.js web applications to start ups - mid sized companies, and large enterprises. To deliver a successful Node.js web application, we follow an agile methodology, maintain fully transparent communication, and provide full support to our customers. Along with this, we also adopt standard coding practices that ensure coders write clean code, adhere to secure security standards, and focus on user experience.",
+      ],
       description2:
-        "Our main aim is to meet our clients expectations. We have created a Laravel web development strategy that allows us to offer secure Laravel web development services to our customers. At Moonstack, we have a blend of professional Laravel web experts, who have decades of experience in the industry. We keep ourselves updated with all the Laravel framework updates that allow us to stay ahead in the market competition and integrate advanced functionalities in the system as per the specific business needs.",
-      image: bndimage1.src,
+        "Our Node.js web developers opt for modern frameworks that include cloud technologies and intelligent automation processes that help businesses to streamline operations, improve efficiency, and secure the workflow process. At Moonstack, we have delivered the latest web applications that are based on innovative technologies, agile development processes, and scalable architectures to meet different technological market needs. We also offer you an opportunity to hire Node.js developers on a part-time, full-time, and hourly basis.",
+      image: NodeJsBanner.src,
       bolds: false,
     },
   ],
@@ -75,350 +96,305 @@ export const nodeJs: PageData = {
         color: "text-white",
       },
       {
-        text: "Laravel web Development",
+        text: "End-to-End Node.js ",
         color: "text-white libreItalic font-[400] highlight-text",
       },
       {
-        text: "Services Includes",
+        text: "Development Services",
         color: "text-white",
       },
     ],
     subHeadingText:
-      "We have best Laravel web developers and with them we offer affordable laravel development service in India - from consultation to migration all your needs will fulfill at one stop ",
+      "We provide end-to-end Node.js development services and are known as the one-stop solution for your Node.js development needs. From consulting to maintenance, start-ups to large enterprises can fully rely on us for all their development needs. At Moonstack, we deliver our Node.js web solutions with a combination of modern technologies and development processes, and opt for an agile methodology that allows us to transform the business idea into a powerful, intelligent solution.  ",
   },
   featuresData: [
     {
-      imgSrc: intuitiveIcon.src,
-      title: "Laravel Consulting Services",
+      imgSrc: "",
+      Icon: NodeJs1,
+      title: "Node.js Consulting Services",
       description:
-        "Bring your idea into reality with the right strategy and roadmap with Laravel web experts. Our Moonstack’s expert Laravel consulting professionals will understand your business needs and provide you with the right development strategy to deliver secure and scalable Laravel solutions in the market.",
+        "Our Node.js development team offer end to end Node.js consulting services, in which our proficient developers offers best strategy to build strong backend structure. At Moonstack, we allow our clients to make the right decisions for their project in terms of frameworks and tools that they should opt for in the development process to deliver secure and efficient solutions and meet long-term business objectives.",
     },
     {
-      imgSrc: engagingIcon.src,
-      title: "Custom Laravel Website Development Service",
+      imgSrc: "",
+      Icon: NodeJs2,
+      title: "Node.js Custom Development Services ",
       description:
-        "We build high performance, secure, and functional custom Laravel web apps in India. We develop custom  Laravel websites for clients as per their business requirements. Our Laravel web development experts understand the gap in your operational process  and integrate modern features to meet latest business demands. ",
+        "We build custom Node.js solutions that are based on fast, scalable, and secure web applications to meet modern development needs. With our expert Node.js team, we deliver modern high-performance Node.js solutions that are integrated with advanced API and support real-time attributes. At Moonstack, our developers build custom Node.js solutions with advanced supported tools and technologies that align with the project's needs. Along with this, our Node.js professionals also opt for the third party integration services via API. ",
     },
 
     {
-      imgSrc: brandingIcon.src,
-      title: "Laravel Custom  E-Commerce Development Services ",
+      imgSrc: "",
+      Icon: NodeJs3,
+      title: "Node.js Real-Time Applications",
       description:
-        "Grow your online presence with Laravel ecommerce development service in India. We build high performance and secure custom e-commerce solutions integrated with advanced functionalities and deliver smooth shopping experiences to customers. Our team's main aim is to increase website conversions on your websites.",
+        "With the right utilisation of Node.js, we build secure real-time applications in which users can get real-time information. Different real-time applications include in-app chat platforms, live tracking systems, streaming apps, and collaborative tools. Node.js  asynchronous architecture supports faster data exchange and minimal latency. At Moonstack, we build Node.js real-time apps that can manage high traffic efficiently and maintain stability and security with consistent performance. ",
     },
     {
-      imgSrc: brandingIcon.src,
-      title: "Laravel UI/UX Designing Services ",
+      imgSrc: "",
+      Icon: NodeJs4,
+      title: "Node.js API Integration Services",
       description:
-        "Our architect designers create interactive and engaging designs for our customers. We hold expertise with custom designing in which we bring your business brand identity to the real world and connect with customers. At Moonstack, our designers create interactive designs with easy to use aspects.",
+        "We extend the functionalities of Node.js solutions with the integration of additional functionalities. Our Node.js coders have hands-on experience to build robust RESTful and scalable APIs that allow strong communication between frontend, backend, and third-party systems. At Moonstack, our focus is to offer secure authentication, fast data processing, and reliable connectivity. Our API integration services deliver seamless integrations,  improve system performance, and extend functionalities as per the business needs.",
     },
     {
-      imgSrc: brandingIcon.src,
-      title: "Laravel API Integration Services",
+      imgSrc: "",
+      Icon: NodeJs5,
+      title: "Node.js Migration and Upgradation",
       description:
-        "Extend your web and mobile app functionalities with seamless laravel REST API development service in India by partnering with the best Laravel development agency. We integrate Laravel web solutions with third party services via API such as secure payment gateway, internal systems, and many more. ",
+        "Our Node.js team allows you to migrate your data from one platform to Node.js and from Node.js to other technologies with secure backup and minimum downtime. At Moonstack, we provide secure data migration, optimised performance, and make sure that after migration Node.js web application is compatible across different devices and modern tools. We also focus on a structured Node.js upgrade process that helps to enhance speed, scalability, and system efficiency to maintain core business functionality.",
     },
     {
-      imgSrc: brandingIcon.src,
-      title: "Laravel Maintenance and Support Services ",
+      imgSrc: "",
+      Icon: NodeJs6,
+      title: "Node.js Support and Maintenance Services",
       description:
-        "We offer end to end Laravel maintenance and support services. With our expert Laravel team, we run Laravel web solutions smoothly without any errors. We provide constant updates, optimize performance, and fix bugs to run solutions smoothly and deliver long term business commitment. ",
+        "Get Node.js  full support and maintenance services with expert Node.js  professionals. We provide end-to-end Node.js support and maintenance services that ensure the application is fully secure and meets the latest competitive market trends. Our Node.js maintenance services provide proactive support that fixes bugs instantly, optimizes performance, performs security updates, and many more. With Moonstack Node.js maintenance services, we ensure that your backend system runs smoothly and supports long term business tech needs.",
     },
   ],
 
   NewBanner: {
     headingLines: [
-      { text: "Scale Your Business With Our Expert Laravel Development Team" },
+      { text: "Scale Your Business With " },
+      {
+        text: "Our Expert Node.js",
+        className: "libreItalic font-[400]",
+      },
+      { text: "Development Team" },
     ],
   },
   OutcomeBanner: {
     heading: [
       {
-        text: "Build Once, Scale Forever: Your ",
+        text: "Build Better, Launch Faster: Your",
         color: "text-white",
         className: "",
       },
       {
-        text: "Expert Laravel Development Partner",
+        text: "Expert Node.js Development Partner",
         className: "text-white libreItalic font-[400]",
         color: "",
       },
     ],
     checklist: [
-      "Robust & Secure Architecture",
-      "Rapid Development & Deployment",
-      "High-Performance & Scalable Code",
-      "Easy Maintenance & Updates",
+      "Fast & Reliable Event-Driven Applications",
+      "Real-Time Data Handling & App Performance",
+      "Secure RESTful & GraphQL API Solutions",
+      "Modern Microservices-Based Backend Systems",
     ],
     buttonText: "Start Your Project Today",
   },
 
   CloudTimelineData: {
-    title: "Our Process of ",
-    highlight: "Laravel website Development Service",
+    title: "Our Node.js Development ",
+    highlight: "Process for your Business Project",
     subtitle:
-      "We have defined a process of Laravel website development that allows us to deliver successful Laravel web solutions in the market. As the best Laravel development agency in  India, our experts have defined the structured roadmap that allows us to deliver solutions on time and exclude last minute complex challenges.",
+      "At Moonstack, we designed our Node.js development services in such a way that ensures delivering scalable, secure, and high-performance backend solutions without any failure. We just don’t deliver a solution, but understand the project requirement, and with the right Node.js development process, deliver successful solutions that align with business needs without any technical failure that ensures to meet our clients' expectations and ensure long term stability.",
     steps: [
       {
         number: 1,
-        title: "Gather Requirements",
+        title: "Project Idea and Gathering",
         description:
-          "We collect all the information about the project to understand what our client actually needs that allow us to align with the project.",
+          "On our initial stage, we understand your project in depth and get an idea about your business objectives, technical requirements, and project scope. The indepth clarity helps to define clear milestones with the right technical approach. We ensure end to end alignment between different business needs and in starting only we create a strong technical foundation for scalable and efficient Node.js development roadmap.",
         position: "left",
       },
       {
         number: 2,
-        title: "Client Discussion",
+        title: "Node.js Design and Tech Stack Selection",
         description:
-          "Once we have proper requirements then our Laravel team experts conduct a formal client discussion to solve all queries.",
+          "With proper UI/UX designing services, we provide the best design that aligns with your project goals. We opt for the best color combination and opt for the branding guidelines that ensure to connect us with your targeted audience. We create eye-catching and trending designs, but also make sure that they connect with your audience and easy to navigate. Moreover, in the meantime our Node.js select the best and supported tools and frameworks.",
         position: "right",
       },
       {
         number: 3,
-        title: "Internal Strategy Discussion",
+        title: "Agile Development & Coding",
         description:
-          "After that we have an internal strategy discussion in which we have our tech brainstorming to deliver the best outcome.",
+          "Our Node.js coders start building your strong backend ecosystem with clean coding standards. We build Node.js solutions with the latest emerging technologies that deliver high performance, scalability, and that maintain development cycle throughout the process. In our Node.js development and coding process we provide constant sprint reviews and feedback cycles that deliver full transparency and alignment with business needs.",
         position: "left",
       },
       {
         number: 4,
-        title: "Designing - UI/UX Services",
+        title: "API Integration",
         description:
-          "Designers start the designing process in which they focus on interactive user interface and easy to use for the users.",
+          "Once we develop the Node.js solution, we develop and integrate different API that make Node.js solution more advanced and smarter than ever. We create a secure and seamless API that can be used with other systems, or we opt for third-party systems. Our Node.js API integration services ensure smooth data exchange, strong authentication, and optimize performance that supports application systems across the digital environment.",
         position: "right",
       },
       {
         number: 5,
-        title: "Development",
+        title: " Testing & Quality Assurance",
         description:
-          "Tech team start the development process in which frontend developers and backend coders work together.",
+          "We don’t deliver web apps but quality solutions that turn as an asset into your business. Before launching any solution in the market, we conduct comprehensive testing process that includes functional, performance, and security. At Moonstack, we identify bugs with both automated and manual testing processes. This allows us to make sure that our solution is fully secure, ready to go live, and users will not face any issue to access it.",
         position: "left",
       },
       {
         number: 6,
-        title: "Deployment and Testing",
+        title: "Monitoring and Ongoing Support",
         description:
-          "We deploy and test the Laravel software with automated and manual processes that allow us to deliver bug free solutions. ",
+          "Once we deploy your Node.js solution, as a leading Node.js development company, we will always provide our support. For us, it's not just about developing and deploying; we will provide full maintenance and ongoing support for our customers. We keep the web app up to date, provide technical support, and ensure long-term scalability to meet business objectives. ",
         position: "right",
-      },
-      {
-        number: 7,
-        title: "Delivery and Post Support ",
-        description:
-          "After testing, we deliver Laravel based solutions in the market with post support that ensure our team is always there.",
-        position: "left",
       },
     ],
   },
 
   impactSection: {
     heading: [
-      { text: "Our Scalable " },
+      { text: "Moonstack Emerging " },
       {
-        text: "Laravel Web development",
+        text: "Technology Capabilities ",
         className: "libreItalic font-[400] highlight-text",
       },
-      { text: "Solutions" },
+      { text: "for Node.js Development" },
     ],
     description:
-      "For decades MoonStack has been creating a wide range of Laravel web solutions for our clients for different industries that are ready to use as per different business with minor and major customisation processes. ",
+      "At Moonstack, our Node.js experts opt for the combination of modern technologies and best backend engineering practices that ensure to deliver future ready digital solutions. As the leading Node.js development company, we opt for the latest technological advancements, such as Cloud deployment and AI-driven integrations. We adopt innovative and modern development standards to meet your digital technological needs. ",
     cards: [
       {
-        id: "Laravel Web Apps",
-        label: "Laravel Web Apps",
+        id: "Scalable Microservices Architecture",
+        label: "Scalable Microservices Architecture",
         description:
-          "We have developed high performance and secure PHP based Laravel framework web apps for different industries with next generation functionalities that allow us to meet modern business needs. Also, have created interactive UI and engaging UX that allow users to connect with users.",
+          "We strategize and design a scalable microservices architecture by using Node.js technology. Our Node.js development services ensure full flexibility, modularity, and high performance.  We divide the Node.js development process into different independent services that turn the development cycle into faster, easier maintenance, and seamless scalability. Our professional microservices-based architecture allows us to modify one part of the app without affecting other development areas or the entire application system.",
         variant: "light",
       },
       {
-        id: "Laravel E-commerce Solutions",
-
-        label: "Laravel E-commerce Solutions",
+        id: "Real-time and event-driven Node.js Solution",
+        label: "Real-time and event-driven Node.js Solution",
         description:
-          "The best ecommerce website developers in India build innovative and highly functional Laravel online stores. We have integrated essential functionalities such as product catalog, shopping carts, order tracking, and secure payment gateways that increase conversion rates and user experience.",
+          "With Node.js non-blocking, event-driven architecture, we develop real-time applications for different platforms such as chat, live tracking, and collaboration tools. We build Node.js secure solutions that support real-time and smooth data exchange. Our Node.js supports a responsive user experience and stable performance despite heavy traffic and high demand of real time operational systems.",
         variant: "accent",
       },
       {
-        id: "Laravel CRM Solutions ",
-
-        label: "Laravel CRM Solutions ",
+        id: "Cloud Native Development and Deployment",
+        label: "Cloud Native Development and Deployment",
         description:
-          "Moonstack builds Laravel based CRM solutions that improve customer relationship management processes in companies. We design custom CRM solutions that allow us to track leads and automate conversions that lead to data driven decisions and streamline client communication processes.",
+          "We develop and deploy Cloud native based applications for modern Cloud platforms such as AWS and Azure. Get your Cloud native apps and deploy your organizational data securely and easily Cloud server that can be managed by enterprises. Moonstack helps to build cloud-based solutions, as well as allows large enterprises to migrate their existing data from one platform to another.",
         variant: "dark",
       },
       {
-        id: "Laravel CMS Solutions",
-
-        label: "Laravel CMS Solutions",
+        id: "API Development and  Integration Services",
+        label: "API Development and  Integration Services",
         description:
-          "Professional Laravel experts offer robust Laravel based CMS development in India. We have built the best Laravel CMS solutions that allow businesses to easily update, publish, and manage content effortlessly on their websites. We deliver CMS solutions to businesses that  have full control on content management systems. ",
+          "Extend your Node.js app functionalities via API integration services. At Moonstack, we build RESTful API development with Node.js​ for start-ups to large enterprises. Along with creating Node.js API, we also offer integration services. The API development and integration support a faster development cycle, offer easier updates, and deliver smooth connectivity across multiple digital platforms. At our team, we make sure our API’s are secure and deliver a strong digital ecosystem. ",
         variant: "dark",
       },
       {
-        id: "POS Systems",
-
-        label: "POS Systems",
+        id: "AI and Automation Integration Services ",
+        label: "AI and Automation Integration Services ",
         description:
-          "Integrate modern Laravel powered POS systems that are developed by Laravel experts in India. Our POS systems help to streamline different operational processes, allow retailers to manage multiple outlets, and deliver best outcomes for customers. We have delivered a wide range of POS (Point of Sale solutions) to our retail businesses.",
+          "We support different AI and automation integration services with Node.js. At Moonstack, we integrate AI and automation services that aim to enhance business workflows and support smart business decision-making. With the combination of the Node.js backend system and AI-driven insights, we automate different business processes and deliver personalised user experiences. Our AI and automation process saves time and effort as well as allows us to connect with the users.",
         variant: "light",
       },
       {
-        id: "Video Streaming and Media Apps",
-
-        label: "Video Streaming and Media Apps",
+        id: "Performance and Optimisation Process",
+        label: "Performance and Optimisation Process",
         description:
-          "Develop your Laravel based video streaming and media apps with  expert laravel web developers in India. We designed video streaming and media apps that support secure content delivery and content management. We develop video streaming and media apps in such a way that offer seamless streaming and integrated with user authentication and support multiple platforms. ",
+          "At Moonstack, we highly prioritise backend performance, turning into advanced security practices for all Node.js development services. We optimize server performance, reduce response times, and secure implementation authentication. Our main aim is to provide proactive monitoring, encryption strategies, and vulnerability assessments. Here, we opt for Node.js DevOps and CI/CD implementation process that makes our process seamless and supports high demand digital environments. ",
         variant: "dark",
       },
     ],
   },
-  // processSteps: {
-  //   headingText: [
-  //     {
-  //       text: " Our Application development ",
-  //       color: "text-white",
-  //     },
-  //     {
-  //       text: "   process wraps around ",
-  //       color: "text-white libreItalic font-[400] highlight-text",
-  //     },
-  //     {
-  //       text: " your unique business needs",
-  //       color: "text-white",
-  //     },
-  //   ],
-  //   subHeadingText:
-  //     "Moonstack values privacy and transparency as one of the top Android app development agencies in India. Here’s a brief overview of how our Android app development services in India take shape from concept to launch.",
-  // },
+
   qualitySectionData: {
     heading: [
       {
-        text: " Why Choose us for your ",
+        text: "Why choose us for your next",
         color: "text-white",
       },
       {
-        text: "Laravel  Web Development",
+        text: "Node.js Development ",
         className: "libreItalic font-[400] highlight-text",
       },
       {
-        text: " Services?",
+        text: "Project?",
         color: "text-white",
       },
     ],
     description:
-      "Laravel is known for the best Laravel framework development in India. At Moonstack, we have delivered a wide range of custom Laravel web development services to our customers. Our professional Laravel experts have delivered secure, high performance, and future ready web apps.",
+      "Moonstack is the leading Node.js development company. We have a blend of professional and dedicated Node.js developers in our team from across the world. Our professional Node.js coders have expertise with different technological advancements and deliver satisfactory outcomes in the market. We opt for the latest technological advancements in terms of technologies and frameworks that align with the project. Along with this, we focus on on-time delivery, strong communication, and many more core business qualities.",
     columsClass: "lg:grid-cols-3",
     list: [
       {
         id: 1,
-        title: "Decade of Experience",
-        icon: collaboration.src,
+        title: "Expert Node.js Developers",
+        icon: "",
+        Icon: NodeJs7,
         description:
-          "Our Laravel experts have decades of experience that allows them to meet all clients' needs. Laravel coders have delivered scalable, secure, and high performance web apps with advanced integrated functionalities.",
+          "We have a blend of professional and expert Node.js developers who have extensive experience and have delivered a wide range of Node.js solutions in the market. At Moonstack, our Node.js development team, opt for the best industry practices, clean coding standards, and modern development techniques. We build Node.js solutions for both start-ups and large enterprises with the right development execution process that are tailored to your business needs.",
       },
       {
         id: 2,
-        title: "Custom Solutions for Every Business",
-        icon: collaboration.src,
+        title: "Future Ready Solutions",
+        icon: "",
+        Icon: NodeJs8,
         description:
-          "We have delivered 450+ custom web development solutions across the world. Our professional Laravel experts have built high performance, scalable different solutions specifically designed for different business needs.",
+          "At Moonstack, we deliver future-ready Node.js solutions to our clients that are integrated with advanced technology. We offer modern Node.js solutions that deliver next generation experience to the users. Our Node.js team not only builds the solutions, but delivers innovative solutions in the market with the integration of modern technologies that ensure to meet the latest technological demand and market needs. Our Node.js solutions are designed in such a way that they ensure to meet the future market demands.",
       },
       {
         id: 3,
-        title: "End to End Laravel Development Services",
-        icon: collaboration.src,
+        title: "On Time Project Delivery",
+        icon: "",
+        Icon: NodeJs9,
         description:
-          "Delivering end to end Laravel development services to our clients. From consultation to development to migration - Moonstack is known as a one stop solution for all our client’s Laravel web development needs.",
+          "Time is crucial, and we understand that. At Moonstack, our main aim is to deliver the project on time. We deliver Node.js solutions with structured planning, milestone tracking, and efficient resource planning that enable our team to meet deadlines without compromising. Professionals make sure that they don’t sacrifice punctual delivery no matter what; our core value is to deliver our clients’ projects on time and meet all their expectations. We know the importance of deadlines.",
       },
       {
         id: 4,
-        title: "Transparent Communication",
-        icon: collaboration.src,
+        title: "Dedicated Support and long-term Partnership",
+        icon: "",
+        Icon: NodeJs10,
         description:
-          "At Moonstack, we maintain open communication with our clients with constant updates, demos, and progress reports that ensure us to stay connected with our customers. Moreover, that also allows us to understand each other's mindset in a better way.",
+          "We don’t only partner with you to build solutions, but we shake hands for long term partnership. At Moonstack, our Node.js team provides constant ongoing monitoring support, maintenance, and performance optimization that provides support for continuous system reliability that fosters long term partnership that is built on trust and excellence. Here, we provide proactive updates and solve issues instantly.",
       },
       {
         id: 5,
-        title: "Confidential Details",
-        icon: collaboration.src,
+        title: "High End Security ",
+        icon: "",
+        Icon: NodeJs11,
         description:
-          "Every project idea is unique - we understand the importance of your business module. We keep all your information fully secure and confidential with us. Our team keeps all details to them, and in any case we don’t leak any of your project ideas to third parties.",
+          "Security is our major concern, and we make sure that your Node.js is integrated with high-end security. Our team conducts proper security audits, vulnerability testing, and data integration practices to protect your application. With proper security approaches, we provide fast, stable, enterprise-grade secure solutions for your enterprises that meet high-demand environments. We also opt for standard security practices and make sure that in any case, your data will not leak or be transferred to any third parties.",
       },
       {
         id: 6,
-        title: "Creative and Business oriented solutions",
-        icon: collaboration.src,
+        title: "Agile and Transparent Process",
+        icon: "",
+        Icon: NodeJs12,
         description:
-          "We just don’t build Laravel solutions only for the web development purpose. At Moonstack, we build business oriented solutions that align with your business needs and attract users with advanced based next generation features.",
+          "We opt for an agile methodology and believe in the transparent process. Our Node.js developers provide regular updates, sprint reviews, and deliver an open communication process with the aim of keeping you informed with the real-time status. At Moonstack, we support a transparent workflow that allows us to get feedback and meet our clients’ expectations and their business objectives.  Agile methodology helps us to keep the development process fully structured and aligned with the goals. ",
       },
     ],
   },
   accordionData: [
     {
-      question:
-        "Will you be able to work long term for my Laravel project requirements?",
+      question: "What is Node.js, and when should we use it?",
       answer:
-        "Yes, our Laravel web developers are always available and they are proficient with all types of Laravel web development requirements. Our team offers professional Laravel web development services to our customers. ",
+        "Node.js is a popular open source, cross platform JavaScript runtime built on the Chrome V8 engine. It allows developers to run JavaScript on the server side that supports faster and scalable development powered by event driven backend applications. The non-blocking asynchronous architecture turns the efficient process faster and manages multiple requests at the same time. You should use Node.js development to build real time applications such as instant messaging apps, live streaming platforms, and collaboration tools. Along with this, . It is also perfect for RESTful APIs, microservices architecture, and data-intensive applications that require high concurrency and supports Cloud based infrastructure. ",
     },
     {
-      question: "How long will you take to build my Laravel website?",
+      question: "How Does Node.js Compare to Other Backend Technologies?",
       answer:
-        "There is no fixed time - the completion of Laravel websites are fully dependent on different factors - time, no of Laravel developers, complexity of app. But, we make sure we will put our high efforts and deliver your solutions with all essential features.",
+        "Node.js stands out as compared to other backend technologies because of its non-blocking, event-driven architecture, which allows developers to handle thousands of concurrent connections efficiently. Traditional technologies such as PHP and Java typically rely on multi-threaded or blocking models - but Node.js is based on a single-threaded event loop that makes it lightweight and highly scalable for real time applications.",
     },
     {
-      question: "Will you provide Laravel migration services in India?",
+      question: "What are the best Node.js frameworks in 2026?",
       answer:
-        "Yes, we will provide Laravel migration services in India. Our Laravel expert team specializes in migrating solutions from other technologies to Laravel without affecting design, performance, and even your data.",
+        "In 2026, there are several Node.js frameworks that stand out in 2026 and they are focused on the modern development cycle. Popular Node.js frameworks are - NestJS, Fastify, Koa.js, AdonisJS, and many more.",
     },
     {
-      question: "Can I hire Laravel web developers from your team?",
+      question: "Can Node.js handle enterprise-level applications?",
       answer:
-        "Yes, of course you can hire the best Laravel developers from our team on full time, part time, and hourly basis. We have a pool of dedicated Laravel developers.",
-    },
-    {
-      question:
-        "Can you integrate API or third party services into my Laravel solutions?",
-      answer:
-        "Yes, we can extend functionalities in Laravel solutions with third party services via API. Our experts have hands-on experience in third party integration services. ",
-    },
-    {
-      question: "How much does it cost for Laravel web development services? ",
-      answer:
-        "There is no fixed cost for Laravel web development services. The Laravel web development factors are based on several factors such as features, design, hiring model, third party integration requirement.",
+        "Yes, Node.js can manage different enterprise-grade apps. In order to leverage all the benefits of Node.js development services, developers have to opt for the right architecture and set of development practices. Many enterprise-grade companies opt for Node.js for its high performance and scalability. Developers can leverage the best benefits of Node.js by combining the framework, such as NestJS, and proper DevOps practices. With this combination, Node.js turns into a strong foundation for secure, scalable, and enterprise-grade backend infrastructure.",
     },
   ],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
-
-    buttonText: "Connect with us",
+    headingText: [],
+    subHeadingText: [],
+    image: "",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",

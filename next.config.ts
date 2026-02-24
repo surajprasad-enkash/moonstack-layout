@@ -29,6 +29,11 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true, // 301 redirect (SEO friendly)
       },
+      {
+        source: "/category",
+        destination: "/",
+        permanent: true, // 301 redirect (SEO friendly)
+      },
     ]
   },
   async headers() {

@@ -39,9 +39,9 @@ import amitnuvama from "@/assets/clientsImages/amitnuvama.webp"
 import pickright from "@/assets/clientsImages/numanbhatiyapikright.webp"
 export const generateMetadata = (): Metadata => {
   return buildMetadata({
-    title: "Services",
+    title: "Our Services",
     description:
-      "Moonstack offers a range of services to help you succeed in your business. Explore our services and learn how we can help you achieve your goals.",
+      "Transform your ideas into powerful digital products. Explore our expert services in App Development, Website Design, and UI/UX solutions tailored for growth.",
     canonical: "https://www.moonstack.com/services",
     ogImage: OgImageIcon.src,
   })
@@ -53,18 +53,18 @@ export default function ApplicationPage() {
         <AppCategoryBanner
           title={[
             {
-              text: " Experienced designers for",
+              text: "Expert partners for your next",
               color: "text-white",
             },
             {
-              text: " AI products",
+              text: " Digital Product",
               color: "",
               className: "highlight-text",
             },
           ]}
-          highlight={"AI products"}
+          highlight={"Digital Product"}
           description={
-            "We deliver design solutions that turn your complex AI product into intuitive, easy to use, transparent and trustworthy digital experience."
+            "We deliver end-to-end design and development solutions that turn your complex ideas into intuitive, scalable, and impactful digital experiences."
           }
           mediaType="lottie"
           lottieData={LottieData}
@@ -76,8 +76,15 @@ export default function ApplicationPage() {
         <ServicesSection
           showLabel={false}
           heading={[
-            { text: "Digital Product Design & Development" },
-            { text: "Services We Offer", className: "libreItalic" },
+            { text: "Digital Product " },
+            {
+              text: "Design & Development",
+              className: "libreItalic font-[400] highlight-text",
+            },
+            {
+              text: "Services We Offer",
+              className: "",
+            },
           ]}
         />
         <Space />

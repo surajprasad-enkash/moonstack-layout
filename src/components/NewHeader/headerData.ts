@@ -20,6 +20,7 @@ import Vue from "@/components/ServicesSvg/HeaderSvgIconsData/VueJsIcon"
 import WordPress from "@/components/ServicesSvg/HeaderSvgIconsData/WordpressIcon"
 import CRM from "@/components/ServicesSvg/HeaderSvgIconsData/CrmIcon"
 import ITSupport from "@/components/ServicesSvg/HeaderSvgIconsData/ItSupoort"
+import NodeJs from "@/components/ServicesSvg/HeaderSvgIconsData/NodeJsIcon"
 
 export const megaMenuData = {
   "Website Development": [
@@ -103,12 +104,12 @@ export const megaMenuData = {
     //   url: "/services/dotnet-development-company",
     //   subtitle: "Get Enterprise-grade applications",
     // },
-    // {
-    //   title: "NodeJS",
-    //   icon: backendicon2.src,
-    //   url: "/services/nodejs-development-company",
-    //   subtitle: "Scalable backend solutions for apps",
-    // },
+    {
+      title: "NodeJS",
+      Icon: NodeJs,
+      url: "/services/nodejs-development-company",
+      subtitle: "Scalable backend solutions for apps",
+    },
     {
       title: "Laravel",
       Icon: Laravel,

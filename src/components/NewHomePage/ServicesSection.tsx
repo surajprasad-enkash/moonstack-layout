@@ -147,6 +147,10 @@ export default function ServicesSection({
           label: "Laravel",
           href: "/services/laravel-website-development-company",
         },
+        {
+          label: "NodeJS",
+          href: "/services/nodejs-development-company",
+        },
       ],
     },
   ],
