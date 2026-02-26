@@ -133,6 +133,12 @@ export const megaMenuData = {
 
   "Application Development": [
     {
+      title: "Android App Development",
+      subtitle: "Apps designed for performance and growth",
+      Icon: Android,
+      url: "/services/android-app-development-company",
+    },
+    {
       title: "iOS App Development",
       subtitle: "Get iOS Apps For Better Experiences",
       Icon: Ios,

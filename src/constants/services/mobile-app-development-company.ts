@@ -4,7 +4,7 @@ import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/meeting-banner-images/android.webp"
 import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
 import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
-import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
+import bndimage1 from "@/assets/services/androidDevelopment/androidApp.webp"
 import OgImageIcon from "@/assets/ogImage.svg"
 // Svg Icons Components
 import MadIcon1 from "@/components/ServicesSvg/MadIcon/MadIcon1"
