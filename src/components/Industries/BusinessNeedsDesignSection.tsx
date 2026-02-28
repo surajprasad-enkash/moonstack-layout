@@ -96,7 +96,7 @@ export default function BusinessNeedsDesignSection({
                 </div>
 
                 {/* RIGHT IMAGE */}
-                <div className="md:w-[50%]">
+                <div className="mt-10 md:mt-10 md:w-[50%]">
                   {card.image && (
                     <div className="relative">
                       <Image

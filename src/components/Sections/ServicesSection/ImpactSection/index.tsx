@@ -3,7 +3,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import clsx from "clsx"
-import gradientBorder from "@/assets/app-development-images/gradient-middle-border.svg"
 import Heading from "@/components/Heading/Heading"
 
 /* =========================
@@ -119,17 +118,10 @@ const ImpactSection: React.FC<ImpactSectionProps> = ({
                 {card.label && (
                   <Heading
                     headingTag="h4"
-                    className="mt-2 font-medium text-white/90"
+                    className="mt-2 border-b border-b-[#514b4b] pb-4 font-medium text-white/90"
                     content={card.label}
                   />
                 )}
-
-                <Image
-                  src={gradientBorder}
-                  alt="gradient-middle-border"
-                  height={1}
-                  className="mt-4 w-full"
-                />
 
                 {/* Description */}
                 {card.description && (
