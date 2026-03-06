@@ -6,10 +6,11 @@ import { notFound } from "next/navigation"
 import OgImageIcon from "@/assets/ogImage.svg"
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
+
 interface SeoData {
   title: string
   description: string
@@ -28,19 +29,27 @@ interface SeoData {
     image?: string
   }
 }
+
 interface CaseStudyPost {
   post: any
   seo?: SeoData
 }
+
+/* =========================
+   SEO Metadata
+========================= */
+
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const { slug } = params
+  const { slug } = await params
+
   const page = (await getCaseStudy(slug)) as CaseStudyPost | null
+
   if (!page?.seo) {
     return {
-      title: "Blogs | Moonstack",
-      description: "Moonstack blogs",
+      title: "Case Study | Moonstack",
+      description: "Moonstack Case Studies",
     }
   }
 
@@ -49,16 +58,18 @@ export async function generateMetadata({
   return {
     title: seo.title,
     description: seo.description,
+
     keywords: seo.focus_keyword ? seo.focus_keyword.split(",") : [],
+
     alternates: {
-      canonical: `/case-study/${slug}`,
+      canonical: seo.canonical || `/case-study/${slug}`,
     },
 
-    // ✅ Open Graph (Facebook / LinkedIn)
+    /* Open Graph */
     openGraph: {
       title: seo.og?.title || seo.title,
       description: seo.og?.description || seo.description,
-      url: seo.og?.url || seo.canonical,
+      url: seo.og?.url || seo.canonical || `/case-study/${slug}`,
       siteName: "Moonstack",
       type: "article",
       images: seo.og?.image
@@ -66,7 +77,7 @@ export async function generateMetadata({
         : [{ url: OgImageIcon.src }],
     },
 
-    // ✅ Twitter Card
+    /* Twitter */
     twitter: {
       card: "summary_large_image",
       title: seo.twitter?.title || seo.title,
@@ -75,15 +86,20 @@ export async function generateMetadata({
         ? [seo.twitter.image]
         : seo.og?.image
           ? [seo.og.image]
-          : [{ url: OgImageIcon.src }],
+          : [OgImageIcon.src],
     },
 
     robots: seo.robots || undefined,
   }
 }
 
+/* =========================
+   Page
+========================= */
+
 async function CaseStudyPage({ params }: PageProps) {
-  const { slug } = params
+  const { slug } = await params
+
   const data = await getCaseStudy(slug)
 
   if (!data || data?.data?.status === 404 || data?.code === "not_found") {

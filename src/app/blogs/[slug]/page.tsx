@@ -6,10 +6,11 @@ import { notFound } from "next/navigation"
 import OgImageIcon from "@/assets/ogImage.svg"
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
+
 interface SeoData {
   title: string
   description: string
@@ -34,11 +35,17 @@ interface BlogPost {
   seo?: SeoData
 }
 
+/* =========================
+   SEO Metadata
+========================= */
+
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const { slug } = params
+  const { slug } = await params
+
   const page = (await getPost(slug)) as BlogPost | null
+
   if (!page?.seo) {
     return {
       title: "Blogs | Moonstack",
@@ -51,22 +58,24 @@ export async function generateMetadata({
   return {
     title: seo.title,
     description: seo.description,
+
     keywords: seo.focus_keyword ? seo.focus_keyword.split(",") : [],
+
     alternates: {
-      canonical: `/blogs/${slug}`,
+      canonical: seo.canonical || `/blogs/${slug}`,
     },
 
-    // ✅ Open Graph (Facebook / LinkedIn)
+    /* Open Graph */
     openGraph: {
       title: seo.og?.title || seo.title,
       description: seo.og?.description || seo.description,
-      url: seo.og?.url || seo.canonical,
+      url: seo.og?.url || seo.canonical || `/blogs/${slug}`,
       siteName: "Moonstack",
       type: "article",
       images: [{ url: seo.og?.image || OgImageIcon.src }],
     },
 
-    // ✅ Twitter Card
+    /* Twitter */
     twitter: {
       card: "summary_large_image",
       title: seo.twitter?.title || seo.title,
@@ -75,21 +84,29 @@ export async function generateMetadata({
         ? [seo.twitter.image]
         : seo.og?.image
           ? [seo.og.image]
-          : [],
+          : [OgImageIcon.src],
     },
 
     robots: seo.robots || undefined,
   }
 }
+
+/* =========================
+   Page
+========================= */
+
 async function BlogDetailsPage({ params }: PageProps) {
-  const { slug } = params
+  const { slug } = await params
+
   const data = await getPost(slug)
+
   if (!data) {
     notFound()
   }
+
   return (
     <Layout>
-      <SinglePostData post={data || undefined} />
+      <SinglePostData post={data} />
     </Layout>
   )
 }
