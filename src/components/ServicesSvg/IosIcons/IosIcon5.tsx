@@ -3,7 +3,6 @@ import * as React from "react"
 export default function IosIcon5(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
-      {...props}
       width="154"
       height="136"
       viewBox="0 0 154 136"
@@ -83,9 +82,9 @@ export default function IosIcon5(props: React.SVGProps<SVGSVGElement>) {
         <filter
           id="filter0_i_816_22"
           x="-34.2109"
-          y="-78.5957"
+          y="-78.5977"
           width="292.094"
-          height="292.096"
+          height="292.098"
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >

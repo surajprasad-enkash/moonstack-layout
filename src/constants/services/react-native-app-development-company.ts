@@ -1,9 +1,7 @@
 import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
-import nativeBannerImg from "@/assets/meeting-banner-images/react-native.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
+import nativeBannerImg from "@/assets/services/bannerImages/react-native.webp"
 import bndimage1 from "@/assets/services/reactNative/reactNative.webp"
 import RnaIcon1 from "@/components/ServicesSvg/ReactNativeApp/Rnacon1"
 import RnaIcon2 from "@/components/ServicesSvg/ReactNativeApp/RnaIcon2"
@@ -308,34 +306,14 @@ export const react_native: PageData = {
   ],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
 
     buttonText: "Connect with us",
   },

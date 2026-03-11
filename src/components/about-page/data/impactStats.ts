@@ -8,6 +8,7 @@ import players from "@/assets/newHomePage/ImpactStatsSection/players.webp"
 import voxe from "@/assets/newHomePage/ImpactStatsSection/voxe.webp"
 import teamMember from "@/assets/newHomePage/ImpactStatsSection/teamMember.webp"
 import globalRemote from "@/assets/newHomePage/ImpactStatsSection/icon/globalRemote2.svg"
+import globalRemoteLocation from "@/assets/newHomePage/ImpactStatsSection/icon/globalRemoteLocation.svg"
 export const impactStatsData = {
   heading: {
     prefix: "Today, ",
@@ -63,6 +64,7 @@ export const impactStatsData = {
       type: "globalRemote",
       label: "Global Remote Team that Operates Internationally",
       globalRemote: globalRemote.src,
+      globalRemoteLocation: globalRemoteLocation.src,
     },
   ],
 }

@@ -1,9 +1,7 @@
 import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
-import nativeBannerImg from "@/assets/meeting-banner-images/laravel.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
+import nativeBannerImg from "@/assets/services/bannerImages/laravel.webp"
 import bndimage1 from "@/assets/services/laravel/laravel.webp"
 import OgImageIcon from "@/assets/ogImage.svg"
 // Svg Icons Components
@@ -20,6 +18,7 @@ import laravelIcon10 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon10"
 import laravelIcon11 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon11"
 import laravelIcon12 from "@/components/ServicesSvg/LaravalIcon/LaravalIcon12"
 import bccKristenCheng6 from "@/assets/clientsImages/amitnuvama.webp"
+import { steps } from "framer-motion"
 
 export const laravel: PageData = {
   hero: {
@@ -409,36 +408,15 @@ export const laravel: PageData = {
   ],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
-
-    buttonText: "Connect with us",
+    headingText: [],
+    subHeadingText: [],
+    image: "",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",

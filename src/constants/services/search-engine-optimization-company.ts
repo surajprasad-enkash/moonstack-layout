@@ -1,13 +1,16 @@
 import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
-import nativeBannerImg from "@/assets/meeting-banner-images/seo.webp"
-import androidContactbannerImg from "@/assets/app-development-images/contact-app-img.webp"
-import androidBannerImg from "@/assets/app-development-images/android-banner.webp"
+import nativeBannerImg from "@/assets/services/bannerImages/seo.webp"
 import bndimage1 from "@/assets/services/seo/seo.webp"
 import OgImageIcon from "@/assets/ogImage.svg"
 
-import SeoIcon from "@/components/ServicesSvg/HeaderSvgIconsData/SeoIcon"
+import SeoIcon1 from "@/components/ServicesSvg/SeoIcon/SeoIcon1"
+import SeoIcon2 from "@/components/ServicesSvg/SeoIcon/SeoIcon2"
+import SeoIcon3 from "@/components/ServicesSvg/SeoIcon/SeoIcon3"
+import SeoIcon4 from "@/components/ServicesSvg/SeoIcon/SeoIcon4"
+import SeoIcon5 from "@/components/ServicesSvg/SeoIcon/SeoIcon5"
+import SeoIcon6 from "@/components/ServicesSvg/SeoIcon/SeoIcon6"
 
 export const seo: PageData = {
   hero: {
@@ -93,42 +96,42 @@ export const seo: PageData = {
   },
   featuresData: [
     {
-      Icon: SeoIcon,
+      Icon: SeoIcon1,
       imgSrc: "",
       title: "On-Page SEO Optimization",
       description:
         "We optimize your website's content, structure on-page elements, and ensure proper keyword usage to improve relevancy and user experience.",
     },
     {
-      Icon: SeoIcon,
+      Icon: SeoIcon2,
       imgSrc: "",
       title: "Off-Page SEO & Link Building",
       description:
         "Our experts build high-quality backlinks and execute strategic off-page campaigns to boost your domain authority and search engine trust.",
     },
     {
-      Icon: SeoIcon,
+      Icon: SeoIcon3,
       imgSrc: "",
       title: "Technical SEO Services",
       description:
         "We resolve technical issues like site speed, crawl errors, and mobile-friendliness to ensure search engines can index and rank your site effectively.",
     },
     {
-      Icon: SeoIcon,
+      Icon: SeoIcon4,
       imgSrc: "",
       title: "Local SEO Services",
       description:
         "Dominate your local market with our targeted local SEO strategies. We optimize your GMB profile and build local citations to attract nearby customers.",
     },
     {
-      Icon: SeoIcon,
+      Icon: SeoIcon5,
       imgSrc: "",
       title: "E-Commerce SEO",
       description:
         "Drive more sales with our specialized E-commerce SEO. We optimize product pages, improve site architecture, and target transactional keywords to boost conversions.",
     },
     {
-      Icon: SeoIcon,
+      Icon: SeoIcon6,
       imgSrc: "",
       title: "Content Marketing Strategy",
       description:
@@ -400,36 +403,16 @@ export const seo: PageData = {
   ],
 
   banner: {
-    headingText: [
-      {
-        text: "Opt for your custom Android app development services now",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "Android app development goes through different stages of work.",
-        color: "text-white",
-      },
-    ],
-    image: androidBannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
   },
   quoteBanner: {
-    headingText: [
-      {
-        text: "Looking To Hire Android Developers in India? ",
-        color: "text-white",
-      },
-    ],
-    subHeadingText: [
-      {
-        text: "We offer top-rated Android e-commerce app development in India. ",
-        color: "text-white",
-      },
-    ],
-    image: androidContactbannerImg,
+    headingText: [],
+    subHeadingText: [],
+    image: "",
 
-    buttonText: "Connect with us",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",

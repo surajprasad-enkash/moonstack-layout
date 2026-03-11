@@ -3,98 +3,78 @@ import * as React from "react"
 export default function NodeJs2(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
-      {...props}
-      width="92"
-      height="102"
-      viewBox="0 0 92 102"
+      width="110"
+      height="71"
+      viewBox="0 0 110 71"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M91.553 17.5851C91.553 10.173 87.6652 3.66964 81.8185 0V14.1651C81.8185 15.4913 81.1205 16.7197 79.981 17.3986L72.7305 21.7181C71.5435 22.4252 70.0644 22.4252 68.8774 21.7181L61.6269 17.3986C60.4874 16.7197 59.7894 15.4913 59.7894 14.1651V0C54.0063 3.62964 50.1397 10.0313 50.0561 17.3428C49.9528 26.3606 55.706 34.1626 63.7609 37.0944V80.9628C63.7609 84.8525 66.9142 88.0055 70.8038 88.0055C74.6935 88.0055 77.8468 84.8525 77.8468 80.9628V37.1065C85.8394 34.2226 91.553 26.5714 91.553 17.5851Z"
-        fill="url(#paint0_linear_nodejs_2)"
+        d="M0 7.02344H78.965V69.4495H0V7.02344Z"
+        fill="url(#paint0_linear_1099_2444)"
       />
+      <path d="M0 0H78.965V9.14924H0V0Z" fill="url(#paint1_linear_1099_2444)" />
       <path
-        d="M81.8182 0V9.63027C82.8363 12.08 83.3985 14.7667 83.3985 17.5851C83.3985 26.1049 78.2627 33.4246 70.9183 36.6191C70.1744 36.9428 69.6925 37.6755 69.6925 38.4868V80.9626C69.6925 83.3328 68.5216 85.4295 66.7266 86.7059C67.8773 87.5241 69.2843 88.0053 70.8038 88.0053C74.6934 88.0053 77.8467 84.8521 77.8467 80.9624V37.1063C85.8391 34.2224 91.553 26.5714 91.553 17.5849C91.553 10.173 87.6652 3.66964 81.8182 0Z"
-        fill="url(#paint1_linear_nodejs_2)"
-      />
-      <g filter="url(#filter0_i_nodejs_2)">
-        <path
-          d="M35.2422 79.2031H53.3018V101.178H35.2422V79.2031Z"
-          fill="url(#paint2_linear_nodejs_2)"
-          fillOpacity="0.2"
-        />
-        <path
-          d="M53.2012 79.3047V101.075H45.25V79.3047H53.2012Z"
-          fill="url(#paint3_linear_nodejs_2)"
-          fillOpacity="0.2"
-          stroke="url(#paint4_linear_nodejs_2)"
-          strokeWidth="0.204096"
-        />
-        <path
-          d="M89.3252 51.7969V101.075H71.4688V51.7969H89.3252Z"
-          fill="url(#paint5_linear_nodejs_2)"
-          fillOpacity="0.2"
-          stroke="url(#paint6_linear_nodejs_2)"
-          strokeWidth="0.204096"
-        />
-        <path
-          d="M89.3184 51.7969V101.075H81.3672V51.7969H89.3184Z"
-          fill="url(#paint7_linear_nodejs_2)"
-          fillOpacity="0.2"
-          stroke="url(#paint8_linear_nodejs_2)"
-          strokeWidth="0.204096"
-        />
-        <path
-          d="M71.2627 66.0547V101.077H53.4062V66.0547H71.2627Z"
-          fill="url(#paint9_linear_nodejs_2)"
-          fillOpacity="0.2"
-          stroke="url(#paint10_linear_nodejs_2)"
-          strokeWidth="0.204096"
-        />
-        <path
-          d="M71.2559 66.0547V101.077H63.3047V66.0547H71.2559Z"
-          fill="url(#paint11_linear_nodejs_2)"
-          fillOpacity="0.2"
-          stroke="url(#paint12_linear_nodejs_2)"
-          strokeWidth="0.204096"
-        />
-      </g>
-      <path
-        d="M25.8658 94.1651H36.3149C38.2342 94.1651 39.79 92.6093 39.79 90.69C39.79 88.7707 38.2342 87.2148 36.3149 87.2148H25.8658C23.9464 87.2148 22.3906 88.7707 22.3906 90.69C22.3906 92.6093 23.9467 94.1651 25.8658 94.1651Z"
-        fill="url(#paint13_linear_nodejs_2)"
-      />
-      <path
-        d="M36.3183 87.2148H28.1641C30.0834 87.2148 31.6392 88.7707 31.6392 90.69C31.6392 92.6093 30.0834 94.1651 28.1641 94.1651H36.3185C38.2378 94.1651 39.7936 92.6093 39.7936 90.69C39.7934 88.7707 38.2376 87.2148 36.3183 87.2148Z"
-        fill="url(#paint14_linear_nodejs_2)"
-      />
-      <path
-        d="M25.8658 101.114H36.3149C38.2342 101.114 39.79 99.5585 39.79 97.6392C39.79 95.7199 38.2342 94.1641 36.3149 94.1641H25.8658C23.9464 94.1641 22.3906 95.7199 22.3906 97.6392C22.3906 99.5585 23.9467 101.114 25.8658 101.114Z"
-        fill="url(#paint15_linear_nodejs_2)"
-      />
-      <path
-        d="M36.3183 94.1641H28.1641C30.0834 94.1641 31.6392 95.7199 31.6392 97.6392C31.6392 99.5585 30.0834 101.114 28.1641 101.114H36.3185C38.2378 101.114 39.7936 99.5585 39.7936 97.6392C39.7934 95.7199 38.2376 94.1641 36.3183 94.1641Z"
-        fill="url(#paint16_linear_nodejs_2)"
-      />
-      <path
-        d="M6.53125 54.3027C6.53125 40.5358 17.8588 29.4144 31.7022 29.7496C44.5692 30.0612 55.1179 40.4328 55.6341 53.2924C55.9041 60.0184 53.4641 66.1699 49.3212 70.7543C47.8545 72.377 47.0663 74.496 47.14 76.6835C47.14 82.4977 42.4264 87.2111 36.6119 87.2111H25.5738C19.7593 87.2111 15.0457 82.4977 15.0457 76.6835C15.0943 74.5462 14.3836 72.4217 12.9331 70.8298C8.95775 66.4672 6.53125 60.6699 6.53125 54.3027Z"
-        fill="url(#paint17_linear_nodejs_2)"
-      />
-      <path
-        d="M55.6349 53.2924C55.1188 40.4325 44.5701 30.061 31.703 29.7496C30.0997 29.7108 28.53 29.8257 27.0078 30.0806C38.2576 31.975 47.0115 41.6063 47.4807 53.2924C47.7507 60.0184 45.3107 66.1699 41.1678 70.7543C39.7011 72.377 38.9129 74.4959 38.9866 76.6834C38.9866 82.4977 34.273 87.2111 28.4585 87.2111H36.613C42.4275 87.2111 47.1411 82.4977 47.1411 76.6834C47.0674 74.4959 47.8558 72.377 49.3222 70.7543C53.465 66.1699 55.9049 60.0184 55.6349 53.2924Z"
-        fill="url(#paint18_linear_nodejs_2)"
-      />
-      <path
-        d="M32.6233 87.212V63.296H38.6439C39.4883 63.296 40.1728 62.6115 40.1728 61.7672C40.1728 60.9226 39.4883 60.2383 38.6439 60.2383H23.5445C22.7002 60.2383 22.0156 60.9228 22.0156 61.7672C22.0156 62.6117 22.7002 63.296 23.5445 63.296H29.5653V87.212H32.6233Z"
+        d="M5.72634 7.0269C7.08105 7.0269 8.17925 5.9287 8.17925 4.574C8.17925 3.2193 7.08105 2.12109 5.72634 2.12109C4.37164 2.12109 3.27344 3.2193 3.27344 4.574C3.27344 5.9287 4.37164 7.0269 5.72634 7.0269Z"
         fill="white"
       />
+      <path
+        d="M20.4373 7.0269C21.792 7.0269 22.8902 5.9287 22.8902 4.574C22.8902 3.2193 21.792 2.12109 20.4373 2.12109C19.0826 2.12109 17.9844 3.2193 17.9844 4.574C17.9844 5.9287 19.0826 7.0269 20.4373 7.0269Z"
+        fill="white"
+      />
+      <path
+        d="M13.0779 7.0269C14.4326 7.0269 15.5308 5.9287 15.5308 4.574C15.5308 3.2193 14.4326 2.12109 13.0779 2.12109C11.7232 2.12109 10.625 3.2193 10.625 4.574C10.625 5.9287 11.7232 7.0269 13.0779 7.0269Z"
+        fill="white"
+      />
+      <rect
+        x="7.63281"
+        y="17.4219"
+        width="63.7091"
+        height="2.96867"
+        fill="white"
+        fillOpacity="0.3"
+      />
+      <rect
+        x="7.63281"
+        y="28.6875"
+        width="63.7091"
+        height="2.96867"
+        fill="white"
+        fillOpacity="0.3"
+      />
+      <rect
+        x="7.63281"
+        y="39.9531"
+        width="63.7091"
+        height="2.96867"
+        fill="white"
+        fillOpacity="0.3"
+      />
+      <rect
+        x="7.63281"
+        y="51.2188"
+        width="63.7091"
+        height="2.96867"
+        fill="white"
+        fillOpacity="0.3"
+      />
+      <g filter="url(#filter0_i_1099_2444)">
+        <path
+          d="M70.041 61.3486C70.0307 61.3443 70.0205 61.3399 70.0107 61.3359C70.0003 61.3317 69.9901 61.3283 69.9805 61.3242V61.3232C67.943 60.4755 65.6263 60.6214 63.7393 61.7705L60.1875 63.9326L54.7236 58.4688L56.8867 54.918C58.0358 53.0312 58.1816 50.7145 57.334 48.6768C57.3298 48.6667 57.3255 48.6567 57.3213 48.6465C57.3171 48.6363 57.312 48.6258 57.3076 48.6152C56.4682 46.5804 54.7267 45.0534 52.5859 44.5332L48.5449 43.5508V35.8242L52.5859 34.8418C54.7265 34.3213 56.4679 32.7953 57.3076 30.7607L57.3086 30.7598C57.3167 30.7399 57.3246 30.7193 57.333 30.6992H57.334C58.1817 28.6618 58.0358 26.3451 56.8867 24.458L54.7236 20.9062L60.1875 15.4424L63.7393 17.6055C65.626 18.7546 67.9427 18.9004 69.9805 18.0527V18.0518C70.0007 18.0432 70.0199 18.0355 70.042 18.0264C72.0766 17.1869 73.6029 15.4453 74.123 13.3047L75.1055 9.26367H82.833L83.8154 13.3047C84.3359 15.4453 85.8619 17.1866 87.8965 18.0264L87.8975 18.0273C87.9173 18.0354 87.938 18.0433 87.958 18.0518V18.0527C89.9955 18.9004 92.3121 18.7546 94.1992 17.6055L97.75 15.4424L103.214 20.9062L101.052 24.458C99.9026 26.3448 99.7568 28.6614 100.604 30.6992C100.609 30.7093 100.613 30.7192 100.617 30.7295L100.63 30.7607C101.469 32.7956 103.212 34.3226 105.353 34.8428L109.394 35.8242V43.5508L105.353 44.5332C103.212 45.0537 101.47 46.5804 100.63 48.6152V48.6162L100.604 48.6768C99.7568 50.7142 99.9026 53.0309 101.052 54.918L103.214 58.4688L97.75 63.9326L94.1982 61.7705C92.3116 60.6216 89.9956 60.4757 87.958 61.3232L87.957 61.3242C87.9371 61.3326 87.9181 61.3396 87.8965 61.3486C85.8616 62.188 84.3346 63.9304 83.8145 66.0713L82.833 70.1123H75.1055L74.123 66.0713C73.6026 63.9305 72.0759 62.1883 70.041 61.3486ZM78.9688 27.335C72.1467 27.335 66.6164 32.8651 66.6162 39.6875C66.6162 46.51 72.1462 52.041 78.9688 52.041C85.7913 52.041 91.3226 46.5101 91.3223 39.6875C91.322 32.8651 85.7912 27.335 78.9688 27.335Z"
+          fill="url(#paint2_linear_1099_2444)"
+          fillOpacity="0.2"
+          stroke="url(#paint3_linear_1099_2444)"
+          strokeWidth="0.230471"
+        />
+      </g>
+      <circle cx="78.965" cy="39.6876" r="14.4103" fill="white" />
       <defs>
         <filter
-          id="filter0_i_nodejs_2"
-          x="14.0162"
-          y="30.4693"
-          width="96.6395"
-          height="91.9363"
+          id="filter0_i_1099_2444"
+          x="17.0701"
+          y="-22.2111"
+          width="123.797"
+          height="123.797"
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
@@ -112,7 +92,7 @@ export default function NodeJs2(props: React.SVGProps<SVGSVGElement>) {
             result="hardAlpha"
           />
           <feOffset />
-          <feGaussianBlur stdDeviation="23.471" />
+          <feGaussianBlur stdDeviation="34.6764" />
           <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
           <feColorMatrix
             type="matrix"
@@ -121,217 +101,52 @@ export default function NodeJs2(props: React.SVGProps<SVGSVGElement>) {
           <feBlend
             mode="normal"
             in2="shape"
-            result="effect1_innerShadow_nodejs_2"
+            result="effect1_innerShadow_1099_2444"
           />
         </filter>
         <linearGradient
-          id="paint0_linear_nodejs_2"
-          x1="91.553"
-          y1="74.4346"
-          x2="37.6009"
-          y2="62.6263"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#5DFF75" />
-          <stop offset="1" stopColor="#00EE24" />
-        </linearGradient>
-        <linearGradient
-          id="paint1_linear_nodejs_2"
-          x1="91.553"
-          y1="74.4344"
-          x2="58.3001"
-          y2="70.0804"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#5DFF75" />
-          <stop offset="1" stopColor="#00EE24" />
-        </linearGradient>
-        <linearGradient
-          id="paint2_linear_nodejs_2"
-          x1="51.6857"
-          y1="101.178"
-          x2="31.3879"
-          y2="92.0508"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#6CFF8C" />
-          <stop offset="1" stopColor="#1E672E" />
-        </linearGradient>
-        <linearGradient
-          id="paint3_linear_nodejs_2"
-          x1="52.5732"
-          y1="101.178"
-          x2="41.9913"
-          y2="99.0291"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#6CFF8C" />
-          <stop offset="1" stopColor="#1E672E" />
-        </linearGradient>
-        <linearGradient
-          id="paint4_linear_nodejs_2"
-          x1="52.2535"
-          y1="79.1098"
-          x2="49.2257"
-          y2="101.178"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="white" />
-          <stop offset="0.276815" stopColor="white" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint5_linear_nodejs_2"
-          x1="87.8107"
-          y1="101.177"
-          x2="64.3448"
-          y2="96.4915"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#6CFF8C" />
-          <stop offset="1" stopColor="#1E672E" />
-        </linearGradient>
-        <linearGradient
-          id="paint6_linear_nodejs_2"
-          x1="80.397"
-          y1="51.6953"
-          x2="77.6671"
-          y2="71.3539"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint7_linear_nodejs_2"
-          x1="88.6904"
-          y1="101.177"
-          x2="77.7612"
-          y2="100.192"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#6CFF8C" />
-          <stop offset="1" stopColor="#1E672E" />
-        </linearGradient>
-        <linearGradient
-          id="paint8_linear_nodejs_2"
-          x1="85.3429"
-          y1="51.6953"
-          x2="85.3141"
-          y2="52.8832"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint9_linear_nodejs_2"
-          x1="69.7482"
-          y1="101.179"
-          x2="47.1264"
-          y2="94.8341"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#6CFF8C" />
-          <stop offset="1" stopColor="#1E672E" />
-        </linearGradient>
-        <linearGradient
-          id="paint10_linear_nodejs_2"
-          x1="62.3345"
-          y1="65.9531"
-          x2="55.6231"
-          y2="79.2138"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint11_linear_nodejs_2"
-          x1="70.6278"
-          y1="101.179"
-          x2="59.7838"
-          y2="99.8059"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#6CFF8C" />
-          <stop offset="1" stopColor="#1E672E" />
-        </linearGradient>
-        <linearGradient
-          id="paint12_linear_nodejs_2"
-          x1="66.0192"
-          y1="65.8209"
-          x2="66.3681"
-          y2="74.6518"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="white" />
-          <stop stopColor="white" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint13_linear_nodejs_2"
-          x1="39.79"
-          y1="93.0934"
-          x2="29.7036"
-          y2="81.3733"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#5DFF75" />
-          <stop offset="1" stopColor="#00EE24" />
-        </linearGradient>
-        <linearGradient
-          id="paint14_linear_nodejs_2"
-          x1="39.7936"
-          y1="93.0934"
-          x2="29.9108"
-          y2="85.4179"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#5DFF75" />
-          <stop offset="1" stopColor="#00EE24" />
-        </linearGradient>
-        <linearGradient
-          id="paint15_linear_nodejs_2"
-          x1="39.79"
-          y1="100.043"
-          x2="29.7036"
-          y2="88.3226"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#5DFF75" />
-          <stop offset="1" stopColor="#00EE24" />
-        </linearGradient>
-        <linearGradient
-          id="paint16_linear_nodejs_2"
-          x1="39.7936"
-          y1="100.043"
-          x2="29.9108"
-          y2="92.3671"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#5DFF75" />
-          <stop offset="1" stopColor="#00EE24" />
-        </linearGradient>
-        <linearGradient
-          id="paint17_linear_nodejs_2"
-          x1="55.6544"
-          y1="78.3491"
-          x2="-2.16834"
-          y2="55.4082"
+          id="paint0_linear_1099_2444"
+          x1="78.965"
+          y1="59.8231"
+          x2="-1.03767"
+          y2="12.852"
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#00500C" />
           <stop offset="1" stopColor="#00D820" />
         </linearGradient>
         <linearGradient
-          id="paint18_linear_nodejs_2"
-          x1="55.6552"
-          y1="78.3491"
-          x2="18.6097"
-          y2="69.7778"
+          id="paint1_linear_1099_2444"
+          x1="78.965"
+          y1="7.73838"
+          x2="72.6545"
+          y2="-17.5413"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#00500C" />
-          <stop offset="1" stopColor="#00D820" />
+          <stop stopColor="#5DFF75" />
+          <stop offset="1" stopColor="#00EE24" />
+        </linearGradient>
+        <linearGradient
+          id="paint2_linear_1099_2444"
+          x1="104.043"
+          y1="70.2274"
+          x2="40.5269"
+          y2="35.4775"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#6CFF8C" />
+          <stop offset="1" stopColor="#1E672E" />
+        </linearGradient>
+        <linearGradient
+          id="paint3_linear_1099_2444"
+          x1="39.6294"
+          y1="6.01778"
+          x2="101.853"
+          y2="53.6976"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#666666" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>

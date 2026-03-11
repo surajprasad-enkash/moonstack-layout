@@ -9,22 +9,18 @@ export default function MadIcon3(props: React.SVGProps<SVGSVGElement>) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <foreignObject x="-7.25558" y="-6.29659" width="80.2143" height="115.166">
+      <foreignObject x="-7.25558" y="-6.29464" width="80.2143" height="115.167">
         <div
-          style={
-            {
-              backdropFilter: "blur(4.58px)",
-              clipPath: "url(#bgblur_0_672_765_clip_path)",
-              height: "100%",
-              width: "100%",
-            } as React.CSSProperties
-          }
+          style={{
+            backdropFilter:
+              "blur(4.58px);clip-path:url(#bgblur_0_672_765_clip_path);height:100%;width:100%",
+          }}
         ></div>
       </foreignObject>
       <g filter="url(#filter0_i_672_765)" data-figma-bg-blur-radius="9.16183">
         <rect
           x="1.90625"
-          y="2.86523"
+          y="2.86719"
           width="61.8876"
           height="96.8427"
           rx="10"
@@ -52,9 +48,9 @@ export default function MadIcon3(props: React.SVGProps<SVGSVGElement>) {
         <filter
           id="filter0_i_672_765"
           x="-7.25558"
-          y="-6.29659"
+          y="-6.29464"
           width="80.2143"
-          height="115.166"
+          height="115.167"
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
@@ -86,11 +82,11 @@ export default function MadIcon3(props: React.SVGProps<SVGSVGElement>) {
         </filter>
         <clipPath
           id="bgblur_0_672_765_clip_path"
-          transform="translate(7.25558 6.29659)"
+          transform="translate(7.25558 6.29464)"
         >
           <rect
             x="1.90625"
-            y="2.86523"
+            y="2.86719"
             width="61.8876"
             height="96.8427"
             rx="10"
@@ -99,9 +95,9 @@ export default function MadIcon3(props: React.SVGProps<SVGSVGElement>) {
         <linearGradient
           id="paint0_linear_672_765"
           x1="58.2557"
-          y1="99.7079"
+          y1="99.7099"
           x2="-16.2563"
-          y2="73.6564"
+          y2="73.6583"
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#6CFF8C" />

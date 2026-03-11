@@ -171,7 +171,7 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
               return (
                 <div
                   key={index}
-                  className="rounded-2xl bg-cover px-5 pt-[64px] pb-[92px] md:w-[calc(60%-20px)] md:px-[64px]"
+                  className="relative overflow-hidden rounded-2xl bg-cover px-5 pt-[64px] pb-[92px] md:w-[calc(60%-20px)] md:px-[64px]"
                   style={{
                     backgroundImage: `url(${card.globalRemote}),linear-gradient(104deg, #2c4533 2%, #1c1c1c 32%)`,
                     backgroundPosition: "bottom right",
@@ -179,7 +179,17 @@ export default function ImpactStatsSection({ data }: ImpactStatsSectionProps) {
                     backgroundSize: "cover",
                   }}
                 >
-                  <p className="!text-[32px] !font-[500]">{card.label}</p>
+                  <Image
+                    src={card.globalRemoteLocation}
+                    alt="global location"
+                    className="absolute top-[0] right-[0] bottom-[0] z-[1] h-[100%] w-[auto]"
+                    width={200}
+                    height={200}
+                  />
+
+                  <p className="relative z-[2] !text-[32px] !font-[500]">
+                    {card.label}
+                  </p>
                 </div>
               )
             }

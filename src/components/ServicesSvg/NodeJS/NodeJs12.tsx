@@ -3,58 +3,65 @@ import * as React from "react"
 export default function NodeJs12(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
-      {...props}
-      width="86"
-      height="137"
-      viewBox="0 0 86 137"
+      width="79"
+      height="65"
+      viewBox="0 0 79 65"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect
-        x="30.6641"
-        y="84.9297"
-        width="24.4034"
-        height="51.6968"
-        fill="white"
+      <path
+        d="M64.8597 64.548L78.6922 53.0231L64.8597 41.4961V48.4123L30.125 48.4135V57.6339H64.8597V64.548Z"
+        fill="url(#paint0_linear_1099_2357)"
       />
       <path
-        d="M27.6888 69.5266L32.2377 98.6395C32.3541 99.4065 32.3023 100.19 32.086 100.935C31.8697 101.68 31.4941 102.369 30.985 102.954C30.4759 103.54 29.8457 104.007 29.1379 104.325C28.4301 104.643 27.6618 104.803 26.886 104.794H5.4795C4.66662 104.798 3.86343 104.617 3.13088 104.265C2.39833 103.913 1.75568 103.398 1.25171 102.76C0.723673 102.131 0.347642 101.388 0.152752 100.59C-0.042138 99.792 -0.0506535 98.9597 0.127864 98.1578L4.46269 80.765C5.44442 76.9034 7.80471 73.5343 11.0987 71.2926L19.2867 65.941C20.062 65.4046 20.9652 65.0825 21.905 65.0073C22.8447 64.9321 23.7876 65.1065 24.6383 65.5128C25.4374 65.8798 26.1337 66.438 26.6658 67.138C27.1978 67.8381 27.5492 68.6584 27.6888 69.5266ZM85.754 98.1578L81.4192 80.765C80.4473 76.8844 78.0617 73.5064 74.7296 71.2926L66.5951 65.941C65.8199 65.4046 64.9166 65.0825 63.9769 65.0073C63.0371 64.9321 62.0942 65.1065 61.2435 65.5128C60.4177 65.8706 59.6954 66.4309 59.1435 67.1418C58.5916 67.8527 58.2279 68.6913 58.086 69.5801L53.6442 98.6395C53.5278 99.4065 53.5795 100.19 53.7958 100.935C54.0121 101.68 54.3878 102.369 54.8969 102.954C55.4059 103.54 56.0362 104.007 56.7439 104.325C57.4517 104.643 58.2201 104.803 58.9958 104.794H80.4024C81.2152 104.798 82.0184 104.617 82.751 104.265C83.4835 103.913 84.1262 103.398 84.6301 102.76C85.1582 102.131 85.5342 101.388 85.7291 100.59C85.924 99.792 85.9325 98.9597 85.754 98.1578Z"
-        fill="url(#paint0_linear_nodejs_12)"
+        d="M13.9872 32.2756C13.9872 23.3781 21.2276 16.1378 30.1251 16.1378L34.7359 11.0946L30.1251 6.91602C16.1196 6.91602 4.76562 18.27 4.76562 32.2754C4.76562 46.2809 16.1196 57.6349 30.1251 57.6349L34.7359 53.5283L30.1251 48.4133C21.2276 48.4134 13.9872 41.1731 13.9872 32.2756Z"
+        fill="url(#paint1_linear_1099_2357)"
       />
-      <foreignObject x="-2.37678" y="-16.6971" width="90.6676" height="138.188">
+      <path
+        d="M32.4262 7.03255V0L18.5938 11.527L32.4262 23.0517V16.3708C40.2261 17.5015 46.2586 24.1675 46.2586 32.2756C46.2586 41.1731 39.0182 48.4135 30.1208 48.4135L25.51 53.0237L30.1208 57.6351C44.1262 57.6351 55.4802 46.2811 55.4802 32.2756C55.4802 19.0486 45.3496 8.19863 32.4262 7.03255Z"
+        fill="url(#paint2_linear_1099_2357)"
+      />
+      <foreignObject x="9.52369" y="16.2913" width="61.937" height="57.3276">
         <div
-          style={
-            {
-              backdropFilter: "blur(8.35px)",
-              clipPath: "url(#bgblur_nodejs_12_clip_path_0)",
-              height: "100%",
-              width: "100%",
-            } as React.CSSProperties
-          }
+          style={{
+            backdropFilter: "blur(7.99px)",
+            clipPath: "url(#bgblur_0_1099_2357_clip_path)",
+            height: "100%",
+            width: "100%",
+          }}
         ></div>
       </foreignObject>
-      <g filter="url(#filter0_i_nodejs_12)">
+      <g filter="url(#filter0_i_1099_2357)" data-figma-bg-blur-radius="15.9841">
         <path
-          d="M54.2809 6.91209L50.4813 3.11243C48.4759 1.11894 45.7631 0 42.9355 0C40.1078 0 37.3951 1.11894 35.3897 3.11243L31.59 6.91209C25.047 13.4464 20.1354 21.4302 17.2531 30.2166C14.3708 39.0029 13.5989 48.3447 14.9999 57.485L21.5825 100.298C21.7862 101.555 22.4317 102.699 23.4028 103.523C24.3739 104.346 25.607 104.797 26.8806 104.793H58.9904C60.281 104.808 61.5334 104.356 62.5168 103.52C63.5003 102.684 64.1485 101.521 64.342 100.245L70.9245 57.4315C72.31 48.2954 71.5253 38.9614 68.6339 30.1848C65.7425 21.4083 60.8255 13.4357 54.2809 6.91209Z"
-          fill="url(#paint1_linear_nodejs_12)"
+          d="M30.1186 48.4132L25.5078 53.0234L30.1186 57.6348C44.1241 57.6348 55.4781 46.2809 55.4781 32.2754H46.2564C46.2564 41.1729 39.0161 48.4132 30.1186 48.4132Z"
+          fill="url(#paint3_linear_1099_2357)"
           fillOpacity="0.2"
         />
+      </g>
+      <foreignObject x="-15.9841" y="32.4299" width="62.0933" height="41.189">
+        <div
+          style={{
+            backdropFilter: "blur(7.99px)",
+            clipPath: "url(#bgblur_1_1099_2357_clip_path)",
+            height: "100%",
+            width: "100%",
+          }}
+        ></div>
+      </foreignObject>
+      <g filter="url(#filter1_i_1099_2357)" data-figma-bg-blur-radius="15.9841">
         <path
-          d="M42.9355 0.5C45.4625 0.500019 47.8936 1.43717 49.7627 3.12012L50.1289 3.4668L53.9277 7.26562V7.2666C60.4166 13.7346 65.2923 21.639 68.1592 30.3408C71.026 39.0428 71.8034 48.2979 70.4297 57.3564L63.8477 100.169V100.17C63.6722 101.327 63.0847 102.381 62.1934 103.139C61.3018 103.896 60.1661 104.307 58.9961 104.294H26.8809V104.293L26.8789 104.294C25.7246 104.297 24.6068 103.888 23.7266 103.142C22.8462 102.395 22.2599 101.357 22.0752 100.218L15.4941 57.4092C14.105 48.3465 14.8707 39.0838 17.7285 30.3721C20.497 21.9328 25.1537 14.2405 31.3398 7.87793L31.9434 7.26562L35.7422 3.4668C37.6539 1.56651 40.24 0.5 42.9355 0.5Z"
-          stroke="url(#paint2_linear_nodejs_12)"
+          d="M0 48.4141H30.1239V57.634H0V48.4141Z"
+          fill="url(#paint4_linear_1099_2357)"
+          fillOpacity="0.2"
         />
       </g>
-      <path
-        d="M42.9376 61.9808C41.5182 61.9808 40.157 61.417 39.1534 60.4134C38.1498 59.4097 37.5859 58.0485 37.5859 56.6292V40.5743C37.5859 39.1549 38.1498 37.7937 39.1534 36.7901C40.157 35.7865 41.5182 35.2227 42.9376 35.2227C44.3569 35.2227 45.7181 35.7865 46.7217 36.7901C47.7254 37.7937 48.2892 39.1549 48.2892 40.5743V56.6292C48.2892 58.0485 47.7254 59.4097 46.7217 60.4134C45.7181 61.417 44.3569 61.9808 42.9376 61.9808Z"
-        fill="url(#paint3_linear_nodejs_12)"
-      />
       <defs>
         <filter
-          id="filter0_i_nodejs_12"
-          x="-2.37678"
-          y="-16.6971"
-          width="90.6676"
-          height="138.188"
+          id="filter0_i_1099_2357"
+          x="9.52369"
+          y="16.2913"
+          width="61.937"
+          height="57.3276"
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
@@ -72,7 +79,7 @@ export default function NodeJs12(props: React.SVGProps<SVGSVGElement>) {
             result="hardAlpha"
           />
           <feOffset />
-          <feGaussianBlur stdDeviation="18.4631" />
+          <feGaussianBlur stdDeviation="17.6748" />
           <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
           <feColorMatrix
             type="matrix"
@@ -81,55 +88,110 @@ export default function NodeJs12(props: React.SVGProps<SVGSVGElement>) {
           <feBlend
             mode="normal"
             in2="shape"
-            result="effect1_innerShadow_nodejs_12"
+            result="effect1_innerShadow_1099_2357"
           />
         </filter>
-        <clipPath id="bgblur_nodejs_12_clip_path_0">
-          <path d="M54.2809 6.91209L50.4813 3.11243C48.4759 1.11894 45.7631 0 42.9355 0C40.1078 0 37.3951 1.11894 35.3897 3.11243L31.59 6.91209C25.047 13.4464 20.1354 21.4302 17.2531 30.2166C14.3708 39.0029 13.5989 48.3447 14.9999 57.485L21.5825 100.298C21.7862 101.555 22.4317 102.699 23.4028 103.523C24.3739 104.346 25.607 104.797 26.8806 104.793H58.9904C60.281 104.808 61.5334 104.356 62.5168 103.52C63.5003 102.684 64.1485 101.521 64.342 100.245L70.9245 57.4315C72.31 48.2954 71.5253 38.9614 68.6339 30.1848C65.7425 21.4083 60.8255 13.4357 54.2809 6.91209Z" />
+        <clipPath
+          id="bgblur_0_1099_2357_clip_path"
+          transform="translate(-9.52369 -16.2913)"
+        >
+          <path d="M30.1186 48.4132L25.5078 53.0234L30.1186 57.6348C44.1241 57.6348 55.4781 46.2809 55.4781 32.2754H46.2564C46.2564 41.1729 39.0161 48.4132 30.1186 48.4132Z" />
+        </clipPath>
+        <filter
+          id="filter1_i_1099_2357"
+          x="-15.9841"
+          y="32.4299"
+          width="62.0933"
+          height="41.189"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="BackgroundImageFix"
+            result="shape"
+          />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="17.6748" />
+          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="shape"
+            result="effect1_innerShadow_1099_2357"
+          />
+        </filter>
+        <clipPath
+          id="bgblur_1_1099_2357_clip_path"
+          transform="translate(15.9841 -32.4299)"
+        >
+          <path d="M0 48.4141H30.1239V57.634H0V48.4141Z" />
         </clipPath>
         <linearGradient
-          id="paint0_linear_nodejs_12"
-          x1="85.8819"
-          y1="98.6562"
-          x2="27.4654"
-          y2="40.1544"
+          id="paint0_linear_1099_2357"
+          x1="78.6922"
+          y1="60.9932"
+          x2="44.8695"
+          y2="27.918"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#5DFF75" />
-          <stop offset="1" stopColor="#00EE24" />
+          <stop stopColor="#00500C" />
+          <stop offset="1" stopColor="#00D820" />
         </linearGradient>
         <linearGradient
-          id="paint1_linear_nodejs_12"
-          x1="66.4651"
-          y1="104.794"
-          x2="-4.56583"
-          y2="83.5561"
+          id="paint1_linear_1099_2357"
+          x1="34.7359"
+          y1="49.8137"
+          x2="-3.23841"
+          y2="39.3985"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#00500C" />
+          <stop offset="1" stopColor="#00D820" />
+        </linearGradient>
+        <linearGradient
+          id="paint2_linear_1099_2357"
+          x1="55.4802"
+          y1="48.7474"
+          x2="9.30173"
+          y2="35.0298"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#00500C" />
+          <stop offset="1" stopColor="#00D820" />
+        </linearGradient>
+        <linearGradient
+          id="paint3_linear_1099_2357"
+          x1="52.7961"
+          y1="57.6348"
+          x2="24.2397"
+          y2="39.1709"
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#6CFF8C" />
           <stop offset="1" stopColor="#1E672E" />
         </linearGradient>
         <linearGradient
-          id="paint2_linear_nodejs_12"
-          x1="42.9552"
-          y1="0"
-          x2="42.9552"
-          y2="104.794"
+          id="paint4_linear_1099_2357"
+          x1="27.4282"
+          y1="57.634"
+          x2="17.7263"
+          y2="40.2914"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint3_linear_nodejs_12"
-          x1="48.2892"
-          y1="57.8546"
-          x2="34.1932"
-          y2="55.2375"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#5DFF75" />
-          <stop offset="1" stopColor="#00EE24" />
+          <stop stopColor="#6CFF8C" />
+          <stop offset="1" stopColor="#1E672E" />
         </linearGradient>
       </defs>
     </svg>

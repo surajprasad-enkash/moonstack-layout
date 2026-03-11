@@ -44,7 +44,7 @@ export default function MadIcon2(props: React.SVGProps<SVGSVGElement>) {
       />
       <path
         opacity="0.2"
-        d="M81.9902 30.8848C79.1281 35.8483 74.1409 39.4776 68.0684 40.7627C68.068 40.5593 68.0695 40.3658 68.0752 40.1621C74.0769 38.8899 79.0559 35.5823 81.9902 30.8848Z"
+        d="M81.9902 30.8828C79.1281 35.8463 74.1409 39.4756 68.0684 40.7607C68.068 40.5574 68.0695 40.3638 68.0752 40.1602C74.0769 38.888 79.0559 35.5804 81.9902 30.8828Z"
         fill="url(#paint8_linear_671_756)"
         fillOpacity="0.2"
         stroke="url(#paint9_linear_671_756)"
@@ -155,9 +155,9 @@ export default function MadIcon2(props: React.SVGProps<SVGSVGElement>) {
         <linearGradient
           id="paint8_linear_671_756"
           x1="83.2318"
-          y1="40.9147"
+          y1="40.9127"
           x2="64.7436"
-          y2="32.1066"
+          y2="32.1046"
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#6CFF8C" />
@@ -166,9 +166,9 @@ export default function MadIcon2(props: React.SVGProps<SVGSVGElement>) {
         <linearGradient
           id="paint9_linear_671_756"
           x1="76.3397"
-          y1="21.6348"
+          y1="21.6328"
           x2="76.3397"
-          y2="40.9147"
+          y2="40.9127"
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="white" />

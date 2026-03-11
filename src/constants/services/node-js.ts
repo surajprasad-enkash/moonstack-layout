@@ -1,7 +1,7 @@
 import { PageData } from "@/types/web-development-data-type"
 
 import nodeJsLottie from "../../../public/lottie/nodeJs.json"
-import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
+import nativeBannerImg from "@/assets/services/bannerImages/nodejs.webp"
 import OgImageIcon from "@/assets/ogImage.svg"
 import userImage from "@/assets/clientsImages/manshi.webp"
 import NodeJsBanner from "@/assets/nodeJs/bannerImg.webp"

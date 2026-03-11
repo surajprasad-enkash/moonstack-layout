@@ -2,7 +2,6 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
-import androidImg from "@/assets/app-development-images/android-hero-img.webp"
 import bndimage1 from "@/assets/industries/icon/bndImage1.webp"
 import intuitiveIcon from "@/assets/app-development-images/featureImgOne.webp"
 import engagingIcon from "@/assets/app-development-images/featureImgTwo.webp"
@@ -24,7 +23,7 @@ export const dotNet: PageData = {
         color: "text-white",
       },
     ],
-    image: androidImg,
+    image: "",
 
     lottieData: androidLottie,
     breadcrumbs: [
@@ -397,7 +396,7 @@ export const dotNet: PageData = {
     subHeadingText: [],
     image: "",
 
-    buttonText: "Connect with us",
+    buttonText: "",
   },
   whyChooseData: {
     headingText: "",

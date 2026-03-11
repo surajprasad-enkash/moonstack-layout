@@ -14,10 +14,10 @@ export default function MadIcon1(props: React.SVGProps<SVGSVGElement>) {
         fill="url(#paint0_linear_670_731)"
       />
       <path
-        d="M28.2331 11.0448H45.5587C46.3432 11.047 47.1104 10.8143 47.7616 10.3767C48.4127 9.93909 48.918 9.31662 49.2124 8.58941L52.6893 0.123047H20.2578C21.3193 2.17707 23.466 6.3632 24.5205 8.43226C24.7996 9.19402 25.3046 9.85239 25.9681 10.3193C26.6316 10.7862 27.4218 11.0393 28.2331 11.0448Z"
+        d="M28.2331 11.0468H45.5587C46.3432 11.049 47.1104 10.8162 47.7616 10.3786C48.4127 9.94105 48.918 9.31858 49.2124 8.59136L52.6893 0.125H20.2578C21.3193 2.17903 23.466 6.36516 24.5205 8.43421C24.7996 9.19597 25.3046 9.85434 25.9681 10.3212C26.6316 10.7881 27.4218 11.0413 28.2331 11.0468Z"
         fill="url(#paint1_linear_670_731)"
       />
-      <foreignObject x="38.6332" y="20.7113" width="68.8352" height="68.8318">
+      <foreignObject x="38.6332" y="20.7113" width="68.8352" height="68.8313">
         <div
           style={{
             backdropFilter: "blur(1.12px)",
@@ -57,7 +57,7 @@ export default function MadIcon1(props: React.SVGProps<SVGSVGElement>) {
           x="38.6332"
           y="20.7113"
           width="68.8352"
-          height="68.8318"
+          height="68.8313"
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
@@ -111,9 +111,9 @@ export default function MadIcon1(props: React.SVGProps<SVGSVGElement>) {
         <linearGradient
           id="paint1_linear_670_731"
           x1="52.6893"
-          y1="9.36066"
+          y1="9.36261"
           x2="37.4513"
-          y2="-11.6412"
+          y2="-11.6393"
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#5DFF75" />

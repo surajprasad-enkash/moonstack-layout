@@ -109,7 +109,7 @@ export default function NewHeader() {
                         {/* website (2 columns) */}
                         <div>
                           <Link href="/services/website-development-company">
-                            <h4 className="hover:text-primary mb-6 !text-[14px] !font-bold uppercase">
+                            <h4 className="hover:text-primary mb-6 inline-block !text-[14px] !font-bold uppercase">
                               Website Development
                             </h4>
                           </Link>
@@ -139,8 +139,8 @@ export default function NewHeader() {
                           </ul>
                         </div>
                         <div>
-                          <Link href="/services/android-app-development-company">
-                            <h4 className="hover:text-primary mb-6 !text-[14px] !font-bold uppercase">
+                          <Link href="/services/mobile-app-development-company">
+                            <h4 className="hover:text-primary mb-6 inline-block !text-[14px] !font-bold uppercase">
                               Application Development
                             </h4>
                           </Link>
@@ -172,7 +172,7 @@ export default function NewHeader() {
                         </div>
                         {/* BACKEND (1 column) */}
                         <div>
-                          <h4 className="mb-6 !text-[14px] !font-bold uppercase">
+                          <h4 className="mb-6 inline-block !text-[14px] !font-bold uppercase">
                             More Services
                           </h4>
 
@@ -210,7 +210,7 @@ export default function NewHeader() {
 
                       {/* BOTTOM : OTHER SERVICES */}
                       <div className="rounded-xl bg-[#00CF4912] p-5">
-                        <h4 className="mb-2 !text-[14px] !font-bold uppercase">
+                        <h4 className="mb-2 inline-block !text-[14px] !font-bold uppercase">
                           Backend Development
                         </h4>
 

@@ -3,220 +3,116 @@ import * as React from "react"
 export default function VueJs3(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
-      width="109"
-      height="109"
-      viewBox="0 0 109 109"
+      width="87"
+      height="89"
+      viewBox="0 0 87 89"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
     >
       <path
-        d="M47.2654 103.519H18.271C16.8291 103.519 15.4464 102.946 14.4268 101.927C13.4073 100.907 12.8345 99.5245 12.8345 98.0826C12.8345 96.6408 13.4073 95.258 14.4268 94.2385C15.4464 93.219 16.8291 92.6462 18.271 92.6462H36.3925C36.8731 92.6462 37.334 92.4553 37.6739 92.1154C38.0137 91.7756 38.2046 91.3146 38.2046 90.834C38.2046 90.3534 38.0137 89.8925 37.6739 89.5527C37.334 89.2128 36.8731 89.0219 36.3925 89.0219H11.0224C9.58055 89.0219 8.19777 88.4491 7.17824 87.4296C6.1587 86.4101 5.58594 85.0273 5.58594 83.5854C5.58594 82.1436 6.1587 80.7608 7.17824 79.7413C8.19777 78.7218 9.58055 78.149 11.0224 78.149H32.7682C33.2486 78.1484 33.7092 77.9573 34.049 77.6176C34.3887 77.2779 34.5798 76.8173 34.5803 76.3368V70.9004H38.2046V76.3368C38.203 77.7782 37.6297 79.16 36.6105 80.1792C35.5913 81.1983 34.2095 81.7716 32.7682 81.7733H11.0224C10.5418 81.7733 10.0808 81.9642 9.741 82.3041C9.40116 82.6439 9.21024 83.1048 9.21024 83.5854C9.21024 84.0661 9.40116 84.527 9.741 84.8668C10.0808 85.2067 10.5418 85.3976 11.0224 85.3976H36.3925C37.8343 85.3976 39.2171 85.9704 40.2366 86.9899C41.2562 88.0094 41.8289 89.3922 41.8289 90.834C41.8289 92.2759 41.2562 93.6587 40.2366 94.6782C39.2171 95.6977 37.8343 96.2705 36.3925 96.2705H18.271C17.7904 96.2705 17.3294 96.4614 16.9896 96.8013C16.6498 97.1411 16.4588 97.602 16.4588 98.0826C16.4588 98.5632 16.6498 99.0242 16.9896 99.364C17.3294 99.7039 17.7904 99.8948 18.271 99.8948H47.2654V103.519Z"
-        fill="url(#paint0_linear_vuejs_3)"
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M51.2197 72.666C52.4672 72.6661 53.5261 73.5783 53.7129 74.8105C53.997 76.687 54.8636 81.0653 57.0078 83.7871H59.9805C61.3727 83.7872 62.5029 84.9173 62.5029 86.3096C62.5027 87.7016 61.3725 88.831 59.9805 88.8311H26.124C24.7319 88.8311 23.6018 87.7016 23.6016 86.3096C23.6016 84.9173 24.7318 83.7871 26.124 83.7871H29.0879C31.2318 81.0652 32.0977 76.687 32.3818 74.8105C32.5686 73.5783 33.6276 72.6661 34.875 72.666H51.2197Z"
+        fill="url(#paint0_linear_1099_2804)"
       />
       <path
-        d="M76.4905 38.2855C76.482 46.3744 73.909 54.2524 69.1414 60.7869C64.3738 67.3215 57.6571 72.1762 49.9568 74.6532C42.2565 77.1302 33.969 77.102 26.2858 74.5725C18.6025 72.0431 11.9191 67.1427 7.19615 60.5758C2.47321 54.0089 -0.0459939 46.1136 0.000635834 38.0248C0.0472656 29.936 2.65733 22.0703 7.45566 15.5582C12.254 9.0462 18.9935 4.22321 26.7054 1.78252C34.4173 -0.658177 42.7045 -0.590878 50.3758 1.97474C57.9929 4.51402 64.616 9.38925 69.3041 15.9077C73.9922 22.4262 76.5067 30.2563 76.4905 38.2855Z"
-        fill="url(#paint1_linear_vuejs_3)"
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M43.0479 14.1562V14.1523H77.7812C81.1896 14.1523 83.9531 16.9139 83.9531 20.3223V66.6016H43.0479V66.5908L43.0459 66.6016H2.14062V20.3223C2.14062 16.9141 4.90337 14.1526 8.31152 14.1523H43.0459L43.0479 14.1562Z"
+        fill="url(#paint1_linear_1099_2804)"
       />
       <path
-        d="M52.2987 50.3758L46.3821 60.728L40.2086 64.481V68.5111L38.1935 70.5261H32.1485V76.0951C29.3889 75.6592 26.6858 74.9201 24.0884 73.8912V62.466L18.0433 54.4059V48.3608L5.95312 36.2707V24.1805L7.13695 15.8912C11.8313 9.38561 18.4468 4.51516 26.053 1.96484L28.1184 4.03025L24.0884 10.0753L26.1034 14.1054L34.1635 10.0753L38.1935 14.1054L24.0884 28.2106H16.0283V34.2556L24.0884 42.3157L28.1184 38.2857L36.1785 42.3157L38.1935 48.3608L44.2386 46.3458L52.2987 50.3758Z"
-        fill="url(#paint2_linear_vuejs_3)"
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M43.0459 11.6523L43.0479 11.6543V11.6523H77.5498C82.2612 11.6524 86.0928 15.4849 86.0928 20.1963V69.1689C86.0927 73.8786 82.2611 77.7109 77.5498 77.7109H43.0479V77.708L43.0459 77.7109H8.54395C3.83255 77.7109 0.000109082 73.8786 0 69.1689V20.1963C0 15.4848 3.83248 11.6523 8.54395 11.6523H43.0459ZM43.0459 16.6973H8.54395C6.61362 16.6973 5.04492 18.2676 5.04492 20.1963V64.2197H43.0459L43.0479 64.2217V64.2197H81.0488V20.1963C81.0488 18.2677 79.4801 16.6973 77.5498 16.6973H43.0479V16.6934L43.0459 16.6973Z"
+        fill="url(#paint2_linear_1099_2804)"
+      />
+      <rect
+        x="9.83594"
+        y="25.9141"
+        width="66.5146"
+        height="3.85128"
+        rx="1.92564"
+        fill="#D9D9D9"
+        fillOpacity="0.2"
+      />
+      <rect
+        x="9.83594"
+        y="33.6094"
+        width="66.5146"
+        height="3.85128"
+        rx="1.92564"
+        fill="#D9D9D9"
+        fillOpacity="0.2"
+      />
+      <rect
+        x="9.83594"
+        y="42.7559"
+        width="66.5146"
+        height="3.85128"
+        rx="1.92564"
+        fill="#D9D9D9"
+        fillOpacity="0.2"
+      />
+      <rect
+        x="10.4688"
+        y="51.9023"
+        width="66.5146"
+        height="3.85128"
+        rx="1.92564"
+        fill="#D9D9D9"
+        fillOpacity="0.2"
       />
       <path
-        d="M76.4922 38.2854C76.4982 43.2514 75.5357 48.1708 73.6586 52.7684L68.4321 42.3154L64.4021 44.3305L58.357 40.3004V24.1802L52.3119 16.1201L54.3269 10.075H50.2969V2.01491L50.3775 1.97461C57.9858 4.52806 64.5997 9.40689 69.2855 15.9222C73.9713 22.4375 76.4922 30.2601 76.4922 38.2854Z"
-        fill="url(#paint3_linear_vuejs_3)"
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M56.8135 43.4189C56.7463 43.6678 56.6451 43.9086 56.5068 44.1318L47.9502 57.915L43.0605 60.5908V60.583L43.0576 60.5908L38.1689 57.915L29.6113 44.1318C29.4731 43.9106 29.3718 43.6678 29.3047 43.4189L43.0576 40.0801L43.0605 40.0859V40.0801L56.8135 43.4189Z"
+        fill="white"
       />
-      <foreignObject x="23.7155" y="41.9059" width="94.2331" height="61.613">
+      <foreignObject x="11.7237" y="-17.4872" width="62.6541" height="78.3963">
         <div
           style={{
-            backdropFilter: "blur(11.78px)",
-            clipPath: "url(#bgblur_0_vuejs_3_clip_path)",
+            backdropFilter: "blur(8.74px)",
+            clipPath: "url(#bgblur_0_1099_2804_clip_path)",
             height: "100%",
             width: "100%",
           }}
         ></div>
       </foreignObject>
-      <g filter="url(#filter0_i_vuejs_3)" data-figma-bg-blur-radius="23.5579">
+      <g filter="url(#filter0_i_1099_2804)" data-figma-bg-blur-radius="17.4872">
+        <mask id="path-9-inside-1_1099_2804" fill="white">
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M53.9297 0C55.566 0.000127116 56.8926 1.32653 56.8926 2.96289V42.7686C56.8908 42.9896 56.861 43.2097 56.8037 43.4219H29.2998C29.2427 43.2062 29.2109 42.9824 29.2109 42.7578V2.96289C29.2109 1.3266 30.5376 0.000235927 32.1738 0H53.9297Z"
+          />
+        </mask>
         <path
-          d="M47.2734 65.4639H94.3893V79.9611H47.2734V65.4639Z"
-          fill="url(#paint4_linear_vuejs_3)"
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M53.9297 0C55.566 0.000127116 56.8926 1.32653 56.8926 2.96289V42.7686C56.8908 42.9896 56.861 43.2097 56.8037 43.4219H29.2998C29.2427 43.2062 29.2109 42.9824 29.2109 42.7578V2.96289C29.2109 1.3266 30.5376 0.000235927 32.1738 0H53.9297Z"
+          fill="url(#paint3_linear_1099_2804)"
           fillOpacity="0.2"
         />
-      </g>
-      <foreignObject x="70.8249" y="41.9059" width="61.6159" height="61.613">
-        <div
-          style={{
-            backdropFilter: "blur(11.78px)",
-            clipPath: "url(#bgblur_1_vuejs_3_clip_path)",
-            height: "100%",
-            width: "100%",
-          }}
-        ></div>
-      </foreignObject>
-      <g filter="url(#filter1_i_vuejs_3)" data-figma-bg-blur-radius="23.5579">
         <path
-          d="M94.3828 65.4639H108.88V79.9611H94.3828V65.4639Z"
-          fill="url(#paint5_linear_vuejs_3)"
-          fillOpacity="0.2"
-        />
-      </g>
-      <foreignObject x="23.7155" y="56.404" width="94.2331" height="61.613">
-        <div
-          style={{
-            backdropFilter: "blur(11.78px)",
-            clipPath: "url(#bgblur_2_vuejs_3_clip_path)",
-            height: "100%",
-            width: "100%",
-          }}
-        ></div>
-      </foreignObject>
-      <g filter="url(#filter2_i_vuejs_3)" data-figma-bg-blur-radius="23.5579">
-        <path
-          d="M47.2734 79.9619H94.3893V94.4591H47.2734V79.9619Z"
-          fill="url(#paint6_linear_vuejs_3)"
-          fillOpacity="0.2"
-        />
-      </g>
-      <foreignObject x="70.8249" y="56.404" width="61.6159" height="61.613">
-        <div
-          style={{
-            backdropFilter: "blur(11.78px)",
-            clipPath: "url(#bgblur_3_vuejs_3_clip_path)",
-            height: "100%",
-            width: "100%",
-          }}
-        ></div>
-      </foreignObject>
-      <g filter="url(#filter3_i_vuejs_3)" data-figma-bg-blur-radius="23.5579">
-        <path
-          d="M94.3828 79.9619H108.88V94.4591H94.3828V79.9619Z"
-          fill="url(#paint7_linear_vuejs_3)"
-          fillOpacity="0.2"
-        />
-      </g>
-      <foreignObject x="23.7155" y="70.901" width="94.2331" height="61.613">
-        <div
-          style={{
-            backdropFilter: "blur(11.78px)",
-            clipPath: "url(#bgblur_4_vuejs_3_clip_path)",
-            height: "100%",
-            width: "100%",
-          }}
-        ></div>
-      </foreignObject>
-      <g filter="url(#filter4_i_vuejs_3)" data-figma-bg-blur-radius="23.5579">
-        <path
-          d="M47.2734 94.459H94.3893V108.956H47.2734V94.459Z"
-          fill="url(#paint8_linear_vuejs_3)"
-          fillOpacity="0.2"
-        />
-      </g>
-      <foreignObject x="70.8249" y="70.901" width="61.6159" height="61.613">
-        <div
-          style={{
-            backdropFilter: "blur(11.78px)",
-            clipPath: "url(#bgblur_5_vuejs_3_clip_path)",
-            height: "100%",
-            width: "100%",
-          }}
-        ></div>
-      </foreignObject>
-      <g filter="url(#filter5_i_vuejs_3)" data-figma-bg-blur-radius="23.5579">
-        <path
-          d="M94.3828 94.459H108.88V108.956H94.3828V94.459Z"
-          fill="url(#paint9_linear_vuejs_3)"
-          fillOpacity="0.2"
-        />
-      </g>
-      <foreignObject x="23.7155" y="27.4098" width="94.2331" height="61.613">
-        <div
-          style={{
-            backdropFilter: "blur(11.78px)",
-            clipPath: "url(#bgblur_6_vuejs_3_clip_path)",
-            height: "100%",
-            width: "100%",
-          }}
-        ></div>
-      </foreignObject>
-      <g filter="url(#filter6_i_vuejs_3)" data-figma-bg-blur-radius="23.5579">
-        <path
-          d="M47.2734 50.9678H94.3893V65.465H47.2734V50.9678Z"
-          fill="url(#paint10_linear_vuejs_3)"
-          fillOpacity="0.2"
-        />
-      </g>
-      <foreignObject x="70.8249" y="27.4098" width="61.6159" height="61.613">
-        <div
-          style={{
-            backdropFilter: "blur(11.78px)",
-            clipPath: "url(#bgblur_7_vuejs_3_clip_path)",
-            height: "100%",
-            width: "100%",
-          }}
-        ></div>
-      </foreignObject>
-      <g filter="url(#filter7_i_vuejs_3)" data-figma-bg-blur-radius="23.5579">
-        <path
-          d="M94.3828 50.9678H108.88V65.465H94.3828V50.9678Z"
-          fill="url(#paint11_linear_vuejs_3)"
-          fillOpacity="0.2"
+          d="M53.9297 0L53.9297 -0.168146H53.9297V0ZM56.8926 42.7686L57.0607 42.7699V42.7686H56.8926ZM56.8037 43.4219V43.59H56.9325L56.966 43.4657L56.8037 43.4219ZM29.2998 43.4219L29.1373 43.4649L29.1704 43.59H29.2998V43.4219ZM32.1738 0V-0.168146H32.1738L32.1738 0ZM53.9297 0L53.9297 0.168146C55.4732 0.168266 56.7244 1.41941 56.7244 2.96289H56.8926H57.0607C57.0607 1.23366 55.6589 -0.168012 53.9297 -0.168146L53.9297 0ZM56.8926 2.96289H56.7244V42.7686H56.8926H57.0607V2.96289H56.8926ZM56.8926 42.7686L56.7244 42.7672C56.7228 42.9741 56.6949 43.1799 56.6414 43.378L56.8037 43.4219L56.966 43.4657C57.0271 43.2395 57.0588 43.0051 57.0607 42.7699L56.8926 42.7686ZM56.8037 43.4219V43.2537H29.2998V43.4219V43.59H56.8037V43.4219ZM29.2998 43.4219L29.4624 43.3789C29.4086 43.1759 29.3791 42.9666 29.3791 42.7578H29.2109H29.0428C29.0428 42.9982 29.0768 43.2364 29.1373 43.4649L29.2998 43.4219ZM29.2109 42.7578H29.3791V2.96289H29.2109H29.0428V42.7578H29.2109ZM29.2109 2.96289H29.3791C29.3791 1.41949 30.6304 0.168369 32.1739 0.168146L32.1738 0L32.1738 -0.168146C30.4447 -0.167897 29.0428 1.23371 29.0428 2.96289H29.2109ZM32.1738 0V0.168146H53.9297V0V-0.168146H32.1738V0Z"
+          fill="url(#paint4_linear_1099_2804)"
+          mask="url(#path-9-inside-1_1099_2804)"
         />
       </g>
       <path
-        d="M55.1953 99.8945H58.8196V103.519H55.1953V99.8945Z"
-        fill="white"
-      />
-      <path
-        d="M61.7734 99.8945H65.3977V103.519H61.7734V99.8945Z"
-        fill="white"
-      />
-      <path
-        d="M69.6953 99.8945H80.5682V103.519H69.6953V99.8945Z"
-        fill="white"
-      />
-      <path
-        d="M55.1953 85.3984H58.8196V89.0227H55.1953V85.3984Z"
-        fill="white"
-      />
-      <path
-        d="M62.4531 85.3984H66.0774V89.0227H62.4531V85.3984Z"
-        fill="white"
-      />
-      <path
-        d="M69.6953 85.3984H80.5682V89.0227H69.6953V85.3984Z"
-        fill="white"
-      />
-      <path
-        d="M55.1953 70.9004H58.8196V74.5247H55.1953V70.9004Z"
-        fill="white"
-      />
-      <path
-        d="M62.4531 70.9004H66.0774V74.5247H62.4531V70.9004Z"
-        fill="white"
-      />
-      <path
-        d="M69.6953 70.9004H80.5682V74.5247H69.6953V70.9004Z"
-        fill="white"
-      />
-      <path
-        d="M55.1953 56.4033H58.8196V60.0276H55.1953V56.4033Z"
-        fill="white"
-      />
-      <path
-        d="M62.4531 56.4033H66.0774V60.0276H62.4531V56.4033Z"
-        fill="white"
-      />
-      <path
-        d="M69.6953 56.4033H80.5682V60.0276H69.6953V56.4033Z"
-        fill="white"
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M47.9424 57.916L45.4258 61.9697C44.926 62.7756 44.0255 63.2675 43.0537 63.2676L42.8721 63.2617C41.9706 63.2046 41.15 62.7252 40.6797 61.9697L38.1641 57.916H47.9424Z"
+        fill="url(#paint5_linear_1099_2804)"
       />
       <defs>
         <filter
-          id="filter0_i_vuejs_3"
-          x="23.7155"
-          y="41.9059"
-          width="94.2331"
-          height="61.613"
+          id="filter0_i_1099_2804"
+          x="11.7237"
+          y="-17.4872"
+          width="62.6541"
+          height="78.3963"
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
@@ -234,7 +130,7 @@ export default function VueJs3(props: React.SVGProps<SVGSVGElement>) {
             result="hardAlpha"
           />
           <feOffset />
-          <feGaussianBlur stdDeviation="26.0497" />
+          <feGaussianBlur stdDeviation="19.3368" />
           <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
           <feColorMatrix
             type="matrix"
@@ -243,433 +139,84 @@ export default function VueJs3(props: React.SVGProps<SVGSVGElement>) {
           <feBlend
             mode="normal"
             in2="shape"
-            result="effect1_innerShadow_vuejs_3"
+            result="effect1_innerShadow_1099_2804"
           />
         </filter>
         <clipPath
-          id="bgblur_0_vuejs_3_clip_path"
-          transform="translate(-23.7155 -41.9059)"
+          id="bgblur_0_1099_2804_clip_path"
+          transform="translate(-11.7237 17.4872)"
         >
-          <path d="M47.2734 65.4639H94.3893V79.9611H47.2734V65.4639Z" />
-        </clipPath>
-        <filter
-          id="filter1_i_vuejs_3"
-          x="70.8249"
-          y="41.9059"
-          width="61.6159"
-          height="61.613"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M53.9297 0C55.566 0.000127116 56.8926 1.32653 56.8926 2.96289V42.7686C56.8908 42.9896 56.861 43.2097 56.8037 43.4219H29.2998C29.2427 43.2062 29.2109 42.9824 29.2109 42.7578V2.96289C29.2109 1.3266 30.5376 0.000235927 32.1738 0H53.9297Z"
           />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset />
-          <feGaussianBlur stdDeviation="26.0497" />
-          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="shape"
-            result="effect1_innerShadow_vuejs_3"
-          />
-        </filter>
-        <clipPath
-          id="bgblur_1_vuejs_3_clip_path"
-          transform="translate(-70.8249 -41.9059)"
-        >
-          <path d="M94.3828 65.4639H108.88V79.9611H94.3828V65.4639Z" />
-        </clipPath>
-        <filter
-          id="filter2_i_vuejs_3"
-          x="23.7155"
-          y="56.404"
-          width="94.2331"
-          height="61.613"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
-          />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset />
-          <feGaussianBlur stdDeviation="26.0497" />
-          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="shape"
-            result="effect1_innerShadow_vuejs_3"
-          />
-        </filter>
-        <clipPath
-          id="bgblur_2_vuejs_3_clip_path"
-          transform="translate(-23.7155 -56.404)"
-        >
-          <path d="M47.2734 79.9619H94.3893V94.4591H47.2734V79.9619Z" />
-        </clipPath>
-        <filter
-          id="filter3_i_vuejs_3"
-          x="70.8249"
-          y="56.404"
-          width="61.6159"
-          height="61.613"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
-          />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset />
-          <feGaussianBlur stdDeviation="26.0497" />
-          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="shape"
-            result="effect1_innerShadow_vuejs_3"
-          />
-        </filter>
-        <clipPath
-          id="bgblur_3_vuejs_3_clip_path"
-          transform="translate(-70.8249 -56.404)"
-        >
-          <path d="M94.3828 79.9619H108.88V94.4591H94.3828V79.9619Z" />
-        </clipPath>
-        <filter
-          id="filter4_i_vuejs_3"
-          x="23.7155"
-          y="70.901"
-          width="94.2331"
-          height="61.613"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
-          />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset />
-          <feGaussianBlur stdDeviation="26.0497" />
-          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="shape"
-            result="effect1_innerShadow_vuejs_3"
-          />
-        </filter>
-        <clipPath
-          id="bgblur_4_vuejs_3_clip_path"
-          transform="translate(-23.7155 -70.901)"
-        >
-          <path d="M47.2734 94.459H94.3893V108.956H47.2734V94.459Z" />
-        </clipPath>
-        <filter
-          id="filter5_i_vuejs_3"
-          x="70.8249"
-          y="70.901"
-          width="61.6159"
-          height="61.613"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
-          />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset />
-          <feGaussianBlur stdDeviation="26.0497" />
-          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="shape"
-            result="effect1_innerShadow_vuejs_3"
-          />
-        </filter>
-        <clipPath
-          id="bgblur_5_vuejs_3_clip_path"
-          transform="translate(-70.8249 -70.901)"
-        >
-          <path d="M94.3828 94.459H108.88V108.956H94.3828V94.459Z" />
-        </clipPath>
-        <filter
-          id="filter6_i_vuejs_3"
-          x="23.7155"
-          y="27.4098"
-          width="94.2331"
-          height="61.613"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
-          />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset />
-          <feGaussianBlur stdDeviation="26.0497" />
-          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="shape"
-            result="effect1_innerShadow_vuejs_3"
-          />
-        </filter>
-        <clipPath
-          id="bgblur_6_vuejs_3_clip_path"
-          transform="translate(-23.7155 -27.4098)"
-        >
-          <path d="M47.2734 50.9678H94.3893V65.465H47.2734V50.9678Z" />
-        </clipPath>
-        <filter
-          id="filter7_i_vuejs_3"
-          x="70.8249"
-          y="27.4098"
-          width="61.6159"
-          height="61.613"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
-          />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset />
-          <feGaussianBlur stdDeviation="26.0497" />
-          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="shape"
-            result="effect1_innerShadow_vuejs_3"
-          />
-        </filter>
-        <clipPath
-          id="bgblur_7_vuejs_3_clip_path"
-          transform="translate(-70.8249 -27.4098)"
-        >
-          <path d="M94.3828 50.9678H108.88V65.465H94.3828V50.9678Z" />
         </clipPath>
         <linearGradient
-          id="paint0_linear_vuejs_3"
-          x1="47.2654"
-          y1="98.4891"
-          x2="5.258"
-          y2="73.5753"
+          id="paint0_linear_1099_2804"
+          x1="62.5029"
+          y1="86.3383"
+          x2="38.9234"
+          y2="60.0004"
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#5DFF75" />
           <stop offset="1" stopColor="#00EE24" />
         </linearGradient>
         <linearGradient
-          id="paint1_linear_vuejs_3"
-          x1="76.4906"
-          y1="64.6952"
-          x2="-9.24761"
-          y2="24.8998"
+          id="paint1_linear_1099_2804"
+          x1="83.9531"
+          y1="58.5136"
+          x2="10.8253"
+          y2="5.56901"
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#00500C" />
           <stop offset="1" stopColor="#00D820" />
         </linearGradient>
         <linearGradient
-          id="paint2_linear_vuejs_3"
-          x1="52.2987"
-          y1="64.6638"
-          x2="-5.93775"
-          y2="47.7646"
+          id="paint2_linear_1099_2804"
+          x1="86.0928"
+          y1="67.5243"
+          x2="0.223398"
+          y2="15.5805"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#00500C" />
+          <stop offset="1" stopColor="#00D820" />
+        </linearGradient>
+        <linearGradient
+          id="paint3_linear_1099_2804"
+          x1="54.4156"
+          y1="43.4219"
+          x2="21.0694"
+          y2="31.7913"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#6CFF8C" />
+          <stop offset="1" stopColor="#1E672E" />
+        </linearGradient>
+        <linearGradient
+          id="paint4_linear_1099_2804"
+          x1="55.8056"
+          y1="-40.8"
+          x2="43.0511"
+          y2="43.4218"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
+        </linearGradient>
+        <linearGradient
+          id="paint5_linear_1099_2804"
+          x1="47.9424"
+          y1="62.4423"
+          x2="40.1938"
+          y2="55.8708"
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#5DFF75" />
           <stop offset="1" stopColor="#00EE24" />
-        </linearGradient>
-        <linearGradient
-          id="paint3_linear_vuejs_3"
-          x1="76.4922"
-          y1="44.9357"
-          x2="42.7383"
-          y2="36.856"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#5DFF75" />
-          <stop offset="1" stopColor="#00EE24" />
-        </linearGradient>
-        <linearGradient
-          id="paint4_linear_vuejs_3"
-          x1="90.173"
-          y1="79.9611"
-          x2="74.8757"
-          y2="52.7611"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#6CFF8C" />
-          <stop offset="1" stopColor="#1E672E" />
-        </linearGradient>
-        <linearGradient
-          id="paint5_linear_vuejs_3"
-          x1="107.583"
-          y1="79.9611"
-          x2="92.5071"
-          y2="71.7131"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#6CFF8C" />
-          <stop offset="1" stopColor="#1E672E" />
-        </linearGradient>
-        <linearGradient
-          id="paint6_linear_vuejs_3"
-          x1="90.173"
-          y1="94.4591"
-          x2="74.8757"
-          y2="67.2591"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#6CFF8C" />
-          <stop offset="1" stopColor="#1E672E" />
-        </linearGradient>
-        <linearGradient
-          id="paint7_linear_vuejs_3"
-          x1="107.583"
-          y1="94.4591"
-          x2="92.5071"
-          y2="86.2112"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#6CFF8C" />
-          <stop offset="1" stopColor="#1E672E" />
-        </linearGradient>
-        <linearGradient
-          id="paint8_linear_vuejs_3"
-          x1="90.173"
-          y1="108.956"
-          x2="74.8757"
-          y2="81.7562"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#6CFF8C" />
-          <stop offset="1" stopColor="#1E672E" />
-        </linearGradient>
-        <linearGradient
-          id="paint9_linear_vuejs_3"
-          x1="107.583"
-          y1="108.956"
-          x2="92.5071"
-          y2="100.708"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#6CFF8C" />
-          <stop offset="1" stopColor="#1E672E" />
-        </linearGradient>
-        <linearGradient
-          id="paint10_linear_vuejs_3"
-          x1="90.173"
-          y1="65.465"
-          x2="74.8757"
-          y2="38.265"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#6CFF8C" />
-          <stop offset="1" stopColor="#1E672E" />
-        </linearGradient>
-        <linearGradient
-          id="paint11_linear_vuejs_3"
-          x1="107.583"
-          y1="65.465"
-          x2="92.5071"
-          y2="57.217"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#6CFF8C" />
-          <stop offset="1" stopColor="#1E672E" />
         </linearGradient>
       </defs>
     </svg>

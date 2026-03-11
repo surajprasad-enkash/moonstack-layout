@@ -1,7 +1,6 @@
 import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
-import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
 import bndimage1 from "@/assets/services/ai/aiImage.webp"
 
 import AiIcon1 from "@/components/ServicesSvg/AiIcon/AiIcon1"
@@ -16,6 +15,7 @@ import AiIcon9 from "@/components/ServicesSvg/AiIcon/AiIcon9"
 import AiIcon10 from "@/components/ServicesSvg/AiIcon/AiIcon10"
 import bccKristenCheng6 from "@/assets/clientsImages/brainmates.webp"
 import OgImageIcon from "@/assets/ogImage.svg"
+import newBannerImg from "@/assets/services/bannerImages/ai.webp"
 
 export const ai: PageData = {
   hero: {
@@ -59,7 +59,7 @@ export const ai: PageData = {
     canonical: "/services/ai-agent-development-company",
     ogImage: OgImageIcon.src,
   },
-  mobDesignBanner: nativeBannerImg,
+  mobDesignBanner: newBannerImg,
 
   points:
     "Moonstack’s AI expertise was a game-changer. They engineered a custom predictive layer that cut our manual processing by 45%. Navigating complex security was seamless, delivering an intelligent system that scales with our users. For AI that impacts the bottom line, Moonstack is the premier partner.",
@@ -79,8 +79,6 @@ export const ai: PageData = {
         "30% lower operational costs with AI automation",
       ],
       bolds: false,
-      // description2:
-      //   "So, looking to make your business future-ready and get a competitive edge? It's time to think the AI way. We are a leading custom AI development company in India, helping businesses of all sizes build custom AI solutions aligned to their needs. Whether you are looking to build an AI assistant, AI agent, or AI app, we can get you cutting-edge solutions to turn your business into an AI-powered success story.",
       image: bndimage1.src,
       maxHeight: "448px",
     },
