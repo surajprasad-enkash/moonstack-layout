@@ -163,7 +163,7 @@ export const vueJs: PageData = {
     buttonText: "Start Your Project Today",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Our Vue.js Development ",
     highlight: "Process for your business ",
     subtitle:

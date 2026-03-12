@@ -2,7 +2,7 @@ import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
 import nativeBannerImg from "@/assets/services/bannerImages/mobile-app-dev.webp"
-import bndimage1 from "@/assets/services/androidDevelopment/androidApp.webp"
+import bndimage1 from "@/assets/services/androidDevelopment/mobileAppDevelopment.webp"
 import OgImageIcon from "@/assets/ogImage.svg"
 // Svg Icons Components
 import MadIcon1 from "@/components/ServicesSvg/MadIcon/MadIcon1"
@@ -161,7 +161,7 @@ export const mobileAppDev: PageData = {
     columsClass: "",
     list: [],
   },
-  CloudTimelineData: {
+  processData: {
     title: "How We Build Smarter: Our ",
     highlight: "Tech-Driven Development Process",
     subtitle:

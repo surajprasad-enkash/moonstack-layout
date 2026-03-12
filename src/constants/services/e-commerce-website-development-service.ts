@@ -190,7 +190,7 @@ export const ecommerce: PageData = {
     buttonText: "Launch Your Store Today",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Advanced Features That ",
     highlight: "Our E-Commerce Portal Integrated With",
     subtitle:

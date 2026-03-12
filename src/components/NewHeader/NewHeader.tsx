@@ -120,7 +120,9 @@ export default function NewHeader() {
                                   href={item.url}
                                   className="submenuLink group flex w-full gap-3"
                                 >
-                                  <item.Icon />
+                                  <p className="header_icon m-0">
+                                    <item.Icon width={33} height={33} />
+                                  </p>
 
                                   <div className="w-full">
                                     <p className="flex w-full items-center !text-[14px] !font-semibold uppercase">
@@ -152,7 +154,9 @@ export default function NewHeader() {
                                   href={item.url}
                                   className="submenuLink group flex w-full gap-3"
                                 >
-                                  <item.Icon />
+                                  <p className="header_icon m-0">
+                                    <item.Icon width={33} height={33} />
+                                  </p>
 
                                   <div className="w-full">
                                     <p className="flex w-full items-center !text-[14px] !font-semibold uppercase">
@@ -183,7 +187,9 @@ export default function NewHeader() {
                                   href={item.url}
                                   className="submenuLink group flex w-full gap-3"
                                 >
-                                  <item.Icon />
+                                  <p className="header_icon m-0">
+                                    <item.Icon width={33} height={33} />
+                                  </p>
 
                                   <div className="w-full">
                                     <p className="flex w-full items-center !text-[14px] !font-semibold uppercase">
@@ -224,7 +230,9 @@ export default function NewHeader() {
                                 href={item.url}
                                 className="submenuLink group flex w-full gap-3"
                               >
-                                <item.Icon />
+                                <p className="header_icon m-0">
+                                  <item.Icon width={33} height={33} />
+                                </p>
 
                                 <div className="w-full">
                                   <p className="flex w-full items-center !text-[14px] !font-semibold uppercase">
@@ -266,7 +274,9 @@ export default function NewHeader() {
                             href={item.href}
                             className="submenuLink group flex w-full gap-3"
                           >
-                            <item.Icon />
+                            <p className="header_icon m-0">
+                              <item.Icon width={33} height={33} />
+                            </p>
 
                             <div className="w-full">
                               <p className="flex w-full items-center !text-[14px] !font-semibold uppercase">

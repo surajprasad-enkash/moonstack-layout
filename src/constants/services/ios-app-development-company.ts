@@ -184,7 +184,7 @@ export const ios: PageData = {
     buttonText: "Talk To Us",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Our Process for ",
     highlight: "iOS App Development",
     subtitle:

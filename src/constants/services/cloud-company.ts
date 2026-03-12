@@ -142,7 +142,7 @@ export const cloud: PageData = {
     buttonText: "Start Your Design Today",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Bringing the Best ",
     highlight: "Cloud Solutions Agency To You.",
     subtitle: "",

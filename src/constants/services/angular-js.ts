@@ -184,7 +184,7 @@ export const angularJs: PageData = {
     buttonText: "Get Free Consultation",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Our AngularJS",
     highlight: "Development Process",
     subtitle:

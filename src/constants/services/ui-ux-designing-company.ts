@@ -145,7 +145,7 @@ export const ui_ux: PageData = {
     buttonText: "Start Your Project Today",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Bringing the best",
     highlight: "UI/UX Agency To You",
     subtitle: "",

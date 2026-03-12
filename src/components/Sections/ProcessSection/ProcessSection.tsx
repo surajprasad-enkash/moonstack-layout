@@ -4,26 +4,26 @@ import { useEffect, useRef, useState } from "react"
 import Heading from "@/components/Heading/Heading"
 import React from "react"
 
-interface TimelineItem {
+export interface TimelineItem {
   number: string | number
   title: string
   description: string
   position: "left" | "right"
 }
 
-interface CloudTimelineProps {
+export interface ProcessSectionProps {
   title: string
   highlight: string
   subtitle?: string
-  steps: TimelineItem[]
+  steps: readonly TimelineItem[]
 }
 
-export default function CloudTimeline({
+export default function ProcessSection({
   title,
   highlight,
   subtitle,
   steps,
-}: CloudTimelineProps) {
+}: ProcessSectionProps) {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const stepsWrapperRef = useRef<HTMLDivElement | null>(null)
   const stepRefs = useRef<(HTMLDivElement | null)[]>([])

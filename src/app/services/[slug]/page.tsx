@@ -69,7 +69,7 @@ import type { Metadata } from "next"
 import BusinessNeedsDesignSection from "@/components/Industries/BusinessNeedsDesignSection"
 
 import { notFound } from "next/navigation"
-import CloudTimeline from "@/components/Sections/CloudTimeline/CloudTimeline"
+import ProcessSection from "@/components/Sections/ProcessSection/ProcessSection"
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -231,12 +231,12 @@ export default async function ApplicationPage({ params }: PageProps) {
           />
         )}
 
-        {page.CloudTimelineData && page.CloudTimelineData.steps?.length > 0 && (
-          <CloudTimeline
-            title={page.CloudTimelineData.title}
-            highlight={page.CloudTimelineData.highlight}
-            subtitle={page.CloudTimelineData.subtitle}
-            steps={page.CloudTimelineData.steps}
+        {page.processData && page.processData.steps?.length > 0 && (
+          <ProcessSection
+            title={page.processData.title}
+            highlight={page.processData.highlight}
+            subtitle={page.processData.subtitle}
+            steps={page.processData.steps}
           />
         )}
 

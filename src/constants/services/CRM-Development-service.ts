@@ -183,7 +183,7 @@ export const crm: PageData = {
     buttonText: "Start Your CRM Project Now",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Process We Follow to Integrate",
     highlight: "CRM Solutions in Your Business Infrastructure",
     subtitle:

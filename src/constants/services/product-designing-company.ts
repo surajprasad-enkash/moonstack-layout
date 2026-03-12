@@ -140,7 +140,7 @@ export const product: PageData = {
     buttonText: "Start Your Project Today",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Bringing the Best Designing",
     highlight: "Agency To You",
     subtitle: "",

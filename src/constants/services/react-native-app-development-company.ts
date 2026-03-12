@@ -181,7 +181,7 @@ export const react_native: PageData = {
     buttonText: "Start Your Project Today",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Our Process in Providing",
     highlight: "React Native Development Service",
     subtitle:

@@ -68,18 +68,18 @@ export interface qualitySectionPropsData {
   list: qualitySectionProps[]
 }
 /* ================= Cloud Timeline ================= */
-export interface CloudTimelineDataSteps {
+export interface ProcessSectionSteps {
   number: string | number
   title: string
   description: string
   position: "left" | "right"
 }
 
-export interface CloudTimelineDataProps {
+export interface ProcessSectionDataProps {
   title: string
   highlight: string
   subtitle?: string
-  steps: CloudTimelineDataSteps[]
+  steps: ProcessSectionSteps[]
 }
 export interface OutcomeBannerProps {
   heading: ImpactHeadingItem[]
@@ -95,7 +95,7 @@ export interface PageData {
   OutcomeBanner: OutcomeBannerProps
 
   /* 🔧 FIX: object (not array) — matches usage */
-  CloudTimelineData: CloudTimelineDataProps
+  processData: ProcessSectionDataProps
 
   /* 🔧 FIX: array (you map over it) */
   qualitySectionData: qualitySectionPropsData

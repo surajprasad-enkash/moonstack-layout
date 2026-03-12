@@ -178,7 +178,7 @@ export const reactJs: PageData = {
     buttonText: "Start Your Project Today",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Our React.js ",
     highlight: "Development Process ",
     subtitle:

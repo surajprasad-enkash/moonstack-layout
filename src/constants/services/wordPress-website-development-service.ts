@@ -175,7 +175,7 @@ export const wordPress: PageData = {
     buttonText: "Launch Your Vision Today",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Our Process of ",
     highlight: "WordPress development in India",
     subtitle:

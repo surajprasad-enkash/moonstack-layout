@@ -159,7 +159,7 @@ export const app_maintenance: PageData = {
     columsClass: "",
     list: [],
   },
-  CloudTimelineData: {
+  processData: {
     title: "Our Process to Assist You in ",
     highlight: "App Maintenance",
     subtitle:

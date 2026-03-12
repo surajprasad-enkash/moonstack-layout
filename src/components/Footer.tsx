@@ -433,7 +433,7 @@ const Footer = () => {
                       </li>
 
                       <li>
-                        <Link href="/cookie-policy">
+                        <Link href="/cookies">
                           <HoverSlideText text="Cookie Policy" />
                         </Link>
                       </li>

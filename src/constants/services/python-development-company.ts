@@ -183,7 +183,7 @@ export const python: PageData = {
     buttonText: "Start Your Project Today",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Process We Follow For ",
     highlight: "Python Web Development Services",
     subtitle:

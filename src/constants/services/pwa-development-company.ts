@@ -158,7 +158,7 @@ export const pwa: PageData = {
     columsClass: "",
     list: [],
   },
-  CloudTimelineData: {
+  processData: {
     title: "Our Process for Progressive ",
     highlight: "Web App Development",
     subtitle:

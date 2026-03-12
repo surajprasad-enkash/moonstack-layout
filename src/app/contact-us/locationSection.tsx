@@ -72,7 +72,8 @@ const LocationSection = ({
               <div className="flex items-center justify-between">
                 <Heading
                   headingTag="p"
-                  content={[{ text: "Moonstack Pvt. Ltd" }]}
+                  content={[{ text: "USA" }]}
+                  className="!font-[500]"
                 />
                 <Image src={usaFlag} alt="USA" width={20} height={20} />
               </div>
@@ -94,7 +95,8 @@ const LocationSection = ({
               <div className="flex items-center justify-between">
                 <Heading
                   headingTag="p"
-                  content={[{ text: "Moonstack Pvt. Ltd" }]}
+                  className="!font-[500]"
+                  content={[{ text: "INDIA" }]}
                 />
                 <Image src={indiaFlag} alt="India" width={20} height={20} />
               </div>

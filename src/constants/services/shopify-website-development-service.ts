@@ -179,7 +179,7 @@ export const shopify: PageData = {
     buttonText: "Launch Your Success Story Today",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Process We Follow To Deliver Best ",
     highlight: "Shopify Development Services",
     subtitle:

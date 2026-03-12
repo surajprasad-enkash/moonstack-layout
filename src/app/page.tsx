@@ -4,16 +4,34 @@ import Meta from "@/components/MetaData"
 import HeroSection from "@/components/NewHomePage/HeroBanner"
 import Space from "@/components/Space"
 
-const ResultsSection = dynamic(() => import("@/components/NewHomePage/ResultsSection"))
-const ImpactStatsSection = dynamic(() => import("@/components/NewHomePage/ImpactStatsSection"))
-const ServicesSection = dynamic(() => import("@/components/NewHomePage/ServicesSection"))
-const CaseStudyHighlight = dynamic(() => import("@/components/NewHomePage/CaseStudyHighlight"))
-const AboutHeroSection = dynamic(() => import("@/components/NewHomePage/AboutHeroSection"))
-const AwardsSection = dynamic(() => import("@/components/NewHomePage/AwardsSection"))
-const TestimonialsTabs = dynamic(() => import("@/components/NewHomePage/TestimonialsTabs"))
+const ResultsSection = dynamic(
+  () => import("@/components/NewHomePage/ResultsSection")
+)
+const ImpactStatsSection = dynamic(
+  () => import("@/components/NewHomePage/ImpactStatsSection")
+)
+const ServicesSection = dynamic(
+  () => import("@/components/NewHomePage/ServicesSection")
+)
+const CaseStudyHighlight = dynamic(
+  () => import("@/components/NewHomePage/CaseStudyHighlight")
+)
+const AboutHeroSection = dynamic(
+  () => import("@/components/NewHomePage/AboutHeroSection")
+)
+const AwardsSection = dynamic(
+  () => import("@/components/NewHomePage/AwardsSection")
+)
+const TestimonialsTabs = dynamic(
+  () => import("@/components/NewHomePage/TestimonialsTabs")
+)
 const ProjectCTA = dynamic(() => import("@/components/ProjectCTA/ProjectCTA"))
-const TrustBadges = dynamic(() => import("@/components/NewHomePage/TrustBadges"))
-const BlogInsightsSection = dynamic(() => import("@/components/NewHomePage/BlogInsightsSection"))
+const TrustBadges = dynamic(
+  () => import("@/components/NewHomePage/TrustBadges")
+)
+const BlogInsightsSection = dynamic(
+  () => import("@/components/NewHomePage/BlogInsightsSection")
+)
 
 import {
   badges,
@@ -23,7 +41,11 @@ import {
   teamMembers,
   awardsHeading,
   projectCtaData,
+  processData,
+  faqData,
 } from "@/constants/home"
+import FAQSection from "@/components/Sections/FaqSection/FaqSection"
+import ProcessSection from "@/components/Sections/ProcessSection/ProcessSection"
 
 export default function Home() {
   return (
@@ -72,6 +94,13 @@ export default function Home() {
         <Space size={160} />
         <TestimonialsTabs tabs={tabs} />
         <Space size={160} />
+        <ProcessSection
+          title={processData.title}
+          highlight={processData.highlight}
+          subtitle={processData.subtitle}
+          steps={processData.steps}
+        />
+        <Space size={160} />
         <BlogInsightsSection imageHeight="h-[280px]" />
         <Space size={50} mobileSize={0} />
         <ProjectCTA
@@ -84,6 +113,13 @@ export default function Home() {
         />
         <Space size={24} />
         <TrustBadges items={badges} />;
+        <Space size={100} />
+        <FAQSection
+          title="Frequently Asked "
+          highlight="Questions."
+          description="To decide means to choose a direction with clarity and confidence."
+          faqs={faqData}
+        />
         <Space size={100} />
       </Layout>
     </>

@@ -185,7 +185,7 @@ export const nodeJs: PageData = {
     buttonText: "Start Your Project Today",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Our Node.js Development ",
     highlight: "Process for your Business Project",
     subtitle:

@@ -292,3 +292,67 @@ export const awards: AwardItem[] = [
     image: award8,
   },
 ]
+
+export const processData = {
+  title: "Our Proven ",
+  highlight: "Process",
+  subtitle:
+    "Here’s how we build lasting web and app solutions for our clients. Our process focuses on continuous development and refinement that leads to products without any glitches, bugs, or functional limitations.",
+  steps: [
+    {
+      number: 1,
+      title: "Design & Development",
+      description:
+        "We understand our client’s requirements thoroughly and create solutions that are robust, scalable, and secure while meeting their business goals. Our design and development process is completely transparent with clients to ensure a collaborative building experience.",
+      position: "right",
+    },
+    {
+      number: 2,
+      title: "Testing & Refinement",
+      description:
+        "We stand on our promise of continuous refinement and offer optimisations to our builds that improve functionality, loading time, accessibility, and user experience, all as a part of our quality assurance program. This level of refinement helps us stand out among the competition.",
+      position: "left",
+    },
+    {
+      number: 3,
+      title: "Launch & Maintenance",
+      description:
+        "We offer complete support for web and app product launches, complete with deployment to app stores and listing optimisation for SEO. We also offer long-term maintenance to ensure future-proof compatibility and bug-free user experience.",
+      position: "right",
+    },
+  ],
+} as const
+
+export const faqData = [
+  {
+    question: "Do you provide post-launch support and maintenance?",
+    answer:
+      "Yes, we provide post-launch support and maintenance for our web and app builds as part of our development services. If you want, we also offer web and app upgrade solutions, where we offer feature, security, and design upgrades to existing web and app products.",
+  },
+  {
+    question: "How long does it take to build a website or app?",
+    answer:
+      "Our development time depends on your requirements. However, for the most part, we provide a framework and design outline for every project within a few weeks to the complete development taking as little as a few months, even for enterprise-level builds.",
+  },
+  {
+    question:
+      " What is the cost of development for websites or apps at Moonstack?",
+    answer:
+      "It is difficult to offer a value directly without adequate information about our project. However, we provide a free quotation for every project, so if you’re interested in our services, feel free to reach out.",
+  },
+  {
+    question: "Can Moonstack work on a predefined budget?",
+    answer:
+      "Yes, our services are quite flexible, and we can work on predefined budgets, based on the requirements. Reach out to us to discuss more.",
+  },
+  {
+    question: "Does Moonstack offer on-site services?",
+    answer:
+      "Yes, based on your requirements, Moonstack offers on-site services for web and app builds to ensure complete data security and confidentiality of client projects.",
+  },
+  {
+    question: " How do I get started working with Moonstack?",
+    answer:
+      "You can start by contacting our team through our website, and we will get back to you as soon as possible to set up a meeting and discuss your project in detail. We’re eager to help you, so contact us today!",
+  },
+]

@@ -176,7 +176,7 @@ export const websiteDevelopment: PageData = {
     buttonText: "Start Your Project Today",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Our Process of ",
     highlight: "website development in India",
     subtitle:

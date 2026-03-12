@@ -175,7 +175,7 @@ export const seo: PageData = {
     buttonText: "Start Your Growth Now",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Modern SEO Process That ",
     highlight: "We Follow for Your Website",
     steps: [

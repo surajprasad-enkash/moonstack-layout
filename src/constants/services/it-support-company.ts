@@ -160,7 +160,7 @@ export const it_support: PageData = {
     buttonText: "Book a meeting",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Get in Touch",
     highlight: " With Moonstack",
     subtitle:

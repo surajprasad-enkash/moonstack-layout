@@ -11,7 +11,7 @@ export const generateMetadata = (): Metadata => {
     title: "Cookie Policy",
     description:
       "Moonstack's Cookie Policy outlines how we use cookies to enhance your experience and protect your privacy. Learn more about our cookie usage and how to manage your preferences.",
-    canonical: "https://www.moonstack.com/cookie-policy",
+    canonical: "https://www.moonstack.com/cookies",
     ogImage: OgImageIcon.src,
   })
 }
@@ -27,7 +27,7 @@ export default function CookiePolicy() {
                 { label: "Home", href: "/" },
                 {
                   label: "Cookie Policy",
-                  href: "/cookie-policy",
+                  href: "/cookies",
                 },
               ]}
               textColor="text-black"

@@ -173,7 +173,7 @@ export const webDesigning: PageData = {
     buttonText: "Start Your Project Today",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Process We Opt To Deliver Successful  ",
     highlight: "Web Design Services Globally",
     subtitle:

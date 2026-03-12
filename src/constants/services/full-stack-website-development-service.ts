@@ -187,7 +187,7 @@ export const fullstack: PageData = {
     buttonText: "Launch Your Innovation",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "",
     highlight: "",
     subtitle: "",

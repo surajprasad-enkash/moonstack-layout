@@ -220,7 +220,7 @@ export const ai: PageData = {
     buttonText: "Talk To Us",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Insight into Our AI ",
     highlight: "Development Process",
     subtitle:

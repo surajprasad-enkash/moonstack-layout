@@ -151,7 +151,7 @@ export const dotNet: PageData = {
     buttonText: "Start Your Project Today",
   },
 
-  CloudTimelineData: {
+  processData: {
     title: "Our Process of ",
     highlight: "Laravel website Development Service",
     subtitle:
