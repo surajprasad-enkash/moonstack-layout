@@ -90,17 +90,22 @@ export default function NewHeader() {
                 onMouseLeave={() => setOpenMenu(null)}
               >
                 <div className="flex cursor-pointer items-center gap-2 transition">
-                  <Link href="/services">
+                  <Link
+                    href="/services"
+                    className="group flex items-center gap-2 transition"
+                  >
                     <HoverSlideText
                       text="Services"
                       active={openMenu === "services"}
                     />{" "}
+                    <IoIosArrowDown
+                      className={`mt-[3px] ml-1 text-sm transition-colors ${
+                        openMenu === "services"
+                          ? "text-[#d6ff00]"
+                          : "text-white"
+                      }`}
+                    />
                   </Link>
-                  <IoIosArrowDown
-                    className={`ml-1 text-sm transition-colors ${
-                      openMenu === "services" ? "text-[#d6ff00]" : "text-white"
-                    }`}
-                  />
                 </div>
                 {openMenu === "services" && (
                   <div className="absolute top-[20px] left-[50%] translate-x-[-36.7%] pt-10 text-black">
@@ -387,8 +392,7 @@ export default function NewHeader() {
 
                   {/* Services Accordion */}
                   <li>
-                    <Link
-                      href={"/services"}
+                    <button
                       className="flex w-full items-center justify-between py-2"
                       onClick={() => toggleMobileCategory("services")}
                     >
@@ -400,7 +404,7 @@ export default function NewHeader() {
                             : ""
                         }`}
                       />
-                    </Link>
+                    </button>
                     <AnimatePresence>
                       {activeMobileCategory === "services" && (
                         <motion.div
