@@ -7,6 +7,7 @@ import CustomButton from "../CommanButton/CommanButton"
 import ProjectInquiryModal from "@/components/ProjectInquiryModal/ProjectInquiryModal"
 import { IoIosArrowDown, IoMdMenu, IoMdClose } from "react-icons/io"
 import { AnimatePresence, motion } from "framer-motion"
+import Image from "next/image"
 
 import HeroVideoModal from "@/components/NewHomePage/HeroVideoModal"
 import { useVideoModal } from "@/context/VideoModalContext"
@@ -121,7 +122,12 @@ export default function NewHeader() {
                                   className="submenuLink group flex w-full gap-3"
                                 >
                                   <p className="header_icon m-0">
-                                    <item.Icon width={33} height={33} />
+                                    <Image
+                                      src={item.Icon.src}
+                                      width={40}
+                                      height={40}
+                                      alt={item.title}
+                                    />
                                   </p>
 
                                   <div className="w-full">
@@ -155,7 +161,12 @@ export default function NewHeader() {
                                   className="submenuLink group flex w-full gap-3"
                                 >
                                   <p className="header_icon m-0">
-                                    <item.Icon width={33} height={33} />
+                                    <Image
+                                      src={item.Icon.src}
+                                      width={40}
+                                      height={40}
+                                      alt={item.title}
+                                    />
                                   </p>
 
                                   <div className="w-full">
@@ -188,7 +199,12 @@ export default function NewHeader() {
                                   className="submenuLink group flex w-full gap-3"
                                 >
                                   <p className="header_icon m-0">
-                                    <item.Icon width={33} height={33} />
+                                    <Image
+                                      src={item.Icon.src}
+                                      width={40}
+                                      height={40}
+                                      alt={item.title}
+                                    />
                                   </p>
 
                                   <div className="w-full">
@@ -231,7 +247,12 @@ export default function NewHeader() {
                                 className="submenuLink group flex w-full gap-3"
                               >
                                 <p className="header_icon m-0">
-                                  <item.Icon width={33} height={33} />
+                                  <Image
+                                    src={item.Icon.src}
+                                    width={40}
+                                    height={40}
+                                    alt={item.title}
+                                  />
                                 </p>
 
                                 <div className="w-full">

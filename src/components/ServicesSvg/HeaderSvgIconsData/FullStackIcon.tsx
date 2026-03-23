@@ -9,84 +9,129 @@ export default function FullStackIcon(props: React.SVGProps<SVGSVGElement>) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect
-        width="40"
-        height="40"
-        rx="4.97528"
-        fill="url(#paint0_radial_297_5959)"
-      />
-      <path
-        d="M19.3573 33.2731L10.3369 28.0651C9.16374 27.3878 9.129 25.707 10.2731 24.9818L18.1418 19.9942C18.7034 19.6383 19.4154 19.6204 19.9942 19.9477L29.4962 25.3222C30.7101 26.0088 30.7178 27.7547 29.5101 28.452L21.1597 33.2731C20.6021 33.5951 19.915 33.5951 19.3573 33.2731Z"
-        fill="#38FF3F"
-      />
-      <foreignObject x="9.03824" y="16.9484" width="21.8024" height="13.5788">
-        <div
-          style={{
-            backdropFilter: "blur(0.45px)",
-            clipPath: "url(#bgblur_0_297_5959_clip_path)",
-            height: "100%",
-            width: "100%",
-          }}
-        ></div>
-      </foreignObject>
-      <path
-        data-figma-bg-blur-radius="0.901218"
-        d="M19.3573 29.3845L10.8407 24.4674C9.56161 23.7289 9.66486 21.85 11.0171 21.2561L18.4281 18.0015C18.8724 17.8063 19.3768 17.7986 19.8269 17.9801L28.8113 21.6031C30.2045 22.165 30.3394 24.0846 29.0384 24.8357L21.1597 29.3845C20.6021 29.7064 19.915 29.7064 19.3573 29.3845Z"
-        fill="#00A405"
-      />
-      <foreignObject x="8.53433" y="12.6076" width="22.778" height="13.7722">
-        <div
-          style={{
-            backdropFilter: "blur(0.45px)",
-            clipPath: "url(#bgblur_1_297_5959_clip_path)",
-            height: "100%",
-            width: "100%",
-          }}
-        ></div>
-      </foreignObject>
-      <path
-        data-figma-bg-blur-radius="0.901218"
-        d="M15.6963 13.5088C16.017 15.5964 17.8217 17.1952 19.999 17.1953C21.912 17.1953 23.5352 15.9605 24.1191 14.2451L29.4961 17.2871C30.7096 17.9738 30.7174 19.7198 29.5098 20.417L21.1592 25.2373C20.6015 25.5593 19.9141 25.5593 19.3564 25.2373L10.3369 20.0293C9.16384 19.352 9.12845 17.6715 10.2725 16.9463L15.6963 13.5088Z"
-        fill="#3FE644"
-      />
-      <circle
-        cx="19.9992"
-        cy="12.8439"
-        r="3.7881"
-        fill="#3FE644"
-        stroke="white"
-        strokeWidth="0.0315352"
-      />
-      <path
-        d="M20.8911 11.8232L21.8197 12.8557L20.7726 13.7717M19.2224 13.7942L18.1797 12.8179L19.2224 11.8753M20.1599 11.8232L19.8896 13.8657"
-        stroke="white"
-        strokeWidth="0.472756"
-        strokeLinecap="round"
-      />
+      <g clipPath="url(#clip0_1149_4859)">
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M36.4628 10.9297H16.3267C15.4799 10.9297 14.786 11.6236 14.786 12.4669V26.646C14.786 27.4893 15.4799 28.1832 16.3267 28.1832H29.6085L34.5493 33.124V28.1832H36.4628C37.3061 28.1832 38 27.4893 38 26.646V12.4669C38 11.6224 37.3061 10.9297 36.4628 10.9297Z"
+          fill="url(#paint0_linear_1149_4859)"
+        />
+        <foreignObject x="0.455993" y="5.3349" width="29.5788" height="28.4499">
+          <div
+            style={{
+              backdropFilter: "blur(0.77px)",
+              clipPath: "url(#bgblur_1_1149_4859_clip_path)",
+              height: "100%",
+              width: "100%",
+            }}
+          ></div>
+        </foreignObject>
+        <g
+          filter="url(#filter0_d_1149_4859)"
+          data-figma-bg-blur-radius="1.54401"
+        >
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M3.70312 6.87891H26.0131C26.9513 6.87891 27.7201 7.64772 27.7201 8.58203V24.2919C27.7201 25.2262 26.9513 25.995 26.0131 25.995H11.2974L5.82322 31.4692V25.995H3.70312C2.76882 25.995 2 25.2262 2 24.2919V8.58203C2 7.64642 2.76882 6.87891 3.70312 6.87891Z"
+            fill="url(#paint1_linear_1149_4859)"
+            fillOpacity="0.8"
+            shapeRendering="crispEdges"
+          />
+          <path
+            d="M3.70312 6.97559H26.0127C26.8978 6.97559 27.624 7.70117 27.624 8.58203V24.292C27.624 25.1728 26.8977 25.8984 26.0127 25.8984H11.2578L5.91992 31.2363V25.8984H3.70312C2.82214 25.8984 2.09673 25.173 2.09668 24.292V8.58203C2.09668 7.69977 2.82207 6.97559 3.70312 6.97559Z"
+            stroke="url(#paint2_linear_1149_4859)"
+            strokeWidth="0.193001"
+            shapeRendering="crispEdges"
+          />
+        </g>
+        <path
+          d="M19.6302 19.3577C19.2995 19.6884 18.7622 19.6884 18.4315 19.3577C18.1009 19.0271 18.1009 18.4897 18.4315 18.1591L20.3477 16.2451L18.4315 14.3289C18.1009 13.9983 18.1009 13.461 18.4315 13.1303C18.7622 12.7997 19.2995 12.7997 19.6302 13.1303L22.1451 15.6452C22.4757 15.9759 22.4757 16.5132 22.1451 16.8439L19.6302 19.3577ZM11.2842 18.2068C11.6149 18.5374 11.6149 19.0747 11.2842 19.4054C10.9536 19.7361 10.4163 19.7361 10.0856 19.4054L7.57069 16.8905C7.23685 16.5598 7.23685 16.0225 7.57069 15.6919L10.0856 13.1769C10.4163 12.8463 10.9536 12.8463 11.2842 13.1769C11.6149 13.5076 11.6149 14.0449 11.2842 14.3756L9.36811 16.2917L11.2842 18.2068ZM14.7636 12.6343C14.86 12.1744 15.3104 11.8829 15.7672 11.9794C16.224 12.079 16.5154 12.5262 16.419 12.983L14.9533 19.9046C14.8568 20.3613 14.4064 20.6528 13.9496 20.5563C13.4929 20.4599 13.1982 20.0095 13.2979 19.5527L14.7636 12.6343Z"
+          fill="white"
+        />
+      </g>
       <defs>
-        <clipPath
-          id="bgblur_0_297_5959_clip_path"
-          transform="translate(-9.03824 -16.9484)"
+        <filter
+          id="filter0_d_1149_4859"
+          x="0.455993"
+          y="5.3349"
+          width="29.5788"
+          height="28.4499"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
         >
-          <path d="M19.3573 29.3845L10.8407 24.4674C9.56161 23.7289 9.66486 21.85 11.0171 21.2561L18.4281 18.0015C18.8724 17.8063 19.3768 17.7986 19.8269 17.9801L28.8113 21.6031C30.2045 22.165 30.3394 24.0846 29.0384 24.8357L21.1597 29.3845C20.6021 29.7064 19.915 29.7064 19.3573 29.3845Z" />
-        </clipPath>
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset dx="0.772004" dy="0.772004" />
+          <feGaussianBlur stdDeviation="0.772004" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0.485577 0 0 0 0 0.153766 0 0 0 0.35 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_1149_4859"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_1149_4859"
+            result="shape"
+          />
+        </filter>
         <clipPath
-          id="bgblur_1_297_5959_clip_path"
-          transform="translate(-8.53433 -12.6076)"
+          id="bgblur_1_1149_4859_clip_path"
+          transform="translate(-0.455993 -5.3349)"
         >
-          <path d="M15.6963 13.5088C16.017 15.5964 17.8217 17.1952 19.999 17.1953C21.912 17.1953 23.5352 15.9605 24.1191 14.2451L29.4961 17.2871C30.7096 17.9738 30.7174 19.7198 29.5098 20.417L21.1592 25.2373C20.6015 25.5593 19.9141 25.5593 19.3564 25.2373L10.3369 20.0293C9.16384 19.352 9.12845 17.6715 10.2725 16.9463L15.6963 13.5088Z" />
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M3.70312 6.87891H26.0131C26.9513 6.87891 27.7201 7.64772 27.7201 8.58203V24.2919C27.7201 25.2262 26.9513 25.995 26.0131 25.995H11.2974L5.82322 31.4692V25.995H3.70312C2.76882 25.995 2 25.2262 2 24.2919V8.58203C2 7.64642 2.76882 6.87891 3.70312 6.87891Z"
+          />
         </clipPath>
-        <radialGradient
-          id="paint0_radial_297_5959"
-          cx="0"
-          cy="0"
-          r="1"
+        <linearGradient
+          id="paint0_linear_1149_4859"
+          x1="26.393"
+          y1="10.9297"
+          x2="26.393"
+          y2="33.124"
           gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(1.99978 1.39164) rotate(45.2682) scale(52.0623)"
         >
-          <stop stopColor="#00620B" />
-          <stop offset="1" stopColor="#00A313" />
-        </radialGradient>
+          <stop stopColor="#28FF28" />
+          <stop offset="1" stopColor="#008200" />
+        </linearGradient>
+        <linearGradient
+          id="paint1_linear_1149_4859"
+          x1="14.4586"
+          y1="12.2182"
+          x2="26.739"
+          y2="25.8249"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#00DB30" />
+          <stop offset="0.929978" stopColor="#00A1C5" />
+        </linearGradient>
+        <linearGradient
+          id="paint2_linear_1149_4859"
+          x1="22.6308"
+          y1="12.2557"
+          x2="14.8601"
+          y2="31.4692"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
+        </linearGradient>
+        <clipPath id="clip0_1149_4859">
+          <rect width="40" height="40" fill="white" />
+        </clipPath>
       </defs>
     </svg>
   )

@@ -4,6 +4,7 @@ import { useState } from "react"
 import Heading from "@/components/Heading/Heading"
 import Image from "next/image"
 import icon from "@/assets/faq-icon.svg"
+
 interface FAQItem {
   question: string
   answer: string
@@ -15,6 +16,67 @@ interface FAQSectionProps {
   description: string
   classname?: string
   faqs: FAQItem[]
+}
+
+function FAQItem({
+  item,
+  isActive,
+  onClick,
+}: {
+  item: FAQItem
+  isActive: boolean
+  onClick: () => void
+}) {
+  return (
+    <div className="faq-active rounded-xl">
+      {/* Header */}
+      <button
+        className="flex w-full cursor-pointer items-center justify-between px-6 py-4"
+        onClick={onClick}
+      >
+        <h5
+          className={`max-w-[calc(100%-30px)] text-start font-medium transition-colors duration-300 ${
+            isActive ? "text-white" : "text-white/80"
+          }`}
+        >
+          {item.question}
+        </h5>
+
+        <span
+          className={`h-[20px] w-[20px] flex-shrink-0 transform transition-transform duration-100 ${
+            isActive ? "rotate-180" : ""
+          }`}
+        >
+          <Image
+            src={icon}
+            alt="arrow icon"
+            width={20}
+            height={20}
+            className={`transition-all duration-300 ${
+              isActive ? "brightness-110" : "brightness-75"
+            }`}
+          />
+        </span>
+      </button>
+
+      {/* Body — grid-rows trick: 0fr ↔ 1fr is perfectly smooth, no JS measurement needed */}
+      <div
+        style={{
+          display: "grid",
+          gridTemplateRows: isActive ? "1fr" : "0fr",
+          transition: "grid-template-rows 0.1s cubic-bezier(0.1, 0, 0.1, 1)",
+        }}
+      >
+        <div style={{ overflow: "hidden" }}>
+          <div className="px-6 pb-4 text-white/70">
+            <p className="text-sm leading-relaxed md:text-base">
+              {item.answer}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default function FAQSection({
@@ -58,59 +120,14 @@ export default function FAQSection({
         </div>
 
         <div className="space-y-4">
-          {faqs.map((item, index) => {
-            const isActive = activeIndex === index
-
-            return (
-              <div
-                key={index}
-                className={`faq-active overflow-hidden rounded-xl transition`}
-              >
-                {/* Header */}
-                <button
-                  className="hover:text-primary-yellow flex w-full cursor-pointer items-center justify-between px-6 py-4"
-                  onClick={() => toggleFAQ(index)}
-                >
-                  <h5
-                    className={`hover:text-primary-yellow max-w-[calc(100%-30px)] text-start font-medium ${
-                      isActive
-                        ? "hover:text-primary-yellow text-white"
-                        : "text-white/80"
-                    }`}
-                  >
-                    {item.question}
-                  </h5>
-
-                  <span
-                    className={`h-[20px] w-[20px] transform text-xl transition-transform ${
-                      isActive ? "rotate-180 text-green-400" : "text-white"
-                    }`}
-                  >
-                    <Image
-                      src={icon}
-                      alt="arrow icon"
-                      width={20}
-                      height={20}
-                      className={`${
-                        isActive ? "brightness-110" : "brightness-75"
-                      } transition`}
-                    />
-                  </span>
-                </button>
-
-                {/* Body */}
-                <div
-                  className={`overflow-hidden px-6 text-white/70 transition-all duration-500 ${
-                    isActive ? "max-h-[300px] py-2" : "max-h-0 py-0"
-                  }`}
-                >
-                  <p className="text-sm leading-relaxed md:text-base">
-                    {item.answer}
-                  </p>
-                </div>
-              </div>
-            )
-          })}
+          {faqs.map((item, index) => (
+            <FAQItem
+              key={index}
+              item={item}
+              isActive={activeIndex === index}
+              onClick={() => toggleFAQ(index)}
+            />
+          ))}
         </div>
       </div>
 

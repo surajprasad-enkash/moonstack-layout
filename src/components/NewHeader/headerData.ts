@@ -1,26 +1,51 @@
-import Uiux from "@/components/ServicesSvg/HeaderSvgIconsData/WebsiteDevIcon"
-import Ecomm from "@/components/ServicesSvg/HeaderSvgIconsData/EcommIcon"
-import WebDesining from "@/components/ServicesSvg/HeaderSvgIconsData/WebDesiningIcon"
-import Angular from "@/components/ServicesSvg/HeaderSvgIconsData/AngularIcon"
-import React from "@/components/ServicesSvg/HeaderSvgIconsData/ReactIcon"
-import FullStack from "@/components/ServicesSvg/HeaderSvgIconsData/FullStackIcon"
-import Laravel from "@/components/ServicesSvg/HeaderSvgIconsData/LaravelIcon"
-import Python from "@/components/ServicesSvg/HeaderSvgIconsData/PythonIcon"
+// import Uiux from "@/components/ServicesSvg/HeaderSvgIconsData/WebsiteDevIcon"
+// import Ecomm from "@/components/ServicesSvg/HeaderSvgIconsData/EcommIcon"
+// import WebDesining from "@/components/ServicesSvg/HeaderSvgIconsData/WebDesiningIcon"
+// import Angular from "@/components/ServicesSvg/HeaderSvgIconsData/AngularIcon"
+// import React from "@/components/ServicesSvg/HeaderSvgIconsData/ReactIcon"
+// import FullStack from "@/components/ServicesSvg/HeaderSvgIconsData/FullStackIcon"
+// import Laravel from "@/components/ServicesSvg/HeaderSvgIconsData/LaravelIcon"
+// import Python from "@/components/ServicesSvg/HeaderSvgIconsData/PythonIcon"
 
-import Android from "@/components/ServicesSvg/HeaderSvgIconsData/AndroidIcon"
-import Ios from "@/components/ServicesSvg/HeaderSvgIconsData/IosIcon"
-import Pwa from "@/components/ServicesSvg/HeaderSvgIconsData/PwaIcon"
-import Maintaince from "@/components/ServicesSvg/HeaderSvgIconsData/MaintananceIcon"
-import Seo from "@/components/ServicesSvg/HeaderSvgIconsData/SeoIcon"
-import Cloud from "@/components/ServicesSvg/HeaderSvgIconsData/CloudIcon"
+// import Android from "@/components/ServicesSvg/HeaderSvgIconsData/AndroidIcon"
+// import Ios from "@/components/ServicesSvg/HeaderSvgIconsData/IosIcon"
+// import Pwa from "@/components/ServicesSvg/HeaderSvgIconsData/PwaIcon"
+// import Maintaince from "@/components/ServicesSvg/HeaderSvgIconsData/MaintananceIcon"
+// import Seo from "@/components/ServicesSvg/HeaderSvgIconsData/SeoIcon"
+// import Cloud from "@/components/ServicesSvg/HeaderSvgIconsData/CloudIcon"
 import About from "@/components/ServicesSvg/HeaderSvgIconsData/AboutUsIcon"
 import Blog from "@/components/ServicesSvg/HeaderSvgIconsData/BlogIcon"
 import CaseStudy from "@/components/ServicesSvg/HeaderSvgIconsData/CaseStudyIcon"
-import Vue from "@/components/ServicesSvg/HeaderSvgIconsData/VueJsIcon"
-import WordPress from "@/components/ServicesSvg/HeaderSvgIconsData/WordpressIcon"
-import CRM from "@/components/ServicesSvg/HeaderSvgIconsData/CrmIcon"
-import ITSupport from "@/components/ServicesSvg/HeaderSvgIconsData/ItSupoort"
-import NodeJs from "@/components/ServicesSvg/HeaderSvgIconsData/NodeJsIcon"
+// import Vue from "@/components/ServicesSvg/HeaderSvgIconsData/VueJsIcon"
+// import WordPress from "@/components/ServicesSvg/HeaderSvgIconsData/WordpressIcon"
+// import CRM from "@/components/ServicesSvg/HeaderSvgIconsData/CrmIcon"
+// import ITSupport from "@/components/ServicesSvg/HeaderSvgIconsData/ItSupoort"
+// import NodeJs from "@/components/ServicesSvg/HeaderSvgIconsData/NodeJsIcon"
+
+import React from "@/assets/newHomePage/services/reactjs.svg"
+import Ecomm from "@/assets/newHomePage/services/ecom.svg"
+import WebDesining from "@/assets/newHomePage/services/webdesi.svg"
+import Angular from "@/assets/newHomePage/services/anguler.svg"
+import Vue from "@/assets/newHomePage/services/vuejs.svg"
+import WordPress from "@/assets/newHomePage/services/wordpress.svg"
+import CRM from "@/assets/newHomePage/services/crm.svg"
+import FullStack from "@/assets/newHomePage/services/full-stack.svg"
+import shopify from "@/assets/newHomePage/services/shopify.svg"
+import NodeJs from "@/assets/newHomePage/services/nodejs.svg"
+import Laravel from "@/assets/newHomePage/services/laravel.svg"
+import Python from "@/assets/newHomePage/services/python.svg"
+
+import Android from "@/assets/newHomePage/services/android.svg"
+import Ios from "@/assets/newHomePage/services/ios.svg"
+import ReactNative from "@/assets/newHomePage/services/reactnative.svg"
+import Maintaince from "@/assets/newHomePage/services/appmant.svg"
+import Pwa from "@/assets/newHomePage/services/pwa.svg"
+
+import Seo from "@/assets/newHomePage/services/seo.svg"
+import Uiux from "@/assets/newHomePage/services/uiux.svg"
+import product from "@/assets/newHomePage/services/product.svg"
+import Cloud from "@/assets/newHomePage/services/cloud.svg"
+import ITSupport from "@/assets/newHomePage/services/itsupport.svg"
 
 export const megaMenuData = {
   "Website Development": [
@@ -36,28 +61,24 @@ export const megaMenuData = {
       Icon: Ecomm,
       url: "/services/ecommerce-website-development-company",
     },
-
     {
       title: "Web Designing",
       subtitle: "Visually Striking Designs- Engage ",
       Icon: WebDesining,
       url: "/services/web-designing-company",
     },
-
     {
       title: "AngularJs",
       Icon: Angular,
       url: "/services/angularjs-development-company",
       subtitle: "Robust Angular Solutions ",
     },
-
     {
       title: "Vue.js",
       Icon: Vue,
       url: "/services/vuejs-development-company",
       subtitle: "Get Lightweight frontends",
     },
-
     {
       title: "Wordpress",
       Icon: WordPress,
@@ -91,7 +112,7 @@ export const megaMenuData = {
     },
     {
       title: "Shopify",
-      Icon: Ecomm,
+      Icon: shopify,
       url: "/services/shopify-website-development-company",
       subtitle: "Stores Built For Growth And Sales",
     },
@@ -147,7 +168,7 @@ export const megaMenuData = {
     {
       title: "React Native  Development",
       subtitle: "Apps With Speed And Efficiency",
-      Icon: React,
+      Icon: ReactNative,
       url: "/services/react-native-app-development-company",
     },
     {
@@ -180,7 +201,7 @@ export const megaMenuData = {
     {
       title: "Product",
       subtitle: "Concept Ideation, Market Analysis, Rapid MVP",
-      Icon: FullStack,
+      Icon: product,
       url: "/services/product-designing-company",
     },
     {
