@@ -1,6 +1,6 @@
 import { PageData } from "@/types/web-development-data-type"
 
-import androidLottie from "../../../public/lottie/android.json"
+import androidLottie from "../../../public/lottie/services/ecommerce.json"
 import nativeBannerImg from "@/assets/services/bannerImages/ecom.webp"
 import bndimage1 from "@/assets/services/eComm/eComm.webp"
 import OgImageIcon from "@/assets/ogImage.svg"
@@ -190,7 +190,7 @@ export const ecommerce: PageData = {
     buttonText: "Launch Your Store Today",
   },
 
-  processData: {
+  CloudTimelineData: {
     title: "Advanced Features That ",
     highlight: "Our E-Commerce Portal Integrated With",
     subtitle:

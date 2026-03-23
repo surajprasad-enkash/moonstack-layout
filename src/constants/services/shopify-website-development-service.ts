@@ -1,6 +1,6 @@
 import { PageData } from "@/types/web-development-data-type"
 
-import androidLottie from "../../../public/lottie/android.json"
+import androidLottie from "../../../public/lottie/services/shopify.json"
 import nativeBannerImg from "@/assets/services/bannerImages/shopify.webp"
 import bndimage1 from "@/assets/services/shopify/shopify.webp"
 import OgImageIcon from "@/assets/ogImage.svg"

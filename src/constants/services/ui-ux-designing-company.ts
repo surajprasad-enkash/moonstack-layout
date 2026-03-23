@@ -1,6 +1,6 @@
 import { PageData } from "@/types/web-development-data-type"
 
-import androidLottie from "../../../public/lottie/android.json"
+import androidLottie from "../../../public/lottie/services/uiux.json"
 import nativeBannerImg from "@/assets/services/bannerImages/uiux.webp"
 import bndimage1 from "@/assets/services/uiUx/uiUx.webp"
 import OgImageIcon from "@/assets/ogImage.svg"
@@ -145,7 +145,7 @@ export const ui_ux: PageData = {
     buttonText: "Start Your Project Today",
   },
 
-  processData: {
+  CloudTimelineData: {
     title: "Bringing the best",
     highlight: "UI/UX Agency To You",
     subtitle: "",
