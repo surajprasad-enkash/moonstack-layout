@@ -1,8 +1,6 @@
 import type { Metadata } from "next"
 import { Libre_Baskerville } from "next/font/google"
-
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import Script from "next/script"
 import "./globals.css"
 
 const libreBaskerville = Libre_Baskerville({
@@ -13,6 +11,11 @@ const libreBaskerville = Libre_Baskerville({
   display: "swap",
 })
 
+import { gordita } from "@/lib/fonts"
+import { VideoModalProvider } from "@/context/VideoModalContext"
+import CookieConsent from "@/components/CookieConsent/CookieConsent"
+// import ChatWidget from "@/components/ChatWidget/ChatWidget"
+
 export const metadata: Metadata = {
   title: {
     default: "Product Focused App & Web Development Company in India & USA",
@@ -20,6 +23,7 @@ export const metadata: Metadata = {
   },
   description:
     "We're product-focused app and web development company in India. Moonstack’s senior engineers and designers help companies in building World class AI-powered full-stack development, UI/UX, SEO and ongoing support.",
+
   keywords: [
     "web development company India",
     "app development company India",
@@ -73,12 +77,12 @@ export const metadata: Metadata = {
     title: "Moonstack",
     description: "Product-focused AI-powered web & app development company.",
   },
-}
 
-import { gordita } from "@/lib/fonts"
-import { VideoModalProvider } from "@/context/VideoModalContext"
-import CookieConsent from "@/components/CookieConsent/CookieConsent"
-// import ChatWidget from "@/components/ChatWidget/ChatWidget"
+  // ✅ ADD THIS HERE
+  verification: {
+    google: "mO3FlU4gORcou13wu6VRGRkrlWzuEggJ3mvWIv8KrD0",
+  },
+}
 
 export default function RootLayout({
   children,
@@ -90,9 +94,22 @@ export default function RootLayout({
       <body
         className={`font-sans antialiased ${libreBaskerville.variable} ${gordita.variable}`}
       >
+        {/* ✅ Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-DK4DT1TB8W"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DK4DT1TB8W');
+      `}
+        </Script>
+
         <VideoModalProvider>{children}</VideoModalProvider>
         <CookieConsent />
-        {/* <ChatWidget /> */}
       </body>
     </html>
   )

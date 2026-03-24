@@ -51,24 +51,29 @@ const Footer = () => {
 
                   {/* REVIEWS */}
                   <div className="footerReviews">
-                    <div className="reviewBox">
+                    <Link
+                      href="https://www.upwork.com/agencies/958032289046228992/"
+                      target="_blank"
+                      className="reviewBox"
+                    >
                       <Image src={upwork} alt="Upwork" />
                       <p className="text-[#fff]">
                         <span className="reviewStars">★★★★★</span>
                         <span className="reviewCount">(95 Reviews)</span>
                       </p>
-                    </div>
-
-                    <div className="reviewBox">
-                      <Link href="https://www.upwork.com/agencies/958032289046228992/">
-                        <Image src={clutch} alt="Clutch" />
-                      </Link>
+                    </Link>
+                    <Link
+                      href="https://clutch.co/profile/moonstack"
+                      target="_blank"
+                      className="reviewBox"
+                    >
+                      <Image src={clutch} alt="Clutch" />
 
                       <p className="text-[#fff]">
                         <span className="reviewStars">★★★★★</span>
                         <span className="reviewCount">(120 Reviews)</span>
                       </p>
-                    </div>
+                    </Link>
                   </div>
                 </div>
               </div>

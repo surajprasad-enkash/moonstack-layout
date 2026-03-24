@@ -68,7 +68,7 @@ export default function AIProductsGrid({
                 href={item.href || "#"}
                 className="inline-flex max-w-[max-content] items-center gap-2 rounded-[50px] bg-black px-[24px] py-[10px] text-[16px] text-white transition"
               >
-                Learn More <FiArrowRight size={18} />
+                Let's Connect <FiArrowRight size={18} />
               </Link>
             </div>
           ))}

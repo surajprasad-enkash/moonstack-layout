@@ -179,9 +179,9 @@ export default function ServicesSection({
                 key={index}
                 className="rounded-[20px] bg-[#f5f5f7] px-[20px] pt-[32px]"
               >
-                <h5 className="mb-[24px] pl-[18px] !text-[24px]">
+                <h4 className="mb-[24px] pl-[18px] !text-[24px]">
                   {column.title}
-                </h5>
+                </h4>
 
                 <ul className="homePageServicesList space-y-4">
                   {column.items.map((item, i) => (

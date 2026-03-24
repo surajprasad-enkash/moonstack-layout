@@ -64,21 +64,29 @@ export default function HeroSection({
           alt="Background"
           width={1200}
           height={1200}
-          className="absolute right-[0] left-[-26%] z-[1] h-[auto] w-[140%]"
+          loading="lazy"
+          sizes="100vw"
+          quality={60}
+          priority
+          className="absolute right-0 left-[-26%] z-1 h-auto w-[140%]"
         />
       )}
       {bgImage2 && (
         <Image
           src={bgImage2.src}
           alt="Background"
+          priority
           width={1200}
           height={1500}
-          className="absolute right-[0] bottom-[-90%] left-[0%] z-[1] h-[auto] w-[100%]"
+          loading="lazy"
+          sizes="100vw"
+          quality={60}
+          className="absolute right-0 bottom-[-90%] left-[0%] z-1 h-auto w-full"
         />
       )}
       <div className="relative z-10 container">
         {/* Eyebrow */}
-        <p className="mb-[10px] text-center !font-[500] text-[#f5f7ff99]">
+        <p className="mb-2.5 text-center font-medium! text-[#f5f7ff99]">
           {eyebrowText}
         </p>
 

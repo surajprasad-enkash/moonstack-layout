@@ -48,16 +48,32 @@ import FAQSection from "@/components/Sections/FaqSection/FaqSection"
 import ProcessSection from "@/components/Sections/ProcessSection/ProcessSection"
 
 export default function Home() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Moonstack",
+    url: "https://moonstack.co/",
+    logo: "https://moonstack.co/wp-content/uploads/2024/03/logo_moon_dark.svg",
+    sameAs: [
+      "https://www.linkedin.com/company/moonstack",
+      "https://twitter.com/moonstack",
+    ],
+  }
   return (
     <>
       <Meta
         title="Product Focused App & Web Development Company in India & USA"
         description="We're product-focused app and web development company in India. Moonstack’s senior engineers and designers help companies in building World class AI-powered full-stack development, UI/UX, SEO and ongoing support."
         keywords=" Website Development,Mobile app development service India, SEO, Next.js, React, Moonstack,AI solutions for businesses "
-        canonical="/"
+        canonical="https://moonstack.co/"
         ogImage="https://moonstack.co/wp-content/uploads/2024/03/logo_moon_dark.svg"
       />
-
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema),
+        }}
+      />
       <Layout>
         <HeroSection />
         <Space size={140} />

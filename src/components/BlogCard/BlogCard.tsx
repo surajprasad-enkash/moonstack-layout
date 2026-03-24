@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-
+import author from "../../app/favicon.ico"
 interface BlogAuthor {
   name: string
   avatar: string
@@ -48,7 +48,7 @@ export default function BlogCard({ post, imageHeight = "h-[200px]" }: Props) {
           <div className="mb-4 flex items-center justify-between gap-3 text-xs text-gray-400">
             <div className="flex items-center gap-2">
               <Image
-                src={post.author.avatar}
+                src={author}
                 alt={post.author.name}
                 width={24}
                 height={24}

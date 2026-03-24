@@ -47,7 +47,7 @@ export const ios: PageData = {
         href: "/services",
       },
       {
-        label: "ISO App Development",
+        label: "IOS App Development",
         href: "/services/iso-app-development-company",
       },
     ],

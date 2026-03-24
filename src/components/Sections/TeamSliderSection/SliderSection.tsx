@@ -9,7 +9,8 @@ import { slides, features } from "./data"
 import TeamBottomInfo from "@/components/TeamBottomInfo"
 import CommanButton from "@/components/CommanButton/CommanButton"
 import bgImageGradient from "@/assets/app-development-images/team-bg-1440.svg"
-
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 interface TeamSliderSectionProps {
   headingLines: { text: string; color?: string }[]
   bgColor?: string

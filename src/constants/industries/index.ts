@@ -2,7 +2,7 @@ import bgImagehero from "@/assets/industries/hero-bg.svg"
 import LottieData from "../../../public/lottie/industries.json"
 import userImage from "@/assets/clientsImages/numanbhatiyapikright.webp"
 import tastimonialBg from "@/assets/industries/review-under-hero-bg.svg"
-import mobDesignBanner from "@/assets/app-development-images/mob-design-banner.webp"
+import mobDesignBanner from "@/assets/industries/bannerImg.webp"
 
 import img1 from "@/assets/industries/xp-1-p-500.webp"
 import img2 from "@/assets/industries/xp-2.webp"
