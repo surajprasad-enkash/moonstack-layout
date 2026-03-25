@@ -4,22 +4,14 @@ import React from "react"
 import HeroSection from "@/components/about/heroSection"
 import Space from "@/components/Space"
 import OgImageIcon from "@/assets/ogImage.svg"
-const AboutGallery = dynamic(
-  () => import("@/components/about/aboutGallerySection")
-)
-const AboutStepper = dynamic(() => import("@/components/about/aboutStepper"))
-const TeamSection = dynamic(() => import("@/components/about/teamSection"))
-const LocationSection = dynamic(() => import("../contact-us/locationSection"))
-const OurValuesSection = dynamic(
-  () => import("@/components/about/valueSection")
-)
-const ImpactStatsSection = dynamic(
-  () => import("@/components/about-page/ImpactStatsSection")
-)
-const DnaSection = dynamic(() => import("@/components/about-page/DnaSection"))
-const IndustryExperienceSection = dynamic(
-  () => import("@/components/Industries/IndustryExperienceSection")
-)
+import AboutGallery from "@/components/about/aboutGallerySection"
+import AboutStepper from "@/components/about/aboutStepper"
+import TeamSection from "@/components/about/teamSection"
+import LocationSection from "../contact-us/locationSection"
+import OurValuesSection from "@/components/about/valueSection"
+import ImpactStatsSection from "@/components/about-page/ImpactStatsSection"
+import DnaSection from "@/components/about-page/DnaSection"
+import IndustryExperienceSection from "@/components/Industries/IndustryExperienceSection"
 import { impactStatsData } from "@/components/about-page/data/impactStats"
 import { Metadata } from "next"
 import { buildMetadata } from "@/helper/generateMetadata "
