@@ -13,6 +13,7 @@ interface FormProps {
 interface Errors {
   fullname?: string
   email?: string
+  phone?: string
   message?: string
   attachment?: string
 }
@@ -30,6 +31,7 @@ export default function Form({ formName }: FormProps) {
     const fname = formData.get("fullname") as string
     const email = formData.get("email") as string
     const msg = formData.get("message") as string
+    const phone = formData.get("phone") as string
     const file = formData.get("attachment") as File
 
     if (!fname) newErrors.fullname = "First name is required"
@@ -39,6 +41,8 @@ export default function Form({ formName }: FormProps) {
     } else if (!/^\S+@\S+\.\S+$/.test(email)) {
       newErrors.email = "Enter a valid email address"
     }
+
+    if (!phone) newErrors.phone = "Phone number is required"
 
     if (!msg) newErrors.message = "Project description is required"
 
@@ -134,6 +138,31 @@ export default function Form({ formName }: FormProps) {
           {errors.email && (
             <p className="absolute bottom-[-18px] !text-[12px] text-[red]">
               {errors.email}
+            </p>
+          )}
+        </div>
+      </div>
+
+      <div className="formRow">
+        <div className="formGroup w-[100%] mb-[20px]">
+          <input
+            name="phone"
+            type="tel"
+            id="phone"
+            placeholder=""
+            className="peer w-full border-b border-[#cecece] py-3 text-sm text-[#000] focus:!border-[#004619] focus:outline-none"
+            autoComplete="tel"
+            onChange={() => setErrors((e) => ({ ...e, phone: undefined }))}
+          />
+          <label
+            htmlFor="phone"
+            className="absolute top-3 left-0 cursor-text text-sm font-[500] text-[#000] transition-all peer-not-placeholder-shown:-top-[10px] peer-not-placeholder-shown:bg-white peer-not-placeholder-shown:text-xs peer-focus:-top-[10px] peer-focus:bg-white peer-focus:text-xs"
+          >
+            Phone Number<span className="text-[red]">*</span>
+          </label>
+          {errors.phone && (
+            <p className="absolute bottom-[-18px] !text-[12px] text-[red]">
+              {errors.phone}
             </p>
           )}
         </div>

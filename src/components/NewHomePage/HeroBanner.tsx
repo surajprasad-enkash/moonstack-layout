@@ -64,7 +64,6 @@ export default function HeroSection({
           alt="Background"
           width={1200}
           height={1200}
-          loading="lazy"
           sizes="100vw"
           quality={60}
           priority
@@ -78,7 +77,6 @@ export default function HeroSection({
           priority
           width={1200}
           height={1500}
-          loading="lazy"
           sizes="100vw"
           quality={60}
           className="absolute right-0 bottom-[-90%] left-[0%] z-1 h-auto w-full"

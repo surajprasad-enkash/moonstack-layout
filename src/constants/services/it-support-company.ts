@@ -1,7 +1,7 @@
 import { PageData } from "@/types/web-development-data-type"
 
 import androidLottie from "../../../public/lottie/android.json"
-import nativeBannerImg from "@/assets/app-development-images/native-banner-img.webp"
+import nativeBannerImg from "@/assets/services/itSupport/itSupportBanner.webp"
 import OgImageIcon from "@/assets/ogImage.svg"
 
 import Icon1 from "@/components/ServicesSvg/ItSupportIcon/ItSupportIcon1"

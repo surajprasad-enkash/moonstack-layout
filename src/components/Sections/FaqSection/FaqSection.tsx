@@ -4,6 +4,7 @@ import { useState } from "react"
 import Heading from "@/components/Heading/Heading"
 import Image from "next/image"
 import icon from "@/assets/faq-icon.svg"
+import { FAQSchema } from "@/components/StructuredData"
 
 interface FAQItem {
   question: string
@@ -94,6 +95,7 @@ export default function FAQSection({
 
   return (
     <section className="faqSection relative w-full overflow-hidden px-[20px] py-[60px] text-white md:py-[80px]">
+      <FAQSchema faqs={faqs} />
       <div className="relative z-10 container mx-auto grid grid-cols-1 gap-10 lg:grid-cols-2">
         <div>
           <Heading

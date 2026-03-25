@@ -59,6 +59,7 @@ const AppCategoryBanner: React.FC<AppCategoryBannerProps> = ({
         <Image
           src={bgImage}
           alt="Background"
+          priority
           className="absolute top-[0] right-[0] left-[0] z-[1]"
         />
       )}

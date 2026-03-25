@@ -37,10 +37,8 @@ const Layout: React.FC<{
       <SheduleAMeeting />
       <main
         className="relative bg-black bg-cover"
-        // style={{ backgroundImage: `url(${bgImage.src})` }}
       >
-        {/* <SnowCanvas /> */}
-        {/* <BackgroundLines /> */}
+
         <div className="relative z-3">{children}</div>
         <Footer />
       </main>

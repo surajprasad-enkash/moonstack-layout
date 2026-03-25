@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { cn } from "@/lib/utils"
+import { BreadcrumbSchema } from "@/components/StructuredData"
 
 interface BreadcrumbItem {
   label: string
@@ -27,6 +28,12 @@ export default function Breadcrumb({
         className
       )}
     >
+      <BreadcrumbSchema 
+        items={items.map((item) => ({ 
+          name: item.label, 
+          url: item.href || "https://moonstack.co" 
+        }))} 
+      />
       {items.map((item, index) => {
         const isLast = index === items.length - 1
 

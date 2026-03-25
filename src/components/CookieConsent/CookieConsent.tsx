@@ -7,13 +7,9 @@ const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    // Check if user has already made a choice
     const consent = localStorage.getItem("cookieConsent")
     if (!consent) {
-      // Delay showing the banner slightly for better UX
-      const timer = setTimeout(() => {
-        setIsVisible(true)
-      }, 1000)
+      const timer = setTimeout(() => setIsVisible(true), 1000)
       return () => clearTimeout(timer)
     }
   }, [])
@@ -32,42 +28,69 @@ const CookieConsent = () => {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          initial={{ y: 100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 100, opacity: 0 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="fixed right-0 bottom-0 left-0 z-[999] flex flex-col items-center justify-between gap-4 bg-gray-900 bg-white p-6 shadow-2xl md:flex-row md:px-12 lg:px-20"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-[999] flex items-center justify-center bg-black/20 p-4 backdrop-blur-sm"
         >
-          <div className="flex-1 text-center md:text-left">
-            <h3 className="mb-2 text-lg font-bold text-black">
-              We value your privacy
-            </h3>
-            <p className="text-sm text-gray-300">
-              We use cookies to enhance your browsing experience, serve
-              personalized ads or content, and analyze our traffic. By clicking
-              "Accept All", you consent to our use of cookies.{" "}
-              <Link
-                href="/cookies"
-                className="text-white underline hover:text-gray-200"
-              >
-                Read our Cookie Policy
-              </Link>
-            </p>
-          </div>
-          <div className="flex flex-col gap-3 font-medium sm:flex-row">
+          {/* Card */}
+          <motion.div
+            initial={{ y: 50, opacity: 0, scale: 0.95 }}
+            animate={{ y: 0, opacity: 1, scale: 1 }}
+            exit={{ y: 50, opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.3 }}
+            className="relative w-full max-w-4xl rounded-2xl bg-white p-8 shadow-2xl"
+          >
+            {/* Close button */}
             <button
-              onClick={handleDecline}
-              className="cursor-pointer rounded-full border border-gray-600 px-6 py-2.5 text-sm text-gray-300 transition hover:bg-black hover:text-white"
+              onClick={() => setIsVisible(false)}
+              className="absolute top-4 right-4 cursor-pointer text-gray-500 hover:text-black"
             >
-              Decline
+              ✕
             </button>
-            <button
-              onClick={handleAccept}
-              className="cursor-pointer rounded-full bg-black px-6 py-2.5 text-sm text-white transition hover:bg-white hover:text-black"
-            >
-              Accept All
-            </button>
-          </div>
+
+            {/* Content */}
+            <div className="flex flex-col gap-6 md:items-center md:justify-between">
+              {/* Text */}
+              <div className="text-sm leading-relaxed text-gray-700">
+                <p>
+                  This website stores cookies on your computer. These cookies
+                  are used to collect information about how you interact with
+                  our website and allow us to remember you. We use this
+                  information in order to improve and customize your browsing
+                  experience and for analytics and metrics about our visitors
+                  both on this website and other media. To find out more about
+                  the cookies we use, see our{" "}
+                  <Link href="/cookies" className="text-orange-500 underline">
+                    Privacy Policy
+                  </Link>
+                  .
+                </p>
+                <p className="mt-3">
+                  If you decline, your information won’t be tracked when you
+                  visit this website. A single cookie will be used in your
+                  browser to remember your preference not to be tracked.
+                </p>
+              </div>
+
+              {/* Buttons */}
+              <div className="flex items-center gap-4">
+                <button
+                  onClick={handleAccept}
+                  className="cursor-pointer rounded-full bg-black px-6 py-2 text-white"
+                >
+                  Accept
+                </button>
+
+                <button
+                  onClick={handleDecline}
+                  className="cursor-pointer rounded-full border border-gray-400 px-6 py-2 text-gray-700"
+                >
+                  Decline
+                </button>
+              </div>
+            </div>
+          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>

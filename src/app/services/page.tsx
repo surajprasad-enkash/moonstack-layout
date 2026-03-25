@@ -2,25 +2,16 @@ import dynamic from "next/dynamic"
 import LottieData from "../../../public/lottie/services/banner.json"
 import bgImagehero from "@/assets/industries/hero-bg.svg"
 import Layout from "@/components/Layout"
+import { ServiceSchema } from "@/components/StructuredData"
 import AppCategoryBanner from "@/components/Sections/ServicesSection/AppDevelopment/AppCategoryBanner"
 import Space from "@/components/Space"
 
-const ServicesSection = dynamic(
-  () => import("@/components/NewHomePage/ServicesSection")
-)
-const CaseStudyHighlight = dynamic(
-  () => import("@/components/NewHomePage/CaseStudyHighlight")
-)
-const TestimonialsTabs = dynamic(
-  () => import("@/components/NewHomePage/TestimonialsTabs")
-)
-const BlogInsightsSection = dynamic(
-  () => import("@/components/NewHomePage/BlogInsightsSection")
-)
-const ProjectCTA = dynamic(() => import("@/components/ProjectCTA/ProjectCTA"))
-const TrustBadges = dynamic(
-  () => import("@/components/NewHomePage/TrustBadges")
-)
+import ServicesSection from "@/components/NewHomePage/ServicesSection"
+import CaseStudyHighlight from "@/components/NewHomePage/CaseStudyHighlight"
+import TestimonialsTabs from "@/components/NewHomePage/TestimonialsTabs"
+import BlogInsightsSection from "@/components/NewHomePage/BlogInsightsSection"
+import ProjectCTA from "@/components/ProjectCTA/ProjectCTA"
+import TrustBadges from "@/components/NewHomePage/TrustBadges"
 
 import { tabs, badges } from "@/constants/services/mainPage"
 import clutch from "@/assets/newHomePage/caseStudy/clutch.svg"
@@ -49,6 +40,12 @@ export const generateMetadata = (): Metadata => {
 export default function ApplicationPage() {
   return (
     <>
+      <ServiceSchema 
+        name="Digital Product Design & Development" 
+        description="Transform your ideas into powerful digital products. Explore our expert services in App Development, Website Design, and UI/UX solutions tailored for growth."
+        providerName="Moonstack"
+        url="https://moonstack.co/services"
+      />
       <Layout>
         <AppCategoryBanner
           title={[

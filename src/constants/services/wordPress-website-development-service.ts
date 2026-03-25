@@ -1,6 +1,6 @@
 import { PageData } from "@/types/web-development-data-type"
 
-import androidLottie from "../../../public/lottie/android.json"
+import androidLottie from "../../../public/lottie/wordpress.json"
 import nativeBannerImg from "@/assets/services/bannerImages/wordpress.webp"
 import bndimage1 from "@/assets/services/wordpress/wordpress.webp"
 import OgImageIcon from "@/assets/ogImage.svg"

@@ -14,7 +14,8 @@ const libreBaskerville = Libre_Baskerville({
 import { gordita } from "@/lib/fonts"
 import { VideoModalProvider } from "@/context/VideoModalContext"
 import CookieConsent from "@/components/CookieConsent/CookieConsent"
-// import ChatWidget from "@/components/ChatWidget/ChatWidget"
+import { OrganizationSchema, WebSiteSchema } from "@/components/StructuredData"
+import LeadPopup from "@/components/LeadPopup/LeadPopup"
 
 export const metadata: Metadata = {
   title: {
@@ -78,7 +79,6 @@ export const metadata: Metadata = {
     description: "Product-focused AI-powered web & app development company.",
   },
 
-  // ✅ ADD THIS HERE
   verification: {
     google: "mO3FlU4gORcou13wu6VRGRkrlWzuEggJ3mvWIv8KrD0",
   },
@@ -94,6 +94,9 @@ export default function RootLayout({
       <body
         className={`font-sans antialiased ${libreBaskerville.variable} ${gordita.variable}`}
       >
+        <OrganizationSchema />
+        <WebSiteSchema />
+
         {/* ✅ Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-DK4DT1TB8W"
@@ -110,6 +113,7 @@ export default function RootLayout({
 
         <VideoModalProvider>{children}</VideoModalProvider>
         <CookieConsent />
+        <LeadPopup />
       </body>
     </html>
   )
