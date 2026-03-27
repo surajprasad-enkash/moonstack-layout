@@ -61,7 +61,6 @@ export default function TestimonialsSection({
           </div>
         </div>
 
-       
         <div className="grid grid-cols-1 gap-[16px] md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((item, index) => (
             <div
@@ -92,6 +91,7 @@ export default function TestimonialsSection({
                   alt={item.name}
                   width={40}
                   height={40}
+                  loading="lazy"
                   className="rounded-full object-cover"
                 />
                 <div>

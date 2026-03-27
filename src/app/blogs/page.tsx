@@ -25,6 +25,8 @@ export const generateMetadata = (): Metadata => {
   })
 }
 
+export const dynamic = "force-dynamic"
+
 /* ================= PAGE ================= */
 
 export default function BlogsPage() {

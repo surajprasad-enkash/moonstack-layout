@@ -95,6 +95,7 @@ const TeamSliderSection: React.FC<TeamSliderSectionProps> = ({
                       <Image
                         src={item.image}
                         alt="team"
+                        loading="lazy"
                         className="h-full w-full object-cover"
                       />
                     </div>

@@ -1,35 +1,35 @@
-import dynamic from "next/dynamic"
+import nextDynamic from "next/dynamic"
 import Layout from "@/components/Layout"
 import Meta from "@/components/MetaData"
 import HeroSection from "@/components/NewHomePage/HeroBanner"
 import Space from "@/components/Space"
 
-const ResultsSection = dynamic(
+const ResultsSection = nextDynamic(
   () => import("@/components/NewHomePage/ResultsSection")
 )
-const ImpactStatsSection = dynamic(
+const ImpactStatsSection = nextDynamic(
   () => import("@/components/NewHomePage/ImpactStatsSection")
 )
-const ServicesSection = dynamic(
+const ServicesSection = nextDynamic(
   () => import("@/components/NewHomePage/ServicesSection")
 )
-const CaseStudyHighlight = dynamic(
+const CaseStudyHighlight = nextDynamic(
   () => import("@/components/NewHomePage/CaseStudyHighlight")
 )
-const AboutHeroSection = dynamic(
+const AboutHeroSection = nextDynamic(
   () => import("@/components/NewHomePage/AboutHeroSection")
 )
-const AwardsSection = dynamic(
+const AwardsSection = nextDynamic(
   () => import("@/components/NewHomePage/AwardsSection")
 )
-const TestimonialsTabs = dynamic(
+const TestimonialsTabs = nextDynamic(
   () => import("@/components/NewHomePage/TestimonialsTabs")
 )
-const ProjectCTA = dynamic(() => import("@/components/ProjectCTA/ProjectCTA"))
-const TrustBadges = dynamic(
+const ProjectCTA = nextDynamic(() => import("@/components/ProjectCTA/ProjectCTA"))
+const TrustBadges = nextDynamic(
   () => import("@/components/NewHomePage/TrustBadges")
 )
-const BlogInsightsSection = dynamic(
+const BlogInsightsSection = nextDynamic(
   () => import("@/components/NewHomePage/BlogInsightsSection")
 )
 
@@ -46,6 +46,8 @@ import {
 } from "@/constants/home"
 import FAQSection from "@/components/Sections/FaqSection/FaqSection"
 import ProcessSection from "@/components/Sections/ProcessSection/ProcessSection"
+
+export const dynamic = "force-dynamic"
 
 export default function Home() {
   const schema = {

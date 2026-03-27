@@ -1,4 +1,4 @@
-import dynamic from "next/dynamic"
+
 import LottieData from "../../../public/lottie/services/banner.json"
 import bgImagehero from "@/assets/industries/hero-bg.svg"
 import Layout from "@/components/Layout"
@@ -28,6 +28,8 @@ import Pickrightscreen2 from "@/assets/newHomePage/caseStudy/pickrightScreen2.we
 import Pickrightscreen3 from "@/assets/newHomePage/caseStudy/pickrightScreen3.webp"
 import amitnuvama from "@/assets/clientsImages/amitnuvama.webp"
 import pickright from "@/assets/clientsImages/numanbhatiyapikright.webp"
+
+
 export const generateMetadata = (): Metadata => {
   return buildMetadata({
     title: "Our Services",
@@ -37,6 +39,8 @@ export const generateMetadata = (): Metadata => {
     ogImage: OgImageIcon.src,
   })
 }
+export const dynamic = "force-dynamic"
+
 export default function ApplicationPage() {
   return (
     <>

@@ -31,6 +31,7 @@ import {
   industryExperienceData,
   projectCtaBgData,
 } from "@/constants/industries"
+
 import OgImageIcon from "@/assets/ogImage.svg"
 import { Metadata } from "next"
 import { buildMetadata } from "@/helper/generateMetadata "

@@ -1,5 +1,3 @@
-"use client"
-
 import Image, { StaticImageData } from "next/image"
 import bgImage from "@/assets/newHomePage/caseStudy/banner.svg"
 
@@ -51,6 +49,7 @@ export default function CaseStudyHighlight({
         <Image
           src={bgImage}
           alt="Background"
+          priority
           className="absolute top-[20%] right-[0] left-[0%] z-[1] h-[auto] w-[150%]"
         />
       )}
@@ -95,6 +94,7 @@ export default function CaseStudyHighlight({
                       alt="Clutch logo"
                       width={100}
                       height={40}
+                      loading="lazy"
                       className="object-contain"
                     />
                   </span>
@@ -122,6 +122,7 @@ export default function CaseStudyHighlight({
                     alt={testimonial.name}
                     width={60}
                     height={60}
+                    loading="lazy"
                     className="rounded-full object-cover"
                   />
                 )}
@@ -150,6 +151,7 @@ export default function CaseStudyHighlight({
                   alt="Case study preview"
                   width={900}
                   height={700}
+                  loading="lazy"
                   className="w-full object-cover"
                   priority={index === 0}
                 />

@@ -1,4 +1,3 @@
-"use client"
 
 import Image, { StaticImageData } from "next/image"
 import { cn } from "@/lib/utils"
@@ -44,6 +43,7 @@ export default function TestimonialCard({
         <Image
           src={bgImage}
           alt="Background"
+          priority
           className="absolute top-[0] right-[0] left-[0] z-[-1]"
         />
       )}
@@ -67,6 +67,7 @@ export default function TestimonialCard({
                 alt={authorName}
                 width={80}
                 height={80}
+                loading="lazy"
                 className="object-cover"
               />
             </div>

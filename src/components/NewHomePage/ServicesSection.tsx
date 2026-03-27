@@ -1,8 +1,6 @@
-"use client"
-
 import Link from "next/link"
-import Heading from "../Heading/Heading"
 import Image from "next/image"
+import Heading from "../Heading/Heading"
 import clientImg from "@/assets/teamsimages/dheerajSir.webp"
 import CalBookingButton from "../CalBookingButton/CalBookingButton"
 

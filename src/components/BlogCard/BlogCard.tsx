@@ -37,6 +37,7 @@ export default function BlogCard({ post, imageHeight = "h-[200px]" }: Props) {
               alt={post.title}
               width={500}
               height={350}
+              loading="lazy"
               className={`${imageHeight} w-full object-cover transition group-hover:scale-102`}
             />
           </div>

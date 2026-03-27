@@ -1,15 +1,15 @@
 "use client"
-
-import { motion } from "framer-motion"
 import React from "react"
+import Link from "next/link"
 import Image, { StaticImageData } from "next/image"
+import { motion } from "framer-motion"
 import CustomButton from "../../../CommanButton/CommanButton"
 import Heading, { HeadingSegment } from "../../../Heading/Heading"
-import LottiePlayer from "../../../LottieAnimation"
 import Breadcrumb from "../../../Breadcrumb"
 import IndustryTags from "../../../Industries/IndustriesBanner"
 import HomeMarquee from "../../../Homepage/Marquee"
-import Link from "next/link"
+
+import LottieClient from "@/components/LottieClient"
 
 interface BreadcrumbItem {
   label: string
@@ -36,7 +36,6 @@ interface AppCategoryBannerProps {
 
 const AppCategoryBanner: React.FC<AppCategoryBannerProps> = ({
   title,
-
   description,
   mediaType = "image",
   image,
@@ -99,7 +98,7 @@ const AppCategoryBanner: React.FC<AppCategoryBannerProps> = ({
             transition={{ duration: 1.5, ease: "easeOut" }}
           >
             {mediaType === "lottie" && lottieData ? (
-              <LottiePlayer
+              <LottieClient
                 animationData={lottieData}
                 className="h-full w-auto"
               />

@@ -18,7 +18,8 @@ export default function LeadPopup() {
   const [hasShown, setHasShown] = useState(false)
   const [loading, setLoading] = useState(false)
 
-  const [phone, setPhone] = useState<string | undefined>()
+  const [phone, setPhone] = useState<string>("")
+  const [error, setError] = useState<string>("")
 
   useEffect(() => {
     if (!hasShown) {
@@ -35,6 +36,30 @@ export default function LeadPopup() {
 
   const handleClose = () => {
     setIsOpen(false)
+  }
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setError("")
+
+    const form = e.currentTarget
+    if (!form.checkValidity()) {
+      setError("Please fill out all mandatory fields correctly.")
+      return
+    }
+
+    try {
+      setLoading(true)
+      // Simulate API call or add real submit logic here
+      await new Promise((resolve) => setTimeout(resolve, 1000))
+
+      // On success, close popup
+      setIsOpen(false)
+    } catch (err) {
+      setError("Something went wrong. Please try again.")
+    } finally {
+      setLoading(false)
+    }
   }
 
   const ArrowIcon = () => (
@@ -156,7 +181,8 @@ export default function LeadPopup() {
 
             <form
               className="flex flex-col gap-4 text-sm"
-              onSubmit={(e) => e.preventDefault()}
+              onSubmit={handleSubmit}
+              noValidate
             >
               <div className="border-b border-gray-200">
                 <input
@@ -182,14 +208,12 @@ export default function LeadPopup() {
                   className="w-[80px] cursor-pointer border-r border-gray-200 bg-transparent py-1 pr-1 text-gray-800 outline-none"
                 >
                   <option value="+91">+91 (IN)</option>
-                  <option value="+1">+1 (US)</option>
-                  <option value="+44">+44 (UK)</option>
-                  <option value="+61">+61 (AU)</option>
+
                 </select>
                 <input
                   type="tel"
                   placeholder="Phone"
-                  value={phone}
+                  value={phone || ""}
                   onChange={(e) => setPhone(e.target.value)}
                   className="w-full bg-transparent py-1 pl-3 text-gray-800 placeholder-gray-400 outline-none"
                   required
@@ -218,6 +242,8 @@ export default function LeadPopup() {
                   className="w-full resize-none bg-transparent py-2 text-gray-800 placeholder-gray-400 outline-none"
                 ></textarea>
               </div>
+
+              {error && <p className="text-sm font-medium text-red-500">{error}</p>}
 
               <CustomButton
                 text={loading ? "Submitting..." : "Submit"}

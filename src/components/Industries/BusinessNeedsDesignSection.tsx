@@ -1,5 +1,3 @@
-"use client"
-
 import Image from "next/image"
 import Heading, { HeadingSegment } from "@/components/Heading/Heading"
 import bgImage from "@/assets/industries/icon/bndBGapproach-bg.svg"
@@ -70,6 +68,7 @@ export default function BusinessNeedsDesignSection({
                       alt=""
                       width={80}
                       height={80}
+                      loading="lazy"
                       className="mb-[32px]"
                     />
                   )}
@@ -104,9 +103,9 @@ export default function BusinessNeedsDesignSection({
                         alt={card.title || "card Image"}
                         width={700}
                         height={500}
-                        className={`h-auto w-full rounded-[20px] object-cover ${
-                          card.maxHeight ?? "max-h-[500px]"
-                        }`}
+                        loading="lazy"
+                        className={`h-auto w-full rounded-[20px] object-cover ${card.maxHeight ?? "max-h-[500px]"
+                          }`}
                       />
                     </div>
                   )}
