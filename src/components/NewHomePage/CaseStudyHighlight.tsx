@@ -151,7 +151,6 @@ export default function CaseStudyHighlight({
                   alt="Case study preview"
                   width={900}
                   height={700}
-                  loading="lazy"
                   className="w-full object-cover"
                   priority={index === 0}
                 />
