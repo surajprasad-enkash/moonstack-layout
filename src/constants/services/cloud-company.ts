@@ -1,6 +1,6 @@
 import { PageData } from "@/types/web-development-data-type"
 
-import androidLottie from "../../../public/lottie/android.json"
+import androidLottie from "../../../public/lottie/services/cloud.json"
 import nativeBannerImg from "@/assets/services/bannerImages/cloud.webp"
 
 // SVG Icons Components
