@@ -1,6 +1,6 @@
 import { PageData } from "@/types/web-development-data-type"
 
-import androidLottie from "../../../public/lottie/android.json"
+import androidLottie from "../../../public/lottie/services/ai.json"
 import bndimage1 from "@/assets/services/ai/aiImage.webp"
 
 import AiIcon1 from "@/components/ServicesSvg/AiIcon/AiIcon1"

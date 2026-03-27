@@ -1,31 +1,26 @@
 "use client"
 
 import React, { useState, useEffect } from "react"
-import Image from "next/image"
-
 import CustomButton from "../CommanButton/CommanButton"
-
-import clutch from "@/assets/newHomePage/awards/clutch.svg"
-import dribbble from "@/assets/newHomePage/awards/dribbble.svg"
-import goodfirms from "@/assets/newHomePage/awards/good-firms.svg"
-import upwork from "@/assets/newHomePage/awards/upwork.svg"
-import TrustBadges from "@/components/NewHomePage/TrustBadges"
-import { badges } from "@/constants/home"
 import Marquee from "@/components/Homepage/Marquee"
+import { submitFormAction } from "@/helper"
 
 export default function LeadPopup() {
   const [isOpen, setIsOpen] = useState(false)
   const [hasShown, setHasShown] = useState(false)
   const [loading, setLoading] = useState(false)
 
-  const [phone, setPhone] = useState<string>("")
-  const [error, setError] = useState<string>("")
+  const [phone, setPhone] = useState("")
+  const [error, setError] = useState<string | null>(null)
 
+  /* ---------------- SHOW AFTER DELAY ---------------- */
   useEffect(() => {
-    if (!hasShown) {
+    const isShownBefore = localStorage.getItem("leadPopupShown")
+    if (!isShownBefore && !hasShown) {
       const timer = setTimeout(() => {
         setIsOpen(true)
         setHasShown(true)
+        localStorage.setItem("leadPopupShown", "true")
       }, 8000)
 
       return () => clearTimeout(timer)
@@ -38,30 +33,44 @@ export default function LeadPopup() {
     setIsOpen(false)
   }
 
+  /* ---------------- SUBMIT ---------------- */
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setError("")
+    setError(null)
+    setLoading(true)
 
     const form = e.currentTarget
-    if (!form.checkValidity()) {
-      setError("Please fill out all mandatory fields correctly.")
+    const formData = new FormData(form)
+
+    // Basic validation
+    const name = formData.get("fullname") as string
+    const email = formData.get("email") as string
+    const phone = formData.get("phone") as string
+
+    if (!name || !email || !phone) {
+      setError("Please fill all required fields")
+      setLoading(false)
       return
     }
 
     try {
-      setLoading(true)
-      // Simulate API call or add real submit logic here
-      await new Promise((resolve) => setTimeout(resolve, 1000))
+      const result = await submitFormAction(formData, "lead_popup")
 
-      // On success, close popup
-      setIsOpen(false)
+      if (result.success) {
+        form.reset()
+        setPhone("")
+        setIsOpen(false)
+      } else {
+        setError(result.message || "Something went wrong")
+      }
     } catch (err) {
-      setError("Something went wrong. Please try again.")
+      setError("Server error. Please try again.")
     } finally {
       setLoading(false)
     }
   }
 
+  /* ---------------- ICON ---------------- */
   const ArrowIcon = () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -83,36 +92,25 @@ export default function LeadPopup() {
 
   return (
     <div
-      className="fixed inset-0 z-[99999] flex items-center justify-center bg-black/60 p-4 transition-opacity duration-300"
+      className="fixed inset-0 z-[99999] flex items-center justify-center bg-black/60 p-4"
       onClick={handleClose}
     >
       <div
-        className="animate-in fade-in zoom-in-95 relative flex max-h-[95vh] w-[1050px] max-w-[80vw] flex-col overflow-hidden rounded-3xl bg-white shadow-2xl duration-300"
+        className="relative flex max-h-[95vh] w-[1050px] max-w-[90vw] flex-col overflow-hidden rounded-3xl bg-white shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
+        {/* CLOSE BUTTON */}
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 z-10 flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-[#FF0000] text-white transition-colors hover:bg-red-600"
-          aria-label="Close"
+          className="absolute top-4 right-4 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-[#FF0000] text-white hover:bg-red-600"
         >
-          <svg
-            className="h-4 w-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2.5"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
+          ✕
         </button>
 
+        {/* HEADER */}
         <div className="px-8 pt-8 pb-4 text-center">
-          <h3 className="text-3xl !font-bold text-[#1a1a1a]">
-            Wait! Before You Press <span className="text-[ #FF0000]">X</span>,
+          <h3 className="text-3xl font-bold text-[#1a1a1a]">
+            Wait! Before You Press <span className="text-[#FF0000]">X</span>,
           </h3>
           <h3 className="mt-1 text-2xl font-semibold text-[#1a1a1a]">
             See What You Could Gain!
@@ -120,112 +118,99 @@ export default function LeadPopup() {
         </div>
 
         <div className="flex flex-col gap-8 p-6 pt-2 md:flex-row">
+          {/* LEFT SIDE */}
           <div className="hidden w-full flex-col justify-between rounded-2xl bg-[#F8FAFC] p-6 md:flex md:w-[45%]">
             <div className="space-y-6">
-              <div className="flex items-start gap-3">
-                <div className="mt-1 flex-shrink-0">
+              {[
+                {
+                  title: "Free Exact Time & Cost Estimation",
+                  desc: "Get a precise estimation for your project with clarity.",
+                },
+                {
+                  title: "AI-Driven Revenue Boost",
+                  desc: "Discover how AI can scale your business.",
+                },
+                {
+                  title: "Avoid Common Pitfalls",
+                  desc: "Learn why most ideas fail and how to succeed.",
+                },
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3">
                   <ArrowIcon />
+                  <div>
+                    <h5 className="font-bold text-gray-900">{item.title}</h5>
+                    <p className="text-sm text-gray-500">{item.desc}</p>
+                  </div>
                 </div>
-                <div>
-                  <h5 className="mb-1 font-bold text-gray-900">
-                    Free Exact Time & Cost Estimation
-                  </h5>
-                  <p className="text-sm leading-relaxed text-gray-500">
-                    Get a precise estimation for the time and cost of your
-                    project idea. No surprises, just clarity.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="mt-1 flex-shrink-0">
-                  <ArrowIcon />
-                </div>
-                <div>
-                  <h5 className="mb-1 font-bold text-gray-900">
-                    AI-Driven Revenue Boost
-                  </h5>
-                  <p className="text-sm leading-relaxed text-gray-500">
-                    Discover how AI implementation can 10X your business
-                    revenue. Learn the secrets to scalable success!
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="mt-1 flex-shrink-0">
-                  <ArrowIcon />
-                </div>
-                <div>
-                  <h5 className="mb-1 font-bold text-gray-900">
-                    Avoid Common Pitfalls
-                  </h5>
-                  <p className="text-sm leading-relaxed text-gray-500">
-                    Find out why 90% of business ideas fail after launch and how
-                    you can be among the successful 10%.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
-            <div className="mt-2.5 rounded-2xl bg-black">
-              {" "}
+
+            <div className="mt-3 rounded-2xl bg-black">
               <Marquee />
             </div>
           </div>
 
-          {/* Right Side: Form */}
+          {/* RIGHT FORM */}
           <div className="flex w-full flex-col px-2 md:w-[55%]">
             <p className="mb-4 text-xs font-medium text-red-500">
               * Mandatory Field
             </p>
 
             <form
-              className="flex flex-col gap-4 text-sm"
               onSubmit={handleSubmit}
-              noValidate
+              className="flex flex-col gap-4 text-sm"
             >
+              {/* HIDDEN */}
+              <input type="hidden" name="form_name" value="lead_popup" />
+
+              {/* NAME */}
               <div className="border-b border-gray-200">
                 <input
+                  name="fullname"
                   type="text"
                   placeholder="Full Name"
-                  className="w-full bg-transparent py-2 text-gray-800 placeholder-gray-400 outline-none"
-                  required
+                  className="w-full bg-transparent py-2 outline-none"
                 />
               </div>
 
+              {/* EMAIL */}
               <div className="border-b border-gray-200">
                 <input
+                  name="email"
                   type="email"
                   placeholder="Email Address"
-                  className="w-full bg-transparent py-2 text-gray-800 placeholder-gray-400 outline-none"
-                  required
+                  className="w-full bg-transparent py-2 outline-none"
                 />
               </div>
 
+              {/* PHONE */}
               <div className="flex border-b border-gray-200 py-1">
                 <select
+                  name="country_code"
                   defaultValue="+91"
-                  className="w-[80px] cursor-pointer border-r border-gray-200 bg-transparent py-1 pr-1 text-gray-800 outline-none"
+                  className="w-[80px] border-r bg-transparent outline-none"
                 >
-                  <option value="+91">+91 (IN)</option>
-
+                  <option value="+91">+91</option>
                 </select>
+
                 <input
+                  name="phone"
                   type="tel"
                   placeholder="Phone"
-                  value={phone || ""}
+                  value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  className="w-full bg-transparent py-1 pl-3 text-gray-800 placeholder-gray-400 outline-none"
-                  required
+                  className="w-full bg-transparent pl-3 outline-none"
                 />
               </div>
 
+              {/* BUDGET */}
               <div className="border-b border-gray-200">
                 <select
+                  name="budget"
                   defaultValue=""
-                  className="w-full cursor-pointer appearance-none bg-transparent py-2 text-gray-800 outline-none"
+                  className="w-full bg-transparent py-2 outline-none"
                 >
-                  <option value="" disabled className="text-gray-400">
+                  <option value="" disabled>
                     Budget
                   </option>
                   <option value="Under $10k">Under $10k</option>
@@ -235,19 +220,23 @@ export default function LeadPopup() {
                 </select>
               </div>
 
+              {/* MESSAGE */}
               <div className="border-b border-gray-200">
                 <textarea
+                  name="message"
                   placeholder="Message"
                   rows={2}
-                  className="w-full resize-none bg-transparent py-2 text-gray-800 placeholder-gray-400 outline-none"
-                ></textarea>
+                  className="w-full resize-none bg-transparent py-2 outline-none"
+                />
               </div>
 
-              {error && <p className="text-sm font-medium text-red-500">{error}</p>}
+              {/* ERROR */}
+              {error && <p className="text-sm text-red-500">{error}</p>}
 
+              {/* BUTTON */}
               <CustomButton
                 text={loading ? "Submitting..." : "Submit"}
-                className="px-8 py-3 tracking-[0.8px] whitespace-nowrap"
+                className="px-8 py-3"
               />
             </form>
           </div>
