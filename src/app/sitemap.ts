@@ -1,371 +1,98 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from "next"
+import { fetchPostsblogsPage, getCaseStudiesServer } from "@/helper"
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: 'https://dev.moonstack.co/',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 1.00,
-    },
-    {
-      url: 'https://dev.moonstack.co/services',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/ai-agent-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/industries',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/contact-us',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/android-app-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/website-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/ui-ux-designing-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/reactjs-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/ecommerce-website-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/web-designing-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/angularjs-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/vuejs-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/wordpress-website-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/crm-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/shopify-website-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/mobile-app-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/ios-app-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/react-native-app-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/mobile-app-maintenance-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/pwa-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/python-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/search-engine-optimization-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/product-designing-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/cloud-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/it-support-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/full-stack-website-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/laravel-website-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/services/nodejs-development-company',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/about-us',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/case-study',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/terms-and-conditions',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/privacy-policy',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/cookie-policy',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/how-we-reduced-client-site-load-time-by-60-and-increased-conversions-18',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/category/development',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/google-core-update-june-2025-impact-insights-and-action-steps',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/category/digital-marketing',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/how-to-build-real-estate-app-from-scratch-step-by-step-guide',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/category/app-development',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.80,
-    },
-    {
-      url: 'https://dev.moonstack.co/category/consulting',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/category/ui-ux-design',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/online-payment-gateway-integration-a-detailed-guide-for-websites-and-apps',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/how-ai-and-machine-learning-are-transforming-mobile-app-development-in-2025',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/future-of-digital-marketing-careers-top-skills-strategies-to-dominate-in-2025',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/what-is-react-native-0-79-speed-boosts-debugging-upgrades',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/10-popular-web-design-trends-to-know-in-2025',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/why-angular-is-a-game-changer-for-web-development',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/top-10-best-cross-platform-app-development-frameworks-in-2025',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/2025-seo-trends-you-cant-ignore-core-updates-ai-and-the-future-of-search',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/seo-execution-strategy-for-businesses-understanding-goals-and-planning-2025',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/case-study/nuvama-wealth',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/case-study/enkash',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/case-study/avila-restaurants',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/case-study/avila-bbq-grills',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/case-study/accord',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/case-study/authbridge',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/case-study/admissify',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/case-study/phelan-conan',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/case-study/brabender',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/case-study/fan-tiger',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/how-to-install-react-compiler-and-eslint-plugin',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/how-to-build-reusable-react-components',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/ai-driven-cloud-platforms-how-automation-will-shape-cloud-computing-in-2025',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/angular-strategy-in-2025-best-practices-to-code-like-a-pro',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/top-wordpress-development-company-in-india-for-2025',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/react-server-components-the-future-of-web-development-2025',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/the-role-of-e-e-a-t-in-googles-helpful-content-update',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/seo-vs-ppc-which-strategy-is-best-for-your-business-growth',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/digital-marketing-the-gateway-to-business-growth-in-the-digital-era',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.64,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/how-to-become-a-cybersecurity-engineer-in-2025',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.51,
-    },
-    {
-      url: 'https://dev.moonstack.co/blogs/importance-of-css-tricks-in-web-development',
-      lastModified: new Date('2026-03-27T06:18:21+00:00'),
-      priority: 0.51,
-    },
-  ];
+export const revalidate = 3600
+
+const baseUrl = "https://dev.moonstack.co"
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  // ✅ Fetch API data
+  let blogs: any[] = []
+  let caseStudies: any[] = []
+
+  try {
+    const blogsResponse = await fetchPostsblogsPage(1, 100)
+    if (blogsResponse && blogsResponse.data) {
+      blogs = blogsResponse.data
+    }
+  } catch (error) {
+    console.error("Error fetching blogs for sitemap:", error)
+  }
+
+  try {
+    const caseStudiesResponse = await getCaseStudiesServer(1, 100)
+    if (caseStudiesResponse && caseStudiesResponse.items) {
+      caseStudies = caseStudiesResponse.items
+    }
+  } catch (error) {
+    console.error("Error fetching case studies for sitemap:", error)
+  }
+
+  console.log("Blogs fetched for sitemap:", blogs.length)
+  console.log("CaseStudies fetched for sitemap:", caseStudies.length)
+
+
+  const staticUrls = [
+    { url: baseUrl, lastModified: new Date(), priority: 1 },
+    { url: `${baseUrl}/services`, lastModified: new Date(), priority: 0.8 },
+    { url: `${baseUrl}/contact-us`, lastModified: new Date(), priority: 0.8 },
+    { url: `${baseUrl}/about-us`, lastModified: new Date(), priority: 0.8 },
+    { url: `${baseUrl}/industries`, lastModified: new Date(), priority: 0.8 },
+    { url: `${baseUrl}/category/development`, lastModified: new Date(), priority: 0.8 },
+    { url: `${baseUrl}/category/digital-marketing`, lastModified: new Date(), priority: 0.8 },
+    { url: `${baseUrl}/category/app-development`, lastModified: new Date(), priority: 0.8 },
+    { url: `${baseUrl}/category/consulting`, lastModified: new Date(), priority: 0.64 },
+    { url: `${baseUrl}/category/ui-ux-design`, lastModified: new Date(), priority: 0.64 },
+    { url: `${baseUrl}/terms-and-conditions`, lastModified: new Date(), priority: 0.8 },
+    { url: `${baseUrl}/privacy-policy`, lastModified: new Date(), priority: 0.8 },
+    { url: `${baseUrl}/cookie-policy`, lastModified: new Date(), priority: 0.8 },
+  ]
+
+  const services = [
+    "ai-agent-development-company",
+    "android-app-development-company",
+    "website-development-company",
+    "reactjs-development-company",
+    "ui-ux-designing-company",
+    "ecommerce-website-development-company",
+    "web-designing-company",
+    "angularjs-development-company",
+    "vuejs-development-company",
+    "wordpress-website-development-company",
+    "crm-development-company",
+    "shopify-website-development-company",
+    "mobile-app-development-company",
+    "ios-app-development-company",
+    "react-native-app-development-company",
+    "mobile-app-maintenance-company",
+    "pwa-development-company",
+    "python-development-company",
+    "search-engine-optimization-company",
+    "product-designing-company",
+    "cloud-company",
+    "it-support-company",
+    "full-stack-website-development-company",
+    "laravel-website-development-company",
+    "nodejs-development-company",
+  ]
+
+  const serviceUrls = services.map((slug) => ({
+    url: `${baseUrl}/services/${slug}`,
+    lastModified: new Date(),
+    priority: 0.8,
+  }))
+
+  const blogUrls = blogs.map((blog: any) => ({
+    url: `${baseUrl}/blogs/${blog.slug}`,
+    lastModified: new Date(blog.updated_date || blog.publish_date || blog.date || Date.now()),
+    priority: 0.64,
+  }))
+
+  const caseStudyUrls = caseStudies.map((item: any) => ({
+    url: `${baseUrl}/case-study/${item.slug}`,
+    lastModified: new Date(item.updated_date || item.publish_date || item.date || Date.now()),
+    priority: 0.64,
+  }))
+
+  return [...staticUrls, ...serviceUrls, ...blogUrls, ...caseStudyUrls]
 }

@@ -144,7 +144,7 @@ export default function Form({ formName }: FormProps) {
       </div>
 
       <div className="formRow">
-        <div className="formGroup w-[100%] mb-[20px]">
+        <div className="formGroup mb-[20px] w-[100%]">
           <input
             name="phone"
             type="tel"
@@ -243,6 +243,8 @@ export default function Form({ formName }: FormProps) {
         <div className="mt-[20px] flex items-center justify-center pt-2 md:mt-[0] md:w-[50%] md:justify-end">
           <CustomButton
             text={loading ? "Submitting..." : "Submit"}
+            hoverBg="group-hover:bg-black"
+            hoverText="group-hover:text-white"
             className="px-8 py-3 tracking-[0.8px] whitespace-nowrap"
           />
         </div>

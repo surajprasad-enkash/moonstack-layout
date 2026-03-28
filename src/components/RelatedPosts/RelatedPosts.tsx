@@ -1,35 +1,36 @@
-"use client";
+"use client"
 
-import { useEffect, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { useEffect, useState } from "react"
+import Image from "next/image"
+import Link from "next/link"
+import author from "../../app/favicon.ico"
 
 interface Post {
-  author: any;
-  category: any;
-  id: number;
-  slug: string;
-  title: string;
-  image: string;
-  date: string;
+  author: any
+  category: any
+  id: number
+  slug: string
+  title: string
+  image: string
+  date: string
 }
 
 interface ApiResponse {
-  status: boolean;
-  data: Post[];
+  status: boolean
+  data: Post[]
 }
 
 interface Props {
-  categorySlug: string;
-  notInPost: number;
+  categorySlug: string
+  notInPost: number
 }
 
 export default function RelatedPosts({ categorySlug, notInPost }: Props) {
-  const [posts, setPosts] = useState<Post[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [posts, setPosts] = useState<Post[]>([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    if (!categorySlug) return;
+    if (!categorySlug) return
 
     const fetchRelatedPosts = async () => {
       try {
@@ -40,22 +41,22 @@ export default function RelatedPosts({ categorySlug, notInPost }: Props) {
               "X-API-KEY": "a9f3c8d4e21b7a0c9f0a1e3d8b7c6f7hyx67",
             },
           }
-        );
+        )
 
-        const json: ApiResponse = await res.json();
+        const json: ApiResponse = await res.json()
 
         if (json?.status) {
-          setPosts(json.data);
+          setPosts(json.data)
         }
       } catch (error) {
-        console.error("Related posts error:", error);
+        console.error("Related posts error:", error)
       } finally {
-        setLoading(false);
+        setLoading(false)
       }
-    };
+    }
 
-    fetchRelatedPosts();
-  }, [categorySlug]);
+    fetchRelatedPosts()
+  }, [categorySlug])
 
   if (loading) {
     return (
@@ -67,10 +68,10 @@ export default function RelatedPosts({ categorySlug, notInPost }: Props) {
           />
         ))}
       </div>
-    );
+    )
   }
 
-  if (!posts.length) return null;
+  if (!posts.length) return null
 
   return (
     <section className="relative z-[2] px-[20px] py-[80px]">
@@ -105,7 +106,7 @@ export default function RelatedPosts({ categorySlug, notInPost }: Props) {
                     <div className="mb-4 flex items-center justify-between gap-3 text-xs text-gray-400">
                       <div className="flex items-center gap-2">
                         <Image
-                          src={post.author.avatar}
+                          src={author}
                           alt={post.author.name}
                           width={24}
                           height={24}
@@ -177,5 +178,5 @@ export default function RelatedPosts({ categorySlug, notInPost }: Props) {
         </div>
       </div>
     </section>
-  );
+  )
 }

@@ -102,7 +102,7 @@ export default function LeadPopup() {
         {/* CLOSE BUTTON */}
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-[#FF0000] text-white hover:bg-red-600"
+          className="absolute top-4 right-4 z-10 flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-[#FF0000] text-white hover:bg-red-600"
         >
           ✕
         </button>
@@ -236,7 +236,9 @@ export default function LeadPopup() {
               {/* BUTTON */}
               <CustomButton
                 text={loading ? "Submitting..." : "Submit"}
-                className="px-8 py-3"
+                hoverBg="group-hover:bg-black"
+                hoverText="group-hover:text-white"
+                className="justify-end px-8 py-3"
               />
             </form>
           </div>

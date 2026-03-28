@@ -12,6 +12,7 @@ import Breadcrumb from "../Breadcrumb"
 import bgImage from "@/assets/blogs/singleBlogBanner.webp"
 import { IPostData } from "@/types/blog"
 import CategoryListSingle from "../CategoryList/CategoryListSingle"
+import author from "../../app/favicon.ico"
 
 interface Props {
   post?: IPostData
@@ -162,7 +163,7 @@ function SinglePostData({ post }: Props) {
                     <div className="flex items-center gap-[20px]">
                       <div>
                         <Image
-                          src={post.author.image}
+                          src={author}
                           alt={post.author.name}
                           width={100}
                           height={100}

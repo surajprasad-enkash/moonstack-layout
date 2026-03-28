@@ -11,8 +11,9 @@ interface PillButtonProps {
   onClick?: () => void;
   className?: string;
   hoverBg?: string;
+  hoverText?: string;
   id?: string;
-  variant?: "default" | "rounded16" | "headerButton";
+  variant?: "default" | "rounded16" | "headerButton" | "hoverBlack";
  
 }
 
@@ -24,9 +25,14 @@ const PillButton: React.FC<PillButtonProps> = ({
   id,
   variant = "default",
   hoverBg = "group-hover:bg-white",
+  hoverText = "",
 }) => {
   const isRounded16 = variant === "rounded16";
   const isHeaderButton = variant === "headerButton";
+  const isHoverBlack = variant === "hoverBlack";
+
+  const appliedHoverBg = isHoverBlack ? "group-hover:bg-black" : hoverBg;
+  const appliedHoverText = isHoverBlack ? "group-hover:text-white" : hoverText;
 
   const PillContent = (
     <div
@@ -128,7 +134,8 @@ const PillButton: React.FC<PillButtonProps> = ({
               isRounded16
                 ? "rounded-[16px]"
                 : "rounded-[0px_32px_32px_32px] group-hover:rounded-[32px_32px_32px_0px]",
-              hoverBg,
+              appliedHoverBg,
+              appliedHoverText,
             )}
           >
             <FiArrowUpRight
@@ -146,7 +153,8 @@ const PillButton: React.FC<PillButtonProps> = ({
           <span
             className={cn(
               "flex h-[56px] items-center min-w-[145px] bg-[#D6FF00] px-8 text-[16px] font-semibold text-nowrap text-black transition-all duration-300",
-              hoverBg,
+              appliedHoverBg,
+              appliedHoverText,
               isRounded16 ? "rounded-[16px]" : "rounded-full",
             )}
           >
