@@ -52,7 +52,7 @@ export default function CaseResults({ results }: any) {
                   className="w-full rounded-[24px] bg-[#e8f4ff] p-[40px] md:w-[calc(50%-30px)]"
                 >
                   <div className="flex items-start justify-between">
-                    <div className="text-[80px] leading-none font-[500]">
+                    <div className="text-[40px] leading-none font-[500] lg:text-[80px]">
                       {item.prefix}
                       <Counter value={Number(item.number)} />
                       {item.suffix}

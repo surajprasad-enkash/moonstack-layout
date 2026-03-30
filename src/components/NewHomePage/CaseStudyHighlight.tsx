@@ -140,7 +140,7 @@ export default function CaseStudyHighlight({
           </div>
 
           {/* RIGHT IMAGES */}
-          <div className="md-pt-[0] relative flex flex-col gap-[10px] pt-5 md:w-[calc(100%-520px)]">
+          <div className="md-pt-[0] relative flex flex-col gap-[10px] pt-5 lg:w-[calc(100%-520px)]">
             {images.map((img, index) => (
               <div
                 key={index}

@@ -33,7 +33,7 @@ const Footer = () => {
             />
           )}
           <div className="relative z-50 container">
-            <div className="row flex flex-wrap gap-[60px]">
+            <div className="row flex flex-wrap gap-[32px]">
               {/* LEFT */}
               <div className="footerLeft w-[100%] md:w-[calc(40%-60px)]">
                 <div className="max-w-[500]">
@@ -80,8 +80,8 @@ const Footer = () => {
 
               {/* LINKS */}
               <div className="footerLinksWrapper w-[100%] md:w-[60%]">
-                <div className="flex w-[100%] flex-wrap">
-                  <div className="footerLinks w-[100%] md:w-[25%]">
+                <div className="block w-[100%] gap-3 md:flex">
+                  <div className="footerLinks w-[100%]">
                     <Link
                       href="/services/website-development-company"
                       className="inline-block"
@@ -176,7 +176,7 @@ const Footer = () => {
                     </ul>
                   </div>
 
-                  <div className="footerLinks w-[100%] md:w-[25%]">
+                  <div className="footerLinks w-[100%]">
                     <h4 className="footerTitle mb-[21px] !text-[18px] leading-[150%] text-[#fff]">
                       App Development Services
                     </h4>
@@ -233,7 +233,7 @@ const Footer = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="footerLinks w-[100%] md:w-[25%]">
+                  <div className="footerLinks w-[100%]">
                     <h4 className="footerTitle mb-[21px] !text-[18px] leading-[150%] text-[#fff]">
                       Other Services
                     </h4>
@@ -340,7 +340,7 @@ const Footer = () => {
                     </ul>
                   </div>
 
-                  <div className="footerLinks w-[100%] md:w-[25%]">
+                  <div className="footerLinks w-[100%]">
                     <h4 className="footerTitle mb-[21px] !text-[18px] leading-[150%] text-[#fff]">
                       Company
                     </h4>

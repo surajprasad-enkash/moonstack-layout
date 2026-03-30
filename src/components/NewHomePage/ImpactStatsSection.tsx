@@ -49,7 +49,7 @@ export default function ImpactStatsSection({
       )}
       <div className="container">
         {" "}
-        <div className="relative z-10 w-full justify-between md:flex">
+        <div className="relative z-10 w-full flex-wrap justify-center md:flex lg:justify-between">
           {stats.map((stat, index) => (
             <div
               key={index}

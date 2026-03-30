@@ -27,7 +27,7 @@ export default function ResultsSection({
     <section className="relative px-[20px] text-white">
       <div className="relative z-10 container">
         {/* Label */}
-        <div className="gap-[40px] md:flex">
+        <div className="gap-[40px] md:flex md:flex-wrap">
           <div className="text-center md:w-[40%] md:text-start">
             <span className="mb-6 block text-xs font-[500] tracking-widest text-white/70 uppercase">
               {label}

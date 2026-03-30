@@ -1,10 +1,10 @@
 // components/HoverSlideText.tsx
-import React from "react";
+import React from "react"
 
 interface HoverSlideTextProps {
-  text: string;
-  active?: boolean;
-  withArrow?: boolean;
+  text: string
+  active?: boolean
+  withArrow?: boolean
 }
 
 const HoverSlideText = ({
@@ -13,7 +13,7 @@ const HoverSlideText = ({
   withArrow = false,
 }: HoverSlideTextProps) => {
   return (
-    <span className="group relative flex h-[24px] items-center overflow-hidden">
+    <span className="group relative flex items-center overflow-hidden">
       {/* Normal text */}
       <span
         className={`block transition-all duration-500 ease-out group-hover:-translate-y-full group-hover:opacity-0 ${active ? "text-[#d6ff00]" : "text-white"} `}
@@ -36,7 +36,7 @@ const HoverSlideText = ({
         </span>
       )}
     </span>
-  );
-};
+  )
+}
 
-export default HoverSlideText;
+export default HoverSlideText

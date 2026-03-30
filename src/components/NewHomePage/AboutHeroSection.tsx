@@ -65,7 +65,7 @@ export default function AboutHeroSection({
           {label}
         </span>
 
-        <div className="justify-between gap-[110px] md:flex">
+        <div className="flex-wrap justify-between gap-[110px] md:flex">
           {/* LEFT CONTENT */}
           <div className="max-w-[750px]">
             <Heading
@@ -131,7 +131,7 @@ export default function AboutHeroSection({
         {/* Divider */}
 
         {/* CLIENT LOGOS + STATS */}
-        <div className="mt-[50px] grid items-center border-t border-[#ffffff1a] pt-[20px] md:mt-[80px] md:grid-cols-3 md:gap-10">
+        <div className="mt-[50px] grid grid-cols-1 items-center gap-6 border-t border-[#ffffff1a] pt-[20px] sm:grid-cols-2 sm:gap-8 md:mt-[80px] md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-10">
           {/* Logos */}
           <div className="flex flex-wrap items-center justify-between gap-5 overflow-hidden py-[20px] md:col-span-2">
             <Image

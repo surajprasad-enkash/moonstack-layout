@@ -351,9 +351,16 @@ h1 .highlight-text {
   display: block;
 }
 
+
 .footerReviews {
   display: flex;
   gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .footerReviews {
+    display: block;
+  }
 }
 
 .footerReviews .reviewBox span {
@@ -368,7 +375,6 @@ h1 .highlight-text {
   align-items: center;
   border-radius: 5px;
   gap: 10px;
-  width: calc(50% - 6px);
 }
 
 .footerReviews .reviewBox .reviewStars {
