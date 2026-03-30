@@ -8,7 +8,7 @@ export default function CaseHero({ data }: any) {
     featured_image = data.acf.case_study_profile_image
   }
   return (
-    <section className="relative overflow-hidden px-[20px] pt-[160px] pb-[40px] text-white md:min-h-[100vh] md:pt-[160px] md:pb-[40px]">
+    <section className="relative overflow-hidden px-[20px] pt-[104px] pb-[40px] text-white md:min-h-[100vh] md:pt-[160px] md:pb-[40px]">
       {bgImage.src && (
         <Image
           src={bgImage.src}

@@ -38,7 +38,7 @@ export default function BlogsPage() {
   return (
     <Layout>
       {/* TOP BG */}
-      <div className="px-[20px] pt-[160px]">
+      <div className="px-[20px] pt-[104px] md:pt-[160px]">
         <Image
           src={bgImage}
           alt="Background"

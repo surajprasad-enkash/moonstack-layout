@@ -11,7 +11,13 @@ export default function LeadPopup() {
   const [loading, setLoading] = useState(false)
 
   const [phone, setPhone] = useState("")
-  const [error, setError] = useState<string | null>(null)
+
+  // ✅ Field Errors
+  const [errors, setErrors] = useState<{
+    fullname?: string
+    email?: string
+    phone?: string
+  }>({})
 
   /* ---------------- SHOW AFTER DELAY ---------------- */
   useEffect(() => {
@@ -36,19 +42,35 @@ export default function LeadPopup() {
   /* ---------------- SUBMIT ---------------- */
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setError(null)
+    setErrors({})
     setLoading(true)
 
     const form = e.currentTarget
     const formData = new FormData(form)
 
-    // Basic validation
     const name = formData.get("fullname") as string
     const email = formData.get("email") as string
     const phone = formData.get("phone") as string
 
-    if (!name || !email || !phone) {
-      setError("Please fill all required fields")
+    const newErrors: typeof errors = {}
+
+    // ✅ Validation
+    if (!name) newErrors.fullname = "Full name is required"
+
+    if (!email) {
+      newErrors.email = "Email is required"
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      newErrors.email = "Enter a valid email"
+    }
+
+    if (!phone) {
+      newErrors.phone = "Phone is required"
+    } else if (!/^\d{10}$/.test(phone)) {
+      newErrors.phone = "Enter valid 10 digit number"
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors)
       setLoading(false)
       return
     }
@@ -61,10 +83,10 @@ export default function LeadPopup() {
         setPhone("")
         setIsOpen(false)
       } else {
-        setError(result.message || "Something went wrong")
+        alert(result.message || "Something went wrong")
       }
     } catch (err) {
-      setError("Server error. Please try again.")
+      alert("Server error. Please try again.")
     } finally {
       setLoading(false)
     }
@@ -96,7 +118,7 @@ export default function LeadPopup() {
       onClick={handleClose}
     >
       <div
-        className="relative flex max-h-[95vh] w-[1050px] max-w-[90vw] flex-col overflow-hidden rounded-3xl bg-white shadow-2xl"
+        className="no-scrollbar relative flex max-h-[95vh] w-[1050px] max-w-[90vw] flex-col overflow-auto rounded-3xl bg-white shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* CLOSE BUTTON */}
@@ -152,7 +174,7 @@ export default function LeadPopup() {
 
           {/* RIGHT FORM */}
           <div className="flex w-full flex-col px-2 md:w-[55%]">
-            <p className="mb-4 text-xs font-medium text-red-500">
+            <p className="mb-4 text-sm font-medium text-black">
               * Mandatory Field
             </p>
 
@@ -160,7 +182,6 @@ export default function LeadPopup() {
               onSubmit={handleSubmit}
               className="flex flex-col gap-4 text-sm"
             >
-              {/* HIDDEN */}
               <input type="hidden" name="form_name" value="lead_popup" />
 
               {/* NAME */}
@@ -170,7 +191,15 @@ export default function LeadPopup() {
                   type="text"
                   placeholder="Full Name"
                   className="w-full bg-transparent py-2 outline-none"
+                  onChange={() =>
+                    setErrors((prev) => ({ ...prev, fullname: "" }))
+                  }
                 />
+                {errors.fullname && (
+                  <p className="mt-1 !text-sm text-[#FF0000]">
+                    {errors.fullname}
+                  </p>
+                )}
               </div>
 
               {/* EMAIL */}
@@ -180,30 +209,41 @@ export default function LeadPopup() {
                   type="email"
                   placeholder="Email Address"
                   className="w-full bg-transparent py-2 outline-none"
+                  onChange={() => setErrors((prev) => ({ ...prev, email: "" }))}
                 />
+                {errors.email && (
+                  <p className="mt-1 !text-sm text-[#FF0000]">{errors.email}</p>
+                )}
               </div>
 
               {/* PHONE */}
-              <div className="flex border-b border-gray-200 py-1">
-                <select
-                  name="country_code"
-                  defaultValue="+91"
-                  className="w-[80px] border-r bg-transparent outline-none"
-                >
-                  <option value="+91">+91</option>
-                </select>
+              <div className="flex flex-col border-b border-gray-200 py-1">
+                <div className="flex">
+                  <select
+                    name="country_code"
+                    defaultValue="+91"
+                    className="w-[80px] border-r bg-transparent outline-none"
+                  >
+                    <option value="+91">+91</option>
+                  </select>
 
-                <input
-                  name="phone"
-                  type="tel"
-                  placeholder="Phone"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  className="w-full bg-transparent pl-3 outline-none"
-                />
+                  <input
+                    name="phone"
+                    type="tel"
+                    placeholder="Phone"
+                    value={phone}
+                    onChange={(e) => {
+                      setPhone(e.target.value)
+                      setErrors((prev) => ({ ...prev, phone: "" }))
+                    }}
+                    className="w-full bg-transparent pl-3 outline-none"
+                  />
+                </div>
+
+                {errors.phone && (
+                  <p className="mt-1 !text-sm text-[#FF0000]">{errors.phone}</p>
+                )}
               </div>
-
-              {/* BUDGET */}
               <div className="border-b border-gray-200">
                 <select
                   name="budget"
@@ -230,16 +270,15 @@ export default function LeadPopup() {
                 />
               </div>
 
-              {/* ERROR */}
-              {error && <p className="text-sm text-red-500">{error}</p>}
-
               {/* BUTTON */}
-              <CustomButton
-                text={loading ? "Submitting..." : "Submit"}
-                hoverBg="group-hover:bg-black"
-                hoverText="group-hover:text-white"
-                className="justify-end px-8 py-3"
-              />
+              <div className="flex justify-end">
+                <CustomButton
+                  text={loading ? "Submitting..." : "Submit"}
+                  hoverBg="group-hover:bg-black"
+                  hoverText="group-hover:text-white"
+                  className="cursor-pointer px-8 py-3"
+                />
+              </div>
             </form>
           </div>
         </div>

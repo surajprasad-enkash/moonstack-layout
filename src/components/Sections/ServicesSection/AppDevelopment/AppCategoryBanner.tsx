@@ -52,7 +52,7 @@ const AppCategoryBanner: React.FC<AppCategoryBannerProps> = ({
 }) => {
   return (
     <section
-      className={`${bgColor} relative px-[20px] pt-[150px] pb-[60px] md:pb-[130px]`}
+      className={`${bgColor} relative px-[20px] pt-[104px] pb-[60px] md:pt-[150px] md:pb-[130px]`}
     >
       {bgImage && (
         <Image

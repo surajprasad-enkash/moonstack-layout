@@ -20,7 +20,7 @@ const breadcrumbs = [
 
 const HeroSection = (): React.JSX.Element => {
   return (
-    <section className="px-[20px] pt-[130px] md:pt-[180px]">
+    <section className="px-[20px] pt-[104px] md:pt-[180px]">
       {bgImage && (
         <Image
           src={bgImage}

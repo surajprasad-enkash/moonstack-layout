@@ -33,7 +33,7 @@ function SinglePostData({ post }: Props) {
   return (
     <>
       <section
-        className="singlePostBanner bg-cover px-[20px] pt-[180px] pb-[80px]"
+        className="singlePostBanner bg-cover px-[20px] pt-[104px] md:pt-[180px] pb-[80px]"
         style={{ backgroundImage: `url(${bgImage.src})` }}
       >
         <div className="container">

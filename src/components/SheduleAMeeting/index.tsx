@@ -17,7 +17,7 @@ const SheduleAMeeting = (): React.JSX.Element => {
   }
 
   return (
-    <div className="fixed bottom-0 z-[99] flex w-full justify-center bg-white px-[20px] py-2 md:hidden">
+    <div className="bg-whitemd:hidden fixed bottom-0 z-[99] flex w-full justify-center px-[20px] py-2">
       <button
         onClick={handleClick}
         className="bg-primary-300 w-full rounded-lg p-3 text-center text-sm font-semibold text-white"

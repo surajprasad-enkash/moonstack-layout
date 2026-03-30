@@ -56,7 +56,7 @@ export default function HeroSection({
 }: HeroSectionProps) {
   const { openVideo } = useVideoModal()
   return (
-    <section className="relative px-[20px] pt-[160px] text-white">
+    <section className="relative px-[20px] pt-[104px] text-white md:pt-[160px]">
       {/* Background glow */}
       {bgImage && (
         <Image

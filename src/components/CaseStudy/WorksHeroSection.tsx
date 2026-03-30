@@ -12,7 +12,7 @@ import Marquee from "../Homepage/Marquee"
 
 export default function WorksHeroSection() {
   return (
-    <section className="relative px-[20px] pt-[160px] pb-[80px] text-white">
+    <section className="relative px-[20px] pt-[104px] pb-[80px] text-white md:pt-[160px]">
       {bannerBg.src && (
         <Image
           src={bannerBg.src}

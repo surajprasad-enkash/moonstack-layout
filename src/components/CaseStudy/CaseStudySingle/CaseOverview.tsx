@@ -21,7 +21,7 @@ export default function CaseOverview({ data }: any) {
                     />
                   </p>
                   <span
-                    className="block text-[32px] font-[500] whitespace-nowrap"
+                    className="block text-[18px] font-[500] md:text-[32px]"
                     dangerouslySetInnerHTML={{ __html: item.content }}
                   />
                 </div>
@@ -37,7 +37,7 @@ export default function CaseOverview({ data }: any) {
             <div className="rightSection md:w-[66%]">
               <div>
                 <div
-                  className="text-[40px] leading-[120%] font-[400]"
+                  className="text-[24px] leading-[120%] font-[400] md:text-[40px]"
                   dangerouslySetInnerHTML={{ __html: data.acf.aboutProject }}
                 />
               </div>
