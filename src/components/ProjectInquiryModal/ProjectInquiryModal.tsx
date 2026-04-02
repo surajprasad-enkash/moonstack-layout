@@ -80,7 +80,7 @@ export default function ProjectInquiryModal({ isOpen, onClose }: Props) {
 
             {/* MESSAGE */}
 
-            <Form formName="project_inquiry" />
+            <Form formName="project_inquiry" onSuccess={onClose} />
           </div>
         </div>
       </div>

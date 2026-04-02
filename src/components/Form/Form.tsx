@@ -17,8 +17,12 @@ interface Errors {
   message?: string
   attachment?: string
 }
+interface FormProps {
+  formName: string
+  onSuccess?: () => void
+}
 
-export default function Form({ formName }: FormProps) {
+export default function Form({ formName, onSuccess }: FormProps) {
   const [fileName, setFileName] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState<string | null>(null)
@@ -31,7 +35,7 @@ export default function Form({ formName }: FormProps) {
     const fname = formData.get("fullname") as string
     const email = formData.get("email") as string
     const msg = formData.get("message") as string
-    const phone = formData.get("phone") as string
+    const phone = (formData.get("phone") as string)?.trim()
     const file = formData.get("attachment") as File
 
     if (!fname) newErrors.fullname = "First name is required"
@@ -42,7 +46,19 @@ export default function Form({ formName }: FormProps) {
       newErrors.email = "Enter a valid email address"
     }
 
-    if (!phone) newErrors.phone = "Phone number is required"
+    if (!phone) {
+      newErrors.phone = "Phone number is required"
+    } else {
+      // Remove spaces, dashes, brackets
+      const cleaned = phone.replace(/[\s\-()]/g, "")
+
+      const isIndian = /^[6-9]\d{9}$/.test(cleaned)
+      const isInternational = /^\+\d{8,15}$/.test(cleaned)
+
+      if (!isIndian && !isInternational) {
+        newErrors.phone = "Enter a valid phone number (Indian or international)"
+      }
+    }
 
     if (!msg) newErrors.message = "Project description is required"
 
@@ -76,6 +92,13 @@ export default function Form({ formName }: FormProps) {
       setMessage(result.message)
       form.reset()
       setFileName(null)
+
+      // ✅ CLOSE MODAL
+      if (onSuccess) {
+        setTimeout(() => {
+          onSuccess()
+        }, 1000) // optional delay
+      }
     } else {
       setMessage(result.message)
     }
@@ -93,7 +116,7 @@ export default function Form({ formName }: FormProps) {
       <input type="hidden" name="form_name" value={formName} />
 
       {/* GLOBAL MESSAGE */}
-      {message && <p className="text-sm text-green-700">{message}</p>}
+      {message && <p className="text-primary-300 text-sm">{message}</p>}
 
       <div className="formRow gap-[20px] md:flex">
         <div className="formGroup w-[100%] md:w-[50%]">
@@ -149,10 +172,16 @@ export default function Form({ formName }: FormProps) {
             name="phone"
             type="tel"
             id="phone"
+            inputMode="numeric"
+            pattern="[0-9]*"
+            maxLength={15}
             placeholder=""
             className="peer w-full border-b border-[#cecece] py-3 text-sm text-[#000] focus:!border-[#004619] focus:outline-none"
             autoComplete="tel"
-            onChange={() => setErrors((e) => ({ ...e, phone: undefined }))}
+            onChange={(e) => {
+              e.target.value = e.target.value.replace(/[^\d+]/g, "")
+              setErrors((err) => ({ ...err, phone: undefined }))
+            }}
           />
           <label
             htmlFor="phone"
