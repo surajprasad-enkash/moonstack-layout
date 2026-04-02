@@ -51,6 +51,7 @@ export default function LeadPopup() {
     const name = formData.get("fullname") as string
     const email = formData.get("email") as string
     const phone = formData.get("phone") as string
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
 
     const newErrors: typeof errors = {}
 
@@ -59,14 +60,14 @@ export default function LeadPopup() {
 
     if (!email) {
       newErrors.email = "Email is required"
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      newErrors.email = "Enter a valid email"
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+      newErrors.email = "Invalid email format (e.g. abc@gmail.com)"
     }
 
     if (!phone) {
       newErrors.phone = "Phone is required"
-    } else if (!/^\d{10}$/.test(phone)) {
-      newErrors.phone = "Enter valid 10 digit number"
+    } else if (!/^\+?\d{6,15}$/.test(phone)) {
+      newErrors.phone = "Enter valid phone number"
     }
 
     if (Object.keys(newErrors).length > 0) {
@@ -124,7 +125,7 @@ export default function LeadPopup() {
         {/* CLOSE BUTTON */}
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 z-10 flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-[#FF0000] text-white hover:bg-red-600"
+          className="absolute top-4 right-4 z-10 flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-black text-white hover:bg-red-600"
         >
           ✕
         </button>
@@ -174,23 +175,19 @@ export default function LeadPopup() {
 
           {/* RIGHT FORM */}
           <div className="flex w-full flex-col px-2 md:w-[55%]">
-            <p className="mb-4 text-sm font-medium text-black">
-              * Mandatory Field
-            </p>
-
             <form
               onSubmit={handleSubmit}
-              className="flex flex-col gap-4 text-sm"
+              className="flex flex-col gap-3 text-sm"
             >
               <input type="hidden" name="form_name" value="lead_popup" />
 
               {/* NAME */}
-              <div className="border-b border-gray-200">
+              <div className="">
                 <input
                   name="fullname"
                   type="text"
-                  placeholder="Full Name"
-                  className="w-full bg-transparent py-2 outline-none"
+                  placeholder="Full Name * "
+                  className={`w-full border-b bg-transparent py-2 outline-none ${errors.fullname ? "border-red" : "border-gray-200"}`}
                   onChange={() =>
                     setErrors((prev) => ({ ...prev, fullname: "" }))
                   }
@@ -203,13 +200,30 @@ export default function LeadPopup() {
               </div>
 
               {/* EMAIL */}
-              <div className="border-b border-gray-200">
+              <div className="">
                 <input
                   name="email"
                   type="email"
-                  placeholder="Email Address"
-                  className="w-full bg-transparent py-2 outline-none"
-                  onChange={() => setErrors((prev) => ({ ...prev, email: "" }))}
+                  placeholder="Email Address * "
+                  className={`w-full border-b border-gray-200 bg-transparent py-2 outline-none ${errors.email ? "border-red" : "border-gray-200"}`}
+                  onChange={(e) => {
+                    const value = e.target.value
+
+                    setErrors((prev) => ({ ...prev, email: "" }))
+
+                    // Live validation
+                    if (!value) {
+                      setErrors((prev) => ({
+                        ...prev,
+                        email: "Email is required",
+                      }))
+                    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(value)) {
+                      setErrors((prev) => ({
+                        ...prev,
+                        email: "Invalid email format (e.g. abc@gmail.com)",
+                      }))
+                    }
+                  }}
                 />
                 {errors.email && (
                   <p className="mt-1 !text-sm text-[#FF0000]">{errors.email}</p>
@@ -217,33 +231,33 @@ export default function LeadPopup() {
               </div>
 
               {/* PHONE */}
-              <div className="flex flex-col border-b border-gray-200 py-1">
-                <div className="flex">
-                  <select
-                    name="country_code"
-                    defaultValue="+91"
-                    className="w-[80px] border-r bg-transparent outline-none"
-                  >
-                    <option value="+91">+91</option>
-                  </select>
-
+              <div className="flex flex-col py-1">
+                <div className="">
                   <input
                     name="phone"
                     type="tel"
                     placeholder="Phone"
                     value={phone}
+                    maxLength={16} // + + 15 digits
                     onChange={(e) => {
-                      setPhone(e.target.value)
-                      setErrors((prev) => ({ ...prev, phone: "" }))
-                    }}
-                    className="w-full bg-transparent pl-3 outline-none"
-                  />
-                </div>
+                      let value = e.target.value
 
-                {errors.phone && (
-                  <p className="mt-1 !text-sm text-[#FF0000]">{errors.phone}</p>
-                )}
+                      // Allow only digits and optional leading +
+                      if (/^\+?\d*$/.test(value)) {
+                        setPhone(value)
+                        setErrors((prev) => ({ ...prev, phone: "" }))
+                      }
+                    }}
+                    className={`w-full border-b border-gray-200 bg-transparent py-2 outline-none ${errors.phone ? "border-red" : "border-gray-200"}`}
+                  />
+                  {errors.phone && (
+                    <p className="mt-1 !text-sm text-[#FF0000]">
+                      {errors.phone}
+                    </p>
+                  )}
+                </div>
               </div>
+
               <div className="border-b border-gray-200">
                 <select
                   name="budget"
