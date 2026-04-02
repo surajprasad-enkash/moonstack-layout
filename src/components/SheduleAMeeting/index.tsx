@@ -12,7 +12,7 @@ const SheduleAMeeting = (): React.JSX.Element => {
     })
 
     cal("modal", {
-      calLink: "nidhimoonstack",
+      calLink: "moonstack",
     })
   }
 

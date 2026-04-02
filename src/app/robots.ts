@@ -6,7 +6,18 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/thank-you/"],
+        disallow: [
+          "/wp-admin/",
+          "/wp-login.php",
+          "/wp-register.php",
+          "/wp-cron.php",
+          "/xmlrpc.php",
+          "/wp-json/",
+          "/privacy-policy/",
+          "/terms-and-conditions/",
+          "/thank-you/",
+          "/404/",
+        ],
       },
       {
         userAgent: ["GPTBot", "ChatGPT-User", "anthropic-ai", "Claude-Web"],

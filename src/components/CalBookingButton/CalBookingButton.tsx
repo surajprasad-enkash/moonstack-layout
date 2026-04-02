@@ -17,7 +17,7 @@ export default function CalBookingButton() {
   return (
     <>
       <Cal
-        calLink="nidhimoonstack"
+        calLink="moonstack"
         style={{ width: "0px", height: "0px", overflow: "hidden" }}
       />
 
@@ -26,7 +26,7 @@ export default function CalBookingButton() {
         onClick={async () => {
           const cal = await getCalApi()
           cal("modal", {
-            calLink: "nidhimoonstack",
+            calLink: "moonstack",
           })
         }}
         className=""
