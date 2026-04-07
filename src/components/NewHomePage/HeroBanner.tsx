@@ -60,7 +60,7 @@ export default function HeroSection({
       {/* Background glow */}
       {bgImage && (
         <Image
-          src={bgImage.src}
+          src={bgImage}
           alt="Background"
           width={1200}
           height={1200}
@@ -72,7 +72,7 @@ export default function HeroSection({
       )}
       {bgImage2 && (
         <Image
-          src={bgImage2.src}
+          src={bgImage2}
           alt="Background"
           priority
           width={1200}

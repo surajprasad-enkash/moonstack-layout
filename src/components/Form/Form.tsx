@@ -46,18 +46,11 @@ export default function Form({ formName, onSuccess }: FormProps) {
       newErrors.email = "Enter a valid email address"
     }
 
+  
     if (!phone) {
-      newErrors.phone = "Phone number is required"
-    } else {
-      // Remove spaces, dashes, brackets
-      const cleaned = phone.replace(/[\s\-()]/g, "")
-
-      const isIndian = /^[6-9]\d{9}$/.test(cleaned)
-      const isInternational = /^\+\d{8,15}$/.test(cleaned)
-
-      if (!isIndian && !isInternational) {
-        newErrors.phone = "Enter a valid phone number (Indian or international)"
-      }
+      newErrors.phone = "Phone is required"
+    } else if (!/^\+?\d{6,15}$/.test(phone)) {
+      newErrors.phone = "Enter valid phone number"
     }
 
     if (!msg) newErrors.message = "Project description is required"

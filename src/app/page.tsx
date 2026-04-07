@@ -47,7 +47,6 @@ import {
 import FAQSection from "@/components/Sections/FaqSection/FaqSection"
 import ProcessSection from "@/components/Sections/ProcessSection/ProcessSection"
 
-export const dynamic = "force-dynamic"
 
 export default function Home() {
   const schema = {
